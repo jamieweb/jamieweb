@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/jamieonubuntu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.jamieweb.net
+  * I am jamieonubuntu (https://keybase.io/jamieonubuntu) on keybase.
+  * I have a public key with fingerprint 7CBB F413 4785 40F6 3045  58F8 5E38 94D8 34B7 98E5
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101779377830f385aa5affb7f9782fb5ddc99a18452cee2434e56daca8abfb9e2170a",
+            "fingerprint": "7cbbf413478540f6304558f85e3894d834b798e5",
+            "host": "keybase.io",
+            "key_id": "5e3894d834b798e5",
+            "kid": "0101779377830f385aa5affb7f9782fb5ddc99a18452cee2434e56daca8abfb9e2170a",
+            "uid": "0532174647efa63acb64af406bc1f519",
+            "username": "jamieonubuntu"
+        },
+        "service": {
+            "hostname": "www.jamieweb.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1480986654,
+    "expire_in": 157680000,
+    "prev": "f3ad3060cbc1e396afd4be8ee9e67c474295d2062f1881731749f08ab2e8093a",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUmtQVGUY3kVkUFhAvNAPiDo0TUMre86e79xWSkZpGREbspQuFpzLd+Dksmfd
+c7hJzDZJIDngcnNIdtGBYWLIBFRqIBnsJsNgaDIaguXmwJRpGIh5AaSzZP/62ffn
+m+99n+d5n/eZz21YpgvQv0PXjYIvGib1Qzc43evWCLwY4WShCLEUI7vh0gVtAlTU
+zN2SgFgQFEMximJwiqJxVMRpgmUJVhQ5SmQo2ixyhCDwDMNiNCDMPIRmgANIkALL
+szTLiRwDzRiFsogRESV7NnQ6nJJd1WQpnuNEgOGAogmAiiSOAoKgRZqAOM0AgcYB
+RzE0JDRijqz4GZo5jlVggiRrNe2RuWTvP/D/s++8f+QIXCsAElBQZEmc5TkSsCJA
+SY7HRAJj/EAFOu1sLtTQ77K5EpTteVyeXc1DSoyI1sqXeOhP17/OY1hBQUHCErQA
+cgl2qGoiDqesyrxs07o5qupQLH62WuRYgkMu87FQJifZBS1QjZEPnYok2xELpiF5
+VfIrY4BGGZokCWBEYKFDcsJMyY8gKJJGteOfA/MR1oKIOCvgKIny2h4QZ0hWFAAH
+aQgZSFI8oICZIQQzSppFjKYxCtcyYERUi8gMtRG4PyAF7rHLiAXXfLLZmk1Fyraz
+ap4TIiUrKwKiA3X6AF3Q8gD/V9OtXBHx7/9T8yN0Y4uC2POJ6aPelnEl+NfSXdaQ
+qMDmqIbm+ZhTVzPqZ455Xh25jt6cCfzJF+k9ll77+ZqfiyZW/JlWd3DWZjxEv+Vp
+2IBTzP39qtie0VN3oKSyNzT0QED1httpNVNuz290cFDK1U9f2ri9cu/m5DMpaVUd
+fTeiGr/ydVdOxqfeQ72DMTPJqcnexvroDsr7pD4yae22sbGu3+e+7UhTnz//DbJ/
+8uSPcaUn8YzEt21wfWHzoOFwXGpi1vFfqroubLTmJrG34tc8CPpYb/g6xXY5Pmik
+q03wrv4guHwo6oWmcTPhcvVEvRxWvNhiIMzTwWXdw1VPvX9pqt6UXjqA9LeaTMEm
+uGl+cNh3KRq5N2p4+OC1ttWJFyNjlPlb7S3u1J1XemIipjy7rgFfQ+eqMGb5ZrTp
++Pbwi/LZPXPP6J+V3NT6rH2nTc2r2mYHdxhMPa3lfOvEpoPnFnY+OtRtld9wHX7Y
+WV6tS6pYW+YY+mE4xzny2YmygfunGppcJRPTe4/OhphuRmSEv/jhuMfoKY3tq/3j
+ruH6uur4mmvep2vCdOfDh9z9WOyJLxd8LvkIeGW29sikafROo8Pa/x7efiaUnI41
+7rgyuFWXE3eu+HbBX2LIYsWWru/OjiYchYXrMtJbl91VFjynk+KzBr6f20b3Ju6r
+vNNZ/qjv8oUtLvdIr/W5J2BY8pt/Aw==
+=z0iw
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jamieonubuntu
+
+==================================================================
