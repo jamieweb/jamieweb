@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Copyright Jamie Scaife-->
+<!--Legal Information at https://www.jamieweb.net/contact-->
+
+<head>
+    <title>NGHL Windows</title>
+    <meta name="description" content="Installing New Gauge Half-Life on Windows">
+    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
+    <meta name="author" content="Jamie Scaife">
+    <link href="/jamie.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+    <div class="navbar">
+        <h5>
+            <a href="/"><img src="/images/js-circle-48.png" width="3.5%" height="3.5%"></a>
+            <a href="/">Home</a>
+            <a href="/blog/">Blog</a>
+            <a href="/projects/">Projects</a>
+            <a href="/other/">Other</a>
+        </h5>
+    </div>
+</nav>
+
+<div class="body">
+    <h1>How to install 'New Gauge Half-Life' on Windows</h1>
+    <hr>
+    <p><b>Wednesday 10th June 2015</b></p>
+    <p>New Gauge Half-Life is a modified version of the Half-Life 1 client created by rofi.</p>
+    <p>Note that NGHL is no longer used for official speedrunning of Half-Life, its expansions or mods.</p>
+    <p>Please see the rules at <a href="http://www.speedrun.com/hl1">speedrun.com/hl1</a> for legitimate competitive speedrunning.</p>
+    <p>Jump to step: <a href="#step1">#1: Downloads</a> | <a href="#step2">#2: NGHL Installation</a> | <a href="#step3">#3: Mods/Maps/Config</a> | <a href="#step4">#4: Launch Options</a> | <a href="#step5">#5: Starting the Game</a> | <a href="#step6">#6: Final Configuration</a> | <a href="#trouble">Troubleshooting</a></p>
+    <p>Guide Created by Jamie Scaife 10th June 2015. Updated 29th September 2016.</p>
+
+    <h3 id="step1">Step #1: Downloads</h3>
+    <p>Download all of the listed files and save them somewhere safe. This is everything that you need to install/set up NGHL.</p>
+    <pre>    ########################################################################
+    New Gauge Half-Life Installer
+
+    Name: NGHL_Full_v1_34.exe
+    Size: 196.8 MB (196753838 bytes)
+    MD5: 1a99a97a7f6309daad549264b1e8734c
+    SHA1: 6bb8de2a66be4dc71a57a6fb8e5b592da2119193
+    SHA256: 1dd5715962d40dc72242892ad0f15d05833cd7e865bc9b75265e9b450d7b13e3
+    VirusTotal: N/A - File Too Large
+    Link: http://ngageclan.ucoz.ru/load/nghl/12-1-0-41
+    ########################################################################
+
+    ########################################################################
+    Bunnymod Pro
+
+    Name: hlspbunny.7z
+    Size: 523.7 KB (536259 bytes)
+    MD5: c51fdbd86f19463437721042793b8261
+    SHA1: 9f5ef5dcfb997b3ece551c67fb0f0e3ea99491a7
+    SHA256: 9377cc8242322ce954488e637ab44613d7ffe13ae29e7e8bd7d283f78bd33ef2
+    VirusTotal: 0/55 Detection Ratio
+    Link: https://dl.dropboxusercontent.com/u/29178100/hlspbunny/hlspbunny.7z
+    ########################################################################
+
+    ########################################################################
+    Bunnyrace Beta 2
+
+    Name: bunnyrace_beta2.zip
+    Size: ( bytes)
+    MD5:
+    SHA1:
+    SHA256: 
+    VirusTotal: N/A Detection Ratio
+    Link: http://vibrion.org/maps/maps/bunnyrace_beta2.zip
+    ########################################################################
+
+    ########################################################################
+    AdrenalineGamer Longjump 2
+
+    Name: ag_longjump2.rar
+    Size: 481.1 KB (492678 bytes)
+    MD5: d8167f361f5743f65e32607c02c2f942
+    SHA1: f1cb31c61259e47e7f5c9e538227fa292cb8d282
+    SHA256: 8315da93dd1d8dac1c535dfd1877d9f2b3e4072e12beeef3614dae8d77a25d57
+    VirusTotal: 0/55 Detection Ratio
+    Link: https://dl.dropbox.com/u/9297051/ag_longjump2.rar
+    ########################################################################
+
+    ########################################################################
+    AdrenalineGamer Tricks
+
+    Name: agtricks.rar
+    Size: 1.3 MB (1362329 bytes)
+    MD5: c5115555faa62eabe48c3ffeb743d984
+    HA1: 648e68b0d83fb1012e87cc3cd7e122a144a5990e
+    SHA256: a6d2e31f844b71575169f2df82b979cd0726bf143f85467cfffe6309482a7085
+    VirusTotal: 0/42 Detection Ratio
+    Link: https://dl.dropboxusercontent.com/u/9297051/agtricks.rar
+    ########################################################################
+
+    ########################################################################
+    Deathmatch Classic WAD
+
+    Name: dmc.wad
+    Size: 2.1 MB (2252124 bytes)
+    MD5: dff62c4444247a77f435f63476515528
+    SHA1: c83c5106aa4a67909d41accdf25545907120acac
+    SHA256: 20df9be175665dc27f0603cb6bd6ab2a60c4e597267ba8353fe6419ea32f9736
+    VirusTotal: 0/55 Detection Ratio
+    Link: http://www.dusty-clan.net/download.php?view.595
+    ########################################################################</pre>
+
+    <h3 id="step2">Step #2: NGHL Installation</h3>
+    <p>a. Run NGHL_Full_v1_34.exe'. The NGHL installation wizard should appear.</p>
+    <p>b. Go through the installation process. Set the install directory to 'NGHL'. When asked to select components: Select the default Half-Life DLLs. Deselect everything except for the cryllic font fix.</p>
+    <p>c. Wait for the installation to finish. Do not open the game yet.</p>
+
+    <h3 id="step3">Step #3: Mods/Maps/Config</h3>
+    <p>a. Extract the 'hlspbunny.zip' file and save the extracted 'bunnymodpro' folder. Move the contents of the 'bunnymodpro' folder into the '\Program Files (x86)\NGHL\valve' folder, and overwrite any files if prompted.</p>
+    <p>b. Move 'dmc.wad' into '\Program Files (x86)\NGHL\valve'. This file is required to load the textures of certain maps.</p>
+    <p>c. Extract the three files: 'bunnyrace_beta2.zip', 'ag_longjump2.rar', 'agtricks.rar', and move the resulting .bsp files into '\Program Files (x86)\NGHL\valve\maps'.</p>
+    <pre>    bunnyrace_beta2.bsp - A large bunnyhop racetrack/course.
+    agtricks.bsp - Bunnyhop course with multiple stages.
+    ag_longjump2.bsp - Longjump/strafe/object boost practise.</pre>
+    <p>d. Create the file '\Program Files (x86)\NGHL\valve\userconfig.cfg'. Replace the file if it already exists. This file will contain all of the custom scripts and settings to (speed)run the game properly. Copy the following into the file:</p>
+    <pre>    clockwindow 0                          //remove short lag after loading
+    default_fov 110                        //view angle (field of view)
+    developer 1                            //developer messages in the console (off)
+    gl_texturemode GL_LINEAR_MIPMAP_LINEAR //disable ugly 'stairs effect' on textures
+    MP3FadeTime 0.0                        //prevent music from playing forever
+    cl_showfps 1                           //show the game fps
+
+    //bunnyhop script
+    alias +bhop "alias _special _h;_h"
+    alias _h "+jump;wait;-jump;wait;special"
+    alias -bhop "alias _special"
+
+    //climb script
+    alias +climb "+duck;wait;-duck;wait;+duck"
+    alias -climb -duck
+
+    //gauss boost script
+    alias gauss "cl_pitchup 180;cl_pitchdown -180;-attack2;wait;cl_pitchup -12;cl_pitchdown 12;wait;cl_pitchup 89.999;cl_pitchdown 89.999"
+
+    //object boost script
+    alias obbo2000 "+use;w12;-use;+jump;w;-jump"
+
+    //wait table
+    alias "w" "wait"
+    alias "w2" "w;w"
+    alias "w3" "w2;w"
+    alias "w6" "w3;w3"
+    alias "w12" "w6;w6"</pre>
+    <p>Thanks to quadrazid on the SourceRuns.org forum for these scripts.</p>
+    <p>If you want to add your own scripts, put them in this file.</p>
+
+    <h3 id="step4">Step #4: Launch Options</h3>
+    <p>a. Right click the NGHL shortcut, click 'Properties', and add the following launch options to the target file:</p>
+    <pre>    -noforcemparms -noipx -nojoy -noforcemaccel -noforcemspd</pre>
+
+    <h3 id="step5">Step #5: Starting the Game</h3>
+    <p>a. Run the game using the desktop/start menu shortcut, or directly from '\Program Files (x86)\NGHL\hl.exe'.</p>
+    <p>b. The game should appear. Open the video settings and set your renderer to 'Hardware', and then the resolution/aspect ratio that you desire.</p>
+    <p>c. Now you should be free to play the game, set your controls, change any settings you desire, etc.</p>
+
+    <h3 id="step6">Step #6: Final Configuration</h3>
+    <p>By default, holding down the spacebar will automatically spam jump. You can rebind this in the in-game options menu.</p>
+    <p>Press 'q' to gaussboost using the gauss cannon. Charge the cannon by holding right click, look in the direction you want to go and press 'q'. You can rebind this script using the console commands: 'unbind q' followed by 'bind NEWKEY gauss'.</p>
+    <p>Press 'f' to perform an object boost. Stand infront of an object, hold down the directional key of which direction you want to go and press 'f'. You can rebind this script using the console commands: 'unbind f' followed by 'bind NEWKEY obbo2000'.</p>
+    <p>Use the console command 'map c1a0' to start a new game, skipping the tram ride intro. If you are playing the game for the first time, you can use the 'New Game' menu button to avoid skipping the tram ride intro.</p>
+    <p>When loading maps for the first time, you may encounter a message saying 'Node graph out of date, rebuilding...'. Just ignore this message, it means that it is setting up the pathfinding for NPCs.</p>
+    <p>On the game HUD, the top number in the middle shows the speed of your previous jump, and the bottom number shows your current speed.</p>
+
+    <h3 id="trouble">Troubleshooting</h3>
+    <p>If you launch the game and your sounds are slow, delayed or non-existent, restarting the game will normally fix it.</p>
+</div>
+
+<footer>
+    <hr>
+    <h5>Copyright &copy Jamie Scaife 2017 | <a href="/contact/">Contact Information</a></h5>
+</footer>
+
+</body>
+
+</html>
