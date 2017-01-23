@@ -6,3 +6,4 @@
 - SubGraph OS review
 - Advanced AdBlockPlus filter syntax
 - Local network device check script
+- RSS feed
