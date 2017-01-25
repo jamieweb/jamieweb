@@ -5,5 +5,6 @@
 - TOR hidden service mirror
 - SubGraph OS review
 - Advanced AdBlockPlus filter syntax
+- Browsing with JavaScript disabled
 - Local network device check script
 - RSS feed
