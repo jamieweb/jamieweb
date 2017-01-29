@@ -9,3 +9,4 @@
 - Local network device check script
 - RSS feed
 - Flash/media block checker
+- "You are leaving JamieWeb" for outbound links
