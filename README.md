@@ -8,3 +8,4 @@
 - Browsing with JavaScript disabled
 - Local network device check script
 - RSS feed
+- Flash/media block checker
