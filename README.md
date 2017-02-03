@@ -4,10 +4,12 @@
 - Better mobile compatibility
 - TOR hidden service mirror
 - SubGraph OS review
-- Advanced AdBlockPlus filter syntax
-- Browsing with JavaScript disabled
-- Local network device check script
-- Flash/media block checker
 - "You are leaving JamieWeb" for outbound links
 - Ethereum donation address
-- Speedrun times in /other
+
+- Flash/media block checker
+- Advanced AdBlockPlus filter syntax  -  all 3 merged + work in progress
+- Browsing with JavaScript disabled
+
+- Local network device check script ✓
+- Speedrun times in /other ✓
