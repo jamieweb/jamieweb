@@ -7,9 +7,9 @@
     "You are leaving JamieWeb" for outbound links
     Ethereum donation address
 
-    Flash/media block checker -----------|
-    Advanced AdBlockPlus filter syntax --|--->  all 3 merged - work in progress
-    Browsing with JavaScript disabled ---|
+    ✓ Flash/media block checker --------------------------------|
+    ✓ Advanced AdBlockPlus filter syntax -----------------------|--->  all 3 merged - work in progress
+    Browsing with JavaScript disabled (will be in blog post) ---|
 
     ✓ Local network device check script
     ✓ Speedrun times in /other
