@@ -3,11 +3,11 @@
 ## Site To-do/Ideas List:
     Better mobile compatibility
     "You are leaving JamieWeb" for outbound links
-    Ethereum donation address
     
-    SubGraph OS review - work in progress 7/Feb/2017
+    SubGraph OS overview - almost done 16/Feb/2017
 
-    ✓ TOR hidden service mirror
+    ✓ Ethereum donation address
+    ✓ TOR hidden service mirror - jamiewebgbelqfno.onion
     ✓ Flash/media block checker
     ✓ Advanced AdBlockPlus filter syntax
     ✓ Browsing with JavaScript disabled (will be in blog post)
