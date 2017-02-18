@@ -62,6 +62,7 @@ div.menuitem h1 {
 }
 
 div.menuitem pre {
+    font-size: 10px;
     margin-top: 0px;
     margin-bottom: 28px;
 }
@@ -100,6 +101,12 @@ nav a:active {
 
 nav img {
     vertical-align: middle;
+}
+
+pre {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 pre a {
