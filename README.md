@@ -4,8 +4,7 @@
     Better mobile compatibility
     "You are leaving JamieWeb" for outbound links
     
-    SubGraph OS overview - almost done 16/Feb/2017
-
+    ✓ SubGraph OS overview
     ✓ Ethereum donation address
     ✓ TOR hidden service mirror - jamiewebgbelqfno.onion
     ✓ Flash/media block checker
