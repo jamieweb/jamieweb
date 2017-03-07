@@ -1,5 +1,7 @@
 # jamieweb
 
+My personal website, available at https://www.jamieweb.net or http://jamiewebgbelqfno.onion.
+
 ## Site To-do/Ideas List:
     Better mobile compatibility
       - All blog/projects/other pages should now have acceptable levels of mobile readability
