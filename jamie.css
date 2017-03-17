@@ -121,7 +121,9 @@ footer {
     width: 1000px;
     text-align: center;
 }
-
+* {
+    box-sizing: border-box;
+}
 .redlink a:link {
     color:black;
     text-decoration: none;
