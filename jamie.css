@@ -72,6 +72,7 @@ div.menuitem pre {
 nav {
     background-color: #59a2c7;
     overflow: hidden;
+	width: 110%;
 }
 
 nav a {
@@ -121,9 +122,7 @@ footer {
     width: 1000px;
     text-align: center;
 }
-* {
-    box-sizing: border-box;
-}
+
 .redlink a:link {
     color:black;
     text-decoration: none;
