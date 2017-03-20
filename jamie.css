@@ -235,6 +235,29 @@ footer {
     background: url(/images/gravity.gif);
 }
 
+.subgraphcheck {
+    display: none;
+}
+
+.subgraphlabel {
+    display: inline-block;
+    width: 720px;
+    height: 400px;
+    background: url(/blog/subgraph-os-overview/subgraph-vm-not-flashing.png);
+}
+
+.subgraphcheck:checked + .subgraphlabel {
+    background: url(/blog/subgraph-os-overview/subgraph-vm-flashing.gif);
+}
+
+.subgraph-img-1 {
+    padding-right: 17px;
+}
+
+.subgraph-img-2 {
+    padding-right: 18px;
+}
+
 div.body div.hours {
     width: 498px;
     display: inline-block;
