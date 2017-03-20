@@ -10,18 +10,6 @@
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
     <link href="/jamie.css" rel="stylesheet">
-    <style type="text/css">
-        .subgraphcheck { display: none; }
-        .subgraphlabel {
-            display: inline-block;
-            width: 720px;
-            height: 400px;
-            background: url(/blog/subgraph-os-overview/subgraph-vm-not-flashing.png);
-        }
-        .subgraphcheck:checked + .subgraphlabel {
-            background: url(/blog/subgraph-os-overview/subgraph-vm-flashing.gif);
-        }
-    </style>
 </head>
 
 <body>
@@ -118,24 +106,24 @@
     <p>Upon booting from USB, you have the option to boot a live version of Subgraph or install from fresh. You can choose between a graphical installer or text-based installer. I chose the graphical one.</p>
     <center><img width="1000px" src="/blog/subgraph-os-overview/subgraph-install-01.png"></center>
     <p>Next are the language and keyboard selection screens:</p>
-    <center><img style="padding-right:17px" width="322px" src="/blog/subgraph-os-overview/subgraph-install-02.png"><img width="322px" style="padding-right:17px" src="/blog/subgraph-os-overview/subgraph-install-03.png"><img width="320px" src="/blog/subgraph-os-overview/subgraph-install-04.png"></center>
+    <center><img class="subgraph-img-1" width="322px" src="/blog/subgraph-os-overview/subgraph-install-02.png"><img width="322px" class="subgraph-img-1" src="/blog/subgraph-os-overview/subgraph-install-03.png"><img width="320px" src="/blog/subgraph-os-overview/subgraph-install-04.png"></center>
     <p>Now you must set up a password for the Subgraph user account. The default user account in Subgraph is "user" (/home/user/).</p>
     <center><img src="/blog/subgraph-os-overview/subgraph-install-05.png"></center>
     <p>Partitioning is next. Subgraph has mandatory full-disk encryption (FDE), and uses logical volume management (LVM) by default.</p>
     <p>The Subgraph installer will start to overwrite your drive with random data. This is a security feature to erase all remnants of a previous operating system or files. On a 120 GB SSD, it took about 1 hour. If you do not want to perform the full disk erasure, you can press cancel and the installation will continue without a problem.</p>
-    <center><img style="padding-right:18px" width="491px" src="/blog/subgraph-os-overview/subgraph-install-06.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-install-07.png"></center>
+    <center><img class="subgraph-img-2" width="491px" src="/blog/subgraph-os-overview/subgraph-install-06.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-install-07.png"></center>
     <p>Now you have to choose a password for the FDE. You will be prompted for this password whenever booting in Subgraph.</p>
     <center><img src="/blog/subgraph-os-overview/subgraph-install-08.png"></center>
     <p>Now you have a chance to perform more advanced partition management operations. I once used this partition manager to set up a dual boot of Lubuntu and Subgraph (Lubuntu installed first), and it worked very well. At first, Subgraph did not appear as an option in GRUB. This is because Lubuntu was installed in UEFI mode and Subgraph was installed in legacy mode. In order to fix this, I temporarily changed back to UEFI boot in my BIOS, booted into Lubuntu and reconfigured GRUB using "sudo update-grub".</p>
     <center><img src="/blog/subgraph-os-overview/subgraph-install-09.png"></center>
     <p>Subgraph will now install:</p>
-    <center><img style="padding-right:18px" width="491px" src="/blog/subgraph-os-overview/subgraph-install-10.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-install-11.png"></center>
+    <center><img class="subgraph-img-2" width="491px" src="/blog/subgraph-os-overview/subgraph-install-10.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-install-11.png"></center>
     <p>Select a device to install GRUB on. This is where the installer will fail if you are in UEFI mode.</p>
-    <center><img style="padding-right:18px" width="491px" src="/blog/subgraph-os-overview/subgraph-install-12.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-install-13.png"></center>
+    <center><img class="subgraph-img-2" width="491px" src="/blog/subgraph-os-overview/subgraph-install-12.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-install-13.png"></center>
     <p>Subgraph is now installed!</p>
     <center><img src="/blog/subgraph-os-overview/subgraph-install-14.png"></center>
     <p>Entering the FDE password:</p>
-    <center><img style="padding-right:18px" width="491px" src="/blog/subgraph-os-overview/subgraph-install-15.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-install-16.png"></center>
+    <center><img class="subgraph-img-2" width="491px" src="/blog/subgraph-os-overview/subgraph-install-15.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-install-16.png"></center>
 
     <h2 id="usage">Usage</h2>
     <p>The classic Gnome 3 launcher is present in Subgraph:</p>
@@ -160,7 +148,7 @@
     <center><input type="checkbox" class="subgraphcheck" id="subgraph-vm-flashing">
     <label class="subgraphlabel" for="subgraph-vm-flashing"></label></center>
     <p>In order to get to a desktop, you must switch to a different screen and run startx again. This is easier said than done due to another problem. Switching to tty2 (using Alt+F2 in VirtualBox) is very difficult due to the fact that it does not remove the flashing. Instead of the screen flashing between tty1 and blackness, it flashes between tty1 and tty2 (with the login prompt). The only way that I could find to get around this is to repeatedly switch between various screens. Keep flicking between tty2 and tty3, sometimes for several minutes, and perhaps hold down Alt+F2 for a few seconds. Eventually, you'll get to a solid login prompt with no flashing.</p>
-    <center><img style="padding-right:18px" width="491px" src="/blog/subgraph-os-overview/subgraph-login-prompt.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-logged-in.png"></center>
+    <center><img class="subgraph-img-2" width="491px" src="/blog/subgraph-os-overview/subgraph-login-prompt.png"><img width="491px" src="/blog/subgraph-os-overview/subgraph-logged-in.png"></center>
     <p>Now you can run startx in order to get to a desktop. I tried stopping the existing gdm3 and x11 services, however I could not get any output from them, not even the status. You must run startx as root as it will fail as a normal user with permission errors. The Gnome 3 desktop will load successfully at a default resolution of 1024x768.</p>
     <center><img width="1000px" src="/blog/subgraph-os-overview/subgraph-vm-desktop.png"></center>
     <p>The basic desktop features work without a problem, including opening the launcher, menu items, file manager, etc, but opening any other applications will cause the system to crash irrecoverably. The desktop freezes, leaving only the cursor working. As far as I can tell, it is an infinite freeze. I left it going for over an hour and the clock still displayed the time at which the crash occured. I have not found a way to recover the system from this crash. Alt+F4, switching workspace, switching screen, etc, do not work. It seems to only be applications that start in an Oz sandbox that cause this crash. Unfortunately, upgrading the system didn't help this issue at all, even though there were hundreds of packages to update.</p>
