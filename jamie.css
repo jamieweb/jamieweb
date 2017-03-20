@@ -179,3 +179,17 @@ footer {
 .gravityradio:checked + .gravitylabel {
     background: url(/images/gravity.gif);
 }
+
+div.body div.hours {
+    width: 498px;
+    display: inline-block;
+}
+
+div.body div.hours p {
+    font-size: 28px;
+    padding-left: 85px;
+}
+
+div.body div.hours span {
+    font-size: 14px;
+}
