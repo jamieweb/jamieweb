@@ -183,6 +183,14 @@ footer {
     margin-bottom: 0px;
 }
 
+.two-mar-bottom {
+    margin-bottom: 2px;
+}
+
+.two-mar-left {
+    margin-left: 2px;
+}
+
 .two-no-mar {
     margin-top: 2px;
     margin-bottom: 0px;
@@ -191,6 +199,10 @@ footer {
 .info {
     margin-top: 0px;
     margin-bottom: 2px;
+}
+
+.stats-padding-top {
+    padding-top: 20px;
 }
 
 .gravityradio {
