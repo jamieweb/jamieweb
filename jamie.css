@@ -80,6 +80,17 @@ div.menuitem pre {
     margin-bottom: 28px;
 }
 
+div.ewcbt-redgreen {
+    height: 334px;
+    width: 350px;
+    float: left;
+}
+
+div.ewcbt-info {
+    width: 650px;
+    float: right;
+}
+
 div.hours {
     width: 498px;
     display: inline-block;
@@ -236,6 +247,16 @@ footer {
 
 .stats-padding-top {
     padding-top: 20px;
+}
+
+.ewcbt-mar {
+    margin: 15px;
+}
+
+.ewcbt-shift {
+    position: relative;
+    bottom: 319px;
+    left: 15px;
 }
 
 .gravityradio {
