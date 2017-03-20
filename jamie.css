@@ -146,6 +146,10 @@ pre a {
     font-family: monospace;
 }
 
+pre.arial {
+    font-family: arial;
+}
+
 a.onionlink {
     font-family: monospace;
     padding: 3.5px;
