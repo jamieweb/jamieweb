@@ -80,6 +80,20 @@ div.menuitem pre {
     margin-bottom: 28px;
 }
 
+div.hours {
+    width: 498px;
+    display: inline-block;
+}
+
+div.hours p {
+    font-size: 28px;
+    padding-left: 85px;
+}
+
+div.hours span {
+    font-size: 14px;
+}
+
 div.ext-l-1 {
     width: 500px;
     float: left;
@@ -260,18 +274,4 @@ footer {
 
 .subgraph-img-2 {
     padding-right: 18px;
-}
-
-div.body div.hours {
-    width: 498px;
-    display: inline-block;
-}
-
-div.body div.hours p {
-    font-size: 28px;
-    padding-left: 85px;
-}
-
-div.body div.hours span {
-    font-size: 14px;
 }
