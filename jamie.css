@@ -80,6 +80,26 @@ div.menuitem pre {
     margin-bottom: 28px;
 }
 
+div.ext-l-1 {
+    width: 500px;
+    float: left;
+}
+
+div.ext-r-1 {
+    width: 450px;
+    float: right;
+}
+
+div.ext-l-2 {
+    width: 775px;
+    float: left;
+}
+
+div.ext-r-2 {
+    width: 204px;
+    float: right;
+}
+
 nav {
     background-color: #59a2c7;
     overflow: hidden;
@@ -133,6 +153,10 @@ footer {
     text-align: center;
 }
 
+.clearboth {
+    clear: both;
+}
+
 .redlink a:link {
     color:black;
     text-decoration: none;
@@ -149,6 +173,10 @@ footer {
 
 .two-mar-top {
     margin-top: 2px;
+}
+
+.no-mar.top {
+    margin-top: 0px;
 }
 
 .no-mar-bottom {
