@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-color: #f8f8f8;
+    background-color: #f8f8f8;
     margin: 0px;
 }
 
@@ -163,4 +163,19 @@ footer {
 .info {
     margin-top: 0px;
     margin-bottom: 2px;
+}
+
+.gravityradio {
+    display: none;
+}
+
+.gravitylabel {
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    background: url(/images/identicon.png);
+}
+
+.gravityradio:checked + .gravitylabel {
+    background: url(/images/gravity.gif);
 }
