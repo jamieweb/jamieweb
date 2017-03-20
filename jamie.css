@@ -1,3 +1,9 @@
+@media (max-width: 1050px) {
+    nav {
+        width: 1050px;
+    }
+}
+
 html {
     overflow-y: scroll;
 }
