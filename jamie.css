@@ -146,6 +146,13 @@ pre a {
     font-family: monospace;
 }
 
+a.onionlink {
+    font-family: monospace;
+    padding: 3.5px;
+    background-color: #e0e0e0;
+    border: 1px solid #000000;
+}
+
 footer {
     clear: both;
     margin: 0 auto;
@@ -194,6 +201,14 @@ footer {
 .two-no-mar {
     margin-top: 2px;
     margin-bottom: 0px;
+}
+
+.intro-mar-top {
+    margin-top: 11px;
+}
+
+.sideitem-mar-bottom {
+    margin-bottom: 20px
 }
 
 .info {
