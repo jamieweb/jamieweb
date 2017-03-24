@@ -9,6 +9,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
       - Must fix homepage on mobile (currently quite unpredictable) - will be fixed along with new Blog Project Other buttons
     
     New design for Blog Project Other homepage buttons
+    Raspberry Pi Cluster blog post
     "You are leaving JamieWeb" for outbound links
     
     ✓ SubGraph OS overview
