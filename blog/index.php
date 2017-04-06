@@ -15,17 +15,7 @@
 
 <body>
 
-<nav>
-    <div class="navbar">
-        <h5>
-            <a href="/"><img src="/images/js-circle-48.png" width="3.5%" height="3.5%"></a>
-            <a href="/">Home</a>
-            <a href="/blog/" class="current">Blog</a>
-            <a href="/projects/">Projects</a>
-            <a href="/other/">Other</a>
-        </h5>
-    </div>
-</nav>
+<?php include "navbar.php" ?>
 
 <div class="body">
     <h1>Blog</h1>
@@ -79,10 +69,7 @@
     <p class="two-mar-top">Wednesday 10th June 2015</p>
 </div>
 
-<footer>
-    <hr>
-    <h5>Copyright &copy Jamie Scaife 2017 | <a href="/contact/">Contact Information</a></h5>
-</footer>
+<?php include "footer.php" ?>
 
 </body>
 
