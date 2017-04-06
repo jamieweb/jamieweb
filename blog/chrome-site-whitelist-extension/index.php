@@ -15,17 +15,7 @@
 
 <body>
 
-<nav>
-    <div class="navbar">
-        <h5>
-            <a href="/"><img src="/images/js-circle-48.png" width="3.5%" height="3.5%"></a>
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
-            <a href="/projects/">Projects</a>
-            <a href="/other/">Other</a>
-        </h5>
-    </div>
-</nav>
+<?php include "navbar.php" ?>
 
 <div class="body">
     <h1>Chrome Site Whitelist Extension</h1>
@@ -127,10 +117,7 @@ Various        jamiewebnet.net   -</pre>
     <p>I created the extension to help raise user confidence when searching on Google. Even though Google is usually pretty good at filtering out malicious websites and correcting typing errors, bad stuff still gets through. Now there is no need to manually verify every Google search result link clicked, as your manually whitelisted sites will show up in green!</p>
 </div>
 
-<footer>
-    <hr>
-    <h5>Copyright &copy Jamie Scaife 2017 | <a href="/contact/">Contact Information</a></h5>
-</footer>
+<?php include "footer.php" ?>
 
 </body>
 
