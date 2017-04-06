@@ -15,17 +15,7 @@
 
 <body>
 
-<nav>
-    <div class="navbar">
-        <h5>
-            <a href="/"><img src="/images/js-circle-48.png" width="3.5%" height="3.5%"></a>
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
-            <a href="/projects/">Projects</a>
-            <a href="/other/">Other</a>
-        </h5>
-    </div>
-</nav>
+<?php include "navbar.php" ?>
 
 <div class="body">
     <h1>Plainsight Enciphering Demo</h1>
@@ -96,10 +86,7 @@ The quick brown fox jumps over the lazy dog.</pre>
     <p>Plainsight is probably one of the best ways to send a secret message undetected. Especially if you're using a random Lipsum as your source text, since a Lipsum text is a completely normal thing to find on the internet and shouldn't raise any red flags.</p>
 </div>
 
-<footer>
-    <hr>
-    <h5>Copyright &copy Jamie Scaife 2017 | <a href="/contact/">Contact Information</a></h5>
-</footer>
+<?php include "footer.php" ?>
 
 </body>
 
