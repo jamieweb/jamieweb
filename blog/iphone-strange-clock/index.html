@@ -15,17 +15,7 @@
 
 <body>
 
-<nav>
-    <div class="navbar">
-        <h5>
-            <a href="/"><img src="/images/js-circle-48.png" width="3.5%" height="3.5%"></a>
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
-            <a href="/projects/">Projects</a>
-            <a href="/other/">Other</a>
-        </h5>
-    </div>
-</nav>
+<?php include "navbar.php" ?>
 
 <div class="body">
     <h1>iPhone 4 behaving strangely because of an incorrect system clock.</h1>
@@ -44,10 +34,7 @@
     <p>I have tried reproducing these issues by disabling the "Set Time Automatically" option and deliberately setting the system clock incorrectly, but the phone continued working as normal. Perhaps this behaviour was a result of a prolonged time with the system clock set incorrectly. At least now I have documented this, and it may be useful to someone else in the future.</p>
 </div>
 
-<footer>
-    <hr>
-    <h5>Copyright &copy Jamie Scaife 2017 | <a href="/contact/">Contact Information</a></h5>
-</footer>
+<?php include "footer.php" ?>
 
 </body>
 
