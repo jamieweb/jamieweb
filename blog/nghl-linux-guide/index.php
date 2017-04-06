@@ -15,17 +15,7 @@
 
 <body>
 
-<nav>
-    <div class="navbar">
-        <h5>
-            <a href="/"><img src="/images/js-circle-48.png" width="3.5%" height="3.5%"></a>
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
-            <a href="/projects/">Projects</a>
-            <a href="/other/">Other</a>
-        </h5>
-    </div>
-</nav>
+<?php include "navbar.php" ?>
 
 <div class="body">
     <h1>How to install 'New Gauge Half-Life' on Linux using WINE</h1>
@@ -215,10 +205,7 @@ bind "key" "+zoom"</pre>
     <p>Sometimes, bad nodegraphs will be generated for maps causing certain NPC related actions not to work properly. Examples of this include Barney opening the door in c1a2b (Office Complex, door to skip the freezer room and vents section), and the scientist opening the door in c3a2d (Lambda Complex, supply room before Xen teleporter). In order to fix this, simply delete the associated node graph files from /valve/maps/grpahs/ and they should be regenerated correctly next time the map is loaded.</p>
 </div>
 
-<footer>
-    <hr>
-    <h5>Copyright &copy Jamie Scaife 2017 | <a href="/contact/">Contact Information</a></h5>
-</footer>
+<?php include "footer.php" ?>
 
 </body>
 
