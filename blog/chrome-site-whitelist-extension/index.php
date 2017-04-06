@@ -21,32 +21,32 @@
     <h1>Chrome Site Whitelist Extension</h1>
     <hr>
     <p><b>Tuesday 7th March 2017</b></p>
-	<p>Please see the associated <a href="https://www.jamieweb.net/projects/chrome-site-whitelist-extension/">project page</a> for download and installation instructions. All code, version history and further information can be found on the <a href="https://github.com/JamieOnUbuntu/results-whitelist/"</a>GitHub repository</a>.</p>
+    <p>Please see the associated <a href="https://www.jamieweb.net/projects/chrome-site-whitelist-extension/">project page</a> for download and installation instructions. All code, version history and further information can be found on the <a href="https://github.com/JamieOnUbuntu/results-whitelist/"</a>GitHub repository</a>.</p>
     <center><p>-<b><u>The project is early in development so some features are not yet working properly or tested thoroughly.</u></b>-</p></center>
     <p>I recently starting developing a browser extension for Google Chrome. It allows the user to set a list of whitelisted sites that will then be highlighted in Google Search results. The extension icon also changes to green when you are currently browsing a whitelisted site.</p>
     <p>It is designed to be an anti-typosquatting tool and to highlight known trusted sites.</p>
-	<h2>What is typosquatting?</h2>
-	<p>Typosquatting is a form of phishing, and refers to the malicious registration of domain names that are similar to those of popular websites, with the intent to deceive users into visiting them.</p>
-	<p>Typosquatting relies on either one of two things: a user incorrectly typing a URL into the address bar, or a user only glancing at a URL before clicking it.</p>
+    <h2>What is typosquatting?</h2>
+    <p>Typosquatting is a form of phishing, and refers to the malicious registration of domain names that are similar to those of popular websites, with the intent to deceive users into visiting them.</p>
+    <p>Typosquatting relies on either one of two things: a user incorrectly typing a URL into the address bar, or a user only glancing at a URL before clicking it.</p>
     <p>Below are a few examples. At first glance they look like legitimate names, but when you look more closely you'll realise that they are phishing names. Use the find tool (Ctrl+F) to determine the true identity of the characters used in the names.</p>
-	<pre class="arial">googIe
+    <pre class="arial">googIe
 arnazon
 paypaI
 lndiegogo
 steamcomrnunity
 MlCROSOFT</pre>
-	<p>As you can see, there are many common combinations of letters that make for a good typosquat, such as replacing an "m" with "rn" or "nn", or replacing an "I" with a "l". Using a fixed-width font is a great way to counter this.</p>
-	<p>Another form of phishing domain is when subdomains are used. For example:</p>
-	<pre>www.google.com.example.com
+    <p>As you can see, there are many common combinations of letters that make for a good typosquat, such as replacing an "m" with "rn" or "nn", or replacing an "I" with a "l". Using a fixed-width font is a great way to counter this.</p>
+    <p>Another form of phishing domain is when subdomains are used. For example:</p>
+    <pre>www.google.com.example.com
 www.amazon.com.example.com
 steamcommunity.com.example.com</pre>
-	<p>To a less experienced user, these may look like the official sites. Instead, they are simply subdomains of a potentially malicious domain.</p>
-	<p>Phishing sites may attempt to be a complete clone of the official site, or simply collect account details. A false login form will be presented on the phishing site, the user enters their details, the site logs the entered details but also posts them to the official login form before redirecting the user to the official site. This is a perfect attack, since the phishing site has collected the user account details without raising any sort of suspicion from the user, and they are now browsing the official site like normal.</p>
-	<h2>Generating Phishing Domains</h2>
-	<p>A particularly interesting tool that I found on GitHub a while ago is <a href="https://github.com/elceef/dnstwist/">dnstwist</a> by elceef.</p>
-	<p>It takes your domain name and generates potential phishing domains, then checks whether they are registered or not. This is useful to help find any existing phishing domains that exist for your site, as well as to find domains to register to protect against typosquatting and phishing.</p>
-	<p>Example output (results condensed to 4 per type):</p>
-	<pre>jamie@box:~$ ./dnstwist.py jamieweb.net
+    <p>To a less experienced user, these may look like the official sites. Instead, they are simply subdomains of a potentially malicious domain.</p>
+    <p>Phishing sites may attempt to be a complete clone of the official site, or simply collect account details. A false login form will be presented on the phishing site, the user enters their details, the site logs the entered details but also posts them to the official login form before redirecting the user to the official site. This is a perfect attack, since the phishing site has collected the user account details without raising any sort of suspicion from the user, and they are now browsing the official site like normal.</p>
+    <h2>Generating Phishing Domains</h2>
+    <p>A particularly interesting tool that I found on GitHub a while ago is <a href="https://github.com/elceef/dnstwist/">dnstwist</a> by elceef.</p>
+    <p>It takes your domain name and generates potential phishing domains, then checks whether they are registered or not. This is useful to help find any existing phishing domains that exist for your site, as well as to find domains to register to protect against typosquatting and phishing.</p>
+    <p>Example output (results condensed to 4 per type):</p>
+    <pre>jamie@box:~$ ./dnstwist.py jamieweb.net
      _           _            _     _
   __| |_ __  ___| |___      _(_)___| |_
  / _` | '_ \/ __| __\ \ /\ / / / __| __|
@@ -104,9 +104,9 @@ Various        wwjamieweb.net    -
 Various        wwwjamieweb.net   -
 Various        www-jamieweb.net  -
 Various        jamiewebnet.net   -</pre>
-	<h2>Examples</h2>
-	<p>A real-world example of typosquatting is ARNAZON.com. When displayed in lower case (arnazon.com), it looks very similar to the official site name and would likely fool a user should they only glance at it. Arnazon.com is actually owned by Amazon and will simply redirect you to the official Amazon.com site should you visit it.</p>
-	<p>I personally do not like it when company-owned typosquat domains simply redirect transparently to the official website. I think that a better approach would be to redirect the user to an informational page informing them of their mistake and the dangers of typosquatting.</p>
+    <h2>Examples</h2>
+    <p>A real-world example of typosquatting is ARNAZON.com. When displayed in lower case (arnazon.com), it looks very similar to the official site name and would likely fool a user should they only glance at it. Arnazon.com is actually owned by Amazon and will simply redirect you to the official Amazon.com site should you visit it.</p>
+    <p>I personally do not like it when company-owned typosquat domains simply redirect transparently to the official website. I think that a better approach would be to redirect the user to an informational page informing them of their mistake and the dangers of typosquatting.</p>
     <h2>How does the extension work?</h2>
     <p>A content script is run whenever you load a Google search page. Only google.com and google.co.uk are available by default, however you can easily edit the manifest.json file to add your own prefered Google site. The content script fetches every anchor (hyperlink) tag (&lta&gt) on the page and checks each one individually using a for loop.</p>
     <center><img src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png"></center>
