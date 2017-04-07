@@ -86,6 +86,51 @@ div.menuitem pre {
     margin-bottom: 28px;
 }
 
+div.blog-group {
+    display: flex;
+}
+
+div.blog-year h1 {
+    position: relative;
+    top: 50%;
+    line-height: 0px;
+    margin: 0px;
+    padding-right: 8px;
+}
+
+div.blog-brace1 {
+    background-color: gray;
+    height: 5px;
+    width: 20px;
+    align-self: center;
+}
+
+div.blog-brace2 {
+    background-color: gray;
+    width: 5px;
+}
+
+div.blog-brace3 {
+    background-color: gray;
+    height: 5px;
+    width: 20px;
+}
+
+div.blog-brace4 {
+    height: calc(100% - 10px);
+    width: 20px;
+}
+
+div.blog-brace5 {
+    background-color: gray;
+    height: 5px;
+    width: 20px;
+}
+
+div.blog-list {
+    width: 100%;
+}
+
 div.ewcbt-redgreen {
     height: 334px;
     width: 350px;
