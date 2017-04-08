@@ -153,19 +153,19 @@ div.blog-year h1 {
 }
 
 div.blog-brace1 {
-    background-color: gray;
+    background-color: #4c4c4c;
     height: 5px;
     width: 20px;
     align-self: center;
 }
 
 div.blog-brace2 {
-    background-color: gray;
+    background-color: #4c4c4c;
     width: 5px;
 }
 
 div.blog-brace3 {
-    background-color: gray;
+    background-color: #4c4c4c;
     height: 5px;
     width: 20px;
 }
@@ -176,7 +176,7 @@ div.blog-brace4 {
 }
 
 div.blog-brace5 {
-    background-color: gray;
+    background-color: #4c4c4c;
     height: 5px;
     width: 20px;
 }
