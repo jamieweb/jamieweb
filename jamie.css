@@ -17,10 +17,64 @@ h1,h2,h3,h4,h5,h6,p,a,li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+    background-color: #59a2c7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
 div.navbar {
     margin: 0 auto;
+    height: 51px;
     width: 1000px;
+}
+
+div.navbar h5 {
+    margin: 0px;
+}
+
+div.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #59a2c7;
+}
+
+div.navbar li {
+    float: left;
+}
+
+div.navbar li a {
+    display: block;
+    padding: 16px;
+    padding-top: 17px;
+    padding-bottom: 19px
+}
+
+div.navbar li a:hover {
+    background-color: #4c4c4c;
+    text-decoration: underline;
+}
+
+div.navbar li.navlogo a {
     padding: 8px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+}
+
+div.navbar li.navlogo a:hover {
+    background-color: #59a2c7;
 }
 
 div.body {
@@ -174,42 +228,6 @@ div.ext-l-2 {
 div.ext-r-2 {
     width: 204px;
     float: right;
-}
-
-nav {
-    background-color: #59a2c7;
-    overflow: hidden;
-}
-
-nav a {
-    padding-right: 23px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-nav a.current {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-nav h5 {
-    margin: 0px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-nav a:visited {
-    text-decoration: none;
-}
-
-nav a:active {
-    text-decoration: underline;
-}
-
-nav img {
-    vertical-align: middle;
 }
 
 pre {
