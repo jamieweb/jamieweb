@@ -14,7 +14,6 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Raspberry Pi Cluster blog post
     
     New site-wide font?
-    FontAwesome?
     "You are leaving JamieWeb" for outbound links?
     
     ✓ SubGraph OS overview
