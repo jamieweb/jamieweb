@@ -38,8 +38,8 @@
             <p class="two-no-mar"><b>An overview of Subgraph OS: Adversary Resistant Computing.</b></p>
             <p class="two-mar-top">Tuesday 21st February 2017</p>
 
-            <h3 class="no-mar-bottom"><a href="/blog/tor-hidden-service">TOR Hidden Service Mirror</a></h3>
-            <p class="two-no-mar"><b>Setting up a TOR Hidden Service mirror of my site.</b></p>
+            <h3 class="no-mar-bottom"><a href="/blog/tor-hidden-service">TOR Hidden Service</a></h3>
+            <p class="two-no-mar"><b>Setting up a TOR Hidden Service for my site.</b></p>
             <p class="two-mar-top">Sunday 12th February 2017</p>
 
             <h3 class="no-mar-bottom"><a href="/blog/block-exploitable-content">Blocking Exloitable Content</a></h3>
