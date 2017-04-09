@@ -32,7 +32,7 @@
             <h5><a href="/other/">Other</a></h5>
                 <div class="dropdown-content">
                     <h4><a href="/downloads/">Downloads</a>
-                    <a href="/checksums/">Checksums</a>
+                    <a href="/other/checksums/">Checksums</a>
                     <a href="/other/askin-art-gallery/">ASKIN Art Gallery</a>
                     <a href="/other/speedrun-times/">Speedrun Times</a>
                     <a href="/other/game-tracker/">Game Tracker</a>
