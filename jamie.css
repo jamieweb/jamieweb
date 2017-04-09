@@ -26,10 +26,6 @@ nav a {
     color: #ffffff;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
 nav a:visited {
     text-decoration: none;
 }
@@ -70,11 +66,34 @@ div.navbar li a:hover {
 div.navbar li.navlogo a {
     padding: 8px;
     padding-left: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 
 div.navbar li.navlogo a:hover {
     background-color: #59a2c7;
+}
+
+div.navbar div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e9e9e9;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+div.navbar div.dropdown-content a {
+    color: #000000;
+    padding: 16px;
+}
+
+div.navbar div.dropdown-content a:hover {
+    color: #ffffff;
+    text-decoration: none
+}
+
+div.navbar li.dropdown:hover div.dropdown-content {
+    display: block;
 }
 
 div.body {
