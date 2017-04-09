@@ -52,7 +52,7 @@
         </div>
         <div class="featured">
             <a href="/blog/tor-hidden-service/">
-                <h3 class="no-mar-bottom">TOR Hidden Service Mirror</h3>
+                <h3 class="no-mar-bottom">TOR Hidden Service</h3>
                 <p class="two-no-mar"><b>Setting up a TOR hidden service.</b></p>
                 <p class="two-mar-top">Sunday 12th February 2017</p>
             </a>
@@ -168,8 +168,8 @@ O:::::::OOO:::::::O
             </a>
 
             <a href="/blog/tor-hidden-service">
-                <h4 class="no-mar-bottom">TOR Hidden Service Mirror</h4>
-                <h5 class="two-no-mar"><b>Setting up a TOR Hidden Service mirror of my site.</b></h5>
+                <h4 class="no-mar-bottom">TOR Hidden Service</h4>
+                <h5 class="two-no-mar"><b>Setting up a TOR Hidden Service for my site.</b></h5>
                 <h5 class="two-mar-top">Sunday 12th February 2017</h5>
             </a>
             <a href="/blog/block-exploitable-content">
