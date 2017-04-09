@@ -21,7 +21,7 @@
     <h1>TOR Hidden Service Mirror</h1>
     <hr>
     <p><b>Sunday 12th February 2017</b></p>
-    <p>Last night I launched the TOR Hidden Service mirror of my site, available at <a href="http://jamiewebgbelqfno.onion">jamiewebgbelqfno.onion</a>.</p>
+    <p>Last night I launched a TOR Hidden Service for my site, available at <a href="http://jamiewebgbelqfno.onion">jamiewebgbelqfno.onion</a>.</p>
     <p>It is an exact mirror of the main surface web site, there is no additional or removed content. My own anonymity is definitely not the purpose of having this mirror, it's just for demonstrative/research purposes.</p>
     <center><img width="1000px" src="/images/tor-browser-jamieweb.png"></center>
     <p>I generated the vanity onion address using <a href="https://github.com/katmagic/Shallot">Shallot</a> on my Raspberry Pi cluster. I ran the program on all nodes 24/7 for 35 days, and achieved an average hashrate of 1.25 MH/s. I was searching for URLs that matched the following regex pattern:</p>
