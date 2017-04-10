@@ -55,7 +55,7 @@ div.navbar li a {
     display: block;
     padding: 16px;
     padding-top: 17px;
-    padding-bottom: 19px
+    padding-bottom: 18px
 }
 
 div.navbar li a:hover {
@@ -66,7 +66,7 @@ div.navbar li a:hover {
 div.navbar li.navlogo a {
     padding: 8px;
     padding-left: 0px;
-    padding-bottom: 4px;
+    padding-bottom: 3px;
 }
 
 div.navbar li.navlogo a:hover {
