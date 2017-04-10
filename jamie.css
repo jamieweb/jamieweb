@@ -282,24 +282,24 @@ footer {
 }
 
 .redlink a:link {
-    color:black;
+    color: #000000;
     text-decoration: none;
 }
 
 .redlink a:visited {
-    color:black;
+    color: #000000;
     text-decoration: none;
 }
 
 .redlink a:hover {
-    color:red;
+    color: #ff0000;
 }
 
 .two-mar-top {
     margin-top: 2px;
 }
 
-.no-mar.top {
+.no-mar-top {
     margin-top: 0px;
 }
 
