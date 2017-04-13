@@ -38,6 +38,9 @@
 
     <h3 class="no-mar-bottom"><a href="/other/chrome-extension-ids/">Chrome Extension IDs</a></h3>
     <p class="two-mar-top"><b>IDs and links of the legitimate versions of popular Chrome extensions.</b></p>
+
+    <h3 class="no-mar-bottom"><a href="/pastes/">Pastes</a></h3>
+    <p class="two-mar-top"><b>Plain text snippets.</b></p>
 </div>
 
 <?php include "footer.php" ?>
