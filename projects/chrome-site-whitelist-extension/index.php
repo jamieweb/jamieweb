@@ -21,7 +21,7 @@
     <h1>Chrome Site Whitelist Extension</h1>
     <hr>
     <center><p>-<b><u>Currently early in development and is not yet fully working or tested thoroughly.</u></b>-</p></center>
-    <p>A Google Chrome extension that highlights sites in Google search results that have been manually whitelisted by the user.</p>
+    <p>A Google Chrome extension that highlights sites on Google/Reddit that have been manually whitelisted by the user.</p>
     <center><img src="/projects/chrome-site-whitelist-extension/extension-manager.png"></center>
     <p>Designed to be an anti-typosquatting tool and to highlight known trusted sites.</p>
     <center><img src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png"></center>
@@ -62,7 +62,7 @@ www.reddit.com</pre>
     <div class="ext-r-2">
         <center><img src="/projects/chrome-site-whitelist-extension/extension-options.png"></center><br>
     </div>
-    <p class="clearboth">Click save. Now when you perform a Google search, search results matching those that you defined in the configuration will be highlighed in green. The extension icon at the top right will also change to green when you are currently browsing a whitelisted site.</p>
+    <p class="clearboth">Click save. Now when you perform a Google search or browse Reddit, links matching those that you defined in the configuration will be highlighed in green. The extension icon at the top right will also change to green when you are currently browsing a whitelisted site.</p>
 </div>
 
 <?php include "footer.php" ?>
