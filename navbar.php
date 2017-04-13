@@ -36,7 +36,8 @@
                     <a href="/other/askin-art-gallery/">ASKIN Art Gallery</a>
                     <a href="/other/speedrun-times/">Speedrun Times</a>
                     <a href="/other/game-tracker/">Game Tracker</a>
-                    <a href="/other/chrome-extension-ids/">Chrome Extension IDs</a></h4>
+                    <a href="/other/chrome-extension-ids/">Chrome Extension IDs</a>
+                    <a href="/pastes/">Pastes</a></h4>
                 </div>
             </li>
         </ul>
