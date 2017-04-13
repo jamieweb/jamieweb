@@ -28,7 +28,7 @@
     <p class="two-mar-top"><b>Test whether exploitable web content is blocked in your web browser.</a></p>
 
     <h3 class="no-mar-bottom"><a href="/projects/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a></h3>
-    <p class="two-mar-top"><b>Chrome extension that highlights sites on Google/Reddit that have been whitelisted by the user.</b></p>
+    <p class="two-mar-top"><b>Chrome extension that highlights links on Google/Reddit that have been whitelisted by the user.</b></p>
 </div>
 
 <?php include "footer.php" ?>
