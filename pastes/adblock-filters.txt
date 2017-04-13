@@ -1,0 +1,5 @@
+https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+https://easylist-downloads.adblockplus.org/easylist.txt
+https://easylist-downloads.adblockplus.org/malwaredomains_full.txt
+https://easylist-downloads.adblockplus.org/fanboy-social.txt
+https://easylist-downloads.adblockplus.org/easyprivacy.txt
