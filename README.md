@@ -10,7 +10,6 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     
     New design for Blog Project Other homepage buttons
     Grid layout for /project and /other
-    AdblockPlus default + custom filters
     Raspberry Pi Cluster blog post
     
     New site-wide font?
@@ -24,3 +23,4 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     ✓ Browsing with JavaScript disabled (will be in blog post)
     ✓ Local network device check script
     ✓ Speedrun times in /other
+    ✓ AdblockPlus default + custom filters
