@@ -204,6 +204,37 @@ div.blog-list {
     width: 100%;
 }
 
+div.iconparent {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+div.iconimg {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+    height: 80px;
+    width: 80px;
+}
+
+div.iconimg img {
+    height: 80px;
+    width: 80px;
+}
+
+div.iconlist {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 3.5px;
+}
+
+div.iconlist p {
+    padding: 3.5px;
+    background-color: #e0e0e0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
 div.ewcbt-redgreen {
     height: 334px;
     width: 350px;
