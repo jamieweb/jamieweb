@@ -4,17 +4,20 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
 
 ## Site To-do/Ideas List:
     Better mobile compatibility
-      - All blog/projects/other pages should now have acceptable levels of mobile readability
+    ✓ - All blog/projects/other pages should now have acceptable levels of mobile readability
     ✓ - Must fix navbar on mobile (doesn't extent to full page width)
       - Must fix homepage on mobile (currently quite unpredictable) - will be fixed along with new Blog Project Other buttons
     
     New design for Blog Project Other homepage buttons
-    Grid layout for /project and /other
+    Grid/list layout for /project
     Raspberry Pi Cluster blog post
+    Python & C++ - cycles per second - "tickrate"
+    Control channel over IRC
     
     New site-wide font?
     "You are leaving JamieWeb" for outbound links?
     
+    ✓ Grid layout for /other (ended up as a list with icons)
     ✓ SubGraph OS overview
     ✓ Ethereum donation address
     ✓ TOR hidden service mirror - jamiewebgbelqfno.onion
