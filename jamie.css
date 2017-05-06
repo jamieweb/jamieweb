@@ -294,6 +294,10 @@ pre.arial {
     font-family: arial;
 }
 
+pre.irc {
+    font-size: 20px;
+}
+
 a.onionlink {
     font-family: monospace;
     padding: 3.5px;
