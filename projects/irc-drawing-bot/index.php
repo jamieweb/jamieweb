@@ -9,7 +9,7 @@
     <meta name="description" content="IRC Drawing Bot">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
-    <link href="jamie.css" rel="stylesheet">
+    <link href="/jamie.css" rel="stylesheet">
     <link href="https://www.jamieweb.net/projects/irc-drawing-bot/" rel="canonical">
 </head>
 
