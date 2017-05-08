@@ -20,11 +20,11 @@
 <div class="body">
     <h1>JamieWeb IRC</h1>
     <hr>
-    <p>Connect to the JamieWeb IRC server using the details below:</p>
-    <pre class="irc">Host: <b>irc.jamieweb.net</b>
+    <p>The easiest way to connect to the JamieWeb IRC server is using the <a href="https://kiwiirc.com/client?settings=d040e0e7958af28d5f6ee4380304e7d1">KiwiIRC WebIRC client</a>.</p>
+    <p>Otherwise, full details are available below:</p>
+    <pre>Host: <b>irc.jamieweb.net</b>
 Port: <b>7000</b>
 SSL Connections Only</pre>
-    <p>Or connect in your browser using the <a href="https://kiwiirc.com/client?settings=d040e0e7958af28d5f6ee4380304e7d1">KiwiIRC WebIRC client</a>.</p>
     <p>If you're using Irssi, use the following command:</p>
     <pre>/connect -ssl irc.jamieweb.net 7000 stuff &lt;nickname&gt;</pre>
     <p>Example:</p>
