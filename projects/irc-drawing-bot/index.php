@@ -21,7 +21,9 @@
     <h1>IRC Drawing Bot</h1>
     <hr><br>
 <center><table class="irc">
-<?php set_time_limit(1); echo "<tr><td bgcolor=\"" . str_replace(":", "\"></td></tr>\n<tr><td bgcolor=\"", str_replace(" ", "\"></td><td bgcolor=\"", str_replace("\n", "", preg_replace("/[^A-Za-z0-9: ]/", "", file_get_contents("/projects/irc-drawing-bot/config.txt"))))) . "\"></td></tr>\n"; ?>
+<?php set_time_limit(1);
+echo "<tr><td bgcolor=\"" . str_replace(":", "\"></td></tr>\n<tr><td bgcolor=\"", str_replace(" ", "\"></td><td bgcolor=\"", str_replace("\n", "", preg_replace("/[^A-Za-z0-9: ]/", "", file_get_contents("config.txt"))))) . "\"></td></tr>\n";
+?>
 </table></center>
     <h2>What is this?</h2>
     <p>The IRC Drawing Bot is an <a href="https://simple.wikipedia.org/wiki/Internet_Relay_Chat">Internet Relay Chat</a> bot that <b>you</b> can control, allowing you to paint pixels on the canvas above.</p>
