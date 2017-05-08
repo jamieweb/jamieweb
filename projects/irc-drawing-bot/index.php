@@ -5,7 +5,7 @@
 <!--Legal Information at https://www.jamieweb.net/contact-->
 
 <head>
-    <title>JamieWeb IRC</title>
+    <title>IRC Drawing Bot</title>
     <meta name="description" content="IRC Drawing Bot">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
