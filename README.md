@@ -12,11 +12,12 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Grid/list layout for /project
     Raspberry Pi Cluster blog post
     Python & C++ - cycles per second - "tickrate"
-    Control channel over IRC
+    IRC drawing bot blog post (work in progress)
     
     New site-wide font?
     "You are leaving JamieWeb" for outbound links?
     
+    ✓ Control channel over IRC
     ✓ Grid layout for /other (ended up as a list with icons)
     ✓ SubGraph OS overview
     ✓ Ethereum donation address
