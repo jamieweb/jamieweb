@@ -298,6 +298,12 @@ pre.irc {
     font-size: 20px;
 }
 
+table.irc tr td {
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+}
+
 a.onionlink {
     font-family: monospace;
     padding: 3.5px;
