@@ -29,6 +29,9 @@
 
     <h3 class="no-mar-bottom"><a href="/projects/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a></h3>
     <p class="two-mar-top"><b>Chrome extension that highlights links on Google/Reddit that have been whitelisted by the user.</b></p>
+
+    <h3 class="no-mar-bottom"><a href="/projects/irc-drawing-bot/">IRC Drawing Bot</a></h3>
+    <p class="two-mar-top"><b>An Internet Relay Chat bot that you can control into order to paint pixels on a canvas.</b></p>
 </div>
 
 <?php include "footer.php" ?>
