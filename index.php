@@ -44,17 +44,16 @@
             </a>
         </div>
         <div class="featured">
+            <a href="/projects/irc-drawing-bot/">
+                <h3 class="no-mar-bottom">IRC Drawing Bot</h3>
+                <p class="two-no-mar"><b>Paint pixels on a canvas by controlling<br/>an Internet Relay Chat bot.</b></p>
+            </a>
+        </div>
+        <div class="featured">
             <a href="/blog/subgraph-os-overview/">
                 <h3 class="no-mar-bottom">Subgraph OS Overview</h3>
                 <p class="two-no-mar"><b>Adversary resistant computing.</b></p>
                 <p class="two-mar-top">Tuesday 21st February 2017</p>
-            </a>
-        </div>
-        <div class="featured">
-            <a href="/blog/tor-hidden-service/">
-                <h3 class="no-mar-bottom">TOR Hidden Service</h3>
-                <p class="two-no-mar"><b>Setting up a TOR hidden service.</b></p>
-                <p class="two-mar-top">Sunday 12th February 2017</p>
             </a>
         </div>
         <hr>
