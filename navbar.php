@@ -25,7 +25,8 @@
                 <div class="dropdown-content">
                     <h4><a href="/projects/computing-stats/">Computing Stats</a>
                     <a href="/projects/block-exploitable-content/">Exploitable Web Content</a>
-                    <a href="/projects/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a></h4>
+                    <a href="/projects/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a>
+                    <a href="/projects/irc-drawing-bot/">IRC Drawing Bot</a></h4>
                 </div>
             </li>
             <li class="dropdown">
