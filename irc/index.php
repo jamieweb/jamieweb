@@ -20,7 +20,7 @@
 <div class="body">
     <h1>JamieWeb IRC</h1>
     <hr>
-    <p>The easiest way to connect to the JamieWeb IRC server is using the <a href="https://kiwiirc.com/client?settings=d040e0e7958af28d5f6ee4380304e7d1">KiwiIRC WebIRC client</a>.</p>
+    <p>The easiest way to connect to the JamieWeb IRC server is using the <a href="https://kiwiirc.com/client?settings=d040e0e7958af28d5f6ee4380304e7d1" target="_blank">KiwiIRC WebIRC client</a>.</p>
     <p>Otherwise, full details are available below:</p>
     <pre>Host: <b>irc.jamieweb.net</b>
 Port: <b>7000</b>
