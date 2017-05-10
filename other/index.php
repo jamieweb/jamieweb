@@ -47,7 +47,7 @@
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/other/askin-art-gallery/">ASKIN Art Gallery</a></h3>
-            <p class="two-mar-top"><b>Original works by Christopher Askin.</b></p>
+            <p class="two-mar-top"><b>Artwork by Christopher Askin.</b></p>
         </div>
     </div>
 
