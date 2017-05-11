@@ -18,7 +18,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>Original works by Christopher Askin</h1>
+    <h1>Artwork by Christopher Askin</h1>
     <hr>
     <center>
     <img src="/images/mr-box.png">
