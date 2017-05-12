@@ -5,7 +5,7 @@
 <!--Legal Information at https://www.jamieweb.net/contact-->
 
 <head>
-    <title>Jamie Scaife</title>
+    <title>JamieWeb</title>
     <meta name="description" content="Website of Jamie Scaife (JamieOnUbuntu).">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
