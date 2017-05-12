@@ -28,7 +28,7 @@
     <p>This is not a fancy art project, it is designed to demonstrate how IRC can be used to securely control a web page. The collaborative pixel canvas is inspired from <a href="https://www.reddit.com/r/place" target="_blank">Reddit's r/place</a>.</p>
     <p>In order to paint your own pixels, you must connect to the JamieWeb IRC server. Details for this are available <a href="/irc/" target="_blank">here</a>.</p>
     <h2>How do I control it?</h2>
-    <p>Once you are connected to the IRC server, join the channel #bot using the command "/join bot". Just enter "/join bot" into the chat input of your IRC client.</p>
+    <p>Once you are connected to the IRC server, join the channel #general using the command "/join general". Just enter "/join general" into the chat input of your IRC client.</p>
     <p>The bot is controlled using commands, all of which must be prefixed with an exclamation mark (!). All available commands are listed below:</p>
     <pre><b>!hello</b> - Make sure that the bot is responding. The bot should reply with "Hello!".
 <b>!help</b> - Displays a link back to this page and the blog post for technical details.
