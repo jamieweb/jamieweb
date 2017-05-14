@@ -155,26 +155,26 @@ O:::::::OOO:::::::O
         <hr>
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
-            <a href="/blog/chrome-site-whitelist-extension">
+            <a href="/blog/irc-drawing-bot/">
+                <h4 class="no-mar-bottom">Creating the IRC Drawing Bot</h4>
+                <h5 class="two-no-mar"><b>Thought process and development of the IRC Drawing Bot.</b></h5>
+                <h5 class="two-mar-top">Sunday 14th May 2017</h5>
+            </a>
+            <a href="/blog/chrome-site-whitelist-extension/">
                 <h4 class="no-mar-bottom">Chrome Site Whitelist Extension</h4>
                 <h5 class="two-no-mar"><b>Discussing the Chrome extension that I am developing.</b></h5>
                 <h5 class="two-mar-top">Tuesday 7th March 2017</h5>
             </a>
-            <a href="/blog/subgraph-os-overview">
+            <a href="/blog/subgraph-os-overview/">
                 <h4 class="no-mar-bottom">Subgraph OS Overview</h4>
                 <h5 class="two-no-mar"><b>An overview of Subgraph OS: Adversary Resistant Computing.</b></h5>
                 <h5 class="two-mar-top">Tuesday 21st February 2017</h5>
             </a>
 
-            <a href="/blog/tor-hidden-service">
+            <a href="/blog/tor-hidden-service/">
                 <h4 class="no-mar-bottom">TOR Hidden Service</h4>
                 <h5 class="two-no-mar"><b>Setting up a TOR Hidden Service for my site.</b></h5>
                 <h5 class="two-mar-top">Sunday 12th February 2017</h5>
-            </a>
-            <a href="/blog/block-exploitable-content">
-                <h4 class="no-mar-bottom">Blocking Exploitable Content</h4>
-                <h5 class="two-no-mar"><b>Blocking exploitable web content in your browser.</b></h5>
-                <h5 class="two-mar-top">Tuesday 7th February 2017</h5>
             </a>
         </div>
     </div>
