@@ -30,27 +30,31 @@
             <div class="blog-brace5"></div>
         </div>
         <div class="blog-list">
-            <h3 class="no-mar-bottom"><a href="/blog/chrome-site-whitelist-extension">Chrome Site Whitelist Extension</a></h3>
+            <h3 class="no-mar-bottom"><a href="/blog/irc-drawing-bot/">Creating the IRC Drawing Bot</a></h3>
+            <p class="two-no-mar"><b>Thought process and development of the IRC Drawing Bot.</b></p>
+            <p class="two-mar-top">Sunday 14th May 2017</p>
+
+            <h3 class="no-mar-bottom"><a href="/blog/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a></h3>
             <p class="two-no-mar"><b>Discussing the Chrome extension that I am developing.</b></p>
             <p class="two-mar-top">Tuesday 7th March 2017</p>
 
-            <h3 class="no-mar-bottom"><a href="/blog/subgraph-os-overview">Subgraph OS Overview</a></h3>
+            <h3 class="no-mar-bottom"><a href="/blog/subgraph-os-overview/">Subgraph OS Overview</a></h3>
             <p class="two-no-mar"><b>An overview of Subgraph OS: Adversary Resistant Computing.</b></p>
             <p class="two-mar-top">Tuesday 21st February 2017</p>
 
-            <h3 class="no-mar-bottom"><a href="/blog/tor-hidden-service">TOR Hidden Service</a></h3>
+            <h3 class="no-mar-bottom"><a href="/blog/tor-hidden-service/">TOR Hidden Service</a></h3>
             <p class="two-no-mar"><b>Setting up a TOR Hidden Service for my site.</b></p>
             <p class="two-mar-top">Sunday 12th February 2017</p>
 
-            <h3 class="no-mar-bottom"><a href="/blog/block-exploitable-content">Blocking Exloitable Content</a></h3>
+            <h3 class="no-mar-bottom"><a href="/blog/block-exploitable-content/">Blocking Exloitable Content</a></h3>
             <p class="two-no-mar"><b>Blocking exploitable web content in your browser.</b></p>
             <p class="two-mar-top">Tuesday 7th February 2017</p>
 
-            <h3 class="no-mar-bottom"><a href="/blog/proof-of-timestamp">Proof Of Timestamp</a></h3>
+            <h3 class="no-mar-bottom"><a href="/blog/proof-of-timestamp/">Proof Of Timestamp</a></h3>
             <p class="two-no-mar"><b>Cryptographically proving a timestamp.</b></p>
             <p class="two-mar-top">Thursday 19th January 2017</p>
 
-            <h3 class="no-mar-bottom"><a href="/blog/identicon-gravity-animation">Identicon Gravity Animation</a></h3>
+            <h3 class="no-mar-bottom"><a href="/blog/identicon-gravity-animation/">Identicon Gravity Animation</a></h3>
             <p class="two-no-mar"><b>Animated collapsing identicon.</b></p>
             <p class="two-mar-top">Thursday 5th January 2017</p>
         </div>
