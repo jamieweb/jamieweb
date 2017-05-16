@@ -27,7 +27,7 @@
     <p>The version of InspIRCd that I am using in this guide is 2.0.23, however you should be able to use the guide with newer versions. Just swap out 2.0.23 for the version number you are using.</p>
     <p>The main focus for the configuration of InspIRCd outlined here is security and simplicity.</p>
     <p>Jump to step: <a href="#step1">#1: Preparations</a> | <a href="#step2">#2: Downloading and Verifying</a> | <a href="#step3">#3: Installation</a> | <a href="#step4">#4: Configuration Files</a> | <a href="#step5">#5: Let's Encrypt SSL</a> | <a href="#step6">#6: Final Configuration</a></p>
-    <p>Guide Created by Jamie Scaife 14th May 2017.</p>
+    <p>Guide Created by Jamie Scaife 14th/15th May 2017.</p>
 
     <h3 id="step1">Step #1: Preparations</h3>
     <p><b>a.</b> It is highly recommended to create a new, unprivilidged user account for running InspIRCd:</p>
