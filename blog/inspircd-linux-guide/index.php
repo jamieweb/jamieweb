@@ -18,7 +18,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>How to Install and Configure InspIRCd on Linux</h1>
+    <h1>How to Install and Configure 'InspIRCd' on Linux</h1>
     <hr>
     <p><b>Tuesday 16th May 2017</b></p>
     <p><a href="http://www.inspircd.org/" target="_blank">InspIRCd</a> is a modular Internet Relay Chat (IRC) server written in C++ for Linux, BSD, Windows and Mac OS systems.</p>
