@@ -155,6 +155,11 @@ O:::::::OOO:::::::O
         <hr>
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
+            <a href="/blog/inspircd-setup-guide/">
+                <h4 class="no-mar-bottom">InspIRCd Linux Setup Guide</h4>
+                <h5 class="two-no-mar"><b>Guide for installing and configuring InspIRCd on Linux.</b></h5>
+                <h5 class="two-mar-top">Tuesday 16th May 2017</h5>
+            </a>
             <a href="/blog/irc-drawing-bot/">
                 <h4 class="no-mar-bottom">Creating the IRC Drawing Bot</h4>
                 <h5 class="two-no-mar"><b>Thought process and development of the IRC Drawing Bot.</b></h5>
@@ -169,12 +174,6 @@ O:::::::OOO:::::::O
                 <h4 class="no-mar-bottom">Subgraph OS Overview</h4>
                 <h5 class="two-no-mar"><b>An overview of Subgraph OS: Adversary Resistant Computing.</b></h5>
                 <h5 class="two-mar-top">Tuesday 21st February 2017</h5>
-            </a>
-
-            <a href="/blog/tor-hidden-service/">
-                <h4 class="no-mar-bottom">TOR Hidden Service</h4>
-                <h5 class="two-no-mar"><b>Setting up a TOR Hidden Service for my site.</b></h5>
-                <h5 class="two-mar-top">Sunday 12th February 2017</h5>
             </a>
         </div>
     </div>
