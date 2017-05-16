@@ -93,37 +93,37 @@ Your InspIRCd revision ID is r0
 I have detected the following compiler: g++ (version 5.4)
 
 In what directory do you wish to install the InspIRCd base?
-[/home/inspircd/inspircd-2.0.23/run] -> 
+[/home/inspircd/inspircd-2.0.23/run] -&gt;
 /home/inspircd/inspircd-2.0.23/run does not exist. Create it?
 [y] y
 
 In what directory are the configuration files?
-[/home/inspircd/inspircd-2.0.23/run/conf] -> 
+[/home/inspircd/inspircd-2.0.23/run/conf] -&gt;
 /home/inspircd/inspircd-2.0.23/run/conf does not exist. Create it?
 [y] y
 
 In what directory are the modules to be compiled to?
-[/home/inspircd/inspircd-2.0.23/run/modules] -> 
+[/home/inspircd/inspircd-2.0.23/run/modules] -&gt;
 /home/inspircd/inspircd-2.0.23/run/modules does not exist. Create it?
 [y] y
 
 In what directory is the IRCd binary to be placed?
-[/home/inspircd/inspircd-2.0.23/run/bin] -> 
+[/home/inspircd/inspircd-2.0.23/run/bin] -&gt;
 /home/inspircd/inspircd-2.0.23/run/bin does not exist. Create it?
 [y] y
 
 In what directory are variable data files to be located in?
-[/home/inspircd/inspircd-2.0.23/run/data] -> 
+[/home/inspircd/inspircd-2.0.23/run/data] -&gt;
 /home/inspircd/inspircd-2.0.23/run/data does not exist. Create it?
 [y] y
 
 In what directory are the logs to be stored in?
-[/home/inspircd/inspircd-2.0.23/run/logs] -> 
+[/home/inspircd/inspircd-2.0.23/run/logs] -&gt;
 /home/inspircd/inspircd-2.0.23/run/logs does not exist. Create it?
 [y] y
 
 In what directory do you want the build to take place?
-[/home/inspircd/inspircd-2.0.23/build] -> 
+[/home/inspircd/inspircd-2.0.23/build] -&gt;
 /home/inspircd/inspircd-2.0.23/build does not exist. Create it?
 [y] y
 
@@ -132,17 +132,17 @@ was detected. Would you like to enable epoll support?
 This is likely to increase performance.
 If you are unsure, answer yes.
 
-Enable epoll? [y] -> y
+Enable epoll? [y] -&gt; y
 
 Detected GnuTLS version: 3.4.10
 Detected OpenSSL version: 1.0.2
 
-One or more SSL libraries detected. Would you like to enable SSL support? [n] -> y
-Would you like to enable SSL with m_ssl_gnutls? (recommended) [n] -> y
-Would you like to enable SSL with m_ssl_openssl? (recommended) [n] -> n
+One or more SSL libraries detected. Would you like to enable SSL support? [n] -&gt; y
+Would you like to enable SSL with m_ssl_gnutls? (recommended) [n] -&gt; y
+Would you like to enable SSL with m_ssl_openssl? (recommended) [n] -&gt; n
 
 Using GnuTLS SSL module.
-Would you like to check for updates to third-party modules? [n] -> n
+Would you like to check for updates to third-party modules? [n] -&gt; n
 
 Pre-build configuration is complete!
 
@@ -155,12 +155,12 @@ GnuTLS Support:			y
 OpenSSL Support:		n
 
 Important note: The maximum length values are now configured in the
-                configuration file, not in ./configure! See the <limits>
+                configuration file, not in ./configure! See the &lt;limits&gt;
                 tag in the configuration file for more information.
 
-Would you like to generate SSL certificates now? [y] -> y
+Would you like to generate SSL certificates now? [y] -&gt; y
 Symlinking src/modules/m_ssl_gnutls.cpp from extra/
-SSL certificates not found, generating.. 
+SSL certificates not found, generating..
 
 
 *************************************************************
@@ -263,6 +263,145 @@ Examples are available at: /home/inspircd/inspircd-2.0.23/run/conf/examples/</pr
     <p><b>a.</b> Create and edit the file "inspircd.conf" in your inspircd configuration directory.</p>
     <pre>$ nano run/conf/inspircd.conf</pre>
     <p>Edit my configuration file below to suit your own server. Each option is explained with a comment, which is prefixed with a hash (#) and bolded. If you do not wish to set an option or want to use the default, comment it out by placing a hash (#) at the start of the line.</p>
+    <p>You can either copy the unannotated version from the text area directly below, or use the fully annotated version.</p>
+    <textarea rows="12" cols="100" readonly>&lt;config format="xml"&gt;
+
+&lt;server name="irc.example.tld"
+    description="My IRC Server"
+    network="My Network Name"&gt;
+
+&lt;admin name="Joe Bloggs" nick="Administrator"&gt;
+
+&lt;bind address="ip.ip.ip.ip"
+    port="7000"
+    type="clients"
+    ssl="gnutls"&gt;
+
+&lt;bind address="127.0.0.1"
+    port="7000"
+    type="clients"
+    ssl="gnutls"&gt;
+
+&lt;connect allow="*"
+    modes="+xS"
+    maxchans="5"
+    timeout="5"
+    localmax="5"
+    globalmax="5"
+    limit="20"
+    requiressl="off"
+    hardsenq="96K"
+    softsendq="72K"
+    recvq="8192"
+    threshold="10"
+    commandrate="1000"
+    fakelag="off"&gt;
+
+&lt;files motd="conf/motd.txt" rules="conf/rules.txt"&gt;
+
+&lt;channels users="5" opers="5"&gt;
+
+&lt;dns timeout="5"&gt;
+
+&lt;disabled commands="NICK"
+    usermodes=""
+    chanmodes=""
+    fakenoneexistant="no"&gt;
+
+&lt;options fixedquit="Quit"
+    fixedpart="Left Channel"
+    syntaxhints="yes"
+    announcets="yes"
+    hostintopic="no"
+    defaultmodes="ntzS"
+    moronbanner="You are banned from this server."
+    welcomenotice="yes"&gt;
+
+&lt;performance netbuffersize="10240"
+    somaxconn="5"&gt;
+
+&lt;security announceinvites="ops"
+    hidewhois=""
+    hidebans="no"
+    maxtargets="5"
+    customversion="ircd"
+    restrictbannedusers="yes"
+    genericoper="yes"&gt;
+
+&lt;limits maxnick="16"
+    maxident="16"
+    maxchan="16"
+    maxtopic="64"
+    maxgecos="32"
+    maxmodes="10"
+    maxquit="64"
+    maxkick="64"
+    maxaway="64"&gt;
+
+&lt;log method="file" #Log to a file.
+    type="* -USERINPUT -USEROUTPUT"
+    level="default"
+    target="logs/ircd.log"&gt;
+
+&lt;whowas groupsize="8"
+    maxgroups="256"
+    maxkeep="3d"&gt;
+
+&lt;badnick nick="ChanServ" reason="Nick reserved for services."&gt;
+&lt;badnick nick="NickServ" reason="Nick reserved for services."&gt;
+&lt;badnick nick="OperServ" reason="Nick reserved for services."&gt;
+&lt;badnick nick="MemoServ" reason="Nick reserved for services."&gt;
+&lt;badnick nick="Jamie*" reason="Nick disallowed."&gt;
+
+&lt;badhost host="root@*" reason="Don't IRC as root!"&gt;
+
+&lt;class name="admins"
+    commands="*"
+    usermodes=""
+    chanmodes=""&gt;
+
+&lt;type name="Administrator"
+    classes="admins"
+    vhost="irc.example.tld"&gt;
+
+&lt;oper name="JoeBloggs"
+    hash="hmac-sha256"
+    password="HASH_HERE"
+    host="*@127.0.0.1"
+    sslonly="yes"
+    type="Administrator"&gt;
+
+&lt;module name="m_ssl_gnutls.so"&gt;
+&lt;gnutls certfile="conf/cert.pem"
+    keyfile="conf/key.pem"
+    dhbits="4096"
+    priority="SECURE256:-MD5"
+    hash="sha1"&gt;
+
+&lt;module name="m_sslinfo.so"&gt;
+&lt;module name="m_sslmodes.so"&gt;
+
+&lt;module name="m_cloaking.so"&gt;
+&lt;cloak mode="full" key="KEY_HERE"
+    prefix="cloaked-"&gt;
+
+&lt;module name="m_conn_umodes.so"&gt;
+&lt;module name="m_password_hash.so"&gt;
+&lt;module name="m_sha256.so"&gt;
+&lt;module name="m_md5.so"&gt;
+&lt;module name="m_stripcolor.so"&gt;
+
+&lt;module name="m_permchannels.so"&gt;
+&lt;permchannels channel="#general"
+    modes="ntzSP"
+    topic="My Channel Topic"&gt;
+
+&lt;module name="m_conn_join.so"&gt;
+&lt;autojoin channel="#general"&gt;
+
+&lt;module name="m_securelist.so"&gt;
+&lt;securelist waittime="15"&gt;</textarea>
+    <p>If you're using the fully annotated version, you do not have to remove the comments, InspIRCd can read it without a problem.</p>
     <pre>&lt;config format="xml"&gt; #Set the configuration file format to XML.</u></b>
 
 &lt;server name="irc.example.tld" <b><u>#The name of your server, preferably the hostname that users connect from.</u></b>
@@ -271,7 +410,7 @@ Examples are available at: /home/inspircd/inspircd-2.0.23/run/conf/examples/</pr
 
 &lt;admin name="Joe Bloggs" nick="Administrator"&gt; <b><u>#Real name and IRC nickname of the IRC administrator.</u></b>
 
-&lt;bind address="89.34.99.41" <b><u>#An IP address for the server to bind to. This should be your global/public IP address.</u></b>
+&lt;bind address="ip.ip.ip.ip" <b><u>#An IP address for the server to bind to. This should be your global/public IP address.</u></b>
     port="7000" <b><u>#Port for connections. 6697 is often used for SSL connections, but anything above 1023 is technically fine.</u></b>
     type="clients" <b><u>#Only clients can connect using this bind. IRC allows for servers to connect to eachother too.</u></b>
     ssl="gnutls"&gt; <b><u>#Use GnuTLS for handling the SSL connection.</u></b>
