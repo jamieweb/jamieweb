@@ -18,7 +18,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>How to install 'New Gauge Half-Life' on Linux using WINE</h1>
+    <h1>How to Install 'New Gauge Half-Life' on Linux Using WINE</h1>
     <hr>
     <p><b>Wednesday 10th June 2015</b></p>
     <p>New Gauge Half-Life is a modified version of Half-Life 1 designed for speedrunning, created by rofi.</p>
