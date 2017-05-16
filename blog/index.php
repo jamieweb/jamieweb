@@ -30,6 +30,10 @@
             <div class="blog-brace5"></div>
         </div>
         <div class="blog-list">
+            <h3 class="no-mar-bottom"><a href="/blog/inspircd-linux-guide/">How to Install and Configure InspIRCd on Linux</a></h3>
+            <p class="two-no-mar"><b>In-depth guide for installating and configuring InspIRCd on Linux.</b></p>
+            <p class="two-mar-top">Tuesday 16th May 2017</p>
+
             <h3 class="no-mar-bottom"><a href="/blog/irc-drawing-bot/">Creating the IRC Drawing Bot</a></h3>
             <p class="two-no-mar"><b>Thought process and development of the IRC Drawing Bot.</b></p>
             <p class="two-mar-top">Sunday 14th May 2017</p>
@@ -98,11 +102,11 @@
             <p class="two-no-mar"><b>A month with the Ubuntu Phone.</b></p>
             <p class="two-mar-top">Friday 9th September 2015</p>
 
-            <h3 class="no-mar-bottom"><a href="/blog/nghl-windows-guide/">How to install 'New Gauge Half-Life' on Windows</a></h3>
+            <h3 class="no-mar-bottom"><a href="/blog/nghl-windows-guide/">How to Install 'New Gauge Half-Life' on Windows</a></h3>
             <p class="two-no-mar"><b>Full, step-by-step guide with download links.</b></p>
             <p class="two-mar-top">Wednesday 10th June 2015</p>
 
-            <h3 class="no-mar-bottom"><a href="/blog/nghl-linux-guide/">How to install 'New Gauge Half-Life' on Linux using WINE</a></h3>
+            <h3 class="no-mar-bottom"><a href="/blog/nghl-linux-guide/">How to Install 'New Gauge Half-Life' on Linux Using WINE</a></h3>
             <p class="two-no-mar"><b>Full, step-by-step guide with download links.</b></p>
             <p class="two-mar-top">Wednesday 10th June 2015</p>
         </div>
