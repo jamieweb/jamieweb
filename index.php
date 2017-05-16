@@ -155,7 +155,7 @@ O:::::::OOO:::::::O
         <hr>
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
-            <a href="/blog/inspircd-setup-guide/">
+            <a href="/blog/inspircd-linux-guide/">
                 <h4 class="no-mar-bottom">InspIRCd Linux Setup Guide</h4>
                 <h5 class="two-no-mar"><b>Guide for installing and configuring InspIRCd on Linux.</b></h5>
                 <h5 class="two-mar-top">Tuesday 16th May 2017</h5>
