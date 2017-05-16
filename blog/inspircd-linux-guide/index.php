@@ -29,7 +29,7 @@
     <p>Jump to step: <a href="#step1">#1: Preparations</a> | <a href="#step2">#2: Downloading and Verifying</a> | <a href="#step3">#3: Installation</a> | <a href="#step4">#4: Configuration Files</a> | <a href="#step5">#5: Let's Encrypt SSL</a> | <a href="#step6">#6: Final Configuration</a></p>
     <p>Guide Created by Jamie Scaife 14th/15th May 2017.</p>
 
-    <h3 id="step1">Step #1: Preparations</h3>
+    <h2 id="step1">Step #1: Preparations</h2>
     <p><b>a.</b> It is highly recommended to create a new, unprivilidged user account for running InspIRCd:</p>
     <pre>$ sudo adduser --disabled-password inspircd</pre>
     <p>This command will create a new user called "inspircd", with a disabled password. This means that there is no password set and you will not be able to log in with a password. Instead, you can just su into the user. If you'd like to set a password, simply omit "--disabled-password".</p>
@@ -41,7 +41,7 @@
     <p><b>d.</b> Log in as your new user:</p>
     <pre>$ sudo su inspircd</pre>
 
-    <h3 id="step2">Step #2: Downloading and Verifying</h3>
+    <h2 id="step2">Step #2: Downloading and Verifying</h2>
     <p><b>It is important that you do not install InspIRCd from the Debian/Ubuntu Universe package repositories. These packages are out of date and potentially insecure. The out of date packages are not the fault of the InspIRCd development team, but rather the independent package maintainers.</b></p>
     <p><b>a.</b> The source for InspIRCd can be downloaded from their <a href="https://github.com/inspircd/inspircd/" target="_blank">GitHub repository</a>. Visit the releases page and download the source code Tarball (.tar.gz) for the latest stable release. At the time of writing this guide, the latest version is 2.0.23.</p>
     <pre>########################################################################
@@ -67,7 +67,7 @@ $ md5sum v2.0.23.tar.gz
     <p><b>c.</b> Extract the compressed file:</p>
     <pre>$ tar xvf v2.0.23.tar.gz</pre>
 
-    <h3 id="step3">Step #3: Installation</h3>
+    <h2 id="step3">Step #3: Installation</h2>
     <p><b>a.</b> If you created a new user for InspIRCd, make sure you are logged in as it.</p>
     <p>Change directory into the inspircd-2.0.23 directory:</pre>
     <pre>$ cd inspircd-2.0.23</pre>
@@ -258,7 +258,7 @@ Remember to create your config file: /home/inspircd/inspircd-2.0.23/run/conf/ins
 Examples are available at: /home/inspircd/inspircd-2.0.23/run/conf/examples/</pre>
     <p>Installation is now complete. Do not try to run your IRC server yet, you must make the configuration files first.</p>
 
-    <h3 id="step4">Step #4: Configuration Files</h3>
+    <h2 id="step4">Step #4: Configuration Files</h2>
     <p>The example configuration files that come with InspIRCd provide a lot of useful information but are extremely long and contain many configurations that are not required for the average server. Because of this, they are not really suitable for editing directly. I have been through all of the configuration examples and filtered out all of the options that you'll need for a standard, working server.</p>
     <p><b>a.</b> Create and edit the file "inspircd.conf" in your inspircd configuration directory.</p>
     <pre>$ nano run/conf/inspircd.conf</pre>
@@ -439,7 +439,7 @@ InspIRCd is now running as 'irc.example.tld'[245] with 1024 max open sockets</pr
     <p>Open Irssi:</p>
     <pre>$ irssi</pre>
     <p>You should see the Irssi interface take up your entire terminal.</p>
-    <pre>Irssi v0.8.19 - http://www.irssi.org                                                                                                                                  
+    <pre>Irssi v0.8.19 - http://www.irssi.org
 17:45 -!-  ___           _
 17:45 -!- |_ _|_ _ _____(_)
 17:45 -!-  | || '_(_-&lt;_-&lt; |
@@ -502,7 +502,7 @@ InspIRCd is now running as 'irc.example.tld'[245] with 1024 max open sockets</pr
     <p>Now you can use any operator commands that you wish!</p>
     <p>Server configuration is complete!</p>
 
-    <h3 id="step5">Step #5: Let's Encrypt SSL</h3>
+    <h2 id="step5">Step #5: Let's Encrypt SSL</h2>
     <p>Most IRC clients are configured to allow self-signed SSL certificates, but when making direct connections to an IRC server without using an IRC client (for example an IRC bot), it is common to run into SSL errors. It is easy to use a Let's Encrypt SSL Domain Validation certificate with InspIRCd, all you have to do is obtain the certificate and copy it to your InspIRCd configuration directory. I have checked the Let's Encrypt Terms of Service and it is perfectly fine to use their certificates for web services other than a web server.</p>
     <p><b>If you are not running a web server on the same machine as your IRC server, you'll need to follow different steps.</b> <a href="https://suchsecurity.com/using-letsencrypt-for-your-ircd.html" target="_blank">This guide on Such Security</a> is fantastic and is what you need to follow. Come back here once you've obtained the certificate.</p>
     <p>If you are already running a web server on the same machine as your IRC server, setup will be much easier. I'm going to assume that you already have Let's Encrypt set up and working too. If not, there are plenty of guides out there.</p>
@@ -538,7 +538,7 @@ $ inspircd-2.0.34/run/inspircd restart</pre>
     <pre>23:30 !irc.example.tld *** You are connected using SSL cipher "ECDHE-RSA-AES-256-GCM-AEAD"</pre>
     <p>Now you should be able to connect to your IRC server using an application that does not allow self-signed certificates.</p>
 
-    <h3 id="step6">Step #6: Final Configuration</h3>
+    <h2 id="step6">Step #6: Final Configuration</h2>
     <p><b>a.</b> In order to start your InspIRCd server at boot, you must add an entry to your crontab.</p>
     <p>Make sure you are logged in as your InspIRCd user, then run:</p>
     <pre>$ crontab -e</pre>
