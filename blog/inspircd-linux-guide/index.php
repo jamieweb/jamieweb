@@ -30,7 +30,7 @@
     <p>Guide Created by Jamie Scaife 14th/15th May 2017.</p>
 
     <h2 id="step1">Step #1: Preparations</h2>
-    <p><b>a.</b> It is highly recommended to create a new, unprivilidged user account for running InspIRCd:</p>
+    <p><b>a.</b> It is highly recommended to create a new, unprivileged user account for running InspIRCd:</p>
     <pre>$ sudo adduser --disabled-password inspircd</pre>
     <p>This command will create a new user called "inspircd", with a disabled password. This means that there is no password set and you will not be able to log in with a password. Instead, you can just su into the user. If you'd like to set a password, simply omit "--disabled-password".</p>
     <p><b>b.</b> Install the required dependencies:</p>
