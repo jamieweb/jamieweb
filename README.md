@@ -12,6 +12,8 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Grid/list layout for /projects
     Raspberry Pi Cluster blog post
     Python & C++ - cycles per second - "tickrate"
+    Casio watch mod (N-O-D-E style)
+    Air-gapped RPi PGP decryption device using binary-over-audio
     
     New site-wide font?
     "You are leaving JamieWeb" for outbound links?
