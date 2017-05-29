@@ -30,51 +30,51 @@
         </tr>
         <tr>
             <td width="20%"><p class="info">CPU: <b>99%</b></p>
-            <p class="info">Memory: <b>922 MB</b></p>
-            <p class="info">Disk: <b>4315 MB</b></p>
-            <p class="info">Temp: <b>33.6'C</b></td>
+            <p class="info">Memory: <b>906 MB</b></p>
+            <p class="info">Disk: <b>4734 MB</b></p>
+            <p class="info">Temp: <b>39.5'C</b></td>
+
+            <td width="20%"><p class="info">CPU: <b>99.8%</b></p>
+            <p class="info">Memory: <b>323 MB</b></p>
+            <p class="info">Disk: <b>4662 MB</b></p>
+            <p class="info">Temp: <b>37.9'C</b></td>
 
             <td width="20%"><p class="info">CPU: <b>99.7%</b></p>
-            <p class="info">Memory: <b>252 MB</b></p>
-            <p class="info">Disk: <b>4369 MB</b></p>
-            <p class="info">Temp: <b>35.8'C</b></td>
-
-            <td width="20%"><p class="info">CPU: <b>99.7%</b></p>
-            <p class="info">Memory: <b>249 MB</b></p>
-            <p class="info">Disk: <b>4304 MB</b></p>
-            <p class="info">Temp: <b>39.0'C</b></td>
-
-            <td width="20%"><p class="info">CPU: <b>99.7%</b></p>
-            <p class="info">Memory: <b>250 MB</b></p>
-            <p class="info">Disk: <b>4304 MB</b></p>
-            <p class="info">Temp: <b>41.2'C</b></td>
-
-            <td width="20%"><p class="info">CPU: <b>99.7%</b></p>
-            <p class="info">Memory: <b>251 MB</b></p>
-            <p class="info">Disk: <b>4368 MB</b></p>
+            <p class="info">Memory: <b>321 MB</b></p>
+            <p class="info">Disk: <b>4596 MB</b></p>
             <p class="info">Temp: <b>40.1'C</b></td>
+
+            <td width="20%"><p class="info">CPU: <b>99.8%</b></p>
+            <p class="info">Memory: <b>321 MB</b></p>
+            <p class="info">Disk: <b>4597 MB</b></p>
+            <p class="info">Temp: <b>41.7'C</b></td>
+
+            <td width="20%"><p class="info">CPU: <b>99.7%</b></p>
+            <p class="info">Memory: <b>320 MB</b></p>
+            <p class="info">Disk: <b>4659 MB</b></p>
+            <p class="info">Temp: <b>41.2'C</b></td>
         </tr>
     </table><br>
 
     <table width="100%">
         <tr>
             <td width="50%"><h1 class="info">Rosetta@Home Stats</h1>
-            <p class="info">Total Earned Credits: <b>58,151.78</b></p>
-            <p class="info">Recent Average Credit: <b>368.14</b></p>
-            <p class="info">Total Running Time: <b>150 days</b></p></td>
+            <p class="info">Total Earned Credits: <b>77,609.88</b></p>
+            <p class="info">Recent Average Credit: <b>358.27</b></p>
+            <p class="info">Total Running Time: <b>203 days</b></p></td>
 
             <td width="50%"><h1 class="info">Einstein@Home Stats</h1>
-            <p class="info">Total Earned Credits: <b>152,658.53</b></p>
-            <p class="info">Recent Average Credit: <b>442.39</b></p>
-            <p class="info">Total Running Time: <b>551 days</b></p></td>
+            <p class="info">Total Earned Credits: <b>174,408.53</b></p>
+            <p class="info">Recent Average Credit: <b>453.35</b></p>
+            <p class="info">Total Running Time: <b>603 days</b></p></td>
         </tr>
         <tr>
             <td width="50%" class="stats-padding-top"><h1 class="info">Bitcoin Node Stats</h1>
             <p class="info">Bitnodes Link: <b><a href="https://bitnodes.21.co/nodes/89.34.99.41-8333/">https://bitnodes.21.co/nodes/89.34.99.41-8333/</a></b></p>
-            <p class="info">Total Running Time: <b>153 days</b></p></td>
+            <p class="info">Total Running Time: <b>206 days</b></p></td>
         </tr>
     </table><br>
-    <p class="info two-mar-left">Stats Update Every 10 Minutes. Last Updated: <b> 5:20:05am GMT</b></p>
+    <p class="info two-mar-left">Stats Update Every 10 Minutes. Last Updated: <b>11:10:05pm GMT+1</b></p>
 </div>
 
 <?php include "footer.php" ?>
