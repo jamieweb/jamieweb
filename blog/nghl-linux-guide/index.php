@@ -202,7 +202,7 @@ bind "key" "+zoom"</pre>
 
     <h3 id="trouble">Troubleshooting</h3>
     <p>If you launch the game and your sounds are slow, delayed or non-existent, restarting the game will normally fix it.</p>
-    <p>Sometimes, bad nodegraphs will be generated for maps causing certain NPC related actions not to work properly. Examples of this include Barney opening the door in c1a2b (Office Complex, door to skip the freezer room and vents section), and the scientist opening the door in c3a2d (Lambda Complex, supply room before Xen teleporter). In order to fix this, simply delete the associated node graph files from /valve/maps/grpahs/ and they should be regenerated correctly next time the map is loaded.</p>
+    <p>Sometimes, bad nodegraphs will be generated for maps causing certain NPC related actions not to work properly. Examples of this include Barney opening the door in c1a2b (Office Complex, door to skip the freezer room and vents section), and the scientist opening the door in c3a2d (Lambda Complex, supply room before Xen teleporter). In order to fix this, simply delete the associated node graph files from /valve/maps/graphs/ and they should be regenerated correctly next time the map is loaded.</p>
 </div>
 
 <?php include "footer.php" ?>
