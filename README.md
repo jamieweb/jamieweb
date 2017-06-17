@@ -15,12 +15,6 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Casio watch mod (N-O-D-E style)
     Air-gapped RPi PGP decryption device using binary-over-audio
     
-    User accounts system
-      - User accounts can be created, eg: /user/JamieOnUbuntu/
-      - Profiles can be customized with profile image and links to other profiles
-      - Can be used to comment on posts?
-      - Login form, user data storage, session cookies, profiles, etc
-    
     New site-wide font?
     "You are leaving JamieWeb" for outbound links?
     
