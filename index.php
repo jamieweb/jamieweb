@@ -136,20 +136,28 @@ O:::::::OOO:::::::O
         <hr>
         <center>
             <div class="sideitem">
+                <img src="/images/gh-90.png">
+                <h4><a href="https://github.com/JamieOnUbuntu" target="_blank">GitHub</a></h4>
+            </div>
+            <div class="sideitem">
+                <img src="/images/tw-90.png">
+                <h4><a href="https://twitter.com/JamieOnUbuntu" target="_blank">Twitter</a></h4>
+            </div>
+            <div class="sideitem">
+                <img src="/images/yt-90.png">
+                <h4><a href="https://www.youtube.com/jamie90437x" target="_blank">YouTube</a></h4>
+            </div>
+            <div class="sideitem">
                 <img src="/images/kb-90.png">
                 <h4><a href="https://keybase.io/JamieOnUbuntu" target="_blank">Keybase</a></h4>
             </div>
             <div class="sideitem">
+                <img src="/images/irc-90.png">
+                <h4 class="sideitem-mar-bottom"><a href="/irc/" target="_blank">IRC</a></h4>
+            </div>
+            <div class="sideitem">
                 <img src="/images/pgp-90.png">
-                <h4><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
-            </div>
-            <div class="sideitem">
-                <img src="/images/gh-90.png">
-                <h4 class="sideitem-mar-bottom"><a href="https://github.com/JamieOnUbuntu" target="_blank">GitHub</a></h4>
-            </div>
-            <div class="sideitem">
-                <img src="/images/tw-90.png">
-                <h4 class="sideitem-mar-bottom"><a href="https://twitter.com/JamieOnUbuntu" target="_blank">Twitter</a></h4>
+                <h4 class="sideitem-mar-bottom"><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
             </div>
         </center>
         <hr>
