@@ -22,7 +22,7 @@
     <hr>
     <p><b>Why have I posted these here?</b></p>
     <p>The Google Chrome Web Store is known for having malicious apps and extensions listed among the legitimate ones, so I have listed the proper links to a few of the popular ones. The idea behind this is that this page may appear in the Google search results when somebody is searching an extension ID, and may help to verify whether it is legitimate or not.</p>
-    <p><b>Popular Security + Privacy Extensions</b></p>
+    <p><b>Popular Security + Privacy Extensions:</b></p>
     <pre>    AdBlock - <a href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom">gighmmpiobklfepjocnamgkkbiglidom</a>
     AdBlock Plus - <a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb">cfhdojbkjhnklbpkdaibdccddilifddb</a>
     uBlock - <a href="https://chrome.google.com/webstore/detail/ublock/epcnnfbjfcgphgdmggkamkmgojdagdnn">epcnnfbjfcgphgdmggkamkmgojdagdnn</a>
