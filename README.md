@@ -18,7 +18,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     New site-wide font?
     "You are leaving JamieWeb" for outbound links?
     
-    ✓ IRC drawing bot blog post (work in progress)
+    ✓ IRC drawing bot blog post
     ✓ Control channel over IRC
     ✓ Grid layout for /other (ended up as a list with icons)
     ✓ SubGraph OS overview
