@@ -91,6 +91,15 @@
 <b>MD5:</b> b2bfc9b3c6a8706f94852b7b22b729a1
 <b>Link:</b> https://subgraph.com/DA11364B4760E444.asc</pre>
 
+    <p>Import the Subgraph Release Signing Key into GPG and verify the signature of the SHA256 file:</p>
+    <pre>jamie@box:~$ gpg --verify subgraph-os-alpha_2016-12-30_1.iso.sha256.sig subgraph-os-alpha_2016-12-30_1.iso.sha256
+gpg: Signature made Fri 30 Dec 2016 21:16:21 GMT using RSA key ID F999D968
+gpg: Good signature from "Subgraph Release Signing Key &lt;release@subgraph.com&gt;"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: B55E 70A9 5AC7 9474 504C  30D0 DA11 364B 4760 E444
+     Subkey fingerprint: AB6C 7E34 4F63 3E10 4377  D595 E1AE 39C4 F999 D968</pre>
+
     <h2 id="installation">Installation</h2>
     <p>I downloaded and verified the Subgraph ISO and restored the disk image to a USB flash drive using gnome-disks. Make sure to disable UEFI boot in your BIOS if you have it, since Subgraph only supports legacy boot. If you try to install it in UEFI mode, GRUB bootloader will fail to install.</p>
     <p>In order to screenshot the installation process, I installed Subraph in a VirtualBox virtual machine. The screenshot tool built into the installer didn't seem to work, the images were lost upon removing the flash drive. This is most likely since I directly restored the disk image to the flash drive using gnome-disks, so there was no persistent storage space.</p>
