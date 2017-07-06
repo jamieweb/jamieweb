@@ -14,6 +14,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Python & C++ - cycles per second - "tickrate"
     Casio watch mod (N-O-D-E style)
     Air-gapped RPi PGP decryption device using binary-over-audio
+    Linux /etc/hosts adblocking - file integrity verification
     
     New site-wide font?
     "You are leaving JamieWeb" for outbound links?
