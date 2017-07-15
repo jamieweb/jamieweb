@@ -77,7 +77,8 @@ else
     exit
 fi</pre>
     <p>Checking the SSL connection and certificate details are required in order to ensure that there is access to the real GitHub user content website, rather than something that may be intercepting it, such as a captive portal or locally-accepted root certificate.</p>
-    <pre>githubssl=$(echo | openssl s_client -connect raw.githubusercontent.com:443 2>&1 | egrep "^(    Verify return code: 0 \(ok\)|depth=0 C = US, ST = California, L = San Francisco, O = \"GitHub, Inc[.]\", CN = www[.]github[.]com)$")
+    <pre>githubssl=$(echo | openssl s_client -connect raw.githubusercontent.com:443 2>&1 | egrep "^(    Verify return code: 0 \(ok...
+...\)|depth=0 C = US, ST = California, L = San Francisco, O = \"GitHub, Inc[.]\", CN = www[.]github[.]com)$")
 if [[ $(echo "$githubssl" | tail -n 1) == "    Verify return code: 0 (ok)" ]]; then
     #ssl connection passed
     verifications=$((verifications+1))
@@ -85,7 +86,8 @@ else
     #ssl connection failed
     exit
 fi
-if [[ $(echo "$githubssl" | head -n 1) == "depth=0 C = US, ST = California, L = San Francisco, O = \"GitHub, Inc.\", CN = www.github.com" ]]; then
+if [[ $(echo "$githubssl" | head -n 1) == "depth=0 C = US, ST = California, L = San Francisco, O = \"GitHub, Inc.\", CN =...
+... www.github.com" ]]; then
     #certificate details check passed
     verifications=$((verifications+1))
 else
@@ -95,7 +97,8 @@ fi</pre>
     <p>Another network check that I could have implemented would have been checking for a particular piece of content on the GitHub user content website. For example, downloading a known file and ensuring that it matches. I decided against this though since it would require some form of permanent, immutable file. I could have simply created a file in the repository for this but it doesn't really seem like the right thing to do.</p>
     <p><b>Restoring the original file: </b>At this point, a function is defined that will restore the original file should the file verification fail.</p>
     <p><b>Checking for an update to the hosts file: </b>The script gets the SHA256 hash of the live version and compares it to the local version. If the hashes do not match, it is assumed that an update is available.</p>
-    <pre>livehash=$(curl -s "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/REDACTED-REDACTED-REDACTED/hosts" | sha256sum | awk '{ print $1 }')
+    <pre>livehash=$(curl -s "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/REDACTED-REDACTED-REDACTED/host...
+...s" | sha256sum | awk '{ print $1 }')
 localhash=$(sha256sum latest.txt | awk '{ print $1 }')
 if [ $livehash == $localhash ]; then
     #no update available
@@ -103,7 +106,8 @@ if [ $livehash == $localhash ]; then
 else
     #update available, downloading update
     mv latest.txt old.txt
-    curl -s "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/REDACTED-REDACTED-REDACTED/hosts" > latest.txt
+    curl -s "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/REDACTED-REDACTED-REDACTED/hosts" > la...
+    ...test.txt
     if [[ $(sha256sum latest.txt | awk '{ print $1 }') == $livehash ]]; then
         #updated file hash matches
     else
@@ -138,7 +142,8 @@ grepstrip=$(echo "$grepstrip2" | egrep -v "^$")
 grepstrip2=$(echo "$grepstrip" | egrep -v "^(  | {32}|	|	{4}| ?	{5})# ")
 
 #Remove default/system hosts file entries
-grepstrip=$(echo "$grepstrip2" | egrep -v "^(127[.]0[.]0[.]1 localhost|127[.]0[.]0[.]1 localhost[.]localdomain|127[.]0[.]0[.]1 local|255[.]255[.]255[.]255 broadcasthost|::1 localhost|fe80::1%lo0 localhost|0[.]0[.]0[.]0 0[.]0[.]0[.]0)$")
+grepstrip=$(echo "$grepstrip2" | egrep -v "^(127[.]0[.]0[.]1 localhost|127[.]0[.]0[.]1 localhost[.]localdomain|127[.]0[.]...
+...0[.]1 local|255[.]255[.]255[.]255 broadcasthost|::1 localhost|fe80::1%lo0 localhost|0[.]0[.]0[.]0 0[.]0[.]0[.]0)$")
 
 #Remove bits left behind
 grepstrip2=$(echo "$grepstrip" | egrep -v "^(0[.]0[.]0[.]0 REDACTED|0[.]0[.]0[.]0 REDACTED|0[.]0[.]0[.]0 REDACTED)$")
