@@ -181,7 +181,8 @@ fi</pre>
     <pre>if [ $verifications == "7" ]; then
     #file verification successful
     mv current-hosts.txt backup-hosts.txt
-    egrep -v "^(127[.]0[.]0[.]1 localhost|127[.]0[.]0[.]1 localhost[.]localdomain|127[.]0[.]0[.]1 local|255[.]255[.]255[.]255 broadcasthost|::1 localhost|fe80::1%lo0 localhost|0[.]0[.]0[.]0 0[.]0[.]0[.]0)$" latest.txt > current-hosts.txt
+    egrep -v "^(127[.]0[.]0[.]1 localhost|127[.]0[.]0[.]1 localhost[.]localdomain|127[.]0[.]0[.]1 local|255[.]255[.]255[....
+    ...]255 broadcasthost|::1 localhost|fe80::1%lo0 localhost|0[.]0[.]0[.]0 0[.]0[.]0[.]0)$" latest.txt > current-hosts.txt
     filedate=$(date "+%a %d %b %Y - %r")
     filehostname=$(hostname)
     sed -i "1 i\#Updated: $filedate\n127.0.0.1 localhost\n127.0.0.1 $filehostname\n" current-hosts.txt
