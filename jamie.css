@@ -260,6 +260,17 @@ div.hours span {
     font-size: 14px;
 }
 
+div.test-left-a {
+    width: 445px;
+    float: left;
+}
+
+div.image-right-a {
+    width: 550px;
+    float: right;
+    margin-top: 16px;
+}
+
 div.ext-l-1 {
     width: 500px;
     float: left;
@@ -424,4 +435,8 @@ footer {
 
 .subgraph-img-2 {
     padding-right: 18px;
+}
+
+.left-right-title-margin {
+    margin-bottom: 3.920px;
 }
