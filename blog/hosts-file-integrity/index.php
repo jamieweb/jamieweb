@@ -48,7 +48,7 @@
     <p>The hosts file contains a list of malicious, undesirable or inappropriate sites that should be blocked.</p>
     <p>Multiple different variations of it are available and it is updated regularly.</p>
     <center><p><b><a href="https://github.com/StevenBlack/hosts/" target="_blank">https://github.com/StevenBlack/hosts/</a></b></p></center></div>
-    <div class="image-right-a"><center><a href="https://github.com/StevenBlack/hosts/" target="_blank"><img width="450px" src="hosts-github.png"></a></center></div>
+    <div class="image-right-a"><center><a href="https://github.com/StevenBlack/hosts/" target="_blank"><img width="450px" src="/blog/hosts-file-integrity/hosts-github.png"></a></center></div>
     <h2 id="script" class="clearboth">Hosts File Integrity Script</h2>
     <p>I am now using one of Steven Black's hosts files on all of my systems, and I wrote a bash script that will automatically keep it up to date. The repository is available on my GitHub profile:</p>
     <center><p><b><a href="https://github.com/JamieOnUbuntu/hosts-file-integrity/" target="_blank">https://github.com/JamieOnUbuntu/hosts-file-integrity/</a></b></p></center>
