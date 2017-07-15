@@ -30,6 +30,10 @@
             <div class="blog-brace5"></div>
         </div>
         <div class="blog-list">
+            <h3 class="no-mar-bottom"><a href="/blog/hosts-file-integrity/">Hosts File Site Blocking</a></h3>
+            <p class="two-no-mar"><b>Blocking sites using the hosts file and an integrity verification script.</b></p>
+            <p class="two-mar-top">Saturday 15th July 2017</p>
+
             <h3 class="no-mar-bottom"><a href="/blog/inspircd-linux-guide/">How to Install and Configure 'InspIRCd' on Linux</a></h3>
             <p class="two-no-mar"><b>In-depth guide for installing and configuring InspIRCd on Linux.</b></p>
             <p class="two-mar-top">Tuesday 16th May 2017</p>
