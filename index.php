@@ -163,6 +163,11 @@ O:::::::OOO:::::::O
         <hr>
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
+            <a href="/blog/hosts-file-integrity/">
+                <h4 class="no-mar-bottom">Hosts File Site Blocking</h4>
+                <h5 class="two-no-mar"><b>Blocking sites using the hosts file and an integrity verification script.</b></h5>
+                <h5 class="two-mar-top">Saturday 15th July 2017</h5>
+            </a>
             <a href="/blog/inspircd-linux-guide/">
                 <h4 class="no-mar-bottom">InspIRCd Linux Setup Guide</h4>
                 <h5 class="two-no-mar"><b>Guide for installing and configuring InspIRCd on Linux.</b></h5>
@@ -177,11 +182,6 @@ O:::::::OOO:::::::O
                 <h4 class="no-mar-bottom">Chrome Site Whitelist Extension</h4>
                 <h5 class="two-no-mar"><b>Discussing the Chrome extension that I am developing.</b></h5>
                 <h5 class="two-mar-top">Tuesday 7th March 2017</h5>
-            </a>
-            <a href="/blog/subgraph-os-overview/">
-                <h4 class="no-mar-bottom">Subgraph OS Overview</h4>
-                <h5 class="two-no-mar"><b>An overview of Subgraph OS: Adversary Resistant Computing.</b></h5>
-                <h5 class="two-mar-top">Tuesday 21st February 2017</h5>
             </a>
         </div>
     </div>
