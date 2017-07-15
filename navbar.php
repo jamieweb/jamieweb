@@ -6,7 +6,8 @@
             <li class="dropdown">
                 <h5><a href="/blog/">Blog</a></h5>
                 <div class="dropdown-content">
-                    <h4><a href="/blog/inspircd-linux-guide/">InspIRCd Linux Guide</a>
+                    <h4><a href="/blog/hosts-file-integrity/">Hosts File Site Blocking</a>
+                    <a href="/blog/inspircd-linux-guide/">InspIRCd Linux Guide</a>
                     <a href="/blog/irc-drawing-bot/">Creating the IRC Drawing Bot</a>
                     <a href="/blog/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a>
                     <a href="/blog/subgraph-os-overview/">Subgraph OS Overview</a>
