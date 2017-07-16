@@ -10,16 +10,17 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     
     New design for Blog Project Other homepage buttons
     Grid/list layout for /projects
+    GitHub repos listed on /projects
     Raspberry Pi Cluster blog post
     Python & C++ - cycles per second - "tickrate"
     Casio watch mod (N-O-D-E style)
     Air-gapped RPi PGP decryption device using binary-over-audio
-    Linux /etc/hosts adblocking - file integrity verification
     PHP blog list generation - efficiency?
     
     New site-wide font?
     "You are leaving JamieWeb" for outbound links?
     
+    ✓ Linux /etc/hosts adblocking - file integrity verification
     ✓ IRC drawing bot blog post
     ✓ Control channel over IRC
     ✓ Grid layout for /other (ended up as a list with icons)
