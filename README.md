@@ -16,6 +16,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Casio watch mod (N-O-D-E style)
     Air-gapped RPi PGP decryption device using binary-over-audio
     PHP blog list generation - efficiency?
+    IPv6
     
     New site-wide font?
     "You are leaving JamieWeb" for outbound links?
