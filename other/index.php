@@ -83,6 +83,16 @@
 
     <div class="iconparent">
         <div class="iconimg">
+            <a href="/other/adblock-plus-config/"><img src="/images/adblock-plus-config.png"></a>
+        </div>
+        <div class="iconlist">
+            <h3 class="no-mar-bottom"><a href="/other/adblock-plus-config/">Adblock Plus Configuration</a></h3>
+            <p class="two-mar-top"><b>Extra filter lists and configuration for Adblock Plus.</b></p>
+        </div>
+    </div>
+
+    <div class="iconparent">
+        <div class="iconimg">
             <a href="/pastes/"><img src="/images/pastes.png"></a>
         </div>
         <div class="iconlist">
