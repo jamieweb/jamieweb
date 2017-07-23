@@ -41,6 +41,7 @@
                     <a href="/other/speedrun-times/">Speedrun Times</a>
                     <a href="/other/game-tracker/">Game Tracker</a>
                     <a href="/other/chrome-extension-ids/">Chrome Extension IDs</a>
+                    <a href="/other/adblock-plus-config/">Adblock Plus Config</a>
                     <a href="/pastes/">Pastes</a></h4>
                 </div>
             </li>
