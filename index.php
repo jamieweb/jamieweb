@@ -153,7 +153,7 @@ O:::::::OOO:::::::O
             </div>
             <div class="sideitem">
                 <img src="/images/irc-90.png">
-                <h4 class="sideitem-mar-bottom"><a href="/irc/" target="_blank">IRC</a></h4>
+                <h4 class="sideitem-mar-bottom"><a href="/irc/">IRC</a></h4>
             </div>
             <div class="sideitem">
                 <img src="/images/pgp-90.png">
