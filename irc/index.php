@@ -26,6 +26,8 @@
     <pre>/connect -ssl chat.freenode.net 7000 stuff &lt;nickname&gt;</pre>
     <p>Example:</p>
     <pre>/connect -ssl chat.freenode.net 7000 stuff Peter</pre>
+    <p>Then join the ##jamieweb channel:</p>
+    <pre>/join ##jamieweb</pre>
     <p><b>IMPORTANT NOTE: Do not trust anybody on the IRC claiming to be me (Jamie). I will never speak officially through this IRC.</b></p>
 </div>
 
