@@ -5,7 +5,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
 ## Site To-do/Ideas List:
     Better mobile compatibility
     ✓ - All blog/projects/other pages should now have acceptable levels of mobile readability
-    ✓ - Must fix navbar on mobile (doesn't extent to full page width)
+    ✓ - Must fix navbar on mobile (doesn't extend to full page width)
       - Must fix homepage on mobile (currently quite unpredictable) - will be fixed along with new Blog Project Other buttons
     
     New design for Blog Project Other homepage buttons
