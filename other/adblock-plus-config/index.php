@@ -37,7 +37,7 @@ https://easylist-downloads.adblockplus.org/easyprivacy.txt</pre>
     <p>Use the following syntax for whitelisting domains:</p>
     <pre>*$subdocument,domain=~whitelisted1.tld|~whitelisted2.tld|~whitelisted3.tld</pre>
     <p>Blocking frames/iframes will completely break many poorly built websites. A possible workaround for this is to open the developer console and find the ERR_BLOCKED_BY_CLIENT error for the blocked frame/iframe and go to the URL directly in a new tab. It also breaks Google reCAPTCHA, so you'll have to whitelist websites where you need to solve those.</p>
-    <p>These filter lists and the filter syntax is also compatible with other Adblocking software such as uBlock Origin.</p>
+    <p>These filter lists and the filter syntax is also compatible with some other Adblocking software such as uBlock Origin.</p>
 </div>
 
 <?php include "footer.php" ?>
