@@ -10,7 +10,7 @@
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
     <link href="/jamie.css" rel="stylesheet">
-    <link href="https://www.jamieweb.net/other/adblock-plus-configuration/" rel="canonical">
+    <link href="https://www.jamieweb.net/other/adblock-plus-config/" rel="canonical">
 </head>
 
 <body>
