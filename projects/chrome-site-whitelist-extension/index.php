@@ -44,7 +44,7 @@
             <center><img src="/projects/chrome-site-whitelist-extension/github-download.png"></center><br>
         </div>
     </ul>
-    <ul><li class="clearboth"><p><b>Open the Chrome extensions manager (Settings -> More Tools -> Extensions, or <a href="chrome://extensions" target="_blank">chrome://extensions</a>).</b></p></li></ul>
+    <ul><li class="clearboth"><p><b>Open the Chrome extensions manager (Settings -> More Tools -> Extensions, or go to the URL chrome://extensions.</b></p></li></ul>
     <center><img src="/projects/chrome-site-whitelist-extension/extension-manager-menu.png"></center>
     <ul><li><p><b>Enable developer mode by checking the box.</b></p></li></ul>
     <center><img src="/projects/chrome-site-whitelist-extension/developer-mode.png"></center>
