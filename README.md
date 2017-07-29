@@ -19,7 +19,6 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     IPv6 - (2a01:4020:1::129)
     
     New site-wide font?
-    "You are leaving JamieWeb" for outbound links?
     
     ✓ Linux /etc/hosts adblocking - file integrity verification
     ✓ IRC drawing bot blog post
