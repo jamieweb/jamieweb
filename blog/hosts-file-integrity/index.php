@@ -20,7 +20,7 @@
 <div class="body">
     <h1>Hosts File Site Blocking</h1>
     <hr>
-    <p>Saturday 15th July 2017</b></p>
+    <p><b>Saturday 15th July 2017</b></p>
     <p>Please see the <a href="https://github.com/JamieOnUbuntu/hosts-file-integrity/" target="_blank">associated GitHub repository</a> for details on the hosts-file-integrity scripts.</p>
     <p>I recently became interested in using the hosts file in order to block access to malicious and/or undesirable domains. This is similar to using an adblocker however it is applied system-wide, rather than just in your web browser. When using the hosts file, the request is blocked at a much lower level than when using an adblocking browser extension.</p>
     <p><b>Skip to Section:</b></p>
