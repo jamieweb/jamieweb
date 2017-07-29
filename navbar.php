@@ -33,15 +33,19 @@
                 </div>
             </li>
             <li class="dropdown">
+                <h5><a href="/info/">Info</a></h5>
+                <div class="dropdown-content">
+                    <h4><a href="/info/adblock-plus-config/">Adblock Plus Config</a>
+                    <a href="/info/chrome-extension-ids/">Chrome Extension IDs</a>
+                </div>
+            </li>
+            <li class="dropdown">
             <h5><a href="/other/">Other</a></h5>
                 <div class="dropdown-content">
                     <h4><a href="/downloads/">Downloads</a>
                     <a href="/other/checksums/">Checksums</a>
-                    <a href="/other/askin-art-gallery/">ASKIN Art Gallery</a>
                     <a href="/other/speedrun-times/">Speedrun Times</a>
                     <a href="/other/game-tracker/">Game Tracker</a>
-                    <a href="/other/chrome-extension-ids/">Chrome Extension IDs</a>
-                    <a href="/other/adblock-plus-config/">Adblock Plus Config</a>
                     <a href="/pastes/">Pastes</a></h4>
                 </div>
             </li>
