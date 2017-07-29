@@ -43,16 +43,6 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/askin-art-gallery/"><img src="/images/askin-art.png"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/askin-art-gallery/">ASKIN Art Gallery</a></h3>
-            <p class="two-mar-top"><b>Artwork by Christopher Askin.</b></p>
-        </div>
-    </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
             <a href="/other/speedrun-times/"><img src="/images/speedrun-times.png"></a>
         </div>
         <div class="iconlist">
@@ -68,26 +58,6 @@
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/other/game-tracker/">Non-Steam Game Time Tracker</a></h3>
             <p class="two-mar-top"><b>Game time tracker for non-Steam games.</b></p>
-        </div>
-    </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
-            <a href="/other/chrome-extension-ids/"><img src="/images/chrome-extensions.png"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/chrome-extension-ids/">Chrome Extension IDs</a></h3>
-            <p class="two-mar-top"><b>IDs and links of the legitimate versions of popular Chrome extensions.</b></p>
-        </div>
-    </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
-            <a href="/other/adblock-plus-config/"><img src="/images/adblock-plus-config.png"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/adblock-plus-config/">Adblock Plus Configuration</a></h3>
-            <p class="two-mar-top"><b>Extra filter lists and configuration for Adblock Plus.</b></p>
         </div>
     </div>
 
