@@ -23,20 +23,20 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/adblock-plus-config/"><img src="/images/adblock-plus-config.png"></a>
+            <a href="/info/adblock-plus-config/"><img src="/images/adblock-plus-config.png"></a>
         </div>
         <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/adblock-plus-config/">Adblock Plus Configuration</a></h3>
+            <h3 class="no-mar-bottom"><a href="/info/adblock-plus-config/">Adblock Plus Configuration</a></h3>
             <p class="two-mar-top"><b>Extra filter lists and configuration for Adblock Plus.</b></p>
         </div>
     </div>
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/chrome-extension-ids/"><img src="/images/chrome-extensions.png"></a>
+            <a href="/info/chrome-extension-ids/"><img src="/images/chrome-extensions.png"></a>
         </div>
         <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/chrome-extension-ids/">Chrome Extension IDs</a></h3>
+            <h3 class="no-mar-bottom"><a href="/info/chrome-extension-ids/">Chrome Extension IDs</a></h3>
             <p class="two-mar-top"><b>IDs and links of the legitimate versions of popular Chrome extensions.</b></p>
         </div>
     </div>
