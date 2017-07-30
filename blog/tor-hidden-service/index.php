@@ -6,7 +6,7 @@
 
 <head>
     <title>TOR Hidden Service</title>
-    <meta name="description" content="Setting up a TOR Hidden Service">
+    <meta name="description" content="Setting up a TOR Hidden Service for JamieWeb">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
     <link href="/jamie.css" rel="stylesheet">
@@ -21,10 +21,10 @@
     <h1>TOR Hidden Service</h1>
     <hr>
     <p><b>Sunday 12th February 2017</b></p>
-    <p>Last night I launched a TOR Hidden Service for my site, available at <a href="http://jamiewebgbelqfno.onion">jamiewebgbelqfno.onion</a>.</p>
+    <p>Last night I launched a TOR Hidden Service for my site, available at <a href="http://jamiewebgbelqfno.onion" target="_blank">jamiewebgbelqfno.onion</a>.</p>
     <p>It serves exactly the same content as the main surface web site, nothing has been added or removed. My own anonymity is definitely not the purpose of having a TOR hidden service, it's just for demonstrative/research purposes.</p>
     <center><img width="1000px" src="/images/tor-browser-jamieweb.png"></center>
-    <p>I generated the vanity onion address using <a href="https://github.com/katmagic/Shallot">Shallot</a> on my Raspberry Pi cluster. I ran the program on all nodes 24/7 for 35 days, and achieved an average hashrate of 1.25 MH/s. I was searching for URLs that matched the following regex pattern:</p>
+    <p>I generated the vanity onion address using <a href="https://github.com/katmagic/Shallot" target="_blank">Shallot</a> on my Raspberry Pi cluster. I ran the program on all nodes 24/7 for 35 days, and achieved an average hashrate of 1.25 MH/s. I was searching for URLs that matched the following regex pattern:</p>
     <pre>    ^jamie[234567]\|^jamieweb\|^jamiesca\|^jamieonubuntu</pre>
     <p>The total number of matches for each address pattern:</p>
     <pre>    jamie[234567]??????????.onion : 11,765
