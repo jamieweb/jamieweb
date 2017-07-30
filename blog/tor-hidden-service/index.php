@@ -65,7 +65,7 @@
     <p>I extrapolated this to include 15 and 16 characters:</p>
     <pre>    15 : 83,200,000 years
     16 : 2,662,400,000 years</pre>
-    <p>The technical process of generating onion addresses is extremely interesting. First, generate a 1024 bit RSA key pair. Then, find the SHA-1 hash of the DER-encoded ASN.1 public key. Take the first half of this hash (20 out of 40 characters) and convert it into Base32. Add the .onion suffix and you have your address. This can be done manually on your computer by using OpenSSL to generate the key and a <a href="http://www.geocachingtoolbox.com/index.php?page=asciiConversion">Base32 converter</a>. If done correctly, you should end up with a 16 character address made up only of the lower case letters a-z and numbers 2-7.</p>
+    <p>The technical process of generating onion addresses is extremely interesting. First, generate a 1024 bit RSA key pair. Then, find the SHA-1 hash of the DER-encoded ASN.1 public key. Take the first half of this hash (20 out of 40 characters) and convert it into Base32. Add the .onion suffix and you have your address. This can be done manually on your computer by using OpenSSL to generate the key and a <a href="http://www.geocachingtoolbox.com/index.php?page=asciiConversion" target="_blank">Base32 converter</a>. If done correctly, you should end up with a 16 character address made up only of the lower case letters a-z and numbers 2-7.</p>
     <p>The total number of possible unique onion addresses is 1,208,925,819,614,629,174,706,176. This is simply 32^16. 32 because the Base32 alphabet consists of 32 unique characters (usually a-z and 2-7), and 16 because an onion address is 16 characters long.</p>
 </div>
 
