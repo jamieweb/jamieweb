@@ -41,7 +41,7 @@
     <p>...as well as:</p>
     <pre>2a01:4020:1:0:0:0:0:129</pre>
     <p>Double colons can only be used once in an IPv6 address, usually to represent the largest block of zeros.</p>
-    <p>IPv6 addresses are also often encased in sqaure brackets ([]) when used in URLs, command arguments, configuration files, etc.</p>
+    <p>IPv6 addresses are also often encased in square brackets ([]) when used in URLs, command arguments, configuration files, etc.</p>
     <h2 id="dns">DNS Configuration</h2>
     <p>AAAA records are the equivalent of A records, but for IPv6 addresses.</p>
     <p>Both the IPv6 and IPv4 addresses are present in the DNS entries for (www.)jamieweb.net:</p>
