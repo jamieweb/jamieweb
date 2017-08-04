@@ -5,7 +5,7 @@
 <!--Legal Information at https://www.jamieweb.net/contact-->
 
 <head>
-    <title>IPv6 Upgrade</title>
+    <title>Upgrading to IPv6</title>
     <meta name="description" content="IPv6 Upgrade">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
@@ -18,7 +18,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>IPv6 Upgrade</h1>
+    <h1>Upgrading to IPv6</h1>
     <hr>
     <p><b>Saturday 5th August 2017</b></p>
     <p>As of this week, JamieWeb is fully accessible over IPv6! The new IPv6 address for JamieWeb is <b>2a01:4020:1::129</b>.</p>
