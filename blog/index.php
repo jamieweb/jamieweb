@@ -30,6 +30,10 @@
             <div class="blog-brace5"></div>
         </div>
         <div class="blog-list">
+            <h3 class="no-mar-bottom"><a href="/blog/ipv6-site-upgrade/">Upgrading to IPv6</a></h3>
+            <p class="two-no-mar"><b>Setting up and configuring IPv6 on JamieWeb.</b></p>
+            <p class="two-mar-top">Saturday 5th August 2017</p>
+
             <h3 class="no-mar-bottom"><a href="/blog/hosts-file-integrity/">Hosts File Site Blocking</a></h3>
             <p class="two-no-mar"><b>Blocking sites using the hosts file and an integrity verification script.</b></p>
             <p class="two-mar-top">Saturday 15th July 2017</p>
