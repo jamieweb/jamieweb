@@ -57,7 +57,7 @@ Link: <a href="https://github.com/inspircd/inspircd/archive/v2.0.23.tar.gz" targ
 ########################################################################</pre>
     <p>You can download the file using wget:</p>
     <pre>$ wget https://github.com/inspircd/inspircd/archive/v2.0.23.tar.gz</pre>
-    <p><b>b.</b> Verify the integrity of your download. I will try to keep this guide up to date with the hashes for new stable releases of InspIRCd.</p>
+    <p><b>b.</b> Verify the integrity of your download:</p>
     <pre>$ sha256sum v2.0.23.tar.gz
 522b31fc80e8fd90b66837bf50f8a941233709d5b1fc9c0b3c47a413fb69f162  v2.0.23.tar.gz
 $ sha1sum v2.0.23.tar.gz
