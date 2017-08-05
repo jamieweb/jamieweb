@@ -77,8 +77,7 @@ else
     exit
 fi</pre>
     <p>Checking the SSL connection and certificate details are required in order to ensure that there is access to the real GitHub user content website, rather than something that may be intercepting it, such as a captive portal or locally-accepted root certificate.</p>
-    <pre>githubssl=$(echo | openssl s_client -connect raw.githubusercontent.com:443 2>&1 | egrep "^(    Verify return code: 0 \(ok...
-...\)|depth=0 C = US, ST = California, L = San Francisco, O = \"GitHub, Inc[.]\", CN = www[.]github[.]com)$")
+    <pre>githubssl=$(echo | openssl s_client -connect raw.githubusercontent.com:443 2>&1 | egrep "^(    Verify return code: 0 \(ok\)|depth=0 C = US, ST = California, L = San Francisco, O = \"GitHub, Inc[.]\", CN = www[.]github[.]com)$")
 if [[ $(echo "$githubssl" | tail -n 1) == "    Verify return code: 0 (ok)" ]]; then
     #ssl connection passed
     verifications=$((verifications+1))
@@ -86,8 +85,7 @@ else
     #ssl connection failed
     exit
 fi
-if [[ $(echo "$githubssl" | head -n 1) == "depth=0 C = US, ST = California, L = San Francisco, O = \"GitHub, Inc.\", CN =...
-... www.github.com" ]]; then
+if [[ $(echo "$githubssl" | head -n 1) == "depth=0 C = US, ST = California, L = San Francisco, O = \"GitHub, Inc.\", CN = www.github.com" ]]; then
     #certificate details check passed
     verifications=$((verifications+1))
 else
@@ -106,8 +104,7 @@ if [ $livehash == $localhash ]; then
 else
     #update available, downloading update
     mv latest.txt old.txt
-    curl -s "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/REDACTED-REDACTED-REDACTED/hosts" > la...
-    ...test.txt
+    curl -s "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/REDACTED-REDACTED-REDACTED/hosts" > latest.txt
     if [[ $(sha256sum latest.txt | awk '{ print $1 }') == $livehash ]]; then
         #updated file hash matches
     else
@@ -142,8 +139,7 @@ grepstrip=$(echo "$grepstrip2" | egrep -v "^$")
 grepstrip2=$(echo "$grepstrip" | egrep -v "^(  | {32}|	|	{4}| ?	{5})# ")
 
 #Remove default/system hosts file entries
-grepstrip=$(echo "$grepstrip2" | egrep -v "^(127[.]0[.]0[.]1 localhost|127[.]0[.]0[.]1 localhost[.]localdomain|127[.]0[.]...
-...0[.]1 local|255[.]255[.]255[.]255 broadcasthost|::1 localhost|fe80::1%lo0 localhost|0[.]0[.]0[.]0 0[.]0[.]0[.]0)$")
+grepstrip=$(echo "$grepstrip2" | egrep -v "^(127[.]0[.]0[.]1 localhost|127[.]0[.]0[.]1 localhost[.]localdomain|127[.]0[.]0[.]1 local|255[.]255[.]255[.]255 broadcasthost|::1 localhost|fe80::1%lo0 localhost|0[.]0[.]0[.]0 0[.]0[.]0[.]0)$")
 
 #Remove bits left behind
 grepstrip2=$(echo "$grepstrip" | egrep -v "^(0[.]0[.]0[.]0 REDACTED|0[.]0[.]0[.]0 REDACTED|0[.]0[.]0[.]0 REDACTED)$")
@@ -181,8 +177,7 @@ fi</pre>
     <pre>if [ $verifications == "7" ]; then
     #file verification successful
     mv current-hosts.txt backup-hosts.txt
-    egrep -v "^(127[.]0[.]0[.]1 localhost|127[.]0[.]0[.]1 localhost[.]localdomain|127[.]0[.]0[.]1 local|255[.]255[.]255[....
-    ...]255 broadcasthost|::1 localhost|fe80::1%lo0 localhost|0[.]0[.]0[.]0 0[.]0[.]0[.]0)$" latest.txt > current-hosts.txt
+    egrep -v "^(127[.]0[.]0[.]1 localhost|127[.]0[.]0[.]1 localhost[.]localdomain|127[.]0[.]0[.]1 local|255[.]255[.]255[.]255 broadcasthost|::1 localhost|fe80::1%lo0 localhost|0[.]0[.]0[.]0 0[.]0[.]0[.]0)$" latest.txt > current-hosts.txt
     filedate=$(date "+%a %d %b %Y - %r")
     filehostname=$(hostname)
     sed -i "1 i\#Updated: $filedate\n127.0.0.1 localhost\n127.0.0.1 $filehostname\n" current-hosts.txt
