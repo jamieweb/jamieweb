@@ -292,7 +292,7 @@ div.ext-r-2 {
 }
 
 pre {
-    overflow-x: scroll;
+    overflow-x: auto;
     background-color: #e0e0e0;
     padding: 15px;
     border-radius: 15px;
