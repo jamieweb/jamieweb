@@ -78,12 +78,12 @@ jamieweb.net.</pre>
     <p>For example, if I made a request to "89.34.99.41" with the host header "does-not-exist.jamieweb.net", no virtual hosts would match this request. Apache would then fall back to the first virtual host that is listening on "89.34.99.41", and serve the content from there. If there is nothing listening on the address, the request will time out.</p>
     <p>If you configure the first virtual host to listen on an IPv6 address, but then set the ServerName to something that does not exist, direct requests to the IPv6 address will be directed there. See the virtual host config below (irrelevant lines removed):</p>
     <pre>&lt;VirtualHost [2a01:4020:1::129]:80&gt;
-	ServerName null.jamieweb.net
+    ServerName null.jamieweb.net
 
-        &lt;Location /&gt;
-            Deny from all
-            ErrorDocument 403 "403 Forbidden - Direct request to IPv6 address (2a01:4020:1::129) blocked."
-        &lt;/Location&gt;
+    &lt;Location /&gt;
+        Deny from all
+        ErrorDocument 403 "403 Forbidden - Direct request to IPv6 address (2a01:4020:1::129) blocked."
+    &lt;/Location&gt;
 &lt;/VirtualHost&gt;</pre>
     <p>The virtual host above must be the first IPv6-listening virtual host to be defined in order for this to work. Put it right at the top of your configuration file and/or ensure that the file name is first when sorted alphabetically.</p>
     <p>A catch-all virtual host has two main uses: preventing direct access to your web server via IP address, and preventing other people from pointing their domain names at your server and having your server serve content through them.</p>
