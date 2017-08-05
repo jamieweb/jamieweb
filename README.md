@@ -9,7 +9,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
       - Must fix homepage on mobile (currently quite unpredictable) - will be fixed along with new Blog Project Other buttons
     
     New design for Blog Project Other homepage buttons
-    Grid/list layout for /projects
+    Grid/list layout for /projects (same as /info and /other?)
     Link to GitHub on /projects?
     Raspberry Pi Cluster blog post
     Python & C++ - cycles per second - "tickrate"
