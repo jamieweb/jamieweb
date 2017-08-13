@@ -9,7 +9,7 @@
     <meta name="description" content="Security configuration/hardening for the Half-Life client.">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
-    <link href="jamie.css" rel="stylesheet">
+    <link href="/jamie.css" rel="stylesheet">
     <link href="https://www.jamieweb.net/info/hl-client-security/" rel="canonical">
 </head>
 
