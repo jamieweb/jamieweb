@@ -36,7 +36,7 @@
             <li class="dropdown">
                 <h5><a href="/info/">Info</a></h5>
                 <div class="dropdown-content">
-                    <h4><a href="/info/adblock-plus-config/">Adblock Plus Config</a>
+                    <h4><a href="/info/adblock-plus-config/">Adblock Plus Configuration</a>
                     <a href="/info/chrome-extension-ids/">Chrome Extension IDs</a>
                     <a href="/info/hl-client-security/">Half-Life Client Security</a>
                 </div>
