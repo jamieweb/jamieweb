@@ -77,11 +77,11 @@ iptables -I OUTPUT 1 -d 208.64.200.118 -m owner --gid-owner block-net -j ACCEPT<
     <p>The script will be automatically run whenever your network is brought up, such as at boot. To avoid rebooting right now, simply run the script:</p>
     <pre>$ sudo ./etc/network/if-pre-up.d/block-net</pre>
     <p>You can now run applications as the "block-net" group using the "sg" command, and they will only have access to the whitelisted IP addresses. For example:</p>
-    <pre>sg block-net "ping 89.34.99.41"
+    <pre>$ sg block-net "ping 89.34.99.41"
 PING 89.34.99.41 (89.34.99.41) 56(84) bytes of data.
 ping: sendmsg: Operation not permitted</pre>
     <p>But if you ping a whitelisted address, you have access:</p>
-    <pre>sg block-net "ping 208.64.200.117"
+    <pre>$ sg block-net "ping 208.64.200.117"
 PING 208.64.200.117 (208.64.200.117) 56(84) bytes of data.
 64 bytes from 208.64.200.117: icmp_seq=1 ttl=# time=# ms</pre>
     <p>Edit your launcher for Half-Life so that it is run under the "block-net" group. Then you will only have access to your trusted, whitelisted servers.</p>
