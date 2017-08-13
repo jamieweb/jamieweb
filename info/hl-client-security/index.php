@@ -44,7 +44,6 @@ valve.rc</pre>
 default.cfg
 listenserver.cfg
 listip.cfg
-resource
 server.cfg
 skill.cfg</pre>
     <p>Marking "config.cfg" as read-only will prevent you from modifying your in-game settings. This shouldn't be an issue once they are already set up, as you can still make temporary changes that last for the duration of your session using the console, as well as make changes manually.</p>
