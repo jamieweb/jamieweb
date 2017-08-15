@@ -29,9 +29,11 @@ cl_allowupload 0
 cl_download_ingame 0
 cl_filterstuffcmd 1
 sv_allowdownload 0
-sv_allowupload 0</pre>
+sv_allowupload 0
+voice_enable 0</pre>
     <p>This will prevent your client from downloading custom assets when connecting to a server. These may include maps, models, textures, sounds, sprays, etc. The problem with this is that your client will no longer be able to automatically download custom content when connecting to a server. This is an issue for custom maps that you don't already have, so you'll have to download them from somewhere else. Servers that have a mandatory download of large amounts of custom models and sounds are probably best avoided.</p>
-    <p>"cl_filterstuffcmd" is a command found only in versions of Half-Life from February 21st 2013 onwards. It blocks certain sensitive commands and prevents modification of certain console variables, making slowhacking much more difficult. There are ways for servers to bypass this though, so it shouldn't be trusted. Read more <a href="https://developer.valvesoftware.com/wiki/Admin_Slowhacking#List_of_blocked_cvars_and_commands" target="_blank">here</a> and <a href="https://github.com/ValveSoftware/halflife/issues/1497" target="_blank">here</a>.
+    <p>"cl_filterstuffcmd" is a command found only in versions of Half-Life from February 21st 2013 onwards. It blocks certain sensitive commands and prevents modification of certain console variables, making slowhacking much more difficult. There are ways for servers to bypass this though, so it shouldn't be trusted. Read more <a href="https://developer.valvesoftware.com/wiki/Admin_Slowhacking#List_of_blocked_cvars_and_commands" target="_blank">here</a> and <a href="https://github.com/ValveSoftware/halflife/issues/1497" target="_blank">here</a>.</p>
+    <p>"voice_enable 0" will disabled voice communication. There most likely isn't a direct security benefit to this, however if you don't need voice communication then it's a good idea to disable it to reduce to potential attack surface.</p>
     <p><b>Making configuration files read-only:</b></p>
     <p>Mark your configuration files as read-only in order to prevent malicious modification of them.</p>
     <p>The most important ones are:</p>
