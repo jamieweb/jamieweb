@@ -12,7 +12,7 @@
                     <a href="/blog/irc-drawing-bot/">Creating the IRC Drawing Bot</a>
                     <a href="/blog/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a>
                     <a href="/blog/subgraph-os-overview/">Subgraph OS Overview</a>
-                    <a href="/blog/tor-hidden-service/">TOR Hidden Service</a>
+                    <a href="/blog/tor-hidden-service/">Tor Hidden Service</a>
                     <a href="/blog/block-exploitable-content/">Blocking Exploitable Content</a>
                     <a href="/blog/proof-of-timestamp/">Proof Of Timestamp</a>
                     <a href="/blog/identicon-gravity-animation/">Identicon Gravity Animation</a>
