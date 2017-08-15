@@ -32,7 +32,7 @@
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
     <p>Subgraph OS is based on Debian Stretch and uses the Gnome 3 desktop environment, so many people will already be familiar with it.</p>
     <center><img width="1000px" src="/blog/subgraph-os-overview/subgraph-desktop.png"></center>
-    <p>Full disk encryption is mandatory, all network traffic is transparently routed through the TOR network, and the kernel is hardened with Grsecurity and PaX.</p>
+    <p>Full disk encryption is mandatory, all network traffic is transparently routed through the Tor network, and the kernel is hardened with Grsecurity and PaX.</p>
     <pre>user@subgraph:~$ screenfetch
        _,met$$$$$gg.           <b>user@subgraph</b>
     ,g$$$$$$$$$$$$$$$P.        <b>OS:</b> Debian 9.0 Stretch
@@ -51,7 +51,7 @@
        `Y$$b.                 
           `"Y$b._             
               `""""           </pre>
-    <p>Subgraph is funded by the Open Technology Fund, which in turn is funded by the United States Government. This is the same as many other privacy tools including Qubes OS, Tails OS, TOR Project, etc.</p>
+    <p>Subgraph is funded by the Open Technology Fund, which in turn is funded by the United States Government. This is the same as many other privacy tools including Qubes OS, Tails OS, Tor Project, etc.</p>
 
     <h2 id="downloadverify">Downloading and Verifying</h2>
     <p>Subgraph can be downloaded from their official site at <a href="https://subgraph.com" target="_blank">subgraph.com</a>, or their TOR hidden service at <a href="https://subgraphqov3womk.onion" target="_blank">subgraphqov3womk.onion</a> (currently giving SSL errors).</p>
