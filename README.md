@@ -28,7 +28,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     ✓ Grid layout for /other (ended up as a list with icons)
     ✓ SubGraph OS overview
     ✓ Ethereum donation address
-    ✓ TOR hidden service mirror - jamiewebgbelqfno.onion
+    ✓ Tor hidden service mirror - jamiewebgbelqfno.onion
     ✓ Flash/media block checker
     ✓ Advanced AdblockPlus filter syntax
     ✓ Browsing with JavaScript disabled (will be in blog post)
