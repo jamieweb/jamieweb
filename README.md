@@ -17,10 +17,10 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Air-gapped RPi PGP decryption device using binary-over-audio
     PHP blog list generation - efficiency?
     HTTP/2
-    Host bunnymod on /downloads
     
     New site-wide font?
     
+    ✓ Host bunnymod on /downloads
     ✓ IPv6 - (2a01:4020:1::129)
     ✓ Linux /etc/hosts adblocking - file integrity verification
     ✓ IRC drawing bot blog post
