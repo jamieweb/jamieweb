@@ -44,7 +44,7 @@ Link: http://ngageclan.ucoz.ru/load/nghl/12-1-0-41
 ########################################################################
 
 ########################################################################
-<b>Bunnymod Pro</b>
+<b>Bunnymod Pro (Mod)</b>
 
 Name: bunnymodpro.zip
 Size: 798.9 KB (818,023 bytes)
@@ -68,7 +68,7 @@ Link: <a href="https://www.jamieweb.net/downloads/bunnyrace_beta2.bsp" target="_
 ########################################################################
 
 ########################################################################
-<b>AdrenalineGamer Longjump 2</b>
+<b>AdrenalineGamer Longjump 2 (Map)</b>
 
 Name: ag_longjump2.bsp
 Size: 2.2 MB (2,297,864 bytes)
