@@ -26,7 +26,7 @@
     <p>Please see the rules at <a href="http://www.speedrun.com/hl1">speedrun.com/hl1</a> for legitimate competitive speedrunning.</p>
     <p>This is my own prefered configuration of NGHL, with Bunnymod Pro replacing the default game.</p>
     <p>Jump to step: <a href="#step1">#1: Downloads</a> | <a href="#step2">#2: NGHL Installation</a> | <a href="#step3">#3: Mods/Maps/Config</a> | <a href="#step4">#4: Launch Options</a> | <a href="#step5">#5: Starting the Game</a> | <a href="#step6">#6: Final Configuration</a> | <a href="#trouble">Troubleshooting</a></p>
-    <p>Guide Created by Jamie Scaife 10th June 2015. Updated 29th September 2016 and 26th February 2017.</p>
+    <p>Guide Created by Jamie Scaife 10th June 2015. Updated 29th September 2016, 26th February 2017 and 19th August 2017.</p>
 
     <h3 id="step1">Step #1: Downloads</h3>
     <p>Download all of the listed files and save them somewhere safe. This is everything that you need to install/set up NGHL.</p>
@@ -109,7 +109,7 @@ Link: http://www.dusty-clan.net/download.php?view.595
     <p><b>c.</b> Wait for the installation to finish. Do not open the game yet.</p>
 
     <h3 id="step3">Step #3: Mods/Maps/Config</h3>
-    <p><b>a.</b> Extract the 'hlspbunny.7z' file into the '\Program Files (x86)\NGHL\valve' folder, and overwrite all files when prompted.</p>
+    <p><b>a.</b> Extract the 'bunnymodpro.zip' file into the '\Program Files (x86)\NGHL\valve' folder, and overwrite all files when prompted.</p>
     <p><b>b.</b> Move 'dmc.wad' into '\Program Files (x86)\NGHL\valve'. This file is required to load the textures on bunnyrace_beta2.</p>
     <p><b>c.</b> Extract the files: 'ag_longjump2.rar' and 'agtricks.rar', move the resulting .bsp files into '\Program Files (x86)\NGHL\valve\maps' and move 'aw_agctf.wad' into '\Program Files (x86)\NGHL\valve'.</p>
     <pre><b>bunnyrace_beta2.bsp</b> - A large bunnyhop racetrack/course.
