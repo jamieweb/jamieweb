@@ -27,7 +27,7 @@
     <p>This is my own prefered configuration of NGHL, with Bunnymod Pro replacing the default game.</p>
     <p>In this document, I have used 'USERNAME' in places where you must use your own computer username.</p>
     <p>Jump to step: <a href="#step1">#1: Downloads</a> | <a href="#step2">#2: WINE Setup</a> | <a href="#step3">#3: NGHL Installation</a> | <a href="#step4">#4: Mods/Maps/Config</a> | <a href="#step5">#5: Startup Script</a> | <a href="#step6">#6: Desktop Files</a> | <a href="#step7">#7: Starting the Game</a> | <a href="#step8">#8: Final Configuration</a> | <a href="#trouble">Troubleshooting</a></p>
-    <p>Guide Created by Jamie Scaife 10th June 2015. Updated 27th September 2016 and 26th February 2017.</p>
+    <p>Guide Created by Jamie Scaife 10th June 2015. Updated 27th September 2016, 26th February 2017 and 19th August 2017.</p>
     <h3 id="step1">Step #1: Downloads</h3>
     <p>Download all of the listed files and save them somewhere safe. This is everything that you need to install/set up NGHL.</p>
     <p>These files are not created or owned by me. All credit goes to the original authors. External download links are not hyperlinked.</p>
@@ -115,7 +115,7 @@ Link: http://www.dusty-clan.net/download.php?view.595
     <p><b>d.</b> Wait for the installation to finish. Do not open the game yet.</p>
 
     <h3 id="step4">Step #4: Mods/Maps/Config</h3>
-    <p><b>a.</b> Extract the 'hlspbunny.7z' file into the '/home/USERNAME/.wine/drive_c/Program Files (x86)/NGHL/valve' folder, and overwrite all files when prompted.</p>
+    <p><b>a.</b> Extract the 'bunnymodpro.zip' file into the '/home/USERNAME/.wine/drive_c/Program Files (x86)/NGHL/valve' folder, and overwrite all files when prompted.</p>
     <p><b>b.</b> Move 'dmc.wad' into '/home/USERNAME/.wine/drive_c/Program Files (x86)/NGHL/valve'. This file is required to load the textures on bunnyrace_beta2.</p>
     <p><b>c.</b> Extract the files: 'ag_longjump2.rar' and 'agtricks.rar', move the resulting .bsp files into '/home/USERNAME/.wine/drive_c/Program Files (x86)/NGHL/valve/maps' and move 'aw_agctf.wad' into '/home/USERNAME/.wine/drive_c/Program Files (x86)/NGHL/valve'.</p>
     <pre><b>bunnyrace_beta2.bsp</b> - A large bunnyhop racetrack/course.
