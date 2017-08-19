@@ -17,6 +17,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Air-gapped RPi PGP decryption device using binary-over-audio
     PHP blog list generation - efficiency?
     HTTP/2
+    Update hashes page
     
     New site-wide font?
     
