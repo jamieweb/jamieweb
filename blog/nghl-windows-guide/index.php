@@ -150,6 +150,9 @@ alias "w6" "w3;w3"
 alias "w12" "w6;w6"</pre>
     <p>Thanks to quadrazid on the SourceRuns.org forum for the gauss boost, object boost and wait table scripts.</p>
     <p>If you want to add your own scripts or configuration, edit this file.</p>
+    <p><b>e.</b> Edit the file '\Program Files (x86)\NGHL\valve\liblist.gam'. Change the "game" value from "Bunnymod Pro" to "Half-Life".</p>
+    <pre>game "Half-Life"</pre>
+    <p>This will allow you to edit your player settings, such as name, model, colours, etc.</p>
 
     <h3 id="step4">Step #4: Launch Options</h3>
     <p><b>a.</b> Right click the NGHL shortcut, go to 'Properties', and add the following launch options to the target file:</p>
