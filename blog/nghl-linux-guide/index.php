@@ -30,7 +30,7 @@
     <p>Guide Created by Jamie Scaife 10th June 2015. Updated 27th September 2016 and 26th February 2017.</p>
     <h3 id="step1">Step #1: Downloads</h3>
     <p>Download all of the listed files and save them somewhere safe. This is everything that you need to install/set up NGHL.</p>
-    <p>These files are not created or owned by me. All credit goes to the original authors.</p>
+    <p>These files are not created or owned by me. All credit goes to the original authors. External download links are not hyperlinked.</p>
     <pre>########################################################################
 <b>New Gauge Half-Life Installer</b> (Installer)
 
@@ -44,15 +44,15 @@ Link: http://ngageclan.ucoz.ru/load/nghl/12-1-0-41
 ########################################################################
 
 ########################################################################
-<b>Bunnymod Pro</b> (Mod)
+<b>Bunnymod Pro (Mod)</b>
 
-Name: hlspbunny.7z
-Size: 523.7 KB (536,259 bytes)
-MD5: c51fdbd86f19463437721042793b8261
-SHA1: 9f5ef5dcfb997b3ece551c67fb0f0e3ea99491a7
-SHA256: 9377cc8242322ce954488e637ab44613d7ffe13ae29e7e8bd7d283f78bd33ef2
-VirusTotal: <a href="https://www.virustotal.com/en/file/9377cc8242322ce954488e637ab44613d7ffe13ae29e7e8bd7d283f78bd33ef2/analysis/">0/54 Detection Ratio</a>
-Link: https://dl.dropboxusercontent.com/u/29178100/hlspbunny/hlspbunny.7z
+Name: bunnymodpro.zip
+Size: 798.9 KB (818,023 bytes)
+MD5: fcdd8b201f3cd481a8daf32ea9c4fca2
+SHA1: 64f01783613317ad6bab5b2871a321032ccd5347
+SHA256: cbb38bf58140bbfe0f62291025032e295f7aacd077e092293cc5c08b4046b917
+VirusTotal: <a href="https://www.virustotal.com/en/file/cbb38bf58140bbfe0f62291025032e295f7aacd077e092293cc5c08b4046b917/analysis/" target="_blank">0/59 Detection Ratio</a>
+Link: <a href="https://www.jamieweb.net/downloads/bunnymodpro.zip" target="_blank">https://www.jamieweb.net/downloads/bunnymodpro.zip</a>
 ########################################################################
 
 ########################################################################
@@ -64,11 +64,11 @@ MD5: 2cff96007a35332cef81be81e0756bf9
 SHA1: d16f54b1b8554b2853355ba900c21597caeaf1a1
 SHA256: 1b5cb500b41b5383fe6865347c4fe7cc3cc3bb3b2438dc10d5fde1c68f0c21ba
 VirusTotal: <a href="https://www.virustotal.com/en/file/1b5cb500b41b5383fe6865347c4fe7cc3cc3bb3b2438dc10d5fde1c68f0c21ba/analysis/">0/55 Detection Ratio</a>
-Link: https://www.jamieweb.net/downloads/bunnyrace_beta2.bsp
+Link: <a href="https://www.jamieweb.net/downloads/bunnyrace_beta2.bsp" target="_blank">https://www.jamieweb.net/downloads/bunnyrace_beta2.bsp</a>
 ########################################################################
 
 ########################################################################
-<b>AdrenalineGamer Longjump 2</b>
+<b>AdrenalineGamer Longjump 2 (Map)</b>
 
 Name: ag_longjump2.bsp
 Size: 2.2 MB (2,297,864 bytes)
@@ -76,7 +76,7 @@ MD5: 939d0b2236e257ae2a602badf8268640
 SHA1: 7f7748894fd4f65ed932cb3abf9ea00608c2ae5c
 SHA256: f0ac72b26f6ca157b54c14dd2801c243856d055c589a4882063d3597616091a2
 VirusTotal: <a href="https://www.virustotal.com/en/file/f0ac72b26f6ca157b54c14dd2801c243856d055c589a4882063d3597616091a2/analysis/">0/56 Detection Ratio</a>
-Link: https://www.jamieweb.net/downloads/ag_longjump2.bsp
+Link: <a href="https://www.jamieweb.net/downloads/ag_longjump2.bsp" target="_blank">https://www.jamieweb.net/downloads/ag_longjump2.bsp</a>
 ########################################################################
 
 ########################################################################
