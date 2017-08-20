@@ -135,13 +135,13 @@ $ sudo adduser username block-net</pre>
     <pre>#!/bin/bash
 iptables -I OUTPUT 1 -m owner --gid-owner block-net -j DROP</pre>
     <p>This will block all network access to any applications that are run as the group "block-net".</p>
-    <p>You can then allow access to certain whitelisted IP addresses. For example, allow access to the master servers which are used to display the server list in the server browser:</p>
+    <p>You can then allow access to certain whitelisted IP addresses. For example, add the following to the file in order to allow access to the master servers which are used to display the server list in the server browser:</p>
 <pre>iptables -I OUTPUT 1 -d 208.64.200.117 -m owner --gid-owner block-net -j ACCEPT
 iptables -I OUTPUT 1 -d 208.64.200.118 -m owner --gid-owner block-net -j ACCEPT</pre>
     <p>"208.64.200.117" and "208.64.200.118" are the official Half-Life master servers run by Valve. There are also third-party master servers, such as "188.40.40.201", which is what New Gauge Half-Life uses.</p>
     <pre>iptables -I OUTPUT 1 -d 188.40.40.201 -m owner --gid-owner block-net -j ACCEPT</pre>
     <p>The server browser will still show an empty list since it only shows servers that it can reach directly. So even though your client is able to reach the master servers, it can not reach any of the servers that the master servers return. Once you have whitelisted other trusted servers, they will appear in the server browser.</p>
-    <p>Since this is not particularly user-friendly, I suggest finding servers using other sources, then whitelisting them manually before playing.</p>
+    <p>Since this is not particularly user-friendly, I suggest finding servers using other sources, then whitelisting them manually using the file above before playing.</p>
     <p>If you add a server to your favourites list, you do not need to whitelist the master server IPs. Your client will reach out to the favourited servers directly and display them on the favourites tab.</p>
     <p>Mark the script as executable:</p>
     <pre>$ sudo chmod +x /etc/network/if-pre-up.d/block-net</pre>
