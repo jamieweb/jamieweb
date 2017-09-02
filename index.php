@@ -164,6 +164,11 @@ O:::::::OOO:::::::O
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
             <a href="/blog/ipv6-site-upgrade/">
+                <h4 class="no-mar-bottom">Pastebin Keyword Alerts</h4>
+                <h5 class="two-no-mar"><b>Using the Pastebin Alerts Service.</b></h5>
+                <h5 class="two-mar-top">Saturday 2nd September 2017</h5>
+            </a>
+            <a href="/blog/ipv6-site-upgrade/">
                 <h4 class="no-mar-bottom">Upgrading to IPv6</h4>
                 <h5 class="two-no-mar"><b>Setting up and configuring IPv6 on JamieWeb.</b></h5>
                 <h5 class="two-mar-top">Saturday 5th August 2017</h5>
@@ -177,11 +182,6 @@ O:::::::OOO:::::::O
                 <h4 class="no-mar-bottom">InspIRCd Linux Setup Guide</h4>
                 <h5 class="two-no-mar"><b>Guide for installing and configuring InspIRCd on Linux.</b></h5>
                 <h5 class="two-mar-top">Tuesday 16th May 2017</h5>
-            </a>
-            <a href="/blog/irc-drawing-bot/">
-                <h4 class="no-mar-bottom">Creating the IRC Drawing Bot</h4>
-                <h5 class="two-no-mar"><b>Thought process and development of the IRC Drawing Bot.</b></h5>
-                <h5 class="two-mar-top">Sunday 14th May 2017</h5>
             </a>
         </div>
     </div>
