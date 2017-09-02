@@ -6,7 +6,8 @@
             <li class="dropdown">
                 <h5><a href="/blog/">Blog</a></h5>
                 <div class="dropdown-content">
-                    <h4><a href="/blog/ipv6-site-upgrade/">Upgrading to IPv6</a>
+                    <h4><a href="/blog/pastebin-keyword-alerts/">Pastebin Keyword Alerts</a>
+                    <a href="/blog/ipv6-site-upgrade/">Upgrading to IPv6</a>
                     <a href="/blog/hosts-file-integrity/">Hosts File Site Blocking</a>
                     <a href="/blog/inspircd-linux-guide/">InspIRCd Linux Guide</a>
                     <a href="/blog/irc-drawing-bot/">Creating the IRC Drawing Bot</a>
