@@ -163,7 +163,7 @@ O:::::::OOO:::::::O
         <hr>
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
-            <a href="/blog/ipv6-site-upgrade/">
+            <a href="/blog/pastebin-keyword-alerts/">
                 <h4 class="no-mar-bottom">Pastebin Keyword Alerts</h4>
                 <h5 class="two-no-mar"><b>Using the Pastebin Alerts Service.</b></h5>
                 <h5 class="two-mar-top">Saturday 2nd September 2017</h5>
