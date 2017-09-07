@@ -18,7 +18,8 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     PHP blog list generation - efficiency?
     HTTP/2
     Update hashes page
-    Caddy post
+    iptables configuration
+    pf configuration
     
     New site-wide font?
     
