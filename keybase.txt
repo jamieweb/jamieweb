@@ -78,35 +78,45 @@ https://keybase.io/jamieonubuntu
 
 I hereby claim:
 
-  * I am an admin of http://jamiewebgbelqfno.onion.to
+  * I am an admin of https://jamiewebgbelqfno.onion.link
   * I am jamieonubuntu (https://keybase.io/jamieonubuntu) on keybase.
   * I have a public key with fingerprint 7CBB F413 4785 40F6 3045  58F8 5E38 94D8 34B7 98E5
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "0101779377830f385aa5affb7f9782fb5ddc99a18452cee2434e56daca8abfb9e2170a",
-            "fingerprint": "7cbbf413478540f6304558f85e3894d834b798e5",
-            "host": "keybase.io",
-            "key_id": "5e3894d834b798e5",
-            "kid": "0101779377830f385aa5affb7f9782fb5ddc99a18452cee2434e56daca8abfb9e2170a",
-            "uid": "0532174647efa63acb64af406bc1f519",
-            "username": "jamieonubuntu"
-        },
-        "service": {
-            "hostname": "jamiewebgbelqfno.onion.to",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "0101779377830f385aa5affb7f9782fb5ddc99a18452cee2434e56daca8abfb9e2170a",
+      "fingerprint": "7cbbf413478540f6304558f85e3894d834b798e5",
+      "host": "keybase.io",
+      "key_id": "5e3894d834b798e5",
+      "kid": "0101779377830f385aa5affb7f9782fb5ddc99a18452cee2434e56daca8abfb9e2170a",
+      "uid": "0532174647efa63acb64af406bc1f519",
+      "username": "jamieonubuntu"
     },
-    "ctime": 1489773502,
-    "expire_in": 157680000,
-    "prev": "bf2de1ea3fd69d7fe9b4921ba5efbd0d7f53b3646c1ad059c23a3cf0750c606b",
-    "seqno": 15,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1504973267,
+      "hash_meta": "a1905652ce3ddecfd29aae6c915857dfb1842f867c118269680be067ebce325a",
+      "seqno": 1377059
+    },
+    "revoke": {
+      "sig_ids": [
+        "e27efeeda0fbe003879f539fc7a6b935153f39bd3f134d250ca0c6add549bc990f"
+      ]
+    },
+    "service": {
+      "hostname": "jamiewebgbelqfno.onion.link",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1504973315,
+  "expire_in": 157680000,
+  "prev": "f4ac2d9a384c8d91cacdd0d1fb5e41254047e9be2ce639592b6096f157302bcd",
+  "seqno": 17,
+  "tag": "signature"
 }
 
 which yields the signature:
@@ -114,29 +124,32 @@ which yields the signature:
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG v1
 
-owGtkn1MVWUcxy8XjMXQmG3MVJwcxzXgej3nnneKsCB5CYUwQWh5Oc85z3M9vJxz
-uffyFtEqpQETgRUbkJCDwiC0dmexsJhoDC1eUihBNylMCYighQ6uuTrHauuP/uyv
-Z8/v+Xy/v+/vt6dura/B6HOQe3uC6mm85fP1LDAcGNp2swwDqlSKRZVhufDBAfMk
-6HLbcmUJi8JwAidYlidZliNxRHK0INACQoBFPMtZEaAlSeR5geAo2ipCaKVICtKM
-JIgCJwAEeGglWFzAzBiSFTt0Opyy4tZsWREARBEkxXI0hSOGxCma5hBHQ5LjKYkj
-KcDyHKQ14SHVpSu0cEBwQYusajXtYnsQ7z/4/zl34V92NKkVKIZiIRIYUhABQwmI
-whkgEogmeB10Qaci5EONzhHyZagqhaBQcRdi5WZMeyqSRahvVx/n31gxBHYA8wqQ
-olpURVYVi1uf0OFU3aqo5mnYIbfbEaW7uEsdukxT2P42tAFZkbTFaoIi6HRpaiyK
-0EjRLesdCIrjWZakcasZgyUO2Qltsk7QLMPhOJ6D631gkeYJkFWCBBRIJDG8xCLI
-A4q3EkCgIQISrlVoEpAMxYiEIOE0L1pJgRQRztK4yGhbwPQZCxRVN9eCCnbN0yXb
-FcFd6IRYeUCVcbOfwcdoeGiNUf9zhoCHg/75iO7uIEPtyOHJRlPJk3FyS/yvtWn7
-Ao5eOuadC2mTKk0Nkdy6YcrxxsvLFSEbt3c2+2VtPXWBNn97I6m3MXLTzlZv3+Nv
-HrfkeXvzi8mQIE/qW6bAmtjxi1s8S9NmJj64oTyta8/9uwk9VaaYq4dbRye/Ofh7
-9u6fArfmpA8s2MB52xWrKdd3n8k7EP3UienXMvcrxHXxO1QQWHIx+ZF+z+6JbSmL
-/PS0bXzl+dB2R1Ja7InxoCml66OMbv/e33oanzm75kBdU1XPhu/XfzW28sfplktT
-a8NzPbKlfi54OM5Y70jAZtXNd0Y56XhzmN+21S/Oxfme/Bw1NaXUd880X0uNDDmp
-3DhStzBmr9xZWjQ+NsjszZD6X8za1dZXo9byL4R2+syOHr36XFjXYPa6uPqszh92
-DbWiC5k36dhjPl/GP9Z32XXfY+74JLk9bCR+8m5m37Md6eFnr2854y1qOJP0SkDF
-nh2nClZWF8aHByaY2xvaluYejXh94A4NP2uPOnLFL3vo48U8fmNM1fnuqZappXkz
-lrCcMhXvv/f28LX8lnvVya6Y9MRkY1d1/0uZ8/Pww2BUuak65L2U6HJv9OXIDD/H
-B4OdEcXOAlvFE+sTU38MrfC37Hjn6U/3e5ZLZ6iaW4mvvvuLVz6thtbaZwJ/Ls7p
-aC7bzr7fkzi4mB9Mnmu1h6+OOCruRXATfwI=
-=24YL
+owGtU2tsFUUYbW+loVWgAgK1qLBUDNiWfc3uTkEBUYKhRVpbwGh7md2ZLcu9d/f2
+7t5LG2h5xPRBwys0AaGWloQKAmmjFUghFcFIoxVDeUofhGCxpQR5iJImiLOoCSb+
+dP9MdnLO+c53vm82D4uJ8kTnK9WXxMPbe6O/61ej3mse+dxKRrVwMZO+kvGRxwfx
+Y2I7Xp+BmXSG5VhOlqEgy4rA6oICEAJI11VZh7LC6yrAWIMQcYoIeI0QXhREAiSM
+NKQgVVch4TmZRUwKoxtmAQkFQ4bpUFlZU1Vd5ARRVoDI6pLAigAougKIoEARK4Ko
+ylAhgBKXWbbLoOZUZJM0w6J39Mf72N5/4P9n3+G/5IBAL0RJlImOJAFpqiQiXWQl
+VeN0wEEXaJOQiQKEopejgEEsM6yGTSfMlKQwARLy+Yk3ZFmOm7DmGC6OA6wIZYGX
+ZNolspd5A8RBlI44yALJ9SVgTDQd8xAhImmQAwqQsa5S17yuSLLGcQovQUlhVcJK
+MlEpgweua5sUmhatQPtnAaQOQiRi+Yhb3DYKaHY2k/7+8SqG8LQhQjBidSrBCooM
+dSBAXZORpEIBcEDQBahiQaezwjxgNcRqEsIYiFClAbI6k1filgtFDO2xvDuuJ2NY
+QdQClfgLddNKs0zDMtP8humjFoMhy7E0y0+ByxwnaKe7QTnFQZdJSd6/Nb2qYWK6
+O5QRISGbCtC2KPLfGQocSGFIUdAIEa/hIoBMU6GfW4dEqKQuIo3HEAmKqCkYchrS
+MGYxR1eBiBxPt5DOFqqEpi4JEEBelVgo6VRIYHlVw0+ESsfloAKqSaM0kRMOEaYk
+vtIz/qmoaE9U7BCP+6qi4uMS/nlqkY4RgzHPB+8OfTDMvjx08fW2ERmjc083eN7O
+TijsLl7z5qCxtynz2ZzyDRJ/eErL+fvK7U2LPp0xECpqzI3p/2nLzgvjFiQ/DLze
+s2LbVbaqpq55uWdPw77UiakTUtaXP/3itnOvxo053t3AL86snpizds5+XHxnoah0
+RX/S+JszLv2dkztaqh9tPDP47uAPbxw9NnNV+YG2jsk7+7n43ZumXe5uycxpHdox
+8NGk+S/XXH3horYnO3nso5tN6+58U9q/9HrilKbhH9f2rbmSnRRM2rUhpu9U+GCN
+N2XarEubxKornUf2tdUN4LjxmWPauyfU7807UZnf/MWPMZOFz3rKPPmVRmr8rLx1
+lRmJNjJ7r85fdPGPe+cXhK+MLKoqW51xs+yDsWdTs1dfm95efKF2a4Uv715W55xR
+JYXehxsqAkvSS2O3vNWz9NQSMenaYGNJScUrXbe+lI75JzZ6Kn4fHWVAX9zcn0s7
+zQneusja1DVfzdjdW5S72PR29tpn77GxB3rvJtbPnjf9QW53+Utl2083JDXfLc2c
+2z28pzUrUjVifcKquFt1CcVTW6XrWUXVO7YeGfvryRtHF83ft7z1xJm0tNn3E/ds
+3Rz3zLyvC1sShkz27z+Ukzxw8MPXFm7M+Hxq7K72tcKNXyr7LhSxk+JH3R441Ny1
+cE774Lk+oa2xtHaG71ygvrz29rGZZ29WDvm2Ohl3JH0/9U8=
+=8wQV
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -145,3 +158,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/jamieonubuntu
 
 ==================================================================
+
