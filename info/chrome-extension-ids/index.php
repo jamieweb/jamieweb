@@ -31,8 +31,6 @@ Ghostery - <a href="https://chrome.google.com/webstore/detail/ghostery/mlomiejdf
 Privacy Badger - <a href="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp" target="_blank">pkehgijcmpdhfbdbbnkijodmdjhbjlgp</a>
 Disconnect - <a href="https://chrome.google.com/webstore/detail/disconnect/jeoacafpbcihiomhlakheieifhpjdfeo" target="_blank">jeoacafpbcihiomhlakheieifhpjdfeo</a>
 HTTPS Everywhere - <a href="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp" target="_blank">gcbommkclmclpchllfjekcdonpmejbdp</a>
-Web of Trust - <a href="https://chrome.google.com/webstore/detail/wot-web-of-trust-website/bhmmomiinigofkjcapegjjndpbikblnp" target="_blank">bhmmomiinigofkjcapegjjndpbikblnp</a>
-Web of Trust Filter - <a href="https://chrome.google.com/webstore/detail/filter-by-wot/eomhfalemadkajmgmppkoenihlljdjoj" target="_blank">eomhfalemadkajmgmppkoenihlljdjoj</a>
 VTchromizer - <a href="https://chrome.google.com/webstore/detail/vtchromizer/efbjojhplkelaegfbieplglfidafgoka" target="_blank">efbjojhplkelaegfbieplglfidafgoka</a>
 Dr Web Link Checker - <a href="https://chrome.google.com/webstore/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb" target="_blank">aleggpabliehgbeagmfhnodcijcmbonb</a></pre>
     <p><b>Official Google Extensions/Apps that are installed by default:</b></p>
