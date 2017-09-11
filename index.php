@@ -136,27 +136,27 @@ O:::::::OOO:::::::O
         <hr>
         <center>
             <div class="sideitem">
-                <img src="/images/gh-90.png">
+                <a href="https://github.com/JamieOnUbuntu" target="_blank"><img src="/images/gh-90.png"></a>
                 <h4><a href="https://github.com/JamieOnUbuntu" target="_blank">GitHub</a></h4>
             </div>
             <div class="sideitem">
-                <img src="/images/tw-90.png">
+                <a href="https://twitter.com/JamieOnUbuntu" target="_blank"><img src="/images/tw-90.png"></a>
                 <h4><a href="https://twitter.com/JamieOnUbuntu" target="_blank">Twitter</a></h4>
             </div>
             <div class="sideitem">
-                <img src="/images/yt-90.png">
+                <a href="https://www.youtube.com/jamie90437x" target="_blank"><img src="/images/yt-90.png"></a>
                 <h4><a href="https://www.youtube.com/jamie90437x" target="_blank">YouTube</a></h4>
             </div>
             <div class="sideitem">
-                <img src="/images/kb-90.png">
+                <a href="https://keybase.io/JamieOnUbuntu" target="_blank"><img src="/images/kb-90.png"></a>
                 <h4><a href="https://keybase.io/JamieOnUbuntu" target="_blank">Keybase</a></h4>
             </div>
             <div class="sideitem">
-                <img src="/images/irc-90.png">
+                <a href="/irc/"><img src="/images/irc-90.png"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/irc/">IRC</a></h4>
             </div>
             <div class="sideitem">
-                <img src="/images/pgp-90.png">
+                <a href="jamie-scaife.asc"><img src="/images/pgp-90.png"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
             </div>
         </center>
