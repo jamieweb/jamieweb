@@ -2,7 +2,7 @@
 
 My personal website, available at https://www.jamieweb.net or http://jamiewebgbelqfno.onion.
 
-## Site To-do/Ideas List:
+## Site Ideas/To-do List:
     Better mobile compatibility
     ✓ - All blog/projects/other pages should now have acceptable levels of mobile readability
     ✓ - Must fix navbar on mobile (doesn't extend to full page width)
@@ -20,6 +20,8 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Update hashes page
     iptables configuration
     pf configuration
+    Chrome sign-in/sync risk
+    CC-BY for content
     
     New site-wide font?
     
