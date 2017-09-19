@@ -156,7 +156,7 @@ O:::::::OOO:::::::O
                 <h4 class="sideitem-mar-bottom"><a href="/irc/">IRC</a></h4>
             </div>
             <div class="sideitem">
-                <a href="jamie-scaife.asc"><img src="/images/pgp-90.png"></a>
+                <a href="/jamie-scaife.asc" target="_blank"><img src="/images/pgp-90.png"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
             </div>
         </center>
