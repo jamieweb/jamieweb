@@ -42,47 +42,47 @@
     <p>This list does not include vulnerabilities that require user interaction or for the attacker to be present on your Wi-Fi network.</p>
     <p>The iOS version that they are listed under indicates the version at which they were patched, not the version(s) that they affect.</p>
     <p>Many of these vulnerabilities may have been introduced in versions after iOS 6.1.3, however it should still give you a general idea of the state of iOS 6 security.</p>
-    <pre><b>iOS 7</b> -      <a href="https://support.apple.com/kb/HT5934" target="_blank">https://support.apple.com/kb/HT5934</a>
-<b>iOS 7.0.2</b> -  <a href="https://support.apple.com/kb/HT5957" target="_blank">https://support.apple.com/kb/HT5957</a>
-<b>iOS 7.0.3</b> -  <a href="https://support.apple.com/kb/HT6010" target="_blank">https://support.apple.com/kb/HT6010</a>
-<b>iOS 7.0.4</b> -  <a href="https://support.apple.com/kb/HT6058" target="_blank">https://support.apple.com/kb/HT6058</a>
-<b>iOS 7.0.6</b> -  <a href="https://support.apple.com/kb/HT6147" target="_blank">https://support.apple.com/kb/HT6147</a>
-<b>iOS 7.1</b> -    <a href="https://support.apple.com/kb/HT6162" target="_blank">https://support.apple.com/kb/HT6162</a>
-<b>iOS 7.1.1</b> -  <a href="https://support.apple.com/kb/HT6208" target="_blank">https://support.apple.com/kb/HT6208</a>
-<b>iOS 7.1.2</b> -  <a href="https://support.apple.com/kb/HT6297" target="_blank">https://support.apple.com/kb/HT6297</a>
-<b>iOS 8</b> -      <a href="https://support.apple.com/kb/HT6441" target="_blank">https://support.apple.com/kb/HT6441</a>
+    <pre><b>iOS 7</b> ------ <a href="https://support.apple.com/kb/HT5934" target="_blank">https://support.apple.com/kb/HT5934</a>
+<b>iOS 7.0.2</b> -- <a href="https://support.apple.com/kb/HT5957" target="_blank">https://support.apple.com/kb/HT5957</a>
+<b>iOS 7.0.3</b> -- <a href="https://support.apple.com/kb/HT6010" target="_blank">https://support.apple.com/kb/HT6010</a>
+<b>iOS 7.0.4</b> -- <a href="https://support.apple.com/kb/HT6058" target="_blank">https://support.apple.com/kb/HT6058</a>
+<b>iOS 7.0.6</b> -- <a href="https://support.apple.com/kb/HT6147" target="_blank">https://support.apple.com/kb/HT6147</a>
+<b>iOS 7.1</b> ---- <a href="https://support.apple.com/kb/HT6162" target="_blank">https://support.apple.com/kb/HT6162</a>
+<b>iOS 7.1.1</b> -- <a href="https://support.apple.com/kb/HT6208" target="_blank">https://support.apple.com/kb/HT6208</a>
+<b>iOS 7.1.2</b> -- <a href="https://support.apple.com/kb/HT6297" target="_blank">https://support.apple.com/kb/HT6297</a>
+<b>iOS 8</b> ------ <a href="https://support.apple.com/kb/HT6441" target="_blank">https://support.apple.com/kb/HT6441</a>
 &#x2517&#x2501&#x2501 <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4364" target="_blank">CVE-2014-4364</a> - <b>Credential Theft</b> - An attacker can potentially obtain Wi-Fi credentials by impersonating a trusted access point.
-<b>iOS 8.1</b> -    <a href="https://support.apple.com/kb/HT6541" target="_blank">https://support.apple.com/kb/HT6541</a>
-<b>iOS 8.1.1</b> -  <a href="https://support.apple.com/kb/HT204418" target="_blank">https://support.apple.com/kb/HT204418</a>
-<b>iOS 8.1.2</b> -  <a href="https://support.apple.com/kb/HT204422" target="_blank">https://support.apple.com/kb/HT204422</a>
-<b>iOS 8.1.3</b> -  <a href="https://support.apple.com/kb/HT204245" target="_blank">https://support.apple.com/kb/HT204245</a>
-<b>iOS 8.2</b> -    <a href="https://support.apple.com/kb/HT204423" target="_blank">https://support.apple.com/kb/HT204423</a>
+<b>iOS 8.1</b> ---- <a href="https://support.apple.com/kb/HT6541" target="_blank">https://support.apple.com/kb/HT6541</a>
+<b>iOS 8.1.1</b> -- <a href="https://support.apple.com/kb/HT204418" target="_blank">https://support.apple.com/kb/HT204418</a>
+<b>iOS 8.1.2</b> -- <a href="https://support.apple.com/kb/HT204422" target="_blank">https://support.apple.com/kb/HT204422</a>
+<b>iOS 8.1.3</b> -- <a href="https://support.apple.com/kb/HT204245" target="_blank">https://support.apple.com/kb/HT204245</a>
+<b>iOS 8.2</b> ---- <a href="https://support.apple.com/kb/HT204423" target="_blank">https://support.apple.com/kb/HT204423</a>
 &#x2517&#x2501&#x2501 <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1063" target="_blank">CVE-2015-1063</a> - <b>Denial of Service</b> - A malicious Class 0 (Flash) SMS message can cause the device to crash and restart.
-<b>iOS 8.3</b> -    <a href="https://support.apple.com/kb/HT204661" target="_blank">https://support.apple.com/kb/HT204661</a>
-<b>iOS 8.4</b> -    <a href="https://support.apple.com/kb/HT204941" target="_blank">https://support.apple.com/kb/HT204941</a>
+<b>iOS 8.3</b> ---- <a href="https://support.apple.com/kb/HT204661" target="_blank">https://support.apple.com/kb/HT204661</a>
+<b>iOS 8.4</b> ---- <a href="https://support.apple.com/kb/HT204941" target="_blank">https://support.apple.com/kb/HT204941</a>
 &#x2517&#x2501&#x2501 <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3728" target="_blank">CVE-2015-3728</a> - <b>Man in the Middle</b> - Devices may auto-associate with an untrusted Wi-Fi access point that is advertising a known SSID, but with a downgraded security type.
-<b>iOS 8.4.1</b> -  <a href="https://support.apple.com/kb/HT205030" target="_blank">https://support.apple.com/kb/HT205030</a>
+<b>iOS 8.4.1</b> -- <a href="https://support.apple.com/kb/HT205030" target="_blank">https://support.apple.com/kb/HT205030</a>
 &#x2517&#x2501&#x2501 <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3778" target="_blank">CVE-2015-3778</a> - <b>Sensitive Information Disclosure</b> - Devices broadcast MAC addresses from previously accessed Wi-Fi networks.
-<b>iOS 9</b> -      <a href="https://support.apple.com/kb/HT205212" target="_blank">https://support.apple.com/kb/HT205212</a>
-<b>iOS 9.0.2</b> -  <a href="https://support.apple.com/kb/HT205284" target="_blank">https://support.apple.com/kb/HT205284</a>
-<b>iOS 9.1</b> -    <a href="https://support.apple.com/kb/HT205370" target="_blank">https://support.apple.com/kb/HT205370</a>
-<b>iOS 9.2</b> -    <a href="https://support.apple.com/kb/HT205635" target="_blank">https://support.apple.com/kb/HT205635</a>
-<b>iOS 9.2.1</b> -  <a href="https://support.apple.com/kb/HT205732" target="_blank">https://support.apple.com/kb/HT205732</a>
-<b>iOS 9.3</b> -    <a href="https://support.apple.com/kb/HT206166" target="_blank">https://support.apple.com/kb/HT206166</a>
-<b>iOS 9.3.1</b> -  <a href="https://support.apple.com/kb/HT206225" target="_blank">https://support.apple.com/kb/HT206225</a>
-<b>iOS 9.3.2</b> -  <a href="https://support.apple.com/kb/HT206568" target="_blank">https://support.apple.com/kb/HT206568</a>
-<b>iOS 9.3.3</b> -  <a href="https://support.apple.com/kb/HT206902" target="_blank">https://support.apple.com/kb/HT206902</a>
-<b>iOS 9.3.4</b> -  <a href="https://support.apple.com/kb/HT207026" target="_blank">https://support.apple.com/kb/HT207026</a>
-<b>iOS 9.3.5</b> -  <a href="https://support.apple.com/kb/HT207107" target="_blank">https://support.apple.com/kb/HT207107</a>
-<b>iOS 10</b> -     <a href="https://support.apple.com/kb/HT207143" target="_blank">https://support.apple.com/kb/HT207143</a>
+<b>iOS 9</b> ------ <a href="https://support.apple.com/kb/HT205212" target="_blank">https://support.apple.com/kb/HT205212</a>
+<b>iOS 9.0.2</b> -- <a href="https://support.apple.com/kb/HT205284" target="_blank">https://support.apple.com/kb/HT205284</a>
+<b>iOS 9.1</b> ---- <a href="https://support.apple.com/kb/HT205370" target="_blank">https://support.apple.com/kb/HT205370</a>
+<b>iOS 9.2</b> ---- <a href="https://support.apple.com/kb/HT205635" target="_blank">https://support.apple.com/kb/HT205635</a>
+<b>iOS 9.2.1</b> -- <a href="https://support.apple.com/kb/HT205732" target="_blank">https://support.apple.com/kb/HT205732</a>
+<b>iOS 9.3</b> ---- <a href="https://support.apple.com/kb/HT206166" target="_blank">https://support.apple.com/kb/HT206166</a>
+<b>iOS 9.3.1</b> -- <a href="https://support.apple.com/kb/HT206225" target="_blank">https://support.apple.com/kb/HT206225</a>
+<b>iOS 9.3.2</b> -- <a href="https://support.apple.com/kb/HT206568" target="_blank">https://support.apple.com/kb/HT206568</a>
+<b>iOS 9.3.3</b> -- <a href="https://support.apple.com/kb/HT206902" target="_blank">https://support.apple.com/kb/HT206902</a>
+<b>iOS 9.3.4</b> -- <a href="https://support.apple.com/kb/HT207026" target="_blank">https://support.apple.com/kb/HT207026</a>
+<b>iOS 9.3.5</b> -- <a href="https://support.apple.com/kb/HT207107" target="_blank">https://support.apple.com/kb/HT207107</a>
+<b>iOS 10</b> ----- <a href="https://support.apple.com/kb/HT207143" target="_blank">https://support.apple.com/kb/HT207143</a>
 <b>iOS 10.0.1</b> - <a href="https://support.apple.com/kb/HT207145" target="_blank">https://support.apple.com/kb/HT207145</a>
 <b>iOS 10.0.2</b> - <a href="https://support.apple.com/kb/HT207199" target="_blank">https://support.apple.com/kb/HT207199</a>
 <b>iOS 10.0.3</b> - <a href="https://support.apple.com/kb/HT207263" target="_blank">https://support.apple.com/kb/HT207263</a>
-<b>iOS 10.1</b> -   <a href="https://support.apple.com/kb/HT207271" target="_blank">https://support.apple.com/kb/HT207271</a>
+<b>iOS 10.1</b> --- <a href="https://support.apple.com/kb/HT207271" target="_blank">https://support.apple.com/kb/HT207271</a>
 <b>iOS 10.1.1</b> - <a href="https://support.apple.com/kb/HT207287" target="_blank">https://support.apple.com/kb/HT207287</a>
-<b>iOS 10.2</b> -   <a href="https://support.apple.com/kb/HT207422" target="_blank">https://support.apple.com/kb/HT207422</a>
+<b>iOS 10.2</b> --- <a href="https://support.apple.com/kb/HT207422" target="_blank">https://support.apple.com/kb/HT207422</a>
 <b>iOS 10.2.1</b> - <a href="https://support.apple.com/kb/HT207482" target="_blank">https://support.apple.com/kb/HT207482</a>
-<b>iOS 10.3</b> -   <a href="https://support.apple.com/kb/HT207617" target="_blank">https://support.apple.com/kb/HT207617</a>
+<b>iOS 10.3</b> --- <a href="https://support.apple.com/kb/HT207617" target="_blank">https://support.apple.com/kb/HT207617</a>
 &#x2517&#x2501&#x2501 <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2461" target="_blank">CVE-2017-2461</a> - <b>Denial of Service</b> - A malicious SMS message can cause denial of service (resource consumption).
 <b>iOS 10.3.1</b> - <a href="https://support.apple.com/kb/HT207688" target="_blank">https://support.apple.com/kb/HT207688</a>
 &#x2517&#x2501&#x2501 <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6975" target="_blank">CVE-2017-6975</a> - <b>Remote Code Execution</b> - An attacker within range may be able to execute arbitrary code on the Broadcom Wi-Fi chip.
@@ -94,7 +94,7 @@
     <p>I also wonder how the patch for Broadpwn works. It depends whether the patch actually patches the chip's firmware or is simply an iOS software patch. Perhaps if you upgraded to a version where Broadpwn was patched, but then downgraded back to a version where it is not patched, Broadpwn would still be patched because the change persists in the chip's firmware rather than in iOS itself. That's all just theory, but maybe it's an idea worth putting out there.</p>
     <h2>Conclusion</h2>
     <p>Overall, it was definitely an interesting project however due to the security issues with Wi-Fi and that fact that it is not possible to get iOS 6 running natively, I will probably just stick to using iOS 10.3.3 with the low performance. I only use the iPad Mini as a standalone VoIP client anyway, so the low performance in iOS 10 doesn't cause too much of an issue for me.</p>
-    <p>iOS 11 was released to the public today, and the new <a href="https://support.apple.com/kb/HT208112" target="_blank">iOS 11 security advisory</a> was made available just a few hours ago. I was surprised to see such a small number of patched vulnerabilities! Normally major releases have dozens and dozens of new security patches, whereas iOS 11 has only eight! This could be taken both ways, were fewer vulnerabilities found or are there fewer to find? I guess we'll have to wait and see.</p>
+    <p>iOS 11 was released to the public today, and the new <a href="https://support.apple.com/kb/HT208112" target="_blank">iOS 11 security advisory</a> was made available just a few hours ago. I was surprised to see such a small number of patched vulnerabilities. Normally major releases have dozens and dozens of new security patches, whereas iOS 11 has only eight! This could be taken both ways, were fewer vulnerabilities found or are there fewer to find? I guess we'll have to wait and see.</p>
 </div>
 
 <?php include "footer.php" ?>
