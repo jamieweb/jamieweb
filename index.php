@@ -163,6 +163,11 @@ O:::::::OOO:::::::O
         <hr>
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
+            <a href="/blog/ipad-mini-ios6/">
+                <h4 class="no-mar-bottom">iPad Mini iOS 6</h4>
+                <h5 class="two-no-mar"><b>Using iOS 6 on the iPad Mini + iOS Security.</b></h5>
+                <h5 class="two-mar-top">Tuesday 19th September 2017</h5>
+            </a>
             <a href="/blog/pastebin-keyword-alerts/">
                 <h4 class="no-mar-bottom">Pastebin Keyword Alerts</h4>
                 <h5 class="two-no-mar"><b>Using the Pastebin Alerts Service.</b></h5>
@@ -177,11 +182,6 @@ O:::::::OOO:::::::O
                 <h4 class="no-mar-bottom">Hosts File Site Blocking</h4>
                 <h5 class="two-no-mar"><b>Blocking sites using the hosts file and an integrity verification script.</b></h5>
                 <h5 class="two-mar-top">Saturday 15th July 2017</h5>
-            </a>
-            <a href="/blog/inspircd-linux-guide/">
-                <h4 class="no-mar-bottom">InspIRCd Linux Setup Guide</h4>
-                <h5 class="two-no-mar"><b>Guide for installing and configuring InspIRCd on Linux.</b></h5>
-                <h5 class="two-mar-top">Tuesday 16th May 2017</h5>
             </a>
         </div>
     </div>
