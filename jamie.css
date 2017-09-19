@@ -330,6 +330,10 @@ footer {
     text-align: center;
 }
 
+.centertext {
+    text-align: center;
+}
+
 .clearboth {
     clear: both;
 }
@@ -413,6 +417,51 @@ footer {
 
 .gravityradio:checked + .gravitylabel {
     background: url(/images/gravity.gif);
+}
+
+.ios6-slider {
+    background-image: url(/blog/ipad-mini-ios6/6.png);
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 750px;
+}
+
+.ios9-slider {
+    background-image: url(/blog/ipad-mini-ios6/9.png);
+    position: absolute;
+    resize: horizontal;
+    height: 750px;
+    min-width: 0;
+    max-width: 1000px;
+}
+
+.ios9-slider:before {
+    content: '\2194';
+    background: black;
+    position: absolute;
+    line-height: 750px;
+    top: 0;
+    right: 0;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: 16px;
+    color: white;
+    cursor: ew-resize;
+}
+
+.ios-slider {
+    position: relative;
+    resize: horizontal;
+    width: 505px;
+    height: 15px;
+    top: 50%;
+    left: 0px;
+    transform: scaleY(65);
+    transform-origin: center center;
+    min-width: 14px;
+    max-width: 1000px;
+    opacity: 0;
 }
 
 .subgraphcheck {
