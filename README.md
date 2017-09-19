@@ -16,7 +16,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Casio watch mod (N-O-D-E style)
     Air-gapped RPi PGP decryption device using binary-over-audio
     PHP blog list generation - efficiency?
-    HTTP/2
+    HTTP/2 - Waiting for native support in Ubuntu repo package
     Update hashes page
     iptables configuration
     pf configuration
