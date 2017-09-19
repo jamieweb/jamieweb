@@ -420,7 +420,7 @@ footer {
 }
 
 .ios6-slider {
-    background-image: url(/blog/ipad-mini-ios6/6.png);
+    background-image: url(/blog/ipad-mini-ios6/ios-6.png);
     position: relative;
     overflow: hidden;
     width: 1000px;
@@ -428,7 +428,7 @@ footer {
 }
 
 .ios9-slider {
-    background-image: url(/blog/ipad-mini-ios6/9.png);
+    background-image: url(/blog/ipad-mini-ios6/ios-9.png);
     position: absolute;
     resize: horizontal;
     height: 750px;
