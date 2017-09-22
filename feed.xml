@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+
+<channel>
+    <title>JamieWeb (jamieweb.net)</title>
+    <link>https://www.jamieweb.net</link>
+    <description>TEST FEED 22nd SEP 2017 - Website of Jamie Scaife (JamieOnUbuntu).</description>
+    <image>
+        <title>JamieWeb (jamieweb.net)</title>
+        <url>https://www.jamieweb.net/images/favicon.png</url>
+        <link>https://www.jamieweb.net</link>
+    </image>
+    <item>
+        <title>iPad Mini iOS 6</title>
+        <link>https://www.jamieweb.net/blog/ipad-mini-ios6/</link>
+        <description>Using iOS 6 on the iPad Mini + iOS 6 Security.</description>
+        <category>Blog</category>
+        <pubDate>Tue, 19 Sep 2017</pubDate>
+    </item>
+    <item>
+        <title>Pastebin Alerts Service</title>
+        <link>https://www.jamieweb.net/blog/pastebin-keyword-alerts/</link>
+        <description>Using the Pastebin Alerts Service.</description>
+        <category>Blog</category>
+        <pubDate>Sat, 2 Sep 2017</pubDate>
+    </item>
+</channel>
+
+</rss>
