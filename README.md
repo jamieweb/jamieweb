@@ -22,6 +22,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     pf configuration
     Chrome sign-in/sync risk
     CC-BY for content
+    Notifications (IFTTT, email, etc)
     
     New site-wide font?
     
