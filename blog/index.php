@@ -116,7 +116,7 @@
         <div class="blog-list">
             <h3 class="no-mar-bottom"><a href="/blog/ubuntu-phone-review/">Ubuntu Phone Review</a></h3>
             <p class="two-no-mar"><b>A month with the Ubuntu Phone.</b></p>
-            <p class="two-mar-top">Friday 9th September 2015</p>
+            <p class="two-mar-top">Wednesday 9th September 2015</p>
 
             <h3 class="no-mar-bottom"><a href="/blog/nghl-windows-guide/">How to Install 'New Gauge Half-Life' on Windows</a></h3>
             <p class="two-no-mar"><b>Full, step-by-step guide with download links.</b></p>
