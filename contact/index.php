@@ -36,7 +36,7 @@
     <p>I also appreciate general bug reports, including compatibility issues, spelling/grammatical errors, broken links or incorrect information. Thank you!</p>
     <hr>
     <h1>Donations</h1>
-    <p class="redlink">Donations are happily accepted. All donations go directly to the running costs of my site and services (<a href="http://www.anorak.co.uk/428124/money/nigerian-astronaut-lost-in-space-needs-3m-to-get-home-could-be-a-scam.html/">or to saving Major Tunde</a>).</p>
+    <p class="redlink">Donations are happily accepted. All donations go directly to the running costs of my site and services (<a href="http://www.anorak.co.uk/428124/money/nigerian-astronaut-lost-in-space-needs-3m-to-get-home-could-be-a-scam.html/" target="_blank">or to saving Major Tunde</a>).</p>
     <pre>Bitcoin:  <b>1Jamie</b>PmmYMSHnmtnPvF2eyD1hmdGA1NqF - <a href="https://blockchain.info/address/1JamiePmmYMSHnmtnPvF2eyD1hmdGA1NqF" target="_blank">blockchain.info</a>
 Litecoin: <b>LXDE</b>bJAzqeUPy2piNq3YtZfNeTrvSo76Mp - <a href="https://ltc.blockr.io/address/info/LXDEbJAzqeUPy2piNq3YtZfNeTrvSo76Mp" target="_blank">blockr.io</a>
 Dogecoin: <b>DDoS</b>rqbJR33uEJkQQJAh8KWf7pSC22RWNh - <a href="https://dogechain.info/address/DDoSrqbJR33uEJkQQJAh8KWf7pSC22RWNh" target="_blank">dogechain.info</a>
