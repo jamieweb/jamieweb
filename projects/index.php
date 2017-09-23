@@ -32,6 +32,9 @@
 
     <h3 class="no-mar-bottom"><a href="/projects/irc-drawing-bot/">IRC Drawing Bot</a></h3>
     <p class="two-mar-top"><b>An Internet Relay Chat bot that you can control into order to paint pixels on a canvas.</b></p>
+
+    <br>
+    <p class="two-mar-top"><b>View additional projects on my GitHub profile: <a href="https://github.com/JamieOnUbuntu" target="_blank">https://github.com/JamieOnUbuntu</a></b></p>
 </div>
 
 <?php include "footer.php" ?>
