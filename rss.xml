@@ -4,7 +4,7 @@
 <channel>
     <title>JamieWeb (jamieweb.net)</title>
     <link>https://www.jamieweb.net</link>
-    <description>TEST FEED 22nd SEP 2017 - Website of Jamie Scaife (JamieOnUbuntu).</description>
+    <description>Website of Jamie Scaife (JamieOnUbuntu).</description>
     <image>
         <title>JamieWeb (jamieweb.net)</title>
         <url>https://www.jamieweb.net/images/js.png</url>
@@ -25,11 +25,25 @@
         <pubDate>Sat, 2 Sep 2017</pubDate>
     </item>
     <item>
+        <title>Half-Life Client Security</title>
+        <link>https://www.jamieweb.net/info/hl-client-security/</link>
+        <description>Security configuration/hardening for the Half-Life client.</description>
+        <category>Info</category>
+        <pubDate>Sun, 13 Aug 2017</pubDate>
+    </item>
+    <item>
         <title>Upgrading to IPv6</title>
         <link>https://www.jamieweb.net/blog/ipv6-site-upgrade/</link>
         <description>Setting up and configuring IPv6 on JamieWeb.</description>
         <category>Blog</category>
         <pubDate>Sat, 5 Aug 2017</pubDate>
+    </item>
+    <item>
+        <title>Adblock Plus Configuration</title>
+        <link>https://www.jamieweb.net/info/adblock-plus-config/</link>
+        <description>Extra filter lists and configuration for Adblock Plus.</description>
+        <category>Info</category>
+        <pubDate>Sun, 23 Jul 2017</pubDate>
     </item>
     <item>
         <title>Hosts File Site Blocking</title>
@@ -43,20 +57,34 @@
         <link>https://www.jamieweb.net/blog/inspircd-linux-guide/</link>
         <description>In-depth guide for installing and configuring InspIRCd on Linux.</description>
         <category>Blog</category>
-        <pubDate>Sat, 16 May 2017</pubDate>
+        <pubDate>Tue, 16 May 2017</pubDate>
     </item>
     <item>
         <title>Creating the IRC Drawing Bot</title>
         <link>https://www.jamieweb.net/blog/irc-drawing-bot/</link>
         <description>Thought process and development of the IRC Drawing Bot.</description>
         <category>Blog</category>
-        <pubDate>Sat, 14 May 2017</pubDate>
+        <pubDate>Sun, 14 May 2017</pubDate>
+    </item>
+    <item>
+        <title>IRC Drawing Bot</title>
+        <link>https://www.jamieweb.net/projects/irc-drawing-bot/</link>
+        <description>An Internet Relay Chat bot that you can control into order to paint pixels on a canvas.</description>
+        <category>Projects</category>
+        <pubDate>Mon, 8 May 2017</pubDate>
     </item>
     <item>
         <title>Chrome Site Whitelist Extension</title>
         <link>https://www.jamieweb.net/blog/chrome-site-whitelist-extension/</link>
         <description>Discussing the Chrome extension that I am developing.</description>
         <category>Blog</category>
+        <pubDate>Tue, 7 Mar 2017</pubDate>
+    </item>
+    <item>
+        <title>Chrome Site Whitelist Extension</title>
+        <link>https://www.jamieweb.net/projects/chrome-site-whitelist-extension/</link>
+        <description>Chrome extension that highlights links on Google/Reddit that have been whitelisted by the user.</description>
+        <category>Projects</category>
         <pubDate>Tue, 7 Mar 2017</pubDate>
     </item>
     <item>
@@ -78,7 +106,28 @@
         <link>https://www.jamieweb.net/blog/block-exploitable-content/</link>
         <description>Blocking exploitable web content in your browser.</description>
         <category>Blog</category>
-        <pubDate>Sun, 7 Feb 2017</pubDate>
+        <pubDate>Tue, 7 Feb 2017</pubDate>
+    </item>
+    <item>
+        <title>Chrome Extension IDs</title>
+        <link>https://www.jamieweb.net/info/chrome-extension-ids/</link>
+        <description>IDs and links of the legitimate versions of popular Chrome extensions.</description>
+        <category>Info</category>
+        <pubDate>Mon, 6 Feb 2017</pubDate>
+    </item>
+    <item>
+        <title>Blocking Exploitable Content</title>
+        <link>https://www.jamieweb.net/projects/block-exploitable-content/</link>
+        <description>Test whether exploitable web content is blocked in your web browser.</description>
+        <category>Projects</category>
+        <pubDate>Fri, 3 Feb 2017</pubDate>
+    </item>
+    <item>
+        <title>Speedrun Times</title>
+        <link>https://www.jamieweb.net/other/speedrun-times/</link>
+        <description>A list of my speedrun times from 2014/2015.</description>
+        <category>Other</category>
+        <pubDate>Thu, 2 Feb 2017</pubDate>
     </item>
     <item>
         <title>Proof of Timestamp</title>
@@ -114,6 +163,13 @@
         <description>iPhone 4 behaving strangely because of an incorrect system clock.</description>
         <category>Blog</category>
         <pubDate>Sat, 3 Dec 2016</pubDate>
+    </item>
+    <item>
+        <title>Raspberry Pi + BOINC Stats</title>
+        <link>https://www.jamieweb.net/projects/computing-stats/</link>
+        <description>Stats from my Raspberry Pi Cluster and BOINC distributed computing.</description>
+        <category>Projects</category>
+        <pubDate>Sun, 4 Oct 2015</pubDate>
     </item>
     <item>
         <title>Ubuntu Phone Review</title>
