@@ -95,6 +95,7 @@
     <h2>Conclusion</h2>
     <p>Overall, it was definitely an interesting project however due to the security issues with Wi-Fi and that fact that it is not possible to get iOS 6 running natively, I will probably just stick to using iOS 10.3.3 with the low performance. I only use the iPad Mini as a standalone VoIP client anyway, so the low performance in iOS 10 doesn't cause too much of an issue for me.</p>
     <p>iOS 11 was released to the public today, and the new <a href="https://support.apple.com/kb/HT208112" target="_blank">iOS 11 security advisory</a> was made available just a few hours ago. I was surprised to see such a small number of patched vulnerabilities. Normally major releases have dozens and dozens of new security patches, whereas iOS 11 has only eight! This could be taken both ways, were fewer vulnerabilities found or are there fewer to find? I guess we'll have to wait and see.</p>
+    <p><b>Edit 1st Oct 2017 @ 8:53am:</b> <i>Around a day after the initial release of the new iOS 11 security advisory, Apple updated it with many new vulnerabilities. It still seems to have fewer than the average major release, but my statement about there being "only eight" is definitely not correct anymore.</i></p>
 </div>
 
 <?php include "footer.php" ?>
