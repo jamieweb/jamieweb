@@ -23,6 +23,7 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     Chrome sign-in/sync risk
     Notifications (IFTTT, email, etc)
     Email samples
+    Privacy policy/info
     
     New site-wide font?
     
