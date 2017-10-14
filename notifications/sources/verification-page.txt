@@ -1,5 +1,6 @@
 <?php set_time_limit(10);
 
+$finalemail = htmlspecialchars("emailPlaceholder");
 $finalip = htmlspecialchars("ipPlaceholder");
 
 $akv = 0;
@@ -33,8 +34,8 @@ if (!preg_match("/[^a-z0-9]/", $apikey)) {
 }
 
 $messagesource = file_get_contents("notifications/sources/subscription-confirmation-message.txt", FILE_USE_INCLUDE_PATH);
-if (hash("sha256", $messagesource) == "93bed21d77c0de6b8307f84a5cbe6f468a8d741f8ca5c3e300077fde5c44969c") {
-    $message = str_replace("ipPlaceholder", htmlspecialchars($finalip), str_replace("verificationCodePlaceholder", htmlspecialchars($verificationcode), str_replace("emailPlaceholder", htmlspecialchars($finalemail), $messagesource)));
+if (hash("sha256", $messagesource) == "827c8dd4603b7982b609833b031e8be7fec6c1b0ded22b12ae57f7cb1336ec3f") {
+    $message = str_replace("ipVPlaceholder", htmlspecialchars($finalip), str_replace("verificationCodePlaceholder", htmlspecialchars($verificationcode), str_replace("emailVPlaceholder", htmlspecialchars($finalemail), $messagesource)));
     if (file_exists("verified")) {
         $verificationimage = "check.png";
         $verificationmessage = "Already Verified";
@@ -74,7 +75,7 @@ if (hash("sha256", $messagesource) == "93bed21d77c0de6b8307f84a5cbe6f468a8d741f8
 <head>
     <title>Verification Successful</title>
     <meta name="author" content="Jamie Scaife">
-    <link href="jamie.css" rel="stylesheet">
+    <link href="/jamie.css" rel="stylesheet">
 </head>
 
 <body>
