@@ -303,7 +303,7 @@ if (!empty($email)) {
     <!--<p>You can also read my blog post about the email notification system <a href="/blog/email-notification-system/">here</a>.</p>-->
     <p>Alternatively, you can subsribe to the <a href="/rss.xml">RSS feed</a>.</p>
     <!--<p>Before you sign up, you can <a href="/notifications/process/">have a look at the process</a> so that you know what to expect.</p>-->
-    <form action="notifications.php" method="get">
+    <form action="/notifications/" method="get">
         <input class="email-address" name="email" type="text" value="<?php set_time_limit(1); echo htmlspecialchars($email); ?>" placeholder="name@example.com" maxlength="96"><br>
 <?php set_time_limit(1); echo "<p class=\"email-question\">" . htmlspecialchars($captchaa) . " <img src=\"/images/plus.png\" width=\"14px\" alt=\"Plus\"> " . htmlspecialchars($captchab) . " <img src=\"/images/equals.png\" width=\"14px\" alt=\"Equals\"><input class=\"email-answerverify\" name=\"answer\" type=\"number\" placeholder=\"Answer\"></p>"; ?>
         <input name="phpsessid" type="hidden" value="<?php set_time_limit(1); echo htmlspecialchars($sessionid); ?>">
@@ -323,7 +323,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
         //usleep(1700000); //Delay to help prevent enumeration of ongoing verifications - not possible currently due to captcha
 
         echo "<p class=\"email-text\">A verification email has been sent to <b>" . htmlspecialchars($finalemail) . "</b>.<br/>Please enter the verification code from the email in the box below:</p>
-        <form action=\"notifications.php\" method=\"get\">
+        <form action=\"/notifications/\" method=\"get\">
             <input name=\"email\" type=\"hidden\" value=\"" . htmlspecialchars($finalemail) . "\">
             <input class=\"email-answerverify\" name=\"verify\" type=\"text\" placeholder=\"Verification Code\"><br>
             <input class=\"email-submit\" value=\"Verify Code\" type=\"submit\">
@@ -334,7 +334,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
     } elseif (($captchasolved == 1) && !(preg_match("/of mailing list List\(notifications@mailgun.jamieweb.net\) not found\"/", shell_exec("./rate-limit.sh add && curl -s --user 'api:key-" . escapeshellcmd($finalak) . "' -X PUT https://api.mailgun.net/v3/lists/notifications@mailgun.jamieweb.net/members/" . escapeshellcmd($finalemail))))) {
         usleep(950000); //Delay to help prevent time-based enumeration of subscribed addresses
         echo "<p class=\"email-text\">A verification email has been sent to <b>" . htmlspecialchars($finalemail) . "</b>.<br/>Please enter the verification code from the email in the box below:</p>
-        <form action=\"notifications.php\" method=\"get\">
+        <form action=\"/notifications/\" method=\"get\">
             <input name=\"email\" type=\"hidden\" value=\"" . htmlspecialchars($finalemail) . "\">
             <input class=\"email-answerverify\" name=\"verify\" type=\"text\" placeholder=\"Verification Code\"><br>
             <input class=\"email-submit\" value=\"Verify Code\" type=\"submit\">
@@ -358,7 +358,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
             $message = str_replace("ipPlaceholder", htmlspecialchars($finalip), str_replace("verificationCodePlaceholder", htmlspecialchars($verificationcode), str_replace("emailPlaceholder", htmlspecialchars($finalemail), $messagesource)));
             if (preg_match("/\"message\": \"Queued. Thank you.\"/", shell_exec("curl --user 'api:key-" . escapeshellcmd($finalak) . "' https://api.mailgun.net/v3/mailgun.jamieweb.net/messages -F from='JamieWeb <noreply@jamieweb.net>' -F to='" . escapeshellcmd($finalemail) . "' -F subject='jamieweb.net - Please Confirm Your Notifications Subscription' -F o:tag='Verification Email' --form-string html=\"" . $message . "\""))) {
                 echo "<p class=\"email-text\">A verification email has been sent to <b>" . htmlspecialchars($finalemail) . "</b>.<br/>Please enter the verification code from the email in the box below:</p>
-                <form action=\"notifications.php\" method=\"get\">
+                <form action=\"/notifications/\" method=\"get\">
                     <input name=\"email\" type=\"hidden\" value=\"" . htmlspecialchars($finalemail) . "\">
                     <input class=\"email-answerverify\" name=\"verify\" type=\"text\" placeholder=\"Verification Code\"><br>
                     <input class=\"email-submit\" value=\"Verify Code\" type=\"submit\">
