@@ -305,7 +305,7 @@ if (!empty($email)) {
     <!--<p>Before you sign up, you can <a href="/notifications/process/">have a look at the process</a> so that you know what to expect.</p>-->
     <form action="notifications.php" method="get">
         <input class="email-address" name="email" type="text" value="<?php set_time_limit(1); echo htmlspecialchars($email); ?>" placeholder="name@example.com" maxlength="96"><br>
-<?php set_time_limit(1); echo "<p class=\"email-question\">" . htmlspecialchars($captchaa) . " <img src=\"plus.png\" width=\"14px\" alt=\"Plus\"> " . htmlspecialchars($captchab) . " <img src=\"equals.png\" width=\"14px\" alt=\"Equals\"><input class=\"email-answerverify\" name=\"answer\" type=\"number\" placeholder=\"Answer\"></p>"; ?>
+<?php set_time_limit(1); echo "<p class=\"email-question\">" . htmlspecialchars($captchaa) . " <img src=\"/images/plus.png\" width=\"14px\" alt=\"Plus\"> " . htmlspecialchars($captchab) . " <img src=\"/images/equals.png\" width=\"14px\" alt=\"Equals\"><input class=\"email-answerverify\" name=\"answer\" type=\"number\" placeholder=\"Answer\"></p>"; ?>
         <input name="phpsessid" type="hidden" value="<?php set_time_limit(1); echo htmlspecialchars($sessionid); ?>">
         <input class="email-submit" value="Subscribe" type="submit">
     </form>
