@@ -287,74 +287,9 @@ if (!empty($email)) {
     <meta name="description" content="Subscribe to email notifications for new content on jamieweb.net.">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
-    <link href="jamie.css" rel="stylesheet">
+    <link href="/jamie.css" rel="stylesheet">
     <link href="https://www.jamieweb.net/notifications/" rel="canonical">
 <style>
-
-div.email-form {
-    height: 544.44px;
-}
-
-input.email-address {
-    font-size: 26px;
-    height: 35px;
-    width: 600px;
-    border: 0px;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 12px;
-    box-shadow: 0 0 0 5px #cccccc;
-}
-
-input.email-address:focus, input.email-answerverify:focus {
-    outline: none;
-    box-shadow: 0 0 0 5px limegreen;
-}
-
-p.email-question {
-    font-size: 20px;
-}
-
-p.email-question img[alt="Equals"] {
-    margin-right: 13px;
-}
-
-input.email-answerverify {
-    font-size: 18px;
-    height: 25px;
-    width: 200px;
-    border: 0px;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 9px;
-    box-shadow: 0 0 0 5px #cccccc;
-}
-
-input.email-submit {
-    font-size: 18px;
-    border: 0px;
-    border-radius: 15px;
-    padding: 8px;
-    box-shadow: 0 0 0 5px #cccccc;
-}
-
-input.email-submit:hover {
-    cursor: pointer;
-}
-
-input.email-submit[value="Verify Code"] {
-    margin-top: 20px;
-}
-
-p.email-text {
-    font-size: 18px;
-}
-
-p.email-text span {
-    color: crimson;
-}
-
-</style>
 </head>
 
 <body>
