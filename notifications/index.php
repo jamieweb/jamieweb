@@ -370,11 +370,15 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
                         $verifiedpage = str_replace("ipPlaceholder", htmlspecialchars($finalip), str_replace("emailPlaceholder", htmlspecialchars($finalemail), $verifiedpagesource));
                         if (!preg_match("/[^a-z0-9]/", $verificationcode)) {
                             if (!file_exists("verify/" . $verificationcode)) {
-                                usleep(150000);
+                                usleep(100000);
                                 shell_exec("mkdir verify/" . escapeshellcmd($verificationcode) . "/");
-                                usleep(150000);
+                                usleep(100000);
+                                shell_exec("touch verify/" . escapeshellcmd($verificationcode) . "/index.php");
+                                usleep(100000);
+                                shell_exec("touch verify/" . escapeshellcmd($verificationcode) . "/email.txt");
+                                usleep(100000);
                                 file_put_contents("notifications/verify/" . $verificationcode . "/index.php", $verifiedpage, FILE_USE_INCLUDE_PATH);
-                                usleep(150000);
+                                usleep(100000);
                                 file_put_contents("notifications/verify/" . $verificationcode . "/email.txt", "!" . htmlspecialchars($finalemail) . "!", FILE_USE_INCLUDE_PATH);
                             } else {
                                 $mailerror = "Verification Code Already In Use";
