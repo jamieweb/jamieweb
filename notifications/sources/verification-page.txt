@@ -4,7 +4,7 @@ $finalip = htmlspecialchars("ipPlaceholder");
 
 $akv = 0;
 $finalak = "0";
-$apikey = strtolower(rtrim(substr(file_get_contents("api-key.txt"), 4, 36)));
+$apikey = strtolower(rtrim(substr(file_get_contents("notifications/api-key.txt", FILE_USE_INCLUDE_PATH), 4, 36)));
 if (!preg_match("/[^a-z0-9]/", $apikey)) {
     $akv++;
     if (strlen($apikey) == 32) {
@@ -32,7 +32,7 @@ if (!preg_match("/[^a-z0-9]/", $apikey)) {
     }
 }
 
-$messagesource = file_get_contents("/notifications/subscription-confirmation-message.txt", FILE_USE_INCLUDE_PATH);
+$messagesource = file_get_contents("notifications/sources/subscription-confirmation-message.txt", FILE_USE_INCLUDE_PATH);
 if (hash("sha256", $messagesource) == "93bed21d77c0de6b8307f84a5cbe6f468a8d741f8ca5c3e300077fde5c44969c") {
     $message = str_replace("ipPlaceholder", htmlspecialchars($finalip), str_replace("verificationCodePlaceholder", htmlspecialchars($verificationcode), str_replace("emailPlaceholder", htmlspecialchars($finalemail), $messagesource)));
     if (file_exists("verified")) {
@@ -40,8 +40,8 @@ if (hash("sha256", $messagesource) == "93bed21d77c0de6b8307f84a5cbe6f468a8d741f8
         $verificationmessage = "Already Verified";
         $verificationtense = "already";
         $confirmationtense = "already";
-    } elseif (preg_match("/\"message\": \"Mailing list member has been created\"/", shell_exec("curl --user 'api:key-" . htmlspecialchars($finalak) . "' https://api.mailgun.net/v3/lists/notifications@mailgun.jamieweb.net/members -F subscribed=True -F address='" . htmlspecialchars("emailPlaceholder") . "'"))) {
-        if (preg_match("/\"message\": \"Queued. Thank you.\"/", shell_exec("curl --user 'api:key-" . escapeshellcmd($finalak) . "' https://api.mailgun.net/v3/mailgun.jamieweb.net/messages -F from='JamieWeb <noreply@jamieweb.net>' -F to='" . escapeshellcmd($finalemail) . "' -F subject='jamieweb.net - Your Email Notifications Subscription Has Been Confirmed' -F o:tag='Confirmation Email' -F o:tag='Notification Email' --form-string html=\"" . $message . "\""))) {
+    } elseif (preg_match("/\"message\": \"Mailing list member has been created\"/", shell_exec("curl --user 'api:key-" . escapeshellcmd($finalak) . "' https://api.mailgun.net/v3/lists/notifications@mailgun.jamieweb.net/members -F subscribed=True -F address='" . escapeshellcmd("emailPlaceholder") . "'"))) {
+        if (preg_match("/\"message\": \"Queued. Thank you.\"/", shell_exec("curl --user 'api:key-" . escapeshellcmd($finalak) . "' https://api.mailgun.net/v3/mailgun.jamieweb.net/messages -F from='JamieWeb <noreply@jamieweb.net>' -F to='" . escapeshellcmd("emailPlaceholder") . "' -F subject='jamieweb.net - Your Email Notifications Subscription Has Been Confirmed' -F o:tag='Confirmation Email' -F o:tag='Notification Email' --form-string html=\"" . $message . "\""))) {
             $verificationimage = "check.png";
             $verificationmessage = "Verification Successful";
             $verificationtense = "now";
@@ -81,11 +81,9 @@ if (hash("sha256", $messagesource) == "93bed21d77c0de6b8307f84a5cbe6f468a8d741f8
 
 <?php include "navbar.php" ?>
 
-<!--SEND CONFIRMATION EMAIL?-->
-
 <div class="body centertext">
     <br><br>
-<?php echo "<img src=\"" . htmlspecialchars($verificationimage) . "\">
+<?php echo "<img src=\"/images/" . htmlspecialchars($verificationimage) . "\">
 <h1>" . htmlspecialchars($verificationmessage) . "</h1>
 <hr>";
 if (isset($verificationfailed)) {
