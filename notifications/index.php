@@ -344,7 +344,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
         //shell_exec("./rate-limit.sh add");
         file_put_contents("notifications/scripts/ip-rate-limit.txt", "!" . htmlspecialchars($finalip) . "!\n", FILE_APPEND | LOCK_EX | FILE_USE_INCLUDE_PATH);
         $messagesource = file_get_contents("notifications/sources/verification-message.txt", FILE_USE_INCLUDE_PATH);
-        if (hash("sha256", $messagesource) == "999fb1523146e1d4f54d6eff769957ad5ef92040f3d863e93551768875ccadc4") {
+        if (hash("sha256", $messagesource) == "f18df61fb118bebd422790640ee68780ac165f6ac20caf41999d701016ce276f") {
             $verificationcodegenerated = 0;
             while ($verificationcodegenerated == 0) {
                 $verificationcodesource = shell_exec("head -n 5 /dev/urandom | egrep -ao [abcdefghijklmnopqrstuvwxyz0-9] | tr -d \"\n\"");
@@ -366,7 +366,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
                 <p class=\"email-text\">Please note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
                 if ((strlen($verificationcode) == 8) && ($verificationcodegenerated == 1)) {
                     $verifiedpagesource = file_get_contents("notifications/sources/verification-page.txt", FILE_USE_INCLUDE_PATH);
-                    if (hash("sha256", $verifiedpagesource) == "9b570857261c2965213e2f6a39ae9ee5f05f0056ebffa1e66d48e38356feb1e1") {
+                    if (hash("sha256", $verifiedpagesource) == "43ea48ff745ed1ee9af664fccf76533e1c7449ada6e47804100881c433479a56") {
                         $verifiedpage = str_replace("ipPlaceholder", htmlspecialchars($finalip), str_replace("emailPlaceholder", htmlspecialchars($finalemail), $verifiedpagesource));
                         if (!preg_match("/[^a-z0-9]/", $verificationcode)) {
                             if (!file_exists("verify/" . $verificationcode)) {
