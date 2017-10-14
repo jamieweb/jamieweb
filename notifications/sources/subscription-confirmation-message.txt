@@ -91,14 +91,14 @@ p.bottom a {
     </div>
 </div>
 <div class="body">
-    <h3>Hi emailPlaceholder</h3>
+    <h3>Hi emailVPlaceholder</h3>
     <p>Your subscription to notifications for <b>jamieweb.net</b> has been confirmed.</p>
     <p>You can unsubscribe at any time by clicking the link at the bottom of this email (or any future email).</p>
     <p>Thank you.</p>
     <div class="footer">
         <hr>
         <p><a href="https://www.jamieweb.net/">JamieWeb.net</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.jamieweb.net/privacy/">Email Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.jamieweb.net/contact/">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%tag_unsubscribe_url%">Unsubscribe</a></p>
-        <p class="bottom">This automated email was sent because of a user-triggered event at IP address <a href="https://who.is/whois-ip/ip-address/ipPlaceholder"><b>ipPlaceholder</b></a>.<br/>If you keep getting these messages and don't want to, please contact <a href="mailto:abuse@jamieweb.net"><b>abuse@jamieweb.net</b></a> or message me on Twitter at <a href="https://twitter.com/JamieOnUbuntu"><b>@JamieOnUbuntu</b></a> and I'll have a look into it. Thank you.</p>
+        <p class="bottom">This automated email was sent because of a user-triggered event at IP address <a href="https://who.is/whois-ip/ip-address/ipVPlaceholder"><b>ipVPlaceholder</b></a>.<br/>If you keep getting these messages and don't want to, please contact <a href="mailto:abuse@jamieweb.net"><b>abuse@jamieweb.net</b></a> or message me on Twitter at <a href="https://twitter.com/JamieOnUbuntu"><b>@JamieOnUbuntu</b></a> and I'll have a look into it. Thank you.</p>
     </div>
 </div>
 </body>
