@@ -40,7 +40,7 @@ if (!preg_match("/[^a-z0-9]/", $sessionid)) {
 $grlv = 0;
 $grl = 1;
 $grlerror = "Global Rate Limit (Error With Rate Limiter)";
-$globalratelimitcount = rtrim(substr(file_get_contents("/notifications/scripts/global-rate-limit.txt", FILE_USE_INCLUDE_PATH), 0, 2));
+$globalratelimitcount = rtrim(substr(file_get_contents("notifications/scripts/global-rate-limit.txt", FILE_USE_INCLUDE_PATH), 0, 2));
 if (!preg_match("/[^0-9]/", $globalratelimitcount)) {
     $grlv++;
     if ((strlen($globalratelimitcount) == 1) || (strlen($globalratelimitcount) == 2)) {
@@ -88,7 +88,7 @@ if (!preg_match("/[^a-f0-9.:]/", $requestip)) {
 
 $iprl = 1;
 $iprlerror = "IP Rate Limit Reached - Please Try Again Later";
-if (!(substr_count(file_get_contents("/notifications/scripts/ip-rate-limit.txt", FILE_USE_INCLUDE_PATH), "!" . $finalip . "!") >= 5)) {
+if (!(substr_count(file_get_contents("notifications/scripts/ip-rate-limit.txt", FILE_USE_INCLUDE_PATH), "!" . $finalip . "!") >= 5)) {
     $iprl = 0;
     unset($iprlerror);
 }
@@ -121,7 +121,7 @@ $_SESSION["captchaans"] = $captchaans;
 
 $akv = 0;
 $finalak = "0";
-$apikey = strtolower(rtrim(substr(file_get_contents("/notifications/api-key.txt", FILE_USE_INCLUDE_PATH), 4, 36)));
+$apikey = strtolower(rtrim(substr(file_get_contents("notifications/api-key.txt", FILE_USE_INCLUDE_PATH), 4, 36)));
 if (!preg_match("/[^a-z0-9]/", $apikey)) {
     $akv++;
     if (strlen($apikey) == 32) {
@@ -342,8 +342,8 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
         <p class=\"email-text\">Please note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
     } elseif ($captchasolved == 1) {
         //shell_exec("./rate-limit.sh add");
-        file_put_contents("/notifications/scripts/ip-rate-limit.txt", "!" . htmlspecialchars($finalip) . "!\n", FILE_APPEND | LOCK_EX | FILE_USE_INCLUDE_PATH);
-        $messagesource = file_get_contents("/notifications/sources/verification-message.txt", FILE_USE_INCLUDE_PATH);
+        file_put_contents("notifications/scripts/ip-rate-limit.txt", "!" . htmlspecialchars($finalip) . "!\n", FILE_APPEND | LOCK_EX | FILE_USE_INCLUDE_PATH);
+        $messagesource = file_get_contents("notifications/sources/verification-message.txt", FILE_USE_INCLUDE_PATH);
         if (hash("sha256", $messagesource) == "999fb1523146e1d4f54d6eff769957ad5ef92040f3d863e93551768875ccadc4") {
             $verificationcodegenerated = 0;
             while ($verificationcodegenerated == 0) {
@@ -365,17 +365,17 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
                 </form>
                 <p class=\"email-text\">Please note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
                 if ((strlen($verificationcode) == 8) && ($verificationcodegenerated == 1)) {
-                    $verifiedpagesource = file_get_contents("/notifications/sources/verification-page.txt", FILE_USE_INCLUDE_PATH);
+                    $verifiedpagesource = file_get_contents("notifications/sources/verification-page.txt", FILE_USE_INCLUDE_PATH);
                     if (hash("sha256", $verifiedpagesource) == "9b570857261c2965213e2f6a39ae9ee5f05f0056ebffa1e66d48e38356feb1e1") {
                         $verifiedpage = str_replace("ipPlaceholder", htmlspecialchars($finalip), str_replace("emailPlaceholder", htmlspecialchars($finalemail), $verifiedpagesource));
                         if (!preg_match("/[^a-z0-9]/", $verificationcode)) {
                             if (!file_exists("verify/" . $verificationcode)) {
                                 usleep(150000);
-                                shell_exec("mkdir /notifications/verify/" . escapeshellcmd($verificationcode));
+                                shell_exec("mkdir verify/" . escapeshellcmd($verificationcode) . "/");
                                 usleep(150000);
-                                file_put_contents("/notifications/verify/" . $verificationcode . "/index.php", $verifiedpage, FILE_USE_INCLUDE_PATH);
+                                file_put_contents("notifications/verify/" . $verificationcode . "/index.php", $verifiedpage, FILE_USE_INCLUDE_PATH);
                                 usleep(150000);
-                                file_put_contents("/notifications/verify/" . $verificationcode . "/email.txt", "!" . htmlspecialchars($finalemail) . "!", FILE_USE_INCLUDE_PATH);
+                                file_put_contents("notifications/verify/" . $verificationcode . "/email.txt", "!" . htmlspecialchars($finalemail) . "!", FILE_USE_INCLUDE_PATH);
                             } else {
                                 $mailerror = "Verification Code Already In Use";
                             }
