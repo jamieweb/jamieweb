@@ -40,7 +40,7 @@ if (!preg_match("/[^a-z0-9]/", $sessionid)) {
 $grlv = 0;
 $grl = 1;
 $grlerror = "Global Rate Limit (Error With Rate Limiter)";
-$globalratelimitcount = rtrim(substr(file_get_contents("notifications/scripts/global-rate-limit.txt", FILE_USE_INCLUDE_PATH), 0, 2));
+$globalratelimitcount = rtrim(substr(file_get_contents("notifications/scripts/storage/global-rate-limit.txt", FILE_USE_INCLUDE_PATH), 0, 2));
 if (!preg_match("/[^0-9]/", $globalratelimitcount)) {
     $grlv++;
     if ((strlen($globalratelimitcount) == 1) || (strlen($globalratelimitcount) == 2)) {
