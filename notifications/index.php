@@ -88,7 +88,7 @@ if (!preg_match("/[^a-f0-9.:]/", $requestip)) {
 
 $iprl = 1;
 $iprlerror = "IP Rate Limit Reached - Please Try Again Later";
-if (!(substr_count(file_get_contents("notifications/scripts/ip-rate-limit.txt", FILE_USE_INCLUDE_PATH), "!" . $finalip . "!") >= 5)) {
+if (!(substr_count(file_get_contents("notifications/scripts/storage/ip-rate-limit.txt", FILE_USE_INCLUDE_PATH), "!" . $finalip . "!") >= 5)) {
     $iprl = 0;
     unset($iprlerror);
 }
@@ -342,7 +342,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
         <p class=\"email-text\">alreadyPlease note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
     } elseif ($captchasolved == 1) {
         //shell_exec("./rate-limit.sh add");
-        file_put_contents("notifications/scripts/ip-rate-limit.txt", "!" . htmlspecialchars($finalip) . "!\n", FILE_APPEND | LOCK_EX | FILE_USE_INCLUDE_PATH);
+        file_put_contents("notifications/scripts/storage/ip-rate-limit.txt", "!" . htmlspecialchars($finalip) . "!\n", FILE_APPEND | LOCK_EX | FILE_USE_INCLUDE_PATH);
         $messagesource = file_get_contents("notifications/sources/verification-message.txt", FILE_USE_INCLUDE_PATH);
         if (hash("sha256", $messagesource) == "f18df61fb118bebd422790640ee68780ac165f6ac20caf41999d701016ce276f") {
             $verificationcodegenerated = 0;
