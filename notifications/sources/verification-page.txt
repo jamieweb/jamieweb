@@ -63,8 +63,7 @@ if (hash("sha256", $messagesource) == "93bed21d77c0de6b8307f84a5cbe6f468a8d741f8
     $verificationfailed = 1;
     $verificationimage = "cross.png";
     $verificationmessage = "Verification Failed (Unable To Send Confirmation Email)";
-
-?>
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">
