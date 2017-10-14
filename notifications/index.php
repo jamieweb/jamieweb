@@ -331,7 +331,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
         if (isset($vcerror)) {
             echo "<p class=\"email-text\">Error: <span>" . htmlspecialchars($vcerror) . "</span></p>";
         }
-    } elseif (($captchasolved == 1) && !(preg_match("/of mailing list List\(notifications@mailgun.jamieweb.net\) not found\"/", shell_exec("./rate-limit.sh add && curl -s --user 'api:key-" . escapeshellcmd($finalak) . "' -X PUT https://api.mailgun.net/v3/lists/notifications@mailgun.jamieweb.net/members/" . escapeshellcmd($finalemail))))) {
+    } elseif (($captchasolved == 1) && !(preg_match("/of mailing list List\(notifications@mailgun.jamieweb.net\) not found\"/", shell_exec("./scripts/rate-limit.sh add && curl -s --user 'api:key-" . escapeshellcmd($finalak) . "' -X PUT https://api.mailgun.net/v3/lists/notifications@mailgun.jamieweb.net/members/" . escapeshellcmd($finalemail))))) {
         usleep(950000); //Delay to help prevent time-based enumeration of subscribed addresses
         echo "<p class=\"email-text\">A verification email has been sent to <b>" . htmlspecialchars($finalemail) . "</b>.<br/>Please enter the verification code from the email in the box below:</p>
         <form action=\"/notifications/\" method=\"get\">
@@ -339,7 +339,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
             <input class=\"email-answerverify\" name=\"verify\" type=\"text\" placeholder=\"Verification Code\"><br>
             <input class=\"email-submit\" value=\"Verify Code\" type=\"submit\">
         </form>
-        <p class=\"email-text\">Please note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
+        <p class=\"email-text\">alreadyPlease note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
     } elseif ($captchasolved == 1) {
         //shell_exec("./rate-limit.sh add");
         file_put_contents("notifications/scripts/ip-rate-limit.txt", "!" . htmlspecialchars($finalip) . "!\n", FILE_APPEND | LOCK_EX | FILE_USE_INCLUDE_PATH);
