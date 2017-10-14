@@ -289,7 +289,6 @@ if (!empty($email)) {
     <meta name="author" content="Jamie Scaife">
     <link href="/jamie.css" rel="stylesheet">
     <link href="https://www.jamieweb.net/notifications/" rel="canonical">
-<style>
 </head>
 
 <body>
