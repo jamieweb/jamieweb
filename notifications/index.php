@@ -366,7 +366,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
                 <p class=\"email-text\">Please note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
                 if ((strlen($verificationcode) == 8) && ($verificationcodegenerated == 1)) {
                     $verifiedpagesource = file_get_contents("notifications/sources/verification-page.txt", FILE_USE_INCLUDE_PATH);
-                    if (hash("sha256", $verifiedpagesource) == "fe7a568019b81ab7e7dbfa109372b8228716fe7161292d53a5dfec1e399ea898") {
+                    if (hash("sha256", $verifiedpagesource) == "4755c7143f336568a7f9b99cf0362fdb587673a0956ad7cc9b1b8ad00b20ee27") {
                         $verifiedpage = str_replace("ipPlaceholder", htmlspecialchars($finalip), str_replace("emailPlaceholder", htmlspecialchars($finalemail), $verifiedpagesource));
                         if (!preg_match("/[^a-z0-9]/", $verificationcode)) {
                             if (!file_exists("verify/" . $verificationcode)) {
