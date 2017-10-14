@@ -1,0 +1,105 @@
+<html>
+<head>
+<style>
+
+body {
+    background-color: #f8f8f8;
+    margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+div.header {
+    background-color: #59a2c7;
+    width: 100%;
+    height: 100px;
+}
+
+div.logo {
+    margin: 0 auto;
+    width: 96%;
+    padding-top: 20px;
+}
+
+div.js-circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+h1.js {
+    line-height: 60px;
+    margin: 0px;
+    color: #59a2c7;
+}
+
+h1.title {
+    display: inline-block;
+    color: white;
+    padding-left: 20px;
+    line-height: 60px;
+    margin: 0px;
+}
+
+div.body {
+    margin: 0 auto;
+    width: 96%;
+    padding: 25px;
+    padding-top: 0px;
+}
+
+pre {
+    overflow-x: auto;
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 0px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+div.footer {
+    text-align: center;
+}
+
+p.bottom {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+p.bottom a {
+    color: black;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <div class="js-circle">
+            <h1 class="js">JS</h1>
+        </div>
+        <h1 class="title">jamieweb.net</h1>
+    </div>
+</div>
+<div class="body">
+    <h3>Hi emailPlaceholder</h3>
+    <p>Your subscription to notifications for <b>jamieweb.net</b> has been confirmed.</p>
+    <p>You can unsubscribe at any time by clicking the link at the bottom of this email (or any future email).</p>
+    <p>Thank you.</p>
+    <div class="footer">
+        <hr>
+        <p><a href="https://www.jamieweb.net/">JamieWeb.net</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.jamieweb.net/privacy/">Email Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.jamieweb.net/contact/">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%tag_unsubscribe_url%">Unsubscribe</a></p>
+        <p class="bottom">This automated email was sent because of a user-triggered event at IP address <a href="https://who.is/whois-ip/ip-address/ipPlaceholder"><b>ipPlaceholder</b></a>.<br/>If you keep getting these messages and don't want to, please contact <a href="mailto:abuse@jamieweb.net"><b>abuse@jamieweb.net</b></a> or message me on Twitter at <a href="https://twitter.com/JamieOnUbuntu"><b>@JamieOnUbuntu</b></a> and I'll have a look into it. Thank you.</p>
+    </div>
+</div>
+</body>
+</html>
