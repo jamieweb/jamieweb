@@ -299,10 +299,10 @@ if (!empty($email)) {
     <h1>Email Notifications</h1>
     <hr>
     <p>Subscribe to receive email notifications when I post new content.</p>
-    <p>Feel free to read about how your email address will be treated: <a href="/privacy/">Email Privacy</a></p>
-    <!--<p>You can also read my blog post about the email notification system <a href="/blog/email-notification-system/">here</a>.</p>-->
-    <p>Alternatively, you can subsribe to the <a href="/rss.xml">RSS feed</a>.</p>
-    <!--<p>Before you sign up, you can <a href="/notifications/process/">have a look at the process</a> so that you know what to expect.</p>-->
+    <p>Feel free to read about how your email address will be treated: <a href="/privacy/" target="_blank">Email Privacy</a></p>
+    <!--<p>You can also read my blog post about the email notification system <a href="/blog/email-notification-system/" target="_blank">here</a>.</p>-->
+    <p>Alternatively, you can subsribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.</p>
+    <!--<p>Before you sign up, you can <a href="/notifications/process/" target="_blank">have a look at the subscription process</a> so that you know what to expect.</p>-->
     <form action="/notifications/" method="get">
         <input class="email-address" name="email" type="text" value="<?php set_time_limit(1); echo htmlspecialchars($email); ?>" placeholder="name@example.com" maxlength="96"><br>
 <?php set_time_limit(1); echo "<p class=\"email-question\">" . htmlspecialchars($captchaa) . " <img src=\"/images/plus.png\" width=\"14px\" alt=\"Plus\"> " . htmlspecialchars($captchab) . " <img src=\"/images/equals.png\" width=\"14px\" alt=\"Equals\"><input class=\"email-answerverify\" name=\"answer\" type=\"number\" placeholder=\"Answer\"></p>"; ?>
