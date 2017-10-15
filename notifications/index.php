@@ -339,7 +339,7 @@ if ((isset($finalemail)) && (!isset($error)) && ($charverifications >= 6) && ($v
             <input class=\"email-answerverify\" name=\"verify\" type=\"text\" placeholder=\"Verification Code\"><br>
             <input class=\"email-submit\" value=\"Verify Code\" type=\"submit\">
         </form>
-        <p class=\"email-text\">alreadyPlease note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
+        <p class=\"email-text\">Please note that if you are already subscribed, you will not receive a verification code.<br/>To unsubscribe, visit the link at the bottom of a notification email.</p>";
     } elseif ($captchasolved == 1) {
         //shell_exec("./rate-limit.sh add");
         file_put_contents("notifications/scripts/storage/ip-rate-limit.txt", "!" . htmlspecialchars($finalip) . "!\n", FILE_APPEND | LOCK_EX | FILE_USE_INCLUDE_PATH);
