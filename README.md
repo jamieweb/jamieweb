@@ -1,6 +1,10 @@
 # jamieweb
 
-My personal website, available at https://www.jamieweb.net or http://jamiewebgbelqfno.onion.
+My personal website, available at:
+
+* [Web] https://www.jamieweb.net
+* [Onion v2] http://jamiewebgbelqfno.onion
+* [Onion v3] Work in progress!
 
 ## Site Ideas/To-do List:
     Better mobile compatibility
