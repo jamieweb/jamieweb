@@ -10,23 +10,24 @@ My personal website, available at https://www.jamieweb.net or http://jamiewebgbe
     
     New design for Blog Project Other homepage buttons
     Grid/list layout for /projects (same as /info and /other?)
-    Link to GitHub on /projects?
     Raspberry Pi Cluster blog post
     Python & C++ - cycles per second - "tickrate"
-    Casio watch mod (N-O-D-E style)
+    Casio watch mod (N-O-D-E style) - in progress but I am having issues with masking for spray painting!
     Air-gapped RPi PGP decryption device using binary-over-audio
     PHP blog list generation - efficiency?
-    HTTP/2 - Waiting for native support in Ubuntu repo package
     Update hashes page
     iptables configuration
     pf configuration
     Chrome sign-in/sync risk
-    Notifications (IFTTT, email, etc)
     Email samples
-    Privacy policy/info
+    Onion v3 Tor Hidden Service
     
     New site-wide font?
+    HTTP/2 - Waiting for native support in Ubuntu repo package
     
+    ✓ Notifications (IFTTT, email, etc)
+    ✓ Privacy policy/info
+    ✓ Link to GitHub on /projects?
     ✓ Host bunnymod on /downloads
     ✓ IPv6 - (2a01:4020:1::129)
     ✓ Linux /etc/hosts adblocking - file integrity verification
