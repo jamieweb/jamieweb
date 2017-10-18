@@ -24,7 +24,7 @@ My personal website, available at:
     pf configuration
     Chrome sign-in/sync risk
     Email samples
-    Onion v3 Tor Hidden Service
+    Onion v3 Tor Hidden Service - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion (Work in Progress)
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
