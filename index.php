@@ -26,7 +26,11 @@
         <h3 class="no-mar-bottom intro-mar-top">No Ads, No Tracking, No JavaScript</h3>
         <p class="two-mar-top">This website does not have any adverts, tracking or other internet annoyances.<br/>It's also 100% JavaScript free.</p>
         <h3 class="no-mar-bottom">Tor Hidden Service</h3>
-        <p class="two-mar-top">This site is available through Tor at: <a class="onionlink" href="http://jamiewebgbelqfno.onion">jamiewebgbelqfno.onion</a></p>
+        <p class="two-mar-top">This site is available through Tor at:</p>
+        <ul>
+            <li><p>Onion v2: <a class="onionlink two-mar-left" href="http://jamiewebgbelqfno.onion">jamiewebgbelqfno.onion</a></p></li>
+            <li><p>Onion v3: <a class="onionlink two-mar-left" href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></p></li>
+        </ul>
         <hr>
 
         <h1 class="no-mar-bottom">Featured Content</h1>
