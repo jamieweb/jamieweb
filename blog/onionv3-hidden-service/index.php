@@ -9,7 +9,7 @@
     <meta name="description" content="Setting up a Tor Onion v3 Hidden Service for JamieWeb">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
-    <link href="jamie.css" rel="stylesheet">
+    <link href="/jamie.css" rel="stylesheet">
     <link href="https://www.jamieweb.net/blog/onionv3-hidden-service/" rel="canonical">
 </head>
 
@@ -31,7 +31,7 @@
 &#x2523&#x2501&#x2501 <a href="#vanitygeneration">Vanity Address Generation</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
     <p>Onion v3 is the new next-generation Tor Onion Services specification. The most noticable change is the increase in address length, however Onion v3 uses better cryptography, ECC (eliptic curve cryptography) rather than RSA, and has an improved hidden service directory protocol.</p>
-    <img width="1000px" src="onion-alpha.png">
+    <img width="1000px" src="/blog/onionv3-hidden-service/onion-alpha.png">
     <p>Since this hidden service is running on an alpha build of Tor, I am hosting it on a separate, isolated server. I'm also using a virtual machine for testing the Tor Browser alpha builds, as seen above.</p>
     <h2 id="onionconfig">Hidden Service Configuration</h2>
     <p>In order to set up an Onion v3 hidden service, you'll have to build Tor from source.</p>
