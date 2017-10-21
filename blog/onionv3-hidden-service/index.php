@@ -20,7 +20,7 @@
 <div class="body">
     <h1>Tor Onion v3 Hidden Service</h1>
     <hr>
-    <p><b>Friday 20th October 2017</b></p>
+    <p><b>Saturday 21st October 2017</b></p>
     <p>I have set up a new Onion v3 Tor Hidden Service for JamieWeb, available at:</p>
     <pre><a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion" target="_blank">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></pre>
     <p>As of writing this post, you need at least tor-0.3.2.1-alpha (eg: Tor Browser 7.5a5) in order to access the new Onion v3 hidden services.</p>
