@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Tor Onion v3 Hidden Service</title>
+        <link>https://www.jamieweb.net/blog/onionv3-hidden-service/</link>
+        <description>Testing the new Tor Onion v3 Hidden Services.</description>
+        <category>Blog</category>
+        <pubDate>Sat, 21 Oct 2017</pubDate>
+    </item>
+    <item>
         <title>iPad Mini iOS 6</title>
         <link>https://www.jamieweb.net/blog/ipad-mini-ios6/</link>
         <description>Using iOS 6 on the iPad Mini + iOS 6 Security.</description>
