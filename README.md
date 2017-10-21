@@ -4,7 +4,7 @@ My personal website, available at:
 
 * Web: https://www.jamieweb.net
 * Onion v2: http://jamiewebgbelqfno.onion
-* Onion v3: Work in progress!
+* Onion v3: http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
 
 ## Site Ideas/To-do List:
     Better mobile compatibility
@@ -28,7 +28,7 @@ My personal website, available at:
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
 
-    ✓ Onion v3 Tor Hidden Service - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion (Work in Progress)
+    ✓ Onion v3 Tor Hidden Service - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
     ✓ Notifications (IFTTT, email, etc) - /notifications
     ✓ Privacy policy/info
     ✓ Link to GitHub on /projects?
