@@ -163,6 +163,11 @@ O:::::::OOO:::::::O
         <hr>
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
+            <a href="/blog/onionv3-hidden-service/">
+                <h4 class="no-mar-bottom">Tor Onion v3 Hidden Service</h4>
+                <h5 class="two-no-mar"><b>Testing the new Tor Onion v3 Hidden Services.</b></h5>
+                <h5 class="two-mar-top">Saturday 21st October 2017</h5>
+            </a>
             <a href="/blog/ipad-mini-ios6/">
                 <h4 class="no-mar-bottom">iPad Mini iOS 6</h4>
                 <h5 class="two-no-mar"><b>Using iOS 6 on the iPad Mini + iOS Security.</b></h5>
@@ -177,11 +182,6 @@ O:::::::OOO:::::::O
                 <h4 class="no-mar-bottom">Upgrading to IPv6</h4>
                 <h5 class="two-no-mar"><b>Setting up and configuring IPv6 on JamieWeb.</b></h5>
                 <h5 class="two-mar-top">Saturday 5th August 2017</h5>
-            </a>
-            <a href="/blog/hosts-file-integrity/">
-                <h4 class="no-mar-bottom">Hosts File Site Blocking</h4>
-                <h5 class="two-no-mar"><b>Blocking sites using the hosts file and an integrity verification script.</b></h5>
-                <h5 class="two-mar-top">Saturday 15th July 2017</h5>
             </a>
         </div>
     </div>
