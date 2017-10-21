@@ -21,7 +21,7 @@
     <h1>New Site Design</h1>
     <hr>
     <p><b>Wednesday 14th December 2016</b></p>
-    <p>Today I am launching a new design for my site. The new design is still basic/simplistic and content-focused.</p>
+    <p>Today I am launching a new design for my site. The new design is still basic/simplistic and content-focussed.</p>
     <p>It is much more CSS heavy, makes use of some of the new HTML5 page layout tags, and will be generally easier to make changes to in the future.</p>
     <p>If you notice any mistakes, errors or 404 links, please let me know. Thanks!</p>
 </div>
