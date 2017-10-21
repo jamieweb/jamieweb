@@ -306,6 +306,11 @@ pre a {
     font-family: monospace;
 }
 
+pre.scroll {
+    height: 210px;
+    overflow-y: scroll;
+}
+
 pre.arial {
     font-family: arial;
 }
