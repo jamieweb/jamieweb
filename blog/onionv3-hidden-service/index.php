@@ -6,7 +6,7 @@
 
 <head>
     <title>Tor Onion v3 Hidden Service</title>
-    <meta name="description" content="Testing out the new Tor Onion v3 Hidden Services">
+    <meta name="description" content="Testing the new Tor Onion v3 Hidden Services">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
     <link href="/jamie.css" rel="stylesheet">
