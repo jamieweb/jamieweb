@@ -35,7 +35,7 @@
     <p>Since this hidden service is running on an alpha build of Tor, I am hosting it on a separate, isolated server. I'm also using a virtual machine for testing the Tor Browser alpha builds, as seen above.</p>
     <h2 id="onionconfig">Hidden Service Configuration</h2>
     <p>In order to set up an Onion v3 hidden service, you'll have to build Tor from source.</p>
-    <p>Download and verify Tor (standalone) from the <a href="https://www.torproject.org/download/download.html" target="_blank">Tor downloads page</a>. Below are my verifications for Tor 0.3.2.2 Alpha, but always make sure to do your own verifications too:</p>
+    <p>Download and verify Tor (standalone) from the <a href="https://www.torproject.org/download/download.html" target="_blank">Tor downloads page</a>. Below are my verifications for Tor 0.3.2.2 Alpha and Tor Browser 7.5a5, but always make sure to do your own verifications too:</p>
     <pre class="scroll"><b>File Name:</b> tor-0.3.2.2-alpha.tar.gz
 <b>Size:</b> 6 MB (6,257,177 bytes)
 <b>SHA256:</b> 948f82246370eadf2d52a5d1797fa8966e5238d28de5ec69120407f22d59e774
