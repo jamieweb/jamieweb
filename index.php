@@ -28,8 +28,8 @@
         <h3 class="no-mar-bottom">Tor Hidden Services</h3>
         <p class="two-mar-top">This site is available through Tor at:</p>
         <ul>
-            <li><p>Onion v2: <a class="onionlink two-mar-left" href="http://jamiewebgbelqfno.onion" target="_blank">jamiewebgbelqfno.onion</a></p></li>
-            <li><p>Onion v3: <a class="onionlink two-mar-left" href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion" target="_blank">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></p></li>
+            <li><p class="onionlink">Onion v2: <a class="two-mar-left" href="http://jamiewebgbelqfno.onion" target="_blank">jamiewebgbelqfno.onion</a></p></li>
+            <li><p class="onionlink">Onion v3: <a class="two-mar-left" href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion" target="_blank">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></p></li>
         </ul>
         <hr>
 
