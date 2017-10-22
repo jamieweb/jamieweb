@@ -56,7 +56,7 @@
         <div class="featured">
             <a href="/blog/onionv3-hidden-service/">
                 <h3 class="no-mar-bottom">Tor Onion v3 Hidden Service</h3>
-                <p class="two-no-mar"><b>Testing the new Tor Onion v3 Hidden Services.</b></p>
+                <p class="two-no-mar"><b>Testing the new Onion v3 Hidden Services.</b></p>
                 <p class="two-mar-top">Saturday 21st October 2017</p>
             </a>
         </div>
