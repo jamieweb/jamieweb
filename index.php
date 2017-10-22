@@ -165,6 +165,17 @@ O:::::::OOO:::::::O
             </div>
         </center>
         <hr>
+        <div class="centertext">
+            <div class="sideitem-b">
+                <a href="/notifications"><img src="/images/email-90.png"></a>
+                <h4 class="sideitem-mar-bottom"><a href="/notifications">Email Notifications [BETA]</a></h4>
+            </div>
+            <div class="sideitem-b">
+                <a href="/rss.xml"><img src="/images/rss-90.png"></a>
+                <h4 class="sideitem-mar-bottom"><a href="/rss.xml">RSS Feed</a></h4>
+            </div>
+        </div>
+        <hr>
         <center><h2>Recent Posts</h2></center>
         <div class="redlink">
             <a href="/blog/onionv3-hidden-service/">
