@@ -131,14 +131,14 @@ O:::::::OOO:::::::O
     </div>
 
     <div class="sidebar">
-        <center><h2>Jamie Scaife</h2></center>
+        <h2 class="centertext">Jamie Scaife</h2>
         <hr>
         <input type="radio" class="gravityradio" id="identicon">
         <label class="gravitylabel" for="identicon"></label>
         <!--Thanks to jdenticon.com for the identicon image generation!-->
         <!--My identicon seed is the sha256 hash of the plain text word "JamieOnUbuntu".-->
         <hr>
-        <center>
+        <div class="centertext">
             <div class="sideitem">
                 <a href="https://github.com/JamieOnUbuntu" target="_blank"><img src="/images/gh-90.png"></a>
                 <h4><a href="https://github.com/JamieOnUbuntu" target="_blank">GitHub</a></h4>
@@ -163,12 +163,12 @@ O:::::::OOO:::::::O
                 <a href="/jamie-scaife.asc" target="_blank"><img src="/images/pgp-90.png"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
             </div>
-        </center>
+        </div>
         <hr>
         <div class="centertext">
             <div class="sideitem-b">
                 <a href="/notifications"><img src="/images/email-90.png"></a>
-                <h4 class="sideitem-mar-bottom"><a href="/notifications">Email Notifications [BETA]</a></h4>
+                <h4 class="sideitem-mar-bottom"><a href="/notifications">Email Notifications</a><sup> [BETA]</sup></h4>
             </div>
             <div class="sideitem-b">
                 <a href="/rss.xml"><img src="/images/rss-90.png"></a>
@@ -176,7 +176,7 @@ O:::::::OOO:::::::O
             </div>
         </div>
         <hr>
-        <center><h2>Recent Posts</h2></center>
+        <h2 class="centertext">Recent Posts</h2>
         <div class="redlink">
             <a href="/blog/onionv3-hidden-service/">
                 <h4 class="no-mar-bottom">Tor Onion v3 Hidden Service</h4>
