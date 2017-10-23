@@ -24,6 +24,7 @@ My personal website, available at:
     pf configuration
     Chrome sign-in/sync risk
     Email samples
+    Remove all <center> tags (deprecated)
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
