@@ -31,7 +31,7 @@
         </div>
         <div class="blog-list">
             <h3 class="no-mar-bottom"><a href="/blog/onionv3-hidden-service/">Tor Onion v3 Hidden Service</a></h3>
-            <p class="two-no-mar"><b>Testing the new Tor Onion v3 Hidden Services</b></p>
+            <p class="two-no-mar"><b>Testing the new Tor Onion v3 Hidden Services.</b></p>
             <p class="two-mar-top">Saturday 21st October 2017</p>
 
             <h3 class="no-mar-bottom"><a href="/blog/ipad-mini-ios6/">iPad Mini iOS 6</a></h3>
