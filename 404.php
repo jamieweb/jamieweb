@@ -17,9 +17,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <center>
-        <h1>Error 404: Page Not Found</h1>
-    </center>
+    <h1 class="centertext">Error 404: Page Not Found</h1>
 </div>
 
 <?php include "footer.php" ?>
