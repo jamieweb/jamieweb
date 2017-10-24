@@ -17,9 +17,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <center>
-        <h1>Error 401: Unauthorized</h1>
-    </center>
+    <h1 class="centertext">Error 401: Unauthorized</h1>
 </div>
 
 <?php include "footer.php" ?>
