@@ -17,9 +17,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <center>
-        <h1>Error 403: Forbidden</h1>
-    </center>
+    <h1 class="centertext">Error 403: Forbidden</h1>
 </div>
 
 <?php include "footer.php" ?>
