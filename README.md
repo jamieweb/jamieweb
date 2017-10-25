@@ -27,6 +27,7 @@ My personal website, available at:
     Remove all <center> tags (deprecated)
     Homepage quick links
     Navbar/footer account links?
+    Search box?
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
