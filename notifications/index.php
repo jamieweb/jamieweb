@@ -6,6 +6,7 @@ $siv = 0;
 $sessionid = session_id();
 if (!preg_match("/[^a-z0-9]/", $sessionid)) {
     $siv++;
+    $sessionid = filter_var($sessionid, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
     if (strlen($sessionid) == 52) {
         $siv++;
         if ($siv == 2) {
@@ -43,6 +44,7 @@ $grlerror = "Global Rate Limit (Error With Rate Limiter)";
 $globalratelimitcount = rtrim(substr(file_get_contents("notifications/scripts/storage/global-rate-limit.txt", FILE_USE_INCLUDE_PATH), 0, 2));
 if (!preg_match("/[^0-9]/", $globalratelimitcount)) {
     $grlv++;
+    $globalratelimitcount = filter_var($globalratelimitcount, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
     if ((strlen($globalratelimitcount) == 1) || (strlen($globalratelimitcount) == 2)) {
         $grlv++;
         if (!(($globalratelimitcount >= 0) && ($globalratelimitcount <= 20))) {
@@ -59,6 +61,7 @@ $iperror = "Unable To Parse IP Address";
 $requestip = rtrim(substr($_SERVER["REMOTE_ADDR"], 0, 45));
 if (!preg_match("/[^a-f0-9.:]/", $requestip)) {
     $ipv++;
+    $requestip = filter_var($requestip, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
     if ((strlen($requestip) >= 7) && (strlen($requestip) <= 45)) {
         $ipv++;
         if (filter_var($requestip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE)) {
@@ -104,6 +107,7 @@ if (!empty($answer)) {
     $cv++;
     if (!preg_match("/[^1-9]/", $answer)) {
         $cv++;
+        $answer = filter_var($answer, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
         if ((strlen($answer)) == 1 || (strlen($answer) == 2)) {
             $cv++;
             if ($cv == 3) {
@@ -124,6 +128,7 @@ $finalak = "0";
 $apikey = strtolower(rtrim(substr(file_get_contents("notifications/api-key.txt", FILE_USE_INCLUDE_PATH), 4, 36)));
 if (!preg_match("/[^a-z0-9]/", $apikey)) {
     $akv++;
+    $apikey = filter_var($apikey, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
     if (strlen($apikey) == 32) {
         $akv++;
         if ($akv == 2) {
@@ -154,6 +159,7 @@ if (!empty($verify)) {
     $vcv++;
     if (!preg_match("/[^a-z0-9]/", $verify)) {
         $vcv++;
+        $verify = filter_var($verify, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
         if (strlen($verify) == 8) {
             $vcv++;
             if ($vcv == 3) {
