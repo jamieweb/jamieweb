@@ -25,6 +25,7 @@ My personal website, available at:
     Chrome sign-in/sync risk
     Email samples
     Remove all <center> tags (deprecated)
+    rel="noopener"?
     Homepage quick links
     Navbar/footer account links?
     Search box?
