@@ -140,8 +140,12 @@ iptables -I OUTPUT 1 -m owner --gid-owner block-net -j DROP</pre>
 iptables -I OUTPUT 1 -d 208.64.200.118 -m owner --gid-owner block-net -j ACCEPT</pre>
     <p>"208.64.200.117" and "208.64.200.118" are the official Half-Life master servers run by Valve. There are also third-party master servers, such as "188.40.40.201", which is what New Gauge Half-Life uses.</p>
     <pre>iptables -I OUTPUT 1 -d 188.40.40.201 -m owner --gid-owner block-net -j ACCEPT</pre>
-    <p>The server browser will still show an empty list since it only shows servers that it can reach directly. So even though your client is able to reach the master servers, it can not reach any of the servers that the master servers return. Once you have whitelisted other trusted servers, they will appear in the server browser.</p>
+    <p><b>The server browser will still show an empty list since it only shows servers that it can reach directly.</b>So even though your client is able to reach the master servers, it can not reach any of the servers that the master servers return. Once you have whitelisted other trusted servers, they will appear in the server browser.</p>
     <p>Since this is not particularly user-friendly, I suggest finding servers using other sources, then whitelisting them manually using the file above before playing.</p>
+    <p>You can also specify the port for whitelisting, as shown below with an example server IP and default port:</p>
+    <pre>iptables -I OUTPUT 1 -d 89.34.99.41 -p tcp --dport 27015 -m owner --gid-owner block-net -j ACCEPT
+iptables -I OUTPUT 1 -d 89.34.99.41 -p udp --dport 27015 -m owner --gid-owner block-net -j ACCEPT</pre>
+    <p>The default server port is 27015, and the default master server port is anything between 27010 and 27013. For more information see <a href="https://developer.valvesoftware.com/wiki/Master_Server_Query_Protocol" target="_blank" rel="noopener">Master Server Query Protocol</a>.</p>
     <p>If you add a server to your favourites list, you do not need to whitelist the master server IPs. Your client will reach out to the favourited servers directly and display them on the favourites tab.</p>
     <p>Mark the script as executable:</p>
     <pre>$ sudo chmod +x /etc/network/if-pre-up.d/block-net</pre>
