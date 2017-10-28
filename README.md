@@ -28,6 +28,8 @@ My personal website, available at:
     Homepage quick links
     Navbar/footer account links?
     Search box?
+    Bitcoin node over Tor
+    EV Cert
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
