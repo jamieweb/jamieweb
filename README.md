@@ -31,6 +31,7 @@ My personal website, available at:
     Search box?
     Bitcoin node over Tor
     EV Cert
+    Malicious links overview/spamtraps
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
