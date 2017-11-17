@@ -32,6 +32,7 @@ My personal website, available at:
     Bitcoin node over Tor
     EV Cert
     Malicious links overview/spamtraps
+    HackerOne link / mailto: invite request / text box invite request
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
