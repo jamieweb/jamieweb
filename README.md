@@ -33,6 +33,8 @@ My personal website, available at:
     EV Cert
     Malicious links overview/spamtraps
     HackerOne link / mailto: invite request / text box invite request
+    Flyme 6 [security] re/overview
+    Link integrity
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
