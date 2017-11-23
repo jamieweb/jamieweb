@@ -28,7 +28,7 @@
     <p>Your email address will be used solely for sending notification emails when I post new content.
     <p>It will <b>never</b> be used for tracking, analytics, marketing, promotion, etc.</p>
     <h3>&bull; Processing</h3>
-    <p>I use <a href="https://www.mailgun.com/" target="_blank">Mailgun</a> for the sending of all automated emails. (Mailgun is <b>not</b> used for receiving emails or the sending of non-automated emails.)</p>
+    <p>I use <a href="https://www.mailgun.com/" target="_blank">Mailgun</a> for the sending of all automated emails. (Mailgun is <b>not</b> used for receiving emails.)</p>
     <p>Upon subscribing to the email notification service, an automated verification email will be sent to you using Mailgun. Your email address will also be stored on my web server for a maximum of 10 minutes for the purpose of the verification process.</p>
     <p>If you successfully verify your email address by entering the verification code, your email address will be added to the mailing list on my Mailgun account, which is protected by a 64+ character password as well as two-factor authentication.</p>
     <p>After the 10 minute verification period has expired, your email address will be permanently deleted from my web server using <a href="https://linux.die.net/man/1/shred" target="_blank">shred</a>. This deletion occurs whether you successfully verified your email address or not. The mailing list containing your email address is not stored on my web server, it is stored only on my Mailgun account. Note that your email address may still be stored in log files, temporary files, etc. I will also take occasional offline backups of the mailing list for data redundancy purposes.</p>
