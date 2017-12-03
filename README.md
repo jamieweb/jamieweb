@@ -30,7 +30,6 @@ My personal website, available at:
     Navbar/footer account links?
     Search box?
     Bitcoin node over Tor
-    EV Cert
     Malicious links overview/spamtraps
     HackerOne link / mailto: invite request / text box invite request
     Flyme 6 [security] re/overview
