@@ -35,11 +35,11 @@ My personal website, available at:
     Flyme 6 [security] re/overview
     Link integrity
     Keychest
-    DMARC
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
 
+    ✓ DMARC
     ✓ Onion v3 Tor Hidden Service - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
     ✓ Notifications (IFTTT, email, etc) - /notifications
     ✓ Privacy policy/info
