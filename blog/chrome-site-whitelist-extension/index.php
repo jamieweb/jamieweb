@@ -22,7 +22,7 @@
     <hr>
     <p><b>Tuesday 7th March 2017</b></p>
     <p>Please see the associated <a href="https://www.jamieweb.net/projects/chrome-site-whitelist-extension/" target="_blank">project page</a> for download and installation instructions. All code, version history and further information can be found on the <a href="https://github.com/JamieOnUbuntu/results-whitelist/" target="_blank">GitHub repository</a>.</p>
-    <center><p>-<b><u>The project is early in development so some features are not yet working properly or tested thoroughly.</u></b>-</p></center>
+    <div class="centertext"><p>-<b><u>The project is early in development so some features are not yet working properly or tested thoroughly.</u></b>-</p></div>
     <p>I recently starting developing a browser extension for Google Chrome. It allows the user to set a list of whitelisted sites that will then be highlighted in Google Search results. The extension icon also changes to green when you are currently browsing a whitelisted site.</p>
     <p>It is designed to be an anti-typosquatting tool and to highlight known trusted sites.</p>
     <h2>What is typosquatting?</h2>
@@ -109,10 +109,10 @@ Various        jamiewebnet.net   -</pre>
     <p>I personally do not like it when company-owned typosquat domains simply redirect transparently to the official website. I think that a better approach would be to redirect the user to an informational page informing them of their mistake and the dangers of typosquatting.</p>
     <h2>How does the extension work?</h2>
     <p>A content script is run whenever you load a Google search page. Only google.com and google.co.uk are available by default, however you can easily edit the manifest.json file to add your own prefered Google site. The content script fetches every anchor (hyperlink) tag (&lta&gt) on the page and checks each one individually using a for loop.</p>
-    <center><img src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png"></center>
+    <div class="centertext"><img src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png"></div>
     <p>Quite conveniently, the anchor tags for Google search result links are the only anchors on the page that have a defined href AND no defined class. This makes it easy to filter out everything else, leaving only the Google search result links. The script matches the hostnames of the links to the whitelisted hostnames from the user configuration. If there is a match, the associated search result will be highlighted in green by changing it's CSS properties.</p>
     <p>An additional content script runs on every single page. This simply checks whether the current site that you are browsing is on the whitelist. If it is, the extension icon for the tab is changed to green.</p>
-    <center><img src="/projects/chrome-site-whitelist-extension/extension-icon-green.png"></center>
+    <div class="centertext"><img src="/projects/chrome-site-whitelist-extension/extension-icon-green.png"></div>
     <h2>Why did I create the extension?</h2>
     <p>I created the extension to help raise user confidence when searching on Google. Even though Google is usually pretty good at filtering out malicious websites and correcting typing errors, bad stuff still gets through. Now there is no need to manually verify every Google search result link clicked, as your manually whitelisted sites will show up in green!</p>
 </div>
