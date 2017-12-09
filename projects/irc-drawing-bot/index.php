@@ -20,9 +20,9 @@
 <div class="body">
     <h1>IRC Drawing Bot</h1>
     <hr><br>
-<center><table class="irc">
+<div class="centertext"><table class="irc">
 <?php set_time_limit(1); echo "<tr><td bgcolor=\"" . str_replace(":", "\"></td></tr>\n<tr><td bgcolor=\"", str_replace(" ", "\"></td><td bgcolor=\"", str_replace("\n", "", preg_replace("/[^a-eghiklnoprtuwy: ]/", "", filter_var(strtolower(rtrim(substr(file_get_contents("config.txt"), 0, 1536))), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH))))) . "\"></td></tr>\n"; ?>
-</table></center>
+</table></div>
     <h2>What is this?</h2>
     <p>The IRC Drawing Bot is an <a href="https://simple.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank">Internet Relay Chat</a> bot that <b>you</b> can control, allowing you to paint pixels on the canvas above.</p>
     <p>This is not a fancy art project, it is designed to demonstrate how IRC can be used to securely control a web page. The collaborative pixel canvas is inspired by <a href="https://www.reddit.com/r/place" target="_blank">Reddit's r/place</a>.</p>
