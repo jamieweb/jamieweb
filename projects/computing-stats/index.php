@@ -22,59 +22,59 @@
     <table width="100%">
         <tr>
             <!-- Note to self: Fix the ridiculous number of classes here. -->
-            <td bgcolor="limegreen" width="20%"><center><h2>Master</h2></center></td>
-            <td bgcolor="limegreen" width="20%"><center><h2>Node 1</h2></center></td>
-            <td bgcolor="limegreen" width="20%"><center><h2>Node 2</h2></center></td>
-            <td bgcolor="limegreen" width="20%"><center><h2>Node 3</h2></center></td>
-            <td bgcolor="limegreen" width="20%"><center><h2>Node 4</h2></center></td>
+            <td bgcolor="limegreen" width="20%"><div class="centertext"><h2>Master</h2></div></td>
+            <td bgcolor="var-node1colour" width="20%"><div class="centertext"><h2>Node 1</h2></div></td>
+            <td bgcolor="var-node2colour" width="20%"><div class="centertext"><h2>Node 2</h2></div></td>
+            <td bgcolor="var-node3colour" width="20%"><div class="centertext"><h2>Node 3</h2></div></td>
+            <td bgcolor="var-node4colour" width="20%"><div class="centertext"><h2>Node 4</h2></div></td>
         </tr>
         <tr>
-            <td width="20%"><p class="info">CPU: <b>99.2%</b></p>
-            <p class="info">Memory: <b>580 MB</b></p>
-            <p class="info">Disk: <b>4583 MB</b></p>
-            <p class="info">Temp: <b>37.4'C</b></td>
+            <td width="20%"><p class="info">CPU: <b>var-mastercpu</b></p>
+            <p class="info">Memory: <b>var-masterram MB</b></p>
+            <p class="info">Disk: <b>var-masterdisk</b></p>
+            <p class="info">Temp: <b>var-mastertemp</b></td>
 
-            <td width="20%"><p class="info">CPU: <b>99.7%</b></p>
-            <p class="info">Memory: <b>352 MB</b></p>
-            <p class="info">Disk: <b>4026 MB</b></p>
-            <p class="info">Temp: <b>39.0'C</b></td>
+            <td width="20%"><p class="info">CPU: <b>var-node1cpu</b></p>
+            <p class="info">Memory: <b>var-node1ram MB</b></p>
+            <p class="info">Disk: <b>var-node1disk</b></p>
+            <p class="info">Temp: <b>var-node1temp</b></td>
 
-            <td width="20%"><p class="info">CPU: <b>99.6%</b></p>
-            <p class="info">Memory: <b>352 MB</b></p>
-            <p class="info">Disk: <b>4027 MB</b></p>
-            <p class="info">Temp: <b>41.2'C</b></td>
+            <td width="20%"><p class="info">CPU: <b>var-node2cpu</b></p>
+            <p class="info">Memory: <b>var-node2ram MB</b></p>
+            <p class="info">Disk: <b>var-node2disk</b></p>
+            <p class="info">Temp: <b>var-node2temp</b></td>
 
-            <td width="20%"><p class="info">CPU: <b>99.7%</b></p>
-            <p class="info">Memory: <b>408 MB</b></p>
-            <p class="info">Disk: <b>4026 MB</b></p>
-            <p class="info">Temp: <b>42.2'C</b></td>
+            <td width="20%"><p class="info">CPU: <b>var-node3cpu</b></p>
+            <p class="info">Memory: <b>var-node3ram MB</b></p>
+            <p class="info">Disk: <b>var-node3disk</b></p>
+            <p class="info">Temp: <b>var-node3temp</b></td>
 
-            <td width="20%"><p class="info">CPU: <b>98.9%</b></p>
-            <p class="info">Memory: <b>352 MB</b></p>
-            <p class="info">Disk: <b>4027 MB</b></p>
-            <p class="info">Temp: <b>42.2'C</b></td>
+            <td width="20%"><p class="info">CPU: <b>var-node4cpu</b></p>
+            <p class="info">Memory: <b>var-node4ram MB</b></p>
+            <p class="info">Disk: <b>var-node4disk</b></p>
+            <p class="info">Temp: <b>var-node4temp</b></td>
         </tr>
     </table><br>
 
     <table width="100%">
         <tr>
             <td width="50%"><h1 class="info">Rosetta@Home Stats</h1>
-            <p class="info">Total Earned Credits: <b>129,268.55</b></p>
-            <p class="info">Recent Average Credit: <b>187.38</b></p>
-            <p class="info">Total Running Time: <b>355 days</b></p></td>
+            <p class="info">Total Earned Credits: <b>var-rosettacredit</b></p>
+            <p class="info">Recent Average Credit: <b>var-rosettarecent</b></p>
+            <p class="info">Total Running Time: <b>var-rosettaruntime days</b></p></td>
 
             <td width="50%"><h1 class="info">Einstein@Home Stats</h1>
-            <p class="info">Total Earned Credits: <b>242,408.53</b></p>
-            <p class="info">Recent Average Credit: <b>473.03</b></p>
-            <p class="info">Total Running Time: <b>756 days</b></p></td>
+            <p class="info">Total Earned Credits: <b>var-einsteincredit</b></p>
+            <p class="info">Recent Average Credit: <b>var-einsteinrecent</b></p>
+            <p class="info">Total Running Time: <b>var-einsteinruntime days</b></p></td>
         </tr>
         <tr>
             <td width="50%" class="stats-padding-top"><h1 class="info">Bitcoin Node Stats</h1>
             <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.21.co/nodes/89.34.99.41-8333/" target="_blank">https://bitnodes.21.co/nodes/89.34.99.41-8333/</a></b></p>
-            <p class="info">Total Running Time: <b>358 days</b></p></td>
+            <p class="info">Total Running Time: <b>var-bitcoinnoderuntime days</b></p></td>
         </tr>
     </table><br>
-    <p class="info two-mar-left">Stats Update Every 10 Minutes. Last Updated: <b>12:10:08am GMT</b></p>
+    <p class="info two-mar-left">Stats Update Every 10 Minutes. Last Updated: <b>var-lastupdated GMT</b></p>
 </div>
 
 <?php include "footer.php" ?>
