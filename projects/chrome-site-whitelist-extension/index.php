@@ -20,7 +20,7 @@
 <div class="body">
     <h1>Chrome Site Whitelist Extension</h1>
     <hr>
-    <center><p>-<b><u>Currently early in development and is not yet fully working or tested thoroughly.</u></b>-</p></center>
+    <div class="centertext"><p>-<b><u>Currently early in development and is not yet fully working or tested thoroughly.</u></b>-</p></div>
     <p>A Google Chrome extension that highlights sites on Google/Reddit that have been manually whitelisted by the user.</p>
     <center><img src="/projects/chrome-site-whitelist-extension/extension-manager.png"></center>
     <p>Designed to be an anti-typosquatting tool and to highlight known trusted sites.</p>
