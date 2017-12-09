@@ -20,9 +20,9 @@
 <div class="body">
     <h1>Contact Information</h1>
     <p>If you need to contact me for any reason, please do so via any of my social media accounts or using the email address listed below:</p>
-    <center>
+    <div class="centertext">
         <img src="/images/jamieweb.png" width="50%" height="50%">
-    </center>
+    </div>
     <hr>
     <h1>Legal Information</h1>
     <ul><li>Homepage sidebar logo: <b>Jdenticon by Daniel Mester Pirttij&#228;rvi</b> (<a href="https://jdenticon.com" target="_blank">https://jdenticon.com</a>)</li>
