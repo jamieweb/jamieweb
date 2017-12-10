@@ -474,6 +474,11 @@ p.email-text span {
     margin-bottom: 2px;
 }
 
+.currentproject {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+}
+
 .stats-padding-top {
     padding-top: 20px;
 }
