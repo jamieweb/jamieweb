@@ -56,7 +56,7 @@
         </tr>
     </table><br>
 
-    <h1 class="info">Current Project: Tor Onion v3 Vanity Address Generation</h1>
+    <h1 class="info">Current Project: <span class="currentproject">Tor Onion v3 Vanity Address Generation</span></h1>
     <p>The cluster is currently running <a href="https://github.com/cathugger/mkp224o" target="_blank">mkp224o</a> in order to generate a vanity Onion v3 address for my <a href="/blog/onionv3-hidden-service" target="_blank">Onion v3 Tor Hidden Service</a> that will soon be replacing my <a href="/blog/tor-hidden-service" target="_blank">Onion v2 hidden service</a>.</p>
 
     <table width="100%">
