@@ -34,6 +34,7 @@ My personal website, available at:
     Flyme 6 [security] re/overview
     Link integrity
     Keychest
+    Raspberry Pi kernel upgrade problem fix
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
