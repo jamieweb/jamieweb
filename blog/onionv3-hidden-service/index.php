@@ -106,7 +106,7 @@ HiddenServicePort &lt;localport&gt; &lt;server&gt;</pre>
     <p>The HiddenServiceDir can be any folder on your system that Tor will have write access to, although it should be a private area since the keys will be stored here.</p>
     <p>&lt;localport&gt; is the local port that the hidden service is "listening" on, and the &lt;server&gt; is the server where requests to that port will be forwarded to.</p>
     <p>In my case, I have:</p>
-    <pre>HiddenServicePort 80 89.34.99.41</pre>
+    <pre>HiddenServicePort 80 139.162.222.67</pre>
     <p>...which will forward requests to port 80 onto the main JamieWeb server across the internet.</p>
     <p id="deanonymization"><b>Important Note:</b> <i>Forwarding requests to a remote server has a major potential to de-anonymize you if done incorrectly. If your own anonymity is important, it's probably better to run a local web server (eg: forward requests to 127.0.0.1). Please refer to the official Tor documentation since I am in no way qualified to provide advice on running a properly anonymized hidden service. In my case, my own anonymity is not important so it's fine for me to forward requests to an external web server over the internet.</i></p>
     <p>You can theoretically host anything behind a hidden service, including a file server, IRC server, email server, etc.</p>
@@ -137,9 +137,9 @@ drwxr-xr-x 5 tor tor 4096 Oct 19 22:29 ..
     <p>However, in my setup I am using a remote web server as the forwarding destination for the hidden service. To clarify, my Onion v3 hidden service is running on a separate server to the main JamieWeb server, and the hidden service is forwarding requests across the internet to the main server.</p>
     <p><b>Important Note:</b> <i>Please <a href="#deanonymization">read my note above</a> as there is potentially a major risk of de-anonymization when forwarding requests to a remote server.</i></p>
     <p>Since I have IP address catch-all virtual hosts set up, the request is blocked by default:</p>
-    <pre>403 Forbidden - Direct request to IPv4 address (89.34.99.41) blocked. Please use https://www.jamieweb.net instead.</pre>
+    <pre>403 Forbidden - Direct request to IPv4 address (139.162.222.67) blocked. Please use https://www.jamieweb.net instead.</pre>
     <p>In order to get around this, you can simply create a virtual host with the ServerName value set to the Onion address. In my configuration, I have the following (irrelevant lines removed):</p>
-    <pre>&lt;VirtualHost 89.34.99.41:80&gt;
+    <pre>&lt;VirtualHost 139.162.222.67:80&gt;
     ServerName 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
 &lt;/VirtualHost&gt;</pre>
     <p>The request will no longer be blocked, allowing the hidden service to work as normal.</p>
