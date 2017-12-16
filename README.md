@@ -8,10 +8,15 @@ My personal website, available at:
 
 ## IP Addresses:
 
-Sat 16th Dec 2017 - Present:
+16th Dec 2017 - Present:
 
     IPv4: 139.162.222.67
     IPv6: 2a01:7e00:e001:c500::1
+    
+Historic:
+
+    IPv4: 89.34.99.41
+    IPv6: 2a01:4020:1::129
 
 ## Site Ideas/To-do List:
     Better mobile compatibility
