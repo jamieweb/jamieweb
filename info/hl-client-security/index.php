@@ -143,8 +143,8 @@ iptables -I OUTPUT 1 -d 208.64.200.118 -m owner --gid-owner block-net -j ACCEPT<
     <p><b>The server browser will still show an empty list since it only shows servers that it can reach directly.</b> Even though your client is able to reach the master servers, it can not reach any of the servers that the master servers return. Once you have whitelisted other trusted servers, they will appear in the server browser.</p>
     <p>Since this is not particularly user-friendly, I suggest finding servers using other sources, then whitelisting them manually using the file above before playing.</p>
     <p>You can also specify the port for whitelisting, as shown below with an example server IP and default port:</p>
-    <pre>iptables -I OUTPUT 1 -d 89.34.99.41 -p tcp --dport 27015 -m owner --gid-owner block-net -j ACCEPT
-iptables -I OUTPUT 1 -d 89.34.99.41 -p udp --dport 27015 -m owner --gid-owner block-net -j ACCEPT</pre>
+    <pre>iptables -I OUTPUT 1 -d 139.162.222.67 -p tcp --dport 27015 -m owner --gid-owner block-net -j ACCEPT
+iptables -I OUTPUT 1 -d 139.162.222.67 -p udp --dport 27015 -m owner --gid-owner block-net -j ACCEPT</pre>
     <p>The default server port is 27015, and the default master server port is anything between 27010 and 27013. For more information see <a href="https://developer.valvesoftware.com/wiki/Master_Server_Query_Protocol" target="_blank" rel="noopener">Master Server Query Protocol</a>.</p>
     <p>If you add a server to your favourites list, you do not need to whitelist the master server IPs. Your client will reach out to the favourited servers directly and display them on the favourites tab.</p>
     <p>Mark the script as executable:</p>
@@ -152,8 +152,8 @@ iptables -I OUTPUT 1 -d 89.34.99.41 -p udp --dport 27015 -m owner --gid-owner bl
     <p>The script will be automatically run whenever your network is brought up, such as at boot. To avoid rebooting right now, simply run the script:</p>
     <pre>$ sudo ./etc/network/if-pre-up.d/block-net</pre>
     <p>You can now run applications as the "block-net" group using the "sg" command, and they will only have access to the whitelisted IP addresses. For example:</p>
-    <pre>$ sg block-net "ping 89.34.99.41"
-PING 89.34.99.41 (89.34.99.41) 56(84) bytes of data.
+    <pre>$ sg block-net "ping 139.162.222.67"
+PING 139.162.222.67 (139.162.222.67) 56(84) bytes of data.
 ping: sendmsg: Operation not permitted</pre>
     <p>But if you ping a whitelisted address, you have access:</p>
     <pre>$ sg block-net "ping 208.64.200.117"
