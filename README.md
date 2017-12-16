@@ -8,10 +8,10 @@ My personal website, available at:
 
 Other:
 
-* IPv4 Test: https://ipv4.jamieweb.net/
-* IPv6 Test: https://ipv6.jamieweb.net/
-* IPv4 Direct (403 Forbidden): http://139.162.222.67/
-* IPv6 Direct (403 Forbidden): http://[2a01:7e00:e001:c500::1]/
+* IPv4 Test: https://ipv4.jamieweb.net
+* IPv6 Test: https://ipv6.jamieweb.net
+* IPv4 Direct (403 Forbidden): http://139.162.222.67
+* IPv6 Direct (403 Forbidden): [http://[2a01:7e00:e001:c500::1]](http://[2a01:7e00:e001:c500::1])
 
 ## IP Addresses:
 
