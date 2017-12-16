@@ -55,7 +55,7 @@ steamcommunity.com.example.com</pre>
 
 Processing 264 domain variants ..33%.65%.98% 3 hits (1%)
 
-Original*      jamieweb.net      89.34.99.41
+Original*      jamieweb.net      139.162.222.67
 Addition       jamieweba.net     -
 Addition       jamiewebb.net     -
 Addition       jamiewebc.net     -
