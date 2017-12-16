@@ -37,9 +37,9 @@
     <p>IPv6 addresses are made up of 32 hex characters (128 bits), with colons separating each "hextet" of 4 hex characters (16 bits). Double colons (::) are used to represent padded zeros, filling up to the maximum length of the address. For example:</p>
     <pre>2a01:7e00:e001:c500::1</pre>
     <p>...is equivalent to:</p>
-    <pre>2a01:4020:0001:0000:0000:0000:0000:0129</pre>
+    <pre>2a01:7e00:e001:c500:0000:0000:0000:0001</pre>
     <p>...as well as:</p>
-    <pre>2a01:4020:1:0:0:0:0:129</pre>
+    <pre>2a01:7e00:e001:c500:0:0:0:1</pre>
     <p>Double colons can only be used once in an IPv6 address, usually to represent the largest block of zeros.</p>
     <p>IPv6 addresses are also often encased in square brackets ([]) when used in URLs, command arguments, configuration files, etc.</p>
     <h2 id="dns">DNS Configuration</h2>
