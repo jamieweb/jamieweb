@@ -6,6 +6,12 @@ My personal website, available at:
 * Onion v2: http://jamiewebgbelqfno.onion
 * Onion v3: http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
 
+## IP Addresses:
+
+Sat 16th Dec 2017 - Present:
+    IPv4: 139.162.222.67
+    IPv6: 2a01:7e00:e001:c500::1
+
 ## Site Ideas/To-do List:
     Better mobile compatibility
     ✓ - All blog/projects/other pages should now have acceptable levels of mobile readability
@@ -46,7 +52,7 @@ My personal website, available at:
     ✓ Privacy policy/info
     ✓ Link to GitHub on /projects?
     ✓ Host bunnymod on /downloads
-    ✓ IPv6 - (2a01:4020:1::129)
+    ✓ IPv6 - (Originally 2a01:4020:1::129, as of 16th Dec 2017 now 2a01:7e00:e001:c500::1)
     ✓ Linux /etc/hosts adblocking - file integrity verification
     ✓ IRC drawing bot blog post
     ✓ Control channel over IRC
