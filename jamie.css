@@ -331,6 +331,11 @@ pre.twenty {
     font-size: 20px;
 }
 
+table.irc {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 table.irc tr td {
     height: 40px;
     width: 40px;
