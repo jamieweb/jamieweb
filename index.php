@@ -166,10 +166,6 @@ O:::::::OOO:::::::O
         </div>
         <hr>
         <div class="centertext">
-            <!--<div class="sideitem-b">
-                <a href="/notifications"><img src="/images/email-90.png"></a>
-                <h4 class="sideitem-mar-bottom"><a href="/notifications">Email Notifications</a><sup> [BETA]</sup></h4>
-            </div>-->
             <div class="sideitem-b">
                 <a href="/rss.xml" target="_blank"><img src="/images/rss-90.png"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/rss.xml" target="_blank">RSS Feed</a></h4>
