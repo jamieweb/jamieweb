@@ -28,8 +28,8 @@
         <h3 class="no-mar-bottom">Tor Hidden Services</h3>
         <p class="two-mar-top">This site is available through Tor at:</p>
         <ul>
-            <li><p class="onionlink">Onion v2: <a class="two-mar-left" href="http://jamiewebgbelqfno.onion" target="_blank">jamiewebgbelqfno.onion</a></p></li>
-            <li><p class="onionlink">Onion v3: <a class="two-mar-left" href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion" target="_blank">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></p></li>
+            <li><p class="onionlink">Onion v2: <a class="two-mar-left" href="http://jamiewebgbelqfno.onion" target="_blank" rel="noopener">jamiewebgbelqfno.onion</a></p></li>
+            <li><p class="onionlink">Onion v3: <a class="two-mar-left" href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion" target="_blank" rel="noopener">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></p></li>
         </ul>
         <hr>
 
@@ -140,20 +140,20 @@ O:::::::OOO:::::::O
         <hr>
         <div class="centertext">
             <div class="sideitem">
-                <a href="https://github.com/JamieOnUbuntu" target="_blank"><img src="/images/gh-90.png"></a>
-                <h4><a href="https://github.com/JamieOnUbuntu" target="_blank">GitHub</a></h4>
+                <a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/gh-90.png"></a>
+                <h4><a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener">GitHub</a></h4>
             </div>
             <div class="sideitem">
-                <a href="https://twitter.com/JamieOnUbuntu" target="_blank"><img src="/images/tw-90.png"></a>
-                <h4><a href="https://twitter.com/JamieOnUbuntu" target="_blank">Twitter</a></h4>
+                <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/tw-90.png"></a>
+                <h4><a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a></h4>
             </div>
             <div class="sideitem">
-                <a href="https://www.youtube.com/jamie90437x" target="_blank"><img src="/images/yt-90.png"></a>
-                <h4><a href="https://www.youtube.com/jamie90437x" target="_blank">YouTube</a></h4>
+                <a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener"><img src="/images/yt-90.png"></a>
+                <h4><a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener">YouTube</a></h4>
             </div>
             <div class="sideitem">
-                <a href="https://keybase.io/JamieOnUbuntu" target="_blank"><img src="/images/kb-90.png"></a>
-                <h4><a href="https://keybase.io/JamieOnUbuntu" target="_blank">Keybase</a></h4>
+                <a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/kb-90.png"></a>
+                <h4><a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener">Keybase</a></h4>
             </div>
             <div class="sideitem">
                 <a href="/irc/"><img src="/images/irc-90.png"></a>
