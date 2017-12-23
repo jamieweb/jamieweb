@@ -19,7 +19,7 @@
 
 <div class="body">
     <h1>Contact Information</h1>
-    <p>If you need to contact me for any reason, please do so via any of my social media accounts or using the email address listed below:</p>
+    <p>If you need to contact me for any reason, please do so using the email address listed below or on Twitter @JamieOnUbuntu.</p>
     <div class="centertext">
         <img src="/images/jamieweb.png" width="50%" height="50%">
     </div>
