@@ -1,2 +1,6 @@
 Contact: https://www.jamieweb.net/contact/
 Encryption: https://www.jamieweb.net/jamie-scaife.asc
+
+# This file is available identically at these locations:
+# https://www.jamieweb.net/.well-known/security.txt
+# https://www.jamieweb.net/security.txt
