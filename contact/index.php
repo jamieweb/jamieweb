@@ -19,7 +19,7 @@
 
 <div class="body">
     <h1>Contact Information</h1>
-    <p>If you need to contact me for any reason, please do so using the email address listed below or on Twitter @JamieOnUbuntu.</p>
+    <p>If you need to contact me for any reason, please do so using the email address listed below or on <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a>.</p>
     <div class="centertext">
         <img src="/images/jamieweb.png" width="50%" height="50%">
     </div>
@@ -32,7 +32,7 @@
     <p>Although I do my best to verify its legitimacy, I am not responsible for any of the content/downloads on external sites that are linked here.</p>
     <hr>
     <h1>Responsible Disclosure</h1>
-    <p>I may offer a reward for the responsible disclosure of security vulnerabilities found on my site or other services.</p>
+    <p>I greatly appreciate reports of security vulnerabilities found on my site or other services.</p>
     <p>I also appreciate general bug reports, including compatibility issues, spelling/grammatical errors, broken links or incorrect information. Thank you!</p>
     <hr>
     <h1>Donations</h1>
