@@ -360,6 +360,10 @@ footer {
     text-align: center;
 }
 
+ul.references li {
+    margin-bottom: 7px;
+}
+
 input.email-address {
     font-size: 26px;
     height: 35px;
