@@ -20,7 +20,7 @@
 <div class="body">
     <h1>security.txt Internet Draft</h1>
     <hr>
-    <p><b>Sunday 24th December 2017</b></p>
+    <p><b>Tuesday 26th December 2017</b></p>
     <p>Security.txt allows web service owners to outline security vulnerability disclosure policies in a simple and easily accessible .txt file format by hosting a security.txt file on their web server, file system or with their project.</p>
     <p>It is currently an <a href="https://en.wikipedia.org/wiki/Internet_Draft" target="_blank">Internet Draft</a> that has been submitted to the <a href="https://www.ietf.org/" target="_blank">IETF</a> (Internet Engineering Task Force) for <a href="https://en.wikipedia.org/wiki/Request_for_Comments" target="_blank">RFC</a> (Request for Comments) review.</p>
     <p><b>Skip to Section:</b></p>
