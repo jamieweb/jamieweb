@@ -52,7 +52,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
         <li>"security@example.com" is the preferred contact method, however "https://example.com/contact" contains an alternate method.</li>
         <li>Researchers can (and should) encrypt their report using the specified encryption key at "https://example.com/pgp.asc".</li>
         <li>Valid submissions may be acknowledged/thanked at "https://example.com/bug-bounty/hall-of-fame".</li>
-        <li>The integrity of the security.txt file can be verifed using the signature of a trusted identity.</li>
+        <li>The integrity of the security.txt file can be verified using the signature of a trusted identity.</li>
     </ul>
     <p>The security.txt file should be located in the /.well-known/ directory for web properties, and in the root as .security.txt for file systems and version control repositories.</p>
     <p>For example, all of the following are valid paths for security.txt as per draft version 01:</p>
@@ -117,7 +117,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
     <p>The "Signature" field allows you to add the signature of your security.txt file, either linked or in-line.</p>
     <pre class="scroll-small">2.5.  Signature:
 
-   In order to ensure the authenticty of the security.txt file one
+   In order to ensure the authentic[i]ty of the security.txt file one
    SHOULD use the "Signature:" directive, which allows you to link to an
    external signature or to directly include the signature in the file.
    External signature files should be named "security.txt.sig" and also
@@ -138,7 +138,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
    ...
    -----END PGP SIGNATURE-----
    &lt;CODE ENDS&gt;</pre>
-    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5</a></i></p>
+    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5</a> (Square Brackets Mine)</i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
     <p>There is nothing in the draft that specifies which key should be used to sign the file, however it would perhaps make sense to use the same key as specified in your "Encryption" field if applicable.</p>
 
@@ -209,7 +209,7 @@ https://www.jamieweb.net/security.txt</pre>
 &lt;/body&gt;&lt;/html&gt;</pre>
     <p>Instead, I simply created a hard link using ln:</p>
     <pre>jamie@box:~/path/to/website/root$ sudo ln .well-known/security.txt security.txt</pre>
-    <p>Now I only have to edit one file to update the "files" at both paths, and they can still be read and modified as though they are distict.</p>
+    <p>Now I only have to edit one file to update the "files" at both paths, and they can still be read and modified as though they are distinct.</p>
     <p>It is also worth noting that security.txt for web properties is not exclusive to traditional domain names, you can also use it for IP addresses and subdomains.</p>
 
     <h2 id="robots-txt">robots.txt Inclusion</h2>
