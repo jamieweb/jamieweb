@@ -20,7 +20,7 @@
 <div class="body">
     <h1>IRC Drawing Bot</h1>
     <hr><br>
-<div class="centertext"><table class="irc">
+<div class="centertext"><table class="centertext irc">
 <?php set_time_limit(1); echo "<tr><td bgcolor=\"" . str_replace(":", "\"></td></tr>\n<tr><td bgcolor=\"", str_replace(" ", "\"></td><td bgcolor=\"", str_replace("\n", "", preg_replace("/[^a-eghiklnoprtuwy: ]/", "", filter_var(strtolower(rtrim(substr(file_get_contents("config.txt"), 0, 1536))), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH))))) . "\"></td></tr>\n"; ?>
 </table></div>
     <h2>What is this?</h2>
