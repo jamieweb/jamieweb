@@ -174,6 +174,11 @@ O:::::::OOO:::::::O
         <hr>
         <h2 class="centertext">Recent Posts</h2>
         <div class="redlink">
+            <a href="/blog/security-txt-rfc/">
+                <h4 class="no-mar-bottom">security.txt Internet Draft</h4>
+                <h5 class="two-no-mar"><b>A look at the security.txt draft specification.</b></h5>
+                <h5 class="two-mar-top">Tuesday 26th December 2017</h5>
+            </a>
             <a href="/blog/onionv3-hidden-service/">
                 <h4 class="no-mar-bottom">Tor Onion v3 Hidden Service</h4>
                 <h5 class="two-no-mar"><b>Testing the new Tor Onion v3 Hidden Services.</b></h5>
@@ -188,11 +193,6 @@ O:::::::OOO:::::::O
                 <h4 class="no-mar-bottom">Pastebin Keyword Alerts</h4>
                 <h5 class="two-no-mar"><b>Using the Pastebin Alerts Service.</b></h5>
                 <h5 class="two-mar-top">Saturday 2nd September 2017</h5>
-            </a>
-            <a href="/blog/ipv6-site-upgrade/">
-                <h4 class="no-mar-bottom">Upgrading to IPv6</h4>
-                <h5 class="two-no-mar"><b>Setting up and configuring IPv6 on JamieWeb.</b></h5>
-                <h5 class="two-mar-top">Saturday 5th August 2017</h5>
             </a>
         </div>
     </div>
