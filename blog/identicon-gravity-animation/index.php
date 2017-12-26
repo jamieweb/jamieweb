@@ -22,7 +22,7 @@
     <hr>
     <p><b>Thursday 5th January 2017</b></p>
     <p>I created a small Easter egg for the homepage of my site: if you click the identicon, it will collapse!</p>
-    <div class="centertext"><table><tr>
+    <div class="centertext"><table class="centertable"><tr>
         <td><input type="radio" class="gravityradio" id="identicon"><label class="gravitylabel" for="identicon"></label></td>
         <td width="50px"></td>
         <td><img src="/images/gravity-loop.gif"></td>
