@@ -323,6 +323,11 @@ pre.scroll {
     overflow-y: scroll;
 }
 
+pre.scroll-small {
+    height: 110px;
+    overflow-y: scroll;
+}
+
 pre.arial {
     font-family: arial;
 }
@@ -518,6 +523,10 @@ p.email-text span {
 
 .gravityradio:checked + .gravitylabel {
     background: url(/images/gravity.gif);
+}
+
+.font-twenty-three {
+    font-size: 23px;
 }
 
 .ios6-slider {
