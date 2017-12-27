@@ -42,7 +42,6 @@ Historic:
     iptables configuration
     pf configuration
     Chrome sign-in/sync risk
-    Email samples
     rel="noopener"?
     Homepage quick links
     Navbar/footer account links?
