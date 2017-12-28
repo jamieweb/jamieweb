@@ -21,7 +21,7 @@
     <h1>Contact Information</h1>
     <p>If you need to contact me for any reason, please do so using the email address listed below or on <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a>.</p>
     <div class="centertext">
-        <img src="/images/jamieweb.png" width="50%" height="50%">
+        <img src="/images/jamie-jamieweb.png" width="50%" height="50%">
     </div>
     <hr>
     <h1>Legal Information</h1>
