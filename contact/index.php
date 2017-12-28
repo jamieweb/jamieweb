@@ -23,6 +23,16 @@
     <div class="centertext">
         <img src="/images/jamie-jamieweb.png" width="50%" height="50%">
     </div>
+
+    <hr>
+    <h1>Security Vulnerability Disclosure</h1>
+    <p>I greatly appreciate reports of security vulnerabilities found on my site or other services.</p>
+    <p>I am currently in the process of lauching a HackerOne program for my site, but for the time being please contact me using the email address below or on <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a>.</p>
+    <div class="centertext">
+        <img src="/images/security-jamieweb.png" width="50%" height="50%">
+    </div>
+    <p>I also appreciate general bug reports, including compatibility issues, spelling/grammatical errors, broken links or incorrect information. Thank you!</p>
+
     <hr>
     <h1>Legal Information</h1>
     <ul><li>Homepage sidebar logo: <b>Jdenticon by Daniel Mester Pirttij&#228;rvi</b> (<a href="https://jdenticon.com" target="_blank">https://jdenticon.com</a>)</li>
@@ -30,10 +40,12 @@
     <p>All content found here that has no attribution is believed to be in the public domain.</p>
     <p>If you are the rightful owner of any of the content on this site, and you do not want it to be displayed or you require suitable credit, then please contact me and I will do whatever is needed either for the content to be removed or to provide credit where it is due.</p>
     <p>Although I do my best to verify its legitimacy, I am not responsible for any of the content/downloads on external sites that are linked here.</p>
+
     <hr>
     <h1>Responsible Disclosure</h1>
     <p>I greatly appreciate reports of security vulnerabilities found on my site or other services.</p>
     <p>I also appreciate general bug reports, including compatibility issues, spelling/grammatical errors, broken links or incorrect information. Thank you!</p>
+
     <hr>
     <h1>Donations</h1>
     <p class="redlink">Donations are happily accepted. All donations go directly to the running costs of my site and services (<a href="http://www.anorak.co.uk/428124/money/nigerian-astronaut-lost-in-space-needs-3m-to-get-home-could-be-a-scam.html/" target="_blank">or to saving Major Tunde</a>).</p>
