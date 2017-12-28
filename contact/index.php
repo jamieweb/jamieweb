@@ -23,6 +23,7 @@
     <div class="centertext">
         <img width="388.5px" src="/images/jamie-jamieweb.png">
     </div>
+    <p>Feel free to encrypt your message using my <a href="/jamie-scaife.asc" target="_blank">PGP key</a>.</p>
 
     <hr>
     <h1>Security Vulnerability/Bug Disclosure</h1>
@@ -44,14 +45,14 @@
     <hr>
     <h1>Legal Information</h1>
     <ul><li>Homepage sidebar logo: <b>Jdenticon by Daniel Mester Pirttij&#228;rvi</b> (<a href="https://jdenticon.com" target="_blank">https://jdenticon.com</a>)</li>
-    <li>Icons around site: <b>Font Awesome by Dave Gandy</b> (<a href="http://fontawesome.io" target="_blank">http://fontawesome.io</a>)</li></ul>
+    <li>Icons around site: <b>Font Awesome by Dave Gandy</b> (<a href="http://fontawesome.io" target="_blank" rel="noopener">http://fontawesome.io</a>)</li></ul>
     <p>All content found here that has no attribution is believed to be in the public domain.</p>
     <p>If you are the rightful owner of any of the content on this site, and you do not want it to be displayed or you require suitable credit, then please contact me and I will do whatever is needed either for the content to be removed or to provide credit where it is due.</p>
     <p>Although I do my best to verify its legitimacy, I am not responsible for any of the content/downloads on external sites that are linked here.</p>
 
     <hr>
     <h1>Donations</h1>
-    <p class="redlink">Donations are happily accepted. All donations go directly to the running costs of my site and services (<a href="http://www.anorak.co.uk/428124/money/nigerian-astronaut-lost-in-space-needs-3m-to-get-home-could-be-a-scam.html/" target="_blank">or to saving Major Tunde</a>).</p>
+    <p class="redlink">Donations are happily accepted. All donations go directly to the running costs of my site and services (<a href="http://www.anorak.co.uk/428124/money/nigerian-astronaut-lost-in-space-needs-3m-to-get-home-could-be-a-scam.html/" target="_blank" rel="noopener">or to saving Major Tunde</a>).</p>
     <pre>Bitcoin:  <b>1Jamie</b>PmmYMSHnmtnPvF2eyD1hmdGA1NqF - <a href="https://blockchain.info/address/1JamiePmmYMSHnmtnPvF2eyD1hmdGA1NqF" target="_blank">blockchain.info</a>
 Litecoin: <b>LXDE</b>bJAzqeUPy2piNq3YtZfNeTrvSo76Mp - <a href="https://ltc.blockr.io/address/info/LXDEbJAzqeUPy2piNq3YtZfNeTrvSo76Mp" target="_blank">blockr.io</a>
 Dogecoin: <b>DDoS</b>rqbJR33uEJkQQJAh8KWf7pSC22RWNh - <a href="https://dogechain.info/address/DDoSrqbJR33uEJkQQJAh8KWf7pSC22RWNh" target="_blank">dogechain.info</a>
