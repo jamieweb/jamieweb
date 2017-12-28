@@ -32,6 +32,7 @@
     <div class="centertext">
         <img width="428px" src="/images/security-jamieweb.png">
     </div>
+    <p>Also see my security.txt: <a href="/.well-known/security.txt" target="_blank">https://www.jamieweb.net/.well-known/security.txt</a></p>
     <p>I also appreciate general bug reports, including compatibility issues, spelling/grammatical errors, broken links or incorrect information. Thank you!</p>
 
     <hr>
