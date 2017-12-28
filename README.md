@@ -29,8 +29,8 @@ Historic:
     Better mobile compatibility
     ✓ - All blog/projects/other pages should now have acceptable levels of mobile readability
     ✓ - Must fix navbar on mobile (doesn't extend to full page width)
-      - Must fix homepage on mobile (currently quite unpredictable) - will be fixed along with new Blog Project Other buttons
-    
+      - Fix homepage sidebar overflow on mobile
+      
     New design for Blog Project Other homepage buttons
     Grid/list layout for /projects (same as /info and /other?)
     Raspberry Pi Cluster blog post
@@ -42,7 +42,7 @@ Historic:
     iptables configuration
     pf configuration
     Chrome sign-in/sync risk
-    rel="noopener"?
+    rel="noopener"? For HTTP endpoints and sites where a user may be signed in
     Homepage quick links
     Navbar/footer account links?
     Search box?
@@ -52,6 +52,8 @@ Historic:
     Flyme 6 [security] re/overview
     Link integrity
     Keychest
+    Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
+    JamieWeb status page, like status.io
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
