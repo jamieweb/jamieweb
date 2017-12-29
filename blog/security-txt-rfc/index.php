@@ -39,7 +39,7 @@
     <p class="two-no-mar font-twenty-three"><i>&ldquo;When security risks in web services are discovered by independent security researchers who understand the severity of the risk, they often lack the channels to properly disclose them. As a result, security issues may be left unreported. Security.txt defines a standard to help organizations define the process for security researchers to securely disclose security vulnerabilities.&rdquo;</i></p>
     <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01</a></i></p>
     <p>According to the <a href="https://tools.ietf.org/id/draft-foudil-securitytxt-01.txt" target="_blank">latest draft</a> (as of writing this post), security.txt is a standard UTF-8 encoded .txt file that consists of various fields that contain information for security researchers who may wish to disclose a security vulnerability.</p>
-    <p>The file is comparable to <a href="http://www.robotstxt.org/" target="_blank">robots.txt</a>, however it is primarily designed for human rather than robot consumption, although it's simplicity means that it is also very machine-friendly.</p>
+    <p>The file is comparable to <sub><sup><sup>[HTTP]</sup></sup></sub><a href="http://www.robotstxt.org/" target="_blank" rel="noopener">robots.txt</a>, however it is primarily designed for human rather than robot consumption, although it's simplicity means that it is also very machine-friendly.</p>
     <p>I first came across the original <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-00" target="_blank">security.txt Internet Draft</a> back in September and thought it looked interesting, however an <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01" target="_blank">updated version</a> of the draft has now been released and it seems to have been getting much more attention recently.</p>
     <p><b>Edit 28th Dec 2017 @ 7:18pm:</b> <i>Version 02 of the draft specification was released just a day after I published this blog post. Version 02 is available <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-02" target="_blank">here</a> and a diff between version 01 and version 02 is <a href="https://tools.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-foudil-securitytxt-02.txt" target="_blank">here</a>. There are few changes between versions 01 and 02, the addition of the "Policy" header field being the only major one. I have added inline edits to this blog post in order to add details on the newly released draft specification version 02.</i></p>
     <p>A valid security.txt file could look like the following example:</p>
@@ -237,9 +237,9 @@ Allow: /.well-known/security.txt</pre>
         <li><a href="https://securitytxt.org/" target="_blank">security.txt Website</a></li>
         <li><a href="https://github.com/securitytxt/security-txt" target="_blank" rel="noopener">security.txt GitHub Repository</a></li>
         <li><a href="https://github.com/securitytxt/chrome-extension" target="_blank" rel="noopener">security.txt Chrome Extension GitHub Repository</a></li>
-        <li><a href="https://www.jamieweb.net/.well-known/security.txt" target="_blank">JamieWeb security.txt File</a></li>
+        <li><a href="/.well-known/security.txt" target="_blank">JamieWeb security.txt File</a></li>
         <li><a href="https://twitter.com/x0rz/status/906962345439657986" target="_blank" rel="noopener">x0rz on Twitter: "Draft RFC for security.txt..."</a></li>
-        <li><a href="http://www.robotstxt.org/" target="_blank">robots.txt Website</a></li>
+        <li><sub><sup><sup>[HTTP]</sup></sup></sub><a href="http://www.robotstxt.org/" target="_blank" rel="noopener">robots.txt Website</a></li>
         <li><a href="https://developers.google.com/search/reference/robots_txt" target="_blank" rel="noopener">Google Developers robots.txt Specification Reference</a></li>
     </ul>
 </div>
