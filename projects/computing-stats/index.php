@@ -56,8 +56,8 @@
         </tr>
     </table><br>
 
-    <h1 class="info">Current Project: <span class="currentproject">Tor Onion v3 Vanity Address Generation</span></h1>
-    <p>The cluster is currently running <a href="https://github.com/cathugger/mkp224o" target="_blank">mkp224o</a> in order to generate a vanity Onion v3 address for my <a href="/blog/onionv3-hidden-service" target="_blank">Onion v3 Tor Hidden Service</a> that will soon be replacing my <a href="/blog/tor-hidden-service" target="_blank">Onion v2 hidden service</a>.</p>
+    <h1 class="info">Current Project: <span class="currentproject">Einstein@Home</span></h1>
+    <p>The cluster is currently running <a href="https://einsteinathome.org/" target="_blank" rel="noopener">Einstein@Home</a>, which is a distributed computing project that searches for gravitational waves using data from the LIGO gravitational wave detector.</p>
 
     <table width="100%">
         <tr>
