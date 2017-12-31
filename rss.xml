@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>security.txt Internet Draft</title>
+        <link>https://www.jamieweb.net/blog/security-txt-rfc/</link>
+        <description>A look at the security.txt draft specification.</description>
+        <category>Blog</category>
+        <pubDate>Tue, 26 Dec 2017</pubDate>
+    </item>
+    <item>
         <title>Tor Onion v3 Hidden Service</title>
         <link>https://www.jamieweb.net/blog/onionv3-hidden-service/</link>
         <description>Testing the new Tor Onion v3 Hidden Services.</description>
