@@ -369,65 +369,6 @@ ul.references li {
     margin-bottom: 7px;
 }
 
-input.email-address {
-    font-size: 26px;
-    height: 35px;
-    width: 600px;
-    border: 0px;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 12px;
-    box-shadow: 0 0 0 5px #cccccc;
-}
-
-input.email-address:focus, input.email-answerverify:focus {
-    outline: none;
-    box-shadow: 0 0 0 5px limegreen;
-}
-
-input.email-answerverify {
-    font-size: 18px;
-    height: 25px;
-    width: 200px;
-    border: 0px;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 9px;
-    box-shadow: 0 0 0 5px #cccccc;
-}
-
-input.email-submit {
-    font-size: 18px;
-    border: 0px;
-    border-radius: 15px;
-    padding: 8px;
-    box-shadow: 0 0 0 5px #cccccc;
-}
-
-input.email-submit:hover {
-    cursor: pointer;
-}
-
-input.email-submit[value="Verify Code"] {
-    margin-top: 20px;
-}
-
-p.email-question {
-    font-size: 20px;
-}
-
-p.email-question img[alt="Equals"] {
-    margin-right: 13px;
-}
-
-p.email-text {
-    font-size: 18px;
-}
-
-p.email-text span {
-    color: crimson;
-}
-
 .centertext {
     text-align: center;
 }
