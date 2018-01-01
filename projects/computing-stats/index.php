@@ -75,6 +75,7 @@
             <td width="50%" class="stats-padding-top"><h1 class="info">Bitcoin Node Stats</h1>
             <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.21.co/nodes/89.34.99.41-8333/" target="_blank">https://bitnodes.21.co/nodes/89.34.99.41-8333/</a></b></p>
             <p class="info">Total Running Time: <b>var-bitcoinnoderuntime days</b></p></td>
+            <p><b>Temporarily offline as of 1st Jan 2018. Should be back online this afternoon.</b></p>
         </tr>
     </table><br>
     <p class="info two-mar-left">Stats Update Every 10 Minutes. Last Updated: <b>var-lastupdated GMT</b></p>
