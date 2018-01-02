@@ -28,7 +28,7 @@
     <hr>
     <h1>Security Vulnerability/Bug Disclosure</h1>
     <p>I greatly appreciate reports of security vulnerabilities or suggested security improvements found on my site or other services.</p>
-    <p>I am currently in the process of lauching a HackerOne program for my site, but for the time being please contact me using the email address below or via a direct message on <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a>.</p>
+    <p>I am currently in the process of launching a HackerOne program for my site, but for the time being please contact me using the email address below or via a direct message on <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a>.</p>
     <div class="centertext">
         <img width="428px" src="/images/security-jamieweb.png">
     </div>
