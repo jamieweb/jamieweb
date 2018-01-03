@@ -63,7 +63,7 @@ Historic:
     ✓ Remove all <center> tags (deprecated)
     ✓ DMARC "v=DMARC1; p=reject; rua=mailto:abuse@jamieweb.net; aspf=r; adkim=r;" on _dmarc.jamieweb.net
     ✓ Onion v3 Tor Hidden Service - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
-    ✓ Notifications (IFTTT, email, etc) - /notifications
+    ✓ Notifications (IFTTT, email, etc) - /notifications (now discontinued)
     ✓ Privacy policy/info
     ✓ Link to GitHub on /projects?
     ✓ Host bunnymod on /downloads
