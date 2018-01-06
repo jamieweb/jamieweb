@@ -230,7 +230,7 @@ Allow: /.well-known/security.txt</pre>
     <p>A final interesting idea of mine is to add support for Bitmessage addresses in the "Contact" field. The reason I suggest Bitmessage and not other "chat" applications is that the decentralized and secure nature of Bitmessage covers the "Encryption" part as well as the contact method. The encryption used by Bitmessage is completely in control of the user, unlike various other chat applications which provide a managed encryption service which is mostly transparent to the user. Again, there is a good chance that this wouldn't be suitable for the official standard however it is definitely interesting to discuss.</p>
 
     <h2 id="references">References</h2>
-    <ul class="references">
+    <ul class="spaced-list">
         <li><a href="https://tools.ietf.org/id/draft-foudil-securitytxt-00.txt" target="_blank">security.txt Internet Draft Version 00 (Sep 10th 2017)</a></li>
         <li><a href="https://tools.ietf.org/id/draft-foudil-securitytxt-01.txt" target="_blank">security.txt Internet Draft Version 01 (Dec 3rd 2017)</a></li>
         <li><a href="https://tools.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-foudil-securitytxt-01.txt" target="_blank">Diff Between The Two Versions</a></li>
