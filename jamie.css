@@ -336,7 +336,7 @@ pre.twenty {
     font-size: 20px;
 }
 
-pre.pre-vanity {
+pre.pre-vanity span {
     color: red;
     font-weight: bold;
 }
