@@ -175,6 +175,11 @@ O:::::::OOO:::::::O
         <h2 class="centertext">Recent Posts</h2>
         <div class="redlink">
             <a href="/blog/security-txt-rfc/">
+                <h4 class="no-mar-bottom">Tor Onion v3 Vanity Address</h4>
+                <h5 class="two-no-mar"><b>Generating a vanity address for Onion v3 Hidden Services</b></h5>
+                <h5 class="two-mar-top">Saturday 6th January 2018</h5>
+            </a>
+            <a href="/blog/security-txt-rfc/">
                 <h4 class="no-mar-bottom">security.txt Internet Draft</h4>
                 <h5 class="two-no-mar"><b>A look at the security.txt draft specification.</b></h5>
                 <h5 class="two-mar-top">Tuesday 26th December 2017</h5>
@@ -188,11 +193,6 @@ O:::::::OOO:::::::O
                 <h4 class="no-mar-bottom">iPad Mini iOS 6</h4>
                 <h5 class="two-no-mar"><b>Using iOS 6 on the iPad Mini + iOS Security.</b></h5>
                 <h5 class="two-mar-top">Tuesday 19th September 2017</h5>
-            </a>
-            <a href="/blog/pastebin-keyword-alerts/">
-                <h4 class="no-mar-bottom">Pastebin Keyword Alerts</h4>
-                <h5 class="two-no-mar"><b>Using the Pastebin Alerts Service.</b></h5>
-                <h5 class="two-mar-top">Saturday 2nd September 2017</h5>
             </a>
         </div>
     </div>
