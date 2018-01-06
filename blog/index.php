@@ -21,6 +21,22 @@
     <h1>Blog</h1>
     <hr>
     <br><div class="blog-group">
+        <div class="blog-year"><h1>2018</h1></div>
+        <div class="blog-brace1"></div>
+        <div class="blog-brace2"></div>
+        <div>
+            <div class="blog-brace3"></div>
+            <div class="blog-brace4"></div>
+            <div class="blog-brace5"></div>
+        </div>
+        <div class="blog-list">
+            <h3 class="no-mar-bottom"><a href="/blog/onionv3-vanity-address/">Tor Onion v3 Vanity Address</a></h3>
+            <p class="two-no-mar"><b>Generating a vanity address for Onion v3 Hidden Services.</b></p>
+            <p class="two-mar-top">Saturday 6th January 2018</p>
+        </div>
+    </div>
+
+    <br><div class="blog-group">
         <div class="blog-year"><h1>2017</h1></div>
         <div class="blog-brace1"></div>
         <div class="blog-brace2"></div>
