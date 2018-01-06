@@ -336,6 +336,11 @@ pre.twenty {
     font-size: 20px;
 }
 
+pre.pre-vanity {
+    color: red;
+    font-weight: bold;
+}
+
 table.centertable {
     margin-left: auto;
     margin-right: auto;
@@ -373,7 +378,7 @@ h5.footer-content img {
     vertical-align: middle;
 }
 
-ul.references li {
+ul.spaced-list {
     margin-bottom: 7px;
 }
 
