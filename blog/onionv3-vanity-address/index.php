@@ -68,7 +68,7 @@ Options:
 	-z  - use faster key generation method. this is now default
 	-Z  - use slower key generation method
 	-s  - print statistics each 10 seconds
-	-S t  - print statistics every specified ammount of seconds
+	-S t  - print statistics every specified amount of seconds
 	-T  - do not reset statistics counters when printing</pre>
     <p>You can then run mkp224o to search for an address. The "-S" argument will make mkp224o output statistics every 5 seconds, and the "-d" argument allows you to specify a directory to store the generated keys.</p>
     <pre>js@node0:~/onionv3/mkp224o$ ./mkp224o -S 5 -d onions jamie
@@ -106,7 +106,7 @@ jamie24hjpe7ia2usa6odvoi3s77j4uegeytk7c3syfyve2t33curbyd.onion
 
 js@node0:~/onionv3/mkp224o$ ls jamie22ezawwi5r3o7lrgsno43jj7vq5en74czuw6wfmjzkhjjryxnid.onion/
 hostname  hs_ed25519_public_key  hs_ed25519_secret_key</pre>
-    <p>You could also set up a cronjob to run mkp224o at boot in a detatched screen session:</p>
+    <p>You could also set up a cronjob to run mkp224o at boot in a detached screen session:</p>
     <pre>@reboot cd /path/to/mkp224o && screen -dmS onionv3 ./mkp224o -S 600 -d onions jamie</pre>
     <p>You can then check up on mkp224o using "screen -r onionv3". Use Ctrl+A followed by Ctrl+D to detach from a screen session without terminating it.</p>
 
@@ -160,10 +160,10 @@ Node 4 (RPi Zero) : 235</pre>
 33 : 32 undecillion years
 34 : 1 duodecillion years
 35 : 32 duodecillion years
-36 : 1 tredeciliion years
+36 : 1 tredecillion years
 37 : 32 tredecillion years
 38 : 1 quattuordecillion years
-39 : 32 quatuordecillion years
+39 : 32 quattuordecillion years
 40 : 1 quindecillion years
 41 : 32 quindecillion years
 42 : 1 sexdecillion years
