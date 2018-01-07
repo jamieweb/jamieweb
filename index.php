@@ -174,7 +174,7 @@ O:::::::OOO:::::::O
         <hr>
         <h2 class="centertext">Recent Posts</h2>
         <div class="redlink">
-            <a href="/blog/security-txt-rfc/">
+            <a href="/blog/onionv3-vanity-address/">
                 <h4 class="no-mar-bottom">Tor Onion v3 Vanity Address</h4>
                 <h5 class="two-no-mar"><b>Generating a vanity address for Onion v3 Hidden Services</b></h5>
                 <h5 class="two-mar-top">Saturday 6th January 2018</h5>
