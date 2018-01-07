@@ -78,7 +78,6 @@
         </tr>
     </table><br>
     <p class="info two-mar-left">Stats Update Every 10 Minutes. Last Updated: <b>var-lastupdated GMT</b></p>
-    <p class="info two-mar-left"><b>5th Jan - Cluster temporarily offline, possibly memory card corruption. Will be back online tomorrow.</b></p>
 </div>
 
 <?php include "footer.php" ?>
