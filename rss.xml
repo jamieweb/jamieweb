@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Tor Onion v3 Vanity Address</title>
+        <link>https://www.jamieweb.net/blog/onionv3-vanity-address/</link>
+        <description>Generating a vanity address for Onion v3 Hidden Services.</description>
+        <category>Blog</category>
+        <pubDate>Sat, 7 Jan 2018</pubDate>
+    </item>
+    <item>
         <title>security.txt Internet Draft</title>
         <link>https://www.jamieweb.net/blog/security-txt-rfc/</link>
         <description>A look at the security.txt draft specification.</description>
