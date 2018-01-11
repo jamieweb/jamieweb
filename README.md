@@ -54,12 +54,12 @@ Historic:
     Keychest
     Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
     JamieWeb status page, like status.io
-    Onion v3 vanity address blog post
     humans.txt
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
 
+    ✓ Onion v3 vanity address blog post
     ✓ Remove all <center> tags (deprecated)
     ✓ DMARC "v=DMARC1; p=reject; rua=mailto:abuse@jamieweb.net; aspf=r; adkim=r;" on _dmarc.jamieweb.net
     ✓ Onion v3 Tor Hidden Service - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
