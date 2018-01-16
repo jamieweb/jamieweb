@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Registering a Namecoin .bit Domain</title>
+        <link>https://www.jamieweb.net/blog/namecoin-bit-domain/</link>
+        <description>Using Namecoin Core to register a .bit domain and setting up ncdns.</description>
+        <category>Blog</category>
+        <pubDate>Tue, 16 Jan 2018</pubDate>
+    </item>
+    <item>
         <title>Tor Onion v3 Vanity Address</title>
         <link>https://www.jamieweb.net/blog/onionv3-vanity-address/</link>
         <description>Generating a vanity address for Onion v3 Hidden Services.</description>
