@@ -81,6 +81,7 @@ MOC0zwpmB6vQzFgAMtez
 <b>SHA1:</b> 23620d7c03593b94f1303ba642da6d0738755209
 <b>MD5:</b> 5daf333a90e189a16786d08d3aaf6a19
 <b>Link:</b> https://www.torproject.org/dist/torbrowser/7.5a5/tor-browser-linux64-7.5a5_en-US.tar.xz.asc
+
 -----BEGIN PGP SIGNATURE-----
 
 iQIcBAABCgAGBQJZyr7hAAoJENFIP6bDwHE2cPMP/1c5PMjuBRAtipry8v+inadB
