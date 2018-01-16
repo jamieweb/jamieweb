@@ -328,6 +328,10 @@ pre.scroll-small {
     overflow-y: scroll;
 }
 
+pre.pre-wrap-text {
+    white-space: pre-wrap;
+}
+
 pre.arial {
     font-family: arial;
 }
@@ -443,6 +447,34 @@ ul.spaced-list li {
 
 .vertical-align-middle {
     vertical-align: middle;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.width-450 {
+    width: 450px;
+}
+
+.width-545 {
+    width: 545px;
 }
 
 .intro-mar-top {
