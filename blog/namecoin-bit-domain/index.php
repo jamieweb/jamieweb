@@ -86,7 +86,7 @@ Primary key fingerprint: 5174 0B7C 732D 572A 3140  4010 6605 55E1 F8F7 BF85
     <p>If verification is successful, you can then verify the Namecoin Core package that you downloaded. For example:</p>
     <pre>$ grep `sha256sum namecoin-0.13.99-x86_64-linux-gnu.tar.gz` verifications/namecoin-linux-0.13-build.assert
 verifications/namecoin-linux-0.13-build.assert:    294b1106001d6ea2b9d9ee6a655021ef207a24e8f1dec8efd5899728b3849129  namecoin-0.13.99-x86_64-linux-gnu.tar.gz</pre>
-    <p>If you get a match for the file that you downloaded, verification has suceeded and you can proceed with installation.</p>
+    <p>If you get a match for the file that you downloaded, verification has succeeded and you can proceed with installation.</p>
     <p>Extract the downloaded file:</p>
     <pre>tar -xf namecoin-0.13.99-x86_64-linux-gnu.tar.gz</pre>
     <p>In the resulting folder, the main things that you will need are in the bin/ directory.</p>
@@ -105,7 +105,7 @@ rpcport=port</pre>
     <p>You are now ready to run Namecoin Core. Navigate to the bin/ directory of your Namecoin Core installation and run namecoind as a daemon:</p>
     <pre>$ ./namecoind -daemon</pre>
     <p>Since this is the first time you are running Namecoin Core, it will download and validate the blockchain from other nodes. Depending on your internet connection speed and processing power, this could take several days. For me it took around 13 hours start to finish.</p>
-    <p>In order to interract with your node once it is running, you can use namecoin-cli.</p>
+    <p>In order to interact with your node once it is running, you can use namecoin-cli.</p>
     <p>To check the status of the sync, use the following:</p>
     <pre>$ ./namecoin-cli getblockchaininfo</pre>
     <p>The important values are "blocks", "headers" and "verificationprogress".</p>
@@ -219,7 +219,7 @@ f572d396fae9206628714fb2ce00f72e94f2258f
     <h2 id="ncdns">Local DNS Resolver Setup (ncdns)</h2>
     <p><a href="https://github.com/namecoin/ncdns" target="_blank" rel="noopener">ncdns</a> is a local DNS server that can directly query the Namecoin blockchain, allowing you to locally resolve .bit domains. ncnds is also used to generate TLS certificates for .bit domains.</p>
     <p>You can download ncdns from the <a href="https://github.com/namecoin/ncdns" target="_blank" rel="noopener">GitHub repository</a>.</p>
-    <p>Once you have installed ncdns, you'll need to set up a configuration file for it. You can copy a sample configuraiton file from doc/ncdns.conf.example to either /etc/ncdns/ncdns.conf or ../etc/ncdns.conf (relative to the main ncdns execution directory).</p>
+    <p>Once you have installed ncdns, you'll need to set up a configuration file for it. You can copy a sample configuration file from doc/ncdns.conf.example to either /etc/ncdns/ncdns.conf or ../etc/ncdns.conf (relative to the main ncdns execution directory).</p>
     <pre>$ sudo mkdir /etc/ncdns
 $ sudo cp doc/ncdns.conf.example /etc/ncdns/ncdns.conf</pre>
     <p>Once you have copied the file, edit it and set up a local address and port to bind to, as well as RPC credentials for Namecoin Core. I used port 1025, as this allows me to run ncdns as a non-root user and avoids taking up more valuable ports.</p>
@@ -254,8 +254,8 @@ jamieweb.bit.		600	IN	A	139.162.222.67
 139.162.222.67
 2a01:7e00:e001:c500::1
 2a01:7e00:e001:c500::1</pre>
-    <p>Now that your local ncdns resolver is working, your system needs to be configured to delegate .bit resolutions to the local ncdns servier. You can do this by installing Unbound and dnssec-trigger.</p>
-    <p><b>Note that this change your standard DNS resolution configuation, so be careful before proceeding:</b></p>
+    <p>Now that your local ncdns resolver is working, your system needs to be configured to delegate .bit resolutions to the local ncdns server. You can do this by installing Unbound and dnssec-trigger.</p>
+    <p><b>Note that this change your standard DNS resolution configuration, so be careful before proceeding:</b></p>
     <pre>$ sudo apt-get install dnssec-trigger</pre>
     <p>Now you need to create an Unbound configuration file to delegate .bit resolutions to ncdns:</p>
     <pre>$ sudo nano /etc/unbound/unbound.conf.d/bit.conf</pre>
@@ -296,7 +296,7 @@ server:
     <p>It is important to note that TLS in the .bit namespace is not designed to provide authenticity or identification, it is simply there to provide confidentiality (encryption) and integrity. The reason that TLS authenticity and identification are not needed with Namecoin is because the Blockchain handles all of that. In an ideal situation, you will be using a local Namecoin DNS resolver that directly queries the Blockchain, meaning that classic DNS spoofing attacks aren't realistically possible.</p>
     <p>TLS certificates for .bit domains are generated and self-signed by ncdns, and can then be installed on a web server like a normal CA-signed certificate. Anybody can generate and self-sign certificates for any .bit domain, so you do not necessarily need to generate the certificates on the same machine as the Namecoin wallet that owns your .bit domain name(s).</p>
     <p>Wildcard certificates are not supported, so you'll have to generate a separate certificate for each subdomain. In my case, I generated one for www and one for the root domain.</p>
-    <p>In order to generate a TLS certificate for your .bit domain, use the following command, substituing information where necessary:</p>
+    <p>In order to generate a TLS certificate for your .bit domain, use the following command, substituting information where necessary:</p>
     <pre>./generate_nmc_cert -ecdsa-curve P256 -host your-name-here.bit -start-date "Jan 14 00:00:00 2018" -end-date "Jan 14 00:00:00 2028"</pre>
     <p>The files cert.pem and key.pem will be output in the directory that you are currently working in. Keep in mind that if you issue multiple certificates, you will actually overwrite the two files, so make sure to move them somewhere safe before issuing another certificate.</p>
     <p>Make sure to keep the key.pem file private, as this is the key for your TLS certificate.</p>
@@ -311,7 +311,7 @@ $ sudo chmod o-r /etc/ssl/private/your-name-here-bit-key.pem</pre>
     <pre>$ sudo a2enmod ssl
 $ sudo service apache2 restart</pre>
     <p>Virtual host configuration for .bit TLS is detailed in the next section, <b>however it is important to make sure that you have a working Apache TLS configuration file before you enable your .bit TLS virtual host, otherwise you may completely break your Apache server</b>.</p>
-    <p>If you set up a TLS virtual host without a proper TLS configuation file, nobody will be able to connect to your server over TLS, instead they will get the following error:</p>
+    <p>If you set up a TLS virtual host without a proper TLS configuration file, nobody will be able to connect to your server over TLS, instead they will get the following error:</p>
     <pre>gnutls_handshake() failed: The TLS connection was non-properly terminated.</pre>
     <p>...and in your Apache log files, you'll be getting error code \x16\x03\x01:</p>
     <pre>0.0.0.0 - - [13/Jan/2018:00:00:00 +0000] "\x16\x03\x01\x01\x1a\x01" 400 0 "-" "-"</pre>
