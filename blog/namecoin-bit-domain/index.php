@@ -135,14 +135,14 @@ rpcport=port</pre>
 
     <h2 id="buying-namecoin">Buying Namecoin</h2>
     <p>Believe it or not, one of the hardest parts of this process was actually acquiring some Namecoin! It was temporarily unavailable for several days at my usual go-to place for cryptocurrency to cryptocurrency trading (<a href="https://shapeshift.io/" target="_blank" rel="noopener">shapeshift.io</a>), so I had to find somewhere else.</p>
-    <img width="1000px" src="/blog/namecoin-bit-domain/shapeshift-nmc.png">
+    <img width="1000px" src="/blog/namecoin-bit-domain/shapeshift-namecoin.png">
     <p>I wanted to find somewhere where I could exchange it directly for another cryptocurrency, rather than going through the ID verification process for a fiat to crypto exchange.</p>
     <p>After some looking around, I came across <a href="https://tuxexchange.com/" target="_blank" rel="noopener">TuxExchange</a>, which is what finally allowed me to buy some Namecoin!</p>
     <p>I sent Litecoin to TuxExchange, where I then exchanged it for Bitcoin, and then exchanged that Bitcoin into Namecoin, and withdrew to my Namecoin wallet.</p>
     <p>The reason I sent Litecoin to TuxExchange rather than Bitcoin directly is because Litecoin is faster and cheaper to send at the moment due to the Bitcoin scaling issues.</p>
     <p>It is important to note that on TuxExchange, it doesn't seem to be possible to exchange altcoins for other altcoins, everything has to go through Bitcoin.</p>
     <p>The withdrawal fee for Namecoin was also extortionate. I wanted to withdraw 1 Namecoin, but the fee was 1 Namecoin! I know that I got ripped-off a bit there, but I had been looking for somewhere to buy Namecoin for long enough and just had to go through with it.</p>
-    <img width="1000px" src="/blog/namecoin-bit-domain/tux-exchange-nmc.png">
+    <img width="1000px" src="/blog/namecoin-bit-domain/tux-exchange-namecoin.png">
     <p><b>Note:</b> I am in no way endorsing ShapeShift or TuxExchange, I am just using them as examples that worked for me. Please do your own research before spending money on an exchange. I am not responsible for any losses.</p>
     <p>At the time of writing this, 1 Namecoin is worth around $7.</p>
     <p>In order to get a wallet address to send your Namecoin to, use the following command:</p>
