@@ -20,7 +20,7 @@
 <div class="body">
     <h1>Registering a Namecoin .bit Domain</h1>
     <hr>
-    <p><b>Monday 15th January 2018</b></p>
+    <p><b>Tuesday 16th January 2018</b></p>
     <p>This blog post will cover everything you need to know in order to register a Namecoin .bit domain name on a Debian-based Linux system using the command line.</p>
     <p><b>Skip to Section:</b></p>
     <pre><b>Registering a Namecoin .bit Domain</b>
