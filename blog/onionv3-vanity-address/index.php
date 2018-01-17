@@ -695,7 +695,8 @@ HiddenServicePort &lt;localport&gt; &lt;server&gt;</pre>
         <li><a href="/blog/onionv3-hidden-service" target="_blank">JamieWeb - Tor Onion v3 Hidden Service - 21st Oct 2017</a></li>
         <li><a href="/blog/tor-hidden-service" target="_blank">JamieWeb - Tor Hidden Service - 12th Feb 2017</a></li>
         <li><a href="http://jamiewebgbelqfno.onion/" target="_blank" rel="noopener">JamieWeb Onion v2 Hidden Service - jamiewebgbelqfno.onion</a></li>
-        <li><a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Alpha Hidden Service - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></li>
+        <li><a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Alpha Hidden Service (Now Offline) - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></li>
+        <li><a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Production Hidden Service - jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></li>
     </ul>
 </div>
 
