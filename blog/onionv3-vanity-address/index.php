@@ -24,7 +24,8 @@
     <p>For 21 days, my <a href="/projects/computing-stats/" target="_blank">Raspberry Pi cluster</a> has been running <a href="https://github.com/cathugger/mkp224o" target="_blank" rel="noopener">mkp224o</a> in order to generate a vanity address for my new <a href="/blog/onionv3-hidden-service/" target="_blank">Tor Onion v3 Hidden Service</a>.</p>
     <p>It isn't as good as <a href="/blog/tor-hidden-service/" target="_blank">last time</a>, but I have chosen: <b><a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></b></p>
     <p>So I guess that's... 3 volt Kiwi?</p>
-    <p><b>Please note that this Onion v3 Hidden Service will not be available until Onion v3 reaches the stable Tor branch. For now, you can use my test Onion v3 service at <a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a>, which requires tor-0.3.2.1-alpha (eg: Tor Browser 7.5a5) or newer to access.</b></p>
+    <p><s><b>Please note that this Onion v3 Hidden Service will not be available until Onion v3 reaches the stable Tor branch. For now, you can use my test Onion v3 service at <a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a>, which requires tor-0.3.2.1-alpha (eg: Tor Browser 7.5a5) or newer to access.</b></s></p>
+    <p><b>Edit 17th Jan 2018 @ 11:00pm:</b> <i>Onion v3 functionaility is now in the stable release of Tor, so my new hidden service is live! The Onion v3 hidden service used for testing is now offline.<i></p>
     <p><b>Skip to Section:</b></p>
     <pre><b>Tor Onion v3 Vanity Address</b>
 &#x2523&#x2501&#x2501 <a href="#mkp224o">mkp224o</a>
