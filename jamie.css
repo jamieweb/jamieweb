@@ -356,10 +356,6 @@ table.irc tr td {
     padding: 0px;
 }
 
-p.onionlink {
-    line-height: 30px;
-}
-
 p.onionlink a {
     font-family: monospace;
     padding: 3.5px;
