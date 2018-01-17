@@ -22,8 +22,8 @@
     <hr>
     <p><b>Saturday 21st October 2017</b></p>
     <p>I have set up a new Onion v3 Tor Hidden Service for JamieWeb, available at:</p>
-    <pre><a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion" target="_blank">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a></pre>
-    <p><b>Edit 17th Jan @ 10:48pm:</b> <i>Now that Onion v3 functionality is in the stable release version of Tor, I have moved over to a new Onion v3 hidden service with a vanity address: <a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a>. You can read my blog post about generating an Onion v3 vanity address using mkp224o <a href="/blog/onionv3-vanity-address" target="_blank">here</a>.</i></p>
+    <pre><a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></pre>
+    <p><b>Edit 17th Jan @ 10:48pm:</b> <i>Now that Onion v3 functionality is in the stable release version of Tor, I have moved over to a new Onion v3 hidden service with a vanity address, as seen above. The hidden service that I originally hosted for testing Onion v3 in the alpha builds is: <a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion" target="_blank" rel="noopener">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</a>, however this is now offline. You can read my blog post about generating an Onion v3 vanity address using mkp224o <a href="/blog/onionv3-vanity-address" target="_blank">here</a>.</i></p>
     <p>As of writing this post, you need at least tor-0.3.2.1-alpha (eg: Tor Browser 7.5a5) in order to access the new Onion v3 hidden services.</p>
     <p><b>Skip to Section:</b></p>
     <pre><b>Tor Onion v3 Hidden Service</b>
@@ -142,7 +142,7 @@ drwxr-xr-x 5 tor tor 4096 Oct 19 22:29 ..
     <pre>403 Forbidden - Direct request to IPv4 address (139.162.222.67) blocked. Please use https://www.jamieweb.net instead.</pre>
     <p>In order to get around this, you can simply create a virtual host with the ServerName value set to the Onion address. In my configuration, I have the following (irrelevant lines removed):</p>
     <pre>&lt;VirtualHost 139.162.222.67:80&gt;
-    ServerName 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
+    ServerName jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion
 &lt;/VirtualHost&gt;</pre>
     <p>The request will no longer be blocked, allowing the hidden service to work as normal.</p>
     <h2 id="vanityaddresses">Vanity Addresses</h2>
