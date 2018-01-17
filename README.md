@@ -4,7 +4,9 @@ My personal website, available at:
 
 * Web: https://www.jamieweb.net
 * Onion v2: http://jamiewebgbelqfno.onion
-* Onion v3: http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
+* Onion v3: http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion
+* Onion v3 (Test Site): http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
+* Namecoin: https://www.jamieweb.bit
 
 Other:
 
