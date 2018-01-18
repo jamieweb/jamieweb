@@ -1,6 +1,6 @@
 /* JAMIEWEB */
 Owner: Jamie Scaife
-Site: https://www.jamieweb.net/
+Site: https://www.jamieweb.net
 Security Contact: https://www.jamieweb.net/.well-known/security.txt
 Twitter: @JamieOnUbuntu
 GitHub: /JamieOnUbuntu
