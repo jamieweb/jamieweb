@@ -5,7 +5,6 @@ My personal website, available at:
 * Web: https://www.jamieweb.net
 * Onion v2: http://jamiewebgbelqfno.onion
 * Onion v3: http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion
-* Onion v3 (Test Site): http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
 * Namecoin: https://www.jamieweb.bit
 
 Other:
@@ -56,15 +55,15 @@ Historic:
     Keychest
     Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
     JamieWeb status page, like status.io
-    humans.txt
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
 
+    ✓ humans.txt
     ✓ Onion v3 vanity address blog post
     ✓ Remove all <center> tags (deprecated)
     ✓ DMARC "v=DMARC1; p=reject; rua=mailto:abuse@jamieweb.net; aspf=r; adkim=r;" on _dmarc.jamieweb.net
-    ✓ Onion v3 Tor Hidden Service - 32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion
+    ✓ Onion v3 Tor Hidden Service - ~~32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion~~ jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion
     ✓ Notifications (IFTTT, email, etc) - /notifications (now discontinued)
     ✓ Privacy policy/info
     ✓ Link to GitHub on /projects?
