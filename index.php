@@ -61,11 +61,11 @@
             </a>
         </div>
         <hr>
-
-        <div class="menuitem">
-            <a href="/blog/">
-                <h1>Blog</h1>
-                <pre>BBBBBBBBBBBBBBBBB   
+        <div class="display-flex">
+            <div class="menuitem">
+                <a href="/blog/">
+                    <h1>Blog</h1>
+                    <pre>BBBBBBBBBBBBBBBBB   
 B::::::::::::::::B  
 B::::::BBBBBB:::::B 
 BB:::::B     B:::::B
@@ -81,13 +81,13 @@ BB:::::BBBBBB::::::B
 B:::::::::::::::::B 
 B::::::::::::::::B  
 BBBBBBBBBBBBBBBBB   </pre>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <div class="menuitem">
-            <a href="/projects/">
-                <h1>Projects</h1>
-                <pre>PPPPPPPPPPPPPPPPP   
+            <div class="menuitem flex-grow-1 padding-8-rl">
+                <a href="/projects/">
+                    <h1>Projects</h1>
+                    <pre>PPPPPPPPPPPPPPPPP   
 P::::::::::::::::P  
 P::::::PPPPPP:::::P 
 PP:::::P     P:::::P
@@ -103,13 +103,13 @@ PP::::::PP
 P::::::::P          
 P::::::::P          
 PPPPPPPPPP          </pre>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <div class="menuitem">
-            <a href="/other/">
-                <h1>Other</h1>
-                <pre>     OOOOOOOOO     
+            <div class="menuitem">
+                <a href="/other/">
+                    <h1>Other</h1>
+                    <pre>     OOOOOOOOO     
    OO:::::::::OO   
  OO:::::::::::::OO 
 O:::::::OOO:::::::O
@@ -125,9 +125,9 @@ O:::::::OOO:::::::O
  OO:::::::::::::OO 
    OO:::::::::OO   
      OOOOOOOOO     </pre>
-            </a>
+                </a>
+            </div>
         </div>
-
     </div>
 
     <div class="sidebar">
