@@ -32,7 +32,6 @@ Historic:
     ✓ - Must fix navbar on mobile (doesn't extend to full page width)
       - Fix homepage sidebar overflow on mobile
       
-    New design for Blog Project Other homepage buttons
     Grid/list layout for /projects (same as /info and /other?)
     Raspberry Pi Cluster blog post
     Python & C++ - cycles per second - "tickrate"
@@ -59,6 +58,7 @@ Historic:
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
 
+    ✓ New design for Blog Project Other homepage buttons - not a new design in the end, but fixed them with a flexbox
     ✓ humans.txt
     ✓ Onion v3 vanity address blog post
     ✓ Remove all <center> tags (deprecated)
