@@ -463,6 +463,10 @@ ul.spaced-list li {
     justify-content: center;
 }
 
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
 .float-left {
     float: left;
 }
@@ -477,6 +481,10 @@ ul.spaced-list li {
 
 .width-545 {
     width: 545px;
+}
+
+.padding-8-rl {
+    padding: 0px 8px 0px 8px;
 }
 
 .intro-mar-top {
