@@ -44,7 +44,6 @@ Historic:
     Chrome sign-in/sync risk
     rel="noopener"? For HTTP endpoints and sites where a user may be signed in
     Homepage quick links
-    Navbar/footer account links?
     Search box?
     Bitcoin node over Tor
     Malicious links overview/spamtraps
@@ -58,6 +57,7 @@ Historic:
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
 
+    ✓ Navbar/footer account links?
     ✓ New design for Blog Project Other homepage buttons - not a new design in the end, but fixed them with a flexbox
     ✓ humans.txt
     ✓ Onion v3 vanity address blog post
