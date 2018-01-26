@@ -53,6 +53,7 @@ Historic:
     Keychest
     Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
     JamieWeb status page, like status.io
+    Tor IPv6
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
