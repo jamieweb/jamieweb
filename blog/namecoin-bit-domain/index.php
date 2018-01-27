@@ -255,7 +255,7 @@ jamieweb.bit.		600	IN	A	139.162.222.67
 2a01:7e00:e001:c500::1
 2a01:7e00:e001:c500::1</pre>
     <p>Now that your local ncdns resolver is working, your system needs to be configured to delegate .bit resolutions to the local ncdns server. You can do this by installing Unbound and dnssec-trigger.</p>
-    <p><b>Note that this change your standard DNS resolution configuration, so be careful before proceeding:</b></p>
+    <p><b>Note that this will change your standard DNS resolution configuration, so be careful before proceeding:</b></p>
     <pre>$ sudo apt-get install dnssec-trigger</pre>
     <p>Now you need to create an Unbound configuration file to delegate .bit resolutions to ncdns:</p>
     <pre>$ sudo nano /etc/unbound/unbound.conf.d/bit.conf</pre>
