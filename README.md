@@ -45,7 +45,6 @@ Historic:
     rel="noopener"? For HTTP endpoints and sites where a user may be signed in
     Homepage quick links
     Search box?
-    Bitcoin node over Tor
     Malicious links overview/spamtraps
     HackerOne link / mailto: invite request / text box invite request
     Flyme 6 [security] re/overview
@@ -54,10 +53,12 @@ Historic:
     Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
     JamieWeb status page, like status.io
     Tor IPv6
+    Improved/tidied footer
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
 
+    ✓ Bitcoin node over Tor, 6poxn47ur5mvxflg2dim6cgozipe7oprcnn3uknoboynvfbbswhordyd.onion & kw7dsbyawemqdxfq.onion, port 8333
     ✓ Navbar/footer account links?
     ✓ New design for Blog Project Other homepage buttons - not a new design in the end, but fixed them with a flexbox
     ✓ humans.txt
