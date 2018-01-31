@@ -95,11 +95,10 @@ verifications/namecoin-linux-0.13-build.assert:    294b1106001d6ea2b9d9ee6a65502
     <p>Before you run Namecoin Core for the first time, you should create the .namecoin directory and the namecoin.conf file:</p>
     <pre>$ mkdir ~/.namecoin
 $ nano ~/.namecoin/namecoin.conf</pre>
-    <p>Add the following to Namecoin.conf, filling in the values where required.</p>
-    <pre>rpcuser=username
-rpcpass=password
-rpcport=port</pre>
-    <p>The username can be anything you want. Also, you will not need to remember the RPC password, so I suggest setting it to something like 64 random characters. The default port is 8336 so that should be fine unless you have other requirements.</p>
+    <p>Add your desired RPC port to the config file, the default is 8336 which should be fine in most configurations.</p>
+    <pre>rpcport=8336</pre>
+    <p>If you are only going to be accessing your node over RPC locally, you do not need to specify rpcuser or rpcpass, as cookie authentication will be used.</p>
+    <p>An authentication cookie is automatically generated at ~/.namecoin/.cookie every time Namecoin Core runs. This can be used by other applications such as namecoin-cli and ncdns in order to communicate with your node locally. You can specify a custom path for your cookie file with the rpccookiefile option. <b>Your cookie file must be kept private as it can give people full control of your node including access to the wallet.</b></p>
     <p>You can also optionally prune your node in order to reduce storage space requirements at the expense of been a fully validating node. The minimum prune amount is 550 MB. The Namecoin blockchain is currently around 5.5 GB in size. Pruning is not recommended as this limits how much your node helps the network.</p>
     <pre>prune=550</pre>
     <p>You are now ready to run Namecoin Core. Navigate to the bin/ directory of your Namecoin Core installation and run namecoind as a daemon:</p>
@@ -219,10 +218,14 @@ f572d396fae9206628714fb2ce00f72e94f2258f
     <h2 id="ncdns">Local DNS Resolver Setup (ncdns)</h2>
     <p><a href="https://github.com/namecoin/ncdns" target="_blank" rel="noopener">ncdns</a> is a local DNS server that can directly query the Namecoin blockchain, allowing you to locally resolve .bit domains. ncnds is also used to generate TLS certificates for .bit domains.</p>
     <p>You can download ncdns from the <a href="https://github.com/namecoin/ncdns" target="_blank" rel="noopener">GitHub repository</a>.</p>
+    <p>As with Namecoin Core, it is recommended to create a separate user to run ncdns as. This will also help to protect your Namecoin wallet.</p>
     <p>Once you have installed ncdns, you'll need to set up a configuration file for it. You can copy a sample configuration file from doc/ncdns.conf.example to either /etc/ncdns/ncdns.conf or ../etc/ncdns.conf (relative to the main ncdns execution directory).</p>
     <pre>$ sudo mkdir /etc/ncdns
 $ sudo cp doc/ncdns.conf.example /etc/ncdns/ncdns.conf</pre>
-    <p>Once you have copied the file, edit it and set up a local address and port to bind to, as well as RPC credentials for Namecoin Core. I used port 1025, as this allows me to run ncdns as a non-root user and avoids taking up more valuable ports.</p>
+    <p>Once you have copied the file, edit it and set up a local address and port to bind to. I used port 1025, as this allows me to run ncdns as a non-root user and avoids taking up more valuable ports.</p>
+    <p>You also need to specify the location of the cookie file. Place the following below the namecoinrpcaddress variable:</p>
+    <pre>namecoinrpccookiepath="/path/to/authentication/cookie"</pre>
+    <p>You may need to adjust the permissions of the .cookie file in order to allow ncdns to read it.</p>
     <p>You can then run ncdns. I recommend using screen or another terminal session in order to run ncdns, as it does not run in the background by default. The command below will start a detached screen session with ncdns running inside it. To resume the screen session, use "screen -r":</p>
     <p>$ screen -dmS ncdns ./ncdns
     <p>Then check that ncdns is working using dig. Keep in mind that if your new .bit domain has not yet been properly configured, ncdns will not return anything for it:</p>
