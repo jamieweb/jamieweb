@@ -54,6 +54,7 @@ Historic:
     JamieWeb status page, like status.io
     Tor IPv6
     Improved/tidied footer
+    <noscript> tag neglect
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
