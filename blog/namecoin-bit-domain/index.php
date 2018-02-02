@@ -302,6 +302,7 @@ server:
     <pre>./generate_nmc_cert -ecdsa-curve P256 -host your-name-here.bit -start-date "Jan 14 00:00:00 2018" -end-date "Jan 14 00:00:00 2028"</pre>
     <p>The files cert.pem and key.pem will be output in the directory that you are currently working in. Keep in mind that if you issue multiple certificates, you will actually overwrite the two files, so make sure to move them somewhere safe before issuing another certificate.</p>
     <p>Make sure to keep the key.pem file private, as this is the key for your TLS certificate.</p>
+    <p>In order for your certificates to work properly with ncdns's certificate injection feature and to avoid HTTPS browser warnings, you'll also need to set up tls records in your domain configuration. This follows a standard similar to DANE by specifying allowed certificates in the DNS records for a domain. Please see <a href="https://namecoin.org/docs/name-owners/tls/" target="_blank">Setting Up TLS (for name owners)</a> on the Namecoin website.</p>
 
     <h2 id="apache-tls">Apache Web Server TLS Configuration</h2>
     <p>The default location to store TLS certificates for use with Apache is /etc/ssl. Public certificates should go in /etc/ssl/certs and private keys should go in /etc/ssl/private. You can use other locations if you want, but always make sure that your private key is protected and only accessible by users who require access, such as www-data. You are also free to rename your files in order to better identify them or prevent name clashes with others. </p>
