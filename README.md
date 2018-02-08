@@ -55,6 +55,7 @@ Historic:
     Tor IPv6
     Improved/tidied footer
     <noscript> tag neglect
+    Vulnerability disclosure
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
