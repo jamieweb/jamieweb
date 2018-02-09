@@ -23,7 +23,7 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/downloads/"><img src="/images/downloads.png"></a>
+            <a href="/downloads/"><img src="/images/fontawesome/download.svg"></a>
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/downloads/">Downloads</a></h3>
@@ -33,7 +33,7 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/checksums/"><img src="/images/checksums.png"></a>
+            <a href="/other/checksums/"><img src="/images/fontawesome/hashtag.svg"></a>
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/other/checksums/">Checksums</a></h3>
@@ -43,7 +43,7 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/speedrun-times/"><img src="/images/speedrun-times.png"></a>
+            <a href="/other/speedrun-times/"><img src="/images/fontawesome/stopwatch.svg"></a>
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/other/speedrun-times/">Speedrun Times</a></h3>
@@ -53,7 +53,7 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/game-tracker/"><img src="/images/game-tracker.png"></a>
+            <a href="/other/game-tracker/"><img src="/images/fontawesome/clock.svg"></a>
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/other/game-tracker/">Non-Steam Game Time Tracker</a></h3>
@@ -63,7 +63,7 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/pastes/"><img src="/images/pastes.png"></a>
+            <a href="/pastes/"><img src="/images/fontawesome/paste.svg"></a>
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/pastes/">Pastes</a></h3>
