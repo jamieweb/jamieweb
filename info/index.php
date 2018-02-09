@@ -37,7 +37,7 @@
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/info/chrome-extension-ids/">Chrome Extension IDs</a></h3>
-            <p class="two-mar-top"><b>IDs and links of the legitimate versions of popular Chrome extensions.</b></p>
+            <p class="two-mar-top"><b>IDs and URLs of the legitimate versions of popular Chrome extensions.</b></p>
         </div>
     </div>
 
