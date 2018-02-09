@@ -140,34 +140,34 @@ O:::::::OOO:::::::O
         <hr>
         <div class="centertext">
             <div class="sideitem">
-                <a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/gh-90.png"></a>
+                <a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/github.svg"></a>
                 <h4><a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener">GitHub</a></h4>
             </div>
             <div class="sideitem">
-                <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/tw-90.png"></a>
+                <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/tw.svg"></a>
                 <h4><a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a></h4>
             </div>
             <div class="sideitem">
-                <a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener"><img src="/images/yt-90.png"></a>
+                <a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener"><img src="/images/fontawesome/yt.svg"></a>
                 <h4><a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener">YouTube</a></h4>
             </div>
             <div class="sideitem">
-                <a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/kb-90.png"></a>
+                <a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/id-card.svg"></a>
                 <h4><a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener">Keybase</a></h4>
             </div>
             <div class="sideitem">
-                <a href="/irc/"><img src="/images/irc-90.png"></a>
+                <a href="/irc/"><img src="/images/fontawesome/comments.svg"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/irc/">IRC</a></h4>
             </div>
             <div class="sideitem">
-                <a href="/jamie-scaife.asc" target="_blank"><img src="/images/pgp-90.png"></a>
+                <a href="/jamie-scaife.asc" target="_blank"><img src="/images/fontawesome/key.svg"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
             </div>
         </div>
         <hr>
         <div class="centertext">
             <div class="sideitem-b">
-                <a href="/rss.xml" target="_blank"><img src="/images/rss-90.png"></a>
+                <a href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss.svg"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/rss.xml" target="_blank">RSS Feed</a></h4>
             </div>
         </div>
