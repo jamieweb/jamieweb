@@ -23,7 +23,7 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/info/adblock-plus-config/"><img src="/images/adblock-plus-config.png"></a>
+            <a href="/info/adblock-plus-config/"><img src="/images/fontawesome/ban.svg"></a>
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/info/adblock-plus-config/">Adblock Plus Configuration</a></h3>
@@ -33,7 +33,7 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/info/chrome-extension-ids/"><img src="/images/chrome-extensions.png"></a>
+            <a href="/info/chrome-extension-ids/"><img src="/images/fontawesome/chrome.svg"></a>
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/info/chrome-extension-ids/">Chrome Extension IDs</a></h3>
@@ -43,7 +43,7 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/info/hl-client-security/"><img src="/images/shield.png"></a>
+            <a href="/info/hl-client-security/"><img src="/images/fontawesome/shield-alt.svg"></a>
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/info/hl-client-security/">Half-Life Client Security</a></h3>
