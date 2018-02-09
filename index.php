@@ -166,7 +166,7 @@ O:::::::OOO:::::::O
         </div>
         <hr>
         <div class="centertext">
-            <div class="sideitem-b">
+            <div class="sideitem">
                 <a href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss.svg"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/rss.xml" target="_blank">RSS Feed</a></h4>
             </div>
