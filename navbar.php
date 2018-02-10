@@ -44,6 +44,7 @@
                 <div class="dropdown-content">
                     <h4><a href="/info/adblock-plus-config/">Adblock Plus Configuration</a>
                     <a href="/info/chrome-extension-ids/">Chrome Extension IDs</a>
+                    <a href="/info/firefox-extension-ids/">Firefox Extension IDs</a>
                     <a href="/info/hl-client-security/">Half-Life Client Security</a>
                 </div>
             </li>
