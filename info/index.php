@@ -43,6 +43,16 @@
 
     <div class="iconparent">
         <div class="iconimg">
+            <a href="/info/firefox-extension-ids/"><img src="/images/fontawesome/firefox.svg"></a>
+        </div>
+        <div class="iconlist">
+            <h3 class="no-mar-bottom"><a href="/info/firefox-extension-ids/">Firefox Extension IDs</a></h3>
+            <p class="two-mar-top"><b>URLs of the legitimate versions of popular Firefox extensions.</b></p>
+        </div>
+    </div>
+
+    <div class="iconparent">
+        <div class="iconimg">
             <a href="/info/hl-client-security/"><img src="/images/fontawesome/shield-alt.svg"></a>
         </div>
         <div class="iconlist">
