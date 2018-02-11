@@ -51,7 +51,7 @@
     <p class="clearboth">I have registered and set up a Namecoin .bit domain name for JamieWeb. If your system is set up for accessing Namecoin .bit domains, you can also access the site via <b><a href="https://www.jamieweb.bit/" target="_blank" rel="noopener">https://www.jamieweb.bit</a></b>.</p>
     <img width="1000px" src="/blog/namecoin-bit-domain/jamieweb-bit-chromium.png">
     <p class="two-no-mar centertext"><i>Browsing to jamieweb.bit in Chromium on Xubuntu. Note that in this case, a Chromium "Not secure" warning is shown since the certificate is not signed by a trusted CA - the Namecoin blockchain takes this role instead. The reason the error is showing is because the local Namecoin DNS resolver (ncdns) certificate injection feature does not yet work on Linux systems (at the time of writing this).</i></p>
-    <p>There are uses for Namecoin other than .bit domain registrations, including personal IDs, application registration and product registration. This post focuses on the .bit domain names, however the process for the other Namecoin namespaces is very similar. See <a href="https://wiki.namecoin.org/index.php?title=Namecoin_Specification#Namespaces" target="_blank" rel="noopener">"Namecoin Specification" on the Namecoin wiki</a> for more information.</p>
+    <p>There are uses for Namecoin other than .bit domain registrations, including personal IDs. This post focuses on the .bit domain names, however the process for the other Namecoin namespaces is very similar.</p>
 
     <h2 id="installing-namecoin-core">Installing Namecoin Core</h2>
     <p>It is recommended to create a separate, non-privileged user account to run Namecoin Core as. Do not run Namecoin Core as root.</p>
