@@ -23,7 +23,6 @@
     <div class="centertext">
         <img width="388.5px" src="/images/jamie-jamieweb.png">
     </div>
-    <p>Feel free to encrypt your message using my <a href="/jamie-scaife.asc" target="_blank">PGP key</a>.</p>
 
     <hr>
     <h1>Security Vulnerability/Bug Disclosure</h1>
