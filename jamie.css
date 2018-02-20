@@ -19,7 +19,7 @@ body {
     margin: 0px;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,li {
+h1,h2,h3,h4,h5,h6,p,a,li,td {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -476,6 +476,10 @@ ul.spaced-list li {
 
 .width-545 {
     width: 545px;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
 }
 
 .padding-8-rl {
