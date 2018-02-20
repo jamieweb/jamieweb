@@ -19,27 +19,36 @@
 
 <div class="body">
     <h1>Contact Information</h1>
-    <p>If you need to contact me for any reason, please do so using the email address listed below or via a direct message on <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a>.</p>
-    <div class="centertext">
-        <img width="388.5px" src="/images/jamie-jamieweb.png">
-    </div>
-
+    <p>If you need to contact me for any reason, please do so using any of the methods below. Thank you.</p>
     <hr>
-    <h1>Security Vulnerability/Bug Disclosure</h1>
-    <p>I greatly appreciate reports of security vulnerabilities or suggested security improvements found on my site or other services.</p>
-    <p>I am currently in the process of launching a HackerOne program for my site, but for the time being please contact me using the email address below or via a direct message on <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a>.</p>
-    <div class="centertext">
-        <img width="428px" src="/images/security-jamieweb.png">
-    </div>
-    <p>Also see my security.txt: <a href="/.well-known/security.txt" target="_blank">https://www.jamieweb.net/.well-known/security.txt</a></p>
-    <p>I also appreciate general bug reports, including compatibility issues, spelling/grammatical errors, broken links or incorrect information. Thank you!</p>
+    <h2 id="email"><img class="two-mar-bottom padding-right-10 vertical-align-middle" width="30px" src="/images/fontawesome/envelope.svg">Email Addresses</h2>
+    <table>
+        <tr>
+            <td><ul class="two-mar-top two-mar-bottom padding-right-10"><li>Personal:</li></ul></td>
+            <td><img width="225px" src="/images/jamie-jamieweb.png"></td>
+        </tr>
+        <tr>
+            <td><ul class="two-mar-top two-mar-bottom padding-right-10"><li>Abuse Report:</li></ul></td>
+            <td><img width="227.25px" src="/images/abuse-jamieweb.png"></td>
+        </tr>
+        <tr>
+            <td><ul class="two-mar-top two-mar-bottom padding-right-10"><li>Security:</li></ul></td>
+            <td><img width="247.88px" src="/images/security-jamieweb.png"></td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2 id="twitter"><img class="two-mar-bottom padding-right-10 vertical-align-middle" width="30px" src="/images/fontawesome/tw.svg">Twitter</h2>
+    <p>I accept open DMs on Twitter via <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">@JamieOnUbuntu</a>.</p>
+    <hr>
+
+    <h2 class="hackerone"><img class="two-mar-bottom padding-right-10 vertical-align-middle" width="16px" src="/images/hackerone.png">HackerOne</h2>
+    <p>I currently have a HackerOne security vulnerability disclosure program that is under private/controlled launch. If you would like to be invited, please send me your email address and I'll add you!</p>
+    <p><b>Please note that my HackerOne program does not provide bounties/rewards as JamieWeb is only a small personal project.</b></p>
 
     <hr>
     <h1>Network/Email Abuse</h1>
-    <p>If you are experiencing any form of network abuse or unwanted email coming from my domain or systems, please let me know using the email address below or via a direct message on <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a>.</p>
-    <div class="centertext">
-        <img width="392.5px" src="/images/abuse-jamieweb.png">
-    </div>
+    <p>If you are experiencing any form of network abuse or unwanted email coming from my domain or systems, please contact me with details including applicable logs and/or headers.</p>
     <p>Any unwanted activity or abuse is most likely spoofed, as my systems do not make any unauthorized connections to any third-party systems or send any automated unsolicited email.</p>
 
     <hr>
@@ -52,11 +61,10 @@
 
     <hr>
     <h1>Donations</h1>
-    <p class="redlink">Donations are happily accepted. All donations go directly to the running costs of my site and services (<a href="http://www.anorak.co.uk/428124/money/nigerian-astronaut-lost-in-space-needs-3m-to-get-home-could-be-a-scam.html/" target="_blank" rel="noopener">or to saving Major Tunde</a>).</p>
-    <pre>Bitcoin:  <b>1Jamie</b>PmmYMSHnmtnPvF2eyD1hmdGA1NqF - <a href="https://blockchain.info/address/1JamiePmmYMSHnmtnPvF2eyD1hmdGA1NqF" target="_blank">blockchain.info</a>
-Litecoin: <b>LXDE</b>bJAzqeUPy2piNq3YtZfNeTrvSo76Mp - <a href="https://ltc.blockr.io/address/info/LXDEbJAzqeUPy2piNq3YtZfNeTrvSo76Mp" target="_blank">blockr.io</a>
-Dogecoin: <b>DDoS</b>rqbJR33uEJkQQJAh8KWf7pSC22RWNh - <a href="https://dogechain.info/address/DDoSrqbJR33uEJkQQJAh8KWf7pSC22RWNh" target="_blank">dogechain.info</a>
-Ethereum: <b>0xf055</b>ff96316de48769ffe664d04f66dad534a581 - <a href="https://etherchain.org/account/0xf055ff96316de48769ffe664d04f66dad534a581" target="_blank">etherchain.org</a></pre>
+    <pre>Bitcoin:  <b>1Jamie</b>PmmYMSHnmtnPvF2eyD1hmdGA1NqF - <a href="https://blockchain.info/address/1JamiePmmYMSHnmtnPvF2eyD1hmdGA1NqF" target="_blank" rel="noopener">blockchain.info</a>
+Litecoin: <b>LXDE</b>bJAzqeUPy2piNq3YtZfNeTrvSo76Mp - <a href="https://live.blockcypher.com/ltc/address/LXDEbJAzqeUPy2piNq3YtZfNeTrvSo76Mp/" target="_blank" rel="noopener">blockcypher.com</a>
+Dogecoin: <b>DDoS</b>rqbJR33uEJkQQJAh8KWf7pSC22RWNh - <a href="https://dogechain.info/address/DDoSrqbJR33uEJkQQJAh8KWf7pSC22RWNh" target="_blank" rel="noopener">dogechain.info</a>
+Ethereum: <b>0xf055</b>ff96316de48769ffe664d04f66dad534a581 - <a href="https://etherchain.org/account/0xf055ff96316de48769ffe664d04f66dad534a581" target="_blank" rel="noopener">etherchain.org</a></pre>
     <p>Thank you!</p>
 </div>
 
