@@ -55,7 +55,7 @@ Historic:
     Tor IPv6
     Improved/tidied footer
     <noscript> tag neglect
-    Vulnerability disclosure
+    Vulnerability disclosure - HackerOne program now under private/controlled launch, please send me your email address if you'd like an invite
     
     New site-wide font?
     HTTP/2 - Waiting for native support in Ubuntu repo package
