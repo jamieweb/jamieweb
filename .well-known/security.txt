@@ -1,5 +1,6 @@
 Contact: https://www.jamieweb.net/contact/
 Encryption: https://www.jamieweb.net/jamie-scaife.asc
+Signature: https://www.jamieweb.net/.well-known/security.txt.sig
 
 # I currently have a HackerOne security vulnerability disclosure program that is under private/controlled launch.
 # If you would like to be invited, please send me your email address and I'll add you!
