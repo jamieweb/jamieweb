@@ -33,16 +33,6 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/checksums/"><img src="/images/fontawesome/hashtag.svg"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/checksums/">Checksums</a></h3>
-            <p class="two-mar-top"><b>A list of checksums for various PC games/mods/tools.</b></p>
-        </div>
-    </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
             <a href="/other/speedrun-times/"><img src="/images/fontawesome/stopwatch.svg"></a>
         </div>
         <div class="iconlist">
