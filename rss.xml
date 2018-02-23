@@ -4,12 +4,19 @@
 <channel>
     <title>JamieWeb (jamieweb.net)</title>
     <link>https://www.jamieweb.net</link>
-    <description>Website of Jamie Scaife (JamieOnUbuntu).</description>
+    <description>Website of Jamie Scaife</description>
     <image>
         <title>JamieWeb (jamieweb.net)</title>
         <url>https://www.jamieweb.net/images/js.png</url>
         <link>https://www.jamieweb.net</link>
     </image>
+    <item>
+        <title>Firefox Extension IDs</title>
+        <link>https://www.jamieweb.net/info/firefox-extension-ids/</link>
+        <description>URLs of the legitimate versions of popular Firefox extensions.</description>
+        <category>Info</category>
+        <pubDate>Sat, 10 Feb 2018</pubDate>
+    </item>
     <item>
         <title>Registering a Namecoin .bit Domain</title>
         <link>https://www.jamieweb.net/blog/namecoin-bit-domain/</link>
