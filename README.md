@@ -49,16 +49,17 @@ Historic:
     HackerOne link / mailto: invite request / text box invite request
     Flyme 6 [security] re/overview
     Link integrity
-    Keychest
+    KeyChest
     Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
     JamieWeb status page, like status.io
     Tor IPv6
     Improved/tidied footer
     <noscript> tag neglect
     Vulnerability disclosure - HackerOne program now under private/controlled launch, please send me your email address if you'd like an invite
-    
     New site-wide font?
+    
     HTTP/2 - Waiting for native support in Ubuntu repo package
+    SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018
 
     ✓ Bitcoin node over Tor, 6poxn47ur5mvxflg2dim6cgozipe7oprcnn3uknoboynvfbbswhordyd.onion & kw7dsbyawemqdxfq.onion, port 8333
     ✓ Navbar/footer account links?
