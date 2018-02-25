@@ -23,6 +23,7 @@
     <p><b>Tuesday 26th December 2017</b></p>
     <p>Security.txt allows web service owners to outline security vulnerability disclosure policies in a simple and easily accessible .txt file format by hosting a security.txt file on their web server, file system or with their project.</p>
     <p>It is currently an <a href="https://en.wikipedia.org/wiki/Internet_Draft" target="_blank">Internet Draft</a> that has been submitted to the <a href="https://www.ietf.org/" target="_blank">IETF</a> (Internet Engineering Task Force) for <a href="https://en.wikipedia.org/wiki/Request_for_Comments" target="_blank">RFC</a> (Request for Comments) review.</p>
+    <p><b><u>Please note that this article is about version 01 of the security.txt internet draft, as that was the latest version at the time of writing. Newer versions have now been released with changes, so please see <a href="https://securitytxt.io/" target="_blank">securitytxt.io</a> for the latest version.</u></b></p>
     <p><b>Skip to Section:</b></p>
     <pre><b>security.txt Internet Draft</b>
 &#x2523&#x2501&#x2501 <a href="#introduction">Introduction</a>
@@ -222,6 +223,7 @@ Allow: /.well-known/security.txt</pre>
     <h2 id="conclusion">Conclusion</h2>
     <p>I have added a security.txt for my website and many others have too. I really hope it catches on as much as robots.txt did and it might be a step towards solving the problem of difficult vulnerability disclosure.</p>
     <p>One interesting idea that I had is a security.txt aggregator. One of these may already exist however I'm sure in the future there will be a resource somewhere that scrapes the web and publishes a public list of websites that have security.txt policies. This would be a great way for white-hats to find sites to research on. Perhaps website owners or members of the public could also submit links to security.txt files to add them to the list.</p>
+    <p><b>Edit 25th Feb 2018 @ 10:46pm:</b> <i>A security.txt aggregator now exists! See <a href="https://securitytext.org/" target="_blank">securitytext.org</a> by <a href="https://twitter.com/AustinHeap" target="_blank" rel="noopener">@AustinHeap</a>.</i></p>
     <p>Another idea that I had for the security.txt specification is to add a "Scope" header field, which would outline the systems that are in-scope of the vulnerability disclosure policy/bug bounty program. I am aware that security.txt already kind-of answers this by stating:</p>
     <pre>A security.txt file only applies to the domain, subdomain, IPv4 or IPv6 address it is located in.</pre>
 <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2</a></i></p>
