@@ -7,12 +7,9 @@ My personal website, available at:
 * Onion v3: http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion
 * Namecoin: https://www.jamieweb.bit
 
-Other:
+## HackerOne:
 
-* IPv4 Test: https://ipv4.jamieweb.net
-* IPv6 Test: https://ipv6.jamieweb.net
-* IPv4 Direct (403 Forbidden): http://139.162.222.67
-* IPv6 Direct (403 Forbidden): <a href="http://[2a01:7e00:e001:c500::1]">http://[2a01:7e00:e001:c500::1]</a>
+I currently have a HackerOne vulnerability disclosure program that is under private/controlled launch. If you would like to be invited, please send me your email address and I'll add you!
 
 ## IP Addresses:
 
@@ -25,6 +22,11 @@ Historic:
 
     IPv4: 89.34.99.41
     IPv6: 2a01:4020:1::129
+    
+* IPv4 Test: https://ipv4.jamieweb.net
+* IPv6 Test: https://ipv6.jamieweb.net
+* IPv4 Direct (403 Forbidden): http://139.162.222.67
+* IPv6 Direct (403 Forbidden): <a href="http://[2a01:7e00:e001:c500::1]">http://[2a01:7e00:e001:c500::1]</a>
 
 ## Site Ideas/To-do List:
     Better mobile compatibility
