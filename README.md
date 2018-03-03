@@ -1,6 +1,6 @@
 # jamieweb
 
-[![This project welcomes security reports](https://img.shields.io/This%20project%20welcomes%20security%reports-jamieweb.net/contact-brightgreen.svg)](https://www.jamieweb.net/contact/)
+[![This project welcomes security reports](https://img.shields.io/badge/This%20project%20welcomes%20security%20reports-jamieweb%2enet%2fcontact-brightgreen.svg)](https://www.jamieweb.net/contact/)
 
 My personal website, available at:
 
