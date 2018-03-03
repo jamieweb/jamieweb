@@ -1,5 +1,7 @@
 # jamieweb
 
+[![This project welcomes security reports](https://img.shields.io/This%20project%20welcomes%20security%reports-jamieweb.net/contact-brightgreen.svg)](https://www.jamieweb.net/contact/)
+
 My personal website, available at:
 
 * Web: https://www.jamieweb.net
