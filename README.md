@@ -61,6 +61,8 @@ Historic:
     <noscript> tag neglect
     Vulnerability disclosure - HackerOne program now under private/controlled launch, please send me your email address if you'd like an invite
     New site-wide font?
+    Signed commits with JamieWeb signing key, rather than GitHub key
+    JamieWeb organisation
     
     HTTP/2 - Waiting for native support in Ubuntu repo package
     SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018
