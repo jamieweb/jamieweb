@@ -44,6 +44,7 @@
 
     <h2 class="hackerone"><img class="two-mar-bottom padding-right-10 vertical-align-middle" width="16px" src="/images/hackerone.png">HackerOne</h2>
     <p>I currently have a HackerOne security vulnerability disclosure program that is under private/controlled launch. If you would like to be invited, please send me your email address and I'll add you!</p>
+    <p>You can view a copy of the security policy <a href="https://github.com/JamieOnUbuntu/config/blob/master/hackerone/policy.md" target="_blank" rel="noopener">here</a>.</p>
     <p><b>Please note that my HackerOne program does not provide bounties/rewards as JamieWeb is only a small personal project.</b></p>
 
     <hr>
