@@ -13,7 +13,7 @@ My personal website, available at:
 
 I currently have a HackerOne vulnerability disclosure program that is under private/controlled launch. If you would like to be invited, please send me your email address and I'll add you!
 
-You can view a copy of the security policy [here](https://github.com/JamieOnUbuntu/config/blob/master/hackerone/policy.md)
+You can view a copy of the security policy [here](https://github.com/JamieOnUbuntu/config/blob/master/hackerone/policy.md).
 
 **Please note that my HackerOne program does not provide bounties/rewards as JamieWeb is only a small personal project.**
 
@@ -64,14 +64,14 @@ Historic:
     Improved/tidied footer
     <noscript> tag neglect
     Vulnerability disclosure - HackerOne program now under private/controlled launch, please send me your email address if you'd like an invite
-    New site-wide font?
-    Signed commits with JamieWeb signing key, rather than GitHub key
     JamieWeb organisation
     /security page with HackerOne policy
     
     HTTP/2 - Waiting for native support in Ubuntu repo package
     SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018
 
+    ✓ New site-wide font?
+    ✓ Signed commits with JamieWeb signing key, rather than GitHub key
     ✓ Bitcoin node over Tor, 6poxn47ur5mvxflg2dim6cgozipe7oprcnn3uknoboynvfbbswhordyd.onion & kw7dsbyawemqdxfq.onion, port 8333
     ✓ Navbar/footer account links?
     ✓ New design for Blog Project Other homepage buttons - not a new design in the end, but fixed them with a flexbox
