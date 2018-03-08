@@ -13,7 +13,7 @@ My personal website, available at:
 
 I currently have a HackerOne vulnerability disclosure program that is under private/controlled launch. If you would like to be invited, please send me your email address and I'll add you!
 
-You can view a copy of the security policy [here](https://github.com/JamieOnUbuntu/config/blob/master/hackerone/policy.md).
+You can view a copy of the security policy [here](https://github.com/JamieOnUbuntu/config/blob/master/hackerone/policy.md), and the scope [here](https://github.com/JamieOnUbuntu/config/blob/master/hackerone/scope.md).
 
 **Please note that my HackerOne program does not provide bounties/rewards as JamieWeb is only a small personal project.**
 
