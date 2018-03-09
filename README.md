@@ -66,11 +66,13 @@ Historic:
     Vulnerability disclosure - HackerOne program now under private/controlled launch, please send me your email address if you'd like an invite
     JamieWeb organisation
     /security page with HackerOne policy
+    Apache security headers on a per-page basis
+    Disable TLSv1 support?
     
     HTTP/2 - Waiting for native support in Ubuntu repo package
     SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018
 
-    ✓ New site-wide font?
+    ✓ New site-wide font
     ✓ Signed commits with JamieWeb signing key, rather than GitHub key
     ✓ Bitcoin node over Tor, 6poxn47ur5mvxflg2dim6cgozipe7oprcnn3uknoboynvfbbswhordyd.onion & kw7dsbyawemqdxfq.onion, port 8333
     ✓ Navbar/footer account links?
