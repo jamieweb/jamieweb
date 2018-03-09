@@ -66,7 +66,7 @@ Historic:
     Vulnerability disclosure - HackerOne program now under private/controlled launch, please send me your email address if you'd like an invite
     JamieWeb organisation
     /security page with HackerOne policy
-    Apache security headers on a per-page basis
+    Apache security headers on a per-page basis blog post/guide
     Disable TLSv1 support?
     
     HTTP/2 - Waiting for native support in Ubuntu repo package
