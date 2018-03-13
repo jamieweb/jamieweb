@@ -6,7 +6,8 @@
             <li class="dropdown">
                 <h5><a href="/blog/">Blog</a></h5>
                 <div class="dropdown-content">
-                    <h4><a href="/blog/namecoin-bit-domain/">Namecoin .bit Domain</a>
+                    <h4><a href="/blog/disabling-tls1.0-tls1.1/">Disabling Older TLS Versions</a>
+                    <a href="/blog/namecoin-bit-domain/">Namecoin .bit Domain</a>
                     <a href="/blog/onionv3-vanity-address/">Tor Onion v3 Vanity Address</a>
                     <a href="/blog/security-txt-rfc/">security.txt Internet Draft</a>
                     <a href="/blog/onionv3-hidden-service/">Tor Onion v3 Hidden Service</a>

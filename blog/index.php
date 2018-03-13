@@ -30,6 +30,10 @@
             <div class="blog-brace5"></div>
         </div>
         <div class="blog-list">
+            <h3 class="no-mar-bottom"><a href="/blog/disabling-tls1.0-tls1.1/">Disabling TLS 1.0 and TLS 1.1</a></h3>
+            <p class="two-no-mar"><b>Assessing browser compatibility and disabling older TLS protocol versions.</b></p>
+            <p class="two-mar-top">Tuesday 13th March 2018</p>
+
             <h3 class="no-mar-bottom"><a href="/blog/namecoin-bit-domain/">Registering a Namecoin .bit Domain</a></h3>
             <p class="two-no-mar"><b>Using Namecoin Core to register a .bit domain and setting up ncdns.</b></p>
             <p class="two-mar-top">Tuesday 16th January 2018</p>
