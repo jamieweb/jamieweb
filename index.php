@@ -176,7 +176,7 @@ O:::::::OOO:::::::O
         <div class="redlink">
             <a href="/blog/disabling-tls1.0-tls1.1/">
                 <h4 class="no-mar-bottom">Disabling TLS 1.0 and TLS 1.1</h4>
-                <h5 class="two-no-mar"><b>Assessing browser compatibility and disabling older TLS protocol versions.</b></p>
+                <h5 class="two-no-mar"><b>Assessing browser compatibility and disabling older TLS protocol versions.</b></h5>
                 <h5 class="two-mar-top">Tuesday 13th March 2018</h5>
             </a>
             <a href="/blog/namecoin-bit-domain/">
