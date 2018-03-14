@@ -77,7 +77,7 @@
 
     <h2 id="logs">Logging TLS Protocol Versions in Use in Apache</h2>
     <p>Before disabling TLS 1.0 and TLS 1.1, it is important to assess the impact that this could have on your users. The best way to do this is by monitoring the web server log files directly, as this gives the most raw results.</p>
-    <p>In Apache, this is extremely easy to configure using the CustomLog directive. Add the following to the virtual host that you want to monitor, and the TLS protocol version will be logged for all requests:</p>
+    <p>In Apache, this is extremely easy to configure using the <code>CustomLog</code> directive. Add the following to the virtual host that you want to monitor, and the TLS protocol version will be logged for all requests:</p>
     <pre>CustomLog ${APACHE_LOG_DIR}/tls.log "%t %h %{SSL_PROTOCOL}x %{SSL_CIPHER}x"</pre>
     <p>You can also optionally log the user agent string in order to help identify which client software is still using older TLS protocol versions:</p>
     <pre>CustomLog ${APACHE_LOG_DIR}/tls.log "%t %h %{SSL_PROTOCOL}x %{SSL_CIPHER}x \"%{User-agent}i\""</pre>
