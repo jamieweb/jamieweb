@@ -21,7 +21,7 @@
     <h1>Disabling TLS 1.0 and TLS 1.1</h1>
     <hr>
     <p><b>Tuesday 13th March 2018</b></p>
-    <p>I recently received a security report to my <a href="/contact" target="_blank">HackerOne program</a> by <a href="https://hackerone.com/retr0" target="_blank" rel="noopener">retr0</a>, who suggested that I disable TLS 1.0 on my web server.</p>
+    <p>I recently received a security report to my <a href="/contact/#hackerone" target="_blank">HackerOne program</a> by <a href="https://hackerone.com/retr0" target="_blank" rel="noopener">retr0</a>, who suggested that I disable TLS 1.0 on my web server.</p>
     <p>At first I was reluctant as this breaks compatibility with many older browsers, however after monitoring the TLS protocol versions in use by users, I've now disabled both TLS 1.0 and TLS 1.1, meaning that only TLS 1.2 can be used.</p>
     <p>Thanks again to <a href="https://hackerone.com/retr0" target="_blank" rel="noopener">retr0</a> for raising this!</p>
     <p><b>Skip to Section:</b></p>
