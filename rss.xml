@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Disabling TLS 1.0 and TLS 1.1</title>
+        <link>https://www.jamieweb.net/blog/disabling-tls1.0-tls1.1/</link>
+        <description>Assessing browser compatibility and disabling older TLS versions.</description>
+        <category>Blog</category>
+        <pubDate>Tue, 13 Mar 2018</pubDate>
+    </item>
+    <item>
         <title>Firefox Extension IDs</title>
         <link>https://www.jamieweb.net/info/firefox-extension-ids/</link>
         <description>URLs of the legitimate versions of popular Firefox extensions.</description>
