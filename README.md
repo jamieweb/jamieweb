@@ -54,11 +54,8 @@ Historic:
     Homepage quick links
     Search box?
     Malicious links overview/spamtraps
-    HackerOne link / mailto: invite request / text box invite request
-    Flyme 6 [security] re/overview
     Link integrity
     KeyChest
-    Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
     JamieWeb status page, like status.io
     Tor IPv6
     Improved/tidied footer
@@ -67,11 +64,13 @@ Historic:
     JamieWeb organisation
     /security page with HackerOne policy
     Apache security headers on a per-page basis blog post/guide
-    Disable TLSv1 support?
     
-    HTTP/2 - Waiting for native support in Ubuntu repo package
+    TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
+    HTTP/2 - Waiting for native support in Ubuntu repo Apache package
     SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018
 
+    ✓ Disable TLS 1.0 and TLS 1.1 support
+    ✓ Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
     ✓ New site-wide font
     ✓ Signed commits with JamieWeb signing key, rather than GitHub key
     ✓ Bitcoin node over Tor, 6poxn47ur5mvxflg2dim6cgozipe7oprcnn3uknoboynvfbbswhordyd.onion & kw7dsbyawemqdxfq.onion, port 8333
