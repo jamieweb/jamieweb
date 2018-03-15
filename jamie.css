@@ -129,6 +129,10 @@ div.sidebar h4 {
     margin-bottom: 0px;
 }
 
+div.sidebar h4.sideitem-mar-bottom {
+    margin-bottom: 19px
+}
+
 div.sideitem {
     width: 135px;
     display: inline-block;
@@ -499,10 +503,6 @@ ul.spaced-list li {
 
 .intro-mar-top {
     margin-top: 11px;
-}
-
-.sideitem-mar-bottom {
-    margin-bottom: 20px
 }
 
 .info {
