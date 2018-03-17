@@ -47,7 +47,7 @@ Link: <a href="https://www.jamieweb.net/downloads/bunnyrace_beta2.bsp" target="_
 ########################################################################
 
 ########################################################################
-<b>AdrenalineGamer Longjump 2</b>
+<b>AdrenalineGamer Longjump 2</b> - Created by <a href="https://www.youtube.com/user/quadrazid" target="_blank" rel="noopener">Quadrazid</a> and <a href="https://wiki.sourceruns.org/wiki/Rayvex" target="_blank" rel="noopener">Rayvex</a>
 
 Name: ag_longjump2.bsp
 Size: 2.2 MB (2,297,864 bytes)
