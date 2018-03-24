@@ -162,7 +162,7 @@ O:::::::OOO:::::::O
             </div>
             <div class="sideitem">
                 <a href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss.svg"></a>
-                <h4 class="sideitem-mar-bottom"><a href="/rss.xml" target="_blank">PGP</a></h4>
+                <h4 class="sideitem-mar-bottom"><a href="/rss.xml" target="_blank">RSS</a></h4>
             </div>
         </div>
         <hr>
