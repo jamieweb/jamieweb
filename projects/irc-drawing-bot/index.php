@@ -34,6 +34,7 @@
             <tr><td bgcolor="orange"></td><td bgcolor="black"></td><td bgcolor="red"></td><td bgcolor="white"></td><td bgcolor="white"></td><td bgcolor="white"></td><td bgcolor="white"></td><td bgcolor="white"></td><td bgcolor="white"></td><td bgcolor="blue"></td><td bgcolor="white"></td><td bgcolor="red"></td><td bgcolor="black"></td><td bgcolor="white"></td><td bgcolor="blue"></td><td bgcolor="white"></td><td bgcolor="black"></td><td bgcolor="white"></td><td bgcolor="blue"></td><td bgcolor="red"></td></tr>
         </table>
     </div>
+    <h3><u>PLEASE NOTE</u>: The IRC Drawing Bot has been discontinued as of 24th March 2018.</h3>
     <h2>What is this?</h2>
     <p>The IRC Drawing Bot is an <a href="https://simple.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank">Internet Relay Chat</a> bot that <b>you</b> can control, allowing you to paint pixels on the canvas above.</p>
     <p>This is not a fancy art project, it is designed to demonstrate how IRC can be used to securely control a web page. The collaborative pixel canvas is inspired by <a href="https://www.reddit.com/r/place" target="_blank">Reddit's r/place</a>.</p>
