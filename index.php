@@ -48,9 +48,10 @@
             </a>
         </div>
         <div class="featured">
-            <a href="/projects/irc-drawing-bot/">
-                <h3 class="no-mar-bottom">IRC Drawing Bot</h3>
-                <p class="two-no-mar"><b>Paint pixels on a canvas by controlling<br/>an Internet Relay Chat bot.</b></p>
+            <a href="/blog/namecoin-bit-domain/">
+                <h3 class="no-mar-bottom">Namecoin .bit Domain</h3>
+                <p class="two-no-mar"><b>Guide to registering a Namecoin .bit domain.</b></p>
+                <p class="two-mar-top">Tuesday 16th January 2017</p>
             </a>
         </div>
         <div class="featured">
@@ -156,19 +157,12 @@ O:::::::OOO:::::::O
                 <h4><a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener">Keybase</a></h4>
             </div>
             <div class="sideitem">
-                <a href="/irc/"><img src="/images/fontawesome/comments.svg"></a>
-                <h4 class="sideitem-mar-bottom"><a href="/irc/">IRC</a></h4>
-            </div>
-            <div class="sideitem">
                 <a href="/jamie-scaife.asc" target="_blank"><img src="/images/fontawesome/key.svg"></a>
                 <h4 class="sideitem-mar-bottom"><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
             </div>
-        </div>
-        <hr>
-        <div class="centertext">
             <div class="sideitem">
                 <a href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss.svg"></a>
-                <h4 class="sideitem-mar-bottom"><a href="/rss.xml" target="_blank">RSS Feed</a></h4>
+                <h4 class="sideitem-mar-bottom"><a href="/rss.xml" target="_blank">PGP</a></h4>
             </div>
         </div>
         <hr>
