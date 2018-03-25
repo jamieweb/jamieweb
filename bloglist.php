@@ -1,5 +1,5 @@
 <?php function bloglist($location) {
-    $bloglist = json_decode(file_get_contents('blog/object.json', true));
+    $bloglist = json_decode(file_get_contents('blog/posts.json', true));
 
     if($location === "navbar") {
         echo "<h4>\n";
