@@ -168,7 +168,7 @@ O:::::::OOO:::::::O
         <hr>
         <h2 class="centertext">Recent Posts</h2>
         <div class="redlink">
-            <?php bloglist("recents"); ?>
+<?php bloglist("recents"); ?>
         </div>
     </div>
 </div>
