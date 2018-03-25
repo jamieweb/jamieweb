@@ -223,6 +223,11 @@ div.blog-list {
     width: 100%;
 }
 
+div.blog-list h3 {
+    margin-top: 23px;
+    margin-bottom: 0px;
+}
+
 div.iconparent {
     clear: both;
     margin-bottom: 15px;
@@ -376,6 +381,19 @@ p.onionlink a {
     border: 1px solid #000000;
 }
 
+p.tags {
+    margin-top: 7px;
+    margin-bottom: 28px;
+}
+
+p.tags span {
+    padding: 2px 5px 2px 5px;
+    border: 1.5px solid;
+    border-radius: 4px;
+    border-color: black;
+    margin-right: 1px;
+}
+
 footer {
     clear: both;
     margin: 0 auto;
@@ -395,6 +413,76 @@ h5.footer-content img {
 
 ul.spaced-list li {
     margin-bottom: 7px;
+}
+
+span.tag-apache {
+    background-color: #d70017;
+    color: white;
+}
+
+span.tag-apple {
+    background-color: #999999;
+    color: white;
+}
+
+span.tag-chrome {
+    background-color: #eec11b;
+    color: white;
+}
+
+span.tag-guide {
+    background-color: #6b8e23;
+    color: white;
+}
+
+span.tag-ipv6 {
+    background-color: #ff65ed;
+    color: white;
+}
+
+span.tag-irc {
+    background-color: #20b29a;
+    color: white;
+}
+
+span.tag-namecoin {
+    background-color: #6385bb;
+    color: white;
+}
+
+span.tag-meta {
+    background-color: #59a2c7;
+    color: white;
+}
+
+span.tag-pastebin {
+    background-color: #003d64;
+    color: white;
+}
+
+span.tag-rfc {
+    background-color: #ffb100;
+    color: white;
+}
+
+span.tag-security {
+    background-color: #40b800;
+    color: white;
+}
+
+span.tag-tls {
+    background-color: #df9535;
+    color: white;
+}
+
+span.tag-tor {
+    background-color: #8c3399;
+    color: white;
+}
+
+span.tag-ubuntu {
+    background-color: #e95420;
+    color: white;
 }
 
 .centertext {
