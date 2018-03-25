@@ -168,26 +168,7 @@ O:::::::OOO:::::::O
         <hr>
         <h2 class="centertext">Recent Posts</h2>
         <div class="redlink">
-            <a href="/blog/disabling-tls1.0-tls1.1/">
-                <h4 class="no-mar-bottom">Disabling TLS 1.0 and TLS 1.1</h4>
-                <h5 class="two-no-mar"><b>Assessing browser compatibility and disabling older TLS protocol versions.</b></h5>
-                <h5 class="two-mar-top">Tuesday 13th March 2018</h5>
-            </a>
-            <a href="/blog/namecoin-bit-domain/">
-                <h4 class="no-mar-bottom">Registering a Namecoin .bit Domain</h4>
-                <h5 class="two-no-mar"><b>Using Namecoin Core to register a .bit domain and setting up ncdns.</b></h5>
-                <h5 class="two-mar-top">Tuesday 16th January 2018</h5>
-            </a>
-            <a href="/blog/onionv3-vanity-address/">
-                <h4 class="no-mar-bottom">Tor Onion v3 Vanity Address</h4>
-                <h5 class="two-no-mar"><b>Generating a vanity address for Onion v3 Hidden Services.</b></h5>
-                <h5 class="two-mar-top">Saturday 6th January 2018</h5>
-            </a>
-            <a href="/blog/security-txt-rfc/">
-                <h4 class="no-mar-bottom">security.txt Internet Draft</h4>
-                <h5 class="two-no-mar"><b>A look at the security.txt draft specification.</b></h5>
-                <h5 class="two-mar-top">Tuesday 26th December 2017</h5>
-            </a>
+            <?php bloglist("recents"); ?>
         </div>
     </div>
 </div>
