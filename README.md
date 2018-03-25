@@ -58,7 +58,7 @@ Historic:
     KeyChest
     JamieWeb status page, like status.io
     Tor IPv6
-    Improved/tidied footer
+    Improved/tidied footer, as well as next/previous blog post links when on /blog/*
     <noscript> tag neglect
     Vulnerability disclosure - HackerOne program now under private/controlled launch, please send me your email address if you'd like an invite
     JamieWeb organisation
