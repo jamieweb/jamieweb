@@ -129,8 +129,8 @@
                 "date": "Sunday 12th February 2017",
                 "tags": "Security,Tor"
             },
-            "blocking-exploitable-content": {
-                "uri": "blocking-exploitable-content",
+            "block-exploitable-content": {
+                "uri": "block-exploitable-content",
                 "navtitle": "Blocking Exloitable Content",
                 "title": "Blocking Exloitable Content",
                 "longdesc": "Blocking exploitable web content in your browser.",
