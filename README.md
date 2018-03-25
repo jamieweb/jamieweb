@@ -64,6 +64,7 @@ Historic:
     JamieWeb organisation
     /security page with HackerOne policy
     Apache security headers on a per-page basis blog post/guide
+    Add IRC to /other/
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
