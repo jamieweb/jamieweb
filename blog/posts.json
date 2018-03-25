@@ -1,0 +1,219 @@
+{
+    "blog": {
+        "2018": {
+            "disabling-tls1.0-tls1.1": {
+                "uri": "disabling-tls1.0-tls1.1",
+                "navtitle": "Disabling Older TLS Versions",
+                "title": "Disabling TLS 1.0 and TLS 1.1",
+                "longdesc": "Assessing browser compatibility and disabling older TLS protocol versions.",
+                "shortdesc": "Assessing browser compatibility and disabling older TLS protocol versions.",
+                "date": "Tuesday 13th March 2018",
+                "tags": "Security,TLS,Apache"
+            },
+            "namecoin-bit-domain": {
+                "uri": "namecoin-bit-domain",
+                "navtitle": "Namecoin .bit Domain",
+                "title": "Registering a Namecoin .bit Domain",
+                "longdesc": "Using Namecoin Core to register a .bit domain and setting up ncdns.",
+                "shortdesc": "Using Namecoin Core to register a .bit domain and setting up ncdns.",
+                "date": "Tuesday 16th January 2018",
+                "tags": "Security,Namecoin"
+            },
+            "onionv3-vanity-address": {
+                "uri": "onionv3-vanity-address",
+                "navtitle": "Tor Onion v3 Vanity Address",
+                "title": "Tor Onion v3 Vanity Address",
+                "longdesc": "Generating a vanity address for Onion v3 Hidden Services.",
+                "shortdesc": "Generating a vanity address for Onion v3 Hidden Services.",
+                "date": "Saturday 6th January 2018",
+                "tags": "Security,Tor"
+            }
+        },
+        "2017": {
+            "security-txt-rfc": {
+                "uri": "security-txt-rfc",
+                "navtitle": "security.txt Internet Draft",
+                "title": "security.txt Internet Draft",
+                "longdesc": "A look at the security.txt draft specification.",
+                "shortdesc": "A look at the security.txt draft specification.",
+                "date": "Tuesday 26th December 2017",
+                "tags": "Security,RFC"
+            },
+            "onionv3-hidden-service": {
+                "uri": "onionv3-hidden-service",
+                "navtitle": "Tor Onion v3 Hidden Service",
+                "title": "Tor Onion v3 Hidden Service",
+                "longdesc": "Testing the new Tor Onion v3 Hidden Services.",
+                "shortdesc": "Testing the new Tor Onion v3 Hidden Services.",
+                "date": "Saturday 21st October 2017",
+                "tags": "Security,Tor"
+            },
+            "ipad-mini-ios6": {
+                "uri": "ipad-mini-ios6",
+                "navtitle": "iPad Mini iOS 6",
+                "title": "iPad Mini iOS 6",
+                "longdesc": "Using iOS 6 on the iPad Mini + iOS 6 Security.",
+                "shortdesc": "Using iOS 6 on the iPad Mini + iOS 6 Security.",
+                "date": "Tuesday 19th September 2017",
+                "tags": "Security,Apple"
+            },
+            "pastebin-keyword-alerts": {
+                "uri": "pastebin-keyword-alerts",
+                "navtitle": "Pastebin Keyword Alerts",
+                "title": "Pastebin Keyword Alerts",
+                "longdesc": "Using the Pastebin Alerts Service.",
+                "shortdesc": "Using the Pastebin Alerts Service.",
+                "date": "Saturday 2nd September 2017",
+                "tags": "Security,Pastebin"
+            },
+            "ipv6-site-upgrade": {
+                "uri": "ipv6-site-upgrade",
+                "navtitle": "Upgrading to IPv6",
+                "title": "Upgrading to IPv6",
+                "longdesc": "Setting up and configuring IPv6 on JamieWeb.",
+                "shortdesc": "Setting up and configuring IPv6 on JamieWeb.",
+                "date": "Saturday 5th August 2017",
+                "tags": "IPv6,Apache"
+            },
+            "hosts-file-integrity": {
+                "uri": "hosts-file-integrity",
+                "navtitle": "Hosts File Site Blocking",
+                "title": "Hosts File Site Blocking",
+                "longdesc": "Blocking sites using the hosts file and an integrity verification script.",
+                "shortdesc": "Blocking sites using the hosts file and an integrity verification script.",
+                "date": "Saturday 15th July 2017",
+                "tags": "Security"
+            },
+            "inspircd-linux-guide": {
+                "uri": "inspircd-linux-guide",
+                "navtitle": "InspIRCd Linux Guide",
+                "title": "How to Install and Configure 'InspIRCd' on Linux",
+                "longdesc": "In-depth guide for installing and configuring InspIRCd on Linux.",
+                "shortdesc": "In-depth guide for installing and configuring InspIRCd on Linux.",
+                "date": "Tuesday 16th May 2017",
+                "tags": "Guide,IRC"
+            },
+            "irc-drawing-bot": {
+                "uri": "irc-drawing-bot",
+                "navtitle": "Creating the IRC Drawing Bot",
+                "title": "Creating the IRC Drawing Bot",
+                "longdesc": "Thought process and development of the IRC Drawing Bot.",
+                "shortdesc": "Thought process and development of the IRC Drawing Bot.",
+                "date": "Sunday 14th May 2017",
+                "tags": "IRC"
+            },
+            "chrome-site-whitelist-extension": {
+                "uri": "chrome-site-whitelist-extension",
+                "navtitle": "Chrome Site Whitelist Extension",
+                "title": "Chrome Site Whitelist Extension",
+                "longdesc": "Discussing the Chrome extension that I am developing.",
+                "shortdesc": "Discussing the Chrome extension that I am developing.",
+                "date": "Tuesday 7th March 2017",
+                "tags": "Security,Chrome"
+            },
+            "subgraph-os-overview": {
+                "uri": "subgraph-os-overview",
+                "navtitle": "Subgraph OS Overview",
+                "title": "Subgraph OS Overview",
+                "longdesc": "An overview of Subgraph OS: Adversary Resistant Computing.",
+                "shortdesc": "An overview of Subgraph OS: Adversary Resistant Computing.",
+                "date": "Tuesday 21st February 2017",
+                "tags": "Security"
+            },
+            "tor-hidden-service": {
+                "uri": "tor-hidden-service",
+                "navtitle": "Tor Hidden Service",
+                "title": "Tor Hidden Service",
+                "longdesc": "Setting up a Tor Hidden Service for my site.",
+                "shortdesc": "Setting up a Tor Hidden Service for my site.",
+                "date": "Sunday 12th February 2017",
+                "tags": "Security,Tor"
+            },
+            "blocking-exploitable-content": {
+                "uri": "blocking-exploitable-content",
+                "navtitle": "Blocking Exloitable Content",
+                "title": "Blocking Exloitable Content",
+                "longdesc": "Blocking exploitable web content in your browser.",
+                "shortdesc": "Blocking exploitable web content in your browser.",
+                "date": "Tuesday 7th February 2017",
+                "tags": "Security"
+            },
+            "proof-of-timestamp": {
+                "uri": "proof-of-timestamp",
+                "navtitle": "Proof Of Timestamp",
+                "title": "Proof Of Timestamp",
+                "longdesc": "Cryptographically proving a timestamp.",
+                "shortdesc": "Cryptographically proving a timestamp.",
+                "date": "Thursday 19th January 2017",
+                "tags": "Security"
+            },
+            "identicon-gravity-animation": {
+                "uri": "identicon-gravity-animation",
+                "navtitle": "Identicon Gravity Animation",
+                "title": "Identicon Gravity Animation",
+                "longdesc": "Animated collapsing identicon.",
+                "shortdesc": "Animated collapsing identicon.",
+                "date": "Thursday 5th January 2017",
+                "tags": "Meta"
+            }
+        },
+        "2016": {
+            "new-site-design": {
+                "uri": "new-site-design",
+                "navtitle": "New Site Design + Layout!",
+                "title": "New Site Design + Layout!",
+                "longdesc": "New, more modern looking design, built better.",
+                "shortdesc": "New, more modern looking design, built better.",
+                "date": "Wednesday 14th December 2016",
+                "tags": "Meta"
+            },
+            "plainsight-enciphering-demo": {
+                "uri": "plainsight-enciphering-demo",
+                "navtitle": "Plainsight Enciphering Demo",
+                "title": "Plainsight Enciphering Demo",
+                "longdesc": "Enciphering text and files using Plainsight.",
+                "shortdesc": "Enciphering text and files using Plainsight.",
+                "date": "Sunday 4th December 2016",
+                "tags": "Security"
+            },
+            "iphone-strange-clock": {
+                "uri": "iphone-strange-clock",
+                "navtitle": "iPhone System Clock",
+                "title": "iPhone System Clock",
+                "longdesc": "iPhone 4 behaving strangely because of an incorrect system clock.",
+                "shortdesc": "iPhone 4 behaving strangely because of an incorrect system clock.",
+                "date": "Saturday 3rd December 2016",
+                "tags": "Apple"
+            }
+        },
+        "2015": {
+            "ubuntu-phone-review": {
+                "uri": "ubuntu-phone-review",
+                "navtitle": "Ubuntu Phone Review",
+                "title": "Ubuntu Phone Review",
+                "longdesc": "A month with the Ubuntu Phone.",
+                "shortdesc": "A month with the Ubuntu Phone.",
+                "date": "Wednesday 9th September 2015",
+                "tags": "Ubuntu"
+            },
+            "nghl-windows-guide": {
+                "uri": "nghl-windows-guide",
+                "navtitle": "NGHL Windows Guide",
+                "title": "How to Install 'New Gauge Half-Life' on Windows",
+                "longdesc": "Full, step-by-step guide with download links.",
+                "shortdesc": "Full, step-by-step guide with download links.",
+                "date": "Wednesday 10th June 2015",
+                "tags": "Guide"
+            },
+            "nghl-linux-guide": {
+                "uri": "nghl-linux-guide",
+                "navtitle": "NGHL Linux Guide",
+                "title": "How to Install 'New Gauge Half-Life' on Linux Using WINE",
+                "longdesc": "Full, step-by-step guide with download links.",
+                "shortdesc": "Full, step-by-step guide with download links.",
+                "date": "Wednesday 10th June 2015",
+                "tags": "Guide"
+            }
+        }
+    }
+}
