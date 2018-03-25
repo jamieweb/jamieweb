@@ -16,11 +16,11 @@
         foreach($bloglist->blog as $year) {
             foreach($year as $post) {
                 $recentsCount++;
-                echo "\n            <a href=\"/blog/" . $post->uri . "/\">
+                echo "            <a href=\"/blog/" . $post->uri . "/\">
                 <h4 class=\"no-mar-bottom\">" . $post->title . "</h4>
                 <h5 class=\"two-no-mar\">" . $post->shortdesc . "</h5>
                 <h5 class=\"two-mar-top\">" . $post->date . "</h5>
-            </a>";
+            </a>\n";
                 if($recentsCount >= 4) {
                     break 2;
                 }
