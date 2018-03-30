@@ -7,7 +7,7 @@
                 <h5><a href="/blog/">Blog</a></h5>
                 <div class="dropdown-content">
                     <h4>
-                        <?php include "bloglist.php"; bloglist("navbar"); ?>
+                        <?php include_once "bloglist.php"; bloglist("navbar"); ?>
                    </h4>
                 </div>
             </li>
