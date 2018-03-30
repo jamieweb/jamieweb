@@ -54,7 +54,7 @@
         <li><b>Chrome 22</b>: 31st July 2012</li>
         <li><b>Firefox 24*</b>: 6th August 2013</li>
         <li><b>Safari 7</b>: 27th October 2013</li>
-        <li><b>iOS 5</b>: March 7th 2012</li>
+        <li><b>iOS 5</b>: 7th March 2012</li>
         <li><b>Opera 12.1</b>: 5th November 2012</li>
         <li><b>Internet Explorer 11*</b>: 17th October 2013</li>
         <li><b>Microsoft Edge</b>: All Versions Supported</li>
