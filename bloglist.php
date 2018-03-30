@@ -44,7 +44,7 @@
             <p class=\"two-no-mar\">" . $post->date . "</p>
             <p class=\"tags\">\n";
                 foreach(explode(",", $post->tags) as $tag) {
-                    echo "                <b><a href=\"/blog/category/" . strtolower($tag) . "/\"><b><span class=\"tag-" . strtolower($tag) . "\">" . $tag . "</span></b></a>\n";
+                    echo "                <b><a href=\"/blog/category/" . strtolower($tag) . "/\"><span class=\"tag-" . strtolower($tag) . "\">" . $tag . "</span></b></a>\n";
                 }
                 echo "            </p>\n";
             }
