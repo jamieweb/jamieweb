@@ -386,6 +386,10 @@ p.tags {
     margin-bottom: 28px;
 }
 
+p.tags a {
+    text-decoration: none;
+}
+
 p.tags span {
     padding: 2px 5px 2px 5px;
     border: 1.5px solid;
