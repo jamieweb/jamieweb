@@ -20,8 +20,7 @@
 <div class="body">
     <h1>Downloads</h1>
     <hr>
-    <p>These files are not created or owned by me. All credit goes to the original authors as stated next to each file name.</p>
-    <h2>Hosted files:</h2>
+    <p>All credit for these files goes to the original authors as stated next to each file name.</p>
     <pre>########################################################################
 <b>Bunnymod Pro</b> - <a href="https://wiki.sourceruns.org/wiki/Bunnymod_Pro#Credits" target="_blank" rel="noopener">Various Credits</a>
 
