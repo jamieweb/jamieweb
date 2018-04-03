@@ -68,8 +68,8 @@ Historic:
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
-    SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018
 
+    ✓ SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018 - 2018-Apr-04 see /blog/letsencrypt-scts-in-certificates/
     ✓ Disable TLS 1.0 and TLS 1.1 support
     ✓ Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
     ✓ New site-wide font

@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Let's Encrypt SCTs in Certificates</title>
+        <link>https://www.jamieweb.net/blog/letsencrypt-scts-in-certificates/</link>
+        <description>Let's Encrypt certificates now have Signed Certificate Timestamps (SCTs) included by default.</description>
+        <category>Blog</category>
+        <pubDate>Wed, 4 Apr 2018</pubDate>
+    </item>
+    <item>
         <title>Disabling TLS 1.0 and TLS 1.1</title>
         <link>https://www.jamieweb.net/blog/disabling-tls1.0-tls1.1/</link>
         <description>Assessing browser compatibility and disabling older TLS versions.</description>

@@ -1,8 +1,8 @@
 {
     "blog": {
         "2018": {
-            "letsencrypt-scts-in-certificate": {
-                "uri": "letsencrypt-scts-in-certificate",
+            "letsencrypt-scts-in-certificates": {
+                "uri": "letsencrypt-scts-in-certificates",
                 "navtitle": "Let's Encrypt SCTs in Certificates",
                 "title": "Let's Encrypt SCTs in Certificates",
                 "longdesc": "Let's Encrypt certificates now have Signed Certificate Timestamps (SCTs) included by default.",
