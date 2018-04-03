@@ -28,7 +28,7 @@
 &#x2523&#x2501&#x2501 <a href="#expect-ct">Expect-CT HTTP Response Header</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
     <p>Below is part of the <a href="https://www.ssllabs.com/ssltest/index.html" target="_blank">SSLLabs</a> report for my site that is using a recently issued Let's Encrypt certificate, showing that Certificate Transparency (CT) is working, and that the SCT is embedded in the certificate:</p>
-    <img width="1000px" src="/blog/letsencrypt-scts-in-certificate/ssllabs-ct.png">
+    <img width="1000px" src="/blog/letsencrypt-scts-in-certificates/ssllabs-ct.png">
     <p>Let's Encrypt certificates have always been published to CT logs, however by default there was no straightforward way to serve SCTs. Now SCTs are included by default in all newly issued Let's Encrypt certificates. Please see the original announcement by Let's Encrypt: <a href="https://community.letsencrypt.org/t/signed-certificate-timestamps-embedded-in-certificates/57187" target="_blank" rel="nopener">https://community.letsencrypt.org/t/signed-certificate-timestamps-embedded-in-certificates/57187</a></p>
     <h2 id="google-requirements">Upcoming Chrome Certificate Transparency Requirements</h2>
     <p>This new Let's Encrypt feature is in good time for Chrome's upcoming CT requirements, which state that all certificates issued after 30th April 2018 must be compliant with the <a href="https://github.com/chromium/ct-policy" target="_blank" rel="nopener">Chromium CT policy</a>:</p>
@@ -42,9 +42,9 @@
     </ul>
     <p>Websites/servers that fail to do this will no longer be considered trusted by Chrome and Chromium. However, in most cases, the Certificate Authority (CA) will resolve this by issuing certificates with the SCTs embedded (as Let's Encrypt have), so for the average website owner, they likely will not have to do anything. Certificates issued before the deadline will continue to work as normal as they are not subject to these new requirements.</p>
     <p>Below is an example of the full-page error screen as described in the Google Chrome Team's announcement that will be shown instead:</p>
-    <img width="1000px" src="/blog/letsencrypt-scts-in-certificate/chromium-ct-warning-example.png">
+    <img width="1000px" src="/blog/letsencrypt-scts-in-certificates/chromium-ct-warning-example.png">
     <p>In order to simulate enforced certificate transparency before the 30th April 2018 deadline, you can add your site to the Expect-CT list in your local version of Chrome at <a href="chrome://net-internals#hsts" target="_blank">chrome://net-internals#hsts</a>:</p>
-    <img width="1000px" src="/blog/letsencrypt-scts-in-certificate/chrome-net-internals-expect-ct.png">
+    <img width="1000px" src="/blog/letsencrypt-scts-in-certificates/chrome-net-internals-expect-ct.png">
     <p>Make sure to check the 'Enforce' box. This will now simulate enforced certificate transparency for the domain you specified in your local browser only. In order to revert these local changes, enter your domain into the 'Delete domain security policies' form on the same page.</p>
     <h2 id="expect-ct">Expect-CT HTTP Response Header</h2>
     <p>Now that Let's Encrypt is issuing certificates with the SCT included, it makes it significantly easier to deploy a working <code>Expect-CT</code> HTTP response header. This header allows you to opt-in to the new requirements early, as well as providing a reporting functionality using the <code>report-uri</code> directive.</p>
