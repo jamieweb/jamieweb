@@ -1,6 +1,15 @@
 {
     "blog": {
         "2018": {
+            "letsencrypt-scts-in-certificate": {
+                "uri": "letsencrypt-scts-in-certificate",
+                "navtitle": "Let's Encrypt SCTs in Certificates",
+                "title": "Let's Encrypt SCTs in Certificates",
+                "longdesc": "Let's Encrypt certificates now have Signed Certificate Timestamps (SCTs) included by default.",
+                "shortdesc": "LE certificates now have embedded SCTs by default.",
+                "date": "Wednesday 4th April 2018",
+                "tags": "Security,TLS,Chrome"
+            },
             "disabling-tls1.0-tls1.1": {
                 "uri": "disabling-tls1.0-tls1.1",
                 "navtitle": "Disabling Older TLS Versions",
