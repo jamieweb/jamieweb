@@ -44,7 +44,7 @@ Link: http://ngageclan.ucoz.ru/load/nghl/12-1-0-41
 ########################################################################
 
 ########################################################################
-<b>Bunnymod Pro (Mod)</b>
+<b>Bunnymod Pro</b> (Mod) - <a href="https://wiki.sourceruns.org/wiki/Bunnymod_Pro#Credits" target="_blank" rel="noopener">Various Credits</a>
 
 Name: bunnymodpro.zip
 Size: 798.9 KB (818,023 bytes)
@@ -56,7 +56,7 @@ Link: <a href="https://www.jamieweb.net/downloads/bunnymodpro.zip" target="_blan
 ########################################################################
 
 ########################################################################
-<b>Bunnyrace Beta 2</b> (Map)
+<b>Bunnyrace Beta 2</b> (Map) - Created by author 'Coincidence'
 
 Name: bunnyrace_beta2.bsp
 Size: 2.7 MB (2,803,500 bytes)
@@ -68,7 +68,7 @@ Link: <a href="https://www.jamieweb.net/downloads/bunnyrace_beta2.bsp" target="_
 ########################################################################
 
 ########################################################################
-<b>AdrenalineGamer Longjump 2 (Map)</b> - Created by <a href="https://www.youtube.com/user/quadrazid" target="_blank" rel="noopener">Quadrazid</a> and <a href="https://wiki.sourceruns.org/wiki/Rayvex" target="_blank" rel="noopener">Rayvex</a>
+<b>AdrenalineGamer Longjump 2</b> (Map) - Created by <a href="https://www.youtube.com/user/quadrazid" target="_blank" rel="noopener">Quadrazid</a> and <a href="https://wiki.sourceruns.org/wiki/Rayvex" target="_blank" rel="noopener">Rayvex</a>
 
 Name: ag_longjump2.bsp
 Size: 2.2 MB (2,297,864 bytes)
