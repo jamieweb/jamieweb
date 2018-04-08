@@ -204,24 +204,6 @@
                 "shortdesc": "A month with the Ubuntu Phone.",
                 "date": "Wednesday 9th September 2015",
                 "tags": "Ubuntu"
-            },
-            "nghl-windows-guide": {
-                "uri": "nghl-windows-guide",
-                "navtitle": "NGHL Windows Guide",
-                "title": "How to Install 'New Gauge Half-Life' on Windows",
-                "longdesc": "Full, step-by-step guide with download links.",
-                "shortdesc": "Full, step-by-step guide with download links.",
-                "date": "Wednesday 10th June 2015",
-                "tags": "Guide"
-            },
-            "nghl-linux-guide": {
-                "uri": "nghl-linux-guide",
-                "navtitle": "NGHL Linux Guide",
-                "title": "How to Install 'New Gauge Half-Life' on Linux Using WINE",
-                "longdesc": "Full, step-by-step guide with download links.",
-                "shortdesc": "Full, step-by-step guide with download links.",
-                "date": "Wednesday 10th June 2015",
-                "tags": "Guide"
             }
         }
     }
