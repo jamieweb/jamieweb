@@ -45,7 +45,7 @@ Historic:
     Python & C++ - cycles per second - "tickrate"
     Casio watch mod (N-O-D-E style) - in progress but I am having issues with masking for spray painting!
     Air-gapped RPi PGP decryption device using binary-over-audio
-    PHP blog list generation - efficiency?
+    PHP blog list generation - efficiency? - mod_cache is the solution here most likely
     Update hashes page
     iptables configuration
     pf configuration
@@ -65,6 +65,9 @@ Historic:
     /security page with HackerOne policy
     Apache security headers on a per-page basis blog post/guide
     Add IRC to /other/
+    Homepage rework (see jamieweb/jamieweb-dev)
+    Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
+    Geodiverse hosting?
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
