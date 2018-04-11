@@ -39,7 +39,6 @@
                     <h4>
                         <a href="/downloads/">Downloads</a>
                         <a href="/other/speedrun-times/">Speedrun Times</a>
-                        <a href="/other/game-tracker/">Game Tracker</a>
                         <a href="/pastes/">Pastes</a>
                     </h4>
                 </div>
