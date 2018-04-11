@@ -227,20 +227,6 @@
         <category>Blog</category>
         <pubDate>Wed, 9 Sep 2015</pubDate>
     </item>
-    <item>
-        <title>How to Install 'New Gauge Half-Life' on Windows</title>
-        <link>https://www.jamieweb.net/blog/nghl-windows-guide/</link>
-        <description>Full, step-by-step guide with download links.</description>
-        <category>Blog</category>
-        <pubDate>Wed, 10 Jun 2015</pubDate>
-    </item>
-    <item>
-        <title>How to Install 'New Gauge Half-Life' on Linux Using WINE</title>
-        <link>https://www.jamieweb.net/blog/nghl-linux-guide/</link>
-        <description>Full, step-by-step guide with download links.</description>
-        <category>Blog</category>
-        <pubDate>Wed, 10 Jun 2015</pubDate>
-    </item>
 </channel>
 
 </rss>
