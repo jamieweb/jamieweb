@@ -43,16 +43,6 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/game-tracker/"><img src="/images/fontawesome/clock.svg"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/game-tracker/">Non-Steam Game Time Tracker</a></h3>
-            <p class="two-mar-top"><b>Game time tracker for non-Steam games.</b></p>
-        </div>
-    </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
             <a href="/pastes/"><img src="/images/fontawesome/paste.svg"></a>
         </div>
         <div class="iconlist">
