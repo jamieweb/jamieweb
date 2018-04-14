@@ -27,7 +27,7 @@
 &#x2523&#x2501&#x2501 <a href="#chrome-requirements">Upcoming Chrome Certificate Transparency Requirements</a>
 &#x2523&#x2501&#x2501 <a href="#expect-ct">Expect-CT HTTP Response Header</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
-    <p>Below is part of the <a href="https://www.ssllabs.com/ssltest/index.html" target="_blank">SSLLabs</a> report for my site that is using a recently issued Let's Encrypt certificate, showing that Certificate Transparency (CT) is working, and that the SCT is embedded in the certificate:</p>
+    <p>Below is part of the <a href="https://www.ssllabs.com/ssltest/index.html" target="_blank" rel="noopener">SSLLabs</a> report for my site that is using a recently issued Let's Encrypt certificate, showing that Certificate Transparency (CT) is working, and that the SCT is embedded in the certificate:</p>
     <img width="1000px" src="/blog/letsencrypt-scts-in-certificates/ssllabs-ct.png">
     <p>Let's Encrypt certificates have always been published to CT logs, however by default there was no straightforward way to serve SCTs. Now SCTs are included by default in all newly issued Let's Encrypt certificates. Please see the original announcement by Let's Encrypt: <a href="https://community.letsencrypt.org/t/signed-certificate-timestamps-embedded-in-certificates/57187" target="_blank" rel="nopener">https://community.letsencrypt.org/t/signed-certificate-timestamps-embedded-in-certificates/57187</a></p>
     <h2 id="chrome-requirements">Upcoming Chrome Certificate Transparency Requirements</h2>
@@ -56,7 +56,7 @@
     <pre>If the connection does not comply with the UA's CT Policy (i.e. is
 not CT-qualified), then the UA MUST NOT note this host as a Known
 Expect-CT Host.</pre>
-    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-03#section-2.3.1" target="_blank">https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-03#section-2.3.1</a></i></p>
+    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-03#section-2.3.1" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-03#section-2.3.1</a></i></p>
     <h2 id="conclusion">Conclusion</h2>
     <p>I have reissued all of my Let's Encrypt certificates in order to make use of the new automatically included SCTs, and have also enabled the <code>Expect-CT</code> security header on my site with the <code>enforce</code> directive set.</p>
     <p>It'll also be interesting to keep an eye on CT up until and beyond the deadline - it's another piece of the TLS puzzle solved hopefully.</p>

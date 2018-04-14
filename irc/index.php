@@ -21,7 +21,7 @@
     <h1>##jamieweb on Freenode</h1>
     <hr>
     <p>On Freenode IRC, ##jamieweb is the official channel for JamieWeb.</p>
-    <p>The easiest way to join the ##jamieweb channel on Freenode is using the <a href="https://kiwiirc.com/client?settings=d040e0e7958af28d5f6ee4380304e7d1" target="_blank">KiwiIRC WebIRC client</a>.</p>
+    <p>The easiest way to join the ##jamieweb channel on Freenode is using the <a href="https://kiwiirc.com/client?settings=d040e0e7958af28d5f6ee4380304e7d1" target="_blank" rel="noopener">KiwiIRC WebIRC client</a>.</p>
     <p>If you're using Irssi, use the following command:</p>
     <pre>/connect -ssl chat.freenode.net 7000 stuff &lt;nickname&gt;</pre>
     <p>Example:</p>

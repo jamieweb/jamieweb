@@ -8,5 +8,5 @@
 <a href="/jamie-scaife.asc" target="_blank"><img width="28px" src="/images/fontawesome/key.svg"></a>
 <a href="/rss.xml" target="_blank"><img width="24px" src="/images/fontawesome/rss.svg"></a>
  | <a href="/contact/">Contact Information</a></h5>
-    <h5 class="two-mar-top">This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</h5>
+    <h5 class="two-mar-top">This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</h5>
 </footer>

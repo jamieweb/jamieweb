@@ -21,7 +21,7 @@
     <h1>Chrome Site Whitelist Extension</h1>
     <hr>
     <p><b>Tuesday 7th March 2017</b></p>
-    <p>Please see the associated <a href="https://www.jamieweb.net/projects/chrome-site-whitelist-extension/" target="_blank">project page</a> for download and installation instructions. All code, version history and further information can be found on the <a href="https://github.com/JamieOnUbuntu/results-whitelist/" target="_blank">GitHub repository</a>.</p>
+    <p>Please see the associated <a href="/projects/chrome-site-whitelist-extension/" target="_blank">project page</a> for download and installation instructions. All code, version history and further information can be found on the <a href="https://github.com/JamieOnUbuntu/results-whitelist/" target="_blank" rel="noopener">GitHub repository</a>.</p>
     <div class="centertext"><p>-<b><u>The project is early in development so some features are not yet working properly or tested thoroughly.</u></b>-</p></div>
     <p>I recently starting developing a browser extension for Google Chrome. It allows the user to set a list of whitelisted sites that will then be highlighted in Google Search results. The extension icon also changes to green when you are currently browsing a whitelisted site.</p>
     <p>It is designed to be an anti-typosquatting tool and to highlight known trusted sites.</p>
@@ -43,7 +43,7 @@ steamcommunity.com.example.com</pre>
     <p>To a less experienced user, these may look like the official sites. Instead, they are simply subdomains of a potentially malicious domain.</p>
     <p>Phishing sites may attempt to be a complete clone of the official site, or simply collect account details. A false login form will be presented on the phishing site, the user enters their details, the site logs the entered details but also posts them to the official login form before redirecting the user to the official site. This is a perfect attack, since the phishing site has collected the user account details without raising any sort of suspicion from the user, and they are now browsing the official site like normal.</p>
     <h2>Generating Phishing Domains</h2>
-    <p>A particularly interesting tool that I found on GitHub a while ago is <a href="https://github.com/elceef/dnstwist/" target="_blank">dnstwist</a> by elceef.</p>
+    <p>A particularly interesting tool that I found on GitHub a while ago is <a href="https://github.com/elceef/dnstwist/" target="_blank" rel="noopener">dnstwist</a> by elceef.</p>
     <p>It takes your domain name and generates potential phishing domains, then checks whether they are registered or not. This is useful to help find any existing phishing domains that exist for your site, as well as to find domains to register to protect against typosquatting and phishing.</p>
     <p>Example output (results condensed to 4 per type):</p>
     <pre>jamie@box:~$ ./dnstwist.py jamieweb.net

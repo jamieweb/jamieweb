@@ -36,8 +36,8 @@
     </div>
     <h3><u>PLEASE NOTE</u>: The IRC Drawing Bot has been discontinued as of 24th March 2018.</h3>
     <h2>What is this?</h2>
-    <p>The IRC Drawing Bot is an <a href="https://simple.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank">Internet Relay Chat</a> bot that <b>you</b> can control, allowing you to paint pixels on the canvas above.</p>
-    <p>This is not a fancy art project, it is designed to demonstrate how IRC can be used to securely control a web page. The collaborative pixel canvas is inspired by <a href="https://www.reddit.com/r/place" target="_blank">Reddit's r/place</a>.</p>
+    <p>The IRC Drawing Bot is an <a href="https://simple.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank" rel="noopener">Internet Relay Chat</a> bot that <b>you</b> can control, allowing you to paint pixels on the canvas above.</p>
+    <p>This is not a fancy art project, it is designed to demonstrate how IRC can be used to securely control a web page. The collaborative pixel canvas is inspired by <a href="https://www.reddit.com/r/place" target="_blank" rel="noopener">Reddit's r/place</a>.</p>
     <p>In order to paint your own pixels, you must join the ##jamieweb channel on Freenode IRC. Details for this are available <a href="/irc/" target="_blank">here</a>.</p>
     <h2>How do I control it?</h2>
     <p>Once you are connected to the IRC server, make sure you have joined the channel ##jamieweb. If not, use the command "/join ##jamieweb". Just enter "/join ##jamieweb" into the chat input of your IRC client.</p>
@@ -53,7 +53,7 @@
     <h2>Why are there so many steps to draw one pixel?</h2>
     <p>I decided to have separate commands for selecting the coordinates and colour in order to allow people to either collaborate or conflict with eachother. This is similar to how it worked on r/place, however in my implementation, people can fight over where to place the pixel as well.</p>
     <h2>How does it work?</h2>
-    <p>For technical details, please see the <a href="/blog/irc-drawing-bot/" target="_blank">associated blog post</a>, and view the <a href="https://github.com/JamieOnUbuntu/irc-drawing-bot/" target="_blank">project on GitHub</a>. Thank you!</p>
+    <p>For technical details, please see the <a href="/blog/irc-drawing-bot/" target="_blank">associated blog post</a>, and view the <a href="https://github.com/JamieOnUbuntu/irc-drawing-bot/" target="_blank" rel="noopener">project on GitHub</a>. Thank you!</p>
 </div>
 
 <?php include "footer.php" ?>

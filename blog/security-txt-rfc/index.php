@@ -22,8 +22,8 @@
     <hr>
     <p><b>Tuesday 26th December 2017</b></p>
     <p>Security.txt allows web service owners to outline security vulnerability disclosure policies in a simple and easily accessible .txt file format by hosting a security.txt file on their web server, file system or with their project.</p>
-    <p>It is currently an <a href="https://en.wikipedia.org/wiki/Internet_Draft" target="_blank">Internet Draft</a> that has been submitted to the <a href="https://www.ietf.org/" target="_blank">IETF</a> (Internet Engineering Task Force) for <a href="https://en.wikipedia.org/wiki/Request_for_Comments" target="_blank">RFC</a> (Request for Comments) review.</p>
-    <p><b><u>Please note that this article is about version 01 of the security.txt internet draft, as that was the latest version at the time of writing. Newer versions have now been released with changes, so please see <a href="https://securitytxt.io/" target="_blank">securitytxt.io</a> for the latest version.</u></b></p>
+    <p>It is currently an <a href="https://en.wikipedia.org/wiki/Internet_Draft" target="_blank" rel="noopener">Internet Draft</a> that has been submitted to the <a href="https://www.ietf.org/" target="_blank" rel="noopener">IETF</a> (Internet Engineering Task Force) for <a href="https://en.wikipedia.org/wiki/Request_for_Comments" target="_blank" rel="noopener">RFC</a> (Request for Comments) review.</p>
+    <p><b><u>Please note that this article is about version 01 of the security.txt internet draft, as that was the latest version at the time of writing. Newer versions have now been released with changes, so please see <a href="https://securitytxt.io/" target="_blank" rel="noopener">securitytxt.io</a> for the latest version.</u></b></p>
     <p><b>Skip to Section:</b></p>
     <pre><b>security.txt Internet Draft</b>
 &#x2523&#x2501&#x2501 <a href="#introduction">Introduction</a>
@@ -35,14 +35,14 @@
 &#x2517&#x2501&#x2501 <a href="#references">References</a></pre>
     <h2 id="introduction">Introduction</h2>
     <img width="1000px" src="/blog/security-txt-rfc/security-txt-website-header.png">
-    <p class="two-no-mar centertext"><i>The header of the official website for security.txt: <a href="https://securitytxt.org/" target="_blank">https://securitytxt.org/</a></i></p>
+    <p class="two-no-mar centertext"><i>The header of the official website for security.txt: <a href="https://securitytxt.org/" target="_blank" rel="noopener">https://securitytxt.org/</a></i></p>
     <p class="no-mar-bottom">Abstract:</p>
     <p class="two-no-mar font-twenty-three"><i>&ldquo;When security risks in web services are discovered by independent security researchers who understand the severity of the risk, they often lack the channels to properly disclose them. As a result, security issues may be left unreported. Security.txt defines a standard to help organizations define the process for security researchers to securely disclose security vulnerabilities.&rdquo;</i></p>
-    <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01</a></i></p>
-    <p>According to the <a href="https://tools.ietf.org/id/draft-foudil-securitytxt-01.txt" target="_blank">latest draft</a> (as of writing this post), security.txt is a standard UTF-8 encoded .txt file that consists of various fields that contain information for security researchers who may wish to disclose a security vulnerability.</p>
+    <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01</a></i></p>
+    <p>According to the <a href="https://tools.ietf.org/id/draft-foudil-securitytxt-01.txt" target="_blank" rel="noopener">latest draft</a> (as of writing this post), security.txt is a standard UTF-8 encoded .txt file that consists of various fields that contain information for security researchers who may wish to disclose a security vulnerability.</p>
     <p>The file is comparable to <sub><sup><sup>[HTTP]</sup></sup></sub><a href="http://www.robotstxt.org/" target="_blank" rel="noopener">robots.txt</a>, however it is primarily designed for human rather than robot consumption, although it's simplicity means that it is also very machine-friendly.</p>
-    <p>I first came across the original <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-00" target="_blank">security.txt Internet Draft</a> back in September and thought it looked interesting, however an <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01" target="_blank">updated version</a> of the draft has now been released and it seems to have been getting much more attention recently.</p>
-    <p><b>Edit 28th Dec 2017 @ 7:18pm:</b> <i>Version 02 of the draft specification was released just a day after I published this blog post. Version 02 is available <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-02" target="_blank">here</a> and a diff between version 01 and version 02 is <a href="https://tools.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-foudil-securitytxt-02.txt" target="_blank">here</a>. There are few changes between versions 01 and 02, the addition of the "Policy" header field being the only major one. I have added inline edits to this blog post in order to add details on the newly released draft specification version 02.</i></p>
+    <p>I first came across the original <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-00" target="_blank" rel="noopener">security.txt Internet Draft</a> back in September and thought it looked interesting, however an <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01" target="_blank" rel="noopener">updated version</a> of the draft has now been released and it seems to have been getting much more attention recently.</p>
+    <p><b>Edit 28th Dec 2017 @ 7:18pm:</b> <i>Version 02 of the draft specification was released just a day after I published this blog post. Version 02 is available <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-02" target="_blank" rel="noopener">here</a> and a diff between version 01 and version 02 is <a href="https://tools.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-foudil-securitytxt-02.txt" target="_blank" rel="noopener">here</a>. There are few changes between versions 01 and 02, the addition of the "Policy" header field being the only major one. I have added inline edits to this blog post in order to add details on the newly released draft specification version 02.</i></p>
     <p>A valid security.txt file could look like the following example:</p>
     <pre>Contact: security@example.com
 Contact: https://example.com/contact#security
@@ -95,9 +95,9 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
    Contact: +1-201-555-0123
    Contact: https://example.com/security
    &lt;CODE ENDS&gt;</pre>
-    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-3" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-3</a></i></p>
+    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-3" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-3</a></i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
-    <p>The "Contact" field can be either an email address, phone number or link to a page with further information. For email addresses, an <a href="https://tools.ietf.org/html/rfc2142#section-4" target="_blank">RFC2142</a> security contact email address should be used, which would generally be "security@domain.tld".</p>
+    <p>The "Contact" field can be either an email address, phone number or link to a page with further information. For email addresses, an <a href="https://tools.ietf.org/html/rfc2142#section-4" target="_blank" rel="noopener">RFC2142</a> security contact email address should be used, which would generally be "security@domain.tld".</p>
 
     <p><b>Encryption:</b></p>
     <p>The "Encryption" field allows you to add a link to an encryption key that researchers can use for communication. This is highly recommended since vulnerability disclosures may contain highly confidential information.</p>
@@ -111,9 +111,9 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
    &lt;CODE BEGINS&gt;
    Encryption: https://example.com/pgp-key.txt
    &lt;CODE ENDS&gt;</pre>
-    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-4" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-4</a></i></p>
+    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-4" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-4</a></i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
-    <p>I am personally linking directly to my <a href="https://www.jamieweb.net/jamie-scaife.asc" target="_blank">PGP key</a>, however I have also seen other people linking to their <a href="https://keybase.io/" target="_blank">Keybase</a> profiles as well as directly to their keys on Keybase. I imagine you could also provide a link to your key on a public keyserver.</p>
+    <p>I am personally linking directly to my <a href="/jamie-scaife.asc" target="_blank">PGP key</a>, however I have also seen other people linking to their <a href="https://keybase.io/" target="_blank" rel="noopener">Keybase</a> profiles as well as directly to their keys on Keybase. I imagine you could also provide a link to your key on a public keyserver.</p>
 
     <p><b>Signature:</b></p>
     <p>The "Signature" field allows you to add the signature of your security.txt file, either linked or in-line.</p>
@@ -140,7 +140,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
    ...
    -----END PGP SIGNATURE-----
    &lt;CODE ENDS&gt;</pre>
-    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5</a> (Square Brackets Mine)</i></p>
+    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5</a> (Square Brackets Mine)</i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
     <p>There is nothing in the draft that specifies which key should be used to sign the file, however it would perhaps make sense to use the same key as specified in your "Encryption" field if applicable.</p>
 
@@ -165,15 +165,15 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
    (2017-01-02) Alice Quinn  - SQL injection
    (2016-12-24) John Buchner - Stored cross-site scripting
    (2016-06-10) Anna Richmond - A server configuration issue</pre>
-<p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-6" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-6</a></i></p>
+<p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-6" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-6</a></i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
     <p>I have seen people linking directly to their HackerOne program's thank-you page, however any format is acceptable.</p>
     <p>Comments can also be included in security.txt by prefixing lines with a hash symbol (#).</p>
-    <p><b>Edit 28th Dec 2017 @ 7:26pm:</b> <i>Just one day after publishing this blog post, version 02 of the draft specification was released. This added details on the "Policy" header, which can be used to point researchers in the direction of your security/disclosure policy page. You can read the draft specification for the "Policy" header <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-02#section-2.6" target="_blank">here</a>.</i></p>
+    <p><b>Edit 28th Dec 2017 @ 7:26pm:</b> <i>Just one day after publishing this blog post, version 02 of the draft specification was released. This added details on the "Policy" header, which can be used to point researchers in the direction of your security/disclosure policy page. You can read the draft specification for the "Policy" header <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-02#section-2.6" target="_blank" rel="noopener">here</a>.</i></p>
 
     <h2 id="chrome-extension">Chrome Extension</h2>
     <p>There is also an official Google Chrome/Chromium extension for security.txt, which will automatically scan the website that you are currently browsing for a security.txt file.</p>
-    <p>The extension can be <a href="https://github.com/securitytxt/chrome-extension" target="_blank">downloaded from the GitHub repository</a> and installed manually. It is not available on the Chrome Web Store (I prefer it this way since then you can see what you're getting <b>before</b> you actually install it).</p>
+    <p>The extension can be <a href="https://github.com/securitytxt/chrome-extension" target="_blank" rel="noopener">downloaded from the GitHub repository</a> and installed manually. It is not available on the Chrome Web Store (I prefer it this way since then you can see what you're getting <b>before</b> you actually install it).</p>
     <img src="/blog/security-txt-rfc/security-txt-extension-installed.png">
     <p>The current version of the extension searches for the file at both /security.txt and /.well-known/security.txt, as seen in the code for this version <a href="https://github.com/securitytxt/chrome-extension/blob/474ecc225fddc9d982deda939e75208a8b57e9ac/Security-txt/scripts/background.js#L82" target="_blank" rel="noopener">here</a>.</p>
     <p>The colour of the extension icon changes to green when a security.txt policy is detected on the current website, and you can click on the icon to see the policy:</p>
@@ -188,17 +188,17 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
 
    Security.txt is a text file located in the website's top-level
    directory.</pre>
-    <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-00#section-2" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-00#section-2</a></i></p>
+    <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-00#section-2" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-00#section-2</a></i></p>
     <p>However in draft version 01, this was changed to the /.well-known/ directory on a web server:</p>
     <pre>3.1.  Web-based services
 
    Web-based services SHOULD place the security.txt file under the
    /.well-known/ path; e.g. https://example.com/.well-known/
    security.txt.</pre>
-    <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-3.1" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-3.1</a></i></p>
-    <p>It is important to know that these directories are not an absolute requirement of the draft standard, as the <a href="https://tools.ietf.org/html/rfc2119#section-3" target="_blank">RFC2119</a> term "SHOULD" is used.</p>
+    <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-3.1" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-3.1</a></i></p>
+    <p>It is important to know that these directories are not an absolute requirement of the draft standard, as the <a href="https://tools.ietf.org/html/rfc2119#section-3" target="_blank" rel="noopener">RFC2119</a> term "SHOULD" is used.</p>
     <p>I have seen a couple of large and reputable sources still using the original draft spec rather than the newer one, and I personally agree with them. I think that the file is far better suited to being in the root of the web server rather than in the .well-known folder.</p>
-    <p>There are <a href="https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml" target="_blank">plenty of uses</a> for the .well-known directory, however for this application it just seems to make it unnecessarily clunky and adds extra complication to the setup. I know that it's literally just creating a folder, however for many systems even this could be difficult. For example certain content management systems or web hosting interfaces may restrict access to the .well-known folder or disallow file/folder names with dots. For technical users these issues should be easy to overcome, however security.txt should be as accessible and easy as possible.</p>
+    <p>There are <a href="https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml" target="_blank" rel="noopener">plenty of uses</a> for the .well-known directory, however for this application it just seems to make it unnecessarily clunky and adds extra complication to the setup. I know that it's literally just creating a folder, however for many systems even this could be difficult. For example certain content management systems or web hosting interfaces may restrict access to the .well-known folder or disallow file/folder names with dots. For technical users these issues should be easy to overcome, however security.txt should be as accessible and easy as possible.</p>
     <p>On JamieWeb, I am hosting the file at both locations:</p>
     <pre>https://www.jamieweb.net/.well-known/security.txt
 https://www.jamieweb.net/security.txt</pre>
@@ -223,20 +223,20 @@ Allow: /.well-known/security.txt</pre>
     <h2 id="conclusion">Conclusion</h2>
     <p>I have added a security.txt for my website and many others have too. I really hope it catches on as much as robots.txt did and it might be a step towards solving the problem of difficult vulnerability disclosure.</p>
     <p>One interesting idea that I had is a security.txt aggregator. One of these may already exist however I'm sure in the future there will be a resource somewhere that scrapes the web and publishes a public list of websites that have security.txt policies. This would be a great way for white-hats to find sites to research on. Perhaps website owners or members of the public could also submit links to security.txt files to add them to the list.</p>
-    <p><b>Edit 25th Feb 2018 @ 10:46pm:</b> <i>A security.txt aggregator now exists! See <a href="https://securitytext.org/" target="_blank">securitytext.org</a> by <a href="https://twitter.com/AustinHeap" target="_blank" rel="noopener">@AustinHeap</a>.</i></p>
+    <p><b>Edit 25th Feb 2018 @ 10:46pm:</b> <i>A security.txt aggregator now exists! See <a href="https://securitytext.org/" target="_blank" rel="noopener">securitytext.org</a> by <a href="https://twitter.com/AustinHeap" target="_blank" rel="noopener">@AustinHeap</a>.</i></p>
     <p>Another idea that I had for the security.txt specification is to add a "Scope" header field, which would outline the systems that are in-scope of the vulnerability disclosure policy/bug bounty program. I am aware that security.txt already kind-of answers this by stating:</p>
     <pre>A security.txt file only applies to the domain, subdomain, IPv4 or IPv6 address it is located in.</pre>
-<p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2" target="_blank">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2</a></i></p>
+<p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2</a></i></p>
     <p>...however, this applies more to the use scope of the contact details rather than researcher activity. Ultimately, security.txt is a disclosure policy rather than a researching policy, so my idea for a "Scope" header perhaps isn't really applicable.</p>
     <p><b>Edit 28th Dec 2017 @ 7:30pm:</b> <i>Just one day after publishing this blog post, version 02 of the draft specification was released. This added details on the "Policy" header, which I described above. This field kind of satisfies my idea for a "Scope" header, since you can link directly to a security/disclosure policy page which will likely include a scope and/or asset list.</i></p>
     <p>A final interesting idea of mine is to add support for Bitmessage addresses in the "Contact" field. The reason I suggest Bitmessage and not other "chat" applications is that the decentralized and secure nature of Bitmessage covers the "Encryption" part as well as the contact method. The encryption used by Bitmessage is completely in control of the user, unlike various other chat applications which provide a managed encryption service which is mostly transparent to the user. Again, there is a good chance that this wouldn't be suitable for the official standard however it is definitely interesting to discuss.</p>
 
     <h2 id="references">References</h2>
     <ul class="spaced-list">
-        <li><a href="https://tools.ietf.org/id/draft-foudil-securitytxt-00.txt" target="_blank">security.txt Internet Draft Version 00 (Sep 10th 2017)</a></li>
-        <li><a href="https://tools.ietf.org/id/draft-foudil-securitytxt-01.txt" target="_blank">security.txt Internet Draft Version 01 (Dec 3rd 2017)</a></li>
-        <li><a href="https://tools.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-foudil-securitytxt-01.txt" target="_blank">Diff Between The Two Versions</a></li>
-        <li><a href="https://securitytxt.org/" target="_blank">security.txt Website</a></li>
+        <li><a href="https://tools.ietf.org/id/draft-foudil-securitytxt-00.txt" target="_blank" rel="noopener">security.txt Internet Draft Version 00 (Sep 10th 2017)</a></li>
+        <li><a href="https://tools.ietf.org/id/draft-foudil-securitytxt-01.txt" target="_blank" rel="noopener">security.txt Internet Draft Version 01 (Dec 3rd 2017)</a></li>
+        <li><a href="https://tools.ietf.org/rfcdiff?difftype=--hwdiff&url2=draft-foudil-securitytxt-01.txt" target="_blank" rel="noopener">Diff Between The Two Versions</a></li>
+        <li><a href="https://securitytxt.org/" target="_blank" rel="noopener">security.txt Website</a></li>
         <li><a href="https://github.com/securitytxt/security-txt" target="_blank" rel="noopener">security.txt GitHub Repository</a></li>
         <li><a href="https://github.com/securitytxt/chrome-extension" target="_blank" rel="noopener">security.txt Chrome Extension GitHub Repository</a></li>
         <li><a href="/.well-known/security.txt" target="_blank">JamieWeb security.txt File</a></li>

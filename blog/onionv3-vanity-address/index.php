@@ -41,7 +41,7 @@
     <p>mkp224o is a vanity address generator for Tor Onion v3 Hidden Services, created by <a href="https://github.com/cathugger/mkp224o" target="_blank" rel="noopener">cathugger</a> and available <a href="https://github.com/cathugger/mkp224o" target="_blank" rel="noopener"> on Github</a>.</p>
     <img width="1000px" src="/blog/onionv3-vanity-address/github-cathugger-mkp224o.png">
     <p class="two-no-mar centertext"><i>The mkp224o repository on cathugger's GitHub account.</i></p>
-    <p><a href="https://gitweb.torproject.org/torspec.git/tree/proposals/224-rend-spec-ng.txt" target="_blank">Tor Proposal 224</a> is the proposal for the new Onion v3 specification, so that's what mkp224o was named after.</p>
+    <p><a href="https://gitweb.torproject.org/torspec.git/tree/proposals/224-rend-spec-ng.txt" target="_blank" rel="noopener">Tor Proposal 224</a> is the proposal for the new Onion v3 specification, so that's what mkp224o was named after.</p>
     <p>mkp224o is very easy to install and run. Download and extract the latest version from GitHub, then on Debian-based systems, you can use:</p>
     <pre>#Install dependencies if required
 sudo apt-get install autoconf libsodium-dev
@@ -682,8 +682,8 @@ HiddenServicePort &lt;localport&gt; &lt;server&gt;</pre>
     <p>I am definitely not as happy with my Onion v3 vanity address as I am with my <a href="http://jamiewebgbelqfno.onion/" target="_blank" rel="noopener">Onion v2 vanity address</a>, however due to the enormously increased cryptographic security of Onion v3, vanity address generation takes slightly longer. This is not a problem for me though, since security is always more important that vanity, especially with software like Tor.</p>
     <h2 id="references">References</h2>
     <ul class="references">
-        <li><a href="https://blog.torproject.org/tor-0328-rc-released-important-updates-relays" target="_blank">Tor Blog - Tor 0.3.2.8-rc Released</a></li>
-        <li><a href="https://gitweb.torproject.org/torspec.git/tree/proposals/224-rend-spec-ng.txt" target="_blank">Tor Proposal 224 - Next-Generation Hidden Services in Tor</a></li>
+        <li><a href="https://blog.torproject.org/tor-0328-rc-released-important-updates-relays" target="_blank" rel="noopener">Tor Blog - Tor 0.3.2.8-rc Released</a></li>
+        <li><a href="https://gitweb.torproject.org/torspec.git/tree/proposals/224-rend-spec-ng.txt" target="_blank" rel="noopener">Tor Proposal 224 - Next-Generation Hidden Services in Tor</a></li>
         <li><a href="https://github.com/cathugger/mkp224o" target="_blank" rel="noopener">cathugger/mkp224o on GitHub</a></li>
         <li><a href="https://github.com/Yawning/horse25519" target="_blank" rel="noopener">Yawning/horse25519 on GitHub</a></li>
         <li><a href="https://github.com/rdkr/oniongen-go" target="_blank" rel="noopener">rdkr/oniongen-go on GitHub</a></li>

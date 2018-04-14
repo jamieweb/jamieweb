@@ -21,7 +21,7 @@
     <h1>Plainsight Enciphering Demo</h1>
     <hr>
     <p><b>Sunday 4th December 2016</b></p>
-    <p>Plainsight is created by user "rw" on GitHub: <a href="https://github.com/rw/plainsight">github.com/rw/plainsight</a></p>
+    <p>Plainsight is created by user "rw" on GitHub: <a href="https://github.com/rw/plainsight" target="_blank" rel="noopener">github.com/rw/plainsight</a></p>
     <p>Plainsight is a textual steganography tool for Linux, written in Python, that allows you to encipher a message into a plain-text random nonsense format, consisting of dictionary words, using a source text.</p>
     <p>The purpose of Plainsight is to allow users to send secret messages without standing out. Other forms of secret communication, such as PGP encrypted messages, would clearly stand out to an internet censor, firewall, blocking system, etc.</p>
     <p>The easiest way to install Plainsight is using the Python preferred installer program (pip). Many Linux distributions have it pre-installed, but if you don't have it:</p>
@@ -33,7 +33,7 @@
     <pre>$ sudo pip install bitstring
 $ sudo pip install progressbar</pre>
     <p>In order to use Plainsight, you must have a source text. This is what will be used to encipher your message. You can use anything as a source text, but people generally use books/lyrics/poems. However, if you can prearrange a private source text with your intended recipient(s), it would be more secure than using a public text.</p>
-    <p>For this example, I am using a random Lipsum text. The main advantage of this is that Lipsum texts are expected to be random, so it would stand out even less should your enciphered message fall into the wrong hands. You can easily generate a random Lipsum text at <a href="http://lipsum.com/feed/html/" target="_blank">lipsum.com/feed/html</a>. I am unsure of the integrity of the randomness used on this site, so do your own research before using it. Below is the Lipsum text I am using as my source for this demonstration:</p>
+    <p>For this example, I am using a random Lipsum text. The main advantage of this is that Lipsum texts are expected to be random, so it would stand out even less should your enciphered message fall into the wrong hands. You can easily generate a random Lipsum text at <a href="http://lipsum.com/feed/html/" target="_blank" rel="noopener">lipsum.com/feed/html</a>. I am unsure of the integrity of the randomness used on this site, so do your own research before using it. Below is the Lipsum text I am using as my source for this demonstration:</p>
     <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et viverra
 est.Integer orci augue, ullamcorper sit amet dui a, volutpat finibus purus.
 Curabitur feugiat nisl eget erat blandit, vel hendrerit ex vehicula. Sed

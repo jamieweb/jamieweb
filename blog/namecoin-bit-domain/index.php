@@ -57,7 +57,7 @@
     <p>It is recommended to create a separate, non-privileged user account to run Namecoin Core as. Do not run Namecoin Core as root.</p>
     <pre>$ sudo adduser --disabled-password namecoin
 $ sudo su namecoin</pre>
-    <p>Namecoin Core can be downloaded from either <a href="https://namecoin.org/" target="_blank">Namecoin.org</a> or the <a href="https://github.com/namecoin/namecoin-core" target="_blank" rel="noopener">namecoin-core GitHub repository</a>.</p>
+    <p>Namecoin Core can be downloaded from either <a href="https://namecoin.org/" target="_blank" rel="noopener">Namecoin.org</a> or the <a href="https://github.com/namecoin/namecoin-core" target="_blank" rel="noopener">namecoin-core GitHub repository</a>.</p>
     <p>You can use a pre-packaged release or build Namecoin Core from source. Pre-packaged releases are verified using Gitian signatures, available in the <a href="https://github.com/namecoin/gitian.sigs" target="_blank" rel="noopener">Namecoin gitian.sigs GitHub repository</a>.</p>
     <p><b>Installing a Pre-packaged Build:</b></p>
     <p>Download the latest pre-packaged build from the Namecoin website, as well as the Gitian signatures and their signature from GitHub. For example:</p>
@@ -302,7 +302,7 @@ server:
     <pre>./generate_nmc_cert -ecdsa-curve P256 -host your-name-here.bit -start-date "Jan 14 00:00:00 2018" -end-date "Jan 14 00:00:00 2028"</pre>
     <p>The files cert.pem and key.pem will be output in the directory that you are currently working in. Keep in mind that if you issue multiple certificates, you will actually overwrite the two files, so make sure to move them somewhere safe before issuing another certificate.</p>
     <p>Make sure to keep the key.pem file private, as this is the key for your TLS certificate.</p>
-    <p>In order for your certificates to work properly with ncdns's certificate injection feature and to avoid HTTPS browser warnings, you'll also need to set up tls records in your domain configuration. This follows a standard similar to DANE by specifying allowed certificates in the DNS records for a domain. Please see <a href="https://namecoin.org/docs/name-owners/tls/" target="_blank">Setting Up TLS (for name owners)</a> on the Namecoin website.</p>
+    <p>In order for your certificates to work properly with ncdns's certificate injection feature and to avoid HTTPS browser warnings, you'll also need to set up tls records in your domain configuration. This follows a standard similar to DANE by specifying allowed certificates in the DNS records for a domain. Please see <a href="https://namecoin.org/docs/name-owners/tls/" target="_blank" rel="noopener">Setting Up TLS (for name owners)</a> on the Namecoin website.</p>
 
     <h2 id="apache-tls">Apache Web Server TLS Configuration</h2>
     <p>The default location to store TLS certificates for use with Apache is /etc/ssl. Public certificates should go in /etc/ssl/certs and private keys should go in /etc/ssl/private. You can use other locations if you want, but always make sure that your private key is protected and only accessible by users who require access, such as www-data. You are also free to rename your files in order to better identify them or prevent name clashes with others. </p>

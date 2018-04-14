@@ -54,7 +54,7 @@
     <p>Subgraph is funded by the Open Technology Fund, which in turn is funded by the United States Government. This is the same as many other privacy tools including Qubes OS, Tails OS, Tor Project, etc.</p>
 
     <h2 id="downloadverify">Downloading and Verifying</h2>
-    <p>Subgraph can be downloaded from their official site at <a href="https://subgraph.com" target="_blank">subgraph.com</a>, or their Tor hidden service at <a href="https://subgraphqov3womk.onion" target="_blank">subgraphqov3womk.onion</a> (currently giving SSL errors).</p>
+    <p>Subgraph can be downloaded from their official site at <a href="https://subgraph.com" target="_blank" rel="noopener">subgraph.com</a>, or their Tor hidden service at <a href="https://subgraphqov3womk.onion" target="_blank" rel="noopener">subgraphqov3womk.onion</a> (currently giving SSL errors).</p>
     <p>Below are verifications for the 30th December 2016 Subgraph release:</p>
     <pre><b>File Name:</b> subgraph-os-alpha_2016-12-30_1.iso
 <b>Size:</b> 1.4 GB (1,374,388,224 bytes)
@@ -137,7 +137,7 @@ Primary key fingerprint: B55E 70A9 5AC7 9474 504C  30D0 DA11 364B 4760 E444
     <p>Subgraph uses the torbrowser-launcher program in order to automatically install and update the Tor browser, making sure that it is always on the latest version. When running the Tor browser launcher, the Tor browser will be downloaded but the signature verification will fail. This is because of a glitch in the program, causing the Tor browser signing keys not to be downloaded properly. This is not an issue exclusive to Subgraph, the same problem arsises on other Linux distrubutions too. In order to fix it, you must redownload the PGP keys used to sign the packages from a key server:</p>
     <pre>gpg --homedir /home/user/.local/share/torbrowser/gnupg_homedir/ --refresh-keys --keyserver keys.gnupg.net</pre>
     <p>The default user account on Subgraph is simply "user", so you can directly copy the command from above. If your user account is different, change it accordingly. After running the above command, the Tor browser launcher should work properly.</p>
-    <p>Certain "at-risk" applications are automatically sandboxed from the rest of the system using <a href="https://github.com/subgraph/oz">Oz</a>, which is an application sandboxing system created by the Subgraph team.</p>
+    <p>Certain "at-risk" applications are automatically sandboxed from the rest of the system using <a href="https://github.com/subgraph/oz" target="_blank" rel="noopener">Oz</a>, which is an application sandboxing system created by the Subgraph team.</p>
     <div class="centertext"><img width="1000px" src="/blog/subgraph-os-overview/subgraph-oz-profiles.png"></div>
     <p>Subgraph also has a very tight firewall. If an application tries to access the internet, the user will be prompted with information on the connection attempt. The purpose of this is to deny network access to applications that don't need it or shouldn't have it. The image viewer application obviously does not need network access, so if it tries to connect then something funny is going on.</p>
 
