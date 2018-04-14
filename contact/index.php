@@ -43,9 +43,10 @@
     <hr>
 
     <h2 id="hackerone"><img class="two-mar-bottom padding-right-10 vertical-align-middle" width="16px" src="/images/hackerone.png">HackerOne</h2>
-    <p>I currently have a HackerOne security vulnerability disclosure program that is under private/controlled launch. If you would like to be invited, please send me your email address and I'll add you!</p>
-    <p>You can view a copy of the security policy <a href="https://github.com/JamieOnUbuntu/config/blob/master/hackerone/policy.md" target="_blank" rel="noopener">here</a>, and the scope <a href="https://github.com/JamieOnUbuntu/config/blob/master/hackerone/scope.md" target="_blank" rel="noopener">here</a>.</p>
+    <p>I have a public HackerOne security vulnerability disclosure program for my website. If you would like to search for vulnerabilities or report one, please view the program here: <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener">https://hackerone.com/jamieweb</a></p>
+    <p>Valid submissions will be thanked publicly on my HackerOne program page.</p>
     <p><b>Please note that my HackerOne program does not provide bounties/rewards as JamieWeb is only a small personal project.</b></p>
+    <p>Thank you!</p>
 
     <hr>
     <h1 id="abuse">Network/Email Abuse</h1>
