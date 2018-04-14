@@ -33,21 +33,31 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/other/speedrun-times/"><img src="/images/fontawesome/stopwatch.svg"></a>
+            <a href="/other/irc/"><img src="/images/fontawesome/comments.svg"></a>
         </div>
         <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/speedrun-times/">Speedrun Times</a></h3>
-            <p class="two-mar-top"><b>A list of my speedrun times from 2014/2015.</b></p>
+            <h3 class="no-mar-bottom"><a href="/other/irc/">IRC</a></h3>
+            <p class="two-mar-top"><b>##jamieweb on Freenode.</b></p>
         </div>
     </div>
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/pastes/"><img src="/images/fontawesome/paste.svg"></a>
+            <a href="/other/pastes/"><img src="/images/fontawesome/paste.svg"></a>
         </div>
         <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/pastes/">Pastes</a></h3>
+            <h3 class="no-mar-bottom"><a href="/other/pastes/">Pastes</a></h3>
             <p class="two-mar-top"><b>Plain text snippets.</b></p>
+        </div>
+    </div>
+
+    <div class="iconparent">
+        <div class="iconimg">
+            <a href="/other/speedrun-times/"><img src="/images/fontawesome/stopwatch.svg"></a>
+        </div>
+        <div class="iconlist">
+            <h3 class="no-mar-bottom"><a href="/other/speedrun-times/">Speedrun Times</a></h3>
+            <p class="two-mar-top"><b>A list of my speedrun times from 2014/2015.</b></p>
         </div>
     </div>
 </div>
