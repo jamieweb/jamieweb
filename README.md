@@ -48,11 +48,9 @@ Historic:
     Casio watch mod (N-O-D-E style) - in progress but I am having issues with masking for spray painting!
     Air-gapped RPi PGP decryption device using binary-over-audio
     PHP blog list generation - efficiency? - mod_cache is the solution here most likely
-    Update hashes page
     iptables configuration
     pf configuration
     Chrome sign-in/sync risk
-    rel="noopener"? For HTTP endpoints and sites where a user may be signed in
     Homepage quick links
     Search box?
     Malicious links overview/spamtraps
@@ -65,7 +63,6 @@ Historic:
     JamieWeb organisation
     /security page with HackerOne policy
     Apache security headers on a per-page basis blog post/guide
-    Add IRC to /other/
     Homepage rework (see jamieweb/jamieweb-dev) - first basic revision now live
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
     Geodiverse hosting?
@@ -73,6 +70,8 @@ Historic:
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
 
+    ✓ Add IRC to other/
+    ✓ rel="noopener" - All links to different origins now have rel="noopener"
     ✓ Vulnerability disclosure - HackerOne program is now live! https://hackerone.com/jamieweb
     ✓ SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018 - 2018-Apr-04 see /blog/letsencrypt-scts-in-certificates/
     ✓ Disable TLS 1.0 and TLS 1.1 support
