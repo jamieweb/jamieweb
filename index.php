@@ -19,7 +19,7 @@
 
 <div class="body">
     <div class="content redlink">
-        <h1>Home</h1>
+        <h1>Jamie Scaife - United Kingdom</h1>
         <hr>
 
         <h1 class="no-mar-bottom">About</h1>
@@ -132,14 +132,12 @@ O:::::::OOO:::::::O
     </div>
 
     <div class="sidebar">
-        <h2 class="centertext">Jamie Scaife</h2>
-        <hr>
         <input type="radio" class="gravityradio" id="identicon">
         <label class="gravitylabel" for="identicon"></label>
         <!--Thanks to jdenticon.com for the identicon image generation!-->
         <!--My identicon seed is the sha256 hash of the plain text word "JamieOnUbuntu".-->
         <hr>
-        <div class="centertext">
+        <div class="centertext sideitems">
             <div class="sideitem">
                 <a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/github.svg"></a>
                 <h4><a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener">GitHub</a></h4>
@@ -158,16 +156,16 @@ O:::::::OOO:::::::O
             </div>
             <div class="sideitem">
                 <a href="/jamie-scaife.asc" target="_blank"><img src="/images/fontawesome/key.svg"></a>
-                <h4 class="sideitem-mar-bottom"><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
+                <h4><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
             </div>
             <div class="sideitem">
                 <a href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss.svg"></a>
-                <h4 class="sideitem-mar-bottom"><a href="/rss.xml" target="_blank">RSS</a></h4>
+                <h4><a href="/rss.xml" target="_blank">RSS</a></h4>
             </div>
         </div>
         <hr>
         <h2 class="centertext">Recent Posts</h2>
-        <div class="redlink">
+        <div class="redlink tops">
 <?php bloglist("recents"); ?>
         </div>
     </div>

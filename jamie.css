@@ -128,17 +128,12 @@ div.sidebar h4 {
     margin-bottom: 0px;
 }
 
-div.sidebar h4.sideitem-mar-bottom {
-    margin-bottom: 19px
+div.sideitems {
+    margin: 11px 0px;
 }
 
 div.sideitem {
     width: 135px;
-    display: inline-block;
-}
-
-div.sideitem-b {
-    width: 270px;
     display: inline-block;
 }
 
@@ -151,6 +146,12 @@ div.sideitem img {
 
 div.sideitem h4 {
     display: inline-block;
+    margin: 13px 0px;
+}
+
+div.tops h4 {
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 div.featured {
@@ -629,6 +630,8 @@ span.tag-ubuntu {
 
 .gravitylabel {
     display: inline-block;
+    margin-top: 29px;
+    margin-bottom: 5px;
     width: 275px;
     height: 275px;
     background: url(/images/identicon.png);
