@@ -54,7 +54,7 @@
 
     <hr>
     <h1 id="legal">Legal Information</h1>
-    <ul><li>Homepage sidebar logo: <b>Jdenticon by Daniel Mester Pirttij&#228;rvi</b> (<a href="https://jdenticon.com" target="_blank">https://jdenticon.com</a>)</li>
+    <ul><li>Homepage sidebar logo: <b>Jdenticon by Daniel Mester Pirttij&#228;rvi</b> (<a href="https://jdenticon.com" target="_blank" rel="noopener">https://jdenticon.com</a>)</li>
     <li>Icons around site: <b>Font Awesome by Dave Gandy</b> (<a href="https://fontawesome.com" target="_blank" rel="noopener">https://fontawesome.com</a>) - Licensed Under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></li>
     <li>Site-wide font: <b>Open Sans by Steve Matteson</b> (<a href="https://fonts.google.com/specimen/Open+Sans" target="_blank" rel="noopener">https://fonts.google.com/specimen/Open+Sans</a>) - Licensed Under <a href="https://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache 2.0</a></li></ul>
     <p>All content found here that has no attribution is believed to be in the public domain.</p>

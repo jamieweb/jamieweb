@@ -24,12 +24,12 @@
     <h3>Half-Life RTA Scripted Speedruns:</h3>
     <p>Timed from entering Anonamlous Materials (c1a0) to killing Nihilanth.</p>
 
-    <pre>01. Monday 20th April 2015: <b>00:56:56</b> - <a href="https://youtu.be/Emntp8FQjQY" target="_blank">https://youtu.be/Emntp8FQjQY</a>
+    <pre>01. Monday 20th April 2015: <b>00:56:56</b> - <a href="https://youtu.be/Emntp8FQjQY" target="_blank" rel="noopener">https://youtu.be/Emntp8FQjQY</a>
 02. Tuesday 21st April 2015: <b>00:56:00</b></pre>
 
     <h3>Half-Life 2 RTA Scriptless Speedruns:</h3>
     <p>Timed from gaining crosshair to the Citadel explosion at the end.</p>
-    <p>World Record as of 8th April 2015 is 01:37:45 (real time) by Gocnak - <a href="https://youtu.be/NCWzzS7fNZg" target="_blank">https://youtu.be/NCWzzS7fNZg</a></p>
+    <p>World Record as of 8th April 2015 is 01:37:45 (real time) by Gocnak - <a href="https://youtu.be/NCWzzS7fNZg" target="_blank" rel="noopener">https://youtu.be/NCWzzS7fNZg</a></p>
     <p>Many new glitches/routes/skips have since been discovered, making my runs mostly obsolete.</p>
 
     <pre>01. Sunday 19th October 2014: <b>03:37:26</b>
@@ -48,10 +48,10 @@
 14. Friday 6th March 2015: <b>02:15:13</b>
 15. Sunday 8th March 2015: <b>02:06:44</b>
 16. Sunday 5th April 2015: <b>02:13:27</b>
-17. Monday 6th April 2015: <b>02:06:24</b> - <a href="https://youtu.be/Ev3TcXu0X8s" target="_blank">https://youtu.be/Ev3TcXu0X8s</a>
-18. Tuesday 7th April 2015: <b>02:06:11</b> - <a href="https://youtu.be/46kfam71a80" target="_blank">https://youtu.be/46kfam71a80</a>
-19. Wednesday 8th April 2015: <b>02:05:47</b> - <a href="https://youtu.be/_gsJUyDAZBc" target="_blank">https://youtu.be/_gsJUyDAZBc</a>
-20. Thursday 9th April 2015: <b>02:03:03 (PB)</b> - <a href="https://youtu.be/FCOIJMZUugI" target="_blank">https://youtu.be/FCOIJMZUugI</a>
+17. Monday 6th April 2015: <b>02:06:24</b> - <a href="https://youtu.be/Ev3TcXu0X8s" target="_blank" rel="noopener">https://youtu.be/Ev3TcXu0X8s</a>
+18. Tuesday 7th April 2015: <b>02:06:11</b> - <a href="https://youtu.be/46kfam71a80" target="_blank" rel="noopener">https://youtu.be/46kfam71a80</a>
+19. Wednesday 8th April 2015: <b>02:05:47</b> - <a href="https://youtu.be/_gsJUyDAZBc" target="_blank" rel="noopener">https://youtu.be/_gsJUyDAZBc</a>
+20. Thursday 9th April 2015: <b>02:03:03 (PB)</b> - <a href="https://youtu.be/FCOIJMZUugI" target="_blank" rel="noopener">https://youtu.be/FCOIJMZUugI</a>
 21. Friday 10th April 2015: <b>02:06:58</b></pre>
 
     <h3>Half-Life 2 Episode 2 (Up to White Forest) RTA Scriptless Speedruns:</h3>

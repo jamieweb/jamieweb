@@ -21,7 +21,7 @@
     <h1>How to Install and Configure 'InspIRCd' on Linux</h1>
     <hr>
     <p><b>Tuesday 16th May 2017</b></p>
-    <p><a href="http://www.inspircd.org/" target="_blank">InspIRCd</a> is a modular Internet Relay Chat (IRC) server written in C++ for Linux, BSD, Windows and Mac OS systems.</p>
+    <p><a href="http://www.inspircd.org/" target="_blank" rel="noopener">InspIRCd</a> is a modular Internet Relay Chat (IRC) server written in C++ for Linux, BSD, Windows and Mac OS systems.</p>
     <p>This guide will cover installation, configuration and Let's Encrypt SSL. It is written with the assumption that you already have basic knowledge of Linux and IRC.</p>
     <p>The guide is targeted at Ubuntu/Debian systems, however it should be possible to follow for other Linux distributions too. Just make sure to use the appropriate package management commands for your distribution.</p>
     <p>The version of InspIRCd that I am using in this guide is 2.0.23, however you should be able to use the guide with newer versions. Just swap out 2.0.23 for the version number you are using.</p>
@@ -35,7 +35,7 @@
     <p>This command will create a new user called "inspircd", with a disabled password. This means that there is no password set and you will not be able to log in with a password. Instead, you can just su into the user. If you'd like to set a password, simply omit "--disabled-password".</p>
     <p><b>b.</b> Install the required dependencies:</p>
     <pre>$ sudo apt-get install libgnutls-dev gnutls-bin pkg-config</pre>
-    <p>If you are using a distribution other than Ubuntu/Debian, please see the <a href="https://wiki.inspircd.org/System_Requirements" target="_blank">InspIRCd Wiki</a> for more information.</p>
+    <p>If you are using a distribution other than Ubuntu/Debian, please see the <a href="https://wiki.inspircd.org/System_Requirements" target="_blank" rel="noopener">InspIRCd Wiki</a> for more information.</p>
     <p><b>c.</b> If you don't already have a command-line IRC client, it is useful to install one. I personally recommend Irssi:</p>
     <pre>$ sudo apt-get install irssi</pre>
     <p><b>d.</b> Log in as your new user:</p>
@@ -43,7 +43,7 @@
 
     <h2 id="step2">Step #2: Downloading and Verifying</h2>
     <p><b>It is important that you do not install InspIRCd from the Debian/Ubuntu Universe package repositories. These packages are out of date and potentially insecure. The out of date packages are not the fault of the InspIRCd development team, but rather the independent package maintainers.</b></p>
-    <p><b>a.</b> The source for InspIRCd can be downloaded from their <a href="https://github.com/inspircd/inspircd/" target="_blank">GitHub repository</a>. Visit the releases page and download the source code Tarball (.tar.gz) for the latest stable release. At the time of writing this guide, the latest version is 2.0.23.</p>
+    <p><b>a.</b> The source for InspIRCd can be downloaded from their <a href="https://github.com/inspircd/inspircd/" target="_blank" rel="noopener">GitHub repository</a>. Visit the releases page and download the source code Tarball (.tar.gz) for the latest stable release. At the time of writing this guide, the latest version is 2.0.23.</p>
     <pre>########################################################################
 <b>InspIRCd 2.0.23 Source Code</b>
 
@@ -52,8 +52,8 @@ Size: 714.5 KB (731,695 bytes)
 MD5: 8f9ae3c377334248af6f675b568d7234
 SHA1: b1b575d2b3896f93b6a3a5b1cc7498541d223282
 SHA256: 522b31fc80e8fd90b66837bf50f8a941233709d5b1fc9c0b3c47a413fb69f162
-VirusTotal: <a href="https://www.virustotal.com/en/file/522b31fc80e8fd90b66837bf50f8a941233709d5b1fc9c0b3c47a413fb69f162/analysis/" target="_blank">0/55 Detection Ratio</a>
-Link: <a href="https://github.com/inspircd/inspircd/archive/v2.0.23.tar.gz" target="_blank">https://github.com/inspircd/inspircd/archive/v2.0.23.tar.gz</a>
+VirusTotal: <a href="https://www.virustotal.com/en/file/522b31fc80e8fd90b66837bf50f8a941233709d5b1fc9c0b3c47a413fb69f162/analysis/" target="_blank" rel="noopener">0/55 Detection Ratio</a>
+Link: <a href="https://github.com/inspircd/inspircd/archive/v2.0.23.tar.gz" target="_blank" rel="noopener">https://github.com/inspircd/inspircd/archive/v2.0.23.tar.gz</a>
 ########################################################################</pre>
     <p>You can download the file using wget:</p>
     <pre>$ wget https://github.com/inspircd/inspircd/archive/v2.0.23.tar.gz</pre>
@@ -643,7 +643,7 @@ InspIRCd is now running as 'irc.example.tld'[245] with 1024 max open sockets</pr
 
     <h2 id="step5">Step #5: Let's Encrypt SSL</h2>
     <p>Most IRC clients are configured to allow self-signed SSL certificates, but when making direct connections to an IRC server without using an IRC client (for example an IRC bot), it is common to run into SSL errors. It is easy to use a Let's Encrypt SSL Domain Validation certificate with InspIRCd, all you have to do is obtain the certificate and copy it to your InspIRCd configuration directory. I have checked the Let's Encrypt Terms of Service and it is perfectly fine to use their certificates for web services other than a web server.</p>
-    <p><b>If you are not running a web server on the same machine as your IRC server, you'll need to follow different steps.</b> <a href="https://suchsecurity.com/using-letsencrypt-for-your-ircd.html" target="_blank">This guide on Such Security</a> is fantastic and is what you need to follow. Come back here once you've obtained the certificate.</p>
+    <p><b>If you are not running a web server on the same machine as your IRC server, you'll need to follow different steps.</b> <a href="https://suchsecurity.com/using-letsencrypt-for-your-ircd.html" target="_blank" rel="noopener">This guide on Such Security</a> is fantastic and is what you need to follow. Come back here once you've obtained the certificate.</p>
     <p>If you are already running a web server on the same machine as your IRC server, setup will be much easier. I'm going to assume that you already have Let's Encrypt set up and working too. If not, there are plenty of guides out there.</p>
     <p>It is useful to have a web server running on the same hostname as your IRC server. This way, if anybody tries to visit your IRC server using http, they can be redirected to an information page. For example, redirect http://irc.example.tld to http://www.example.tld/irc.</p>
     <p>I do not suggest hosting any actual web content on http://irc.example.tld, a redirection to your main site is much safer. This is because the SSL certificate used for irc.example.tld is also going to be used for your IRC server. This involves storing it in a location that I would consider less secure than the default location. If your IRC server were to be compromised and the private key for the SSL certificate were to leak, encrypted traffic to and from irc.example.tld could be tampered with. By redirecting users away from http://irc.example.tld as soon as they visit it, you are reducing the impact of such a breach. Of course the IRC traffic would be compromised too. It would be possible for this HTTP redirection to be modified by an attacker, but it's an extra step of protection anyway.</p>
@@ -687,7 +687,7 @@ $ inspircd-2.0.34/run/inspircd restart</pre>
     <p>Make doubly sure that you added this to the crontab of your InspIRCd user. If you added it to another user's or even root's, InspIRCd may not work and may be a security risk.</p>
     <p><b>b.</b> Place your message of the day into the file run/conf/motd.txt and your server rules into run/conf/rules.txt.</p>
     <p>These files will be outputted when the commands /motd and /rules are used.</p>
-    <p>The MOTD should contain important information about your server such as who the owner is, available channels, commands, etc. ASCII art text is particularly appealing in an IRC MOTD, which can be generated using an <a href="http://www.network-science.de/ascii/" target="_blank">ASCII art text generator</a>.</p>
+    <p>The MOTD should contain important information about your server such as who the owner is, available channels, commands, etc. ASCII art text is particularly appealing in an IRC MOTD, which can be generated using an <a href="http://www.network-science.de/ascii/" target="_blank" rel="noopener">ASCII art text generator</a>.</p>
     <br>
     <p>Please let me know if you find any issues with this guide. Thanks for reading and good luck!</p>
     <p>I have no affiliation with InspIRCd.</p>

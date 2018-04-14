@@ -33,18 +33,18 @@
 &#x2517&#x2501&#x2501 <a href="#disabling">Disabling TLS 1.0 and TLS 1.1 in Apache</a></pre>
 
     <h2 id="why">What is wrong with TLS 1.0 and TLS 1.1?</h2>
-    <p>These versions of the Transport Layer Security (TLS) protocol were first defined in January 1999 (<a href="https://www.ietf.org/rfc/rfc2246.txt" target="_blank">RFC2246</a>) and April 2006 (<a href="https://www.ietf.org/rfc/rfc4346.txt" target="_blank">RFC4346</a>) respectively, and since then various issues and vulnerabilities have been discovered.</p>
+    <p>These versions of the Transport Layer Security (TLS) protocol were first defined in January 1999 (<a href="https://www.ietf.org/rfc/rfc2246.txt" target="_blank" rel="noopener">RFC2246</a>) and April 2006 (<a href="https://www.ietf.org/rfc/rfc4346.txt" target="_blank">RFC4346</a>) respectively, and since then various issues and vulnerabilities have been discovered.</p>
     <p>However, there are currently no major vulnerabilities affecting TLS 1.0 and TLS 1.1 when using the latest browsers and server-side implementations. The notable issues with these protocols are found in certain TLS implementations, rather than being fundamental protocol flaws. This means that simply updating your TLS implementation (eg: OpenSSL, GnuTLS) as well as your browser will fix the issues.</p>
-    <p><a href="https://tools.ietf.org/html/rfc7457" target="_blank">RFC7457</a> provides summaries on some of these attacks, and there is an <a href="https://www.acunetix.com/blog/articles/tls-vulnerabilities-attacks-final-part/" target="_blank">article by Acunetix</a> that also provides some useful details.</p>
-    <p>However, older versions of TLS have begun to be phased out across the internet. Many large sites such as <a href="https://githubengineering.com/crypto-removal-notice/" target="_blank">GitHub</a> and <a href="https://www.nist.gov/oism/tls-10-being-turned-wwwnistgov" target="_blank">NIST</a> have already disabled older versions, while many more organisations have plans in place to disable them in the near future. Just yesterday as I was writing this, <a href="https://blog.cloudflare.com/deprecating-old-tls-versions-on-cloudflare-dashboard-and-api/" target="_blank">Cloudflare announced</a> that they are going to be deprecating TLS 1.0 and TLS 1.1 on their API and dashboard come 4th June 2018.</p>
-    <p>It is also important to note that the new PCI DSS requirements state that <a href="https://blog.pcisecuritystandards.org/are-you-ready-for-30-june-2018-sayin-goodbye-to-ssl-early-tls" target="_blank">TLS 1.0 must be disabled by 30th June 2018</a> in order to remain compliant.</p>
+    <p><a href="https://tools.ietf.org/html/rfc7457" target="_blank" rel="noopener">RFC7457</a> provides summaries on some of these attacks, and there is an <a href="https://www.acunetix.com/blog/articles/tls-vulnerabilities-attacks-final-part/" target="_blank" rel="noopener">article by Acunetix</a> that also provides some useful details.</p>
+    <p>However, older versions of TLS have begun to be phased out across the internet. Many large sites such as <a href="https://githubengineering.com/crypto-removal-notice/" target="_blank" rel="noopener">GitHub</a> and <a href="https://www.nist.gov/oism/tls-10-being-turned-wwwnistgov" target="_blank" rel="noopener">NIST</a> have already disabled older versions, while many more organisations have plans in place to disable them in the near future. Just yesterday as I was writing this, <a href="https://blog.cloudflare.com/deprecating-old-tls-versions-on-cloudflare-dashboard-and-api/" target="_blank" rel="noopener">Cloudflare announced</a> that they are going to be deprecating TLS 1.0 and TLS 1.1 on their API and dashboard come 4th June 2018.</p>
+    <p>It is also important to note that the new PCI DSS requirements state that <a href="https://blog.pcisecuritystandards.org/are-you-ready-for-30-june-2018-sayin-goodbye-to-ssl-early-tls" target="_blank" rel="noopener">TLS 1.0 must be disabled by 30th June 2018</a> in order to remain compliant.</p>
 
     <h2 id="checking-support">Checking for TLS 1.0 and TLS 1.1 Support</h2>
-    <p>You can easily check whether your server supports TLS 1.0 and TLS 1.1 using <a href="https://nmap.org/" target="_blank">Nmap</a>. This is available in the default repositories on most Linux distributions, and is also available on BSD, macOS and Windows.</p>
+    <p>You can easily check whether your server supports TLS 1.0 and TLS 1.1 using <a href="https://nmap.org/" target="_blank" rel="noopener">Nmap</a>. This is available in the default repositories on most Linux distributions, and is also available on BSD, macOS and Windows.</p>
     <p>Nmap has a built-in script to enumerate the available ciphers and protocols:</p>
     <pre>$ nmap -p 443 --script ssl-enum-ciphers jamieweb.net</pre>
     <p>This will output all of the supported SSL/TLS protocol versions and ciphers.</p>
-    <p>Alternatively, you can use the <a href="https://www.ssllabs.com/ssltest/index.html" target="_blank">Qualys SSLLabs Scanner</a>.</p>
+    <p>Alternatively, you can use the <a href="https://www.ssllabs.com/ssltest/index.html" target="_blank" rel="noopener">Qualys SSLLabs Scanner</a>.</p>
 
     <h2 id="browser-compatibility">Browser Compatibility</h2>
     <p>The main downside to disabling TLS 1.0 and TLS 1.1 is that you lose support for some older browsers.</p>
@@ -98,7 +98,7 @@ $ grep -v "TLSv1.2" tls.log | wc -l</pre>
     <pre>SSLProtocol TLSv1.2</pre>
     <p>You can also specify multiple versions, including using the <code>all</code> shortcut:</p>
     <pre>SSLProtocol all -SSLv2 -SSLv3</pre>
-    <p>Please see the <a href="https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslprotocol" target="_blank">Apache documentation</a> for full details.</p>
+    <p>Please see the <a href="https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslprotocol" target="_blank" rel="noopener">Apache documentation</a> for full details.</p>
     <p>Test the server configuration with <code>apachectl configtest</code>, then reload the server with <code>service apache2 reload</code>.</p>
     <p>You should then re-test your server in order to make sure that the configuration was correct. Also, if you enabled the TLS protocol version logging, don't forget to disable it as the log files can get quite large.</p>
     <p>An alternative to hard-disabling these protocols is to redirect them to a page suggesting that the user upgrade their browser. This can be achieved in Apache using <code>mod_rewrite</code>:</p>

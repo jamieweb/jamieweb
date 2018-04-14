@@ -20,7 +20,7 @@
 <div class="body">
     <h1>Pastes</h1>
     <pre>Adblock Plus Default Filter Lists - <a href="/pastes/adblock-filters.txt">adblock-filters.txt</a></pre>
-    <a href="https://pastebin.com/u/JamieOnUbuntu" target="_blank">https://pastebin.com/u/JamieOnUbuntu</a>
+    <a href="https://pastebin.com/u/JamieOnUbuntu" target="_blank" rel="noopener">https://pastebin.com/u/JamieOnUbuntu</a>
 </div>
 
 <?php include "footer.php" ?>
