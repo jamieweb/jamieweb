@@ -1,6 +1,6 @@
 # jamieweb
 
-[![This project welcomes security reports](https://img.shields.io/badge/This%20project%20welcomes%20security%20reports-jamieweb%2enet%2fcontact-brightgreen.svg)](https://www.jamieweb.net/contact/)
+[![This project welcomes security reports](https://img.shields.io/badge/This%20project%20welcomes%20security%20reports-jamieweb%2enet%2fcontact-brightgreen.svg)](https://hackerone.com/jamieweb)
 
 My personal website, available at:
 
@@ -11,9 +11,9 @@ My personal website, available at:
 
 ## HackerOne:
 
-I currently have a HackerOne vulnerability disclosure program that is under private/controlled launch. If you would like to be invited, please send me your email address and I'll add you!
+I have a public HackerOne security vulnerability disclosure program for my site. If you would like to search for vulnerabilities or report one, please view the program here: [https://hackerone.com/jamieweb](https://hackerone.com/jamieweb)
 
-You can view a copy of the security policy [here](https://github.com/JamieOnUbuntu/config/blob/master/hackerone/policy.md), and the scope [here](https://github.com/JamieOnUbuntu/config/blob/master/hackerone/scope.md).
+Valid submissions will be thanked publicly on my HackerOne program page.
 
 **Please note that my HackerOne program does not provide bounties/rewards as JamieWeb is only a small personal project.**
 
@@ -60,18 +60,18 @@ Historic:
     Tor IPv6
     Improved/tidied footer, as well as next/previous blog post links when on /blog/*
     <noscript> tag neglect
-    Vulnerability disclosure - HackerOne program now under private/controlled launch, please send me your email address if you'd like an invite
     JamieWeb organisation
     /security page with HackerOne policy
     Apache security headers on a per-page basis blog post/guide
     Add IRC to /other/
-    Homepage rework (see jamieweb/jamieweb-dev)
+    Homepage rework (see jamieweb/jamieweb-dev) - first basic revision now live
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
     Geodiverse hosting?
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
 
+    ✓ Vulnerability disclosure - HackerOne program is now live! https://hackerone.com/jamieweb
     ✓ SCTs and Expect-CT - Waiting for Let's Encrypt SCTs in certificate support, Q1 2018 - 2018-Apr-04 see /blog/letsencrypt-scts-in-certificates/
     ✓ Disable TLS 1.0 and TLS 1.1 support
     ✓ Move all images from /images to their respective content folders (except for 'CDN-appropriate' content)
