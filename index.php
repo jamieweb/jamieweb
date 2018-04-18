@@ -155,8 +155,8 @@ O:::::::OOO:::::::O
                 <h4><a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener">Keybase</a></h4>
             </div>
             <div class="sideitem">
-                <a href="/jamie-scaife.asc" target="_blank"><img src="/images/fontawesome/key.svg"></a>
-                <h4><a href="/jamie-scaife.asc" target="_blank">PGP</a></h4>
+                <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener"><img src="/images/hackerone.png"></a>
+                <h4><a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener">HackerOne</a></h4>
             </div>
             <div class="sideitem">
                 <a href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss.svg"></a>
