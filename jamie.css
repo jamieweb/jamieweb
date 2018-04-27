@@ -420,10 +420,12 @@ h5.footer-content img {
     vertical-align: middle;
     width: 25px;
     height: 25px;
+    margin: 0px 3px;
 }
 
 h5.footer-content img.h1 {
     width: 13px;
+    margin: 0px 6px;
 }
 
 ul.spaced-list li {
