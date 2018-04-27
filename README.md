@@ -69,6 +69,9 @@ Historic:
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
+    tls1.3.jamieweb.net (TLS 1.3 Test Page)
+    http2.jamieweb.net (HTTP/2 Test Page)
+    brotli.jamieweb.net (Brotli Test Page[?])
 
     ✓ Add IRC to other/
     ✓ rel="noopener" - All links to different origins now have rel="noopener"
