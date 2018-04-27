@@ -422,6 +422,10 @@ h5.footer-content img {
     height: 25px;
 }
 
+h5.footer-content img.h1 {
+    width: 13px;
+}
+
 ul.spaced-list li {
     margin-bottom: 7px;
 }
