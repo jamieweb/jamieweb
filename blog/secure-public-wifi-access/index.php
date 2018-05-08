@@ -20,7 +20,7 @@
 <div class="body">
     <h1>Using a Public Wi-Fi Hotspot Securely</h1>
     <hr>
-    <p><b>Monday 7th May 2018</b></p>
+    <p><b>Tuesday 8th May 2018</b></p>
     <p><u>The problem:</u> You want to connect to the internet in a hotel or coffee shop, but don't want to expose your laptop to the insecure, unencrypted Wi-Fi network.</p>
     <p><u>A solution:</u> Connect to the internet through a Raspberry Pi, and have it forward a secure VPN connection through to your laptop.</p>
     <pre><b>Using a Public Wi-Fi Hotspot Securely</b>
