@@ -2,7 +2,7 @@
     <hr>
     <h5 class="footer-content two-mar-bottom">Copyright &copy Jamie Scaife 2018 | 
 <a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/github.svg"></a>
-<a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/tw.svg"></a>
+<a href="https://twitter.com/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/tw.svg"></a>
 <a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener"><img src="/images/fontawesome/yt.svg"></a>
 <a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/id-card.svg"></a>
 <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener"><img class="h1" src="/images/hackerone.png"></a>

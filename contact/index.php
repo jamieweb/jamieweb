@@ -39,7 +39,7 @@
     <hr>
 
     <h2 id="twitter"><img class="two-mar-bottom padding-right-10 vertical-align-middle" width="30px" src="/images/fontawesome/tw.svg">Twitter</h2>
-    <p>I accept open DMs on Twitter via <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">@JamieOnUbuntu</a>.</p>
+    <p>I accept open DMs on Twitter via <a href="https://twitter.com/jamieweb" target="_blank" rel="noopener">@jamieweb</a>.</p>
     <hr>
 
     <h2 id="hackerone"><img class="two-mar-bottom padding-right-10 vertical-align-middle" width="16px" src="/images/hackerone.png">HackerOne</h2>

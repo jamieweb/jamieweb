@@ -143,8 +143,8 @@ O:::::::OOO:::::::O
                 <h4><a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener">GitHub</a></h4>
             </div>
             <div class="sideitem">
-                <a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/tw.svg"></a>
-                <h4><a href="https://twitter.com/JamieOnUbuntu" target="_blank" rel="noopener">Twitter</a></h4>
+                <a href="https://twitter.com/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/tw.svg"></a>
+                <h4><a href="https://twitter.com/jamieweb" target="_blank" rel="noopener">Twitter</a></h4>
             </div>
             <div class="sideitem">
                 <a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener"><img src="/images/fontawesome/yt.svg"></a>
