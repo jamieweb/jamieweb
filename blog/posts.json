@@ -1,6 +1,15 @@
 {
     "blog": {
         "2018": {
+            "secure-public-wifi-access": {
+                "uri": "secure-public-wifi-access",
+                "navtitle": "Using Public Wi-Fi Securely",
+                "title": "Using a Public Wi-Fi Hotspot Securely",
+                "longdesc": "Connecting to hotel Wi-Fi through a Raspberry Pi and forwarding an external VPN connection.",
+                "shortdesc": "Connecting to hotel Wi-Fi through a Raspberry Pi and VPN.",
+                "date": "Tuesday 8th May 2018",
+                "tags": "Security,Guide"
+            },
             "letsencrypt-scts-in-certificates": {
                 "uri": "letsencrypt-scts-in-certificates",
                 "navtitle": "Let's Encrypt SCTs in Certificates",
