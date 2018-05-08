@@ -549,6 +549,10 @@ span.tag-ubuntu {
     margin-bottom: 0px;
 }
 
+.inline {
+    padding-left: 40px;
+}
+
 .display-inline {
     display: inline;
 }
