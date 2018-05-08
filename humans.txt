@@ -2,7 +2,7 @@
 Owner: Jamie Scaife
 Site: https://www.jamieweb.net
 Security Contact: https://www.jamieweb.net/.well-known/security.txt
-Twitter: @JamieOnUbuntu
+Twitter: @jamieweb
 GitHub: /JamieOnUbuntu
 YouTube: /jamie90437x
 Keybase: /JamieOnUbuntu
