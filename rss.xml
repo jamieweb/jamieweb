@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Using a Public Wi-Fi Hotspot Securely</title>
+        <link>https://www.jamieweb.net/blog/secure-public-wifi-access/</link>
+        <description>Connecting to hotel Wi-Fi through a Raspberry Pi and forwarding an external VPN connection.</description>
+        <category>Blog</category>
+        <pubDate>Tue, 8 May 2018</pubDate>
+    </item>
+    <item>
         <title>Let's Encrypt SCTs in Certificates</title>
         <link>https://www.jamieweb.net/blog/letsencrypt-scts-in-certificates/</link>
         <description>Let's Encrypt certificates now have Signed Certificate Timestamps (SCTs) included by default.</description>
