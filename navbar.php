@@ -40,7 +40,6 @@
                         <a href="/downloads/">Downloads</a>
                         <a href="/other/irc/">IRC</a>
                         <a href="/other/pastes/">Pastes</a>
-                        <a href="/other/speedrun-times/">Speedrun Times</a>
                     </h4>
                 </div>
             </li>

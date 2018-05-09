@@ -50,16 +50,6 @@
             <p class="two-mar-top"><b>Plain text snippets.</b></p>
         </div>
     </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
-            <a href="/other/speedrun-times/"><img src="/images/fontawesome/stopwatch.svg"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/speedrun-times/">Speedrun Times</a></h3>
-            <p class="two-mar-top"><b>A list of my speedrun times from 2014/2015.</b></p>
-        </div>
-    </div>
 </div>
 
 <?php include "footer.php" ?>
