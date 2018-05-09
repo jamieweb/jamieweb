@@ -93,7 +93,7 @@ PermitTunnel yes</pre>
     <p>Additionally, you must set access rules in order to ensure that logins are only permitted from certain locations:</p>
     <pre>AllowUsers pi@&lt;your-local-ip-address&gt; pi@192.168.2.2</pre>
     <p>Substitute "&lt;your-local-ip-address&gt;" for the private IP address of your client device. This is the one that you can find from <code>ifconfig</code> (*nix) or <code>ipconfig</code> (Windows) - it most likely begins with "192.168.". Make sure that you use your private IPv4 address, as IPv6 will be disabled in order to help prevent VPN leaks.</p>
-    <p>The 192.168.2.2 address is part of the subnet that will be created later in this guide. If this subnet is in use on your network, you may select another one and adjust your configuration according throughout the rest of the guide.</p>
+    <p>The 192.168.2.2 address is part of the subnet that will be created later in this guide. If this subnet is in use on your network, you may select another one and adjust your configuration accordingly throughout the rest of the guide.</p>
     <h3>d. Disable IPv6</h3>
     <p>As much as <a href="/blog/ipv6-site-upgrade" target="_blank">I like IPv6</a>, in this particular use case, it provides unnecessary complications and security risks. Public Wi-Fi hotspots rarely support IPv6 anyway, so it's not like you're missing out.</p>
     <p>Edit the file <code>/etc/sysctl.conf</code> and set the following values:</p>
