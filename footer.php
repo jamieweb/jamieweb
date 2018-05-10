@@ -4,7 +4,7 @@
 <a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/github.svg"></a>
 <a href="https://twitter.com/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/tw.svg"></a>
 <a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener"><img src="/images/fontawesome/yt.svg"></a>
-<a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/id-card.svg"></a>
+<a href="https://keybase.io/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/id-card.svg"></a>
 <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener"><img class="h1" src="/images/hackerone.png"></a>
 <a href="/rss.xml" target="_blank"><img width="24px" src="/images/fontawesome/rss.svg"></a>
  | <a href="/contact/">Contact Information</a></h5>
