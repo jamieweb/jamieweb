@@ -5,7 +5,7 @@ Security Contact: https://www.jamieweb.net/.well-known/security.txt
 Twitter: @jamieweb
 GitHub: /JamieOnUbuntu
 YouTube: /jamie90437x
-Keybase: /JamieOnUbuntu
+Keybase: /jamieweb
 IRC: Freenode ##jamieweb
 PGP: 7CBB F413 4785 40F6 3045  58F8 5E38 94D8 34B7 98E5
 Location: United Kingdom

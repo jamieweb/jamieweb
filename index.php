@@ -151,8 +151,8 @@ O:::::::OOO:::::::O
                 <h4><a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener">YouTube</a></h4>
             </div>
             <div class="sideitem">
-                <a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/id-card.svg"></a>
-                <h4><a href="https://keybase.io/JamieOnUbuntu" target="_blank" rel="noopener">Keybase</a></h4>
+                <a href="https://keybase.io/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/id-card.svg"></a>
+                <h4><a href="https://keybase.io/jamieweb" target="_blank" rel="noopener">Keybase</a></h4>
             </div>
             <div class="sideitem">
                 <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener"><img class="h1" src="/images/hackerone.png"></a>
