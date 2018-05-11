@@ -147,7 +147,7 @@
 
     <h3 id="tls1.0-tls1.1">TLS 1.0 and TLS 1.1 Enabled</h3>
     <p>The first valid report that I received was from <a href="https://hackerone.com/retr0" target="_blank" rel="noopener">retr0</a>, who raised the issue of having TLS 1.0 and TLS 1.1 enabled on my site.</p>
-    <p>While there isn't currently a direct risk of using these as long as you are using the latest server and client side implementations, they are older protocols and it is good hygene to disable them.</p>
+    <p>While there isn't currently a direct risk of using these as long as you are using the latest server and client side implementations, they are older protocols and it is good hygiene to disable them.</p>
     <p>Before doing this, I assessed the potential compatibility impact by logging the TLS protocol versions in use using an Apache CustomLog:</p>
     <pre>CustomLog ${APACHE_LOG_DIR}/tls.log "%t %h %{SSL_PROTOCOL}x %{SSL_CIPHER}x"</pre>
     <p>I actually wrote an entire blog post about this at the time, please see it <a href="/blog/disabling-tls1.0-tls1.1/" target="_blank">here</a>.</p>
