@@ -442,6 +442,11 @@ span.tag-apple {
     color: white;
 }
 
+span.tag-bug-bounty {
+    background-color: #db0f6f;
+    color: white;
+}
+
 span.tag-chrome {
     background-color: #eec11b;
     color: white;
