@@ -209,7 +209,7 @@ Signature: https://www.jamieweb.net/.well-known/security.txt.sig
 # This file is available identically at these locations:
 # https://www.jamieweb.net/.well-known/security.txt
 # https://www.jamieweb.net/security.txt</pre>
-    <p>Finally, I would like to send a big thanks to Shay, Chris and George and the rest of the team at HackerOne for their amazing support throughout this process!</p>
+    <p>Finally, I would like to send a big thanks to Shay, Chris and George as well as the rest of the team at HackerOne for their amazing support throughout this process!</p>
 </div>
 
 <?php include "footer.php" ?>
