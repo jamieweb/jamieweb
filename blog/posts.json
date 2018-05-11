@@ -1,6 +1,15 @@
 {
     "blog": {
         "2018": {
+            "lauching-a-public-hackerone-program": {
+                "uri": "launching-a-public-hackerone-program",
+                "navtitle": "Launching a HackerOne Program",
+                "title": "Launching a Public HackerOne Security Vulnerability Disclosure Program",
+                "longdesc": "A write-up of launching the public HackerOne security vulnerability disclosure program for JamieWeb.",
+                "shortdesc": "A write-up of launching my HackerOne program.",
+                "date": "Tuesday 8th May 2018",
+                "tags": "Security,Bug Bounty"
+            },
             "secure-public-wifi-access": {
                 "uri": "secure-public-wifi-access",
                 "navtitle": "Using Public Wi-Fi Securely",

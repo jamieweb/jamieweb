@@ -44,7 +44,7 @@
             <p class=\"two-no-mar\">" . $post->date . "</p>
             <p class=\"tags\">\n";
                 foreach(explode(",", $post->tags) as $tag) {
-                    echo "                <b><a href=\"/blog/category/" . strtolower($tag) . "/\"><span class=\"tag-" . strtolower($tag) . "\">" . $tag . "</span></a></b>\n";
+                    echo "                <b><a href=\"/blog/category/" . str_replace(' ', '-', strtolower($tag)) . "/\"><span class=\"tag-" . str_replace(' ', '-', strtolower($tag)) . "\">" . $tag . "</span></a></b>\n";
                 }
                 echo "            </p>\n";
             }
@@ -83,7 +83,7 @@
         <p class=\"two-no-mar\">" . $post->date . "</p>
         <p class=\"tags\">\n";
                     foreach($tags as $tag) {
-                        echo "            <b><a href=\"/blog/category/" . strtolower($tag) . "/\"><span class=\"tag-" . strtolower($tag) . "\">" . $tag . "</span></a></b>\n";
+                        echo "            <b><a href=\"/blog/category/" . str_replace(' ', '-', strtolower($tag)) . "/\"><span class=\"tag-" . str_replace(' ', '-', strtolower($tag)) . "\">" . $tag . "</span></a></b>\n";
                     }
                     echo "        </p>\n";
                 }
