@@ -139,8 +139,8 @@ O:::::::OOO:::::::O
         <hr>
         <div class="centertext sideitems">
             <div class="sideitem">
-                <a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener"><img src="/images/fontawesome/github.svg"></a>
-                <h4><a href="https://github.com/JamieOnUbuntu" target="_blank" rel="noopener">GitHub</a></h4>
+                <a href="https://github.com/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/github.svg"></a>
+                <h4><a href="https://github.com/jamieweb" target="_blank" rel="noopener">GitHub</a></h4>
             </div>
             <div class="sideitem">
                 <a href="https://twitter.com/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/tw.svg"></a>

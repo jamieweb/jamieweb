@@ -63,7 +63,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
 <b>IPv4 Address (Private):</b> http://192.168.0.1/.well-known/security.txt
  <b>IPv6 Address (Public):</b> http://[2001:DB8::1234:1]/.well-known/security.txt
 <b>IPv6 Address (Private):</b> http://[fd00::1234:1]/.well-known/security.txt
-  <b>Version Control Repo:</b> https://github.com/JamieOnUbuntu/results-whitelist/tree/master/.security.txt
+  <b>Version Control Repo:</b> https://github.com/jamieweb/results-whitelist/tree/master/.security.txt
             <b>FTP Server:</b> ftp://ftp.example.com/.security.txt
  <b>Unix-like File System:</b> /.security.txt
    <b>Windows File System:</b> C:\.security.txt

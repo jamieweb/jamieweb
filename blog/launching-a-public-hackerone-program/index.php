@@ -100,7 +100,7 @@
         </tr>
         <tr>
             <td>Source Code</td>
-            <td>https://github.com/JamieOnUbuntu/results-whitelist</td>
+            <td>https://github.com/jamieweb/results-whitelist</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
@@ -117,7 +117,7 @@
             <td>Yes</td>
         </tr>
     </table>
-    <p>My program's security policy and scope are also available on GitHub: <a href="https://github.com/JamieOnUbuntu/config/blob/master/hackerone/policy.md" target="_blank" rel="noopener">Policy</a> | <a href="https://github.com/JamieOnUbuntu/config/blob/master/hackerone/scope.md" target="_blank" rel="noopener">Scope</a></p>
+    <p>My program's security policy and scope are also available on GitHub: <a href="https://github.com/jamieweb/config/blob/master/hackerone/policy.md" target="_blank" rel="noopener">Policy</a> | <a href="https://github.com/jamieweb/config/blob/master/hackerone/scope.md" target="_blank" rel="noopener">Scope</a></p>
     <p>HackerOne programs are bound by a response SLA (service level agreement), which you can customize yourself. This feature is more useful if you are operating your program as a team, in order to ensure that your members are responding to reports within an appropriate time frame. I'm operating my program myself though, and there is nobody else involved, so I've left these as the default.</p>
     <div class="centertext"><img class="radius-8" width="1000px" src="/blog/launching-a-public-hackerone-program/response-sla.png"></div>
 

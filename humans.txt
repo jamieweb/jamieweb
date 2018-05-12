@@ -3,7 +3,7 @@ Owner: Jamie Scaife
 Site: https://www.jamieweb.net
 Security Contact: https://www.jamieweb.net/.well-known/security.txt
 Twitter: @jamieweb
-GitHub: /JamieOnUbuntu
+GitHub: /jamieweb
 YouTube: /jamie90437x
 Keybase: /jamieweb
 IRC: Freenode ##jamieweb
