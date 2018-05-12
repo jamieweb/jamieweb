@@ -34,7 +34,7 @@
     <p class="two-mar-top"><b>An Internet Relay Chat bot that you can control into order to paint pixels on a canvas.</b></p>
 
     <br>
-    <p class="two-mar-top"><b>View additional projects on my GitHub profile: <a href="https://github.com/JamieOnUbuntu" target="_blank">https://github.com/JamieOnUbuntu</a></b></p>
+    <p class="two-mar-top"><b>View additional projects on my GitHub profile: <a href="https://github.com/jamieweb" target="_blank">https://github.com/jamieweb</a></b></p>
 </div>
 
 <?php include "footer.php" ?>

@@ -27,7 +27,7 @@
     <div class="centertext"><img src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png"></div>
     <p>The extension icon also changes to green when you are currently browsing a whitelisted site.</p>
     <div class="centertext"><img src="/projects/chrome-site-whitelist-extension/extension-icon-green.png"></div>
-    <p>All code and further details are available on the GitHub respository: <a href="https://github.com/JamieOnUbuntu/results-whitelist/" target="_blank" rel="noopener">https://github.com/JamieOnUbuntu/results-whitelist/</a></p>
+    <p>All code and further details are available on the GitHub respository: <a href="https://github.com/jamieweb/results-whitelist/" target="_blank" rel="noopener">https://github.com/jamieweb/results-whitelist/</a></p>
     <h2>Downloading and Installing:</h2>
     <p>I am considering releasing the extension on the Google Chrome Web Store once it is in a more finished state and has been tested thoroughly.</p>
     <p>For the mean time, you can install it manually:</p>
@@ -35,8 +35,8 @@
         <div class="ext-l-1">
             <li><p><b>Download the ZIP from GitHub and extract the contained folder.</b></p>
                 <ul>
-                    <li><p>GitHub Repo:<br/><a href="https://github.com/JamieOnUbuntu/results-whitelist/" target="_blank" rel="noopener">https://github.com/JamieOnUbuntu/results-whitelist/</a></p></li>
-                    <li><p>Direct Link:<br/><a href="https://github.com/JamieOnUbuntu/results-whitelist/archive/master.zip" target="_blank" rel="noopener">https://github.com/JamieOnUbuntu/results-whitelist/archive/master.zip</a></p></li>
+                    <li><p>GitHub Repo:<br/><a href="https://github.com/jamieweb/results-whitelist/" target="_blank" rel="noopener">https://github.com/jamieweb/results-whitelist/</a></p></li>
+                    <li><p>Direct Link:<br/><a href="https://github.com/jamieweb/results-whitelist/archive/master.zip" target="_blank" rel="noopener">https://github.com/jamieweb/results-whitelist/archive/master.zip</a></p></li>
                 </ul>
             </li>
         </div>
