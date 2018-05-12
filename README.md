@@ -56,7 +56,7 @@ Historic:
     Malicious links overview/spamtraps
     Link integrity
     KeyChest
-    JamieWeb status page, like status.io
+    JamieWeb status page, like status.io (Use gh-pages?)
     Tor IPv6
     Improved/tidied footer, as well as next/previous blog post links when on /blog/*
     <noscript> tag neglect
