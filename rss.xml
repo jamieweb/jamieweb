@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Launching a Public HackerOne Security Vulnerability Disclosure Program</title>
+        <link>https://www.jamieweb.net/blog/launching-a-public-hackerone-program/</link>
+        <description>A write-up of launching the public HackerOne security vulnerability disclosure program for JamieWeb.</description>
+        <category>Blog</category>
+        <pubDate>Fri, 11 May 2018</pubDate>
+    </item>
+    <item>
         <title>Using a Public Wi-Fi Hotspot Securely</title>
         <link>https://www.jamieweb.net/blog/secure-public-wifi-access/</link>
         <description>Connecting to hotel Wi-Fi through a Raspberry Pi and forwarding an external VPN connection.</description>

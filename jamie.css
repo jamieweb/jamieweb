@@ -694,11 +694,11 @@ th.h1-scope-in-scope {
     margin-bottom: 5px;
     width: 275px;
     height: 275px;
-    background: url(/images/identicon.png);
+    background: url(/images/jamieweb.png);
 }
 
 .gravityradio:checked + .gravitylabel {
-    background: url(/images/gravity.gif);
+    background: url(/images/jamieweb-gravity.gif);
 }
 
 .font-twenty-three {
