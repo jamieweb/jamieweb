@@ -23,16 +23,6 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/downloads/"><img src="/images/fontawesome/download.svg"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/downloads/">Downloads</a></h3>
-            <p class="two-mar-top"><b>Links to download various useful files.</b></p>
-        </div>
-    </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
             <a href="/other/irc/"><img src="/images/fontawesome/comments.svg"></a>
         </div>
         <div class="iconlist">
@@ -41,15 +31,6 @@
         </div>
     </div>
 
-    <div class="iconparent">
-        <div class="iconimg">
-            <a href="/other/pastes/"><img src="/images/fontawesome/paste.svg"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/other/pastes/">Pastes</a></h3>
-            <p class="two-mar-top"><b>Plain text snippets.</b></p>
-        </div>
-    </div>
 </div>
 
 <?php include "footer.php" ?>
