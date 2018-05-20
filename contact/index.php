@@ -46,6 +46,7 @@
     <p>I have a public HackerOne security vulnerability disclosure program for my website. If you would like to search for vulnerabilities or report one, please view the program here: <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener">https://hackerone.com/jamieweb</a></p>
     <p>Valid submissions will be thanked publicly on my HackerOne program page.</p>
     <p><b>Please note that my HackerOne program does not provide bounties/rewards as JamieWeb is only a small personal project.</b></p>
+    <p>If you do not wish to use HackerOne to report a security vulnerability, please feel free to contact me using any other method.</p>
     <p>Thank you!</p>
 
     <hr>
