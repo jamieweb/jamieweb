@@ -75,14 +75,13 @@ $ sudo find hl -type d -exec chmod +x {} +</pre>
     <p>This will mark your entire hl/ directory as read only and owned by root, but then give back execute permissions to directories only in order to allow directory listings, which are required for the game to run. If you would like to allow saving and loading, you must also allow writing to the valve/save/ folder:</p>
     <pre>$ sudo chmod -R ug+w hl/valve/save
 $ sudo chown -R user:group hl/valve/save</pre>
-    <p>In the second command above, replace "user" and "group" with whatever user and group you are running the game under. By default this will just be your normal username, but if you're using the network whitelisting configuration from below, make sure to use the group you created there. If you're using NGHL, the "save" folder is capitalised (SAVE).</p>
+    <p>In the second command above, replace "user" and "group" with whatever user and group you are running the game under. By default this will just be your normal username, but if you're using the network whitelisting configuration from below, make sure to use the group you created there.</p>
     <p>Keep in mind that Half-Life needs write access in order to load certain saves, which seems to be because it creates various temporary files containing other data. The client behaves extremely weirdly when it doesn't have write access to saves, often losing player coordinates and sometimes loading a completely different save to the one you specified. Read more <a href="https://developer.valvesoftware.com/wiki/Save_Game_Files" target="_blank" rel="noopener">here</a>.</p>
     <p>If you have any mods installed such as "bshift" or "gearbox", you must also configure the correct save folder permissions there as well.</p>
 
-
     <h2 id="dlls">Using Separate DLLs</h2>
     <p>You can use different client and server DLLs for different modes of play. For example, you can use the DLLs from the latest Steam build for online play, then use the older Bunnymod DLLs for offline play. The latest Steam DLLs are the most up-to-date available, so they should theoretically be the most secure to use.</p>
-    <p>This applies mostly to Windows DLL files since most mods use them, for example NGHL or Bunnymod. If you happen to have modded Linux .so files or modded macOS .dylib files, you can do this for them too.</p>
+    <p>This applies mostly to Windows DLL files since most mods use them. If you happen to have modded Linux .so files or modded macOS .dylib files, you can do this for them too.</p>
     <p>In order to add a new game version, create a new folder in your Half-Life directory, for example "olddlls". Inside this new folder, create the folders "cl_dlls" and "dlls".</p>
     <p>Now you can put into the DLL folders whatever DLLs you would like to use for this version. For example, if this version is to use for offline play, you could use out of date, vulnerable DLLs from a mod or older version of the game.</p>
     <p>"client.dll" needs to be put into the "cl_dlls" folder, and "hl.dll" needs to go into the "dlls" folder. You do not need to copy across "GameUI.dll" or "particleman.dll", since the game will load these from the default valve directory.</p>
@@ -121,7 +120,6 @@ type "singleplayer_only"</pre>
     <p>You should then edit the numbers of the other entries to make sure that they are in order. This isn't mandatory, but it's best to keep the file clean and properly ordered.</p>
     <p>This just prevents you from accidentally opening the server browser and connecting to a server, you can still connect to a server using the console if you really want to.</p>
 
-
     <h2 id="network">Restricting Network Access</h2>
     <p>By restricting network access to Half-Life, you can prevent it from communicating with any servers except for ones that you have whitelisted. This makes it difficult to find servers, however if you only play on a limited number of known, trusted servers it is a good solution.</p>
     <p>The configuration below is for Linux systems, however I'm sure that the same could be achieved using Windows Firewall or other tools for your operating system.</p>
@@ -138,8 +136,7 @@ iptables -I OUTPUT 1 -m owner --gid-owner block-net -j DROP</pre>
     <p>You can then allow access to certain whitelisted IP addresses. For example, add the following to the file in order to allow access to the master servers which are used to display the server list in the server browser:</p>
 <pre>iptables -I OUTPUT 1 -d 208.64.200.117 -m owner --gid-owner block-net -j ACCEPT
 iptables -I OUTPUT 1 -d 208.64.200.118 -m owner --gid-owner block-net -j ACCEPT</pre>
-    <p>"208.64.200.117" and "208.64.200.118" are the official Half-Life master servers run by Valve. There are also third-party master servers, such as "188.40.40.201", which is what New Gauge Half-Life uses.</p>
-    <pre>iptables -I OUTPUT 1 -d 188.40.40.201 -m owner --gid-owner block-net -j ACCEPT</pre>
+    <p>"208.64.200.117" and "208.64.200.118" are the official Half-Life master servers run by Valve.</p>
     <p><b>The server browser will still show an empty list since it only shows servers that it can reach directly.</b> Even though your client is able to reach the master servers, it can not reach any of the servers that the master servers return. Once you have whitelisted other trusted servers, they will appear in the server browser.</p>
     <p>Since this is not particularly user-friendly, I suggest finding servers using other sources, then whitelisting them manually using the file above before playing.</p>
     <p>You can also specify the port for whitelisting, as shown below with an example server IP and default port:</p>
