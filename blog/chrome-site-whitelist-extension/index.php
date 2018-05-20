@@ -21,7 +21,7 @@
     <h1>Chrome Site Whitelist Extension</h1>
     <hr>
     <p><b>Tuesday 7th March 2017</b></p>
-    <p>Please see the associated <a href="/projects/chrome-site-whitelist-extension/" target="_blank">project page</a> for download and installation instructions. All code, version history and further information can be found on the <a href="https://github.com/JamieOnUbuntu/results-whitelist/" target="_blank" rel="noopener">GitHub repository</a>.</p>
+    <p>Please see the associated <a href="/projects/chrome-site-whitelist-extension/" target="_blank">project page</a> for download and installation instructions. All code, version history and further information can be found on the <a href="https://github.com/jamieweb/results-whitelist/" target="_blank" rel="noopener">GitHub repository</a>.</p>
     <div class="centertext"><p>-<b><u>The project is early in development so some features are not yet working properly or tested thoroughly.</u></b>-</p></div>
     <p>I recently starting developing a browser extension for Google Chrome. It allows the user to set a list of whitelisted sites that will then be highlighted in Google Search results. The extension icon also changes to green when you are currently browsing a whitelisted site.</p>
     <p>It is designed to be an anti-typosquatting tool and to highlight known trusted sites.</p>
