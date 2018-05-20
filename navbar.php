@@ -37,9 +37,7 @@
             <h5><a href="/other/">Other</a></h5>
                 <div class="dropdown-content">
                     <h4>
-                        <a href="/downloads/">Downloads</a>
                         <a href="/other/irc/">IRC</a>
-                        <a href="/other/pastes/">Pastes</a>
                     </h4>
                 </div>
             </li>
