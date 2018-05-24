@@ -66,6 +66,7 @@ Historic:
     Homepage rework (see jamieweb/jamieweb-dev) - first basic revision now live
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
     Geodiverse hosting?
+    Improved tag function
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
