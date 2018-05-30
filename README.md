@@ -67,6 +67,7 @@ Historic:
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
     Geodiverse hosting?
     Improved tag function
+    Change favicon to identicon
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
