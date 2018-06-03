@@ -19,10 +19,8 @@
 
 <div class="body">
     <div class="content redlink">
-        <h1>Jamie Scaife - United Kingdom</h1>
+        <h1>Jamie Scaife - United Kingdom &#x1f1ec;&#x1f1e7;</h1>
         <hr>
-
-        <h1 class="no-mar-bottom">About</h1>
         <h3 class="no-mar-bottom intro-mar-top">No Ads, No Tracking, No JavaScript</h3>
         <p class="two-mar-top">This website does not have any adverts, tracking or other internet annoyances.<br/>It's also 100% JavaScript free.</p>
         <h3 class="no-mar-bottom">Tor Hidden Services</h3>
@@ -32,102 +30,8 @@
             <li><p class="onionlink">Onion v3: <a class="two-mar-left" href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></p></li>
         </ul>
         <hr>
-
-        <h1 class="no-mar-bottom">Featured Content</h1>
-        <div class="featured">
-            <a href="/projects/computing-stats/">
-                <h3 class="no-mar-bottom">Raspberry Pi + BOINC Stats</h3>
-                <p class="two-no-mar"><b>Stats from my RPi cluster + BOINC.</b></p>
-                <p class="two-mar-top">Updated Every 10 Minutes</p>
-            </a>
-        </div>
-        <div class="featured">
-            <a href="/projects/block-exploitable-content/">
-                <h3 class="no-mar-bottom">Exploitable Web Content</h3>
-                <p class="two-no-mar"><b>Test whether exploitable web content is blocked in your web browser.</b></p>
-            </a>
-        </div>
-        <div class="featured">
-            <a href="/blog/namecoin-bit-domain/">
-                <h3 class="no-mar-bottom">Namecoin .bit Domain</h3>
-                <p class="two-no-mar"><b>Guide to registering a Namecoin .bit domain.</b></p>
-                <p class="two-mar-top">Tuesday 16th January 2017</p>
-            </a>
-        </div>
-        <div class="featured">
-            <a href="/blog/onionv3-hidden-service/">
-                <h3 class="no-mar-bottom">Tor Onion v3 Hidden Service</h3>
-                <p class="two-no-mar"><b>Testing the new Onion v3 Hidden Services.</b></p>
-                <p class="two-mar-top">Saturday 21st October 2017</p>
-            </a>
-        </div>
-        <hr>
-        <div class="display-flex">
-            <div class="menuitem">
-                <a href="/blog/">
-                    <h1>Blog</h1>
-                    <pre>BBBBBBBBBBBBBBBBB   
-B::::::::::::::::B  
-B::::::BBBBBB:::::B 
-BB:::::B     B:::::B
-  B::::B     B:::::B
-  B::::B     B:::::B
-  B::::BBBBBB:::::B 
-  B:::::::::::::BB  
-  B::::BBBBBB:::::B 
-  B::::B     B:::::B
-  B::::B     B:::::B
-  B::::B     B:::::B
-BB:::::BBBBBB::::::B
-B:::::::::::::::::B 
-B::::::::::::::::B  
-BBBBBBBBBBBBBBBBB   </pre>
-                </a>
-            </div>
-
-            <div class="menuitem flex-grow-1 padding-8-rl">
-                <a href="/projects/">
-                    <h1>Projects</h1>
-                    <pre>PPPPPPPPPPPPPPPPP   
-P::::::::::::::::P  
-P::::::PPPPPP:::::P 
-PP:::::P     P:::::P
-  P::::P     P:::::P
-  P::::P     P:::::P
-  P::::PPPPPP:::::P 
-  P:::::::::::::PP  
-  P::::PPPPPPPPP    
-  P::::P            
-  P::::P            
-  P::::P            
-PP::::::PP          
-P::::::::P          
-P::::::::P          
-PPPPPPPPPP          </pre>
-                </a>
-            </div>
-
-            <div class="menuitem">
-                <a href="/other/">
-                    <h1>Other</h1>
-                    <pre>     OOOOOOOOO     
-   OO:::::::::OO   
- OO:::::::::::::OO 
-O:::::::OOO:::::::O
-O::::::O   O::::::O
-O:::::O     O:::::O
-O:::::O     O:::::O
-O:::::O     O:::::O
-O:::::O     O:::::O
-O:::::O     O:::::O
-O:::::O     O:::::O
-O::::::O   O::::::O
-O:::::::OOO:::::::O
- OO:::::::::::::OO 
-   OO:::::::::OO   
-     OOOOOOOOO     </pre>
-                </a>
-            </div>
+        <div class="recent-posts">
+<?php bloglist("home"); ?>
         </div>
     </div>
 
@@ -164,9 +68,27 @@ O:::::::OOO:::::::O
             </div>
         </div>
         <hr>
-        <h2 class="centertext">Recent Posts</h2>
+        <h2 class="centertext">Popular Pages</h2>
         <div class="redlink tops">
-<?php bloglist("recents"); ?>
+            <a href="/projects/computing-stats/">
+                <h4 class="no-mar-bottom">Raspberry Pi + BOINC Stats</h4>
+                <h5 class="two-no-mar">Stats from my RPi cluster + BOINC.</h5>
+                <p class="two-mar-top">Updated Every 10 Minutes</p>
+            </a>
+            <a href="/projects/block-exploitable-content/">
+                <h4 class="no-mar-bottom">Exploitable Web Content</h4>
+                <h5 class="two-no-mar">Test whether exploitable web content is blocked in your web browser.</h5>
+            </a>
+            <a href="/blog/onionv3-hidden-service/">
+                <h4 class="no-mar-bottom">Tor Onion v3 Hidden Service</h4>
+                <h5 class="two-no-mar">Testing the new Onion v3 Hidden Services.</h5>
+                <p class="two-mar-top">Saturday 21st October 2017</p>
+            </a>
+            <a href="/blog/namecoin-bit-domain/">
+                <h4 class="no-mar-bottom">Namecoin .bit Domain</h4>
+                <h5 class="two-no-mar">Guide to registering a Namecoin .bit domain.</h5>
+                <p class="two-mar-top">Tuesday 16th January 2018</p>
+            </a>
         </div>
     </div>
 </div>
