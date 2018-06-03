@@ -14,7 +14,7 @@
         foreach($bloglist->blog as $year) {
             foreach($year as $post) {
                 $homeCount++;
-                echo "\n        <div class=\"recent-post clearboth\">
+                echo "<div class=\"recent-post clearboth\">
             <h2 class=\"no-mar-bottom\"><a href=\"/blog/" . $post->uri . "/\">" . $post->title . "</a></h2>
             <p class=\"two-mar-top recents-date\">" . $post->date . "</p>
             <p class=\"snippet\">" . $post->snippet . " <b><u><i><a href=\"/blog/" . $post->uri . "/\"><span class=\"continue-reading\">Continue reading...</span></a></i></u></b></p>";
@@ -23,7 +23,7 @@
                 if($homeCount >= 4) {
                     break 2;
                 }
-                echo "<hr>";
+                echo "<hr>\n        ";
             }
         }
     }
