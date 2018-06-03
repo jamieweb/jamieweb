@@ -8,7 +8,8 @@
                 "longdesc": "A write-up of launching the public HackerOne security vulnerability disclosure program for JamieWeb.",
                 "shortdesc": "A write-up of launching my HackerOne program.",
                 "date": "Friday 11th May 2018",
-                "tags": "Security,Bug Bounty"
+                "tags": "Security,Bug Bounty",
+                "snippet": "Last month, I launched a public HackerOne security vulnerability disclosure program for my website. I've been working on this for a while, and I'm now very happy to have launched the program publicly! If you're a hacker and you'd like to have a go, the program is accessible on HackerOne here: <b><a href=\"https://hackerone.com/jamieweb\" target=\"_blank\" rel=\"noopener\">https://hackerone.com/jamieweb</a></b>"
             },
             "secure-public-wifi-access": {
                 "uri": "secure-public-wifi-access",
@@ -17,7 +18,8 @@
                 "longdesc": "Connecting to hotel Wi-Fi through a Raspberry Pi and forwarding an external VPN connection.",
                 "shortdesc": "Connecting to hotel Wi-Fi through a Raspberry Pi and VPN.",
                 "date": "Tuesday 8th May 2018",
-                "tags": "Security,Guide"
+                "tags": "Security,Guide",
+                "snippet": "<u>The problem:</u> You want to connect to the internet in a hotel or coffee shop, but don't want to expose your laptop to the insecure, unencrypted Wi-Fi network. <u>A solution:</u> Connect to the internet through a Raspberry Pi, and have it forward a secure VPN connection through to your laptop."
             },
             "letsencrypt-scts-in-certificates": {
                 "uri": "letsencrypt-scts-in-certificates",
@@ -26,7 +28,8 @@
                 "longdesc": "Let's Encrypt certificates now have Signed Certificate Timestamps (SCTs) included by default.",
                 "shortdesc": "LE certificates now have embedded SCTs by default.",
                 "date": "Wednesday 4th April 2018",
-                "tags": "Security,TLS,Chrome"
+                "tags": "Security,TLS,Chrome",
+                "snippet": "As of 29th March 2018, all certificates issued by Let's Encrypt now include a Signed Certificate Timestamp (SCT) embedded in the certificate in the form of an <b><a href=\"https://tools.ietf.org/html/rfc5280#section-4.2\" target=\"_blank\" rel=\"noopener\">X.509 v3 extension</a></b>."
             },
             "disabling-tls1.0-tls1.1": {
                 "uri": "disabling-tls1.0-tls1.1",
@@ -35,7 +38,8 @@
                 "longdesc": "Assessing browser compatibility and disabling older TLS protocol versions.",
                 "shortdesc": "Assessing browser compatibility and disabling older TLS protocol versions.",
                 "date": "Tuesday 13th March 2018",
-                "tags": "Security,TLS,Apache"
+                "tags": "Security,TLS,Apache",
+                "snippet": "I recently received a security report to my <b><a href=\"/contact/#hackerone\" target=\"_blank\">HackerOne program</a></b> from <b><a href=\"https://hackerone.com/retr0\" target=\"_blank\" rel=\"noopener\">retr0</a></b>, who suggested that I disable TLS 1.0 on my web server. At first I was reluctant as this breaks compatibility with many older browsers, however after monitoring the TLS protocol versions in use by users, I've now disabled both TLS 1.0 and TLS 1.1, meaning that only TLS 1.2 can be used."
             },
             "namecoin-bit-domain": {
                 "uri": "namecoin-bit-domain",
@@ -44,7 +48,7 @@
                 "longdesc": "Using Namecoin Core to register a .bit domain and setting up ncdns.",
                 "shortdesc": "Using Namecoin Core to register a .bit domain and setting up ncdns.",
                 "date": "Tuesday 16th January 2018",
-                "tags": "Security,Namecoin"
+                "tags": "Security,Namecoin,Guide"
             },
             "onionv3-vanity-address": {
                 "uri": "onionv3-vanity-address",
