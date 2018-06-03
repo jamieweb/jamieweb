@@ -110,7 +110,8 @@
                 }
             }
         }
-        echo "    </div>\n";
+        echo "    </div>
+</div>\n\n";
         include_once "footer.php";
         echo "\n\n</body>
 
