@@ -61,12 +61,9 @@ Historic:
     Improved/tidied footer, as well as next/previous blog post links when on /blog/*
     <noscript> tag neglect
     JamieWeb organisation
-    /security page with HackerOne policy
     Apache security headers on a per-page basis blog post/guide
-    Homepage rework (see jamieweb/jamieweb-dev) - first basic revision now live
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
     Geodiverse hosting?
-    Improved tag function
     Change favicon to identicon
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
@@ -75,6 +72,9 @@ Historic:
     http2.jamieweb.net (HTTP/2 Test Page)
     brotli.jamieweb.net (Brotli Test Page[?])
 
+    ✓ /security - Redirect to /contact#hackerone
+    ✓ Homepage rework
+    ✓ Improved tag function
     ✓ Add IRC to other/
     ✓ rel="noopener" - All links to different origins now have rel="noopener"
     ✓ Vulnerability disclosure - HackerOne program is now live! https://hackerone.com/jamieweb
