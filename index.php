@@ -30,9 +30,7 @@
             <li><p class="onionlink">Onion v3: <a class="two-mar-left" href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></p></li>
         </ul>
         <hr>
-        <div class="recent-posts">
-<?php bloglist("home"); ?>
-        </div>
+        <div class="recent-posts"><?php bloglist("home"); ?></div>
     </div>
 
     <div class="sidebar">
