@@ -118,6 +118,14 @@ div.content {
     width: 675px;
 }
 
+div.recent-posts h2,div.recent-posts p.tags,p.recents-date {
+    text-align: center;
+}
+
+div.recents-tags p {
+    display: inline-block;
+}
+
 div.sidebar {
     float: right;
     width: 275px;
@@ -386,6 +394,10 @@ p.onionlink a {
     padding: 3.5px;
     background-color: #e0e0e0;
     border: 1px solid #000000;
+}
+
+p.recents-date {
+    margin-bottom: 11px;
 }
 
 p.tags {
