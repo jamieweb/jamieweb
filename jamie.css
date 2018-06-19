@@ -4,8 +4,18 @@
 }
 
 @media (max-width: 1050px) {
+    div.body {
+        width: 100%;
+        box-sizing: border-box;
+    }
     nav {
         width: 1050px;
+    }
+}
+
+@media (min-width: 1050px) {
+    div.body {
+        width: 1000px;
     }
 }
 
@@ -108,7 +118,6 @@ div.navbar li.dropdown:hover div.dropdown-content {
 
 div.body {
     margin: 0 auto;
-    width: 1000px;
     padding: 25px;
     padding-top: 0px;
 }
