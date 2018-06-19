@@ -387,6 +387,14 @@ code {
     border-radius: 2px;
 }
 
+table.computing-stats {
+    border-spacing: 0px;
+}
+
+table.computing-stats td {
+    padding: 0px;
+}
+
 table.centertable {
     margin-left: auto;
     margin-right: auto;
