@@ -59,7 +59,7 @@
     <h1 class="info">Current Project: <span class="currentproject">Einstein@Home</span></h1>
     <p>The cluster is currently running <a href="https://einsteinathome.org/" target="_blank" rel="noopener">Einstein@Home</a>, which is a distributed computing project that searches for gravitational waves using data from the LIGO gravitational wave detector.</p>
 
-    <table width="100%">
+    <table width="100%" class="computing-stats">
         <tr>
             <td width="50%"><h1 class="info">Rosetta@Home Stats</h1>
             <p class="info">Total Earned Credits: <b>var-rosettacredit</b></p>
