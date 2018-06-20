@@ -4,18 +4,24 @@
 }
 
 @media (max-width: 1050px) {
+    nav {
+        width: 1050px;
+    }
     div.body {
         width: 100%;
         box-sizing: border-box;
     }
-    nav {
-        width: 1050px;
+    div.content {
+        width: calc(100% - 300px);
     }
 }
 
 @media (min-width: 1050px) {
     div.body {
         width: 1000px;
+    }
+    div.content {
+        width: 675px;
     }
 }
 
@@ -124,7 +130,6 @@ div.body {
 
 div.content {
     float: left;
-    width: 675px;
 }
 
 div.recent-posts h2,div.recent-posts p.tags,p.recents-date {
