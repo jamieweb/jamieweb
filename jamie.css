@@ -395,6 +395,10 @@ table.computing-stats td {
     padding: 0px;
 }
 
+table.computing-stats td.stats-padding-top {
+    padding-top: 15px
+}
+
 table.centertable {
     margin-left: auto;
     margin-right: auto;
@@ -697,10 +701,6 @@ th.h1-scope-in-scope {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.stats-padding-top {
-    padding-top: 20px;
 }
 
 .ewcbt-mar {
