@@ -17,6 +17,9 @@
     div.content {
         width: calc(100% - 300px);
     }
+    footer {
+        width: calc(100% - 50px);
+    }
 }
 
 @media (min-width: 1050px) {
@@ -28,6 +31,9 @@
     }
     div.content {
         width: 675px;
+    }
+    footer {
+        width: 1000px;
     }
 }
 
@@ -451,7 +457,6 @@ p.tags span {
 footer {
     clear: both;
     margin: 0 auto;
-    width: 1000px;
     text-align: center;
 }
 
