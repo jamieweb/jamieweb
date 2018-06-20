@@ -3,9 +3,12 @@
     src: url("/fonts/opensans/OpenSans-Regular.ttf");
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1049px) {
     nav {
-        width: 1050px;
+        width: 100%;
+    }
+    div.navbar {
+        width: calc(100% - 50px);
     }
     div.body {
         width: 100%;
@@ -17,6 +20,9 @@
 }
 
 @media (min-width: 1050px) {
+    div.navbar {
+        width: 1000px;
+    }
     div.body {
         width: 1000px;
     }
@@ -60,7 +66,6 @@ nav a:visited {
 div.navbar {
     margin: 0 auto;
     height: 51px;
-    width: 1000px;
 }
 
 div.navbar h5,div.navbar h4 {
