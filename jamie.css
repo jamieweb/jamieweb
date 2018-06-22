@@ -20,6 +20,9 @@
     footer {
         width: calc(100% - 50px);
     }
+    div.ewcbt-info {
+        width: calc(100% - 350px);
+    }
 }
 
 @media (min-width: 1050px) {
@@ -34,6 +37,9 @@
     }
     footer {
         width: 1000px;
+    }
+    div.ewcbt-info {
+        width: 650px;
     }
 }
 
@@ -306,7 +312,6 @@ div.ewcbt-redgreen {
 }
 
 div.ewcbt-info {
-    width: 650px;
     float: right;
 }
 
