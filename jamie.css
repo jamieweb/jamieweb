@@ -20,6 +20,9 @@
     footer {
         width: calc(100% - 50px);
     }
+    img[width="1000px"] {
+        width: 100%;
+    }
     div.ewcbt-info {
         width: calc(100% - 350px);
     }
