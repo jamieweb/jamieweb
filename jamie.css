@@ -434,6 +434,23 @@ table.irc tr td {
     padding: 0px;
 }
 
+ul.ipv6-ipv4-test li {
+    margin: 19.920px 0px;
+    font-fize: 1.5em;
+    font-weight: bold;
+}
+
+ul.ipv6-ipv4-test span {
+    color: white;
+    background-color: crimson;
+    padding: 4px 5px 0px;
+}
+
+span.ipv6-test:after, span.ipv4-test:after {
+    background-color: crimson;
+    content: "No";
+}
+
 p.onionlink a {
     font-family: monospace;
     padding: 3.5px;
