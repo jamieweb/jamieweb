@@ -24,9 +24,6 @@
     <h3 class="no-mar-bottom"><a href="/projects/computing-stats/">Raspberry Pi + BOINC Stats</a></h3>
     <p class="two-mar-top"><b>Stats from my Raspberry Pi Cluster and BOINC distributed computing.</b></p>
 
-    <h3 class="no-mar-bottom"><a href="/projects/block-exploitable-content/">Exploitable Web Content Blocking Test</a></h3>
-    <p class="two-mar-top"><b>Test whether exploitable web content is blocked in your web browser.</b></p>
-
     <h3 class="no-mar-bottom"><a href="/projects/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a></h3>
     <p class="two-mar-top"><b>Chrome extension that highlights links on Google/Reddit that have been whitelisted by the user.</b></p>
 
