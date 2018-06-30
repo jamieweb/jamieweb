@@ -66,6 +66,7 @@ Historic:
     Geodiverse hosting?
     Change favicon to identicon
     OpenPGP keyserver? keyserver.jamieweb.net
+    Travis-CI for website/build integrity checking
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
