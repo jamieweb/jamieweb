@@ -73,8 +73,8 @@
                 <h5 class="two-no-mar">Stats from my RPi cluster + BOINC.</h5>
                 <p class="two-mar-top">Updated Every 10 Minutes</p>
             </a>
-            <a href="/projects/block-exploitable-content/">
-                <h4 class="no-mar-bottom">Exploitable Web Content</h4>
+            <a href="/tools/exploitable-web-content-blocking-test/">
+                <h4 class="no-mar-bottom">Exploitable Web Content Blocking Test</h4>
                 <h5 class="two-no-mar">Test whether exploitable web content is blocked in your web browser.</h5>
             </a>
             <a href="/blog/onionv3-hidden-service/">
