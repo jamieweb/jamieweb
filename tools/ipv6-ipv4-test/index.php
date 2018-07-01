@@ -32,7 +32,7 @@
     <p>I operate two additional subdomains, ipv4.jamieweb.net and ipv6.jamieweb.net. These are only accessible over their corresponding IP versions, and just host simple pages in order to test your connection.</p>
     <p>This page will try to load some CSS from each of the test subdomains. If your browser is able to connect, the style will load and be applied, which will change the text above to "Yes" in green from the default which is "No" in red.</p>
     <h2>API</h2>
-    <p>I am working on setting up a basic API in order to check your connection, the details will be available here once complete.</p>
+    <p>I am looking into setting up a basic API in order to check your connection, the details will be available here once complete.</p>
 </div>
 
 <?php include "footer.php" ?>
