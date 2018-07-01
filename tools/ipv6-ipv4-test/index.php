@@ -20,7 +20,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>IPv6 / IPv4 Connection Test</h1>
+    <h1>IPv6 / IPv4 Connection Test <sub class="two-mar-left"><sup class="two-mar-left"><sup>[Beta]</sup></sup></sub></h1>
     <hr>
     <p>This page will allow you to check whether you have a working IPv6 and IPv4 internet connection.</p>
     <ul class="ipv6-ipv4-test">
