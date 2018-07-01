@@ -1,0 +1,4 @@
+language: php
+php:
+  - '7.2'
+script: chmod +x build.sh && ./build.sh
