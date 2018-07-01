@@ -65,6 +65,7 @@ Historic:
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
     Geodiverse hosting?
     Change favicon to identicon
+    New full-width footer
     OpenPGP keyserver? keyserver.jamieweb.net
     Travis-CI for website/build integrity checking
     
