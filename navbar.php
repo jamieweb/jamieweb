@@ -16,9 +16,17 @@
                 <div class="dropdown-content">
                     <h4>
                         <a href="/projects/computing-stats/">Computing Stats</a>
-                        <a href="/projects/block-exploitable-content/">Exploitable Web Content</a>
                         <a href="/projects/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a>
                         <a href="/projects/irc-drawing-bot/">IRC Drawing Bot</a>
+                    </h4>
+                </div>
+            </li>
+            <li class="dropdown">
+                <h5><a href="/tools">Tools</a></h5>
+                <div class="dropdown-content">
+                    <h4>
+                        <a href="/tools/exploitable-web-content-blocking-test">Exploitable Web Content Blocking Test</a>
+                        <a href="/tools/ipv6-ipv4-test">IPv6 / IPv4 Test</a>
                     </h4>
                 </div>
             </li>
