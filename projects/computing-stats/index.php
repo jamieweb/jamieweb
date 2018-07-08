@@ -73,7 +73,7 @@
         </tr>
         <tr>
             <td width="50%" class="stats-padding-top"><h1 class="info">Bitcoin Node Stats</h1>
-            <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.earn.com/nodes/bitcoin.jamieweb.net-8333/" target="_blank" rel="noopener">https://bitnodes.earn.com/nodes/bitcoin.jamieweb.net-8333/</a></b></p>
+            <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.earn.com/nodes/bitcoin.jamieweb.net-8333/" target="_blank" rel="noopener">https://bitnodes.earn.com/nodes/212.71.252.184-8333/</a></b></p>
             <p class="info">Total Running Time: <b>var-bitcoinnoderuntime days</b></p></td>
         </tr>
     </table><br>
