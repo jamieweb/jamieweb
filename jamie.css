@@ -160,6 +160,19 @@ div.recents-tags p {
     display: inline-block;
 }
 
+div.view-all-button {
+    width: 200px;
+    margin: 20px auto;
+    padding: 3px;
+    border-radius: 3px;
+    color: white;
+    background-color: #59a2c7;
+}
+
+div.view-all-button:hover h3 {
+    text-decoration: underline;
+}
+
 div.sidebar {
     float: right;
     width: 275px;

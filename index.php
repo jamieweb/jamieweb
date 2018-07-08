@@ -31,6 +31,12 @@
         </ul>
         <hr>
         <div class="recent-posts"><?php bloglist("home"); ?></div>
+        <hr>
+        <a href="/blog/">
+            <div class="view-all-button centertext">
+                <h3 class="no-mar-top no-mar-bottom">View All Posts</h3>
+            </div>
+        </a>
     </div>
 
     <div class="sidebar">
