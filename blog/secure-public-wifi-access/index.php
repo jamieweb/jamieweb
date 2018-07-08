@@ -116,7 +116,7 @@ net.ipv6.conf.eth0.disable_ipv6 = 1</pre>
     <p>The first time you start a VNC desktop, it will ask you to set a password. This password really does not matter, as it will not be used for authentication in this setup - the SSH tunnel handles this instead.</p>
     <h3>b. Configure the SSH Tunnel</h3>
     <p>On your client device, you can start an SSH tunnel connection to your Pi with the following command:</p>
-    <pre>$ ssh -e none -x -L 5902:127.0.0.1:2903 pi@&lt;your-pi-ip-address&gt;</pre>
+    <pre>$ ssh -e none -x -L 5902:127.0.0.1:5903 pi@&lt;your-pi-ip-address&gt;</pre>
     <p>Syntax explanation:</p>
     <ul class="spaced-list">
         <li><b>-e none</b>: Disable the escape character, which prevents binary data (in this case, VNC) from accidentally closing the connection.</li>
@@ -216,7 +216,7 @@ Router:      192.168.2.1</pre>
     <p>It is probably best to add a new network connection for this, rather than editing any existing ones.</p>
     <h3>d. Establish the SSH Tunnel</h3>
     <p>Once you are connected, you should be able to establish an SSH tunnel with your Pi. Remember that now you're using the ethernet interface, you will connect with the Pi's IP address on that interface:</p>
-    <pre>$ ssh -e none -x -L 5902:127.0.0.1:2903 pi@192.168.2.1</pre>
+    <pre>$ ssh -e none -x -L 5902:127.0.0.1:5903 pi@192.168.2.1</pre>
     <p>If everything has worked, you will login to SSH successfully.</p>
     <p id="update-allowusers-config">If this is your first time connecting to the Pi whilst it is connected via ethernet directly to your laptop, you should edit the <code>/etc/ssh/sshd_config</code> file and remove the <code>AllowUsers</code> entry for your previous network private IP address. You should never need to connect to your Pi that way again. Ensure that the value reads: <code>AllowUsers pi@192.168.2.2</code>.</p>
     <h3>e. Connect to VNC</h3>
