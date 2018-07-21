@@ -75,6 +75,7 @@ Historic:
     http2.jamieweb.net (HTTP/2 Test Page)
     brotli.jamieweb.net (Brotli Test Page[?])
 
+    ✓ Full-width footer
     ✓ /security - Redirect to /contact#hackerone
     ✓ Homepage rework
     ✓ Improved tag function
