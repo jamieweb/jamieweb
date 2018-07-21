@@ -1,4 +1,19 @@
 language: php
 php:
-  - '7.2'
-script: chmod +x build.sh && ./build.sh
+  - 7.2
+before_install:
+- sudo apt update
+- sudo apt install apache2
+- yarn add --ignore-engines headless-chrome-crawler
+- sudo a2enmod headers proxy_http
+- printf "ProxyPass \"/\" \"http://localhost:8080/\"\nProxyPassReverse \"/\" \"http://localhost:8080/\"\n" | sudo tee /etc/apache2/conf-available/csp.conf
+- cat .travis-ci/csp.txt | sudo tee -a /etc/apache2/conf-available/csp.conf
+- sudo a2enconf csp.conf
+- sudo service apache2 restart
+before_script:
+- printf "<?php file_put_contents('.travis-ci/csp-reports.txt', json_encode(json_decode(file_get_contents('php://input')), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES). \"\\\\n\\\\n\", FILE_APPEND) ?>"
+- printf "include_path = $(pwd)" > .travis-ci/php-conf-csp.ini
+- phpenv config-add .travis-ci/php-conf-csp.ini
+- php -S localhost:8080 &
+- sleep 3
+script: chmod +x .travis-ci/build.sh && ./travis-ci/build.sh
