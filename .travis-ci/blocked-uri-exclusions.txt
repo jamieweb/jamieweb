@@ -1,0 +1,7 @@
+http://localhost/tools/exploitable-web-content-blocking-test/pdfs-unblocked.pdf
+http://localhost/tools/exploitable-web-content-blocking-test/dummy-flash.swf
+http://localhost/tools/exploitable-web-content-blocking-test/iframes-unblocked.html
+http://localhost/tools/exploitable-web-content-blocking-test/javascript-unblocked.js
+http://localhost/images/objects-unblocked.png
+https://ipv4.jamieweb.net/ipv4-only.css
+https://ipv6.jamieweb.net/ipv6-only.css
