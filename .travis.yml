@@ -11,8 +11,8 @@ before_install:
 - sudo a2enconf csp.conf
 - sudo service apache2 restart
 before_script:
-- printf "<?php file_put_contents('csp-reports.txt', json_encode(json_decode(file_get_contents('php://input')), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES). \"\\\\n\\\\n\", FILE_APPEND) ?>" > .travis-ci/report-uri.php
-- touch .travis-ci/csp-reports.txt
+- printf "<?php \$report = json_decode(file_get_contents('php://input')); if((in_array(\$report->{'csp-report'}->{'blocked-uri'}, array_map('trim' file('blocked-uri-exclusions.txt')))) || (in_array(\$report->{'csp-report'}->{'document-uri'}, array_map('trim'file('document-uri-exclusions.txt'))))) { exit(); } else { file_put_contents('csp-reports.txt', json_encode(\$report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . \"\\\\n\\\\n\", FILE_APPEND); } ?>" > .travis-ci/report-uri.php
+- touch .travis-ci/csp-reports.txt .travis-ci/blocked-uri-exclusions.txt .travis-ci/document-uri-exclusions.txt
 - printf "include_path = $(pwd)" > .travis-ci/php-conf-csp.ini
 - phpenv config-add .travis-ci/php-conf-csp.ini
 - php -S localhost:8080 &
