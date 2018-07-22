@@ -15,6 +15,6 @@ before_script:
 - touch .travis-ci/csp-reports.txt .travis-ci/blocked-uri-exclusions.txt .travis-ci/document-uri-exclusions.txt
 - printf "include_path = $(pwd)" > .travis-ci/php-conf-csp.ini
 - phpenv config-add .travis-ci/php-conf-csp.ini
-- php -S localhost:8080 > /dev/null &2>1 &
+- php -S localhost:8080 > /dev/null 2>&1 &
 - sleep 3
 script: chmod +x .travis-ci/build.sh && ./.travis-ci/build.sh
