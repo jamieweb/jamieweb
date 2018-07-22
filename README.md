@@ -40,7 +40,7 @@ Historic:
     Better mobile compatibility
     ✓ - All blog/projects/other pages should now have acceptable levels of mobile readability
     ✓ - Must fix navbar on mobile (doesn't extend to full page width)
-      - Fix homepage sidebar overflow on mobile
+    ✓ - Fix homepage sidebar overflow on mobile
       
     Grid/list layout for /projects (same as /info and /other?)
     Raspberry Pi Cluster blog post
@@ -58,16 +58,15 @@ Historic:
     KeyChest
     JamieWeb status page, like status.io (Use gh-pages?)
     Tor IPv6
-    Improved/tidied footer, as well as next/previous blog post links when on /blog/*
+    Next/previous blog post links when on /blog/*? - Tried but looks too 'spammy'
     <noscript> tag neglect
     JamieWeb organisation
     Apache security headers on a per-page basis blog post/guide
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
     Geodiverse hosting?
     Change favicon to identicon
-    New full-width footer
     OpenPGP keyserver? keyserver.jamieweb.net
-    Travis-CI for website/build integrity checking
+    Travis-CI for website/build integrity checking (CSP checking done, working on blog post)
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
