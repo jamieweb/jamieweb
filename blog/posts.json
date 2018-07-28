@@ -11,7 +11,7 @@
                 "tags": "Security,Apache,Chrome",
                 "snippet": "I have recently put together a Travis-CI build configuration that automatically tests your website for Content Security Policy violations. The configuration sets up a local copy of your site on a Travis-CI virtual machine with a CSP header set to send violation reports to a local reporting endpoint. The site is then crawled using Headless Chrome Crawler, which causes CSP violation reports to be generated where required. These are then displayed at the end of the build log."
             },
-            "lauching-a-public-hackerone-program": {
+            "launching-a-public-hackerone-program": {
                 "uri": "launching-a-public-hackerone-program",
                 "navtitle": "Launching a HackerOne Program",
                 "title": "Launching a Public HackerOne Security Vulnerability Disclosure Program",

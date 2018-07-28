@@ -7,9 +7,16 @@
     <description>Website of Jamie Scaife - United Kingdom</description>
     <image>
         <title>JamieWeb (jamieweb.net)</title>
-        <url>https://www.jamieweb.net/images/js.png</url>
+        <url>https://www.jamieweb.net/images/jamieweb.png</url>
         <link>https://www.jamieweb.net</link>
     </image>
+    <item>
+        <title>Automatically Testing Your Content Security Policy Using Travis-CI and Headless Chrome Crawler</title>
+        <link>https://www.jamieweb.net/blog/testing-your-csp-using-travis-ci-and-headless-chrome-crawler/</link>
+        <description>A Travis-CI build configuration for automatically testing your website's Content Security Policy.</description>
+        <category>Blog</category>
+        <pubDate>Sat, 28 Jul 2018</pubDate>
+    </item>
     <item>
         <title>Launching a Public HackerOne Security Vulnerability Disclosure Program</title>
         <link>https://www.jamieweb.net/blog/launching-a-public-hackerone-program/</link>
