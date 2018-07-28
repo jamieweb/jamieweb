@@ -1,6 +1,16 @@
 {
     "blog": {
         "2018": {
+            "testing-your-csp-using-travis-ci-and-headless-chrome-crawler": {
+                "uri": "testing-your-csp-using-travis-ci-and-headless-chrome-crawler",
+                "navtitle": "Travis-CI Content Security Policy Tester",
+                "title": "Automatically Testing Your Content Security Policy Using Travis-CI and Headless Chrome Crawler",
+                "longdesc": "A Travis-CI build configuration for automatically testing your website's Content Security Policy.",
+                "shortdesc": "A Travis-CI build config for automatically testing your CSP.",
+                "date": "Saturday, 28th July 2018",
+                "tags": "Security,Apache,Chrome",
+                "snippet": "I have recently put together a Travis-CI build configuration that automatically tests your website for Content Security Policy violations. The configuration sets up a local copy of your site on a Travis-CI virtual machine with a CSP header set to send violation reports to a local reporting endpoint. The site is then crawled using Headless Chrome Crawler, which causes CSP violation reports to be generated where required. These are then displayed at the end of the build log."
+            },
             "lauching-a-public-hackerone-program": {
                 "uri": "launching-a-public-hackerone-program",
                 "navtitle": "Launching a HackerOne Program",
