@@ -59,7 +59,7 @@
                 <li><h4><a href="https://gitlab.com/jamieweb/jamieweb" target="_blank" rel="noopener">GitLab Repo</a></h4></li>
                 <li><h4><a href="https://bitbucket.org/jamieweb/jamieweb/src/master" target="_blank" rel="noopener">Bitbucket Repo</a></h4></li>
                 <li><h4><a href="https://git.launchpad.net/jamieweb/" target="_blank" rel="noopener">Launchpad Repo</a></h4></li>
-                <li><h4><a href="https://travis-ci.org/jamieweb/jamieweb" target="_blank" rel="noopener">Travis-CI</a></h4></li>
+                <li><h4><a href="https://travis-ci.org/jamieweb/jamieweb" target="_blank" rel="noopener">Travis-CI<img class="footer-badge" src="/images/travis-ci-jamieweb-badge-auto-updating.svg"></a></h4></li>
             </ul>
         </div>
     </div>
