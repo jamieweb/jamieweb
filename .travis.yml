@@ -17,4 +17,4 @@ before_script:
 - phpenv config-add .travis-ci/php-conf-csp.ini
 - php -S localhost:8080 > /dev/null 2>&1 &
 - sleep 3
-script: chmod +x .travis-ci/build.sh && ./.travis-ci/build.sh && false
+script: chmod +x .travis-ci/build.sh && ./.travis-ci/build.sh
