@@ -483,12 +483,6 @@ ul.ipv6-ipv4-test li {
     font-weight: bold;
 }
 
-/*ul.ipv6-ipv4-test span {
-    color: white;
-    background-color: crimson;
-    padding: 4px 5px 0px;
-}*/
-
 span.ipv6-test:after, span.ipv4-test:after {
     color: white;
     background-color: crimson;
@@ -539,6 +533,13 @@ img.footer-logo {
     width: 35px;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+img.footer-badge {
+    vertical-align: middle;
+    margin: 0 0 3px 8px;
+    border: 1px solid white;
+    border-radius: 3px;
 }
 
 footer {
