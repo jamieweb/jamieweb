@@ -540,6 +540,7 @@ img.footer-badge {
     margin: 0 0 3px 8px;
     border: 1px solid white;
     border-radius: 3px;
+    background-color: white;
 }
 
 footer {
