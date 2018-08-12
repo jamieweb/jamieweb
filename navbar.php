@@ -2,13 +2,13 @@
     <div class="navbar">
         <ul>
             <li class="navlogo"><a href="/"><img src="/images/js-circle-48.png" width="35px" height="35px"></a></li>
-            <li><h5><a href="/">Home</a></li></h5>
+            <li><h5><a href="/">Home</a></h5></li>
             <li class="dropdown">
                 <h5><a href="/blog/">Blog</a></h5>
                 <div class="dropdown-content">
                     <h4>
                         <?php include_once "bloglist.php"; bloglist("navbar"); ?>
-                   </h4>
+                    </h4>
                 </div>
             </li>
             <li class="dropdown">

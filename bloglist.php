@@ -1,13 +1,11 @@
 <?php function bloglist($location, $category = null, $post = null) {
     $bloglist = json_decode(file_get_contents('blog/posts.json', true));
     if($location === "navbar") {
-        echo "<h4>\n";
         foreach($bloglist->blog as $year) {
             foreach($year as $post) {
                 echo "                        <a href=\"/blog/" . $post->uri . "/\">" . $post->navtitle . "</a>\n";
             }
         }
-        echo "                    </h4>\n";
     }
     elseif($location === "home") {
         $homeCount = 0;
