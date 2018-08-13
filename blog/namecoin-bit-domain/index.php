@@ -150,7 +150,7 @@ $ nano ~/.namecoin/namecoin.conf</pre>
     <pre>$ ./namecoin-cli getbalance</pre>
 
     <h2 id="registering-domain">Registering A .bit Domain Name</h2>
-    <p>Registering a Namecoin .bit domain name costs very little. The registration fee is 0.01 Namecoin, as well as the transaction fees for two further transactions to configure your name. I have registered and set up 4 names, and that has cost me just over 0.5 Namecoin in total, which is currently around $0.35.</p>
+    <p>Registering a Namecoin .bit domain name costs very little. The registration fee is 0.01 Namecoin, as well as the transaction fees for two further transactions to configure your name. I have registered and set up 4 names, and that has cost me just over 0.05 Namecoin in total, which is currently around $0.35.</p>
     <p>In order to register a .bit domain name, first check whether it is available:</p>
     <pre>$ ./namecoin-cli name_show d/your-name-here</pre>
     <p>"your name here" is your desired name without the ".bit". For example in order to check my name:</p>
