@@ -66,7 +66,7 @@ Historic:
     Geodiverse hosting?
     Change favicon to identicon
     OpenPGP keyserver? keyserver.jamieweb.net
-    Travis-CI for website/build integrity checking (CSP checking done, working on blog post)
+    Git Hosting Service SSH Server Fingerprints
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
@@ -74,6 +74,7 @@ Historic:
     http2.jamieweb.net (HTTP/2 Test Page)
     brotli.jamieweb.net (Brotli Test Page[?])
 
+    ✓ Travis-CI for website/build integrity checking (CSP checking done, working on blog post)
     ✓ Full-width footer
     ✓ /security - Redirect to /contact#hackerone
     ✓ Homepage rework
