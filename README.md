@@ -67,7 +67,7 @@ Historic:
     Change favicon to identicon
     OpenPGP keyserver? keyserver.jamieweb.net
     Git Hosting Service SSH Server Fingerprints
-    Snippets (auto gen list with PHP)
+    Snippets (auto gen list with PHP, store in JSON?)
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     HTTP/2 - Waiting for native support in Ubuntu repo Apache package
