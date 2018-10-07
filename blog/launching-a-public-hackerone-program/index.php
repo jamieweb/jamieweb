@@ -55,8 +55,8 @@
     <p>You can add assets of different types, including domain names, IP addresses, mobile apps and even direct links to source code. The maximum impact to confidentiality, integrity and availability can be specified, as well as additional notes to guide hackers.</p>
     <img class="radius-8" width="1000px" src="/blog/launching-a-public-hackerone-program/add-asset.png">
     <p>In my case, I added my main (sub)domain names, IP addresses, Tor Hidden Services and some of my source code hosted on GitHub:</p>
-    <table class="h1-scope">
-        <tr class="h1-scope-header">
+    <table class="width-1000 padding-6 border-1-4c4c4c border-collapse">
+        <tr class="bg-lightgreen">
             <th class="h1-scope-type">Type</th>
             <th class="h1-scope-identifier">Identifier</th>
             <th class="h1-scope-max-severity">Max. Severity</th>
