@@ -698,21 +698,6 @@ span.tag-ubuntu {
     color: white;
 }
 
-table.h1-scope {
-    width: 1000px;
-    border-collapse: collapse;
-}
-
-table.h1-scope th,table.h1-scope td {
-    padding: 6px;
-    border: 2px solid;
-}
-
-tr.h1-scope-header {
-    font-weight: bold;
-    background-color: lightgreen;
-}
-
 th.h1-scope-type {
     width: 150px;
 }
