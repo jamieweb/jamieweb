@@ -816,6 +816,10 @@ th.h1-scope-in-scope {
     float: right;
 }
 
+.width-1000 {
+    width: 1000px;
+}
+
 .width-450 {
     width: 450px;
 }
