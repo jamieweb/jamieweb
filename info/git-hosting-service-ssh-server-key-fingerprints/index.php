@@ -21,7 +21,9 @@
     <h1>Git Hosting Service SSH Server Key Fingerprints</h1>
     <hr>
     <p>This page contains the SSH server key fingerprints for various online Git hosting services.</p>
+    <p>These fingerprints allow you to verify the identity of the SSH server that you are connecting to.</p>
     <h2>GitHub</h2>
+    <p>Source: <a href="https://help.github.com/articles/github-s-ssh-key-fingerprints/" target="_blank" rel="noopener">https://help.github.com/articles/github-s-ssh-key-fingerprints/</a></p>
     <table class="width-1000 padding-6 border-1-4c4c4c border-collapse">
         <tr class="bg-lightgreen">
             <th>Algorithm</th>
