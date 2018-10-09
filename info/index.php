@@ -53,6 +53,16 @@
 
     <div class="iconparent">
         <div class="iconimg">
+            <a href="/info/git-hosting-service-ssh-server-key-fingerprints/"><img src="/images/fontawesome/fingerprint.svg"></a>
+        </div>
+        <div class="iconlist">
+            <h3 class="no-mar-bottom"><a href="/info/git-hosting-service-ssh-server-key-fingerprints/">Git Hosting Service SSH Server Key Fingerprints</a></h3>
+            <p class="two-mar-top"><b>The SSH server key fingerprints for various online Git hosting services.</b></p>
+        </div>
+    </div>
+
+    <div class="iconparent">
+        <div class="iconimg">
             <a href="/info/hl-client-security/"><img src="/images/fontawesome/shield-alt.svg"></a>
         </div>
         <div class="iconlist">
