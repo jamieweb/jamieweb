@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Git Hosting Service SSH Server Key Fingerprints</title>
+        <link>https://www.jamieweb.net/info/git-hosting-service-ssh-server-key-fingerprints/</link>
+        <description>The SSH server key fingerprints for various online Git hosting services.</description>
+        <category>Info</category>
+        <pubDate>Sat, 14 Oct 2018</pubDate>
+    </item>
+    <item>
         <title>Automatically Testing Your Content Security Policy Using Travis-CI and Headless Chrome Crawler</title>
         <link>https://www.jamieweb.net/blog/testing-your-csp-using-travis-ci-and-headless-chrome-crawler/</link>
         <description>A Travis-CI build configuration for automatically testing your website's Content Security Policy.</description>
