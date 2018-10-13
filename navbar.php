@@ -37,6 +37,7 @@
                         <a href="/info/adblock-plus-config/">Adblock Plus Configuration</a>
                         <a href="/info/chrome-extension-ids/">Chrome Extension IDs</a>
                         <a href="/info/firefox-extension-ids/">Firefox Extension IDs</a>
+                        <a href="/info/git-hosting-service-ssh-server-key-fingerprints/">Git Services SSH Fingerprints</a>
                         <a href="/info/hl-client-security/">Half-Life Client Security</a>
                     </h4>
                 </div>
