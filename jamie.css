@@ -837,6 +837,10 @@ th.h1-scope-in-scope {
     margin-top: 11px;
 }
 
+.bg-lightgrey {
+    background-color: lightgrey;
+}
+
 .bg-lightgreen {
     background-color: lightgreen;
 }
