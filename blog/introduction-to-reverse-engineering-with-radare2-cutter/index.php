@@ -284,7 +284,7 @@ Access Denied
 Enter Password (or q to quit): Pa$$w0rd
 Access Denied
 Enter Password (or q to quit): q</pre>
-    <p>I have already solved this and I'm working on a walkthrough to post on this blog, however if you wish to have a go, it is available on GitHub here.</p>
+    <p>I have already solved this and I'm working on a walkthrough to post on this blog, however if you wish to have a go, it is available on GitHub <a href="https://github.com/jamieweb/crackme-challenge" target="_blank" rel="noopener">here</a>.</p>
     <p>It is a beginner difficulty crackme, and most of the knowledge needed to solve it is present in the blog post that you are reading now.</p>
     <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution. For the best experience, compile the code without looking at the source file.</b> Obviously running untrusted code from the internet goes against every security best-practise out there, so either use a dedicated and segregated malware analysis machine, or get a trusted friend to check the code first.</p>
 
