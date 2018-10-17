@@ -760,6 +760,10 @@ th.h1-scope-in-scope {
     margin-left: auto;
 }
 
+.margin-left-24 {
+    margin-left: 24px;
+}
+
 .two-no-mar {
     margin-top: 2px;
     margin-bottom: 0px;
@@ -803,6 +807,14 @@ th.h1-scope-in-scope {
 
 .flex-grow-1 {
     flex-grow: 1;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-row {
+    .flex-direction: row;
 }
 
 .float-left {
