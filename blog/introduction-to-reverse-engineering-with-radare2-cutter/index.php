@@ -9,7 +9,7 @@
     <meta name="description" content="An introduction to reverse engineering using the radare2 GUI Cutter.">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
-    <link href="jamie.css" rel="stylesheet">
+    <link href="/jamie.css" rel="stylesheet">
     <link href="https://www.jamieweb.net/blog/introduction-to-reverse-engineering-with-radare2-cutter/" rel="canonical">
 </head>
 
