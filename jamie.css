@@ -673,6 +673,11 @@ span.tag-pastebin {
     color: white;
 }
 
+span.tag-reverse-engineering {
+    background-color: #596060;
+    color: white;
+}
+
 span.tag-rfc {
     background-color: #ffb100;
     color: white;
