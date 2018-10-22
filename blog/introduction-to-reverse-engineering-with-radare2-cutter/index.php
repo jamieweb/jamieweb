@@ -18,27 +18,35 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>Introduction to Reverse Engineering with radare2 Cutter</h1>
+    <h1 class="no-mar-bottom">Introduction to Reverse Engineering with radare2 Cutter</h1>
+    <h2 class="subtitle-mar-top">Part 1: Key Terminology and Overview</h2>
     <hr>
-    <p><b>Saturday 22nd September 2018</b></p>
+    <p><b>Monday 22nd October 2018</b></p>
     <div class="display-flex">
         <div>
-            <p class="no-mar-top">Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an example of performing static analysis on a basic program.</p>
-        <p>Cutter can be found on GitHub here: <b><a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/radareorg/cutter</a></b></p>
+            <p class="no-mar-top">Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an overview of the Cutter interface and available tools.</p>
+            <p>This is part 1 of a 3 part series on reverse engineering with Cutter:</p>
+            <ul class="spaced-list">
+                <li><b>Part 1:</b> Key Terminology and Overview (You Are Here)</li>
+                <li><b>Part 2:</b> Analysing a Basic Program (Coming Soon)</li>
+                <li><b>Part 3:</b> Solving a Crackme (Coming Soon)</li>
+            </ul>
         </div>
         <div class="display-flex flex-align-center flex-justify-center flex-direction-column">
             <img src="cutter-logo.png" width="250px" title="Cutter Logo" alt="Cutter Logo">
             <p class="no-mar-top centertext"><i>The Cutter logo.</i></p>
         </div>
     </div>
+    <p class="no-mar-top">Cutter can be found on GitHub here: <b><a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/radareorg/cutter</a></b></p>
     <img class="radius-8" src="cutter-interface-overview.png" width="1000px" title="The Cutter Interface" alt="Screenshot of the Cutter Interface">
     <p class="two-no-mar centertext"><i>The main Cutter interface.</i></p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Introduction to Reverse Engineering with radare2 Cutter</b>
-&#x2523&#x2501&#x2501 <a href="#what-are">What are radare2 and Cutter?</a>
+    <pre><b>Introduction to Reverse Engineering with radare2 Cutter
+Part 1: Key Terminology and Overview</b>
+&#x2523&#x2501&#x2501 <a href="#what-areradare2-and-cutter">What are radare2 and Cutter?</a>
 &#x2523&#x2501&#x2501 <a href="#installing-cutter">Installing Cutter</a>
 &#x2523&#x2501&#x2501 <a href="#key-terminology">Key Terminology</a>
-&#x2523&#x2501&#x2501 <a href="#interface-and-tools">Interface and Tools</a>
+&#x2523&#x2501&#x2501 <a href="#interface-and-tools">Cutter Interface and Tools</a>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#dashboard-overview">Dashboard</a>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#disassembly-overview">Disassembly</a>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#graph-overview">Graph</a>
@@ -50,25 +58,47 @@
 &#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#imports-overview">Imports</a>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#symbols-overview">Symbols</a>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2517&#x2501&#x2501 <a href="#jupyter-overview">Jupyter Notebook</a>
-&#x2523&#x2501&#x2501 <a href="#static-analysis">Analysing a Basic Program</a>
-&#x2523&#x2501&#x2501 <a href="#dynamic-analysis">Dynamic Analysis</a>
+&#x2523&#x2501&#x2501 <a href="#types-of-analysis">Types of Analysis</a>
 &#x2523&#x2501&#x2501 <a href="#crackme">Crackme Challenges</a>
 &#x2523&#x2501&#x2501 <a href="#sam-crackme">Sam's Crackme</a>
-&#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
+&#x2517&#x2501&#x2501 <a href="#part-2">Part 2</a></pre>
 
-    <h2 id="what-are">What are radare2 and Cutter?</h2>
+    <h2 id="what-are-radare2-and-cutter">What are radare2 and Cutter?</h2>
     <p>Radare2 is an open-source, command-line based reverse engineering framework for Linux, macOS, Windows and many other platforms. It includes a set of tools for reverse engineering and analysing binary files, primarily compiled programs (executables). Radare2 can be used to perform both static and dynamic analysis.</p>
     <img class="radius-8" src="radare2-interface.png" width="1000px" title="The radare2 Interface Running in the Command-line" alt="A screenshot of the radare2 interface running in the command-line.">
     <p class="two-no-mar centertext"><i>The radare2 command-line interface in disassembly view.</i></p>
     <p>Cutter is the official GUI for radare2, allowing you to make use of all of the features of the command-line version while being able to better organise the information on your screen and make use of additional tools such as the built-in Jupyter notebook.</p>
-    <p>Development of Cutter, which was originally named Iaito, started in March 2017. Since then there have been 9 major releases, with the latest version at the time of writing being 1.7.1.</p>
+    <p>Development of Cutter, which was originally named Iaito, started in March 2017. Since then there have been 10 major releases, with the latest version at the time of writing being 1.7.2.</p>
 
     <h2 id="installing-cutter">Installing Cutter</h2>
     <p>Cutter can be acquired in either source or binary form from the official GitHub repository: <a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/radareorg/cutter</a></p>
+    <img class="radius-8 border-1px-solid" src="radareorg-cutter-github.png" width="1000px" title="The radare2 Cutter project on GitHub" alt="A screenshot of the radare2 Cutter repository on GitHub.">
+    <p class="two-no-mar centertext"><i>The radare2 Cutter project on GitHub.</i></p>
     <p>Each release is available as an AppImage (for Linux), DMG (for macOS) and a ZIP containing an EXE (for Windows). The source code is also available if you to wish to compile Cutter yourself.</p>
-    <p>Unfortunately it's not easy to verify the integrity of the Cutter releases. GPG signatures are not provided, and commits are not reliably signed. Plain hashes are also not available. I have opened an issue about this <a href="https://github.com/radareorg/cutter/issues/666" target="_blank" rel="noopener">here</a>.</p>
+    <p>Unfortunately it's not easy to verify the integrity of the Cutter releases. I have opened an issue about this <a href="https://github.com/radareorg/cutter/issues/666" target="_blank" rel="noopener">here</a>.</p>
 
-    <h2 id="interface-and-tools">Interface and Tools</h2>
+    <h2 id="key-terminology">Key Terminology</h2>
+    <p>In order to begin with reverse engineering, there are few key bits of terminology that will come in useful.</p>
+
+    <h3 id="instruction">Instruction</h3>
+    <p>Instructions are used to perform very specific low-level tasks on the CPU. These tasks include manipulating memory, 'jumping' to a particular point in a program or performing binary operations.</p>
+    <p>Some examples of instructions include <code>mov</code>, <code>call</code> and <code>jmp</code>.</p>
+    <p>There are many different sets of instructions available, such as x86 or ARMv7.</p>
+
+    <h3 id="register">Register</h3>
+    <p>Registers are small amounts of fast memory present directly on the CPU. There are different amounts, types and sizes of registers depending on the CPU model and type.</p>
+    <p>Types of register include General Purpose Registers (of which there are 16 in x84_64), and the status register, which is used to store CPU flags.</p>
+    <p>Registers are addressed using names such as <code>rax</code> or <code>rbx</code>.</p>
+
+    <h3 id="flags">Flags</h3>
+    <p>Flags are single-bit (i.e. <code>0</code> or <code>1</code>) values that are used to store the current state of the CPU. They are stored in the status register, which is known as <code>RFLAGS</code> in x86_64 CPUs.</p>
+    <p>Some examples of flags include <code>ZF</code> (Zero Flag), which is set to <code>1</code> if the result of an arithmetic operation is 0, and <code>CF</code> (Carry Flag), which is used to indicate that an artithmetic operation requires a carry.</p>
+
+    <h3 id="stack">Stack</h3>
+    <p>The stack is a part of the allocated memory (RAM) of a program used to store local variables and other key information related to the execution of the program or a function.</p>
+    <p>Data is pushed onto the stack in a last-in, first-out (LIFO) fashion.</p>
+
+    <h2 id="interface-and-tools">Cutter Interface and Tools</h2>
     <p>Once you have downloaded Cutter (and installed if required), you can run it and choose a file to analyse.</p>
     <img class="radius-8" src="cutter-open-file.png" width="1000px" title="Choosing a file to open in Cutter" alt="A screenshot of the interface for choosing a file to open in Cutter.">
     <p class="two-no-mar centertext"><i>Choosing a file to open in Cutter.</i></p>
@@ -89,7 +119,7 @@
     <h3 id="disassembly-overview">Disassembly</h3>
     <p>The disassembly panel shows the disassembled machine code of the program. This is known as assembly language, and contains raw instructions such as <code>mov</code>, <code>push</code> and <code>call</code> and the arguments that go along with them.</p>
     <p>You can change the text size in the disassembly view using Ctrl + Shift + "+" (to increase) and Ctrl + "-" (to decrease).</p>
-    <img class="radius-8" src="cutter-disassembly.png" width="1000px" title="The Cutter Disassembly View" alt="A screensht of the Cutter disassembly view.">
+    <img class="radius-8" src="cutter-disassembly.png" width="1000px" title="The Cutter Disassembly View" alt="A screenshot of the Cutter disassembly view.">
     <p>In the x86_64 instruction set, there are a large number of unique instructions. The number varies depending on how you define an instruction, but it ranges from almost 1000 to significantly more than 1000. Stefan Heule has <a href="https://stefanheule.com/blog/how-many-x86-64-instructions-are-there-anyway/" target="_blank" rel="noopener"> an interesting article</a> on this if you're interested in how these numbers are calculated.</p>
     <p>In practise though, only a small subset of these instructions are frequently seen. After a short while you will easily pick up the top 20 or 30 instructions, and this is all you will need for most analysis tasks. I have included a list of 'popular' instructions below for reference:</p>
     <ul>
@@ -117,9 +147,9 @@
     <h3 id="graph-overview">Graph</h3>
     <p>The graph view is used to visually display the process flow and execution paths available to the program. It's essentially a flowchart that maps out the program and all of the potential different ways that it can execute.</p>
     <img class="radius-8" src="cutter-graph.png" width="1000px" title="The Cutter Graph View" alt="A screenshot of the Cutter graph view.">
-    <p>For example, in the event of a <code>cmp</code> followed by a <code>jne</code> (which could be an <code>if</code> statement for simplicity's sake), there would be two arrows coming out and pointing to different parts of the program. One of these parts is what is executed if the <code>if</code> statement returns true, and the other would be for if it returns false.</p>
-    <p>The arrows are simply visual representations of various jump instructions, such as <code>jmp</code>, <code>jne</code> or <code>je</code>.</p>
-    <p>The graph view can be moved around by clicking and dragging, and zoomed using Ctrl + Scroll Wheel. Double-clicking on any jump within the graph view will take you to the destination, and double-clicking a memory address will take you to that address in the disassesmbly view.</p>
+    <p>For example, in the event of a <code>cmp</code> (Compare) followed by one of the jump instructions (which could be an <code>if</code> statement for simplicity's sake), there would be two arrows coming out and pointing to different parts of the program. One of these parts is what is executed if the <code>if</code> statement returns true, and the other would be for if it returns false.</p>
+    <p>The arrows are simply visual representations of various jump instructions, such as <code>jmp</code>, <code>jne</code> or <code>je</code>. The green arrow shows what happens if the jump takes place, and the orange arrow shows what happens if it doesn't.</p>
+    <p>The graph view can be moved around by clicking and dragging, and zoomed using Ctrl + Scroll Wheel. Double-clicking on any jump within the graph view will take you to the destination, and double-clicking an address will take you to that address in the disassesmbly view.</p>
 
     <h3 id="functions-overview">Functions</h3>
     <div class="display-flex">
@@ -223,49 +253,10 @@ return;
     <p>The Juptyer notebook is a server-based notebook application that supports both rich text and computer code. It allows you write and run Python directly in your notebook documents, which could be useful for many reverse engineering tasks.</p>
     <p>I personally have not used the Jupyter notebook feature very much in Cutter, so I'm not aware of all of the features and whether it is useful or not.</p>
 
-    <h2 id="static-analysis">Analysing a Basic Program</h2>
-    <p>I have put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>
-    <pre>Enter a Number (or q to quit): 2
-2 is even.
-Enter a Number (or q to quit): 1
-1 is odd.
-Enter a Number (or q to quit): 25
-25 is odd.
-Enter a Number (or q to quit): hello
-Invalid Input
-Enter a Number (or q to quit): q</pre>
-    <p>If you wish to compile this yourself so that you can follow along with the analysis, I have included the C++ code below:</p>
-    <pre>#include &lt;iostream&gt;
-using namespace std;
-
-int main(){
-    string input;
-    while(true){
-        cout&lt;&lt;"Enter a Number (or q to quit): ";
-        cin&gt;&gt;input;
-        try {
-            if (input == "q") {
-                return 0;
-            } else if (stoi(input) % 2 == 0) {
-                cout&lt;&lt;input&lt;&lt;" is even.\n";
-            } else {
-                cout&lt;&lt;input&lt;&lt;" is odd.\n";
-            }
-        } catch(...) {
-            cout&lt;&lt;"Invalid Input\n";
-        }
-    }
-}</pre>
-    <p>Save this to a file, then you can compile it like shown below:</p>
-    <pre>$ g++ -std=c++14 -o <i>outputfile</i> <i>inputfile</i></pre>
-    <p>After opening the file in Cutter using the default analysis settings, you will see the main interface with the disassembly view selected.</p>
-    <img class="radius-8" src="odd-even-default-view.png" width="1000px" title="The Default View When Analysing a New File" alt="A screenshot of the default Cutter interface when analysing a new file.">
-    <p>The first thing to do in most analysis tasks is to go to <code>main</code>. This is usually the best starting point for finding the code that you're interested in. For very simple programs (like the one we're looking at), most or all of the code will be in <code>main</code>.</p>
-    <p>In Cutter, you can double-click <code>main</code> in the functions list on the left hand side. This will move the disassembler view to the start of <code>main</code>.</p>
-    <img class="radius-8" src="odd-even-double-click-main.png" width="1000px" title="Double-clicking Main in the Functions List" alt="A screenshot of the Cutter interface with the main function showing in the disassembly view.">
-
-    <h2 id="dynamic-analysis">Dynamic Analysis</h2>
-    <p></p>
+    <h2 id="types-of-analysis">Types of Analysis</h2>
+    <p>Cutter is able to perform both static and dynamic analysis.</p>
+    <p><b>Static analysis</b> is where you observe and analyse static information, such as the instructions, functions and strings present in a program.</b></p>
+    <p><b>Dynamic analysis</b> is where the program is actually run and its behaviour is analysed. This could be in the form of an external debugger, or by 'stepping through' the program one instruction at time (which can be done in Cutter).</b></p>
 
     <h2 id="crackme-challenges">Crackme Challenges</h2>
     <p>Possibly the best way to learn reverse engeering is to solve crackme challenges. Crackme challenges, or simply 'crackmes', are binaries that have been created for the purposes of training and testing your reverse engineering skills.</p>
@@ -284,12 +275,13 @@ Access Denied
 Enter Password (or q to quit): Pa$$w0rd
 Access Denied
 Enter Password (or q to quit): q</pre>
-    <p>I have already solved this and I'm working on a walkthrough to post on this blog, however if you wish to have a go, it is available on GitHub <a href="https://github.com/jamieweb/crackme-challenge" target="_blank" rel="noopener">here</a>.</p>
+    <p>I have already solved it and will be posting a walkthrough in part 3 of this series on my blog, however if you wish to have a go, it is available on GitHub <a href="https://github.com/jamieweb/crackme-challenge" target="_blank" rel="noopener">here</a>.</p>
     <p>It is a beginner difficulty crackme, and most of the knowledge needed to solve it is present in the blog post that you are reading now.</p>
     <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution. For the best experience, compile the code without looking at the source file.</b> Obviously running untrusted code from the internet goes against every security best-practise out there, so either use a dedicated and segregated malware analysis machine, or get a trusted friend to check the code first.</p>
 
-    <h2 id="conclusion">Conclusion</h2>
-    <p></p>
+    <h2 id="part-2">Part 2</h2>
+    <p>Part 2 includes analysing a basic compiled C++ program using static and dynamic analysis, and further technical details on some common instructions.</p>
+    <p><b>Part 2 is currently a work in progress, and is coming soon!</b></p>
 </div>
 
 <?php include "footer.php" ?>
