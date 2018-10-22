@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Introduction to Reverse Engineering with radare2 Cutter - Part 1: Key Terminology and Overview</title>
+        <link>https://www.jamieweb.net/blog/radare2-cutter-part-1-key-terminology-and-overview/</link>
+        <description>An overview of some key reverse engineering terminology and details on the various interfaces and tools available in radare2 Cutter.</description>
+        <category>Blog</category>
+        <pubDate>Mon, 22 Oct 2018</pubDate>
+    </item>
+    <item>
         <title>Git Hosting Service SSH Server Key Fingerprints</title>
         <link>https://www.jamieweb.net/info/git-hosting-service-ssh-server-key-fingerprints/</link>
         <description>The SSH server key fingerprints for various online Git hosting services.</description>
