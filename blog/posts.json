@@ -1,15 +1,15 @@
 {
     "blog": {
         "2018": {
-            "introduction-to-reverse-engineering-with-radare2-cutter": {
-                "uri": "introduction-to-reverse-engineering-with-radare2-cutter",
-                "navtitle": "Reverse Engineering with radare2 Cutter",
-                "title": "Introduction to Reverse Engineering with radare2 Cutter",
-                "longdesc": "An introduction to reverse engineering using the radare2 GUI Cutter.",
-                "shortdesc": "An introduction to using the radare2 GUI Cutter.",
-                "date": "Saturday 20th October 2018",
+            "radare2-cutter-part-1-key-terminology-and-overview": {
+                "uri": "radare2-cutter-part-1-key-terminology-and-overview",
+                "navtitle": "Cutter Part 1: Key Terminology and Overview",
+                "title": "Introduction to Reverse Engineering with radare2 Cutter - Part 1: Key Terminology and Overview",
+                "longdesc": "An overview of some key reverse engineering terminology and details on the various interfaces and tools available in radare2 Cutter.",
+                "shortdesc": "An overview of some key terminology and the interfaces and tools in Cutter.",
+                "date": "Monday 22nd October 2018",
                 "tags": "Reverse Engineering,Guide",
-                "snippet": "Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an example of performing static analysis on a basic program. Cutter can be found on GitHub here: <b><a href=\"https://github.com/radareorg/cutter\" target=\"_blank\" rel=\"noopener\">https://github.com/radareorg/cutter</a></b>"
+                "snippet": "Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an overview of the Cutter interface and available tools. Cutter can be found on GitHub here: <b><a href=\"https://github.com/radareorg/cutter\" target=\"_blank\" rel=\"noopener\">https://github.com/radareorg/cutter</a></b>"
             },
             "testing-your-csp-using-travis-ci-and-headless-chrome-crawler": {
                 "uri": "testing-your-csp-using-travis-ci-and-headless-chrome-crawler",
