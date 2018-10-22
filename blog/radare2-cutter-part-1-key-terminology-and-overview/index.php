@@ -46,6 +46,10 @@ Part 1: Key Terminology and Overview</b>
 &#x2523&#x2501&#x2501 <a href="#what-are-radare2-and-cutter">What are radare2 and Cutter?</a>
 &#x2523&#x2501&#x2501 <a href="#installing-cutter">Installing Cutter</a>
 &#x2523&#x2501&#x2501 <a href="#key-terminology">Key Terminology</a>
+&#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#instruction">Instruction</a>
+&#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#register">Register</a>
+&#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#flag">Flag</a>
+&#x2503&nbsp;&nbsp;&nbsp;&#x2517&#x2501&#x2501 <a href="#stack">Stack</a>
 &#x2523&#x2501&#x2501 <a href="#interface-and-tools">Cutter Interface and Tools</a>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#dashboard-overview">Dashboard</a>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#disassembly-overview">Disassembly</a>
@@ -59,7 +63,7 @@ Part 1: Key Terminology and Overview</b>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2523&#x2501&#x2501 <a href="#symbols-overview">Symbols</a>
 &#x2503&nbsp;&nbsp;&nbsp;&#x2517&#x2501&#x2501 <a href="#jupyter-overview">Jupyter Notebook</a>
 &#x2523&#x2501&#x2501 <a href="#types-of-analysis">Types of Analysis</a>
-&#x2523&#x2501&#x2501 <a href="#crackme">Crackme Challenges</a>
+&#x2523&#x2501&#x2501 <a href="#crackme-challenges">Crackme Challenges</a>
 &#x2523&#x2501&#x2501 <a href="#sam-crackme">Sam's Crackme</a>
 &#x2517&#x2501&#x2501 <a href="#part-2">Part 2</a></pre>
 
