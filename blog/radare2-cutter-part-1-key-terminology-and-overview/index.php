@@ -21,7 +21,7 @@
     <h1 class="no-mar-bottom">Introduction to Reverse Engineering with radare2 Cutter</h1>
     <h2 class="subtitle-mar-top">Part 1: Key Terminology and Overview</h2>
     <hr>
-    <p><b>Monday 22nd October 2018</b></p>
+    <p><b>Tuesday 23rd October 2018</b></p>
     <div class="display-flex">
         <div>
             <p class="no-mar-top">Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an overview of the Cutter interface and available tools.</p>
