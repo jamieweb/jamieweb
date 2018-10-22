@@ -43,7 +43,7 @@
     <p><b>Skip to Section:</b></p>
     <pre><b>Introduction to Reverse Engineering with radare2 Cutter
 Part 1: Key Terminology and Overview</b>
-&#x2523&#x2501&#x2501 <a href="#what-areradare2-and-cutter">What are radare2 and Cutter?</a>
+&#x2523&#x2501&#x2501 <a href="#what-are-radare2-and-cutter">What are radare2 and Cutter?</a>
 &#x2523&#x2501&#x2501 <a href="#installing-cutter">Installing Cutter</a>
 &#x2523&#x2501&#x2501 <a href="#key-terminology">Key Terminology</a>
 &#x2523&#x2501&#x2501 <a href="#interface-and-tools">Cutter Interface and Tools</a>
@@ -64,7 +64,7 @@ Part 1: Key Terminology and Overview</b>
 &#x2517&#x2501&#x2501 <a href="#part-2">Part 2</a></pre>
 
     <h2 id="what-are-radare2-and-cutter">What are radare2 and Cutter?</h2>
-    <p>Radare2 is an open-source, command-line based reverse engineering framework for Linux, macOS, Windows and many other platforms. It includes a set of tools for reverse engineering and analysing binary files, primarily compiled programs (executables). Radare2 can be used to perform both static and dynamic analysis.</p>
+    <p>Radare2 is an open-source, command-line based reverse engineering framework for Linux, macOS, Windows and many other platforms. It includes a set of tools for reverse engineering and analysing executable files (compiled programs). Radare2 can be used to perform both static and dynamic analysis.</p>
     <img class="radius-8" src="radare2-interface.png" width="1000px" title="The radare2 Interface Running in the Command-line" alt="A screenshot of the radare2 interface running in the command-line.">
     <p class="two-no-mar centertext"><i>The radare2 command-line interface in disassembly view.</i></p>
     <p>Cutter is the official GUI for radare2, allowing you to make use of all of the features of the command-line version while being able to better organise the information on your screen and make use of additional tools such as the built-in Jupyter notebook.</p>
@@ -90,7 +90,7 @@ Part 1: Key Terminology and Overview</b>
     <p>Types of register include General Purpose Registers (of which there are 16 in x84_64), and the status register, which is used to store CPU flags.</p>
     <p>Registers are addressed using names such as <code>rax</code> or <code>rbx</code>.</p>
 
-    <h3 id="flags">Flags</h3>
+    <h3 id="flag">Flag</h3>
     <p>Flags are single-bit (i.e. <code>0</code> or <code>1</code>) values that are used to store the current state of the CPU. They are stored in the status register, which is known as <code>RFLAGS</code> in x86_64 CPUs.</p>
     <p>Some examples of flags include <code>ZF</code> (Zero Flag), which is set to <code>1</code> if the result of an arithmetic operation is 0, and <code>CF</code> (Carry Flag), which is used to indicate that an artithmetic operation requires a carry.</p>
 
@@ -141,14 +141,14 @@ Part 1: Key Terminology and Overview</b>
     <pre>mov destination, source</pre>
     <p>However, in the AT&T syntax, this is the other way around:</p>
     <pre>movq %rax, %rbx</pre>
-    <p>You may also notice that there are additional differences between the Intel and AT&T syntaxes, such as the percentage sign in front of the operands and the mnemonic displaying as <code>movq</code> (Move Quadword, since rax and rbx are both full 64-bit registers), rather than just <code>mov</code>. In the case of 32-bit registers, the the <code>movl</code> (Move Doubleword) mnemonic will be shown.</p>
+    <p>You may also notice that there are additional differences between the Intel and AT&T syntaxes, such as the percentage sign in front of the operands and the mnemonic displaying as <code>movq</code> (Move Quadword, since rax and rbx are both full 64-bit registers), rather than just <code>mov</code>. In the case of 32-bit registers, the the <code>movl</code> (Move Doubleword) mnemonic would be shown.</p>
     <p>Assembly language is difficult to read at first, and often there are many seemingly meaningless sections that get in the way of you finding the key part of the program that you are looking for. However, by using the tools available it is often possible to find the important bits quickly.</p>
 
     <h3 id="graph-overview">Graph</h3>
     <p>The graph view is used to visually display the process flow and execution paths available to the program. It's essentially a flowchart that maps out the program and all of the potential different ways that it can execute.</p>
     <img class="radius-8" src="cutter-graph.png" width="1000px" title="The Cutter Graph View" alt="A screenshot of the Cutter graph view.">
-    <p>For example, in the event of a <code>cmp</code> (Compare) followed by one of the jump instructions (which could be an <code>if</code> statement for simplicity's sake), there would be two arrows coming out and pointing to different parts of the program. One of these parts is what is executed if the <code>if</code> statement returns true, and the other would be for if it returns false.</p>
-    <p>The arrows are simply visual representations of various jump instructions, such as <code>jmp</code>, <code>jne</code> or <code>je</code>. The green arrow shows what happens if the jump takes place, and the orange arrow shows what happens if it doesn't.</p>
+    <p>For example, in the event of a <code>cmp</code> (Compare) followed by one of the various jump instructions (which could be equivalent to an <code>if</code> statement in a higher-level language for simplicity's sake), there would be two arrows coming out and pointing to different parts of the program. One of these parts is what is executed if the <code>if</code> statement returns true, and the other would be for if it returns false.</p>
+    <p>The arrows are simply visual representations of the various jump instructions, such as <code>jmp</code>, <code>jne</code> or <code>je</code>. The green arrow shows what happens if the jump takes place, and the orange arrow shows what happens if it doesn't. Grey arrows show a loop.</p>
     <p>The graph view can be moved around by clicking and dragging, and zoomed using Ctrl + Scroll Wheel. Double-clicking on any jump within the graph view will take you to the destination, and double-clicking an address will take you to that address in the disassesmbly view.</p>
 
     <h3 id="functions-overview">Functions</h3>
@@ -166,7 +166,7 @@ Part 1: Key Terminology and Overview</b>
     <h3 id="strings-overview">Strings</h3>
     <p>The strings view shows a stringdump of the binary that you are analysing. A stringdump shows text strings that have been found within the binary.</p>
     <img class="radius-8" src="cutter-strings.png" width="1000px" title="The Cutter Strings View" alt="A screenshot of the Cutter strings view.">
-    <p>A stringdump will often tell you lots about what the function and purpose of the binary is. Stringdump results are often your first lead when starting to analyse a new binary.</p>
+    <p>A stringdump will often give you a lot of clues about what the functionality and purpose of the binary is. Stringdump results are often your first lead when starting to analyse a new binary.</p>
     <p>When analysing malware, strings may have been placed in order to throw you off-track, so make sure to keep this in mind.</p>
 
 <!--    <h3 id="sidebar-overview">Sidebar</h3>
@@ -230,7 +230,7 @@ goto 0x401a63
   }
 return;
 ...</pre>
-    <p>Even though the pseudocode is not always accurate, this feature is still useful in some cases to help you (a human) understand the assesmbly code.</p>
+    <p>Even though the pseudocode is not always accurate, this feature is still useful in some cases to help you (a human) understand the assembly code.</p>
     <p>Also, I must mention that this is not a decompiler.</p>
 
     <h3 id="entrypoints-overview">Entry Points</h3>
@@ -256,7 +256,7 @@ return;
     <h2 id="types-of-analysis">Types of Analysis</h2>
     <p>Cutter is able to perform both static and dynamic analysis.</p>
     <p><b>Static analysis</b> is where you observe and analyse static information, such as the instructions, functions and strings present in a program.</b></p>
-    <p><b>Dynamic analysis</b> is where the program is actually run and its behaviour is analysed. This could be in the form of an external debugger, or by 'stepping through' the program one instruction at time (which can be done in Cutter).</b></p>
+    <p><b>Dynamic analysis</b> is where the program is actually run and its behaviour is analysed. This could be done using an external debugger, virtual machine or by 'stepping through' the program one instruction at time (which can be done in Cutter).</b></p>
 
     <h2 id="crackme-challenges">Crackme Challenges</h2>
     <p>Possibly the best way to learn reverse engeering is to solve crackme challenges. Crackme challenges, or simply 'crackmes', are binaries that have been created for the purposes of training and testing your reverse engineering skills.</p>
@@ -277,7 +277,7 @@ Access Denied
 Enter Password (or q to quit): q</pre>
     <p>I have already solved it and will be posting a walkthrough in part 3 of this series on my blog, however if you wish to have a go, it is available on GitHub <a href="https://github.com/jamieweb/crackme-challenge" target="_blank" rel="noopener">here</a>.</p>
     <p>It is a beginner difficulty crackme, and most of the knowledge needed to solve it is present in the blog post that you are reading now.</p>
-    <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution. For the best experience, compile the code without looking at the source file.</b> Obviously running untrusted code from the internet goes against every security best-practise out there, so either use a dedicated and segregated malware analysis machine, or get a trusted friend to check the code first.</p>
+    <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution.</b> For the best experience, compile the code without looking at the source file. Obviously running untrusted code from the internet goes against every security best-practise out there, so either use a dedicated and segregated malware analysis machine, or ask a trusted friend to check the code first.</p>
 
     <h2 id="part-2">Part 2</h2>
     <p>Part 2 includes analysing a basic compiled C++ program using static and dynamic analysis, and further technical details on some common instructions.</p>
