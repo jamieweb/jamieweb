@@ -778,6 +778,10 @@ th.h1-scope-in-scope {
     border-radius: 8px;
 }
 
+.border-1px-solid {
+    border: 1px solid;
+}
+
 .indent {
     padding-left: 40px;
 }
@@ -852,6 +856,10 @@ th.h1-scope-in-scope {
 
 .intro-mar-top {
     margin-top: 11px;
+}
+
+.subtitle-mar-top {
+    margin-top: 16px;
 }
 
 .bg-lightgrey {
