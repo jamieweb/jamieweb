@@ -339,6 +339,7 @@ div.iconimg img {
 }
 
 div.iconlist {
+    max-width: calc(100% - 110px);
     display: inline-block;
     vertical-align: middle;
     padding-bottom: 3.5px;
