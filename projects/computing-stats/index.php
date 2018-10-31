@@ -77,7 +77,7 @@
             <p class="info">Total Running Time: <b>var-bitcoinnoderuntime days</b></p></td>
         </tr>
     </table><br>
-    <p class="info">Stats Update Every 10 Minutes. Last Updated: <b>var-lastupdated GMT+1</b></p>
+    <p class="info">Stats Update Every 10 Minutes. Last Updated: <b>var-lastupdated GMT</b></p>
 </div>
 
 <?php include "footer.php" ?>
