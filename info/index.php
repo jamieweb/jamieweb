@@ -70,6 +70,24 @@
             <p class="two-mar-top"><b>Security configuration/hardening for the Half-Life client.</b></p>
         </div>
     </div>
+    <div class="iconparent">
+        <div class="iconimg">
+            <a href="/info/chromium-team-updated-packages-for-ubuntu/"><img src="/images/fontawesome/box-open.svg"></a>
+        </div>
+        <div class="iconlist">
+            <h3 class="no-mar-bottom"><a href="/info/chromium-team-updated-packages-for-ubuntu/">Updated Chromium Browser Packages for Ubuntu</a></h3>
+            <p class="two-mar-top"><b>How to get regularly updated chromium-browser packages on Ubuntu.</b></p>
+        </div>
+    </div>
+    <div class="iconparent">
+        <div class="iconimg">
+            <a href="/info/x86_64-general-purpose-registers-reference/"><img src="/images/fontawesome/microchip.svg"></a>
+        </div>
+        <div class="iconlist">
+            <h3 class="no-mar-bottom"><a href="/info/x86_64-general-purpose-registers-reference/">x86_64 General Purpose Registers Reference</a></h3>
+            <p class="two-mar-top"><b>A reference of the general purpose registers in the x86_64 instruction set architechture.</b></p>
+        </div>
+    </div>
 </div>
 
 <?php include "footer.php" ?>
