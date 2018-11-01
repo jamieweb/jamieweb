@@ -109,7 +109,7 @@ net.ipv6.conf.eth0.disable_ipv6 = 1</pre>
     <p>It is not safe to run a VNC server that is exposed to an untrusted network. In order to lock it down, SSH tunneling can be used. This will tunnel the insecure VNC connection through the secure SSH tunnel, meaning that the traffic will be encrypted and integrity checked.</p>
     <h3>a. Install TightVNC Server</h3>
     <p>Install TightVNC server on your Pi:</p>
-    <pre>$ sudo apt-get instal tightvncserver</pre>
+    <pre>$ sudo apt-get install tightvncserver</pre>
     <p>You can then start a VNC desktop bound only to localhost using the following command (adjust screen resolution as required):</p>
     <pre>$ vncserver :3 -geometry 1920x1080 -localhost</pre>
     <p>The <code>:3</code> refers to the ID of the virtual screen. If you use another number here, you'll have to adjust the port number for connections later on.</p>
