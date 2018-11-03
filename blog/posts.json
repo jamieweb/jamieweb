@@ -1,6 +1,16 @@
 {
     "blog": {
         "2018": {
+            "booting-a-physical-windows-10-disk-using-virtualbox-on-linux": {
+                "uri": "booting-a-physical-windows-10-disk-using-virtualbox-on-linux",
+                "navtitle": "VirtualBox Physical Windows 10 Disk on Linux",
+                "title": "Booting a Physical Windows 10 Disk Using VirtualBox on Linux",
+                "longdesc": "",
+                "shortdesc": "",
+                "date": "Sunday 4th November 2018",
+                "tags": "Virtualisation,Guide",
+                "snippet": ""
+            },
             "radare2-cutter-part-1-key-terminology-and-overview": {
                 "uri": "radare2-cutter-part-1-key-terminology-and-overview",
                 "navtitle": "Cutter Part 1: Key Terminology and Overview",
