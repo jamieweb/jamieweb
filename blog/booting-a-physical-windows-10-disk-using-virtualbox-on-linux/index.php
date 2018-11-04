@@ -70,11 +70,38 @@ H/W path               Device           Class          Description
 
     <h2 id="file-system-permissions">File System Permissions</h2>
     <p>In order to have full, unrestricted access to the Windows 10 disk without having to use <code>sudo</code>, you need to give your user account the appropriate permissions.</p>
-    <p>First, determine the group that has access to the drive. <b>Substitute <code>/dev/sdb</code> with the block device ID that you determined in the previous section:</b></p>
-    <pre>jamie@box:~$ ls -la /dev/sdb
+    <p>There are two main ways that this can be configured. The <a href="#higher-security-file-permissions-setup">proper, higher-security method</a> which is best for <b>production/important</b> systems, or the <a href="#lower-security-file-permissions-setup">quicker, lower-security method</a> which is suitable for <b>test/disposable</b> systems. You can choose which is best for you - you only need to complete one of them.</p>
+
+    <h3 id="higher-security-file-system-permissions-setup">Higher-Security File System Permissions Configuration</h3>
+    <p><b>If you are using a system where security is important</b>, the best way to achieve this is to create a udev rule to match the Windows 10 disk and assign it to a particular group. Then, your non-privileged user account will have full read-write access to the disk(s) that match the rule, while the others remain protected.</p>
+    <p>First, create a new group to use for the Windows 10 disk:</p>
+    <pre>$ sudo groupadd win10disk</pre>
+    <p>Then add your own user to the group:</pre>
+    <pre>$ sudo usermod -a -G win10disk youruser</pre>
+    <p>Next, you need to determine the UUID of the Windows 10 disk. You can do this using <code>udevadm</code>:</p>
+    <pre>$ sudo udevadm info /dev/sdX | grep UUID</pre>
+    <p>This should output the UUID of the Windows 10 disk. For example:</p>
+    <pre>E: ID_PART_TABLE_UUID=01234567-89ab-cdef-0123-456789abcde</pre>
+    <p><code>E:</code> means that it's a device environment variable, and the variable could be <code>ID_PART_TABLE_UUID</code>, <code>ID_FS_UUID</code> or something else with a similar meaning.</p>
+    <p>If no UUID is outputted, try omitting the <code>grep</code> and looking for other variables that contain the UUID. If for some reason no UUID is returned, you may be able to use other attributes to uniquely identify the disk, however this may result in inaccuracies.</p>
+    <p>Take a copy of the variable name and UUID, and create a file in the udev rules directory, such as <code>/etc/udev/rules.d/99-win10disk.rules</code>. Edit the file and add the following content, adjusting the variable name, UUID and group as required:</p>
+    <pre>ENV{ID_PART_TABLE_UUID}=="01234567-89ab-cdef-0123-456789abcde", GROUP="win10disk"</pre>
+    <p>Make sure to pay attention to the operators used in the rule. Like in most programming languages, <code>==</code> is an equality check and <code>=</code> is an assignment, so make sure to get these the right way around in the rule. You want to be checking the UUID and assigning the group, not the other way around!</p>
+    <p>Save the file, then power cycle the Windows 10 disk (disconnect and reconnect, reboot, etc).</p>
+    <p>Then, check that the rule worked by listing the block device file and checking the group:</p>
+    <pre>$ ls -l /dev/sdb</pre>
+    <p>This should output similar to the following:</p>
+    <pre>brw-rw---- 1 root win10disk 8, 16 Nov  4 23:33 /dev/sdb</pre>
+    <p>The key attribute to check is that the group is <code>win10disk</code>. If it is, then the file system permissions are configured correctly and you can <a href="">proceed to the next section</a>.</p>
+
+    <h3 id="lower-security-file-system-permissions-config">Lower-Security File System Permissions Configuration</h3>
+    <p><b>On the other hand, if you're using a system where security is less important (such as a disposable test machine)</b>, there is a quicker method. First, determine the group that has access to the drive:</p>
+    <pre>$ ls -la /dev/sdX</pre>
+    <p>This will output something like the following:</p>
 brw-rw---- 1 root disk 8, 16 Nov  3 23:36 /dev/sdb</pre>
     <p>From this, you can determine that the group is <code>disk</code>, and that this group has read and write access to the block device (<code>brw-<b>rw-</b>---</code>).</p>
     <p>The group name and permissions may differ for you, however in many cases it will be as above.</p>
+    <p>Next, add your user to the group. <b>Please be aware of the potential security implications of this, as you will probably be giving your user account full read-write access to some or all storage devices. If the group is something else such as <code>root</code>, you should consider the <a href="#higher-security-file-system-permissions-config">higher-security setup</a> instead.</b></p>
 </div>
 
 <?php include "footer.php" ?>
