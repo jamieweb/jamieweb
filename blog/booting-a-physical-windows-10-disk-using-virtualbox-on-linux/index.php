@@ -70,9 +70,9 @@ H/W path               Device           Class          Description
 
     <h2 id="file-system-permissions">File System Permissions</h2>
     <p>In order to have full, unrestricted access to the Windows 10 disk without having to use <code>sudo</code>, you need to give your user account the appropriate permissions.</p>
-    <p>There are two main ways that this can be configured. The <a href="#higher-security-file-permissions-setup">proper, higher-security method</a> which is best for <b>production/important</b> systems, or the <a href="#lower-security-file-permissions-setup">quicker, lower-security method</a> which is suitable for <b>test/disposable</b> systems. You can choose which is best for you - you only need to complete one of them.</p>
+    <p>There are two main ways that this can be configured. The <a href="#higher-security-file-permissions-config">proper, higher-security method</a> which is best for <b>production/important</b> systems, or the <a href="#lower-security-file-permissions-config">quicker, lower-security method</a> which is suitable for <b>test/disposable</b> systems. You can choose which is best for you - you only need to complete one of them.</p>
 
-    <h3 id="higher-security-file-system-permissions-setup">Higher-Security File System Permissions Configuration</h3>
+    <h3 id="higher-security-file-system-permissions-config">Higher-Security File System Permissions Configuration</h3>
     <p><b>If you are using a system where security is important</b>, the best way to achieve this is to create a udev rule to match the Windows 10 disk and assign it to a particular group. Then, your non-privileged user account will have full read-write access to the disk(s) that match the rule, while the others remain protected.</p>
     <p>First, create a new group to use for the Windows 10 disk:</p>
     <pre>$ sudo groupadd win10disk</pre>
@@ -98,10 +98,23 @@ H/W path               Device           Class          Description
     <p><b>On the other hand, if you're using a system where security is less important (such as a disposable test machine)</b>, there is a quicker method. First, determine the group that has access to the drive:</p>
     <pre>$ ls -la /dev/sdX</pre>
     <p>This will output something like the following:</p>
-brw-rw---- 1 root disk 8, 16 Nov  3 23:36 /dev/sdb</pre>
+    <pre>brw-rw---- 1 root disk 8, 16 Nov  3 23:36 /dev/sdb</pre>
     <p>From this, you can determine that the group is <code>disk</code>, and that this group has read and write access to the block device (<code>brw-<b>rw-</b>---</code>).</p>
     <p>The group name and permissions may differ for you, however in many cases it will be as above.</p>
     <p>Next, add your user to the group. <b>Please be aware of the potential security implications of this, as you will probably be giving your user account full read-write access to some or all storage devices. If the group is something else such as <code>root</code>, you should consider the <a href="#higher-security-file-system-permissions-config">higher-security setup</a> instead.</b></p>
+    <pre>sudo usermod -a -G disk youruser</pre>
+
+    <h2 id="virtualbox-raw-disk-image">VirtualBox Raw Host Access VMDK File</h2>
+    <p>In order for VirtualBox to be able to boot the physical Windows 10 disk, you need to a create a special VMDK (Virtual Machine Disk) file that represents the physical disk.</p>
+    <p>These raw host disk access VMDK files do not actually contain any data from the physical disk, they are just a pointer that VirtualBox can use to access it.</p>
+    <p>You can create a VirtualBox raw disk image using <code>VBoxManage</code>. You can specify a location in the <code>-filename</code> argument:</p>
+    <pre>$ VBoxManage internalcommands createrawvmdk -filename /path/to/diskname.vmdk -rawdisk /dev/sdX</pre>
+    <p>This should output something similar to the following:</p>
+    <pre>RAW host disk access VMDK file /path/to/windows10.vmdk created successfully.</pre>
+    <p>The raw host disk access VMDK files only contain ASCII test, so you can <code>cat</code> or <code>less</code> it and have a look!</p>
+
+    <h2 id="creating-and-configuring-the-virtual-machine">Creating and Configuring the Virtual Machine</h2>
+    
 </div>
 
 <?php include "footer.php" ?>
