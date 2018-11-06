@@ -18,7 +18,7 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>Booting a Physical Windows 10 Disk using VirtualBox on Linux</h1>
+    <h1>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</h1>
     <hr>
     <p><b>Wednesday 7th November 2018</b></p>
     <p>I recently inherited a computer with an OEM/factory-imaged Windows 10 disk inside. Straight away I took the drive out and replaced it with a Linux SSD, however since I don't own any other Windows systems, this will come in useful for testing my website for browser compatibility in Internet Explorer and Edge.</p>
