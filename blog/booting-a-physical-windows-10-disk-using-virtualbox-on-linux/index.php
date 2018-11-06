@@ -37,7 +37,7 @@
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
     <h2 id="identifying-the-disk">Identifying the Disk</h2>
     <p>Mounting the disk/partitions is not actually required for VirtualBox to be able to boot it, however you will need to identify the correct block device ID for the disk (e.g. <code>/dev/sdb</code>).</p>
-    <p>If you're using a modern desktop environment and file manager (e.g. XFCE with Thunar), the Windows 10 disk will probably be automatically mounted (if you get stuck at the error 'Windows is hibernated, refused to mount.', please see the troubleshooting <a href="#windows-is-hibernated-refused-to-mount" target="_blank">here</a>). In my case, the <code>Windows</code> and <code>Recovery Image</code> partitions were auto-mounted. Then, you can use <code>lsblk</code> (List Block Devices) to identify the correct device:</p>
+    <p>If you're using a modern desktop environment and file manager (e.g. XFCE with Thunar), the Windows 10 disk will probably be automatically mounted (if you get stuck at the error 'Windows is hibernated, refused to mount.', please see the troubleshooting <a href="#troubleshooting-windows-is-hibernated-refused-to-mount" target="_blank">here</a>). In my case, the <code>Windows</code> and <code>Recovery Image</code> partitions were auto-mounted. Then, you can use <code>lsblk</code> (List Block Devices) to identify the correct device:</p>
     <pre>jamie@box:~$ lsblk
 NAME           MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sdb              8:16   0 931.5G  0 disk  
@@ -131,6 +131,22 @@ H/W path               Device           Class          Description
     <p>Once this is complete, reboot the virtual machine and Windows should automatically display in full screen. If not, you should be able to manually set your resolution using the display settings in Windows.</p>
     <img class="radius-8" src="/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/virtualbox-windows-10-full-screen-1920x1080.png" width="1000px" title="Windows 10 Running at 1920x1080 After Installing VirtualBox Guest Additions" alt="A screenshot of the Windows 10 virtual machine running at 1920x1080 after installing VirtualBox Guest Additions">
     <p>When it comes to Windows Product Activation, I'm not really able to advise. I've heard that Windows will often become unactivated when changing hardware, however in my case the activation remained. This may be because I never actually fully booted the Windows 10 disk when it was in the original desktop machine.</p>
+
+    <h2 id="troubleshooting-windows-is-hibernated-refused-to-mount">Troubleshooting: Windows is Hibernated, Refused to Mount</h2>
+    <p>When mounting the Windows 10 disk, you may see the following error:</p>
+    <pre class="pre-wrap-text">Failed to mount "Windows".
+
+Error mounting /dev/sdb3 at /media/user/Windows: Command-line `mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000" "/dev/sdb3" "/media/user/Windows"' exited with non-zero exit status 14: Window is hibernated, refused to mount.
+
+Failed to mount '/dev/sdb3': Operation not permitted
+
+The NTFS partition is in an unsafe state. Please resume and shutdown Windows fully (no hibernation or fast restarting), or mount the volume read-only with the 'ro' option.</pre>
+    <p>This can occur if Windows 10 is hibernated, or was otherwise not correctly shut down.</p>
+    <p>In order to fix this you need to remove the hibernation file. This can be done using <code>mount</code>.</p>
+    <p>In the command examples below, make sure to change <code>N</code> in <code>/dev/sdXN</code> to the partition number of the main Windows partition. Also change the <code>X</code> to the correct block device ID as usual.</p>
+    <p><b>Please be aware that this will permanently erase the hibernation file, so any data not properly saved will be lost.</b></p>
+    <pre>$ sudo mkdir /path/to/desired/mount/directory
+$ sudo mount -t ntfs-3g /dev/sdXN /mount/c/win10 -o remove_hiberfile</pre>
 
     <h2 id="conclusion">Conclusion</h2>
     <p>I'm pleasantly surprised that this worked - I was expecting Windows to fail to boot or at least have serious problems due to the drastic change in hardware from the original machine, but it seems to work fine.</p>
