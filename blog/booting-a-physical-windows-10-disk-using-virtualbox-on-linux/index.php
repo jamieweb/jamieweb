@@ -24,16 +24,11 @@
     <p>I recently inherited a computer with an OEM/factory-imaged Windows 10 disk inside. Straight away I took the drive out and replaced it with a Linux SSD, however since I don't own any other Windows systems, this will come in useful for testing my website for browser compatibility in Internet Explorer and Edge.</p>
     <p>I have put the Windows 10 disk in a USB SATA drive enclosure, and configured VirtualBox to be able to boot the raw disk. Now I'm able to test my site in IE and Edge usng the virtual machine running on my system.</p>
     <pre><b>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</b>
-&#x2523&#x2501&#x2501 <a href="#installing-namecoin-core">Installing Namecoin Core</a>
-&#x2523&#x2501&#x2501 <a href="#configuring-namecoin-core">Configuring Namecoin Core</a>
-&#x2523&#x2501&#x2501 <a href="#buying-namecoin">Buying Namecoin</a>
-&#x2523&#x2501&#x2501 <a href="#registering-domain">Registering A .bit Domain Name</a>
-&#x2523&#x2501&#x2501 <a href="#configuring-domain">Configuring A .bit Domain Name</a>
-&#x2523&#x2501&#x2501 <a href="#ncdns">Local DNS Resolver Setup (ncdns)</a>
-&#x2523&#x2501&#x2501 <a href="#tls">TLS (HTTPS) Certificate Generation</a>
-&#x2523&#x2501&#x2501 <a href="#apache-tls">Apache Web Server TLS Configuration</a>
-&#x2523&#x2501&#x2501 <a href="#apache-vhost">Apache Web Server Virtual Host Configuration</a>
-&#x2523&#x2501&#x2501 <a href="#problems">Problems With Namecoin</a>
+&#x2523&#x2501&#x2501 <a href="#identifying-the-disk">Identifying the Disk</a>
+&#x2523&#x2501&#x2501 <a href="#file-system-permissions">File System Permissions</a>
+&#x2523&#x2501&#x2501 <a href="#virtualbox-raw-host-access-vmdk">VirtualBox Raw Host Access VMDK File</a>
+&#x2523&#x2501&#x2501 <a href="#creating-and-configuring-the-virtual-machine">Creating and Configuring the Virtual Machine</a>
+&#x2523&#x2501&#x2501 <a href="#troubleshooting-windows-is-hibernated-refused-to-mount">Troubleshooting: Windows is Hibernated, Refused to Mount</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
     <h2 id="identifying-the-disk">Identifying the Disk</h2>
     <p>Mounting the disk/partitions is not actually required for VirtualBox to be able to boot it, however you will need to identify the correct block device ID for the disk (e.g. <code>/dev/sdb</code>).</p>
@@ -104,7 +99,7 @@ H/W path               Device           Class          Description
     <p>Next, add your user to the group. <b>Please be aware of the potential security implications of this, as you will probably be giving your user account full read-write access to some or all storage devices. If the group is something else such as <code>root</code>, you should consider the <a href="#higher-security-file-system-permissions-config">higher-security setup</a> instead.</b></p>
     <pre>sudo usermod -a -G disk youruser</pre>
 
-    <h2 id="virtualbox-raw-disk-image">VirtualBox Raw Host Access VMDK File</h2>
+    <h2 id="virtualbox-raw-host-access-vmdk">VirtualBox Raw Host Access VMDK File</h2>
     <p>In order for VirtualBox to be able to boot the physical Windows 10 disk, you need to a create a special VMDK (Virtual Machine Disk) file that represents the physical disk.</p>
     <p>These raw host disk access VMDK files do not actually contain any data from the physical disk, they are just a pointer that VirtualBox can use to access it.</p>
     <p>You can create a VirtualBox raw disk image using <code>VBoxManage</code>. You can specify a location in the <code>-filename</code> argument:</p>
