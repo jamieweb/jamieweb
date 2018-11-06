@@ -114,7 +114,30 @@ H/W path               Device           Class          Description
     <p>The raw host disk access VMDK files only contain ASCII test, so you can <code>cat</code> or <code>less</code> it and have a look!</p>
 
     <h2 id="creating-and-configuring-the-virtual-machine">Creating and Configuring the Virtual Machine</h2>
-    
+    <p>Now that the raw host disk access VMDK has been created, you need to create a new VM and boot from it.</p>
+    <p>Just set up a virtual machine as you normally would. Make sure to choose the correct type and version.</p>
+    <p>When you get to the 'Hard disk' section, select 'Use an existing virtual hard disk file', and choose the VMDK file that you created in the previous step.</p>
+    <img class="radius-8" src="/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/virtualbox-windows-10-hard-disk.png" width="1000px" title="The Hard Disk Section of the VirtualBox Virtual Machine Setup Wizard" alt="A screenshot of the hard disk section of the VirtualBox virtual machine setup wizard, with the VMDK file created in the previous step selected.">
+    <p>Once you have completed the initial setup wizard, open the settings for the virtual machine, give it some extra CPU cores if possible, then set the boot order to 'Hard Disk' first, with all other options disabled.</p>
+    <p>If the Windows 10 install on the disk is an EFI install, make sure to tick the 'Enable EFI' box.</p>
+    <img class="radius-8" src="/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/virtualbox-windows-10-boot-order-and-efi.png" width="1000px" title="Setting the Boot Order and EFI Status for the Virtual Machine" alt="A screenshot of the virtual machine setting page showing the boot order set to 'Hard Disk', and EFI boot enabled if required.">
+    <p>Save the settings, and then boot the virtual machine. If everything has worked, Windows 10 should boot up successfully.</p>
+    <img class="radius-8" src="/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/virtualbox-windows-10-first-boot.png" width="1000px" title="Booting the Windows 10 Virtual Machine for the First Time" alt="A screenshot of the Windows 10 virtual machine booting successfully for the first time.">
+    <p>If this is the first time you've booted the drive (it was for me), you'll have to go through the initial Windows 10 setup process where you choose the region, language, keyboard layout, etc. Cortana started speaking to me during the setup process so watch out for that!</p>
+    <p>Once you're all done with setup, Windows 10 should boot to the desktop successfully.</p>
+    <img class="radius-8" src="/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/virtualbox-windows-10-first-full-boot-after-setup.png" width="1000px" title="The First Full Boot After the Windows 10 Setup Was Complete" alt="A screenshot of the first full boot after the Windows 10 setup was complete.">
+    <p>If you want to be able to make Windows 10 full screen, etc, install the VirtualBox Guest Additions using <code>Devices -> Insert Guest Additions CD image...</code>, then run the installer in the virtual machine.</p>
+    <img class="radius-8" src="/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/virtualbox-windows-10-guest-additions.png" width="1000px" title="Installing the VirtualBox Guest Additions" alt="A screenshot of the installer for the VirtualBox Guest Additions running in the Windows 10 virtual machine.">
+    <p>Once this is complete, reboot the virtual machine and Windows should automatically display in full screen. If not, you should be able to manually set your resolution using the display settings in Windows.</p>
+    <img class="radius-8" src="/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/virtualbox-windows-10-full-screen-1920x1080.png" width="1000px" title="Windows 10 Running at 1920x1080 After Installing VirtualBox Guest Additions" alt="A screenshot of the Windows 10 virtual machine running at 1920x1080 after installing VirtualBox Guest Additions">
+    <p>When it comes to Windows Product Activation, I'm not really able to advise. I've heard that Windows will often become unactivated when changing hardware, however in my case the activation remained. This may be because I never actually fully booted the Windows 10 disk when it was in the original desktop machine.</p>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>I'm pleasantly surprised that this worked - I was expecting Windows to fail to boot or at least have serious problems due to the drastic change in hardware from the original machine, but it seems to work fine.</p>
+    <p>I'm going to use this VM to test my website for compatibility in Internet Explorer and Edge, in order to make sure that everything is presented as best as it can be.</p>
+    <p>On a side note, look how much bloatware came pre-installed on this. It's just a standard Windows 10 disk pulled from a shop-bought HP desktop machine... unbelievable!</p>
+    <img class="radius-8" src="/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/virtualbox-windows-10-pre-installed-hp-programs.png" width="1000px" title="The Control Panel 'Uninstall or change a program' Menu Showing a Large Number of Pre-installed HP Programs" alt="A screenshot of the Control Panel 'Uninstall or change a program' menu showing a large number of pre-installed HP programs.">
+    <p>Luckily this is in a VM on my segregated test machine. I wouldn't want to be exposing all that to my network!</p>
 </div>
 
 <?php include "footer.php" ?>
@@ -122,3 +145,9 @@ H/W path               Device           Class          Description
 </body>
 
 </html>
+
+
+
+
+
+
