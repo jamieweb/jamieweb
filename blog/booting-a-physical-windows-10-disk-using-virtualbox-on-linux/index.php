@@ -6,7 +6,7 @@
 
 <head>
     <title>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</title>
-    <meta name="description" content="New Site Design">
+    <meta name="description" content="Configuring VirtualBox on Linux to boot a physical Windows 10 disk connected via SATA or USB.">
     <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
     <meta name="author" content="Jamie Scaife">
     <link href="/jamie.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 <div class="body">
     <h1>Booting a Physical Windows 10 Disk using VirtualBox on Linux</h1>
     <hr>
-    <p><b>Sunday 4th November 2018</b></p>
+    <p><b>Wednesday 7th November 2018</b></p>
     <p>I recently inherited a computer with an OEM/factory-imaged Windows 10 disk inside. Straight away I took the drive out and replaced it with a Linux SSD, however since I don't own any other Windows systems, this will come in useful for testing my website for browser compatibility in Internet Explorer and Edge.</p>
     <p>I have put the Windows 10 disk in a USB SATA drive enclosure, and configured VirtualBox to be able to boot the raw disk. Now I'm able to test my site in IE and Edge usng the virtual machine running on my system.</p>
     <pre><b>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</b>
