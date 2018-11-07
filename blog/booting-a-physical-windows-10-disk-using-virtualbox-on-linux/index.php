@@ -142,7 +142,7 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
     <p>In the command examples below, make sure to change <code>N</code> in <code>/dev/sdXN</code> to the partition number of the main Windows partition. Also change the <code>X</code> to the correct block device ID as usual.</p>
     <p><b>Please be aware that this will permanently erase the hibernation file, so any data not properly saved will be lost.</b></p>
     <pre>$ sudo mkdir /path/to/desired/mount/directory
-$ sudo mount -t ntfs-3g /dev/sdXN /mount/c/win10 -o remove_hiberfile</pre>
+$ sudo mount -t ntfs-3g /dev/sdXN /path/to/desired/mount/directory -o remove_hiberfile</pre>
 
     <h2 id="conclusion">Conclusion</h2>
     <p>I'm pleasantly surprised that this worked - I was expecting Windows to fail to boot or at least have serious problems due to the drastic change in hardware from the original machine, but it seems to work fine.</p>
