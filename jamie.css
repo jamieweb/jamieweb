@@ -704,6 +704,11 @@ span.tag-ubuntu {
     color: white;
 }
 
+span.tag-virtualisation {
+    background-color: #2a7fee;
+    color: white;
+}
+
 th.h1-scope-type {
     width: 150px;
 }
