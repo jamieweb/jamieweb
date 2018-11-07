@@ -20,7 +20,7 @@
 <div class="body">
     <h1>x86_64 General Purpose Registers Reference</h1>
     <hr>
-    <p>The x86_64 instruction set architechture...</p>
+    <p>The x86_64 instruction set architechture includes 16 general purpose regisers, each of which can be addressed in full, or by the lower 32, 16 and 8 bits.</p>
     <h2 id="general-purpose-registers">General Purpose Registers</h2>
     <table class="width-1000 padding-6 border-1-4c4c4c border-collapse">
         <tr class="bg-lightgreen">
