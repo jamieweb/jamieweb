@@ -21,7 +21,7 @@
     <h1>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</h1>
     <hr>
     <p><b>Wednesday 7th November 2018</b></p>
-    <p>I recently inherited a computer with an OEM/factory-imaged Windows 10 disk inside. Straight away I took the drive out and replaced it with a Linux SSD, however since I don't own any other Windows systems, this will come in useful for testing my website for browser compatibility in Internet Explorer and Edge.</p>
+    <p>I recently acquired a computer with an OEM/factory-imaged Windows 10 disk inside. Straight away I took the disk out and replaced it with a Linux SSD, however since I don't own any other Windows systems, this will come in useful for testing my website for browser compatibility in Internet Explorer and Edge.</p>
     <p>I have put the Windows 10 disk in a USB SATA drive enclosure, and configured VirtualBox to be able to boot the raw disk. Now I'm able to test my site in IE and Edge usng the virtual machine running on my system.</p>
     <pre><b>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</b>
 &#x2523&#x2501&#x2501 <a href="#identifying-the-disk">Identifying the Disk</a>
@@ -32,8 +32,8 @@
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
     <h2 id="identifying-the-disk">Identifying the Disk</h2>
     <p>Mounting the disk/partitions is not actually required for VirtualBox to be able to boot it, however you will need to identify the correct block device ID for the disk (e.g. <code>/dev/sdb</code>).</p>
-    <p>If you're using a modern desktop environment and file manager (e.g. XFCE with Thunar), the Windows 10 disk will probably be automatically mounted (if you get stuck at the error 'Windows is hibernated, refused to mount.', please see the troubleshooting <a href="#troubleshooting-windows-is-hibernated-refused-to-mount" target="_blank">here</a>). In my case, the <code>Windows</code> and <code>Recovery Image</code> partitions were auto-mounted. Then, you can use <code>lsblk</code> (List Block Devices) to identify the correct device:</p>
-    <pre>jamie@box:~$ lsblk
+    <p>If you're using a modern desktop environment and file manager (e.g. XFCE with Thunar), the Windows 10 disk will probably be automatically mounted (if you get stuck at the error 'Windows is hibernated, refused to mount.', please see the troubleshooting <a href="#troubleshooting-windows-is-hibernated-refused-to-mount" target="_blank">here</a>). In my case, the <code>Windows</code> and <code>Recovery Image</code> partitions were auto-mounted. Then, you can use <code>lsblk</code> (List Block Devices) to identify the correct device. For example:</p>
+    <pre>$ lsblk
 NAME           MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sdb              8:16   0 931.5G  0 disk  
 ├─sdb4           8:20   0   980M  0 part  
@@ -47,8 +47,8 @@ sda              8:0    0 111.8G  0 disk
 │ └─cryptswap1 253:0    0   3.9G  0 crypt 
 └─sda1           8:1    0 107.9G  0 part  /</pre>
     <p>From this, you can determine that <code>/dev/sdb</code> is the Windows 10 disk.</p>
-    <p><b>If your disk is not automatically mounted, you don't need to mount it.</b> You can use <code>lshw</code> to determine the correct device:</p>
-    <pre>jamie@box:~$ sudo lshw -short -class disk,volume
+    <p><b>If your disk is not automatically mounted, you don't need to mount it.</b> You can use <code>lshw</code> to determine the correct device. For example:</p>
+    <pre>$ sudo lshw -short -class disk,volume
 H/W path               Device           Class          Description
 ==================================================================
 /0/100/14/0/7/0.0.0    /dev/sdb         disk           1TB 2115
@@ -62,6 +62,7 @@ H/W path               Device           Class          Description
 /0/1/0.0.0/2           /dev/sda2        volume         4008MiB Extended partition
 /0/1/0.0.0/2/5         /dev/sda5        volume         4008MiB Linux swap / Solaris partition</pre>
     <p>From this output, you can see that <code>/dev/sdb</code> is the Windows 10 disk.</p>
+    <p><b>For the rest of this document, I will refer to the correct block device ID for your system as <code>/dev/sdX</code>. Make sure to substitute this with the correct one for your system in commands that you execute.</b></p>
 
     <h2 id="file-system-permissions">File System Permissions</h2>
     <p>In order to have full, unrestricted access to the Windows 10 disk without having to use <code>sudo</code>, you need to give your user account the appropriate permissions.</p>
