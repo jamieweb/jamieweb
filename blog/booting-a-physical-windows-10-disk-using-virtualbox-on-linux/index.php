@@ -61,7 +61,7 @@ H/W path               Device           Class          Description
 /0/1/0.0.0/1           /dev/sda1        volume         107GiB EXT4 volume
 /0/1/0.0.0/2           /dev/sda2        volume         4008MiB Extended partition
 /0/1/0.0.0/2/5         /dev/sda5        volume         4008MiB Linux swap / Solaris partition</pre>
-    <p>From this output, you can see that <code>/dev/sdb</code> is the Windows 10 disk.</p>
+    <p>From this example output, you can see that <code>/dev/sdb</code> is the Windows 10 disk. This may differ for you though.</p>
     <p><b>For the rest of this document, I will refer to the correct block device ID for your system as <code>/dev/sdX</code>. Make sure to substitute this with the correct one for your system in commands that you execute.</b></p>
 
     <h2 id="file-system-permissions">File System Permissions</h2>
