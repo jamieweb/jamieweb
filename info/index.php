@@ -76,7 +76,7 @@
         </div>
         <div class="iconlist">
             <h3 class="no-mar-bottom"><a href="/info/chromium-team-updated-packages-for-ubuntu/">Updated Chromium Browser Packages for Ubuntu</a></h3>
-            <p class="two-mar-top"><b>How to get regularly updated chromium-browser packages on Ubuntu.</b></p>
+            <p class="two-mar-top"><b>How to get more up-to-date chromium-browser packages on Ubuntu.</b></p>
         </div>
     </div>
     <div class="iconparent">

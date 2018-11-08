@@ -11,11 +11,25 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
-        <title>Introduction to Reverse Engineering with radare2 Cutter - Part 1: Key Terminology and Overview</title>
+        <title>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</title>
         <link>https://www.jamieweb.net/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/</link>
         <description>Configuring VirtualBox on Linux to boot a physical Windows 10 disk connected via SATA or USB.</description>
         <category>Blog</category>
-        <pubDate>Wed, 7 Nov 2018</pubDate>
+        <pubDate>Fri, 9 Nov 2018</pubDate>
+    </item>
+    <item>
+        <title>Updated Chromium Browser Packages for Ubuntu</title>
+        <link>https://www.jamieweb.net/info/chromium-team-updated-packages-for-ubuntu/</link>
+        <description>How to get more up-to-date chromium-browser packages on Ubuntu.</description>
+        <category>Info</category>
+        <pubDate>Wed, 8 Nov 2018</pubDate>
+    </item>
+    <item>
+        <title>x86_64 General Purpose Registers Reference</title>
+        <link>https://www.jamieweb.net/info/x86_64-general-purpose-registers-reference/</link>
+        <description>A reference of the general purpose registers in the x86_64 instruction set architechture.</description>
+        <category>Info</category>
+        <pubDate>Wed, 8 Nov 2018</pubDate>
     </item>
     <item>
         <title>Introduction to Reverse Engineering with radare2 Cutter - Part 1: Key Terminology and Overview</title>

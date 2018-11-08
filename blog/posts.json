@@ -7,7 +7,7 @@
                 "title": "Booting a Physical Windows 10 Disk Using VirtualBox on Linux",
                 "longdesc": "Configuring VirtualBox on Linux to boot a physical Windows 10 disk connected via SATA or USB.",
                 "shortdesc": "Configuring VirtualBox on Linux to boot a physical Windows 10 disk.",
-                "date": "Wednesday 7th November 2018",
+                "date": "Friday 9th November 2018",
                 "tags": "Virtualisation,Guide",
                 "snippet": "I recently acquired a computer with an OEM/factory-imaged Windows 10 disk inside. Straight away I took the disk out and replaced it with a Linux SSD, however since I don't own any other Windows systems, this will come in useful for testing my website for browser compatibility in Internet Explorer and Edge. I have put the Windows 10 disk in a USB SATA drive enclosure, and configured VirtualBox to be able to boot the raw disk."
             },
