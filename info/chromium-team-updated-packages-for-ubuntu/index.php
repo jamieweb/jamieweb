@@ -28,7 +28,7 @@
     <p>You can add this PPA to your system by first ensuring that the <code>software-properties-common</code> package is installed, then running the following command (for whicver branch you want):</p>
     <pre>$ sudo apt-add-respository ppa:chromium-team/stable</pre>
     <h2>Is the chromium-team repository safe to use?</h2>
-    <p>The <code>chromium-browser</code> packages in the <code>chromium-team</code> PPA are primarily maintained by Oliver Tilloy of Canonical. The PPA is also referenced in the official Chromium repository in <code><a href="https://chromium.googlesource.com/chromium/src/+/HEAD/docs/linux_chromium_packages.md" target="_blank" rel="noopener">docs/linux_chromium_packages.md</a></code>.</p>
+    <p>The <code>chromium-browser</code> packages in the <code>chromium-team</code> PPA are primarily maintained by Olivier Tilloy of Canonical. The PPA is also referenced in the official Chromium repository in <code><a href="https://chromium.googlesource.com/chromium/src/+/HEAD/docs/linux_chromium_packages.md" target="_blank" rel="noopener">docs/linux_chromium_packages.md</a></code>.</p>
 </div>
 
 <?php include "footer.php" ?>
