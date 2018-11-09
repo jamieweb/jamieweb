@@ -107,7 +107,7 @@ H/W path               Device           Class          Description
     <pre>$ VBoxManage internalcommands createrawvmdk -filename /path/to/diskname.vmdk -rawdisk /dev/sdX</pre>
     <p>This should output something similar to the following:</p>
     <pre>RAW host disk access VMDK file /path/to/windows10.vmdk created successfully.</pre>
-    <p>The raw host disk access VMDK files only contain ASCII test, so you can <code>cat</code> or <code>less</code> it and have a look!</p>
+    <p>The raw host disk access VMDK file only contains ASCII test, so you can <code>cat</code> or <code>less</code> it and have a look!</p>
 
     <h2 id="creating-and-configuring-the-virtual-machine">Creating and Configuring the Virtual Machine</h2>
     <p>Now that the raw host disk access VMDK has been created, you need to create a new VM and boot from it.</p>
