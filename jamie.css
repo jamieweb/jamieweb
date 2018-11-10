@@ -876,6 +876,14 @@ th.h1-scope-in-scope {
     background-color: lightgreen;
 }
 
+.color-limegreen {
+    color: limegreen;
+}
+
+.color-crimson {
+    color: crimson;
+}
+
 .info {
     margin-top: 0px;
     margin-bottom: 2px;
