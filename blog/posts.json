@@ -1,6 +1,16 @@
 {
     "blog": {
         "2018": {
+            "radare2-cutter-part-2-analysing-a-basic-program": {
+                "uri": "radare2-cutter-part-2-analysing-a-basic-program",
+                "navtitle": "Cutter Part 2: Analysing a Basic Program",
+                "title": "Introduction to Reverse Engineering with radare2 Cutter - Part 2: Analysing a Basic Program",
+                "longdesc": "Reverse engineering a basic program using static and dynamic analysis in radare2 Cutter.",
+                "shortdesc": "Analysing a basic program using radare2 Cutter.",
+                "date": "Date",
+                "tags": "Reverse Engineering,Guide",
+                "snippet": "I have put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>\n<pre>Enter a Number (or q to quit): 2\n2 is even.\nEnter a Number (or q to quit): 1\n1 is odd.\nEnter a Number (or q to quit): 25\n25 is odd.\nEnter a Number (or q to quit): hello\nInvalid Input\nEnter a Number (or q to quit): q</pre>"
+            },
             "booting-a-physical-windows-10-disk-using-virtualbox-on-linux": {
                 "uri": "booting-a-physical-windows-10-disk-using-virtualbox-on-linux",
                 "navtitle": "VirtualBox Physical Windows 10 Disk on Linux",
