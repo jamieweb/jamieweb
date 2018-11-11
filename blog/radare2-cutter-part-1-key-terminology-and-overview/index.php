@@ -28,7 +28,7 @@
             <p>This is part 1 of a 3 part series on reverse engineering with Cutter:</p>
             <ul class="spaced-list">
                 <li><b>Part 1:</b> Key Terminology and Overview (You Are Here)</li>
-                <li><b>Part 2:</b> Analysing a Basic Program (Coming Soon)</li>
+                <li><a href="/blog/radare2-cutter-part-2-analysing-a-basic-program/" target="_blank"><b>Part 2:</b> Analysing a Basic Program</a></li>
                 <li><b>Part 3:</b> Solving a Crackme (Coming Soon)</li>
             </ul>
         </div>
@@ -285,7 +285,7 @@ Enter Password (or q to quit): q</pre>
 
     <h2 id="part-2">Part 2</h2>
     <p>Part 2 includes analysing a basic compiled C++ program using static and dynamic analysis, and further technical details on some common instructions.</p>
-    <p><b>Part 2 is currently a work in progress, and is coming soon!</b></p>
+    <p><b><a href="/blog/radare2-cutter-part-2-analysing-a-basic-program/" target="_blank">Part 2: Analysing a Basic Program</a></b></p>
 </div>
 
 <?php include "footer.php" ?>
