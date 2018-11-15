@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Introduction to Reverse Engineering with radare2 Cutter - Part 2: Analysing a Basic Program</title>
+        <link>https://www.jamieweb.net/blog/radare2-cutter-part-2-analysing-a-basic-program/</link>
+        <description>Analysing a basic program using static analysis in radare2 Cutter.</description>
+        <category>Blog</category>
+        <pubDate>Fri, 16 Nov 2018</pubDate>
+    </item>
+    <item>
         <title>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</title>
         <link>https://www.jamieweb.net/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/</link>
         <description>Configuring VirtualBox on Linux to boot a physical Windows 10 disk connected via SATA or USB.</description>

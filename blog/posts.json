@@ -5,7 +5,7 @@
                 "uri": "radare2-cutter-part-2-analysing-a-basic-program",
                 "navtitle": "Cutter Part 2: Analysing a Basic Program",
                 "title": "Introduction to Reverse Engineering with radare2 Cutter - Part 2: Analysing a Basic Program",
-                "longdesc": "Reverse engineering a basic program using static analysis in radare2 Cutter.",
+                "longdesc": "Analysing a basic program using static analysis in radare2 Cutter.",
                 "shortdesc": "Analysing a basic program using radare2 Cutter.",
                 "date": "Date",
                 "tags": "Reverse Engineering,Guide",
