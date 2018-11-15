@@ -284,7 +284,7 @@ Enter Password (or q to quit): q</pre>
     <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution.</b> For the best experience, compile the code without looking at the source file. Obviously running untrusted code from the internet goes against every security best-practise out there, so either use a dedicated and segregated malware analysis machine, or ask a trusted friend to check the code first.</p>
 
     <h2 id="part-2">Part 2</h2>
-    <p>Part 2 includes analysing a basic compiled C++ program using static and dynamic analysis, and further technical details on some common instructions.</p>
+    <p>Part 2 includes analysing a basic compiled C++ program using static analysis, and further technical details on some common instructions.</p>
     <p><b><a href="/blog/radare2-cutter-part-2-analysing-a-basic-program/" target="_blank">Part 2: Analysing a Basic Program</a></b></p>
 </div>
 

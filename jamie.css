@@ -820,6 +820,10 @@ th.h1-scope-in-scope {
     justify-content: center;
 }
 
+.flex-justify-space-between {
+    justify-content: space-between;
+}
+
 .flex-grow-1 {
     flex-grow: 1;
 }
