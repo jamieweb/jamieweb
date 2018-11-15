@@ -84,10 +84,10 @@ int main(){
     <pre>$ g++ -std=c++14 -o <i>outputfile</i> <i>inputfile</i></pre>
     <p>After opening the file in Cutter using the default analysis settings, you will see the main interface with the disassembly view selected.</p>
     <img class="radius-8" src="odd-even-default-view.png" width="1000px" title="The Default View When Analysing a New File" alt="A screenshot of the default Cutter interface when analysing a new file.">
-    <p>The first thing to do in most analysis tasks is to go to <code>main</code>. This is usually the best starting point for finding the code that you're interested in. For very simple programs (like the one we're looking at), most or all of the code will be in <code>main</code>.</p>
+    <p>The first thing to do in most analysis tasks is to go to <code>main</code>. This is usually the best starting point for finding the code that you're interested in. For very simple programs (like the one we're looking at), most or all of the noteworthy code will be in <code>main</code>.</p>
     <p>In Cutter, you can double-click <code>main</code> in the functions list on the left hand side. This will move the disassembler view to the start of <code>main</code>.</p>
     <img class="radius-8" src="odd-even-double-click-main.png" width="1000px" title="Double-clicking Main in the Functions List" alt="A screenshot of the Cutter interface with the main function showing in the disassembly view.">
-    <p>Immediately you can see the string for "Enter a number (or q to quit)". If you scroll down further, you will see the other key strings in the program too.</p>
+    <p>Immediately you can see the string for "Enter a number (or q to quit)". If you scroll down further, you will see the other key strings in the program too. This is a good indication that you've found something worth investigating further.</p>
     <p>Next, you can click onto the graph view in order to see the execution flow of the program. Zoom out a bit so that you can see it all.</p>
     <img class="radius-8" src="odd-even-graph-overview.png" width="1000px" title="An Overview of the Graph View" alt="A screenshot of the Cutter interface with the graph view showing an overview of the entire program.">
     <p>This is too small to read, but it gives you a basic idea of the various execution paths that the program can take, as well as showing the various loops.</p>
