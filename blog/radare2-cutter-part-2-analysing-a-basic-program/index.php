@@ -45,7 +45,7 @@ Part 2: Analysing a Basic Program</b>
 &#x2517&#x2501&#x2501 <a href="#part-3">Part 3</a></pre>
 
     <h2 id="cpp-odd-even">Creating a Program to Analyse</h2>
-    <p>I have put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>
+    <p>I've put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>
     <pre>Enter a Number (or q to quit): 2
 2 is even.
 Enter a Number (or q to quit): 1

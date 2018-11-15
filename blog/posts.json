@@ -9,7 +9,7 @@
                 "shortdesc": "Analysing a basic program using radare2 Cutter.",
                 "date": "Date",
                 "tags": "Reverse Engineering,Guide",
-                "snippet": "I have put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>\n<pre>Enter a Number (or q to quit): 2\n2 is even.\nEnter a Number (or q to quit): 1\n1 is odd.\nEnter a Number (or q to quit): 25\n25 is odd.\nEnter a Number (or q to quit): hello\nInvalid Input\nEnter a Number (or q to quit): q</pre>"
+                "snippet": "I've put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>\n<pre>Enter a Number (or q to quit): 2\n2 is even.\nEnter a Number (or q to quit): 1\n1 is odd.\nEnter a Number (or q to quit): 25\n25 is odd.\nEnter a Number (or q to quit): hello\nInvalid Input\nEnter a Number (or q to quit): q</pre>"
             },
             "booting-a-physical-windows-10-disk-using-virtualbox-on-linux": {
                 "uri": "booting-a-physical-windows-10-disk-using-virtualbox-on-linux",
