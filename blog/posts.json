@@ -7,9 +7,9 @@
                 "title": "Introduction to Reverse Engineering with radare2 Cutter - Part 2: Analysing a Basic Program",
                 "longdesc": "Analysing a basic program using static analysis in radare2 Cutter.",
                 "shortdesc": "Analysing a basic program using radare2 Cutter.",
-                "date": "Date",
+                "date": "Friday 16th November 2018",
                 "tags": "Reverse Engineering,Guide",
-                "snippet": "I've put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>\n<pre>Enter a Number (or q to quit): 2\n2 is even.\nEnter a Number (or q to quit): 1\n1 is odd.\nEnter a Number (or q to quit): 25\n25 is odd.\nEnter a Number (or q to quit): hello\nInvalid Input\nEnter a Number (or q to quit): q</pre>"
+                "snippet": "I've put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>\n<pre>Enter a Number (or q to quit): 2\n2 is even.\nEnter a Number (or q to quit): 1\n1 is odd.\nEnter a Number (or q to quit): 25\n25 is odd.\nEnter a Number (or q to quit): hello\nInvalid Input\nEnter a Number (or q to quit): q</pre><p>If you wish to compile this yourself so that you can follow along with the analysis, I have included the C++ code..."
             },
             "booting-a-physical-windows-10-disk-using-virtualbox-on-linux": {
                 "uri": "booting-a-physical-windows-10-disk-using-virtualbox-on-linux",

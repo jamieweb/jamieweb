@@ -101,11 +101,11 @@ int main(){
     <p>In order to fully understand the instruction, you need to see the opcode, which you can find in the sidebar. In this case the opcode is <code>lea rax, [rbp - 0x40]</code>. There are two important things to note about this opcode:</p>
     <ul class="spaced-list">
         <li><b>Square brackets:</b> The second operand (source) is surrounded by square brackets. This is used to refer to the contents of the memory address stored in the register, rather than the memory address itself.</li>
-        <li><b>Minus symbol:</b> The second operand also contains a mathematical operator and a hexadecimal value (in this example, <code>- 0x40</code>). This is used to subtract a number of bytes from the memory address at the specified register, resulting in a new memory address. In this case, 0x40 in hex is 64 in decimal. The plus sign (+) can also be used.</li>
+        <li><b>Minus sign:</b> The second operand also contains a mathematical operator and a hexadecimal value (in this example, <code>- 0x40</code>). This is used to subtract a number of bytes from the memory address at the specified register, resulting in a new memory address. In this case, 0x40 in hex is 64 in decimal. The plus sign (+) can also be used.</li>
     </ul>
     <p>Moving on, there is a <code>test</code> against the <code>al</code> register, followed by a <code>je</code> (Jump If Equal). If the jump does not take place, the program moves on to the error handling code which is part of the try/catch</code> that is used.</p>
     <img class="radius-8" src="/blog/radare2-cutter-part-2-analysing-a-basic-program/odd-even-catch.png" width="1000px" title="The Cutter Disassembly View Showing the Assembly for a Catch" alt="A screenshot of the Cutter interface with the assembly code for a catch showing.">
-    <p>While you wouldn't normally have the knowledge of a try/catch being used in a particular place, it is usually possible to make an educated guess based on the behaviour of the program. I'm going to cover more about this in my walkthrough for <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview#sams-crackme" target="_blank" rel="noopener">Sam's Crackme</a>.</p>
+    <p>While you wouldn't normally have the knowledge that a try/catch is used in a particular place, it is usually possible to make an educated guess based on the behaviour of the program. I'm going to cover more about this in my walkthrough for <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview#sams-crackme" target="_blank" rel="noopener">Sam's Crackme</a>.</p>
     <p>If the jump does take place (i.e. it hasn't caught yet), the program moves onto the next section. This is where it actually checks whether the inputted number is odd or even.</p>
     <img class="radius-8" src="/blog/radare2-cutter-part-2-analysing-a-basic-program/odd-even-number-check.png" width="1000px" title="Cutter Showing the Assembly Code Responsible for Determining Whether a Number is Odd or Even" alt="A screenshot of the Cutter interface with the assembly code for determining whether the user inputted number is odd or even.">
     <p>Firstly, the memory address of the user input stored in the stack is moved into <code>rax</code> again (as previously shown <a href="#user-input">above</a>).</p>
@@ -169,7 +169,7 @@ test eax, eax   //1101 AND 1101 = 1101, 1101 != 0 so ZF is cleared
 sete al         //ZF is not set, so al = 0
 test al, al     //0 AND 0 = 0, 0 = 0 so ZF is set
 je 0x400f1a     //ZF is set, so jump to 0x400f1a (print $number is Odd)</pre>
-    <p>At this point, all of the noteworthy logic of the program has been understood, and with this knowledge, it would be possible to recreate the function of the program relatively accurately.</p>
+    <p>At this point, all of the noteworthy logic of the program has been successfully understood. With this knowledge, it would be possible to recreate the function of the program relatively accurately, which is often one of the main goals of reverse engineering.</p>
 
     <h2 id="part-3">Part 3</h2>
     <p>In part 3, we will solve a beginner level crackme challenge using Cutter and various other tools. If you'd like to get a head start, you can have a go at <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview#sams-crackme" target="_blank" rel="noopener">Sam's Crackme</a>, which is the crackme that we'll be solving.</p>
