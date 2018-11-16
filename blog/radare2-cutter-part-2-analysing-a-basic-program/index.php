@@ -21,7 +21,7 @@
     <h1 class="no-mar-bottom">Introduction to Reverse Engineering with radare2 Cutter</h1>
     <h2 class="subtitle-mar-top">Part 2: Analysing a Basic Program</h2>
     <hr>
-    <p><b>Friday 16th November 2018</b></p>
+    <p><b>Saturday 17th November 2018</b></p>
     <div class="display-flex flex-justify-space-between">
         <div>
             <p class="no-mar-top">This is part 2 of a 3 part series on reverse engineering with Cutter:</p>
@@ -172,7 +172,7 @@ je 0x400f1a     //ZF is set, so jump to 0x400f1a (print $number is Odd)</pre>
     <p>At this point, all of the noteworthy logic of the program has been successfully understood. With this knowledge, it would be possible to recreate the function of the program relatively accurately, which is often one of the main goals of reverse engineering.</p>
 
     <h2 id="part-3">Part 3</h2>
-    <p>In part 3, we will solve a beginner level crackme challenge using Cutter and various other tools. If you'd like to get a head start, you can have a go at <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview#sams-crackme" target="_blank" rel="noopener">Sam's Crackme</a>, which is the crackme that we'll be solving.</p>
+    <p>In part 3, we will solve a beginner level crackme challenge using Cutter and various other tools. If you'd like to get a head start, you can have a go at <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview#sam-crackme" target="_blank" rel="noopener">Sam's Crackme</a>, which is the crackme that we'll be solving.</p>
     <p><b>Part 3 is currently a work in progress, and is coming soon!</b></p>
 </div>
 
