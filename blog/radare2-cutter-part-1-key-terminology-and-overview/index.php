@@ -156,7 +156,7 @@ Part 1: Key Terminology and Overview</b>
     <h3 id="functions-overview">Functions</h3>
     <div class="display-flex">
         <div>
-            <img class="radius-8" src="/blog/radare2-cutter-part-1-key-terminology-and-overview/cutter-functions.png" title="The Cutter Functions List" alt="A screenshot of the Cutter functions list.">
+            <img class="radius-8 max-width-45-vw" src="/blog/radare2-cutter-part-1-key-terminology-and-overview/cutter-functions.png" width="300px" title="The Cutter Functions List" alt="A screenshot of the Cutter functions list.">
         </div>
         <div class="display-flex flex-direction-column">
             <p class="no-mar-top margin-left-24">On the left hand side of the default interface layout, there is the functions list. This shows a list of functions that Cutter has been able to detect in the program.</p>
