@@ -7,9 +7,7 @@
 <head>
     <title>Part 2: Analysing a Basic Program - Introduction to Reverse Engineering with radare2 Cutter</title>
     <meta name="description" content="Reverse engineering a basic program using static and dynamic analysis in radare2 Cutter.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/radare2-cutter-part-2-analysing-a-basic-program/" rel="canonical">
 </head>
 
