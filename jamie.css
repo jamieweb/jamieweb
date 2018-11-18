@@ -3,7 +3,7 @@
     src: url("/fonts/opensans/OpenSans-Regular.ttf");
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1049.9px) {
     nav {
         width: 100%;
     }
@@ -28,7 +28,7 @@
     }
 }
 
-@media (max-width: 1050px) and (min-width: 550px) {
+@media (max-width: 1049.9px) and (min-width: 550px) {
     div.footer-column {
         width: 30%;
     }
