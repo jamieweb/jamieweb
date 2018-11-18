@@ -840,6 +840,10 @@ th.h1-scope-in-scope {
     width: 1000px;
 }
 
+.width-100-percent {
+    width: 100%;
+}
+
 .width-450 {
     width: 450px;
 }
