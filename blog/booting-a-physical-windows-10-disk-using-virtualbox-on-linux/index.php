@@ -7,9 +7,7 @@
 <head>
     <title>Booting a Physical Windows 10 Disk Using VirtualBox on Linux</title>
     <meta name="description" content="Configuring VirtualBox on Linux to boot a physical Windows 10 disk connected via SATA or USB.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/booting-a-physical-windows-10-disk-using-virtualbox-on-linux/" rel="canonical">
 </head>
 

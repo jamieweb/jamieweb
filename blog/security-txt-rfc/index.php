@@ -7,9 +7,7 @@
 <head>
     <title>security.txt Internet Draft</title>
     <meta name="description" content="security.txt allows website owners to outline vulnerability disclosure policies in a simple TXT file format.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/security-txt-rfc/" rel="canonical">
 </head>
 

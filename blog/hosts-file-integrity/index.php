@@ -7,9 +7,7 @@
 <head>
     <title>Hosts File Site Blocking</title>
     <meta name="description" content="Blocking websites using the hosts file and an integrity verification script.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/hosts-file-integrity/" rel="canonical">
 </head>
 

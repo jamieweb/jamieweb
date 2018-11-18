@@ -7,9 +7,7 @@
 <head>
     <title>Launching a Public HackerOne Security Vulnerability Disclosure Program</title>
     <meta name="description" content="A write-up of launching the public HackerOne security vulnerability disclosure program for JamieWeb. hackerone.com/jamieweb">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/launching-a-public-hackerone-program/" rel="canonical">
 </head>
 

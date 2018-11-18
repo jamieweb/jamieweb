@@ -7,9 +7,7 @@
 <head>
     <title>Updated Chromium Browser Packages for Ubuntu</title>
     <meta name="description" content="How to get more up-to-date chromium-browser packages on Ubuntu.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/info/chromium-team-updated-browser-packages-for-ubuntu/" rel="canonical">
 </head>
 

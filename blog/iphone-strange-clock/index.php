@@ -7,9 +7,7 @@
 <head>
     <title>iPhone System Clock</title>
     <meta name="description" content="iPhone 4 Behaving Strangely Because of an Incorrect System Clock">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/iphone-strange-clock/" rel="canonical">
 </head>
 

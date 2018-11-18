@@ -7,9 +7,7 @@
 <head>
     <title>InspIRCd Linux Setup Guide</title>
     <meta name="description" content="How to Install and Configure InspIRCd on Linux">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/inspircd-linux-guide/" rel="canonical">
 </head>
 

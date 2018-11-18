@@ -7,9 +7,7 @@
 <head>
     <title>Automatically Testing Your Content Security Policy Using Travis-CI and Headless Chrome Crawler</title>
     <meta name="description" content="A Travis-CI build configuration for automatically testing your website's Content Security Policy.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/testing-your-csp-using-travis-ci-and-headless-chrome-crawler/" rel="canonical">
 </head>
 

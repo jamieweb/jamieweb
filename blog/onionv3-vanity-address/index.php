@@ -7,9 +7,7 @@
 <head>
     <title>Tor Onion v3 Vanity Address</title>
     <meta name="description" content="Generating a vanity address for a Tor Onion v3 Hidden Service">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/onionv3-vanity-address/" rel="canonical">
 </head>
 

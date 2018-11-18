@@ -7,9 +7,7 @@
 <head>
     <title>iPad Mini iOS 6</title>
     <meta name="description" content="iPad Mini iOS 6 Downgrade Without SHSH Blobs is NOT Currently Possible - Dual Boot Instead.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/ipad-mini-ios6/" rel="canonical">
 </head>
 

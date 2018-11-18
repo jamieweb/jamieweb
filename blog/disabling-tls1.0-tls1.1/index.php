@@ -7,9 +7,7 @@
 <head>
     <title>Disabling TLS 1.0 and TLS 1.1</title>
     <meta name="description" content="Assessing browser compatibility and disabling older TLS protocol versions.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/disabling-tls1.0-tls1.1/" rel="canonical">
 </head>
 

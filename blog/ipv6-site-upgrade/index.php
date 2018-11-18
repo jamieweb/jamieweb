@@ -7,9 +7,7 @@
 <head>
     <title>Upgrading to IPv6</title>
     <meta name="description" content="Setting up and configuring IPv6.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/ipv6-site-upgrade/" rel="canonical">
 </head>
 

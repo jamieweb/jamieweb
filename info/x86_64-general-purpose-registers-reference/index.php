@@ -7,9 +7,7 @@
 <head>
     <title>x86_64 General Purpose Registers Reference</title>
     <meta name="description" content="A reference of the general purpose registers in the x86_64 instruction set architechture.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/info/x86_64-general-purpose-registers-reference/" rel="canonical">
 </head>
 

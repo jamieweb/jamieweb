@@ -7,9 +7,7 @@
 <head>
     <title>IPv6 / IPv4 Connection Test</title>
     <meta name="description" content="Test whether you have a working IPv6 and IPv4 internet connection.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://ipv6.jamieweb.net/ipv6-only.css" rel="stylesheet">
     <link href="https://ipv4.jamieweb.net/ipv4-only.css" rel="stylesheet">
     <link href="https://www.jamieweb.net/tools/ipv6-ipv4-test/" rel="canonical">

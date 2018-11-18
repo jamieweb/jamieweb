@@ -7,9 +7,7 @@
 <head>
     <title>Chrome Extension IDs</title>
     <meta name="description" content="IDs and URLs of the legitimate versions of popular Chrome extensions.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/info/chrome-extension-ids/" rel="canonical">
 </head>
 

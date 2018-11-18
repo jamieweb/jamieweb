@@ -7,9 +7,7 @@
 <head>
     <title>Registering a Namecoin .bit Domain</title>
     <meta name="description" content="Using Namecoin Core to register a .bit domain and setting up a local DNS resolver.">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/namecoin-bit-domain/" rel="canonical">
 </head>
 
