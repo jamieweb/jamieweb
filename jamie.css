@@ -856,6 +856,10 @@ th.h1-scope-in-scope {
     max-width: 100%;
 }
 
+.max-width-35-vw {
+    max-width: 35vw;
+}
+
 .padding-right-10 {
     padding-right: 10px;
 }
