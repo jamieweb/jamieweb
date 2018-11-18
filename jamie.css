@@ -27,7 +27,8 @@
         width: unset;
     }
     div.ewcbt-info {
-        width: calc(100% - 350px);
+        width: 100%;
+        display: inline-block;
     }
 }
 
