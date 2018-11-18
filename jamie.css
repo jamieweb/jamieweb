@@ -888,6 +888,14 @@ th.h1-scope-in-scope {
     color: crimson;
 }
 
+.y-scroll {
+    overflow-y: scroll;
+}
+
+.x-scroll {
+    overflow-x: scroll;
+}
+
 .info {
     margin-top: 0px;
     margin-bottom: 2px;
