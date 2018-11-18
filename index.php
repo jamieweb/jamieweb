@@ -7,9 +7,7 @@
 <head>
     <title>JamieWeb</title>
     <meta name="description" content="Website of Jamie Scaife - United Kingdom">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
-    <link href="/jamie.css" rel="stylesheet">
+    <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/" rel="canonical">
 </head>
 
