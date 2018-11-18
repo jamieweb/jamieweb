@@ -867,6 +867,10 @@ th.h1-scope-in-scope {
     width: 545px;
 }
 
+.max-width-100-percent {
+    max-width: 100%;
+}
+
 .padding-right-10 {
     padding-right: 10px;
 }
