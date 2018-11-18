@@ -31,7 +31,7 @@
             </ul>
         </div>
         <div class="display-flex flex-align-center flex-justify-center flex-direction-column">
-            <img src="/blog/radare2-cutter-part-1-key-terminology-and-overview/cutter-logo.png" width="250px" title="Cutter Logo" alt="Cutter Logo">
+            <img class="max-width-35-vw" src="/blog/radare2-cutter-part-1-key-terminology-and-overview/cutter-logo.png" width="250px" title="Cutter Logo" alt="Cutter Logo">
             <p class="no-mar-top centertext"><i>The Cutter logo.</i></p>
         </div>
     </div>
