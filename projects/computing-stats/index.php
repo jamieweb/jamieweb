@@ -59,24 +59,25 @@
     <h1 class="info">Current Project: <span class="currentproject">Einstein@Home</span></h1>
     <p>The cluster is currently running <a href="https://einsteinathome.org/" target="_blank" rel="noopener">Einstein@Home</a>, which is a distributed computing project that searches for gravitational waves using data from the LIGO gravitational wave detector.</p>
 
-    <table width="100%" class="computing-stats">
-        <tr>
-            <td width="50%"><h1 class="info">Rosetta@Home Stats</h1>
+    <div class="computing-stats">
+        <div class="computing-stats-half-width">
+            <h1 class="info">Rosetta@Home Stats</h1>
             <p class="info">Total Earned Credits: <b>var-rosettacredit</b></p>
             <p class="info">Recent Average Credit: <b>var-rosettarecent</b></p>
-            <p class="info">Total Running Time: <b>var-rosettaruntime days</b></p></td>
-
-            <td width="50%"><h1 class="info">Einstein@Home Stats</h1>
+            <p class="info">Total Running Time: <b>var-rosettaruntime days</b></p>
+        </div>
+        <div>
+            <h1 class="info">Einstein@Home Stats</h1>
             <p class="info">Total Earned Credits: <b>var-einsteincredit</b></p>
             <p class="info">Recent Average Credit: <b>var-einsteinrecent</b></p>
-            <p class="info">Total Running Time: <b>var-einsteinruntime days</b></p></td>
-        </tr>
-        <tr>
-            <td width="50%" class="stats-padding-top"><h1 class="info">Bitcoin Node Stats</h1>
-            <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.earn.com/nodes/212.71.252.184-8333/" target="_blank" rel="noopener">https://bitnodes.earn.com/nodes/212.71.252.184-8333/</a></b></p>
-            <p class="info">Total Running Time: <b>var-bitcoinnoderuntime days</b></p></td>
-        </tr>
-    </table>
+            <p class="info">Total Running Time: <b>var-einsteinruntime days</b></p>
+        </div>
+        <div>
+            <h1 class="info">Bitcoin Node Stats</h1>
+            <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.earn.com/nodes/212.71.252.184-8333/" target="_blank" rel="noopener">https://bitnodes.earn.com/nodes/<wbr>212.71.252.184-8333/</a></b></p>
+            <p class="info">Total Running Time: <b>var-bitcoinnoderuntime days</b></p>
+        </div>
+    </div>
 </div>
 
 <?php include "footer.php" ?>

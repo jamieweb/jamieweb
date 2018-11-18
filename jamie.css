@@ -23,6 +23,9 @@
     img[width="1000px"] {
         width: 100%;
     }
+    div.computing-stats-half-width {
+        width: unset;
+    }
     div.ewcbt-info {
         width: calc(100% - 350px);
     }
@@ -66,6 +69,9 @@
     div.footer-middle {
         margin: 0 auto;
         padding: 0px 25px;
+    }
+    div.computing-stats-half-width {
+        width: calc(50% - 15px);
     }
     div.ewcbt-info {
         width: 650px;
@@ -350,6 +356,11 @@ div.iconlist p {
     background-color: #e0e0e0;
     border: 1px solid #000000;
     border-radius: 5px;
+}
+
+div.computing-stats div {
+    display: inline-block;
+    padding: 15px 15px 0 0;
 }
 
 div.ewcbt-redgreen {
