@@ -32,13 +32,13 @@
     <img class="radius-8" width="1000px" src="/blog/launching-a-public-hackerone-program/hackerone-jamieweb.png">
     <p class="two-no-mar centertext"><i>The front page of my HackerOne program at <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener">https://hackerone.com/jamieweb</a>.</i></p>
     <h2 id="what-is-hackerone">What is HackerOne?</h2>
-    <div class="display-flex">
-        <div class="width-545 float-left">
-            <p class="no-mar-top"><a href="https://www.hackerone.com" target="_blank" rel="noopener">HackerOne</a> is a security vulnerability coordination and bug bounty platform, with the aim of connecting ethical hackers with businesses for hacker-powered security testing.</p>
+    <div class="display-flex flex-direction-column-reverse-on-small">
+        <div class="display-flex flex-direction-column">
+            <p class="no-mar-top no-mar-bottom"><a href="https://www.hackerone.com" target="_blank" rel="noopener">HackerOne</a> is a security vulnerability coordination and bug bounty platform, with the aim of connecting ethical hackers with businesses for hacker-powered security testing.</p>
             <p class="no-mar-bottom">The company was founded in 2012, and has since grown to have offices in San Francisco, New York City, London and Groningen (Netherlands).</p>
         </div>
-        <div class="width-450 float-right display-flex flex-align-center flex-justify-center margin-left-auto">
-           <img src="/blog/launching-a-public-hackerone-program/hackerone-full.png">
+        <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-30-on-small">
+           <img class="max-width-100-percent-on-small" src="/blog/launching-a-public-hackerone-program/hackerone-full.png">
         </div>
     </div>
     <p class="clearboth">I am using the HackerOne 'Response' service to host my vulnerability disclosure program. This service allows you to set up a security page on HackerOne for your organisation/project, which contains your security policy, disclosure guidelines and a list of assets that are in-scope of the program. The page essentially tells hackers what they do/don't have permission to test.</p>

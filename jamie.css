@@ -33,8 +33,11 @@
     div.flex-direction-column-reverse-on-small {
         flex-direction: column-reverse;
     }
-    div.padding-bottom-20-on-small {
-        padding-bottom: 20px;
+    div.padding-bottom-30-on-small {
+        padding-bottom: 30px;
+    }
+    .max-width-100-percent-on-small {
+        max-width: 100%;
     }
 }
 

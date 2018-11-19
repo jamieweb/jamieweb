@@ -35,13 +35,13 @@
     <h2 id="travis-ci">What is Travis-CI?</h2>
     <div class="display-flex flex-direction-column-reverse-on-small">
         <div class="display-flex flex-direction-column">
-            <p class="no-mar-top"><a href="https://travis-ci.org/" target="_blank" rel="noopener">Travis-CI</a> is an online continuous integration service for projects hosted on GitHub.</p>
-            <p>It allows you to automatically test your code after every commit. These tests, known as 'builds', could be checking that your code compiles successfully, checking dependencies, checking compatibility, or in this case - checking a website for CSP violation reports.</p>
-            <p>Each build uses its own virtual machine on Google Compute Engine, or a container on Amazon EC2. The GCE VMs provide you will full root access to a complete system, while the EC2 containers are faster to boot.</p>
+            <p class="no-mar-top no-mar-bottom"><a href="https://travis-ci.org/" target="_blank" rel="noopener">Travis-CI</a> is an online continuous integration service for projects hosted on GitHub.</p>
+            <p class="no-mar-bottom">It allows you to automatically test your code after every commit. These tests, known as 'builds', could be checking that your code compiles successfully, checking dependencies, checking compatibility, or in this case - checking a website for CSP violation reports.</p>
+            <p class="no-mar-bottom">Each build uses its own virtual machine on Google Compute Engine, or a container on Amazon EC2. The GCE VMs provide you will full root access to a complete system, while the EC2 containers are faster to boot.</p>
             <p class="no-mar-bottom">Travis-CI is free for open-source projects.</p>
         </div>
-        <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-20-on-small">
-            <img class="max-width-100-percent" src="/blog/testing-your-csp-using-travis-ci-and-headless-chrome-crawler/travisci-full-colour.png" width="450px">
+        <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-30-on-small">
+            <img class="max-width-100-percent-on-small" src="/blog/testing-your-csp-using-travis-ci-and-headless-chrome-crawler/travisci-full-colour.png" width="450px">
         </div>
     </div>
 
