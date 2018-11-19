@@ -22,7 +22,7 @@
     <p>I have recently put together a Travis-CI build configuration that automatically tests your website for Content Security Policy violations. The configuration sets up a local copy of your site on a Travis-CI virtual machine with a CSP header set to send violation reports to a local reporting endpoint. The site is then crawled using Headless Chrome Crawler, which causes CSP violation reports to be generated where required. These are then displayed at the end of the build log.</p>
     <img class="radius-8" src="/blog/testing-your-csp-using-travis-ci-and-headless-chrome-crawler/example-output.png" width="1000px">
     <p class="two-no-mar centertext"><i>An example output showing a report for an image that was blocked by the Content Security Policy.</i></p>
-    <p>If you want to give this a go, all of the required files and instructions are available in the GitHub repository: <a href="https://github.com/jamieweb/travis-ci_csp-tester" target="_blank" rel="noopener">https://github.com/jamieweb/travis-ci_csp-tester</a>
+    <p>If you want to give this a go, all of the required files and instructions are available in the GitHub repository: <a href="https://github.com/jamieweb/travis-ci_csp-tester" target="_blank" rel="noopener">https://github.com/jamieweb/<wbr>travis-ci_csp-tester</a>
     <p><b>Skip to Section:</b></p>
     <pre><b>Automatically Testing Your CSP Using Travis-CI and Headless Chrome Crawler</b>
 &#x2523&#x2501&#x2501 <a href="#travis-ci">What is Travis-CI?</a>
@@ -33,15 +33,15 @@
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
     <h2 id="travis-ci">What is Travis-CI?</h2>
-    <div class="display-flex">
-        <div class="width-450">
+    <div class="display-flex flex-direction-column-reverse-on-small">
+        <div class="display-flex flex-direction-column">
             <p class="no-mar-top"><a href="https://travis-ci.org/" target="_blank" rel="noopener">Travis-CI</a> is an online continuous integration service for projects hosted on GitHub.</p>
             <p>It allows you to automatically test your code after every commit. These tests, known as 'builds', could be checking that your code compiles successfully, checking dependencies, checking compatibility, or in this case - checking a website for CSP violation reports.</p>
             <p>Each build uses its own virtual machine on Google Compute Engine, or a container on Amazon EC2. The GCE VMs provide you will full root access to a complete system, while the EC2 containers are faster to boot.</p>
             <p class="no-mar-bottom">Travis-CI is free for open-source projects.</p>
         </div>
-        <div class="width-545 display-flex flex-align-center flex-justify-center">
-            <img src="/blog/testing-your-csp-using-travis-ci-and-headless-chrome-crawler/travisci-full-colour.png" width="450px">
+        <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-20-on-small">
+            <img class="max-width-100-percent" src="/blog/testing-your-csp-using-travis-ci-and-headless-chrome-crawler/travisci-full-colour.png" width="450px">
         </div>
     </div>
 

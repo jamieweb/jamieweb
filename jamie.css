@@ -30,6 +30,12 @@
         width: 100%;
         display: inline-block;
     }
+    div.flex-direction-column-reverse-on-small {
+        flex-direction: column-reverse;
+    }
+    div.padding-bottom-20-on-small {
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 1049.9px) and (min-width: 550px) {
@@ -868,8 +874,12 @@ th.h1-scope-in-scope {
     padding-right: 10px;
 }
 
+.padding-20-rl {
+    padding: 0 20px;
+}
+
 .padding-8-rl {
-    padding: 0px 8px 0px 8px;
+    padding: 0 8px;
 }
 
 .intro-mar-top {
