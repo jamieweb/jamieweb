@@ -67,7 +67,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
    <b>Windows File System:</b> C:\.security.txt
      <b>Windows SMB Share:</b> \\exampleserver\.security.txt</pre>
     <p>A security.txt file generator is available on the security.txt website, where you can enter your variables and it will generate and offer a file for download. This really isn't needed though, since the format is extremely simple and it's probably easier to create one by hand.</p>
-    <div class="centertext"><img width="800px" src="/blog/security-txt-rfc/security-txt-org-generator.png"></div>
+    <div class="centertext"><img class="max-width-100-percent" width="800px" src="/blog/security-txt-rfc/security-txt-org-generator.png"></div>
     <h2 id="headers">Header Field Specification</h2>
     <p>The draft specification outlines 4 different header fields that can all optionally be included in your security.txt file. Excluding only the "Signature" header, you can mix and match them as much as you like - you can use the headers in any order and any number of times each, making security.txt as flexible and extensible as possible.</p>
     <p>Version 01 of the draft outlines the following 4 header fields:</p>
@@ -172,7 +172,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
     <h2 id="chrome-extension">Chrome Extension</h2>
     <p>There is also an official Google Chrome/Chromium extension for security.txt, which will automatically scan the website that you are currently browsing for a security.txt file.</p>
     <p>The extension can be <a href="https://github.com/securitytxt/chrome-extension" target="_blank" rel="noopener">downloaded from the GitHub repository</a> and installed manually. It is not available on the Chrome Web Store (I prefer it this way since then you can see what you're getting <b>before</b> you actually install it).</p>
-    <img src="/blog/security-txt-rfc/security-txt-extension-installed.png">
+    <img width="1000px" src="/blog/security-txt-rfc/security-txt-extension-installed.png">
     <p>The current version of the extension searches for the file at both /security.txt and /.well-known/security.txt, as seen in the code for this version <a href="https://github.com/securitytxt/chrome-extension/blob/474ecc225fddc9d982deda939e75208a8b57e9ac/Security-txt/scripts/background.js#L82" target="_blank" rel="noopener">here</a>.</p>
     <p>The colour of the extension icon changes to green when a security.txt policy is detected on the current website, and you can click on the icon to see the policy:</p>
     <img width="1000px" src="/blog/security-txt-rfc/security-txt-extension-green.png">
