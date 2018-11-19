@@ -68,7 +68,7 @@
     <p>Or use <code>raspi-config</code> to enable it:</p>
     <pre>$ sudo raspi-config</pre>
     <p>Navigate to <code>Interfacing Options</code> -&gt; <code>SSH</code> and ensure that SSH is enabled:</p>
-    <img class="radius-8" width="700px" src="/blog/secure-public-wifi-access/raspi-config-interfaces.png">
+    <img class="radius-8 max-width-100-percent" width="700px" src="/blog/secure-public-wifi-access/raspi-config-interfaces.png">
     <h3>b. Configure UFW (Uncomplicated Firewall) and Fail2ban</h3>
     <p>Install <code>ufw</code> and <code>fail2ban</code> if they aren't already installed:</p>
     <pre>$ sudo apt-get install ufw fail2ban</pre>
@@ -127,7 +127,7 @@ net.ipv6.conf.eth0.disable_ipv6 = 1</pre>
     <p>Now that the SSH tunnel is established, you can connect to the remote VNC desktop through it. You must keep the SSH tunnel open for this to work and also ensure that you previously started the VNC server.</p>
     <p>Using your favourite VNC-compatible remote desktop client (eg: Remmina), simply connect to <code>localhost:5902</code>. You should be prompted for the VNC password and the remote desktop session will start.</p>
     <p><i>To clarify, connect from your client device to <code>localhost:5902</code>. The SSH tunnel that is running is listening for connections on this address, and it will forward them through the tunnel to the remote host (the Pi).</i></p>
-    <img class="radius-8" width="700px" src="/blog/secure-public-wifi-access/rpi-remote-desktop-vnc.png">
+    <img class="radius-8 max-width-100-percent" width="700px" src="/blog/secure-public-wifi-access/rpi-remote-desktop-vnc.png">
     <p>In order to terminate the VNC session, simply run <code>vncserver -kill :3</code> from the SSH tunnel connection. You can then close the SSH connection as usual.</p>
     <h3>d. Chromium Browser Hardening</h3>
     <p>Chromium will be used to deal with the captive portal on the public hotspot. In order to provide some basic protection, it is recommended to disable JavaScript, cookies, Flash, etc. All of this can be done in <code>Settings</code> -&gt; <code>Advanced</code> -&gt; <code>Content Settings</code>.</p>

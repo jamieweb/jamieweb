@@ -53,7 +53,7 @@
     <p>You can add assets of different types, including domain names, IP addresses, mobile apps and even direct links to source code. The maximum impact to confidentiality, integrity and availability can be specified, as well as additional notes to guide hackers.</p>
     <img class="radius-8" width="1000px" src="/blog/launching-a-public-hackerone-program/add-asset.png">
     <p>In my case, I added my main (sub)domain names, IP addresses, Tor Hidden Services and some of my source code hosted on GitHub:</p>
-    <table class="width-1000 padding-6 border-1-4c4c4c border-collapse">
+    <table class="width-100-percent padding-6 border-1-4c4c4c border-collapse">
         <tr class="bg-lightgreen">
             <th class="h1-scope-type">Type</th>
             <th class="h1-scope-identifier">Identifier</th>
@@ -62,55 +62,55 @@
         </tr>
         <tr>
             <td>Domain</td>
-            <td>www.jamieweb.net</td>
+            <td class="x-scroll max-width-25-vw">www.jamieweb.net</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td>jamieweb.net</td>
+            <td class="x-scroll max-width-25-vw">jamieweb.net</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td>ipv6.jamieweb.net</td>
+            <td class="x-scroll max-width-25-vw">ipv6.jamieweb.net</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td>ipv4.jamieweb.net</td>
+            <td class="x-scroll max-width-25-vw">ipv4.jamieweb.net</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td>jamiewebgbelqfno.onion</td>
+            <td class="x-scroll max-width-25-vw">jamiewebgbelqfno.onion</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td>jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</td>
+            <td class="x-scroll max-width-25-vw">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Source Code</td>
-            <td>https://github.com/jamieweb/results-whitelist</td>
+            <td class="x-scroll max-width-25-vw">https://github.com/jamieweb/results-whitelist</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>CIDR</td>
-            <td>139.162.222.67</td>
+            <td class="x-scroll max-width-25-vw">139.162.222.67</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>CIDR</td>
-            <td>2a01:7e00:e001:c500::1</td>
+            <td class="x-scroll max-width-25-vw">2a01:7e00:e001:c500::1</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
