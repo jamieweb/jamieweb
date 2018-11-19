@@ -38,15 +38,21 @@
     <pre>127.0.0.1 localhost
 127.0.0.1 hostname
 192.168.1.2 local-override-domain.tld
-192.168.1.2 custom-extension-domain.qwerty
+192.168.1.2 custom-extension-domain.qwertyuiop
 0.0.0.0 blocked-website.tld
 0.0.0.0 another-blocked-website.tld</pre>
-    <h2 id="steven" class="left-right-title-margin">Steven Black's Hosts File</h2>
-    <div class="text-left-a"><p><a href="https://github.com/StevenBlack/" target="_blank" rel="noopener">Steven Black on GitHub</a> maintains a fantastic unified hosts file, containing data from many different reputable sources.</p>
-    <p>The hosts file contains a list of malicious, undesirable or inappropriate sites that should be blocked.</p>
-    <p>Multiple different variations of it are available and it is updated regularly.</p>
-    <div class="centertext"><p><b><a href="https://github.com/StevenBlack/hosts/" target="_blank" rel="noopener">https://github.com/StevenBlack/hosts/</a></b></p></div></div>
-    <div class="image-right-a"><div class="centertext"><a href="https://github.com/StevenBlack/hosts/" target="_blank" rel="noopener"><img width="450px" src="/blog/hosts-file-integrity/hosts-github.png"></a></div></div>
+    <h2 id="steven">Steven Black's Hosts File</h2>
+    <div class="display-flex flex-direction-column-reverse-on-small">
+        <div class="display-flex flex-direction-column">
+            <p class="no-mar-top no-mar-bottom"><a href="https://github.com/StevenBlack/" target="_blank" rel="noopener">Steven Black on GitHub</a> maintains a fantastic unified hosts file, containing data from many different reputable sources.</p>
+            <p class="no-mar-bottom">The hosts file contains a list of malicious, undesirable or inappropriate sites that should be blocked.</p>
+            <p class="no-mar-bottom">Multiple different variations of it are available and it is updated regularly.</p>
+            <p class="no-mar-bottom"><b><a href="https://github.com/StevenBlack/hosts/" target="_blank" rel="noopener">https://github.com/StevenBlack/hosts/</a></b></p>
+        </div>
+        <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-30-on-small">
+            <img class="max-width-100-percent-on-small" width="450px" src="/blog/hosts-file-integrity/hosts-github.png">
+        </div>
+    </div>
     <h2 id="script" class="clearboth">Hosts File Integrity Script</h2>
     <p>I am now using one of Steven Black's hosts files on all of my systems, and I wrote a bash script that will automatically keep it up to date. The repository is available on my GitHub profile:</p>
     <div class="centertext"><p><b><a href="https://github.com/jamieweb/hosts-file-integrity/" target="_blank" rel="noopener">https://github.com/jamieweb/hosts-file-integrity/</a></b></p></div>
