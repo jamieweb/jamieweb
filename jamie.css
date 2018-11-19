@@ -865,6 +865,10 @@ th.h1-scope-in-scope {
     max-width: 100%;
 }
 
+.max-width-25-vw {
+    max-width: 25vw;
+}
+
 .max-width-35-vw {
     max-width: 35vw;
 }
