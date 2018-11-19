@@ -27,11 +27,11 @@
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
     <p>Below is part of the <a href="https://www.ssllabs.com/ssltest/index.html" target="_blank" rel="noopener">SSLLabs</a> report for my site that is using a recently issued Let's Encrypt certificate, showing that Certificate Transparency (CT) is working, and that the SCT is embedded in the certificate:</p>
     <img width="1000px" src="/blog/letsencrypt-scts-in-certificates/ssllabs-ct.png">
-    <p>Let's Encrypt certificates have always been published to CT logs, however by default there was no straightforward way to serve SCTs. Now SCTs are included by default in all newly issued Let's Encrypt certificates. Please see the original announcement by Let's Encrypt: <a href="https://community.letsencrypt.org/t/signed-certificate-timestamps-embedded-in-certificates/57187" target="_blank" rel="noopener">https://community.letsencrypt.org/t/signed-certificate-timestamps-embedded-in-certificates/57187</a></p>
+    <p>Let's Encrypt certificates have always been published to CT logs, however by default there was no straightforward way to serve SCTs. Now SCTs are included by default in all newly issued Let's Encrypt certificates. Please see the original announcement by Let's Encrypt: <a href="https://community.letsencrypt.org/t/signed-certificate-timestamps-embedded-in-certificates/57187" target="_blank" rel="noopener">https://community.letsencrypt.org/<wbr>t/signed-certificate-timestamps-embedded-in-certificates/57187</a></p>
     <h2 id="chrome-requirements">Upcoming Chrome Certificate Transparency Requirements</h2>
     <p>This new Let's Encrypt feature is in good time for Chrome's upcoming CT requirements, which state that all certificates issued after 30th April 2018 must be compliant with the <a href="https://github.com/chromium/ct-policy" target="_blank" rel="noopener">Chromium CT policy</a>:</p>
     <p class="two-no-mar font-twenty-three quote-indent"><i>&ldquo;Chrome will require that all TLS server certificates issued after 30 April, 2018 be compliant with the Chromium CT Policy. After this date, when Chrome connects to a site serving a publicly-trusted certificate that is not compliant with the Chromium CT Policy, users will begin seeing a full page interstitial indicating their connection is not CT-compliant. Sub-resources served over https connections that are not CT-compliant will fail to load and will show an error in Chrome DevTools...&rdquo;</i></p>
-    <p class="two-mar-top centertext"><i>Source: <a href="https://groups.google.com/a/chromium.org/d/msg/ct-policy/wHILiYf31DE/iMFmpMEkAQAJ" target="_blank" rel="noopener">https://groups.google.com/a/chromium.org/d/msg/ct-policy/wHILiYf31DE/iMFmpMEkAQAJ</a></i></p>
+    <p class="two-mar-top centertext"><i>Source: <a href="https://groups.google.com/a/chromium.org/d/msg/ct-policy/wHILiYf31DE/iMFmpMEkAQAJ" target="_blank" rel="noopener">https://groups.google.com/<wbr>a/chromium.org/d/msg/ct-policy/wHILiYf31DE/iMFmpMEkAQAJ</a></i></p>
     <p>This essentially means that all certificates issued after 30th April 2018 need to prove their compliance with the CT requirements by serving a valid SCT to clients in either of the following forms:</p>
     <ul>
         <li>X.509 v3 Certificate Extension</li>
@@ -54,7 +54,7 @@
     <pre>If the connection does not comply with the UA's CT Policy (i.e. is
 not CT-qualified), then the UA MUST NOT note this host as a Known
 Expect-CT Host.</pre>
-    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-03#section-2.3.1" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-03#section-2.3.1</a></i></p>
+    <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-03#section-2.3.1" target="_blank" rel="noopener">https://tools.ietf.org/<wbr>html/draft-ietf-httpbis-expect-ct-03#section-2.3.1</a></i></p>
     <h2 id="conclusion">Conclusion</h2>
     <p>I have reissued all of my Let's Encrypt certificates in order to make use of the new automatically included SCTs, and have also enabled the <code>Expect-CT</code> security header on my site with the <code>enforce</code> directive set.</p>
     <p>It'll also be interesting to keep an eye on CT up until and beyond the deadline - it's another piece of the TLS puzzle solved hopefully.</p>
