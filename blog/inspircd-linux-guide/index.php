@@ -262,7 +262,7 @@ Examples are available at: /home/inspircd/inspircd-2.0.23/run/conf/examples/</pr
     <pre>$ nano run/conf/inspircd.conf</pre>
     <p>Edit my configuration file below to suit your own server. Each option is explained with a comment, which is prefixed with a hash (#) and bolded. If you do not wish to set an option or want to use the default, comment it out by placing a hash (#) at the start of the line.</p>
     <p>You can either copy the unannotated version from the text area directly below, or use the fully annotated version.</p>
-    <textarea rows="12" cols="100" readonly>&lt;config format="xml"&gt;
+    <textarea class="max-width-100-percent" rows="12" cols="100" readonly>&lt;config format="xml"&gt;
 
 &lt;server name="irc.example.tld"
     description="My IRC Server"
