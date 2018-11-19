@@ -36,14 +36,14 @@
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
     <h2 id="introduction">Introduction</h2>
-    <div class="display-flex">
-        <div class="width-450">
-            <p class="no-mar-top">Namecoin is a decentralized domain name system and currency heavily based on Bitcoin.</p>
-            <p>It allows users to anonymously register and manage domain names with the .bit extension, entirely within the Namecoin blockchain. There is no need for DNS servers or registrars.</p>
+    <div class="display-flex flex-direction-column-reverse-on-small">
+        <div class="display-flex flex-direction-column">
+            <p class="no-mar-top no-mar-bottom">Namecoin is a decentralized domain name system and currency heavily based on Bitcoin.</p>
+            <p class="no-mar-bottom">It allows users to anonymously register and manage domain names with the .bit extension, entirely within the Namecoin blockchain. There is no need for DNS servers or registrars.</p>
             <p class="no-mar-bottom">Namecoin was the first altcoin, created in April 2011 and is still running successfully today with a recent average value of $7.</p>
         </div>
-        <div class="width-545 display-flex flex-align-center flex-justify-center">
-            <img width="480px" src="/blog/namecoin-bit-domain/namecoin-logo.png">
+        <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-30-on-small">
+            <img class="max-width-100-percent-on-small" width="480px" src="/blog/namecoin-bit-domain/namecoin-logo.png">
         </div>
     </div>
     <p class="clearboth">I have registered and set up a Namecoin .bit domain name for JamieWeb. If your system is set up for accessing Namecoin .bit domains, you can also access the site via <b><a href="https://www.jamieweb.bit/" target="_blank" rel="noopener">https://www.jamieweb.bit</a></b>.</p>
@@ -390,14 +390,14 @@ $ sudo service apache2 reload</pre>
     <pre>$ sudo systemctl status apache2.service</pre>
 
     <h2 id="problems">Problems With Namecoin</h2>
-    <div class="display-flex">
-        <div class="width-545">
-            <p class="no-mar-top">Namecoin provides a good solution to a lot of problems with the current domain name system, and is a method of solving <a href="https://en.wikipedia.org/wiki/Zooko%27s_triangle" target="_blank" rel="noopener">Zooko's Triangle</a>.</p>
-            <p>From Wikipedia/Zooko's Triangle:</p>
-            <pre class="pre-wrap-text"><i>Zooko's triangle defines the three desirable traits of a network protocol identifier as Human-meaningful, Decentralized and Secure.</i></pre>
+    <div class="display-flex flex-direction-column-reverse-on-small">
+        <div class="display-flex flex-direction-column">
+            <p class="no-mar-top no-mar-bottom">Namecoin provides a good solution to a lot of problems with the current domain name system, and is a method of solving <a href="https://en.wikipedia.org/wiki/Zooko%27s_triangle" target="_blank" rel="noopener">Zooko's Triangle</a>.</p>
+            <p class="no-mar-bottom">From Wikipedia/Zooko's Triangle:</p>
+            <pre class="pre-wrap-text no-mar-bottom"><i>Zooko's triangle defines the three desirable traits of a network protocol identifier as Human-meaningful, Decentralized and Secure.</i></pre>
             <p class="no-mar-bottom">Namecoin does come with some issues though, especially related to usability and abuse.</p>
         </div>
-        <div class="width-450 display-flex flex-align-center flex-justify-center">
+        <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-30-on-small">
             <img width="250px" src="/blog/namecoin-bit-domain/zookos-triangle.png">
         </div>
     </div>
