@@ -1010,18 +1010,19 @@ th.h1-scope-in-scope {
     opacity: 0;
 }
 
-.subgraphcheck {
+.subgraph-check {
     display: none;
 }
 
-.subgraphlabel {
+.subgraph-label {
     display: inline-block;
+    max-width: 100%;
     width: 720px;
     height: 400px;
     background: url(/blog/subgraph-os-overview/subgraph-vm-not-flashing.png);
 }
 
-.subgraphcheck:checked + .subgraphlabel {
+.subgraph-check:checked + .subgraph-label {
     background: url(/blog/subgraph-os-overview/subgraph-vm-flashing.gif);
 }
 

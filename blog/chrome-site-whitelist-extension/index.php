@@ -107,10 +107,10 @@ Various        jamiewebnet.net   -</pre>
     <p>I personally do not like it when company-owned typosquat domains simply redirect transparently to the official website. I think that a better approach would be to redirect the user to an informational page informing them of their mistake and the dangers of typosquatting.</p>
     <h2>How does the extension work?</h2>
     <p>A content script is run whenever you load a Google search page. Only google.com and google.co.uk are available by default, however you can easily edit the manifest.json file to add your own prefered Google site. The content script fetches every anchor (hyperlink) tag (&lta&gt) on the page and checks each one individually using a for loop.</p>
-    <div class="centertext"><img src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png"></div>
+    <img class="max-width-100-percent" src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png">
     <p>Quite conveniently, the anchor tags for Google search result links are the only anchors on the page that have a defined href AND no defined class. This makes it easy to filter out everything else, leaving only the Google search result links. The script matches the hostnames of the links to the whitelisted hostnames from the user configuration. If there is a match, the associated search result will be highlighted in green by changing it's CSS properties.</p>
     <p>An additional content script runs on every single page. This simply checks whether the current site that you are browsing is on the whitelist. If it is, the extension icon for the tab is changed to green.</p>
-    <div class="centertext"><img src="/projects/chrome-site-whitelist-extension/extension-icon-green.png"></div>
+    <img class="max-width-100-percent" src="/projects/chrome-site-whitelist-extension/extension-icon-green.png">
     <h2>Why did I create the extension?</h2>
     <p>I created the extension to help raise user confidence when searching on Google. Even though Google is usually pretty good at filtering out malicious websites and correcting typing errors, bad stuff still gets through. Now there is no need to manually verify every Google search result link clicked, as your manually whitelisted sites will show up in green!</p>
 </div>
