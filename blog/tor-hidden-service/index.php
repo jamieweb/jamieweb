@@ -43,7 +43,7 @@ done</pre>
     <p>The original vanity onion address that I have been displaying on my homepage for a while now (jamie6boo7fo44ky.onion) unfortunately did not work. When putting the private key into the Tor Hidden Service config, it produced a completely different address. It seems that a few users of Shallot have experienced similar issues with the keys not matching the addresses. I tried a dozen or so other keys that I generated, including those directly before and after jamie6boo, and they all worked fine.</p>
     <p>I am certain that I did not accidentally modify or otherwise change the key for jamie6boo, it was handled in exactly the same way as every other key. I also compared the key to numerous backups, and it had not been changed at all since the original generation. It seems I was just unlucky. :(</p>
     <p>This is a shame, since the name jamie6boo7fo44ky is very easy to remember and also sounds quite goofy. The new address that I chose (jamiewebgbelqfno.onion) is one of one two ^jamieweb addresses that I generated, but unfortunately doesn't have quite the same ring to it as jamie6boo.</p>
-    <div class="centertext"><img src="/blog/tor-hidden-service/tor-browser-url.png"></div>
+    <div class="centertext"><img class="max-width-100-percent" src="/blog/tor-hidden-service/tor-browser-url.png"></div>
     <p>I never expected to find any ^jamieonubuntu addresses, but I thought it might as well be in there just in case I get intensely lucky. Below is an excerpt from the readme for Shallot, showing the estimated amount of time to find vanity addresses of each length on an average 1.5 GHz processor:</p>
     <pre>Vanity Characters : Approximate Generation Time
 1  : &lt;1 second
