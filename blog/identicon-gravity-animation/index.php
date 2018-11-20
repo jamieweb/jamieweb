@@ -20,13 +20,17 @@
     <hr>
     <p><b>Thursday 5th January 2017</b></p>
     <p>I created a small Easter egg for the homepage of my site: if you click the identicon, it will collapse!</p>
-    <div class="centertext"><table class="centertable"><tr>
-        <td><input type="radio" class="gravityradio" id="identicon"><label class="gravitylabel" for="identicon"></label></td>
-        <td width="50px"></td>
-        <td><img src="/blog/identicon-gravity-animation/gravity-loop.gif"></td>
-    </tr></table></div>
+    <div class="display-flex flex-direction-column-on-small flex-align-center flex-justify-center">
+        <div class="display-flex flex-direction-column padding-20-rl padding-bottom-30-on-small">
+            <input type="radio" class="gravityradio" id="identicon">
+            <label class="gravitylabel gravitylabel-no-mar" for="identicon"></label>
+        </div>
+        <div class="display-flex flex-direction-column padding-20-rl">
+            <img width="275px" height="275px" src="/blog/identicon-gravity-animation/gravity-loop.gif">
+        </div>
+    </div>
     <p>Believe it or not, I created this simple animation using Happy Wheels. It's obviously not a proper animation tool, but the level editor allows for very simple and easy 2D physics simulations. I simply recreated my identicon using shapes. The levelXML for the level that I created is available at the bottom of the page.</p>
-    <div class="centertext"><img src="/blog/identicon-gravity-animation/sleeping-shapes.png"></div>
+    <div class="centertext"><img class="max-width-100-percent" src="/blog/identicon-gravity-animation/sleeping-shapes.png"></div>
     <p>All of the shapes in the level are sleeping at first in order to give time for the camera to move into its resting position. During this time, an invisible ball is falling from the very top of the level area, taking roughly 10 seconds to land on the shapes and trigger the physics.</p>
     <p>After recording the animation, I used OpenShot to export the video as an image sequence. Then imported all of those images into GIMP, cropped and adjusted the image and exported as an interpolated GIF.</p>
     <p>The GIF was originally a non-looping GIF, however this did not work very well due to browser image caching. Once the GIF had stopped playing, refreshing the page would not cause the browser to replay the GIF from the beginning. Instead, it would just display the final frame of the GIF. In order to combat this, I am now using a non-looping GIF, but the final frame has an extremely long delay. This gives the impression that the GIF has stopped playing, whereas it is really just waiting to display the next frame. If you watch it long enough, the GIF will loop after around 15 minutes.</p>

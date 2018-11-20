@@ -30,6 +30,9 @@
         width: 100%;
         display: inline-block;
     }
+    div.flex-direction-column-on-small {
+        flex-direction: column;
+    }
     div.flex-direction-column-reverse-on-small {
         flex-direction: column-reverse;
     }
@@ -955,6 +958,10 @@ th.h1-scope-in-scope {
     width: 275px;
     height: 275px;
     background: url(/images/jamieweb.png);
+}
+
+label.gravitylabel-no-mar {
+    margin: 0 0 0 0;
 }
 
 .gravityradio:checked + .gravitylabel {
