@@ -14,9 +14,6 @@
         width: 100%;
         box-sizing: border-box;
     }
-    div.content {
-        width: calc(100% - 300px);
-    }
     footer {
         width: 100%
     }
@@ -44,7 +41,10 @@
     }
 }
 
-@media (max-width: 1049.9px) and (min-width: 550px) {
+@media (max-width: 1049.9px) and (min-width: 675px) {
+    div.content {
+        width: calc(100% - 300px);
+    }
     div.footer-column {
         width: 30%;
     }
@@ -54,7 +54,13 @@
     }
 }
 
-@media (max-width: 549px) {
+@media (max-width: 674.9px) {
+    div.content {
+        width: 100%;
+    }
+    div.sidebar {
+        display: none;
+    }
     div.footer {
         flex-direction: column;
     }
