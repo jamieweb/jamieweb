@@ -35,7 +35,7 @@
             <p class="no-mar-top centertext"><i>The Cutter logo.</i></p>
         </div>
     </div>
-    <p class="no-mar-top">Cutter can be found on GitHub here: <b><a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/radareorg/cutter</a></b></p>
+    <p class="no-mar-top">Cutter can be found on GitHub here: <b><a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/<wbr>radareorg/cutter</a></b></p>
     <img class="radius-8" src="/blog/radare2-cutter-part-1-key-terminology-and-overview/cutter-interface-overview.png" width="1000px" title="The Cutter Interface" alt="Screenshot of the Cutter Interface">
     <p class="two-no-mar centertext"><i>The main Cutter interface.</i></p>
     <p><b>Skip to Section:</b></p>

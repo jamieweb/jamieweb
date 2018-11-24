@@ -34,7 +34,7 @@
             <p class="no-mar-top centertext"><i>The Cutter logo.</i></p>
         </div>
     </div>
-    <p class="no-mar-top">Cutter can be found on GitHub here: <b><a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/radareorg/cutter</a></b></p>
+    <p class="no-mar-top">Cutter can be found on GitHub here: <b><a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/<wbr>radareorg/cutter</a></b></p>
     <p><b>Skip to Section:</b></p>
     <pre><b>Introduction to Reverse Engineering with radare2 Cutter
 Part 2: Analysing a Basic Program</b>
