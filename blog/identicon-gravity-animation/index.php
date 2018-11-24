@@ -22,8 +22,8 @@
     <p>I created a small Easter egg for the homepage of my site: if you click the identicon, it will collapse!</p>
     <div class="display-flex flex-direction-column-on-small flex-align-center flex-justify-center">
         <div class="display-flex flex-direction-column padding-20-rl padding-bottom-30-on-small">
-            <input type="radio" class="gravityradio" id="identicon">
-            <label class="gravitylabel gravitylabel-no-mar" for="identicon"></label>
+            <input type="radio" class="gravity-radio" id="identicon">
+            <label class="gravity-label no-mar" for="identicon"></label>
         </div>
         <div class="display-flex flex-direction-column padding-20-rl">
             <img width="275px" height="275px" src="/blog/identicon-gravity-animation/gravity-loop.gif">

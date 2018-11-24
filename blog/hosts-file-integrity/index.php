@@ -47,7 +47,7 @@
             <p class="no-mar-top no-mar-bottom"><a href="https://github.com/StevenBlack/" target="_blank" rel="noopener">Steven Black on GitHub</a> maintains a fantastic unified hosts file, containing data from many different reputable sources.</p>
             <p class="no-mar-bottom">The hosts file contains a list of malicious, undesirable or inappropriate sites that should be blocked.</p>
             <p class="no-mar-bottom">Multiple different variations of it are available and it is updated regularly.</p>
-            <p class="no-mar-bottom"><b><a href="https://github.com/StevenBlack/hosts/" target="_blank" rel="noopener">https://github.com/StevenBlack/hosts/</a></b></p>
+            <p class="no-mar-bottom"><b><a href="https://github.com/StevenBlack/hosts/" target="_blank" rel="noopener">https://github.com/<wbr>StevenBlack/hosts/</a></b></p>
         </div>
         <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-30-on-small">
             <img class="max-width-100-percent-on-small" width="450px" src="/blog/hosts-file-integrity/hosts-github.png">
@@ -55,7 +55,7 @@
     </div>
     <h2 id="script" class="clearboth">Hosts File Integrity Script</h2>
     <p>I am now using one of Steven Black's hosts files on all of my systems, and I wrote a bash script that will automatically keep it up to date. The repository is available on my GitHub profile:</p>
-    <div class="centertext"><p><b><a href="https://github.com/jamieweb/hosts-file-integrity/" target="_blank" rel="noopener">https://github.com/jamieweb/hosts-file-integrity/</a></b></p></div>
+    <div class="centertext"><p><b><a href="https://github.com/jamieweb/hosts-file-integrity/" target="_blank" rel="noopener">https://github.com/<wbr>jamieweb/hosts-file-integrity/</a></b></p></div>
     <p>This is not designed to be a robust, plug and play solution. It is made specifically to work with one particular variation of Steven Black's hosts files. However, this script could be easily modified in order to work with another variation of the available hosts files or otherwise adapted for the needs of somebody else.</p>
     <p>I am aware that Steven Black already provides several different scripts for keeping the file up to date on various different platforms, however I created an alternative for my own use that focuses more on security, automation and producing an output that is useful to me.</p>
     <p>The script should be run on a regular basis, every 24 hours is ideal. It automatically checks for an update and if one is available, downloads it and pseudo-verifies it. A second script is also available that should be run as a user with write access to /etc/hosts. This second script will automatically implement the new hosts file by moving it to /etc/hosts.</p>

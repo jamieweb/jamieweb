@@ -7,9 +7,6 @@
     nav {
         width: 100%;
     }
-    div.navbar {
-        width: calc(100% - 50px);
-    }
     div.body {
         width: 100%;
         box-sizing: border-box;
@@ -42,6 +39,9 @@
 }
 
 @media (max-width: 1049.9px) and (min-width: 675px) {
+    div.navbar {
+        width: calc(100% - 50px);
+    }
     div.content {
         width: calc(100% - 300px);
     }
@@ -52,11 +52,23 @@
         margin: 0 auto;
         padding: 0px 25px;
     }
+    h1 {
+        margin-top: 16px;
+    }
+    .gravity-label {
+        margin: 25px 0 5px;
+    }
 }
 
 @media (max-width: 674.9px) {
+    div.navbar {
+        width: calc(100% - 30px);
+    }
     div.navbar li a {
         padding: 17px 11px 16px;
+    }
+    div.body {
+        padding: 0 15px 15px;
     }
     div.content {
         width: 100%;
@@ -69,6 +81,9 @@
     }
     div.footer-column {
         width: 100%;
+    }
+    h1 {
+        margin-top: 8px;
     }
     img.contact-jamie {
         width: 174.375px;
@@ -84,6 +99,9 @@
 @media (min-width: 675px) {
     div.navbar li a {
         padding: 17px 16px 16px;
+    }
+    div.body {
+        padding: 0 25px 25px;
     }
     img.contact-jamie {
         width: 225px;
@@ -122,11 +140,8 @@
     div.ewcbt-info {
         width: 650px;
     }
-}
-
-@media (max-width: 1400px) {
-    p.onionlink {
-        line-height: 30px;
+    .gravity-label {
+        margin: 29px 0 5px;
     }
 }
 
@@ -224,8 +239,6 @@ div.navbar li.dropdown:hover div.dropdown-content {
 div.body {
     flex-grow: 1;
     margin: 0 auto;
-    padding: 25px;
-    padding-top: 0px;
 }
 
 div.content {
@@ -903,6 +916,10 @@ th.h1-scope-in-scope {
     max-width: 100%;
 }
 
+.max-width-15-vw {
+    max-width: 15vw;
+}
+
 .max-width-25-vw {
     max-width: 25vw;
 }
@@ -990,24 +1007,18 @@ th.h1-scope-in-scope {
     left: 15px;
 }
 
-.gravityradio {
+.gravity-radio {
     display: none;
 }
 
-.gravitylabel {
+.gravity-label {
     display: inline-block;
-    margin-top: 29px;
-    margin-bottom: 5px;
     width: 275px;
     height: 275px;
     background: url(/images/jamieweb.png);
 }
 
-label.gravitylabel-no-mar {
-    margin: 0 0 0 0;
-}
-
-.gravityradio:checked + .gravitylabel {
+.gravity-radio:checked + .gravity-label {
     background: url(/images/jamieweb-gravity.gif);
 }
 

@@ -74,7 +74,7 @@
         </div>
         <div>
             <h1 class="info">Bitcoin Node Stats</h1>
-            <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.earn.com/nodes/212.71.252.184-8333/" target="_blank" rel="noopener">https://bitnodes.earn.com/nodes/<wbr>212.71.252.184-8333/</a></b></p>
+            <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.earn.com/nodes/212.71.252.184-8333/" target="_blank" rel="noopener">https://bitnodes.earn.com/<wbr>nodes/<wbr>212.71.252.184-8333/</a></b></p>
             <p class="info">Total Running Time: <b>var-bitcoinnoderuntime days</b></p>
         </div>
     </div>

@@ -62,55 +62,55 @@
         </tr>
         <tr>
             <td>Domain</td>
-            <td class="x-scroll max-width-25-vw">www.jamieweb.net</td>
+            <td class="x-scroll max-width-15-vw">www.jamieweb.net</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td class="x-scroll max-width-25-vw">jamieweb.net</td>
+            <td class="x-scroll max-width-15-vw">jamieweb.net</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td class="x-scroll max-width-25-vw">ipv6.jamieweb.net</td>
+            <td class="x-scroll max-width-15-vw">ipv6.jamieweb.net</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td class="x-scroll max-width-25-vw">ipv4.jamieweb.net</td>
+            <td class="x-scroll max-width-15-vw">ipv4.jamieweb.net</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td class="x-scroll max-width-25-vw">jamiewebgbelqfno.onion</td>
+            <td class="x-scroll max-width-15-vw">jamiewebgbelqfno.onion</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Domain</td>
-            <td class="x-scroll max-width-25-vw">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</td>
+            <td class="x-scroll max-width-15-vw">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>Source Code</td>
-            <td class="x-scroll max-width-25-vw">https://github.com/jamieweb/results-whitelist</td>
+            <td class="x-scroll max-width-15-vw">https://github.com/jamieweb/results-whitelist</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>CIDR</td>
-            <td class="x-scroll max-width-25-vw">139.162.222.67</td>
+            <td class="x-scroll max-width-15-vw">139.162.222.67</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>CIDR</td>
-            <td class="x-scroll max-width-25-vw">2a01:7e00:e001:c500::1</td>
+            <td class="x-scroll max-width-15-vw">2a01:7e00:e001:c500::1</td>
             <td>Critical</td>
             <td>Yes</td>
         </tr>

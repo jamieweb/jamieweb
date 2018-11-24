@@ -48,8 +48,8 @@
     </div>
 
     <div class="sidebar">
-        <input type="radio" class="gravityradio" id="identicon">
-        <label class="gravitylabel" for="identicon"></label>
+        <input type="radio" class="gravity-radio" id="identicon">
+        <label class="gravity-label" for="identicon"></label>
         <!--Thanks to jdenticon.com for the identicon image generation!-->
         <!--My identicon seed is the sha256 hash of the plain text word "JamieOnUbuntu".-->
         <hr>
