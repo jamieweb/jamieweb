@@ -295,6 +295,13 @@ div.menuitem pre {
     margin-bottom: 28px;
 }
 
+div.onionlink {
+    display: inline-block;
+    padding: 1px 7.5px 3.5px;
+    background-color: #e0e0e0;
+    border: 1px solid #000000;
+}
+
 div.blog-group {
     display: flex;
 }
@@ -511,13 +518,6 @@ span.ipv6-test:after, span.ipv4-test:after {
     background-color: crimson;
     padding: 4px 5px 0px;
     content: "No";
-}
-
-p.onionlink a {
-    font-family: monospace;
-    padding: 3.5px;
-    background-color: #e0e0e0;
-    border: 1px solid #000000;
 }
 
 p.recents-date {
@@ -790,6 +790,10 @@ th.h1-scope-in-scope {
     margin-bottom: 0px;
 }
 
+.no-mar {
+    margin: 0;
+}
+
 .radius-8 {
     border-radius: 8px;
 }
@@ -928,6 +932,14 @@ th.h1-scope-in-scope {
 
 .x-scroll {
     overflow-x: scroll;
+}
+
+.word-break-all {
+    word-break: break-all;
+}
+
+.font-family-monospace {
+    font-family: monospace;
 }
 
 .info {

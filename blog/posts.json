@@ -29,7 +29,7 @@
                 "shortdesc": "An overview of some key terminology and the interfaces and tools in Cutter.",
                 "date": "Tuesday 23rd October 2018",
                 "tags": "Reverse Engineering,Guide",
-                "snippet": "Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an overview of the Cutter interface and available tools. Cutter can be found on GitHub here: <b><a href=\"https://github.com/radareorg/cutter\" target=\"_blank\" rel=\"noopener\">https://github.com/radareorg/cutter</a></b>"
+                "snippet": "Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an overview of the Cutter interface and available tools. Cutter can be found on GitHub here: <b><a href=\"https://github.com/radareorg/cutter\" target=\"_blank\" rel=\"noopener\">https://github.com/<wbr>radareorg/cutter</a></b>"
             },
             "testing-your-csp-using-travis-ci-and-headless-chrome-crawler": {
                 "uri": "testing-your-csp-using-travis-ci-and-headless-chrome-crawler",
