@@ -20,9 +20,9 @@
     <hr>
     <p><b>Saturday 6th January 2018</b></p>
     <p>For 21 days, my <a href="/projects/computing-stats/" target="_blank">Raspberry Pi cluster</a> has been running <a href="https://github.com/cathugger/mkp224o" target="_blank" rel="noopener">mkp224o</a> in order to generate a vanity address for my new <a href="/blog/onionv3-hidden-service/" target="_blank">Tor Onion v3 Hidden Service</a>.</p>
-    <p>It isn't as good as <a href="/blog/tor-hidden-service/" target="_blank">last time</a>, but I have chosen: <b><a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdy<wbr>ajmzeor4mc4i7yopvpo4p7cyd.onion</a></b></p>
+    <p>It isn't as good as <a href="/blog/tor-hidden-service/" target="_blank">last time</a>, but I have chosen: <b><a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener"><span class="word-break-all">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</span></a></b></p>
     <p>So I guess that's... 3 volt Kiwi?</p>
-    <p><s><b>Please note that this Onion v3 Hidden Service will not be available until Onion v3 reaches the stable Tor branch. For now, you can use my test Onion v3 service at <a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener">32zzibxmqi2ybxpqyggwwuwz7a3lbvt<wbr>zoloti7cxoevyvijexvgsfeid.onion</a>, which requires tor-0.3.2.1-alpha (eg: Tor Browser 7.5a5) or newer to access.</b></s></p>
+    <p><s><b>Please note that this Onion v3 Hidden Service will not be available until Onion v3 reaches the stable Tor branch. For now, you can use my test Onion v3 service at <a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener"><span class="word-break-all">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</span></a>, which requires tor-0.3.2.1-alpha (eg: Tor Browser 7.5a5) or newer to access.</b></s></p>
     <p><b>Edit 17th Jan 2018 @ 11:00pm:</b> <i>Onion v3 functionaility is now in the stable release of Tor, so my new hidden service is live! The Onion v3 hidden service used for testing is now offline.</i></p>
     <p><b>Skip to Section:</b></p>
     <pre><b>Tor Onion v3 Vanity Address</b>
@@ -654,7 +654,7 @@ jamien6v<span>zoo</span>n</pre>
 
     <h2 id="implementation">Implementation</h2>
     <p>As of writing this, Onion v3 support is only available alpha versions of Tor, however a Tor build with Onion v3 functionality is currently at the second release candidate, so it should be reaching the stable branch very soon.</p>
-    <p>For as long as Tor Onion v3 functionality remains in alpha only, I will be keeping the current hidden service address (http://32zzibxmqi2ybxpqyggwwuwz7a3lbvt<wbr>zoloti7cxoevyvijexvgsfeid.onion) as well as running the Tor alpha instance on a separate, isolated server.</p>
+    <p>For as long as Tor Onion v3 functionality remains in alpha only, I will be keeping the current hidden service address (<span class="word-break-all">http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</span>) as well as running the Tor alpha instance on a separate, isolated server.</p>
     <p>When Onion v3 hits Tor stable, I will move it across to a main server as well as start using the jamie3vkiwi vanity address. I will also continue hosting my <a href="/blog/tor-hidden-service" target="_blank">Onion v2 hidden service</a> for as long as it is safe to do so.</p>
     <p>Luckily it is very easy to host multiple hidden services using the same Tor instance. In your torrc, just add multiple hidden service configurations:</p>
     <pre>HiddenServiceDir /desired/path/to/v3/hidden/service/config
@@ -668,9 +668,9 @@ HiddenServicePort &lt;localport&gt; &lt;server&gt;</pre>
     <h2 id="other-programs">Other Onion v3 Vanity Address Generation Programs</h2>
     <p>In addition to <a href="https://github.com/cathugger/mkp224o" target="_blank" rel="noopener">mkp224o</a> by <a href="https://github.com/cathugger" target="_blank" rel="noopener">cathugger</a> (which is what I used), there are also other Onion v3 vanity address generation programs out there:</p>
     <ul class="references">
-        <li>horse25519: <a href="https://github.com/Yawning/horse25519" target="_blank" rel="noopener">https://github.com/Yawning/horse25519</a></li>
-        <li>oniongen-go: <a href="https://github.com/rdkr/oniongen-go" target="_blank" rel="noopener">https://github.com/rdkr/oniongen-go</a></li>
-        <li>oniongen-c: <a href="https://github.com/rdkr/oniongen-c" target="_blank" rel="noopener">https://github.com/rdkr/oniongen-c</a></li>
+        <li>horse25519: <a href="https://github.com/Yawning/horse25519" target="_blank" rel="noopener">https://github.com/<wbr>Yawning/horse25519</a></li>
+        <li>oniongen-go: <a href="https://github.com/rdkr/oniongen-go" target="_blank" rel="noopener">https://github.com/<wbr>rdkr/oniongen-go</a></li>
+        <li>oniongen-c: <a href="https://github.com/rdkr/oniongen-c" target="_blank" rel="noopener">https://github.com/<wbr>rdkr/oniongen-c</a></li>
     </ul>
     <p>I personally tried out oniongen-go and oniongen-c in addition to mkp224o.</p>
     <p>If I have missed any, please <a href="/contact/" target="_blank">let me know</a>.</p>
@@ -693,8 +693,8 @@ HiddenServicePort &lt;localport&gt; &lt;server&gt;</pre>
         <li><a href="/blog/onionv3-hidden-service" target="_blank">JamieWeb - Tor Onion v3 Hidden Service - 21st Oct 2017</a></li>
         <li><a href="/blog/tor-hidden-service" target="_blank">JamieWeb - Tor Hidden Service - 12th Feb 2017</a></li>
         <li><a href="http://jamiewebgbelqfno.onion/" target="_blank" rel="noopener">JamieWeb Onion v2 Hidden Service - jamiewebgbelqfno.onion</a></li>
-        <li><a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Alpha Hidden Service (Now Offline) - 32zzibxmqi2ybxpqyggwwuwz7a3lbvt<wbr>zoloti7cxoevyvijexvgsfeid.onion</a></li>
-        <li><a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Production Hidden Service - jamie3vkiwibfiwucd6vxijskbhpjdy<wbr>ajmzeor4mc4i7yopvpo4p7cyd.onion</a></li>
+        <li><a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Alpha Hidden Service (Now Offline) - <span class="word-break-all">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</span></a></li>
+        <li><a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Production Hidden Service - <span class="word-break-all">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</span></a></li>
     </ul>
 </div>
 
