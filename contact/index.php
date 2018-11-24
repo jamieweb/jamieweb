@@ -23,15 +23,15 @@
     <table>
         <tr>
             <td><ul class="two-mar-top two-mar-bottom padding-right-10"><li>Personal:</li></ul></td>
-            <td><img class="vertical-align-middle" width="225px" src="/images/jamie-jamieweb.png"></td>
+            <td><img class="vertical-align-middle contact-jamie" width="225px" src="/images/jamie-jamieweb.png"></td>
         </tr>
         <tr>
             <td><ul class="two-mar-top two-mar-bottom padding-right-10"><li>Abuse Report:</li></ul></td>
-            <td><img class="vertical-align-middle" width="227.25px" src="/images/abuse-jamieweb.png"></td>
+            <td><img class="vertical-align-middle contact-abuse" width="227.25px" src="/images/abuse-jamieweb.png"></td>
         </tr>
         <tr>
             <td><ul class="two-mar-top two-mar-bottom padding-right-10"><li>Security:</li></ul></td>
-            <td><img class="vertical-align-middle" width="247.88px" src="/images/security-jamieweb.png"></td>
+            <td><img class="vertical-align-middle contact-security" width="247.88px" src="/images/security-jamieweb.png"></td>
         </tr>
     </table>
     <hr>

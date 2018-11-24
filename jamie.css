@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 674.9px) {
+    div.navbar li a {
+        padding: 17px 11px 16px;
+    }
     div.content {
         width: 100%;
     }
@@ -66,6 +69,30 @@
     }
     div.footer-column {
         width: 100%;
+    }
+    img.contact-jamie {
+        width: 174.375px;
+    }
+    img.contact-abuse {
+        width: 176.119px;
+    }
+    img.contact-security {
+        width: 192.107px;
+    }
+}
+
+@media (min-width: 675px) {
+    div.navbar li a {
+        padding: 17px 16px 16px;
+    }
+    img.contact-jamie {
+        width: 225px;
+    }
+    img.contact-abuse {
+        width: 227.25px;
+    }
+    img.contact-security {
+        width: 247.88px;
     }
 }
 
@@ -154,8 +181,6 @@ div.navbar li {
 
 div.navbar li a {
     display: block;
-    padding: 16px;
-    padding-top: 17px;
 }
 
 div.navbar li a:hover {
