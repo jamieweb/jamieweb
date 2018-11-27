@@ -4,11 +4,9 @@
     array ( "from" => "19 Dec", "to" => "31 Dec", "output" => "&#x1F384;" ), //Christmas tree
     array ( "from" => "31 Dec", "to" => "02 Jan next year", "output" => "&#x1F386;" ) //New year fireworks
 ];
-$output = "";
 $time = time();
 foreach($cal as $event) {
     if(($time > strtotime($event['from'])) && ($time < strtotime($event['to']))) {
-        $output .= $event['output'];
+        echo $event['output'];
     }
-}
-echo $output; ?>
+} ?>
