@@ -20,7 +20,7 @@
     <h2 class="subtitle-mar-top">Part 1: Key Terminology and Overview</h2>
     <hr>
     <p><b>Tuesday 23rd October 2018</b></p>
-    <div class="display-flex">
+    <div class="display-flex flex-justify-space-between">
         <div>
             <p class="no-mar-top">Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an overview of the Cutter interface and available tools.</p>
             <p>This is part 1 of a 3 part series on reverse engineering with Cutter:</p>
@@ -31,7 +31,7 @@
             </ul>
         </div>
         <div class="display-flex flex-align-center flex-justify-center flex-direction-column">
-            <img class="max-width-35-vw" src="/blog/radare2-cutter-part-1-key-terminology-and-overview/cutter-logo.png" width="250px" title="Cutter Logo" alt="Cutter Logo">
+            <img class="max-width-35-vw" src="/blog/radare2-cutter-part-1-key-terminology-and-overview/cutter-logo.png" width="135px" title="Cutter Logo" alt="Cutter Logo">
             <p class="no-mar-top centertext"><i>The Cutter logo.</i></p>
         </div>
     </div>
@@ -73,7 +73,7 @@ Part 1: Key Terminology and Overview</b>
     <p>Development of Cutter, which was originally named Iaito, started in March 2017. Since then there have been 10 major releases, with the latest version at the time of writing being 1.7.2.</p>
 
     <h2 id="installing-cutter">Installing Cutter</h2>
-    <p>Cutter can be acquired in either source or binary form from the official GitHub repository: <a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/radareorg/cutter</a></p>
+    <p>Cutter can be acquired in either source or binary form from the official GitHub repository: <a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/<wbr>radareorg/cutter</a></p>
     <img class="radius-8 border-1px-solid" src="/blog/radare2-cutter-part-1-key-terminology-and-overview/radareorg-cutter-github.png" width="1000px" title="The radare2 Cutter project on GitHub" alt="A screenshot of the radare2 Cutter repository on GitHub.">
     <p class="two-no-mar centertext"><i>The radare2 Cutter project on GitHub.</i></p>
     <p>Each release is available as an AppImage (for Linux), DMG (for macOS) and a ZIP containing an EXE (for Windows). The source code is also available if you to wish to compile Cutter yourself.</p>
