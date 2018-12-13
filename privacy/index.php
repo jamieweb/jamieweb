@@ -18,10 +18,13 @@
 <div class="body">
     <h1>Privacy Notice</h1>
     <hr>
-    <p>Last Updated: <b>Wednesday 12th December 2018</b></p>
+    <p>Last Updated: <b>Thursday 13th December 2018</b></p>
     <h2 id="web-server-logs">Web Server Logs</h2>
     <p>When browsing <a href="/">www.jamieweb.net</a>, each request is automatically logged by the web server in the Combined Log Format.</p>
-    <p>All log entires are thoroughly anonymized within one hour of collection. IP addresses are checked against a bloom filter in order to determine whether they are unique or not, and then replaced with generic non-routable addresses that cannot be programatically returned to their original form. User agent strings are matched against an approved list - if no match is found, they will be discarded. Referrer URLs will be stripped down to only the scheme and hostname.</p>
+    <p>All log entires are thoroughly anonymized within two hours of collection.</p>
+    <p>IP addresses are checked against a bloom filter in order to determine whether they are unique or not, and then replaced with generic non-routable addresses that cannot be programatically returned to their original form.</p>
+    <p>User agent strings are matched against an approved list - if no match is found, they will be discarded.</p>
+    <p>Referrer URLs will be stripped down to only the scheme and hostname.</p>
     <p>Within two hours, all original logs are erased. Anonymized logs may be kept indefinitely.</p>
     <h2 id="purpose-and-legal-basis-for-processing">Purpose and Legal Basis for Processing</h2>
     <p>The purpose of collecting the above data is to monitor high-level website statistics such as the total number of unique visitors and which search terms are bringing visitors to the site. The legal basis that I rely on to process this personal data is article 6(1)(f) of the GDPR, which allows me to process personal data when it is required for the purposes of my legitimate interests.</p>

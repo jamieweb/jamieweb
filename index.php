@@ -20,7 +20,7 @@
         <h1>Jamie Scaife - United Kingdom &#x1f1ec;&#x1f1e7;<?php include "holiday-emojis.php" ?></h1>
         <hr>
         <h3 class="no-mar-bottom intro-mar-top">No Ads, No Tracking, No JavaScript</h3>
-        <p class="two-mar-top">This website does not have any adverts, tracking or other internet annoyances.<br/>It's also 100% JavaScript free.</p>
+        <p class="two-mar-top">This website does not serve any adverts, tracking cookies or other internet annoyances.<br/>It's also 100% JavaScript free.</p>
         <h3 class="no-mar-bottom">Tor Hidden Services</h3>
         <p class="two-no-mar">This site is available through Tor at:</p>
         <ul class="no-mar-top">
