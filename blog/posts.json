@@ -1,6 +1,16 @@
 {
     "blog": {
         "2018": {
+            "using-a-bloom-filter-to-anonymize-web-server-logs": {
+                "uri": "using-a-bloom-filter-to-anonymize-web-server-logs",
+                "navtitle": "Bloom Filter Log Anonymizer",
+                "title": "Using a Bloom Filter to Anonymize Web Server Logs",
+                "longdesc": "Anonymizing personal data in web server access logs in order to improve data security and comply with the GDPR.",
+                "shortdesc": "Anonymizing web server access logs to improve data security and comply with the GDPR.",
+                "date": "Monday 17th December 2018",
+                "tags": "Security,Apache",
+                "snippet": ""
+            },
             "radare2-cutter-part-2-analysing-a-basic-program": {
                 "uri": "radare2-cutter-part-2-analysing-a-basic-program",
                 "navtitle": "Cutter Part 2: Analysing a Basic Program",
