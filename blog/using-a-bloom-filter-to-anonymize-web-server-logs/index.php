@@ -140,9 +140,15 @@ done</pre>
     <p>The un-anonymized logs are removed from disk on the server just a few minutes after they are transferred to the Pi, and on the Pi itself they are erased as soon as they have been processed.</p>
     <p>Finally, the anonymized data is fed into AWStats in order to give me a high-level statistical insight into the traffic on my site.</p>
     <p>All of this is set up with cronjobs and a restricted service account for SFTP.</p>
+    <p>Please see the '<a href="https://gitlab.com/jamieweb-staging/web-server-log-bloom-filter/blob/master/README.md#use-on-a-live-web-server" target="_blank" rel="noopener">Use on a Live Web Server</a>' section of the README for further details.</p>
 
     <h2 id="gdpr">GDPR</h2>
+    <p><b>Please note that <u>I am not a lawyer</u> and <u>this is not legal advice</u>.</b> This is only my understanding and interpretation of the GDPR, and it may be inaccurate or incomplete.</p>
     <p>While it's true that <a href="https://www.privacy-regulation.eu/en/recital-49-GDPR.htm" target="_blank" rel="noopener">Recital 49</a> of the GDPR allows for the processing of personal data (such as log files) in order to ensure sufficient levels of network and data security, this particular clause does not expand to statistical and analytical purposes.</p>
+    <p><a href="https://www.privacy-regulation.eu/en/article-5-principles-relating-to-processing-of-personal-data-GDPR.htm" target="_blank" rel="noopener">Article 5(1)(b)</a> allows personal data to be (trimmed excerpt, see full legal text) "<code><i>collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for (...) statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes</i></code>".</p>
+    <p><a href="https://www.privacy-regulation.eu/en/article-5-principles-relating-to-processing-of-personal-data-GDPR.htm" target="_blank" rel="noopener">Article 5(1)(e)</a> states that personal data must be (trimmed excerpt, see full legal text) "<code><i>kept in a form which permits identification of data subjects for no longer than is necessary...</i></code>".</p>
+    <p>Finally, <a href="https://www.privacy-regulation.eu/en/article-89-safeguards-and-derogations-relating-to-processing-for-archiving-purposes-the-public-interest-scientific-or-hi-GDPR.htm" target="_blank" rel="noopener">Article 89(1)</a> states (trimmed excerpt, see full legal text): "<code><i>Processing for (...) statistical purposes, shall be subject to appropriate safeguards (...) Those measures may include pseudonymisation...</i></code>"</p>
+    <p>As part of this project I have added a <a href="/privacy/" target="_blank">privacy notice</a> to my site, which states which personal data is collected and how it is processed.</p>
 
     <h2 id="conclusion">Conclusion</h2>
     <p>Overall I am very happy with the outcome of this project, and I believe that I've struck a good balance between more traditional 'tracking' methods, and having no statistical insight at all.</p>
