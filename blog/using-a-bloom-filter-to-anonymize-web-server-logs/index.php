@@ -110,7 +110,7 @@
 
     <h2 id="fuzz-testing-with-radamsa">Fuzz Testing with Radamsa</h2>
     <p>I've written a basic fuzzing test harness for the tool in order to assist with identifying any potential vulnerabilities. My fuzzing engine of choice is <a href="https://gitlab.com/akihe/radamsa" target="_blank" rel="noopener">Radamsa</a>, however you should be able to swap in a different tool if you prefer.</p>
-    <p>You'll probably have to adjust the file paths to get this working on your system, but other than that it should work as-is:</p>
+    <p>You'll probably have to adjust the file paths to get this working on your system, but other than that it should work as-is. You must provide some sample log entries to be fuzzed in <code>rawlogs/radamsa-sample.log</code>, or whichever path you choose:</p>
     <pre>#!/bin/bash
 echo "Please ensure that you run this fuzzing script on a tmpfs/ramdisk, as the high-speed and repeated writes may damage your hard disk or SSD."
 while true; do
