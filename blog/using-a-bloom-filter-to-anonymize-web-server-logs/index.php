@@ -43,11 +43,13 @@
     <p>User agent strings are compared against approved lists of browsers and web crawlers, and replaced accordingly. The output log files will contain only the browser name, such as <code>Chrome</code> or <code>Firefox</code>, rather than the full user agent string including version numbers, etc.</p>
     <p>Referrer URLs are stripped down to only the scheme (such as <code>https</code>) and Fully Qualified Domain Name (such as <code>www.jamieweb.net</code>).</p>
     <p>The HTTP Basic Authentication user ID and the <a href="https://tools.ietf.org/html/rfc1413" target="_blank" rel="noopener">RFC1413</a> identity (Ident protocol) are completely discarded. These aren't used very widely anyway.</p>
-    <p>Please see the <a href="https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter/blob/master/README.md" target="_blank" rel="noopener">README</a> for the tool in the GitLab repository for further details.</p>
+    <p>Please see the <a href="https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter/blob/master/README.md" target="_blank" rel="noopener">README</a> for the tool in the <a href="https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter/" target="_blank" rel="noopener">GitLab repository</a> for further details.</p>
+    <img class="radius-8" src="/blog/using-a-bloom-filter-to-anonymize-web-server-logs/gitlab-jamieweb-web-server-log-anonymizer-bloom-filter.png" width="1000px" title="jamieweb/web-server-log-anonymizer-bloom-filter on GitLab" alt="On screenshot of the repository page for jamieweb/web-server-log-anonymizer-bloom-filter on GitLab.">
+    <p class="two-no-mar centertext"><i>A screenshot of the GitLab repository page at <a href="https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter" target="_blank" rel="noopener">https://gitlab.com/<wbr>jamieweb/web-server-log-anonymizer-bloom-filter</a>.</i></p>
     <p>The anonymized logs can be fed into a statistics tool such as AWStats. Of course an amount of accuracy and detail is lost during the anonymization process, however key information such as the number of unique visitors, page views and referring sites is still available. This is a fantastic balance between using an intrusive, JavaScript-heavy client-side tracking and having no insight at all.</p>
 
     <h2 id="what-is-a-bloom-filter">What is a bloom filter?</h2>
-    <p>A bloom filter is a method for determining whether a particular piece of data exists within a set, without actually requiring access to the set itself.</p>
+    <p>A bloom filter is a data structure that can be used for determining whether a particular piece of data exists within a set, without actually requiring access to the set itself.</p>
     <p>They consist of an array of bits, and can be either written to, or queried. If you want to add a piece of data to a bloom filter, hashes of the data are generated, and the corresponding bits in the bloom filter are set to <code>1</code>. Full, cryptographically secure hashes are not normally used - instead, they are split into segments (such as 5 characters at a time), or other algorithms such as murmur are used.</p>
     <p>For example, imagine a brand new bloom filter which is 16 bits in size:</p>
     <pre>0000000000000000</pre>
@@ -107,6 +109,7 @@
     <p>These values can be easily controlled in the configuration file for the tool.</p>
     <p>I also recommend having a look at the <a href="https://hur.st/bloomfilter/" target="_blank" rel="noopener">Bloom Filter Calculator</a> on <a href="https://hur.st/" target="_blank" rel="noopener">hur.st</a>, as this is an extremely useful tool for testing different configurations and seeing the properties that they have.</p>
     <img class="radius-8" src="/blog/using-a-bloom-filter-to-anonymize-web-server-logs/bloom-filter-calculator.png" width="1000px" title="Bloom Filter Calculator on hur.st" alt="A screenshot of the bloom filter calculator on hur.st.">
+    <p class="two-no-mar centertext"><i>A screenshot of the Bloom Filter Calculator at <a href="https://hur.st/bloomfilter/" target="_blank" rel="noopener">https://hur.st/bloomfilter/</a>.</i></p>
 
     <h2 id="fuzz-testing-with-radamsa">Fuzz Testing with Radamsa</h2>
     <p>I've written a basic fuzzing test harness for the tool in order to assist with identifying any potential vulnerabilities. My fuzzing engine of choice is <a href="https://gitlab.com/akihe/radamsa" target="_blank" rel="noopener">Radamsa</a>, however you should be able to swap in a different tool if you prefer.</p>
