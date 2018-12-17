@@ -21,7 +21,7 @@
     <p><b>Monday 17th December 2018</b></p>
     <p>Since May 2018 when the GDPR came into full effect, I have had web server access logging completely disabled for my site. This is great from a security, privacy and GDPR compliance point of view, however it meant that I had very limited insight into the amount of traffic my site was getting.</p>
     <p>In order to solve this problem, I have built an open-source log anonymization tool which will remove personal data from web server access logs, and output a clean version that can be used for statistical purposes. A bloom filter is used to identify unique IP addresses, meaning that the anonymized log files can still be used for counting unique visitor IPs.</p>
-    <p>I've released the tool under the MIT license, and it's available on my GitLab profile: <a href="https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter" target="_blank" rel="noopener">https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter</a></p>
+    <p>I've released the tool under the MIT license, and it's available on my GitLab profile: <a href="https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter" target="_blank" rel="noopener">https://gitlab.com/<wbr>jamieweb/web-server-log-anonymizer-bloom-filter</a></p>
 
     <p><b>Skip to Section:</b></p>
     <pre><b>Using a Bloom Filter to Anonymize Web Server Logs</b>

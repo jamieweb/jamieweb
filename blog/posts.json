@@ -9,7 +9,7 @@
                 "shortdesc": "Anonymizing web server access logs to improve data security and comply with the GDPR.",
                 "date": "Monday 17th December 2018",
                 "tags": "Security,Apache",
-                "snippet": ""
+                "snippet": "Since May 2018 when the GDPR came into full effect, I have had web server access logging completely disabled for my site. This is great from a security, privacy and GDPR compliance point of view, however it meant that I had very limited insight into the amount of traffic my site was getting.</p>\n<p>In order to solve this problem, I have built an open-source log anonymization tool which will remove personal data from web server access logs, and output a clean version that can be used for statistical purposes. A bloom filter is used to identify unique IP addresses, meaning that the anonymized log files can still be used for counting unique visitor IPs.</p>\n<p>I've released the tool under the MIT license, and it's available on my GitLab profile: <b><a href=\"https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter\" target=\"_blank\" rel=\"noopener\">https://gitlab.com/<wbr>jamieweb/web-server-log-anonymizer-bloom-filter</a></b>"
             },
             "radare2-cutter-part-2-analysing-a-basic-program": {
                 "uri": "radare2-cutter-part-2-analysing-a-basic-program",

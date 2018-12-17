@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Using a Bloom Filter to Anonymize Web Server Logs</title>
+        <link>https://www.jamieweb.net/blog/using-a-bloom-filter-to-anonymize-web-server-logs/</link>
+        <description>Anonymizing personal data in web server access logs in order to improve data security and comply with the GDPR.</description>
+        <category>Blog</category>
+        <pubDate>Mon, 17 Dec 2018</pubDate>
+    </item>
+    <item>
         <title>Introduction to Reverse Engineering with radare2 Cutter - Part 2: Analysing a Basic Program</title>
         <link>https://www.jamieweb.net/blog/radare2-cutter-part-2-analysing-a-basic-program/</link>
         <description>Analysing a basic program using static analysis in radare2 Cutter.</description>
