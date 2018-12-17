@@ -143,7 +143,7 @@ done</pre>
     <p>The un-anonymized logs are removed from disk on the server just a few minutes after they are transferred to the Pi, and on the Pi itself they are erased as soon as they have been processed.</p>
     <p>Finally, the anonymized data is fed into AWStats in order to give me a high-level statistical insight into the traffic on my site.</p>
     <p>All of this is set up with cronjobs and a restricted service account for SFTP.</p>
-    <p>Please see the '<a href="https://gitlab.com/jamieweb-staging/web-server-log-bloom-filter/blob/master/README.md#use-on-a-live-web-server" target="_blank" rel="noopener">Use on a Live Web Server</a>' section of the README for further details.</p>
+    <p>Please see the '<a href="https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter/blob/master/README.md#use-on-a-live-web-server" target="_blank" rel="noopener">Use on a Live Web Server</a>' section of the README for further details.</p>
 
     <h2 id="gdpr">GDPR</h2>
     <p><b>Please note that <u>I am not a lawyer</u> and <u>this is not legal advice</u>.</b> This is only my understanding and interpretation of the GDPR, and it may be inaccurate or incomplete.</p>
