@@ -1,6 +1,15 @@
 {
     "blog": {
         "2018": {
+            "transferring-domain-names-to-cloudflare-registrar": {
+                "uri": "transferring-domain-names-to-cloudflare-registrar",
+                "navtitle": "Transferring Domains to Cloudflare Registrar",
+                "title": "Transferring Domain Names to Cloudflare Registrar",
+                "longdesc": "Documentation on the transfer-in process for Cloudflare Registrar.",
+                "date": "Sunday 23rd December 2018",
+                "tags": "Security,Meta",
+                "snippet": ""
+            },
             "using-a-bloom-filter-to-anonymize-web-server-logs": {
                 "uri": "using-a-bloom-filter-to-anonymize-web-server-logs",
                 "navtitle": "Bloom Filter Log Anonymizer",
