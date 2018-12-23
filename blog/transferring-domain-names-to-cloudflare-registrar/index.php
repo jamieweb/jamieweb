@@ -39,8 +39,43 @@
     <img class="radius-8" src="cloudflare-domain-transfer-email-verification-complete.png" width="1000px" title="Your Email Address Is Now Verified" alt="A screenshot of Cloudflare indicating that my email address is now verified.">
     <p class="two-no-mar centertext"><i>Cloudflare indicating that my email address is now verified.</i></p>
     <p>Next, you need to add a payment method if you haven't already, which is easy enough.</p>
-    <img class="radius-8" src="cloudflare-domain-transfer-email-verification-complete.png" width="1000px" title="Your Email Address Is Now Verified" alt="A screenshot of Cloudflare indicating that my email address is now verified.">
-    <p class="two-no-mar centertext"><i>Cloudflare indicating that my email address is now verified.</i></p>
+    <img class="radius-8" src="cloudflare-domain-transfer-add-payment-method.png" width="1000px" title="In Order to Transfer Domains, You Must Add a Payment Method" alt="A screenshot of Cloudflare prompting me to add a payment method to continue.">
+    <p class="two-no-mar centertext"><i>Cloudflare prompting me to add a payment method to continue.</i></p>
+    <p>Once a payment method has been added if required, you can proceed to select the domains you wish to transfer.</p>
+    <img class="radius-8" src="cloudflare-domain-transfer-select-domains.png" width="1000px" title="Selecting the Domain Names to Transfer" alt="A screenshot of the domain name selection screen for choosing which domain names to transfer to Cloudflare.">
+    <p class="two-no-mar centertext"><i>The domain name selection screen for choosing which domain names to transfer to Cloudflare.</i></p>
+    <p>Once you have confirmed your selection, an instructions screen is presented.</p>
+    <img class="radius-8" src="cloudflare-domain-transfer-start-transfer.png" width="1000px" title="Instructions on Transferring Your Domain Names to Cloudflare" alt="A screenshot of the domain name transfer instructions screen.">
+    <p class="two-no-mar centertext"><i>The domain name transfer instructions screen.</i></p>
+    <p>In my case, I logged in to Hover (my previous registrar) and disabled the domain transfer lock.</p>
+    <img class="radius-8" src="cloudflare-domain-transfer-hover-dashboard.png" width="1000px" title="The Hover Dashboard for jamieweb.net" alt="A screenshot of the Hover dashboard for jamieweb.net.">
+    <p class="two-no-mar centertext"><i>The Hover dashboard for jamieweb.net.</i></p>
+    <br>
+    <img class="radius-8" src="cloudflare-domain-transfer-hover-disable-transfer-lock.png" width="1000px" title="Disabling Transfer Lock for jamieweb.net in the Hover Dashboard" alt="A screenshot of disabling transfer lock for jamieweb.net in the Hover dashboard.">
+    <p class="two-no-mar centertext"><i>Disabling transfer lock for jamieweb.net in the Hover dashboard.</i></p>
+    <p>Once you have disabled transfer lock, you can request or generate a transfer authorization code for your domain, then enter it into Cloudflare.</p>
+    <img class="radius-8" src="cloudflare-domain-transfer-enter-authorization-code.png" width="1000px" title="A Prompt to Enter the Transfer Authorization Code Into Cloudflare" alt="A screenshot of the prompt to enter the domain name transfer authorization code.">
+    <p class="two-no-mar centertext"><i>Entering the transfer authorization code into Cloudflare.</i></p>
+    <p>Once the authorization code has been accepted, you can set the domain name contatc information that will be used in WHOIS.</p>
+    <img class="radius-8" src="cloudflare-domain-transfer-enter-contact-information.png" width="1000px" title="Entering the Desired WHOIS Contact Information for jamieweb.net" alt="A screenshot of form for entering the desired WHOIS contact information for jamieweb.net.">
+    <p class="two-no-mar centertext"><i>Entering the desired WHOIS contact information for jamieweb.net.</i></p>
+    <p>Finally, you can finalize and accept the transfer.</p>
+    <img class="radius-8" src="cloudflare-domain-transfer-finalize-and-transfer.png" width="1000px" title="Finalize and Transfer" alt="A screenshot the final confirmation button for transferring your domain to Cloudflare.">
+    <p class="two-no-mar centertext"><i>The final transfer confirmation button.</i></p>
+    <br>
+    <img class="radius-8" src="cloudflare-domain-transfer-now-underway.png" width="1000px" title="You Transfers are Now Underway" alt="A screenshot of the final confirmation screen.">
+    <p class="two-no-mar centertext"><i>The final confirmation screen.</i></p>
+    <p>Once the transfer is underway, the domain name status box in your domain settings on Cloudflare will show that the transfer approval is pending.</p>
+    <div class="centertext"><img class="radius-8" src="cloudflare-domain-transfer-pending.png" title="Transfer Pending" alt="A screenshot of the domain name status box showing that the transfer approval is pending."></div>
+    <p class="two-no-mar centertext"><i>The domain name status box showing that the transfer approval is pending.</i></p>
+    <p>The transfer may take a few days to go through. In my own case, transferring from Hover took around 5 days. Once the transfer is complete, you will receive an email and the domain name status box will show it as well.</p>
+    <div class="centertext"><img class="radius-8" src="cloudflare-domain-transfer-complete.png" title="Domain Registration - On Cloudflare" alt="A screenshot of the domain name status box showing that the domain name registration is now with Cloudflare."></div>
+    <p class="two-no-mar centertext"><i>The domain name status box showing that the domain name registration is now on Cloudflare.</i></p>
+    <h2 id="conclusion">Conclusion</h2>
+    <p>The transfer process was extremely straightforward and free of complications. Once I had started the transfer I just let it do it's thing, and I was confident that the transfer would go through without any problems. DNSSEC continued to work after the transfer too, without requiring me to manually update the records.</p>
+    <p>I've done domain transfers in the past between other registrars, and often it can be a long and convoluted process involving transfer fees and verification pages that look like phishing websites. This was definitely not the case when transferring between Hover and Cloudflare.</p>
+    <p>The restrictions of Cloudflare Registrar are important to note though, such as the fact that you cannot use custom name servers for your domain. I guess that Cloudflare are hoping that you will pay for some of their other services in return for offering the domain names with no markup at wholesale prices.</p>
+    <p>I am very happy with Cloudflare Registrar so far, and I will be continuing to use it for my domain names in the future. I also look forward to trying any new features that the service has to offer.</p>
 </div>
 
 <?php include "footer.php" ?>
