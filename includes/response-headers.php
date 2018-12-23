@@ -1,4 +1,4 @@
-<?php function content_security_policy($directives = null) {
+<?php function content_security_policy($overrides = []) {
     $defaultPolicy = [
         "default-src" => "'none'",
         "base-uri" => "'none'",
@@ -10,24 +10,11 @@
         "block-all-mixed-content"
     ];
     $header = "Content-Security-Policy: ";
-    foreach($defaultPolicy as $directive => $value) {
-        if($directive) {
+    foreach(array_merge($defaultPolicy, $overrides) as $directive => $value) {
+        if(is_string($directive)) {
             $header .= $directive . " ";
         }
         $header .= $value . "; ";
     }
     header(rtrim($header, "; "));
-    echo(rtrim($header, "; ")); //Debug echo
-}
-
-function x_frame_options($value = null) {
-
-}
-?>
-
-
-
-
-
-
-
+} ?>
