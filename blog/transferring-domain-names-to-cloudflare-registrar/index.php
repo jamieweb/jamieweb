@@ -6,7 +6,7 @@
 
 <head>
     <title>Transferring Domain Names to Cloudflare Registrar</title>
-    <meta name="description" content="Documentation on the transfer-in process for Cloudflare Registrar.">
+    <meta name="description" content="Screenshots and information on the transfer-in process for Cloudflare Registrar.">
     <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/transferring-domain-names-to-cloudflare-registrar/" rel="canonical">
 </head>

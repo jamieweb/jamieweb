@@ -692,6 +692,11 @@ span.tag-chrome {
     color: white;
 }
 
+span.tag-domain-names {
+    background-color: #337594;
+    color: white;
+}
+
 span.tag-guide {
     background-color: #6b8e23;
     color: white;

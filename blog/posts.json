@@ -5,10 +5,10 @@
                 "uri": "transferring-domain-names-to-cloudflare-registrar",
                 "navtitle": "Transferring Domains to Cloudflare Registrar",
                 "title": "Transferring Domain Names to Cloudflare Registrar",
-                "longdesc": "Documentation on the transfer-in process for Cloudflare Registrar.",
+                "longdesc": "Screenshots and information on the transfer-in process for Cloudflare Registrar.",
                 "date": "Sunday 23rd December 2018",
-                "tags": "Security,Meta",
-                "snippet": ""
+                "tags": "Domain Names",
+                "snippet": "This week I transferred all of my domain names to the brand new <a href=\"https://www.cloudflare.com/products/registrar/\" target=\"_blank\" rel=\"noopener\">Cloudflare Registrar</a>. I took screenshots throughout the process and have documented them here for anybody else who has not yet done the transfer, and wants to know what to expect before diving in."
             },
             "using-a-bloom-filter-to-anonymize-web-server-logs": {
                 "uri": "using-a-bloom-filter-to-anonymize-web-server-logs",
