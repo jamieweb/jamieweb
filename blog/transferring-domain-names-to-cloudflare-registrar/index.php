@@ -21,7 +21,7 @@
     <p><b>Sunday 23rd December 2018</b></p>
     <p>This week I transferred all of my domain names to the brand new <a href="https://www.cloudflare.com/products/registrar/" target="_blank" rel="noopener">Cloudflare Registrar</a>. I took screenshots throughout the process and have documented them here for anybody else who has not yet done the transfer, and wants to know what to expect before diving in.</p>
     <img class="radius-8" src="cloudflare-registrar-overview.png" width="1000px" title="The Cloudflare Registrar Product Page" alt="A screenshot of the Cloudflare Registrar product page.">
-    <p class="two-no-mar centertext"><i>The Cloudflare Registrar Product page at: <a href="https://www.cloudflare.com/products/registrar/" target="_blank" rel="noopener">https://www.cloudflare.com/products/registrar/</a></i></p>
+    <p class="two-no-mar centertext"><i>The Cloudflare Registrar product page at: <a href="https://www.cloudflare.com/products/registrar/" target="_blank" rel="noopener">https://www.cloudflare.com/products/registrar/</a></i></p>
     <p>In my case, I did a bulk transfer of all of my domains except for the most important one at first, then once I could see that everything was going through properly, I transferred jamieweb.net as well.</p> 
     <h2 id="the-transfer-process">The Transfer Process</h2>
     <p>In order to transfer domain names to Cloudflare, they must already be activated in your Cloudflare account and have their name servers pointing to Cloudflare. Once you have transferred your domain names in, you cannot use external name servers - you are locked to using Cloudflare's own.</p>
