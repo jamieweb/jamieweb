@@ -1,5 +1,5 @@
 <?php function bloglist($location, $category = null, $post = null) {
-    $bloglist = json_decode(file_get_contents('blog/posts.json', true));
+    $bloglist = json_decode(file_get_contents('posts.json', true));
     if($location === "navbar") {
         foreach($bloglist->blog as $year) {
             foreach($year as $post) {

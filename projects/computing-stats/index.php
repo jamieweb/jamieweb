@@ -54,7 +54,7 @@
         </tr>
     </table><br>
     <p class="info">Stats Update Every 10 Minutes. Last Updated: <b>var-lastupdated GMT</b></p><br>
-    <p class="info">System Status Message: <b><?php include "projects/computing-stats/system-status-msg.txt" ?></b></p><br>
+    <p class="info">System Status Message: <b><?php include "computing-stats-status-message.txt" ?></b></p><br>
 
     <h1 class="info">Current Project: <span class="currentproject">Einstein@Home</span></h1>
     <p>The cluster is currently running <a href="https://einsteinathome.org/" target="_blank" rel="noopener">Einstein@Home</a>, which is a distributed computing project that searches for gravitational waves using data from the LIGO gravitational wave detector.</p>
