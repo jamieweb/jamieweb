@@ -1,4 +1,4 @@
-<?php include "response-headers.php"; content_security_policy(); ?>
+<?php include "response-headers.php"; content_security_policy(["style-src" => "'self' https://ipv6.jamieweb.net https://ipv4.jamieweb.net"]); ?>
 <!DOCTYPE html>
 <html lang="en">
 
