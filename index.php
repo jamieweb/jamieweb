@@ -1,3 +1,4 @@
+<?php include "response-headers.php"; content_security_policy(); ?>
 <?php include "includes/response-headers.php"; content_security_policy(); ?>
 <!DOCTYPE html>
 <html lang="en">
