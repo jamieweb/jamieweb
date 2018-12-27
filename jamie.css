@@ -157,7 +157,7 @@ body {
     margin: 0px;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,li,td,th {
+h1,h2,h3,h4,h5,h6,p,a,li,td,th,input {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -285,7 +285,7 @@ div.sideitem {
     display: inline-block;
 }
 
-div.sideitem img {
+div.sideitem img,img.sideitem-image {
     width: 36px;
     height: 36px;
     vertical-align: middle;
@@ -460,10 +460,6 @@ div.image-right-a {
     width: 550px;
     float: right;
     margin-top: 16px;
-}
-
-div.email-form {
-    height: 627.797px;
 }
 
 pre {
@@ -760,6 +756,48 @@ span.tag-ubuntu {
 span.tag-virtualisation {
     background-color: #2a7fee;
     color: white;
+}
+
+div.email-form {
+    
+}
+
+div.email-form-sidebar {
+    margin: 7px 10px 26px;
+}
+
+div.email-form-sidebar input[type="email"] {
+    width: 185px;
+}
+
+div.email-form-sidebar input[type="submit"] {
+    width: 45px;
+}
+
+input.form-input,input.form-submit {
+    border: 1px solid darkgrey;
+    border-radius: 1px;
+    padding: 3px 6px;
+    outline: none;
+    font-size: small;
+}
+
+input.form-input {
+    background-color: #f1f1f1;
+}
+
+input.form-input:invalid {
+    border-color: #d70017;
+}
+
+input.form-submit {
+    background-color: #ffb100;
+    color: white;
+    font-weight: bold;
+}
+
+input.form-input:invalid + input.form-submit {
+    border-color: #d70017;
 }
 
 th.h1-scope-type {

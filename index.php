@@ -81,6 +81,19 @@
             </div>
         </div>
         <hr>
+        <h2 class="centertext">Subscribe</h2>
+        <div class="centertext">
+            <a class="display-inline-block" href="/rss.xml" target="_blank"><img class="sideitem-image" src="/images/fontawesome/rss-orange.svg"></a>
+            <p class="display-inline-block no-mar-top no-mar-bottom"><a href="/rss.xml" target="_blank">RSS Feed</a></p>
+        </div>
+        <p class="no-mar-bottom">Or subscribe via email:</p>
+        <div class="email-form email-form-sidebar centertext">
+            <form action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
+                <input class="form-input" type="email" name="member[email]" placeholder="Your email address...">
+                <input class="form-submit" type="submit" name="member[subscribe]" value="Go">
+            </form>
+        </div>
+        <hr>
         <h2 class="centertext">Popular Pages</h2>
         <div class="redlink tops">
             <a href="/projects/computing-stats/">
