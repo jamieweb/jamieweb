@@ -763,11 +763,12 @@ div.email-form {
 }
 
 div.email-form-sidebar {
-    margin: 7px 10px 26px;
+    
 }
 
 div.email-form-sidebar input[type="email"] {
     width: 185px;
+    margin-right: 10px;
 }
 
 div.email-form-sidebar input[type="submit"] {
@@ -1009,6 +1010,10 @@ th.h1-scope-in-scope {
 
 .color-crimson {
     color: crimson;
+}
+
+.color-grey {
+    color: grey;
 }
 
 .y-scroll {

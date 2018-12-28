@@ -86,12 +86,13 @@
             <a class="display-inline-block" href="/rss.xml" target="_blank"><img class="sideitem-image" src="/images/fontawesome/rss-orange.svg"></a>
             <p class="display-inline-block no-mar-top no-mar-bottom"><a href="/rss.xml" target="_blank">RSS Feed</a></p>
         </div>
-        <p class="no-mar-bottom">Or subscribe via email:</p>
-        <div class="email-form email-form-sidebar centertext">
-            <form action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
-                <input class="form-input" type="email" name="member[email]" placeholder="Your email address...">
+        <div class="email-form email-form-sidebar">
+            <p class="no-mar-bottom">Or subscribe via email:</p>
+            <form class="display-flex" action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
+                <input class="form-input flex-grow-1" type="email" name="member[email]" placeholder="Your email address...">
                 <input class="form-submit" type="submit" name="member[subscribe]" value="Go">
             </form>
+            <p class="color-grey no-mar-top">Email subscriptions are powered by <a href="https://www.getrevue.co/" target="_blank" rel="noopener">Revue</a> | <a href="https://www.getrevue.co/privacy/platform" target="_blank" rel="noopener">Privacy Notice</a></p>
         </div>
         <hr>
         <h2 class="centertext">Popular Pages</h2>
