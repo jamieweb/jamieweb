@@ -198,11 +198,16 @@ div.navbar li a {
     display: block;
 }
 
+div.navbar li a span:nth-child(1):not(.exempt) {
+    vertical-align: 2px;
+    line-height: 0px;
+}
+
 div.navbar li a:hover {
     background-color: #4c4c4c;
 }
 
-div.navbar li a:hover span {
+div.navbar li a:hover span:nth-child(2) {
     text-decoration: underline;
 }
 
