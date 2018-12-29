@@ -2,9 +2,9 @@
     <div class="navbar">
         <ul>
             <li class="navlogo"><a href="/"><img src="/images/js-circle-48.png" width="35px" height="35px"></a></li>
-            <li><h5><a href="/">Home</a></h5></li>
+            <li><h5><a href="/">&#x1f3e0; <span>Home</span></a></h5></li>
             <li class="dropdown">
-                <h5><a href="/blog/">Blog</a></h5>
+                <h5><a href="/blog/">&#x1f58b; <span>Blog</span></a></h5>
                 <div class="dropdown-content">
                     <h4>
                         <?php include_once "bloglist.php"; bloglist("navbar"); ?>
@@ -12,7 +12,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <h5><a href="/projects/">Projects</a></h5>
+                <h5><a href="/projects/">&#x1f3d7; <span>Projects</span></a></h5>
                 <div class="dropdown-content">
                     <h4>
                         <a href="/projects/computing-stats/">Computing Stats</a>
@@ -22,7 +22,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <h5><a href="/tools">Tools</a></h5>
+                <h5><a href="/tools">&#x1f6e0; <span>Tools</span></a></h5>
                 <div class="dropdown-content">
                     <h4>
                         <a href="/tools/exploitable-web-content-blocking-test/">Exploitable Web Content Blocking Test</a>
@@ -31,7 +31,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <h5><a href="/info/">Info</a></h5>
+                <h5><a href="/info/">&#x1f4d6; <span>Info</span></a></h5>
                 <div class="dropdown-content">
                     <h4>
                         <a href="/info/adblock-plus-config/">Adblock Plus Configuration</a>
@@ -43,6 +43,12 @@
                         <a href="/info/x86_64-general-purpose-registers-reference/">x86_64 GPR Reference</a>
                     </h4>
                 </div>
+            </li>
+            <li class="float-right">
+                <h5><a href="/contact/">&#x1f4e7; <span>Contact</span></a></h5>
+            </li>
+            <li class="float-right">
+                <h5><a href="/subscribe/">&#x1f514; <span>Subscribe</span></a></h5>
             </li>
         </ul>
     </div>

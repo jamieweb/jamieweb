@@ -190,7 +190,7 @@ div.navbar ul {
     background-color: #59a2c7;
 }
 
-div.navbar li {
+div.navbar li:not(.float-right) {
     float: left;
 }
 
@@ -200,6 +200,9 @@ div.navbar li a {
 
 div.navbar li a:hover {
     background-color: #4c4c4c;
+}
+
+div.navbar li a:hover span {
     text-decoration: underline;
 }
 
