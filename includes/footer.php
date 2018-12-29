@@ -13,54 +13,54 @@
             <p>Copyright &copy; Jamie Scaife 2018</p>
         </div>
         <div class="footer-column footer-middle">
-            <h2>Links</h2>
+            <h2>&#x1f517; Links</h2>
             <a href="https://github.com/jamieweb" target="_blank" rel="noopener">
                 <div class="footer-item">
-                    <img src="/images/fontawesome/github.svg">
+                    <img class="invert" src="/images/fontawesome/github.svg">
                     <h4>GitHub</h4>
                 </div>
             </a>
             <a href="https://twitter.com/jamieweb" target="_blank" rel="noopener">
                 <div class="footer-item">
-                    <img src="/images/fontawesome/tw.svg">
+                    <img class="invert" src="/images/fontawesome/tw.svg">
                     <h4>Twitter</h4>
                 </div>
             </a>
             <a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener">
                 <div class="footer-item">
-                    <img src="/images/fontawesome/yt.svg">
+                    <img class="invert" src="/images/fontawesome/yt.svg">
                     <h4>YouTube</h4>
                 </div>
             </a>
             <a href="https://keybase.io/jamieweb" target="_blank" rel="noopener">
                 <div class="footer-item">
-                    <img src="/images/fontawesome/id-card.svg">
+                    <img class="invert" src="/images/fontawesome/id-card.svg">
                     <h4>Keybase</h4>
                 </div>
             </a>
             <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener">
                 <div class="footer-item">
-                    <img class="h1" src="/images/hackerone.png">
+                    <img class="invert h1" src="/images/hackerone.png">
                     <h4>HackerOne</h4>
-                </div>
-            </a>
-            <a href="/rss.xml" target="_blank">
-                <div class="footer-item">
-                    <img src="/images/fontawesome/rss.svg">
-                    <h4>RSS Feed</h4>
                 </div>
             </a>
         </div>
         <div class="footer-column">
-            <h2>Development</h2>
-            <ul class="footer-list">
-                <!--<li><h4><a href="/development/">Overview</a></h4></li>-->
-                <li><h4><a href="https://github.com/jamieweb/jamieweb" target="_blank" rel="noopener">GitHub Repo</a></h4></li>
-                <li><h4><a href="https://gitlab.com/jamieweb/jamieweb" target="_blank" rel="noopener">GitLab Repo</a></h4></li>
-                <li><h4><a href="https://bitbucket.org/jamieweb/jamieweb/src/master" target="_blank" rel="noopener">Bitbucket Repo</a></h4></li>
-                <li><h4><a href="https://git.launchpad.net/jamieweb/" target="_blank" rel="noopener">Launchpad Repo</a></h4></li>
-                <li><h4><a href="https://travis-ci.org/jamieweb/jamieweb" target="_blank" rel="noopener">Travis-CI<img class="footer-badge" src="/images/travis-ci-jamieweb-badge-auto-updating.svg"></a></h4></li>
-            </ul>
+            <h2>&#x1f514; Subscribe</h2>
+            <a href="/rss.xml" target="_blank">
+                <div class="footer-item">
+                    <img src="/images/fontawesome/rss-orange.svg">
+                    <h4>RSS Feed</h4>
+                </div>
+            </a>
+            <div class="email-form">
+                <p class="no-mar-top no-mar-bottom">Or subscribe via email:</p>
+                <form class="display-flex" action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
+                    <input class="form-input flex-grow-1" type="email" name="member[email]" placeholder="Your email address...">
+                    <input class="form-submit" type="submit" name="member[subscribe]" value="Go">
+                </form>
+                <p class="font-size-smaller color-lightgrey no-mar-top">Email subscriptions are powered by <a class="color-lightgrey footer-subtext" href="https://www.getrevue.co/" target="_blank" rel="noopener">Revue</a> | <a class="color-lightgrey footer-subtext" href="https://www.getrevue.co/privacy/platform" target="_blank" rel="noopener">Privacy Notice</a></p>
+            </div>
         </div>
     </div>
 </footer>

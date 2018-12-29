@@ -584,6 +584,10 @@ h5.license {
     margin-top: -19px;
 }
 
+img.invert {
+    filter: invert(100);
+}
+
 img.footer-logo {
     filter: brightness(100);
     height: 35px;
@@ -622,7 +626,7 @@ div.footer-column h2 {
     margin-bottom: 12px;
 }
 
-div.footer-column a {
+div.footer-column a:not(.footer-subtext) {
     color: white;
     text-decoration: none;
 }
@@ -646,7 +650,6 @@ div.footer-item {
 div.footer-item img {
     height: 32px;
     width: 32px;
-    filter: invert(100);
     vertical-align: middle;
     padding-bottom: 4px;
 }
@@ -758,20 +761,12 @@ span.tag-virtualisation {
     color: white;
 }
 
-div.email-form {
-    
-}
-
-div.email-form-sidebar {
-    
-}
-
-div.email-form-sidebar input[type="email"] {
+div.email-form input[type="email"] {
     width: 185px;
     margin-right: 10px;
 }
 
-div.email-form-sidebar input[type="submit"] {
+div.email-form input[type="submit"] {
     width: 45px;
 }
 
@@ -988,6 +983,14 @@ th.h1-scope-in-scope {
     padding: 0 8px;
 }
 
+.font-size-larger {
+    font-size: larger;
+}
+
+.font-size-smaller {
+    font-size: smaller;
+}
+
 .intro-mar-top {
     margin-top: 11px;
 }
@@ -1014,6 +1017,10 @@ th.h1-scope-in-scope {
 
 .color-grey {
     color: grey;
+}
+
+.color-lightgrey {
+    color: lightgrey;
 }
 
 .y-scroll {
