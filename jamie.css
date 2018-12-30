@@ -894,6 +894,10 @@ th.h1-scope-in-scope {
     margin-top: 19px;
 }
 
+.margin-top-7 {
+    margin-top: 7px;
+}
+
 .two-no-mar {
     margin-top: 2px;
     margin-bottom: 0px;
