@@ -288,22 +288,35 @@ div.sideitems {
     margin: 11px 0px;
 }
 
-div.icontext {
-    min-width: 135px;
+div.sideitems a,a.icontext {
+    min-width: 120px;
     display: inline-block;
+    text-decoration: none;
 }
 
-div.icontext img,img.icontext-img {
-    width: 36px;
-    height: 36px;
+div.sideitems a span,a.icontext span {
+    text-decoration: underline;
+}
+
+div.sideitems a img,a.icontext img {
     vertical-align: middle;
     padding-bottom: 5px;
     margin-right: 1.5px;
 }
 
-div.icontext img.h1,div.footer-item img.h1 {
+div.sideitems a img:not(.exempt),a.icontext img:not(.exempt) {
+    width: 36px;
+    height: 36px;
+}
+
+img.h1 {
     width: 19px;
     height: 36px;
+}
+
+img.hn {
+    width: 33px;
+    height: 33px;
 }
 
 div.icontext h4 {
