@@ -56,7 +56,7 @@
             <div class="email-form">
                 <p class="no-mar-top no-mar-bottom">Or subscribe via email:</p>
                 <form class="display-flex" action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
-                    <input class="form-input flex-grow-1" type="email" name="member[email]" placeholder="Your email address...">
+                    <input class="form-input margin-right-10 flex-grow-1" type="email" name="member[email]" placeholder="Your email address...">
                     <input class="form-submit" type="submit" name="member[subscribe]" value="Go">
                 </form>
                 <p class="font-size-smaller color-lightgrey no-mar-top">Email subscriptions are powered by <a class="color-lightgrey footer-subtext" href="https://www.getrevue.co/" target="_blank" rel="noopener">Revue</a> | <a class="color-lightgrey footer-subtext" href="https://www.getrevue.co/privacy/platform" target="_blank" rel="noopener">Privacy Notice</a></p>

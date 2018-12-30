@@ -293,7 +293,7 @@ div.sideitem {
     display: inline-block;
 }
 
-div.sideitem img,img.sideitem-image {
+div.sideitem img,img.icontext-img {
     width: 36px;
     height: 36px;
     vertical-align: middle;
@@ -769,9 +769,8 @@ span.tag-virtualisation {
     color: white;
 }
 
-div.email-form input[type="email"] {
+div.email-form input[type="email"]:not(.exempt) {
     width: 185px;
-    margin-right: 10px;
 }
 
 div.email-form input[type="submit"] {
@@ -868,6 +867,14 @@ th.h1-scope-in-scope {
 
 .margin-left-24 {
     margin-left: 24px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+
+.margin-top-19 {
+    margin-top: 19px;
 }
 
 .two-no-mar {

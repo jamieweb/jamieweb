@@ -83,13 +83,13 @@
         <hr>
         <h2 class="centertext">Subscribe</h2>
         <div class="centertext">
-            <a class="display-inline-block" href="/rss.xml" target="_blank"><img class="sideitem-image" src="/images/fontawesome/rss-orange.svg"></a>
+            <a class="display-inline-block" href="/rss.xml" target="_blank"><img class="icontext-img" src="/images/fontawesome/rss-orange.svg"></a>
             <p class="display-inline-block no-mar-top no-mar-bottom"><a href="/rss.xml" target="_blank">RSS Feed</a></p>
         </div>
         <div class="email-form">
             <p class="no-mar-bottom">Or subscribe via email:</p>
             <form class="display-flex" action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
-                <input class="form-input flex-grow-1" type="email" name="member[email]" placeholder="Your email address...">
+                <input class="form-input margin-right-10 flex-grow-1" type="email" name="member[email]" placeholder="Your email address...">
                 <input class="form-submit" type="submit" name="member[subscribe]" value="Go">
             </form>
             <p class="font-size-smaller color-grey no-mar-top">Email subscriptions are powered by <a class="color-grey" href="https://www.getrevue.co/" target="_blank" rel="noopener">Revue</a> | <a class="color-grey" href="https://www.getrevue.co/privacy/platform" target="_blank" rel="noopener">Privacy Notice</a></p>
