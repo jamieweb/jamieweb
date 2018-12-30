@@ -288,12 +288,12 @@ div.sideitems {
     margin: 11px 0px;
 }
 
-div.sideitem {
-    width: 135px;
+div.icontext {
+    min-width: 135px;
     display: inline-block;
 }
 
-div.sideitem img,img.icontext-img {
+div.icontext img,img.icontext-img {
     width: 36px;
     height: 36px;
     vertical-align: middle;
@@ -301,12 +301,12 @@ div.sideitem img,img.icontext-img {
     margin-right: 1.5px;
 }
 
-div.sideitem img.h1,div.footer-item img.h1 {
+div.icontext img.h1,div.footer-item img.h1 {
     width: 19px;
     height: 36px;
 }
 
-div.sideitem h4 {
+div.icontext h4 {
     display: inline-block;
     margin: 13px 0px;
 }

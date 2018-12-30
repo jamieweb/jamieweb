@@ -55,39 +55,45 @@
         <!--My identicon seed is the sha256 hash of the plain text word "JamieOnUbuntu".-->
         <hr>
         <div class="centertext sideitems">
-            <div class="sideitem">
+            <div class="icontext">
                 <a href="https://github.com/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/github.svg"></a>
                 <h4><a href="https://github.com/jamieweb" target="_blank" rel="noopener">GitHub</a></h4>
             </div>
-            <div class="sideitem">
+            <div class="icontext">
                 <a href="https://twitter.com/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/tw.svg"></a>
                 <h4><a href="https://twitter.com/jamieweb" target="_blank" rel="noopener">Twitter</a></h4>
             </div>
-            <div class="sideitem">
+            <div class="icontext">
                 <a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener"><img src="/images/fontawesome/yt.svg"></a>
                 <h4><a href="https://www.youtube.com/jamie90437x" target="_blank" rel="noopener">YouTube</a></h4>
             </div>
-            <div class="sideitem">
+            <div class="icontext">
                 <a href="https://keybase.io/jamieweb" target="_blank" rel="noopener"><img src="/images/fontawesome/id-card.svg"></a>
                 <h4><a href="https://keybase.io/jamieweb" target="_blank" rel="noopener">Keybase</a></h4>
             </div>
-            <div class="sideitem">
+            <div class="icontext">
                 <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener"><img class="h1" src="/images/hackerone.png"></a>
                 <h4><a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener">HackerOne</a></h4>
             </div>
-            <div class="sideitem">
+            <div class="icontext">
                 <a href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss.svg"></a>
                 <h4><a href="/rss.xml" target="_blank">RSS</a></h4>
             </div>
         </div>
         <hr>
-        <h2 class="centertext">Subscribe</h2>
+        <h2 class="centertext two-mar-bottom">Subscribe</h2>
         <div class="centertext">
-            <a class="display-inline-block" href="/rss.xml" target="_blank"><img class="icontext-img" src="/images/fontawesome/rss-orange.svg"></a>
-            <p class="display-inline-block no-mar-top no-mar-bottom"><a href="/rss.xml" target="_blank">RSS Feed</a></p>
+            <div class="icontext two-mar-top">
+                <a href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss-orange.svg"></a>
+                <h4><a href="/rss.xml" target="_blank">RSS Feed</a></h4>
+            </div>
+            <div class="icontext two-mar-bottom">
+                <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.jamieweb.net%2Frss.xml" target="_blank" rel="noopener"><img src="/images/fy.png"></a>
+                <h4><a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.jamieweb.net%2Frss.xml" target="_blank" rel="noopener">Feedly</a></h4>
+            </div>
         </div>
         <div class="email-form">
-            <p class="no-mar-bottom">Or subscribe via email:</p>
+            <p class="two-no-mar">Or subscribe via email:</p>
             <form class="display-flex" action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
                 <input class="form-input margin-right-10 flex-grow-1" type="email" name="member[email]" placeholder="Your email address...">
                 <input class="form-submit" type="submit" name="member[subscribe]" value="Go">
