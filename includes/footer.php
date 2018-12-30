@@ -53,6 +53,12 @@
                     <h4>RSS Feed</h4>
                 </div>
             </a>
+            <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.jamieweb.net%2Frss.xml" target="_blank" rel="noopener">
+                <div class="footer-item">
+                    <img src="/images/fy.png">
+                    <h4>Feedly</h4>
+                </div>
+            </a>
             <div class="email-form">
                 <p class="no-mar-top no-mar-bottom">Or subscribe via email:</p>
                 <form class="display-flex" action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
