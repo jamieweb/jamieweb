@@ -315,7 +315,6 @@ img.h1 {
 }
 
 img.hn {
-    width: 33px;
     height: 33px;
 }
 
@@ -669,10 +668,13 @@ div.footer-item {
 }
 
 div.footer-item img {
-    height: 32px;
-    width: 32px;
     vertical-align: middle;
     padding-bottom: 4px;
+}
+
+div.footer-item img:not(.exempt) {
+    height: 32px;
+    width: 32px;
 }
 
 div.footer-item h4 {

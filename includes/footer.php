@@ -14,10 +14,10 @@
         </div>
         <div class="footer-column footer-middle">
             <h2>&#x1f517; Links</h2>
-            <a href="https://github.com/jamieweb" target="_blank" rel="noopener">
+            <a href="https://gitlab.com/jamieweb" target="_blank" rel="noopener">
                 <div class="footer-item">
-                    <img class="invert" src="/images/fontawesome/github.svg">
-                    <h4>GitHub</h4>
+                    <img class="invert" src="/images/fontawesome/gl.svg">
+                    <h4>GitLab</h4>
                 </div>
             </a>
             <a href="https://twitter.com/jamieweb" target="_blank" rel="noopener">
@@ -34,14 +34,19 @@
             </a>
             <a href="https://keybase.io/jamieweb" target="_blank" rel="noopener">
                 <div class="footer-item">
-                    <img class="invert" src="/images/fontawesome/id-card.svg">
+                    <img class="invert" src="/images/fontawesome/kb.svg">
                     <h4>Keybase</h4>
                 </div>
             </a>
             <a href="https://hackerone.com/jamieweb" target="_blank" rel="noopener">
                 <div class="footer-item">
-                    <img class="invert h1" src="/images/hackerone.png">
+                    <img class="invert h1 exempt" src="/images/hackerone.png">
                     <h4>HackerOne</h4>
+                </div>
+            </a>
+            <a href="https://news.ycombinator.com/user?id=jamieweb" target="_blank" rel="noopener">
+                <div class="footer-item">
+                    <img class="invert hn exempt" src="/images/fontawesome/hn.svg"><h4>Hacker News</h4><!-- No newline here to prevent whitespace text nodes causing wrapping -->
                 </div>
             </a>
         </div>
