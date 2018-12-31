@@ -1,3 +1,4 @@
+<?php include "response-headers.php"; content_security_policy(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +8,7 @@
 <head>
     <title>403: Forbidden</title>
     <meta name="description" content="Error 403: Forbidden">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
+    <?php include "head.php" ?>
     <link href="/jamie.css" rel="stylesheet">
 </head>
 

@@ -1,3 +1,4 @@
+<?php include "response-headers.php"; content_security_policy(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +8,7 @@
 <head>
     <title>400: Bad Request</title>
     <meta name="description" content="Error 400: Bad Request">
-    <meta name="keywords" content="Jamie, Scaife, jamie scaife, jamiescaife, jamieonubuntu, jamie90437, jamie90437x, jamieweb, jamieweb.net">
-    <meta name="author" content="Jamie Scaife">
+    <?php include "head.php" ?>
     <link href="/jamie.css" rel="stylesheet">
 </head>
 
