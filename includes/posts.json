@@ -1,5 +1,16 @@
 {
     "blog": {
+        "2019": {
+            "radare2-cutter-part-3-solving-a-crackme-challenge": {
+                "uri": "radare2-cutter-part-3-solving-a-crackme-challenge",
+                "navtitle": "Cutter Part 3: Solving a Crackme Challenge",
+                "title": "Introduction to Reverse Engineering with radare2 Cutter - Part 3: Solving a Crackme Challenge",
+                "longdesc": "Solving a beginner crackme challenge using using radare2 Cutter.",
+                "date": "Thursday 3rd January 2019",
+                "tags": "Reverse Engineering,Guide",
+                "snippet": ""
+            }
+        },
         "2018": {
             "transferring-domain-names-to-cloudflare-registrar": {
                 "uri": "transferring-domain-names-to-cloudflare-registrar",
