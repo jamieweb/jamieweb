@@ -107,11 +107,15 @@ Access Granted</pre>
     <p>Scrolling down just slightly in the dissasembly view reveals some of the strings that we found earlier, most crucially the long list of decimal numbers. Since this is a basic program and we're looking at the strings in-use in <code>main</code>, it's highly likely that this is where the strings are actually used to perform a useful function in the program, rather than just being assigned or moved around at a low-level.</p>
     <p>If you take a closer look, you may also notice a <code>call</code> instruction to an interesting function name; <code>crypto_std</code>. This function name stands out because cryptography functions wouldn't normally be used in very basic programs like this, unless they are actually doing something with cryprography.</p>
     <p>In the case of this program, that could be the case. If the password is enciphered, the <code>crypto_std</code> funciton could well be the function responsible for performing the enciphering and deciphering. Let's take a closer look at it in the disassembly view:</p>
-    <img class="radius-8" src="cutter-crypto-shl.png" width="1000px" alt="A screenshot of the disassembly view in Cutter, showing the 'crypto' function with a 'shl' instruction highlighted.">
+    <img class="radius-8" src="cutter-disassembly-crypto-shl.png" width="1000px" alt="A screenshot of the disassembly view in Cutter, showing the 'crypto' function with an 'shl' instruction highlighted.">
     <p>While looking through the assembly, I noticed an <code>shl</code> instruction with a hard-coded operand of <code>4</code>. By 'hard-coded operand', I am referring to the fact that the second operand of the instruction is not a reference to a register, rather it is a static value that doesn't change throughout the execution of the program. This stood out as it is quite uncommon to see hard-coded operands in basic programs, espeically on less-common insutrctions such as <code>shl</code>.</p>
     <p>The <code>shl</code> instruction is used to perform bitwise shifts, or 'bitshifts' as they are more commonly referred to. The Intel syntax for <code>shl</code> is <code>shl dest, src</code>, where <code>dest</code> is the data to perform the bitshift on, and <code>src</code> is the number of bits to shift the data by.</p>
     <p>For example, <code>shl 01101100, 2</code> will result in <code>00011011</code>.</p>
-    <p>This instruction could be related to the password enciphering, so we should investigate it further.
+    <p>This instruction could be related to the password enciphering, so we should investigate it further. In the graph view, you can see that it is part of a loop:</p>
+    <img class="radius-8" src="cutter-graph-crypto-shl-loop.png" width="1000px" alt="A screenshot of the graph view in Cutter, showing a loop that's part of the 'crypto' function with an 'shl' instruction highlighted.">
+    <p>Scrolling down slightly further reveals the section where the function returns as well:</p>
+    <img class="radius-8" src="cutter-graph-crypto-return-condition.png" width="1000px" alt="A screenshot of the graph view in Cutter, showing part of the 'crypto' function including the section where the function returns.">
+    <p></p>
 
 </div>
 
