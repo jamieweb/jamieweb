@@ -46,7 +46,7 @@ Part 3: Solving a Crackme Challenge</b>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
     <h2 id="what-is-a-crackme">A Crackme Challenge</h2>
-    <p>Last year, I asked my friend Sam to make a basic crackme challenge for me to solve and then demonstrate in this series.</p>
+    <p>Last year, I asked my friend <a href="https://github.com/York20" target="_blank" rel="noopener">Sam</a> to write a basic crackme challenge for me to solve and then demonstrate in this series.</p>
     <p>He kindly agreed, and put together a simple password-based crackme. It looks like the following when run:</p>
     <pre>malw@re:~$ ./crackme
 Enter Password (or q to quit): helloworld
@@ -113,10 +113,61 @@ Access Granted</pre>
     <p>For example, <code>shl 01101100, 2</code> will result in <code>00011011</code>.</p>
     <p>This instruction could be related to the password enciphering, so we should investigate it further. In the graph view, you can see that it is part of a loop:</p>
     <img class="radius-8" src="cutter-graph-crypto-shl-loop.png" width="1000px" alt="A screenshot of the graph view in Cutter, showing a loop that's part of the 'crypto' function with an 'shl' instruction highlighted.">
-    <p>Scrolling down slightly further reveals the section where the function returns as well:</p>
+    <p>Scrolling down slightly further reveals the section where the function returns too:</p>
     <img class="radius-8" src="cutter-graph-crypto-return-condition.png" width="1000px" alt="A screenshot of the graph view in Cutter, showing part of the 'crypto' function including the section where the function returns.">
-    <p></p>
+    <p>When analysing functions in the graph view, a good strategy is to find where the function returns with a <code>ret</code> instruction, and then work backwards in order work out which conditions need to met for the return to take place.</p>
+    <p>Taking a look at the graph view of <code>crypto_std</code>, we can see that at the start of each iteration of the loop, there is a test that takes place (<code>test al, al</code>) in order to determine whether to continue with the loop or return from the function.</p>
+    <p>Based on the context of this function, such as where it is called and its high-level behaviour, it is fair to make a guess that the function is iterating over the long decimal string we discovered above, and shifting each character by 4 bits.</p>
 
+    <h2 id="deciphering-the-password">Deciphering the Password</h2>
+    <p>Now that we've got a strong lead, we can make a first attempt at deciphering the password using the bitshift method.</p>
+    <p>You can easily perform bitshifts using <a href="https://wiki.python.org/moin/BitwiseOperators" target="_blank" rel="noopener">Bitwise Operators</a> in Python 3. Let's try with the first section of the string, which is <code>1568</code>:</p>
+    <pre>malw@re:~$ python3
+Python 3.5.2 (default, Nov 12 2018, 13:43:14) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(1568 >> 4)
+98</pre>
+    <p>This outputs <code>98</code> in decimal. If you want the output in hexadecimal instead, you can use <code>print(hex(1568 >> 4))</code>.</p>
+    <p>Now we can compare this against as ASCII table to see whether it matches a character. You can use <code>man ascii</code> in your terminal to view an ASCII table, or find one online (such as <a href="https://ascii.cl/" target="_blank" rel="noopener">here</a>). I have included an excerpt of the relevant section:</p>
+    <pre>Oct   Dec   Hex   Char    
+──────────────────────────
+142   98    62    b</pre>
+    <p>As you can see, <code>98</code> or <code>0x62</code> is the letter <code>b</code>. This is promising, as that is a valid character that could be part of the password.</p>
+    <p>Instead of checking each section manually, you can create a quick Python 3 loop to do it all for you:</p>
+    <pre>for i in "1568 1872 1632 1632 1616 1824 1776 1888 1616 1824 1632 1728 1776 1904".split(" "):
+    print(chr(int(i) &gt;&gt; 4))</pre>
+    <p>This will split the long decimal string at each space into elements in an array, then interate through it. Each iteration will convert the current element to an integer (<code>int(i)</code>), bitshift it 4 bits to the right (<code>&gt;&gt;</code>), then convert it into an ASCII character (<code>chr()</code>).</p>
+    <p>When executing the program, it produces the following output:</p>
+    <pre>malw@re:~$ python3 bitshift.py
+b
+u
+f
+f
+e
+r
+f
+l
+o
+w</pre>
+    <p>And there we go... <code>bufferoverflow</code>!</p>
+    <pre>malw@re:~$ ./crackme
+Enter Password (or q to quit): bufferoverflow
+Access Granted</pre>
+    <p>That's it! The challenge is solved!</p>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>I would like to send a big thanks to <a href="https://github.com/York20" target="_blank" rel="noopener">Sam</a> for creating this crackme challenge. It turned out to be a great beginner crackme!</p>
+    <p>Please also check out the other two parts of this series:</p>
+    <ul class="spaced-list">
+        <li><b>Part 1:</b> <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview" target="_blank">Key Terminology and Overview</a></li>
+        <li><b>Part 2:</b> <a href="/blog/radare2-cutter-part-2-analysing-a-basic-program" target="_blank">Analysing a Basic Program</a></li>
+    </ul>
+    <p>Cutter can be found on GitHub at: <a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">radareorg/cutter</a></p>
+    <p>There is an active Cutter group on Telegram which you can join at: <a href="https://t.me/r2cutter" target="_blank" rel="noopener">t.me/r2cutter</a></p>
+    <p>You can also follow the Cutter team on Twitter: <a href="https://twitter.com/r2gui" target="_blank" rel="noopener">@r2gui</a></p>
+    <p>I personally will be continuing to use Cutter as my go-to tool for reverse enginerring - it's been great so far and it's under active development so many more great features and updates are to come!</p>
+    <p>Finally, thank you to the radare2 and Cutter developers for creating and maintaining this software and allowing for a vibrant community to exist!</p>
 </div>
 
 <?php include "footer.php" ?>
