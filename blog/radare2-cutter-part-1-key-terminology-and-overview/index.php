@@ -280,7 +280,7 @@ Access Denied
 Enter Password (or q to quit): q</pre>
     <p>I have already solved it and will be posting a walkthrough in part 3 of this series on my blog, however if you wish to have a go, it is available on GitHub <a href="https://github.com/jamieweb/crackme-challenge" target="_blank" rel="noopener">here</a>.</p>
     <p>It is a beginner difficulty crackme, and most of the knowledge needed to solve it is present in the blog post that you are reading now.</p>
-    <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution.</b> For the best experience, compile the code without looking at the source file. Obviously running untrusted code from the internet goes against every security best-practise out there, so either use a dedicated and segregated malware analysis machine, or ask a trusted friend to check the code first.</p>
+    <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution.</b> For the best experience, compile the code without looking at the source file. Obviously running untrusted code from the internet goes against every security best-practice out there, so either use a dedicated and segregated malware analysis machine, or ask a trusted friend to check the code first.</p>
 
     <h2 id="part-2">Part 2</h2>
     <p>Part 2 includes analysing a basic compiled C++ program using static analysis, and further technical details on some common instructions.</p>

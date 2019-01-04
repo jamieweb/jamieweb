@@ -56,11 +56,11 @@ Access Denied
 Enter Password (or q to quit): q</pre>
     <p>In this third and final part of the series, we will solve the crackme using Cutter and some other tools. <b>If you'd like to have a go yourself first,</b> it is available on GitLab <a href="https://gitlab.com/jamieweb/crackme-challenge" target="_blank" rel="noopener">here</a>.</p>
     <p>It is a beginner difficulty crackme, and most of the knowledge needed to solve it is present in the first two parts of the series (<a href="/blog/radare2-cutter-part-1-key-terminology-and-overview/" target="_blank">1</a>, <a href="/blog/radare2-cutter-part-2-analysing-a-basic-program/" target="_blank">2</a>).</p>
-    <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution.</b> For the best experience, compile the code without looking at the source file. Obviously running untrusted code from the internet goes against every security best-practise out there, so either use a dedicated and segregated malware analysis machine, or ask a trusted friend to check the code first.</p>
+    <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution.</b> For the best experience, compile the code without looking at the source file. Obviously running untrusted code from the internet goes against every security best-practice out there, so either use a dedicated and segregated malware analysis machine, or ask a trusted friend to check the code first.</p>
 
     <h2 id="initial-observations">Initial Observations</h2>
     <p>Before diving straight in and opening the file in Cutter, it's extremely valuable to try to make some initial high-level observations based entirely on the functionality of the program.</p>
-    <p>Like any form of security testing, by manipulating inputs and performing unexected actions, you can gain a pretty deep insight into how the program works and what it is doing. For example, you may be able to spot where there is a loop, or which conditions cause the program to terminate earlier than expected.</p>
+    <p>Like any form of security testing, by manipulating inputs and performing unexpected actions, you can gain a pretty deep insight into how the program works and what it is doing. For example, you may be able to spot where there is a loop, or which conditions cause the program to terminate earlier than expected.</p>
     <p>Firstly we can try using the program without doing anything extreme or unexpected in order to see what the default/intended behaviour is:</p>
     <pre>malw@re:~$ ./crackme
 Enter Password (or q to quit): 123456
@@ -104,13 +104,13 @@ Access Granted</pre>
     <p>You can try double-clicking the interesting string in the stringdump view, but this doesn't always take you to a directly useful place in the program where the string is used.</p>
     <p>Instead, let's have a proper look at <code>main</code>:</p>
     <img class="radius-8" src="cutter-disassembly-crypto-function.png" width="1000px" alt="A screenshot of the disassembly view in Cutter, showing the 'main' function and some of the strings discovered earlier from the stringdump.">
-    <p>Scrolling down just slightly in the dissasembly view reveals some of the strings that we found earlier, most crucially the long list of decimal numbers. Since this is a basic program and we're looking at the strings in-use in <code>main</code>, it's highly likely that this is where the strings are actually used to perform a useful function in the program, rather than just being assigned or moved around at a low-level.</p>
+    <p>Scrolling down just slightly in the disassembly view reveals some of the strings that we found earlier, most crucially the long list of decimal numbers. Since this is a basic program and we're looking at the strings in-use in <code>main</code>, it's highly likely that this is where the strings are actually used to perform a useful function in the program, rather than just being assigned or moved around at a low-level.</p>
     <p>Taking a look at the graph view also helps us to understand the flow of the program, and where each of these strings are used:</p>
     <img class="radius-8" src="cutter-graph-program-flow-overview.png" width="1000px" alt="A screenshot of the graph view in Cutter, showing the program flow of the 'main' function.">
-    <p>If you look closely, you may also notice a <code>call</code> instruction to an interesting function name; <code>crypto_std</code>. This function name stands out because cryptography functions wouldn't normally be used in very basic programs like this, unless they are actually doing something with cryprography.</p>
-    <p>In the case of this program, that could be the case. If the password is enciphered, the <code>crypto_std</code> funciton could well be the function responsible for performing the enciphering and deciphering. Let's take a closer look at it in the disassembly view:</p>
+    <p>If you look closely, you may also notice a <code>call</code> instruction to an interesting function name; <code>crypto_std</code>. This function name stands out because cryptography functions wouldn't normally be used in very basic programs like this, unless they are actually doing something with cryptography.</p>
+    <p>In the case of this program, that could be the case. If the password is enciphered, the <code>crypto_std</code> function could well be the function responsible for performing the enciphering and deciphering. Let's take a closer look at it in the disassembly view:</p>
     <img class="radius-8" src="cutter-disassembly-crypto-shl.png" width="1000px" alt="A screenshot of the disassembly view in Cutter, showing the 'crypto' function with an 'shl' instruction highlighted.">
-    <p>While looking through the assembly, I noticed an <code>shl</code> instruction with a hard-coded operand of <code>4</code>. By 'hard-coded operand', I am referring to the fact that the second operand of the instruction is not a reference to a register, rather it is a static value that doesn't change throughout the execution of the program. This stood out as it is quite uncommon to see hard-coded operands in basic programs, espeically on less-common instructions such as <code>shl</code>.</p>
+    <p>While looking through the assembly, I noticed an <code>shl</code> instruction with a hard-coded operand of <code>4</code>. By 'hard-coded operand', I am referring to the fact that the second operand of the instruction is not a reference to a register, rather it is a static value that doesn't change throughout the execution of the program. This stood out as it is quite uncommon to see hard-coded operands in basic programs, especially on less-common instructions such as <code>shl</code>.</p>
     <p>The <code>shl</code> instruction is used to perform bitwise shifts, or 'bitshifts' as they are more commonly referred to. The Intel syntax for <code>shl</code> is <code>shl dest, src</code>, where <code>dest</code> is the data to perform the bitshift on, and <code>src</code> is the number of bits to shift the data by.</p>
     <p>For example, <code>shl 01101100, 2</code> will result in <code>00011011</code>.</p>
     <p>This instruction could be related to the password enciphering, so we should investigate it further. In the graph view, you can see that it is part of a loop:</p>
@@ -139,7 +139,7 @@ Type "help", "copyright", "credits" or "license" for more information.
     <p>Instead of checking each section manually, you can create a quick Python 3 loop to do it all for you:</p>
     <pre>for i in "1568 1872 1632 1632 1616 1824 1776 1888 1616 1824 1632 1728 1776 1904".split(" "):
     print(chr(int(i) &gt;&gt; 4))</pre>
-    <p>This will split the long decimal string at each space into elements in an array, then interate through it. Each iteration will convert the current element to an integer (<code>int(i)</code>), bitshift it 4 bits to the right (<code>&gt;&gt;</code>), then convert it into an ASCII character (<code>chr()</code>).</p>
+    <p>This will split the long decimal string at each space into elements in an array, then iterate through it. Each iteration will convert the current element to an integer (<code>int(i)</code>), bitshift it 4 bits to the right (<code>&gt;&gt;</code>), then convert it into an ASCII character (<code>chr()</code>).</p>
     <p>When executing the program, it produces the following output:</p>
     <pre>malw@re:~$ python3 bitshift.py
 b
@@ -172,7 +172,7 @@ Access Granted</pre>
     <p>Cutter can be found on GitHub at: <a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">radareorg/cutter</a></p>
     <p>There is an active Cutter group on Telegram which you can join at: <a href="https://t.me/r2cutter" target="_blank" rel="noopener">t.me/r2cutter</a></p>
     <p>You can also follow the Cutter team on Twitter: <a href="https://twitter.com/r2gui" target="_blank" rel="noopener">@r2gui</a></p>
-    <p>I personally will be continuing to use Cutter as my go-to tool for reverse enginerring - it's been great so far and it's under active development so many more great features and updates are to come!</p>
+    <p>I personally will be continuing to use Cutter as my go-to tool for reverse engineering - it's been great so far and it's under active development so many more great features and updates are to come!</p>
     <p>Finally, thank you to the radare2 and Cutter developers for creating and maintaining this software and allowing for a vibrant community to exist!</p>
 </div>
 
