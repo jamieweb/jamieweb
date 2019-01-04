@@ -25,9 +25,9 @@
         <div>
             <p class="no-mar-top">This is part 2 of a 3 part series on reverse engineering with Cutter:</p>
             <ul class="spaced-list">
-                <li><a href="/blog/radare2-cutter-part-1-key-terminology-and-overview" target="_blank"><b>Part 1:</b> Key Terminology and Overview</a></li>
+                <li><b>Part 1:</b> <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview/" target="_blank">Key Terminology and Overview</a></li>
                 <li><b>Part 2:</b> Analysing a Basic Program (You Are Here)</li>
-                <li><b>Part 3:</b> Solving a Crackme (Coming Soon)</li>
+                <li><b>Part 3:</b> <a href="/blog/radare2-cutter-part-3-solving-a-crackme-challenge/" target="_blank">Solving a Crackme Challenge</a></li>
             </ul>
         </div>
         <div class="display-flex flex-align-center flex-justify-center flex-direction-column">
@@ -171,8 +171,8 @@ je 0x400f1a     //ZF is set, so jump to 0x400f1a (print $number is Odd)</pre>
     <p>At this point, all of the noteworthy logic of the program has been successfully understood. With this knowledge, it would be possible to recreate the function of the program relatively accurately, which is often one of the main goals of reverse engineering.</p>
 
     <h2 id="part-3">Part 3</h2>
-    <p>In part 3, we will solve a beginner level crackme challenge using Cutter and various other tools. If you'd like to get a head start, you can have a go at <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview#sam-crackme" target="_blank" rel="noopener">Sam's Crackme</a>, which is the crackme that we'll be solving.</p>
-    <p><b>Part 3 is currently a work in progress, and is coming soon!</b></p>
+    <p>In part 3, we will solve a beginner level crackme challenge using Cutter and various other tools. If you'd like to get a head start, you can have a go at <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview/#sam-crackme" target="_blank" rel="noopener">Sam's Crackme</a>, which is the crackme that we'll be solving.</p>
+    <p><b><a href="/blog/radare2-cutter-part-3-solving-a-crackme-challenge/" target="_blank">Part 3: Solving a Crackme Challenge</a></b></p>
 </div>
 
 <?php include "footer.php" ?>

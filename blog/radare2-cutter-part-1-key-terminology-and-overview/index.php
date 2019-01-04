@@ -27,8 +27,8 @@
             <p>This is part 1 of a 3 part series on reverse engineering with Cutter:</p>
             <ul class="spaced-list">
                 <li><b>Part 1:</b> Key Terminology and Overview (You Are Here)</li>
-                <li><a href="/blog/radare2-cutter-part-2-analysing-a-basic-program/" target="_blank"><b>Part 2:</b> Analysing a Basic Program</a></li>
-                <li><b>Part 3:</b> Solving a Crackme (Coming Soon)</li>
+                <li><b>Part 2:</b> <a href="/blog/radare2-cutter-part-2-analysing-a-basic-program/" target="_blank">Analysing a Basic Program</a></li>
+                <li><b>Part 3:</b> <a href="/blog/radare2-cutter-part-3-solving-a-crackme-challenge/" target="_blank">Solving a Crackme Challenge</a></li>
             </ul>
         </div>
         <div class="display-flex flex-align-center flex-justify-center flex-direction-column">
