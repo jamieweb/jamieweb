@@ -59,16 +59,6 @@
             <p class="two-mar-top"><b>The SSH server key fingerprints for various online Git hosting services.</b></p>
         </div>
     </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
-            <a href="/info/hl-client-security/"><img src="/images/fontawesome/shield-alt.svg"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/info/hl-client-security/">Half-Life Client Security</a></h3>
-            <p class="two-mar-top"><b>Security configuration/hardening for the Half-Life client.</b></p>
-        </div>
-    </div>
     <div class="iconparent">
         <div class="iconimg">
             <a href="/info/chromium-team-updated-packages-for-ubuntu/"><img src="/images/fontawesome/box-open.svg"></a>
