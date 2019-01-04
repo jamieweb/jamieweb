@@ -7,7 +7,7 @@
                 <h5><a href="/blog/"><span class="exempt">&#x1f58b;&#xfe0e;</span> <span>Blog</span></a></h5>
                 <div class="dropdown-content">
                     <h4>
-                        <?php include_once "bloglist.php"; bloglist("navbar"); ?>
+<?php include_once "bloglist.php"; bloglist("navbar"); ?>
                     </h4>
                 </div>
             </li>
