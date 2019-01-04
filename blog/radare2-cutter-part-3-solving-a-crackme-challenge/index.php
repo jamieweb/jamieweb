@@ -166,8 +166,8 @@ Access Granted</pre>
     <p>I would like to send a big thanks to <a href="https://github.com/York20" target="_blank" rel="noopener">Sam</a> for creating this crackme challenge. It turned out to be a great beginner crackme!</p>
     <p>Please also check out the other two parts of this series:</p>
     <ul class="spaced-list">
-        <li><b>Part 1:</b> <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview" target="_blank">Key Terminology and Overview</a></li>
-        <li><b>Part 2:</b> <a href="/blog/radare2-cutter-part-2-analysing-a-basic-program" target="_blank">Analysing a Basic Program</a></li>
+        <li><b>Part 1:</b> <a href="/blog/radare2-cutter-part-1-key-terminology-and-overview/" target="_blank">Key Terminology and Overview</a></li>
+        <li><b>Part 2:</b> <a href="/blog/radare2-cutter-part-2-analysing-a-basic-program/" target="_blank">Analysing a Basic Program</a></li>
     </ul>
     <p>Cutter can be found on GitHub at: <a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">radareorg/cutter</a></p>
     <p>There is an active Cutter group on Telegram which you can join at: <a href="https://t.me/r2cutter" target="_blank" rel="noopener">t.me/r2cutter</a></p>
