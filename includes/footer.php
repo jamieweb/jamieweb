@@ -10,7 +10,7 @@
             <p><b><a href="/blog/">Blog</a> | <a href="/projects/">Projects</a> | <a href="/tools/">Tools</a> | <a href="/info/">Info</a></b></p>
             <p class="footer-email"><b>Email:</b> <img class="two-mar-left" src="/images/jamie-jamieweb-4d4d4d.png"></p>
             <p><b><a href="/contact/">Contact Info</a> | <a href="/security/">Security</a> | <a href="/privacy/">Privacy</a></b></p>
-            <p>Copyright &copy; Jamie Scaife 2018</p>
+            <p>Copyright &copy; Jamie Scaife <?php echo date("Y"); ?></p>
         </div>
         <div class="footer-column footer-middle">
             <h2>&#x1f517; Links</h2>
