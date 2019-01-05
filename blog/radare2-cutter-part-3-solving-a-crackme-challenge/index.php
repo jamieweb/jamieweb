@@ -7,7 +7,7 @@
 
 <head>
     <title>Part 3: Solving a Crackme Challenge - Introduction to Reverse Engineering with radare2 Cutter</title>
-    <meta name="description" content="Solving a beginner crackme challenge using using radare2 Cutter.">
+    <meta name="description" content="Solving a beginner crackme challenge using radare2 Cutter.">
     <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/blog/radare2-cutter-part-3-solving-a-crackme-challenge/" rel="canonical">
 </head>

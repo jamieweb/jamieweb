@@ -5,7 +5,7 @@
                 "uri": "radare2-cutter-part-3-solving-a-crackme-challenge",
                 "navtitle": "Cutter Part 3: Solving a Crackme Challenge",
                 "title": "Introduction to Reverse Engineering with radare2 Cutter - Part 3: Solving a Crackme Challenge",
-                "longdesc": "Solving a beginner crackme challenge using using radare2 Cutter.",
+                "longdesc": "Solving a beginner crackme challenge using radare2 Cutter.",
                 "date": "Saturday 5th January 2019",
                 "tags": "Reverse Engineering,Guide",
                 "snippet": "Last year, I asked my friend <b><a href=\"https://github.com/York20\" target=\"_blank\" rel=\"noopener\">Sam</a></b> to write a basic crackme challenge for me to solve and then demonstrate in this series. He kindly agreed, and put together a simple password-based crackme. It looks like the following when run:</p>\n<pre>malw@re:~$ ./crackme\nEnter Password (or q to quit): helloworld\nAccess Denied\nEnter Password (or q to quit): Pa$$w0rd\nAccess Denied\nEnter Password (or q to quit): q</pre>\n<p>In this third and final part of the series, we will solve the crackme using Cutter and some other tools. If you'd like to have a go yourself first, it is available on GitLab <b><a href=\"https://gitlab.com/jamieweb/crackme-challenge\" target=\"_blank\" rel=\"noopener\">here</a></b>."
