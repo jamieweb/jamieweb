@@ -45,7 +45,7 @@ Part 3: Solving a Crackme Challenge</b>
 &#x2523&#x2501&#x2501 <a href="#deciphering-the-password">Deciphering the Password</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
-    <h2 id="what-is-a-crackme">A Crackme Challenge</h2>
+    <h2 id="a-crackme-challenge">A Crackme Challenge</h2>
     <p>Last year, I asked my friend <a href="https://github.com/York20" target="_blank" rel="noopener">Sam</a> to write a basic crackme challenge for me to solve and then demonstrate in this series.</p>
     <p>He kindly agreed, and put together a simple password-based crackme. It looks like the following when run:</p>
     <pre>malw@re:~$ ./crackme
