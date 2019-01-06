@@ -39,7 +39,7 @@
 }
 
 @media (max-width: 1049.9px) and (min-width: 675px) {
-    div.navbar {
+    div.navbar,div.body-width-bar {
         width: calc(100% - 50px);
     }
     div.content {
@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 674.9px) {
-    div.navbar {
+    div.navbar,div.body-width-bar {
         width: calc(100% - 30px);
     }
     div.navbar li a {
@@ -115,7 +115,7 @@
 }
 
 @media (min-width: 1050px) {
-    div.navbar {
+    div.navbar,div.body-width-bar {
         width: 1000px;
     }
     div.body {
@@ -174,8 +174,11 @@ nav a:visited {
     text-decoration: none;
 }
 
-div.navbar {
+div.navbar,div.body-width-bar {
     margin: 0 auto;
+}
+
+div.navbar {
     height: 51px;
 }
 
@@ -242,6 +245,25 @@ div.navbar div.dropdown-content a:hover {
 
 div.navbar li.dropdown:hover div.dropdown-content {
     display: block;
+}
+
+div.message-bar {
+    padding: 8px;
+    background-color: grey;
+}
+
+div.message-bar p {
+    margin: 0;
+    color: white;
+}
+
+div.message-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+div.message-bar a:hover {
+    text-decoration: underline;
 }
 
 div.body {
@@ -1039,6 +1061,10 @@ th.h1-scope-in-scope {
 
 .bg-lightgrey {
     background-color: lightgrey;
+}
+
+.bg-grey {
+    background-color: grey;
 }
 
 .bg-lightgreen {
