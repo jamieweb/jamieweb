@@ -9,7 +9,7 @@
     <title>Restricting and Locking Down SSH Users</title>
     <meta name="description" content="Restricting SSH users to specific commands, directories and system access.">
     <?php include "head.php" ?>
-    <link href="https://www.jamieweb.net/blog/restricting-and-locking-down-ssh-users/" rel="canonical">
+    <link href="https://www.jamieweb.net/info/restricting-and-locking-down-ssh-users/" rel="canonical">
 </head>
 
 <body>
@@ -19,7 +19,6 @@
 <div class="body">
     <h1>Restricting and Locking Down SSH Users</h1>
     <hr>
-    <p><b>Friday 10th January 2018</b></p>
     <p>This article outlines a number of techniques for restricting and locking down SSH users on Linux systems, and how you can use multiple different protections at once to create the most secure setup.</p>
     <p><b>Skip to Section:</b></p>
     <pre><b>Restricting and Locking Down SSH Users</b>
@@ -73,9 +72,9 @@ logfacility = LOG_USER
 
     <h2 id="authorized_keys-file-options"><code>authorized_keys</code> File Options</h2>
     <p>It's possible to impose restrictions on users on a per-key basis using options in the <code>authorized_keys</code> file.</p>
-    <p>There are two main options that are particularly useful for security: <code>restrict</code> and <code>command</code>. You can view a full list of options from the manual page here: <a href="https://linux.die.net/man/5/sshd_config" target="_blank" rel="noopener">https://linux.die.net/man/5/sshd_config</a></p>
+    <p>There are two main options that are particularly useful for security: <code>restrict</code> and <code>command</code>. You can view a full list of options on the manual page here: <a href="https://linux.die.net/man/5/sshd_config" target="_blank" rel="noopener">https://linux.die.net/man/5/sshd_config</a></p>
 
-    <h3 id="restrict"><code>restrict</code></h3>
+    <h3 id="restrict">'<code>restrict</code>'</h3>
     <p>The <code>restrict</code> option will enable <b>all</b> of the following restrictions for users authenticating against the key:</p>
     <ul>
         <li><code>no-agent-forwarding</code> - Disable SSH agent forwarding.</li>
@@ -84,6 +83,23 @@ logfacility = LOG_USER
         <li><code>no-user-rc</code> - Disable execution of <code>~/.ssh/rc</code>.</li>
         <li><code>no-X11-forwarding</code> - Deny requests to forward an X11 session</li>
     </ul>
+    <p>You can then re-enable specific functionality using the corresponding options without the <code>no-</code> prefix.</p>
+    <p>If you wish to have an insecure-by-default setup and just lock down individual options, you can just use the restrictions with the <code>no-</code> prefix on their own (i.e. without setting <code>restrict</code>), however it is definitely more secure to use <code>restrict</code> and then override specific restrictions where needed.</p>
+
+    <h3 id="command">'<code>command</code>'</h3>
+    <p>The <code>command</code> option allows you to force execution of a specific command using the user's shell upon initial connection. The output of the command is sent back to the connecting client, and then it is disconnected (unless another feature such as TCP forwarding is in-use).</p>
+    <p>The <code>command</code> is best used along with the restrictions describe <a href="#restrict">above</a> in order to ensure a high level of security.</p>
+    <p>Please note that the <code>command</code> option will be overidden by <a href="#forcecommand"><code>ForceCommand</code></a> if it is set in <code>/etc/ssh/sshd_config</code>.</p>
+
+    <h3 id="implementing-authorized_keys-options">Implementing the Options in <code>authorized_keys</code></h3>
+    <p>The options for a specific key should be set in the <code>authorized_keys</code> file in a comma-separated format directly before the key. A space should be used between the options and the key, for example:</p>
+    <pre>restrict,X11-forwarding,command="ls -la" ssh-rsa AAAB...</pre>
+    <p>This particular configuration will restrict any users that connect using this key, but still allow X11 forwarding to take place. Upon connection, the command <code>ls -la</code> will be executed using the user's shell.</p>
+    <p>If you just want to restrict the user fully, then you'll need to use:</p>
+    <pre>restrict ssh-rsa AAAB...</pre>
+    <p>...and if you want to enforce no specific restrictions, but enforce the execution of a specific command, use:</p>
+    <pre>command="echo \"Hello\"" ssh-rsa AAAB...</pre>
+    <p>Notice that double quotes (") must be escaped in the command configuration value.</p>    
 
     <h2 id="forcecommand"><code>ForceCommand</code> Configuration</h2>
     <p></p>
