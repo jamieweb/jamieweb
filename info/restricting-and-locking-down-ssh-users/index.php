@@ -92,9 +92,10 @@ logfacility = LOG_USER
     <p>Please note that the <code>command</code> option will be overidden by <a href="#forcecommand"><code>ForceCommand</code></a> if it is set in <code>/etc/ssh/sshd_config</code>.</p>
 
     <h3 id="implementing-authorized_keys-options">Implementing the Options in <code>authorized_keys</code></h3>
-    <p>The options for a specific key should be set in the <code>authorized_keys</code> file in a comma-separated format directly before the key. A space should be used between the options and the key, for example:</p>
+    <p>The options for a specific key should be set in the <code>authorized_keys</code> file in a comma-separated format directly before the key. A space should be used between the options and the key. In the examples below I have used <code>ssh-rsa AAAB...</code> as a placeholder for the key, but in reality this is where <b>your</b> SSH public key goes.</p>
+    <p>Example configuration:</p>
     <pre>restrict,X11-forwarding,command="ls -la" ssh-rsa AAAB...</pre>
-    <p>This particular configuration will restrict any users that connect using this key, but still allow X11 forwarding to take place. Upon connection, the command <code>ls -la</code> will be executed using the user's shell.</p>
+    <p>This particular setup will restrict any users that connect using this key, but still allow X11 forwarding to take place. Upon connection, the command <code>ls -la</code> will be executed using the user's shell.</p>
     <p>If you just want to restrict the user fully, then you'll need to use:</p>
     <pre>restrict ssh-rsa AAAB...</pre>
     <p>...and if you want to enforce no specific restrictions, but enforce the execution of a specific command, use:</p>
@@ -102,7 +103,12 @@ logfacility = LOG_USER
     <p>Notice that double quotes (") must be escaped in the command configuration value.</p>    
 
     <h2 id="forcecommand"><code>ForceCommand</code> Configuration</h2>
-    <p></p>
+    <p>The <code>ForceCommand</code> option is very similar to the <a href="#command"><code>command</code></a> option described above, however it is set in the server configuration in <code>/etc/ssh/sshd_config</code> rather than on a per-key basis in <code>authorized_keys</code>.</p>
+    <p><code>ForceCommand</code> is most useful in <code>Match</code> blocks, as shown below:</p>
+    <pre>Match user jamie
+  ForceCommand echo "Hello"</pre>
+    <p>This configuration will force the user <code>jamie</code> to execute the command <code>echo "Hello"</code> upon connection, and then disconnect (unless something else such as X11 forwarding keeps the connection open).</p>
+    <p>You can also use <code>ForceCommand internal-sftp</code> to force the creation of an in-process SFTP server which doesn't require any support files when used in a chroot jail. This option is best combined with the <a href="#crooting"><code>ChrootDirectory</code></a> option.</p>
 
     <h2 id="user-and-group-whitelisting">User and Group Whitelisting</h2>
     <p></p>
