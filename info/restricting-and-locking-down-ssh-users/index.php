@@ -83,18 +83,18 @@ logfacility = LOG_USER
     <p>The nologin shell is best used along with other protections in this article in order to provide failover should one of your configuration files be overwritten or a user account changed accidentally.</p>
 
     <h2 id="chrooting">Chrooting</h2>
-    <p>Crooting simply refers to changing the perceived root directory of a system, but the term 'croot jail' is often used to describe the use of croot to provide security. Crooting can provide security by limiting the resources and files that a particular user or application can access, helping to prevent a further system compromise or privilegde escalation should the crooted user or application turn rogue.</p>
-    <p>There are several different ways to croot on Linux, but a particularly useful method for crooting SSH users is the <code>CrootDirectory</code> option in <code>sshd_config</code>. It's most useful when used inside a <code>Match</code> block, as shown below. <code>Match</code> blocks should always be used right at the bottom of your <code>sshd_config</code> file, as all configuration after them (until the end of the file or another <code>Match</code> block) will only apply to situations that match the criteria:</p>
+    <p>Chrooting simply refers to changing the perceived root directory of a system, but the term 'chroot jail' is often used to describe the use of chroot to provide security. Chrooting can provide security by limiting the resources and files that a particular user or application can access, helping to prevent a further system compromise or privilege escalation should the chrooted user or application turn rogue.</p>
+    <p>There are several different ways to chroot on Linux, but a particularly useful method for chrooting SSH users is the <code>ChrootDirectory</code> option in <code>sshd_config</code>. It's most useful when used inside a <code>Match</code> block, as shown below. <code>Match</code> blocks should always be used right at the bottom of your <code>sshd_config</code> file, as all configuration after them (until the end of the file or another <code>Match</code> block) will only apply to situations that match the criteria:</p>
     <pre>Match User jamie
-  CrootDirectory /home/jamie/</pre>
-    <p>This configuration will restrict the <code>jamie</code> user to <code>/home/jamie/</code>. Running <code>ls /</code> as this crooted user will show the contents of <code>/home/jamie</code>, but this will be transprent to the user in the croot jail.</p>
+  ChrootDirectory /home/jamie/</pre>
+    <p>This configuration will restrict the <code>jamie</code> user to <code>/home/jamie/</code>. Running <code>ls /</code> as this chrooted user will show the contents of <code>/home/jamie</code>, but this will be transparent to the user in the chroot jail.</p>
     <p>Setting this configuration and connecting via SSH will probably result in an error like below:</p>
     <pre>packet_write_wait: Connection to 192.168.1.8 port 22: Broken pipe</pre>
     <p>This is because the chroot directory must be fully owned by root in order for chrooting to be possible. You can change this using <code>chown root:root /path/to/chroot/dir</code>.</p>
     <p>Then, upon connecting, you'll most likely see a further error:</p>
     <pre>/bin/bash: No such file or directory</pre>
     <p>This is because the user is trying to start their shell, which in this case is <code>/bin/bash</code>. However, <code>/bin/bash</code> doesn't exist at the path <code>/home/jamie/bin/bash</code>, so the connection fails.</p>
-    <p>In order to resolve this, all of the required files and directories for whatever you want to be able to do within the croot jail need to be available. To run a basic bash shell, the required files/directories are usually just the following:</p>
+    <p>In order to resolve this, all of the required files and directories for whatever you want to be able to do within the chroot jail need to be available. To run a basic bash shell, the required files/directories are usually just the following:</p>
     <ul>
         <li>/bin/bash</li>
         <li>/lib</li>
@@ -132,7 +132,7 @@ $ cp /lib /lib64 .</pre>
     <h3 id="command">'<code>command</code>'</h3>
     <p>The <code>command</code> option allows you to force execution of a specific command using the user's shell upon initial connection. The output of the command is sent back to the connecting client, and then it is disconnected (unless another feature such as TCP forwarding is in-use).</p>
     <p>The <code>command</code> is best used along with the restrictions describe <a href="#restrict">above</a> in order to ensure a high level of security.</p>
-    <p>Please note that the <code>command</code> option will be overidden by <a href="#forcecommand"><code>ForceCommand</code></a> if it is set in <code>sshd_config</code>.</p>
+    <p>Please note that the <code>command</code> option will be overridden by <a href="#forcecommand"><code>ForceCommand</code></a> if it is set in <code>sshd_config</code>.</p>
 
     <h3 id="implementing-authorized_keys-options">Implementing the Options in <code>authorized_keys</code></h3>
     <p>The options for a specific key should be set in the <code>authorized_keys</code> file in a comma-separated format directly before the key. A space should be used between the options and the key. In the examples below I have used <code>ssh-rsa AAAB...</code> as a placeholder for the key, but in reality this is where <b>your</b> SSH public key goes.</p>
@@ -151,7 +151,7 @@ $ cp /lib /lib64 .</pre>
     <pre>Match User jamie
   ForceCommand echo "Hello"</pre>
     <p>This configuration will force the user <code>jamie</code> to execute the command <code>echo "Hello"</code> upon connection, and then disconnect (unless something else such as X11 forwarding keeps the connection open).</p>
-    <p>You can also use <code>ForceCommand internal-sftp</code> to force the creation of an in-process SFTP server which doesn't require any support files when used in a chroot jail. This option is best combined with the <a href="#crooting"><code>ChrootDirectory</code></a> option.</p>
+    <p>You can also use <code>ForceCommand internal-sftp</code> to force the creation of an in-process SFTP server which doesn't require any support files when used in a chroot jail. This option is best combined with the <a href="#chrooting"><code>ChrootDirectory</code></a> option.</p>
 
     <h2 id="ip-host-whitelisting">IP/Host Whitelisting</h2>
     <p>SSH users can be restricted to connecting from specific hosts using the <code>AllowUsers</code> option in <code>sshd_config</code>.</p>
@@ -166,7 +166,7 @@ $ cp /lib /lib64 .</pre>
     <pre>AllowUsers jamie@192.168.* fred@10.*.5.* *@172.16.0.1</pre>
 
     <h2 id="secure-sftp-configuration">Creating a Secure SFTP Configuration</h2>
-    <p>My <a href="/projects/computing-stats/" target="_blank">Raspberry Pi cluster</a> uploads statistics from each of the nodes to the main JamieWeb server every 10 minutes using a secure SFTP link. This is locked down throughly in order to ensure that the impact would be as low as possible were the Raspberry Pi's to be compromised and taken over by an attacker.</p>
+    <p>My <a href="/projects/computing-stats/" target="_blank">Raspberry Pi cluster</a> uploads statistics from each of the nodes to the main JamieWeb server every 10 minutes using a secure SFTP link. This is locked down thoroughly in order to ensure that the impact would be as low as possible were the Raspberry Pi's to be compromised and taken over by an attacker.</p>
     <p>The result is that the Raspberry Pi's only have SFTP access to a specific directory, and they can only read and write the exact files that they need to be able to, and nothing more.</p>
     <p>The configuration is as follows:</p>
     <ul class="spaced-list">
