@@ -38,6 +38,7 @@
                         <a href="/info/chrome-extension-ids/">Chrome Extension IDs</a>
                         <a href="/info/firefox-extension-ids/">Firefox Extension IDs</a>
                         <a href="/info/git-hosting-service-ssh-server-key-fingerprints/">Git Services SSH Fingerprints</a>
+                        <a href="/info/restricting-and-locking-down-ssh-users/">Locking Down SSH Users</a>
                         <a href="/info/chromium-team-updated-packages-for-ubuntu/">Updated Chromium Browser Packages for Ubuntu</a>
                         <a href="/info/x86_64-general-purpose-registers-reference/">x86_64 GPR Reference</a>
                     </h4>

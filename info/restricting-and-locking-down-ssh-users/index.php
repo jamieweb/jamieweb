@@ -84,7 +84,7 @@ logfacility = LOG_USER
 
     <h2 id="chrooting">Chrooting</h2>
     <p>Crooting simply refers to changing the perceived root directory of a system, but the term 'croot jail' is often used to describe the use of croot to provide security. Crooting can provide security by limiting the resources and files that a particular user or application can access, helping to prevent a further system compromise or privilegde escalation should the crooted user or application turn rogue.</p>
-    <p>There are several different ways to croot on Linux, but a particularly useful method for crooting SSH users is the <code>CrootDirectory</code> option in <code>sshd_config</code>. It's most useful when used inside a <code>Match</code> block, as shown below:</p>
+    <p>There are several different ways to croot on Linux, but a particularly useful method for crooting SSH users is the <code>CrootDirectory</code> option in <code>sshd_config</code>. It's most useful when used inside a <code>Match</code> block, as shown below. <code>Match</code> blocks should always be used right at the bottom of your <code>sshd_config</code> file, as all configuration after them (until the end of the file or another <code>Match</code> block) will only apply to situations that match the criteria:</p>
     <pre>Match User jamie
   CrootDirectory /home/jamie/</pre>
     <p>This configuration will restrict the <code>jamie</code> user to <code>/home/jamie/</code>. Running <code>ls /</code> as this crooted user will show the contents of <code>/home/jamie</code>, but this will be transprent to the user in the croot jail.</p>
@@ -173,8 +173,8 @@ $ cp /lib /lib64 .</pre>
         <li>The Raspberry Pi service account on the JamieWeb server uses the shell <code>/usr/sbin/nologin</code></li>
         <li><code>/etc/ssh/sshd_config</code> has the following configuration:
         <pre>Match User service_pi
-    ForceCommand internal-sftp
-    ChrootDirectory /home/service_pi/sftp/</pre></li>
+  ForceCommand internal-sftp
+  ChrootDirectory /home/service_pi/sftp/</pre></li>
         <li>The SSH public key used for authenticating connections in <code>/home/service_pi/.ssh/authorized_keys</code> has the following options:
         <pre>restrict,command="false" ssh-rsa AAAB...</pre></li>
         <li>The chroot directory (<code>/home/service_pi/sftp/</code>) is fully owned by root, and only the exact files that <code>service_pi</code> need to be able to write to have write permissions.</li>
