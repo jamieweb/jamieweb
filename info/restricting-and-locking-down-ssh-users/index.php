@@ -188,14 +188,3 @@ $ cp /lib /lib64 .</pre>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
