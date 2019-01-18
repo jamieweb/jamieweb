@@ -939,6 +939,10 @@ th.h1-scope-in-scope {
     border: 1px solid;
 }
 
+.border-2px-solid {
+    border: 2px solid;
+}
+
 .indent {
     padding-left: 40px;
 }

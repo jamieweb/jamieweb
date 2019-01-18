@@ -19,7 +19,23 @@
 <div class="body">
     <h1>Sponsoring jamieweb.net</h1>
     <hr>
-    <p></p>
+    <p>My website <a href="/" target="_blank">jamieweb.net</a> has a highly targeted audience of cyber security professionals, software developers, privacy enthusiasts and reverse engineers. A sponsorship provides the opportunity for you to promote your brand or product directly to between 4000 and 5000 unique human visitors per month.</p>
+
+    <h2 id="pricing">Pricing</h2>
+    <p>One month of sponsorship currently costs £40, however this is up for negotiation.</p>
+    <p>If you wish to sponsor me for multiple months, there will be a discount. I can accept the following payment methods: UK bank transfer, PayPal, Bitcoin, other of your choice (if possible).</p>
+
+    <h2 id="sponsor-message">Sponsor Message</h2>
+    <p>A sponsorship allows you to place a branded message of your choice in a banner at the top of every page on my website. The message should be a maximum of 140 characters, and will be hyperlinked to a page of your choosing.</p>
+    <p>I have included examples of the sponsorship message banner below:</p>
+    <h3 id="sponsor-message-desktop">Desktop</h3>
+    <img class="border-2px-solid radius-8" src="/sponsor/desktop.png" alt="A screenshot of an example sponsor message appearing on a desktop web browser." title="An Example Sponsor Message Appearing on a Desktop Web Browser">
+    <h3 id="sponsor-message-mobile">Mobile</h3>
+    <img class="border-2px-solid radius-8" src="/sponsor/mobile.png" alt="A screenshot of an example sponsor message appearing on a mobile device." title="An Example Sponsor Message Appearing on a Mobile Device">
+
+    <h2 id="contact">Contact</h2>
+    <p>In order to get straight through to my high-priority mailbox, please send an email to:</p>
+    
 </div>
 
 <?php include "footer.php" ?>
