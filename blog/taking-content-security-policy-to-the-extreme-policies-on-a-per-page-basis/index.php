@@ -87,6 +87,7 @@
 &lt;FilesMatch \.php$&gt;
     Header always unset Content-Security-Policy "expr=%{REQUEST_STATUS} -in {'200', '400', '401', '403', '404', '500'}"
 &lt;FilesMatch \.php$&gt;</pre>
+    <p>This configuration will unset the Content-Security-Policy header in the <code>always</code> list for all requests to .php files which have the response code 200, 400, 401, 403, 404 or 500.</p>
     <p>I have custom PHP error pages for 400, 401, 403, 404 and 500 errors, which is why the global override header is removed for those too.</p>
     <p>Put this configuration in one of your Apache configuration files, then test the configuration using <code>apachectl configtest</code>. Then you can reload the server configuration using <code>service apache2 reload</code> (or whatever the equivalent is for your operating system). In order to test your headers, you can use the developer console in your browser, or a website such as <a href="https://securityheaders.com/" target="_blank" rel="noopener">Security Headers</a>.</p>
 
