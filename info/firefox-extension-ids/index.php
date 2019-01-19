@@ -20,7 +20,7 @@
     <h1>Firefox Extension IDs</h1>
     <hr>
     <p><b>Why have I posted these here?</b></p>
-    <p>This page is designed to complement my <a href="/info/chrome-extension-ids" target="_blank">Chrome Extension IDs</a> list. While the Firefox Add-ons store currently doesn't seem to have the same problems as the Chrome Web Store such as spam, squatting and impersonation, these links are here for whoever may find them useful.</p>
+    <p>This page is designed to complement my <a href="/info/chrome-extension-ids/" target="_blank">Chrome Extension IDs</a> list. While the Firefox Add-ons store currently doesn't seem to have the same problems as the Chrome Web Store such as spam, squatting and impersonation, these links are here for whoever may find them useful.</p>
     <p><b>Popular Security + Privacy Extensions:</b></p>
     <pre>AdBlock Plus - <a href="https://addons.mozilla.org/firefox/addon/adblock-plus/" target="_blank" ref="noopener">https://addons.mozilla.org/firefox/addon/adblock-plus/</a>
 uBlock Origin- <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/" target="_blank" rel="noopener">https://addons.mozilla.org/firefox/addon/ublock-origin/</a>

@@ -690,9 +690,9 @@ HiddenServicePort &lt;localport&gt; &lt;server&gt;</pre>
         <li><a href="https://github.com/katmagic/Shallot" target="_blank" rel="noopener">katmagic/Shallot on GitHub</a></li>
         <li><a href="https://pastebin.com/hdB8QU6z" target="_blank" rel="noopener">Pastebin - Onion v3 Vanity Characters Time Estimate</a></li>
         <li><a href="https://pastebin.com/eiFYaCHG" target="_blank" rel="noopener">Pastebin - All Generated Onion v3 Vanity Addresses</a></li>
-        <li><a href="/projects/computing-stats" target="_blank">JamieWeb - Raspberry Pi Cluster Stats</a></li>
-        <li><a href="/blog/onionv3-hidden-service" target="_blank">JamieWeb - Tor Onion v3 Hidden Service - 21st Oct 2017</a></li>
-        <li><a href="/blog/tor-hidden-service" target="_blank">JamieWeb - Tor Hidden Service - 12th Feb 2017</a></li>
+        <li><a href="/projects/computing-stats/" target="_blank">JamieWeb - Raspberry Pi Cluster Stats</a></li>
+        <li><a href="/blog/onionv3-hidden-service/" target="_blank">JamieWeb - Tor Onion v3 Hidden Service - 21st Oct 2017</a></li>
+        <li><a href="/blog/tor-hidden-service/" target="_blank">JamieWeb - Tor Hidden Service - 12th Feb 2017</a></li>
         <li><a href="http://jamiewebgbelqfno.onion/" target="_blank" rel="noopener">JamieWeb Onion v2 Hidden Service - jamiewebgbelqfno.onion</a></li>
         <li><a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Alpha Hidden Service (Now Offline) - <span class="word-break-all">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</span></a></li>
         <li><a href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion/" target="_blank" rel="noopener">JamieWeb Onion v3 Production Hidden Service - <span class="word-break-all">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</span></a></li>
