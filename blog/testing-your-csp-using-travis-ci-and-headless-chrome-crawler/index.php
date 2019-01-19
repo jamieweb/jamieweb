@@ -30,7 +30,7 @@
 &#x2523&#x2501&#x2501 <a href="#headless-chrome-crawler">Headless Chrome Crawler</a>
 &#x2523&#x2501&#x2501 <a href="#apache-reverse-proxy">Apache Reverse Proxy</a>
 &#x2523&#x2501&#x2501 <a href="#report-handler">CSP Violation Report Handler</a>
-&#x2523&#x2501&#x2501 <a href="#report-uri-integration">Report-URI Integration</a>
+&#x2523&#x2501&#x2501 <a href="#report-uri-integration">Report URI Integration</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
     <h2 id="travis-ci">What is Travis-CI?</h2>
