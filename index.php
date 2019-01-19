@@ -7,8 +7,9 @@
 
 <head>
     <title>JamieWeb</title>
-    <meta name="description" content="Website of Jamie Scaife - United Kingdom">
+    <meta name="description" content="Cyber security, open-source, software development and reverse engineering - the personal blog and website of Jamie Scaife.">
     <?php include "head.php" ?>
+    <link href="/projects/computing-stats/" rel="ids-allow"><!--This is to help my IDS script pick up the dynamic content on the computing-stats page.-->
     <link href="https://www.jamieweb.net/" rel="canonical">
 </head>
 
