@@ -11,6 +11,20 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Taking Content Security Policy to the Extreme! - Policies on a Per-page Basis</title>
+        <link>https://www.jamieweb.net/blog/taking-content-security-policy-to-the-extreme-policies-on-a-per-page-basis/</link>
+        <description>Implementing a Content Security Policy on your PHP website with fine-grain control over the policy on a per-page basis.</description>
+        <category>Blog</category>
+        <pubDate>Sat, 19 Jan 2019</pubDate>
+    </item>
+    <item>
+        <title>Restricting and Locking Down SSH Users</title>
+        <link>https://www.jamieweb.net/info/restricting-and-locking-down-ssh-users/</link>
+        <description>Restricting SSH users to specific commands, directories and system access.</description>
+        <category>Info</category>
+        <pubDate>Sun, 13 Jan 2019</pubDate>
+    </item>
+    <item>
         <title>Introduction to Reverse Engineering with radare2 Cutter - Part 3: Solving a Crackme Challenge</title>
         <link>https://www.jamieweb.net/blog/radare2-cutter-part-3-solving-a-crackme-challenge/</link>
         <description>Solving a beginner crackme challenge using radare2 Cutter.</description>
