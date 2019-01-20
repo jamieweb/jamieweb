@@ -35,13 +35,13 @@
     <p>A sponsorship allows you to place a branded message of your choice in a banner at the top of every page on my website. The message should be a maximum of 140 characters, and will be hyperlinked to a page of your choosing.</p>
     <p>I have included examples of the sponsorship message banner below:</p>
     <h3 id="sponsor-message-desktop">Desktop:</h3>
-    <img class="border-2px-solid radius-8" src="/sponsor/desktop.png" alt="A screenshot of an example sponsor message appearing on a desktop web browser." title="An Example Sponsor Message Appearing on a Desktop Web Browser">
+    <img class="max-width-100-percent border-2px-solid radius-8" src="/sponsor/desktop.png" alt="A screenshot of an example sponsor message appearing on a desktop web browser." title="An Example Sponsor Message Appearing on a Desktop Web Browser">
     <h3 id="sponsor-message-mobile">Mobile:</h3>
-    <img class="border-2px-solid radius-8" src="/sponsor/mobile.png" alt="A screenshot of an example sponsor message appearing on a mobile device." title="An Example Sponsor Message Appearing on a Mobile Device">
+    <img class="max-width-100-percent border-2px-solid radius-8" src="/sponsor/mobile.png" alt="A screenshot of an example sponsor message appearing on a mobile device." title="An Example Sponsor Message Appearing on a Mobile Device">
 
     <h2 id="contact">Contact</h2>
     <p>In order to get straight through to my high-priority mailbox, please send an email to:</p>
-    <div class="centertext"><img width="350px" src="/sponsor/sponsor-jamieweb.png"></div>
+    <div class="centertext"><img class="max-width-100-percent" width="350px" src="/sponsor/sponsor-jamieweb.png"></div>
     <p class="margin-top-18">You can also contact me using any of the other methods available on my <a href="/contact/" target="_blank">contact page</a>.</p>
     <p>If you'd like to propose an alternate sponsorship or advertising idea, you're welcome to get in touch as well.</p>
     <p>Thank you!</p>    
