@@ -1,4 +1,12 @@
-<?php include "response-headers.php"; content_security_policy(); ?>
+<?php include "response-headers.php"; content_security_policy();
+//The stats ideally should all be stored in a JSON object, but this is quite an old pipeline so it would require a significant change and testing. Validation is performed before and after they reach the server to ensure security and order, so this setup is reliable (and marginally inefficient) for the time being.
+function filter_stat($stat) {
+    return(filter_var($stat, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH));
+}
+
+foreach(array("master", "node1", "node2", "node3", "node4") as $stats) {
+    $$stats = array_map("filter_stat", file("computing-stats/" . $stats . ".txt", FILE_USE_INCLUDE_PATH | FILE_IGNORE_NEW_LINES));
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 
