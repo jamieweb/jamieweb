@@ -1,12 +1,14 @@
 <?php include "response-headers.php"; content_security_policy();
 //The stats ideally should all be stored in a JSON object, but this is quite an old pipeline so it would require a significant change and testing. Validation is performed before and after they reach the server to ensure security and order, so this setup is reliable (and marginally inefficient) for the time being.
 function filter_stat($stat) {
-    return(filter_var($stat, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH));
+    return(substr(filter_var($stat, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH), 0, 12));
 }
 
 foreach(array("master", "node1", "node2", "node3", "node4") as $stats) {
     $$stats = array_map("filter_stat", file("computing-stats/" . $stats . ".txt", FILE_USE_INCLUDE_PATH | FILE_IGNORE_NEW_LINES));
-} ?>
+}
+
+$now = new DateTime('now'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,18 +75,18 @@ foreach(array("master", "node1", "node2", "node3", "node4") as $stats) {
             <h1 class="info">Rosetta@Home Stats</h1>
             <p class="info">Total Earned Credits: <b>var-rosettacredit</b></p>
             <p class="info">Recent Average Credit: <b>var-rosettarecent</b></p>
-            <p class="info">Total Running Time: <b>var-rosettaruntime days</b></p>
+            <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2016-11-07'))->format("%a"); ?> days</b></p>
         </div>
         <div>
             <h1 class="info">Einstein@Home Stats</h1>
             <p class="info">Total Earned Credits: <b>var-einsteincredit</b></p>
             <p class="info">Recent Average Credit: <b>var-einsteinrecent</b></p>
-            <p class="info">Total Running Time: <b>var-einsteinruntime days</b></p>
+            <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2015-10-04'))->format("%a"); ?> days</b></p>
         </div>
         <div>
             <h1 class="info">Bitcoin Node Stats</h1>
             <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.earn.com/nodes/212.71.252.184-8333/" target="_blank" rel="noopener">https://bitnodes.earn.com/<wbr>nodes/<wbr>212.71.252.184-8333/</a></b></p>
-            <p class="info">Total Running Time: <b>var-bitcoinnoderuntime days</b></p>
+            <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2016-11-04'))->format("%a"); ?> days</b></p>
         </div>
     </div>
 </div>
