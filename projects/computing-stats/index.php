@@ -1,7 +1,7 @@
 <?php include "response-headers.php"; content_security_policy();
 //The stats ideally should all be stored in a JSON object, but this is quite an old pipeline so it would require a significant change and testing. Validation is performed before and after they reach the server to ensure security and order, so this setup is reliable (and marginally inefficient) for the time being.
 function filter_stat($stat) {
-    return(substr(filter_var($stat, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH), 0, 12));
+    return(substr(filter_var($stat, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH), 0, 14));
 }
 
 foreach(array("master", "node1", "node2", "node3", "node4") as $stats) {
@@ -32,39 +32,39 @@ $now = new DateTime('now'); ?>
         <tr>
             <!-- Note to self: Fix the ridiculous number of classes here. -->
             <td bgcolor="limegreen" width="20%"><div class="centertext"><h2>Master</h2></div></td>
-            <td bgcolor="var-node1colour" width="20%"><div class="centertext"><h2>Node 1</h2></div></td>
-            <td bgcolor="var-node2colour" width="20%"><div class="centertext"><h2>Node 2</h2></div></td>
-            <td bgcolor="var-node3colour" width="20%"><div class="centertext"><h2>Node 3</h2></div></td>
-            <td bgcolor="var-node4colour" width="20%"><div class="centertext"><h2>Node 4</h2></div></td>
+            <td bgcolor="<?php echo $master[9]; ?>" width="20%"><div class="centertext"><h2>Node 1</h2></div></td>
+            <td bgcolor="<?php echo $master[10]; ?>" width="20%"><div class="centertext"><h2>Node 2</h2></div></td>
+            <td bgcolor="<?php echo $master[11]; ?>" width="20%"><div class="centertext"><h2>Node 3</h2></div></td>
+            <td bgcolor="<?php echo $master[12]; ?>" width="20%"><div class="centertext"><h2>Node 4</h2></div></td>
         </tr>
         <tr>
-            <td width="20%"><p class="info">CPU: <b>var-mastercpu</b></p>
-            <p class="info">Memory: <b>var-masterram MB</b></p>
-            <p class="info">Disk: <b>var-masterdisk</b></p>
-            <p class="info">Temp: <b>var-mastertemp</b></td>
+            <td width="20%"><p class="info">CPU: <b><?php echo $master[0]; ?></b></p>
+            <p class="info">Memory: <b><?php echo $master[1]; ?></b></p>
+            <p class="info">Disk: <b><?php echo $master[2]; ?></b></p>
+            <p class="info">Temp: <b><?php echo $master[3]; ?></b></td>
 
-            <td width="20%"><p class="info">CPU: <b>var-node1cpu</b></p>
-            <p class="info">Memory: <b>var-node1ram MB</b></p>
-            <p class="info">Disk: <b>var-node1disk</b></p>
-            <p class="info">Temp: <b>var-node1temp</b></td>
+            <td width="20%"><p class="info">CPU: <b><?php echo $node1[0]; ?></b></p>
+            <p class="info">Memory: <b><?php echo $node1[1]; ?> MB</b></p>
+            <p class="info">Disk: <b><?php echo $node1[2]; ?></b></p>
+            <p class="info">Temp: <b><?php echo $node1[3]; ?></b></td>
 
-            <td width="20%"><p class="info">CPU: <b>var-node2cpu</b></p>
-            <p class="info">Memory: <b>var-node2ram MB</b></p>
-            <p class="info">Disk: <b>var-node2disk</b></p>
-            <p class="info">Temp: <b>var-node2temp</b></td>
+            <td width="20%"><p class="info">CPU: <b><?php echo $node2[0]; ?></b></p>
+            <p class="info">Memory: <b><?php echo $node2[1]; ?> MB</b></p>
+            <p class="info">Disk: <b><?php echo $node2[2]; ?></b></p>
+            <p class="info">Temp: <b><?php echo $node2[3]; ?></b></td>
 
-            <td width="20%"><p class="info">CPU: <b>var-node3cpu</b></p>
-            <p class="info">Memory: <b>var-node3ram MB</b></p>
-            <p class="info">Disk: <b>var-node3disk</b></p>
-            <p class="info">Temp: <b>var-node3temp</b></td>
+            <td width="20%"><p class="info">CPU: <b><?php echo $node3[0]; ?></b></p>
+            <p class="info">Memory: <b><?php echo $node3[1]; ?> MB</b></p>
+            <p class="info">Disk: <b><?php echo $node3[2]; ?></b></p>
+            <p class="info">Temp: <b><?php echo $node3[3]; ?></b></td>
 
-            <td width="20%"><p class="info">CPU: <b>var-node4cpu</b></p>
-            <p class="info">Memory: <b>var-node4ram MB</b></p>
-            <p class="info">Disk: <b>var-node4disk</b></p>
-            <p class="info">Temp: <b>var-node4temp</b></td>
+            <td width="20%"><p class="info">CPU: <b><?php echo $node4[0]; ?></b></p>
+            <p class="info">Memory: <b><?php echo $node4[1]; ?> MB</b></p>
+            <p class="info">Disk: <b><?php echo $node2[2]; ?></b></p>
+            <p class="info">Temp: <b><?php echo $node3[3]; ?></b></td>
         </tr>
     </table><br>
-    <p class="info">Stats Update Every 10 Minutes. Last Updated: <b>var-lastupdated GMT</b></p><br>
+    <p class="info">Stats Update Every 10 Minutes. Last Updated: <b><?php echo $master[8]; ?> GMT</b></p><br>
     <p class="info">System Status Message: <b><?php include "computing-stats-status-message.txt" ?></b></p><br>
 
     <h1 class="info">Current Project: <span class="currentproject">Einstein@Home</span></h1>
@@ -73,14 +73,14 @@ $now = new DateTime('now'); ?>
     <div class="computing-stats">
         <div class="computing-stats-half-width">
             <h1 class="info">Rosetta@Home Stats</h1>
-            <p class="info">Total Earned Credits: <b>var-rosettacredit</b></p>
-            <p class="info">Recent Average Credit: <b>var-rosettarecent</b></p>
+            <p class="info">Total Earned Credits: <b><?php echo $master[4]; ?></b></p>
+            <p class="info">Recent Average Credit: <b><?php echo $master[5]; ?></b></p>
             <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2016-11-07'))->format("%a"); ?> days</b></p>
         </div>
         <div>
             <h1 class="info">Einstein@Home Stats</h1>
-            <p class="info">Total Earned Credits: <b>var-einsteincredit</b></p>
-            <p class="info">Recent Average Credit: <b>var-einsteinrecent</b></p>
+            <p class="info">Total Earned Credits: <b><?php echo $master[6]; ?></b></p>
+            <p class="info">Recent Average Credit: <b><?php echo $master[7]; ?></b></p>
             <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2015-10-04'))->format("%a"); ?> days</b></p>
         </div>
         <div>
