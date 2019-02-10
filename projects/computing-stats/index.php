@@ -5,7 +5,7 @@ function filter_stat($stat) {
 }
 
 foreach(array("master", "node1", "node2", "node3", "node4") as $stats) {
-    $$stats = array_map("filter_stat", file("computing-stats/" . $stats . ".txt", FILE_USE_INCLUDE_PATH | FILE_IGNORE_NEW_LINES));
+    $$stats = array_map("filter_stat", file("computing-stats/stats/" . $stats . ".txt", FILE_USE_INCLUDE_PATH | FILE_IGNORE_NEW_LINES));
 }
 
 $now = new DateTime('now'); ?>
