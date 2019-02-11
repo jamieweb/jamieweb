@@ -39,7 +39,7 @@ $now = new DateTime('now'); ?>
         </tr>
         <tr>
             <td width="20%"><p class="info">CPU: <b><?php echo $master[0]; ?></b></p>
-            <p class="info">Memory: <b><?php echo $master[1]; ?></b></p>
+            <p class="info">Memory: <b><?php echo $master[1]; ?> MB</b></p>
             <p class="info">Disk: <b><?php echo $master[2]; ?></b></p>
             <p class="info">Temp: <b><?php echo $master[3]; ?></b></td>
 
