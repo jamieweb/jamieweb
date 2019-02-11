@@ -1,4 +1,0 @@
-{CPU}%
-{RAM}
-{DISK} MB
-{TEMP}'C

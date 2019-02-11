@@ -1,1 +1,6 @@
 includes/hostinfo
+includes/computing-stats/stats/master.txt
+includes/computing-stats/stats/node1.txt
+includes/computing-stats/stats/node2.txt
+includes/computing-stats/stats/node3.txt
+includes/computing-stats/stats/node4.txt
