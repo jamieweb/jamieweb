@@ -7,7 +7,7 @@ My personal website, available at:
 * Web: https://www.jamieweb.net
 * Onion v2: http://jamiewebgbelqfno.onion
 * Onion v3: http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion
-* Namecoin: https://www.jamieweb.bit
+* Namecoin: http://www.jamieweb.bit
 
 ## HackerOne:
 
@@ -21,7 +21,17 @@ Thank you!
 
 ## IP Addresses:
 
-16th Dec 2017 - Present:
+10th Feb 2019 - Present:
+
+    **ldn01.jamieweb.net:**
+    IPv4: 139.162.222.67
+    IPv6: 2a01:7e00::f03c:91ff:fec6:27a3
+
+    **nyc01.jamieweb.net:**
+    IPv4: 157.230.83.95
+    IPv6: 2604:a880:400:d1::aad:8001
+
+16th Dec 2017 - 10th Feb 2019:
 
     IPv4: 139.162.222.67
     IPv6: 2a01:7e00:e001:c500::1
@@ -33,51 +43,50 @@ Historic:
     
 * IPv4 Test: https://ipv4.jamieweb.net
 * IPv6 Test: https://ipv6.jamieweb.net
-* IPv4 Direct (403 Forbidden): http://139.162.222.67
-* IPv6 Direct (403 Forbidden): <a href="http://[2a01:7e00:e001:c500::1]">http://[2a01:7e00:e001:c500::1]</a>
+* ldn01 IPv4 Direct (403 Forbidden): http://139.162.222.67
+* ldn01 IPv6 Direct (403 Forbidden): <a href="http://[2a01:7e00:e001:c500::1]">http://[2a01:7e00:e001:c500::1]</a>
+* nyc01 IPv4 Direct (403 Forbidden): http://157.230.83.95
+* nyc01 IPv6 Direct (403 Forbidden): <a href="http://[2604:a880:400:d1::aad:8001]">http://[2604:a880:400:d1::aad:8001]</a>
 
 ## Site Ideas/To-do List:
-    Better mobile compatibility
-    ✓ - All blog/projects/other pages should now have acceptable levels of mobile readability
-    ✓ - Must fix navbar on mobile (doesn't extend to full page width)
-    ✓ - Fix homepage sidebar overflow on mobile
-      
     Grid/list layout for /projects (same as /info and /other?)
     Raspberry Pi Cluster blog post
     Python & C++ - cycles per second - "tickrate"
     Casio watch mod (N-O-D-E style) - in progress but I am having issues with masking for spray painting!
     Air-gapped RPi PGP decryption device using binary-over-audio
-    PHP blog list generation - efficiency? - mod_cache is the solution here most likely
     iptables configuration
     pf configuration
     Chrome sign-in/sync risk
     Homepage quick links
     Search box?
-    Malicious links overview/spamtraps
     Link integrity
     KeyChest
-    JamieWeb status page, like status.io (Use gh-pages?)
     Tor IPv6
     Next/previous blog post links when on /blog/*? - Tried but looks too 'spammy'
     <noscript> tag neglect
-    JamieWeb organisation
-    Apache security headers on a per-page basis blog post/guide
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
-    Geodiverse hosting?
-    Change favicon to identicon
+    Change favicon to identicon?
     OpenPGP keyserver? keyserver.jamieweb.net
     Snippets (auto gen list with PHP, store in JSON?)
     
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
-    HTTP/2 - Waiting for native support in Ubuntu repo Apache package
     tls1.3.jamieweb.net (TLS 1.3 Test Page)
     http2.jamieweb.net (HTTP/2 Test Page)
     brotli.jamieweb.net (Brotli Test Page[?])
 
+    ✓ Geodiverse hosting - now DNS failover load-balanced between ldn01 and nyc01
+    ✓ HTTP/2
+    ✓ JamieWeb status page - status.jamieweb.net
+    ✓ Apache security headers on a per-page basis blog post/guide
     ✓ Git Hosting Service SSH Server Fingerprints
     ✓ Cutter tutorial
-    ✓ Travis-CI for website/build integrity checking (CSP checking done, working on blog post)
+    ✓ Better mobile compatibility
+        ✓ - All blog/projects/other pages should now have acceptable levels of mobile readability
+        ✓ - Must fix navbar on mobile (doesn't extend to full page width)
+        ✓ - Fix homepage sidebar overflow on mobile
+    ✓ Travis-CI for website/build integrity checking
     ✓ Full-width footer
+    ✓ PHP blog list generation
     ✓ /security - Redirect to /contact#hackerone
     ✓ Homepage rework
     ✓ Improved tag function

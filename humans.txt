@@ -3,7 +3,7 @@ Owner: Jamie Scaife
 Site: https://www.jamieweb.net
 Security Contact: https://www.jamieweb.net/.well-known/security.txt
 Twitter: @jamieweb
-GitHub: /jamieweb
+GitLab: /jamieweb
 YouTube: /jamie90437x
 Keybase: /jamieweb
 IRC: Freenode ##jamieweb
@@ -11,14 +11,24 @@ PGP: 7CBB F413 4785 40F6 3045  58F8 5E38 94D8 34B7 98E5
 Location: United Kingdom
 
 /* SITE */
-Accessible at:
 * Web: https://www.jamieweb.net
 * Onion v2: http://jamiewebgbelqfno.onion
 * Onion v3: http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion
-* Namecoin: https://www.jamieweb.bit
+* Namecoin: http://www.jamieweb.bit
 
-Other:
+/* FLEET */
+ldn01.jamieweb.net:
+* 139.162.222.67
+* 2a01:7e00::f03c:91ff:fec6:27a3
+
+nyc01.jamieweb.net:
+* 157.230.83.95
+* 2604:a880:400:d1::aad:8001
+
+/* OTHER INFO */
 * IPv4 Test: https://ipv4.jamieweb.net
 * IPv6 Test: https://ipv6.jamieweb.net
-* IPv4 Direct (403 Forbidden): http://139.162.222.67
-* IPv6 Direct (403 Forbidden): http://[2a01:7e00:e001:c500::1]
+* ldn01 IPv4 Direct (403 Forbidden): http://139.162.222.67
+* ldn01 IPv6 Direct (403 Forbidden): http://[2a01:7e00::f03c:91ff:fec6:27a3]
+* nyc01 IPv4 Direct (403 Forbidden): http://157.230.83.95
+* nyc01 IPv6 Direct (403 Forbidden): http://[2604:a880:400:d1::aad:8001]
