@@ -74,4 +74,7 @@
             </div>
         </div>
     </div>
+    <div class="footer flex-justify-center">
+        <p class="margin-top--8 font-size-smaller color-grey">This request was served by <?php include "hostinfo.txt"; ?> - <a class="color-grey" href="https://status.jamieweb.net/" target="_blank" rel="noopener">View Fleet Status</a></p>
+    </div>
 </footer>

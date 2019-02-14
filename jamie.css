@@ -926,6 +926,10 @@ th.h1-scope-in-scope {
     margin-top: 7px;
 }
 
+.margin-top--8 {
+    margin-top: -8px;
+}
+
 .two-no-mar {
     margin-top: 2px;
     margin-bottom: 0px;
@@ -1041,6 +1045,10 @@ th.h1-scope-in-scope {
 
 .padding-right-10 {
     padding-right: 10px;
+}
+
+.padding-25-rl {
+    padding: 0 25px;
 }
 
 .padding-20-rl {

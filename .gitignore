@@ -1,4 +1,4 @@
-includes/hostinfo
+includes/hostinfo.txt
 includes/computing-stats/stats/master.txt
 includes/computing-stats/stats/node1.txt
 includes/computing-stats/stats/node2.txt
