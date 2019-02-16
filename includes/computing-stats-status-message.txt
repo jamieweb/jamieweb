@@ -1,1 +1,0 @@
-<span class="color-limegreen">All systems operational.</span>

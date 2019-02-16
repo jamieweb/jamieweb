@@ -1,14 +1,33 @@
-<?php include "response-headers.php"; content_security_policy();
+<?php date_default_timezone_set("Europe/London");
+include "response-headers.php"; content_security_policy();
 //The stats ideally should all be stored in a JSON object, but this is quite an old pipeline so it would require a significant change and testing. Validation is performed before and after they reach the server to ensure security and order, so this setup is reliable (and marginally inefficient) for the time being.
 function filter_stat($stat) {
-    return(substr(filter_var($stat, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH), 0, 14));
+    return(substr(filter_var($stat, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH), 0, 21));
 }
 
 foreach(array("master", "node1", "node2", "node3", "node4") as $stats) {
     $$stats = array_map("filter_stat", file("computing-stats/stats/" . $stats . ".txt", FILE_USE_INCLUDE_PATH | FILE_IGNORE_NEW_LINES));
+    if($$stats[0] > 99.9) {
+        $$stats[0] = "100%";
+    }
 }
 
-$now = new DateTime('now'); ?>
+$now = new DateTime('now');
+$masterStatus = "limegreen";
+$statusMsg = file_get_contents("computing-stats/status-message.txt", FILE_USE_INCLUDE_PATH, NULL, 0, 256);
+if(!($statusMsg)) {
+    try {
+        $lastUpdated = date_create_from_format("Y-m-d g:i:sa", $master[8]);
+        if($lastUpdated > new DateTime('21 minutes ago')) {
+            $statusMsg = "<span class=\"color-limegreen\">All systems operational.</span>";
+        } else {
+            $masterStatus = "orange";
+            $statusMsg = "<span class=\"color-orange\">System appears to have lost connection. An alert has been sent to Jamie.</span>";
+        }        
+    } catch(Exception $e_lastUpdated) {
+        $statusMsg = "<span class=\"color-orange\">Error checking system status. An alert has been sent to Jamie.</span>";
+    }
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +50,7 @@ $now = new DateTime('now'); ?>
     <table width="100%">
         <tr>
             <!-- Note to self: Fix the ridiculous number of classes here. -->
-            <td bgcolor="limegreen" width="20%"><div class="centertext"><h2>Master</h2></div></td>
+            <td bgcolor="<?php echo $masterStatus; ?>" width="20%"><div class="centertext"><h2>Master</h2></div></td>
             <td bgcolor="<?php echo $master[9]; ?>" width="20%"><div class="centertext"><h2>Node 1</h2></div></td>
             <td bgcolor="<?php echo $master[10]; ?>" width="20%"><div class="centertext"><h2>Node 2</h2></div></td>
             <td bgcolor="<?php echo $master[11]; ?>" width="20%"><div class="centertext"><h2>Node 3</h2></div></td>
@@ -64,8 +83,12 @@ $now = new DateTime('now'); ?>
             <p class="info">Temp: <b><?php echo $node3[3]; ?></b></td>
         </tr>
     </table><br>
-    <p class="info">Stats Update Every 10 Minutes. Last Updated: <b><?php echo $master[8]; ?> GMT</b></p><br>
-    <p class="info">System Status Message: <b><?php include "computing-stats-status-message.txt" ?></b></p><br>
+    <p class="info">Stats Update Every 10 Minutes. Last Updated: <b><?php if(isset($e_lastUpdated)) {
+    echo "<span class=\"color-orange\">Unknown</span>";
+} else {
+    echo $lastUpdated->format('g:i:sa T');
+} ?></b></p><br>
+    <p class="info">System Status Message: <b><?php echo $statusMsg; ?></b></p><br>
 
     <h1 class="info">Current Project: <span class="currentproject">Einstein@Home</span></h1>
     <p>The cluster is currently running <a href="https://einsteinathome.org/" target="_blank" rel="noopener">Einstein@Home</a>, which is a distributed computing project that searches for gravitational waves using data from the LIGO gravitational wave detector.</p>
