@@ -86,7 +86,7 @@ if(!($statusMsg)) {
     <p class="info">Stats Update Every 10 Minutes. Last Updated: <b><?php if(isset($e_lastUpdated)) {
     echo "<span class=\"color-orange\">Unknown</span>";
 } else {
-    echo $lastUpdated->format('g:i:sa T');
+    echo $lastUpdated->format('g:i:sa') . " " . ($lastUpdated->format('I') ? "GMT+1" : "GMT");
 } ?></b></p><br>
     <p class="info">System Status Message: <b><?php echo $statusMsg; ?></b></p><br>
 
