@@ -37,7 +37,7 @@
     <h2>What is this?</h2>
     <p>The IRC Drawing Bot is an <a href="https://simple.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank" rel="noopener">Internet Relay Chat</a> bot that <b>you</b> can control, allowing you to paint pixels on the canvas above.</p>
     <p>This is not a fancy art project, it is designed to demonstrate how IRC can be used to securely control a web page. The collaborative pixel canvas is inspired by <a href="https://www.reddit.com/r/place" target="_blank" rel="noopener">Reddit's r/place</a>.</p>
-    <p>In order to paint your own pixels, you must join the ##jamieweb channel on Freenode IRC. Details for this are available <a href="/irc/" target="_blank">here</a>.</p>
+    <p>In order to paint your own pixels, you must join the ##jamieweb channel on Freenode IRC.</p>
     <h2>How do I control it?</h2>
     <p>Once you are connected to the IRC server, make sure you have joined the channel ##jamieweb. If not, use the command "/join ##jamieweb". Just enter "/join ##jamieweb" into the chat input of your IRC client.</p>
     <p>The bot is controlled using commands, all of which must be prefixed with an exclamation mark (!). All available commands are listed below:</p>
