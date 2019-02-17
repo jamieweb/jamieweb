@@ -65,10 +65,10 @@ Historic:
     Next/previous blog post links when on /blog/*? - Tried but looks too 'spammy'
     <noscript> tag neglect
     Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
-    Change favicon to identicon?
     OpenPGP keyserver? keyserver.jamieweb.net
     Snippets (auto gen list with PHP, store in JSON?)
-    
+    Tor HS forwarding methods
+
     TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
     tls1.3.jamieweb.net (TLS 1.3 Test Page)
     http2.jamieweb.net (HTTP/2 Test Page)
