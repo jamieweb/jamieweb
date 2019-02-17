@@ -106,10 +106,11 @@ HiddenServiceVersion 3
 HiddenServicePort &lt;localport&gt; &lt;server&gt;</pre>
     <p>The HiddenServiceDir can be any folder on your system that Tor will have write access to, although it should be a private area since the keys will be stored here.</p>
     <p>&lt;localport&gt; is the local port that the hidden service is "listening" on, and the &lt;server&gt; is the server where requests to that port will be forwarded to.</p>
-    <p>In my case, I have:</p>
-    <pre>HiddenServicePort 80 139.162.222.67</pre>
-    <p>...which will forward requests to port 80 onto the main JamieWeb server across the internet.</p>
-    <p id="deanonymization"><b>Important Note:</b> <i>Forwarding requests to a remote server has a major potential to de-anonymize you if done incorrectly. If your own anonymity is important, it's probably better to run a local web server (eg: forward requests to 127.0.0.1). Please refer to the official Tor documentation since I am in no way qualified to provide advice on running a properly anonymized hidden service. In my case, my own anonymity is not important so it's fine for me to forward requests to an external web server over the internet.</i></p>
+    <p>For example, you would normally have:</p>
+    <pre>HiddenServicePort 80 127.0.0.1</pre>
+    <p>...which will forward requests to port 80 onto a local web server that is bound to 127.0.0.1.</p>
+    <p>However, you can also directly forward requests onto another server across the internet. This is not recommended though, as by default the requests will be forwarded unencrypted, which poses a risk of de-anonymization and man-in-the-middle attacks.</p>
+    <p id="deanonymization"><b>Important Note:</b> <i>Forwarding requests to a remote server has a major potential to de-anonymize you if done incorrectly. If your own anonymity is important, it's probably better to run a local web server (eg: forward requests to 127.0.0.1). Please refer to the official Tor documentation for more information.</i></p>
     <p>You can theoretically host anything behind a hidden service, including a file server, IRC server, email server, etc.</p>
     <p>You can now run Tor located in src/or/tor. Successful output is as follows:</p>
     <pre>Oct 19 23:58:25.320 [notice] Tor 0.3.2.2-alpha (git-e2a2704f17415d8a) running on Linux with Libevent 2.0.21-stable, OpenSSL 1.0.2g, Zlib 1.2.8, Liblzma N/A, and Libzstd N/A.
@@ -135,7 +136,7 @@ drwxr-xr-x 5 tor tor 4096 Oct 19 22:29 ..
     <p>The "hostname" file  in your hidden service configuration directory contains the hostname for your new Onion v3 hidden service. The other files are your hidden service keys, so it is imperative that these are kept private. If your keys leak, other people can impersonate your hidden service, deeming it compromised, useless and dangerous to visit.</p>
     <h2 id="apacheconfig">Apache Configuration</h2>
     <p>Configuring a local web server for your hidden service is exactly the same as with Onion v2, just make sure that your web server is accessible locally on 127.0.0.1 and everything should work. <b>If your own anonymity is important, make sure that your web server is configured correctly so that it is not going to de-anonymize you.</b></p>
-    <p>However, in my setup I am using a remote web server as the forwarding destination for the hidden service. To clarify, my Onion v3 hidden service is running on a separate server to the main JamieWeb server, and the hidden service is forwarding requests across the internet to the main server.</p>
+    <p>However, in my setup I am using a remote web server as the forwarding destination for the hidden service. To clarify, my Onion v3 hidden service is running on a separate server to the main JamieWeb server, and the hidden service is forwarding requests across the internet to the main server. This involves a small risk of man-in-the-middle attack since the requests are forwarded unencrypted by default, however for this temporary test environment, it should be fine as the risk is minimal (MitM against internet backbone traffic is much more difficult than with standard user endpoints).</p>
     <p><b>Important Note:</b> <i>Please <a href="#deanonymization">read my note above</a> as there is potentially a major risk of de-anonymization when forwarding requests to a remote server.</i></p>
     <p>Since I have IP address catch-all virtual hosts set up, the request is blocked by default:</p>
     <pre>403 Forbidden - Direct request to IPv4 address (139.162.222.67) blocked. Please use https://www.jamieweb.net instead.</pre>
