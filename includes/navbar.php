@@ -22,7 +22,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <h5><a href="/tools"><span>&#x1f6e0;&#xfe0e;</span> <span>Tools</span></a></h5>
+                <h5><a href="/tools/"><span>&#x1f6e0;&#xfe0e;</span> <span>Tools</span></a></h5>
                 <div class="dropdown-content">
                     <h4>
                         <a href="/tools/exploitable-web-content-blocking-test/">Exploitable Web Content Blocking Test</a>

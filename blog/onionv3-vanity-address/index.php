@@ -656,7 +656,7 @@ jamien6v<span>zoo</span>n</pre>
     <h2 id="implementation">Implementation</h2>
     <p>As of writing this, Onion v3 support is only available alpha versions of Tor, however a Tor build with Onion v3 functionality is currently at the second release candidate, so it should be reaching the stable branch very soon.</p>
     <p>For as long as Tor Onion v3 functionality remains in alpha only, I will be keeping the current hidden service address (<span class="word-break-all">http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</span>) as well as running the Tor alpha instance on a separate, isolated server.</p>
-    <p>When Onion v3 hits Tor stable, I will move it across to a main server as well as start using the jamie3vkiwi vanity address. I will also continue hosting my <a href="/blog/tor-hidden-service" target="_blank">Onion v2 hidden service</a> for as long as it is safe to do so.</p>
+    <p>When Onion v3 hits Tor stable, I will move it across to a main server as well as start using the jamie3vkiwi vanity address. I will also continue hosting my <a href="/blog/tor-hidden-service/" target="_blank">Onion v2 hidden service</a> for as long as it is safe to do so.</p>
     <p>Luckily it is very easy to host multiple hidden services using the same Tor instance. In your torrc, just add multiple hidden service configurations:</p>
     <pre>HiddenServiceDir /desired/path/to/v3/hidden/service/config
 HiddenServiceVersion 3
