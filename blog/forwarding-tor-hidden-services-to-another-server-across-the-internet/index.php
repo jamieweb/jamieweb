@@ -54,7 +54,7 @@ HiddenServicePort 80 127.0.0.1:80</pre>
 HiddenServiceVersion 3
 HiddenServicePort 80 157.230.83.95:80</pre>
     <p>I restarted the Tor service with <code>sudo service tor restart</code>, and a new Hidden Service had been successfully created. I started a Wireshark capture, and put the Onion hostname into Tor Browser:</p>
-    <img class="radius-8" src="tor-browser-80-80.png" width="1000px" alt="A screenshot of the Tor Browser showing the response from my JamieWeb server - '403 Forbidden - Direct access to IPv4 address (157.230.83.95) blocked...'">
+    <img class="radius-8" src="tor-browser-80-80-jamieweb.png" width="1000px" alt="A screenshot of the Tor Browser showing the response from my JamieWeb server - '403 Forbidden - Direct access to IPv4 address (157.230.83.95) blocked...'">
     <p>My server blocked the request as the test Hidden Service I had created is not an authorised hostname, however you can see that the request did successfully reach my server (which to clarify, is a completely different machine to where the Hidden Service is running).</p>
     <p>In the Wireshark packet capture, you can see that this request was sent completely unencrypted between the Hidden Service and the remote server:</p>
     <img class="radius-8" src="wireshark-80-80.png" width="1000px" alt="A screenshot of a packet capture in Wireshark, showing an unencrypted HTTP GET request being forwarded to the remote JamieWeb server.">
@@ -68,7 +68,25 @@ HiddenServicePort 80 157.230.83.95:80</pre>
     <h2 id="forwarding-hidden-service-traffic-with-an-apache-reverse-proxy">Forwarding Hidden Service Traffic with an Apache Reverse Proxy</h2>
     <p>In order to securely forward my Tor Hidden Service traffic to a remote server across the public internet, I set up an Apache reverse proxy to forward requests over HTTPS.</p>
     <p>This works by having the Hidden Service forward packets to a local web server running on 127.0.0.1, which will then proxy the requests to the remote server natively using the <code>https</code> scheme.</p>
-    <p>In order to set this up for your own Hidden Service, 
+    <p>In order to set this up for your own Hidden Service, you will need to create a new Virtual Host. On Debian-based systems, you can create a new file in the <code>/etc/apache2/sites-available</code> directory named something applicable like <code>tor-forward.conf</code>, and add the following configuration to the file:</p>
+    <pre>&lt;VirtualHost 127.0.0.1:80&gt;
+    SSLProxyEngine On
+    ProxyRequests Off
+    ProxyPass "/" "https://your-website-here.example/"
+    ProxyPassReverse "/" "https://your-website-here.example/"
+&lt;/VirtualHost&gt;</pre>
+    <p>This configuration will forward requests to <code>127.0.0.1:80</code> on to the remote server specified over HTTPS.</p>
+    <ul class="spaced-list">
+        <li><code>SSLProxyEngine On</code> allows <code>mod_proxy</code> to use HTTPS, and requires <code>mod_ssl</code> to be enabled.</li>
+        <li><code>ProxyRequests Off</code> prevents your Apache server being used as a forward proxy server, which prevents unauthorised people connecting and using your machine as a front for their nerfarious activity.</li>
+        <li><code>ProxyPass</code> passes requests to the first argument (<code>"/"</code> in this case, which is essentially every request) through to the the second argument (which in this case, will the public-facing address of your remote web server).</li>
+        <li><code>ProxyPassReverse</code> allows Apache to rewrite the <code>Location</code>, <code>Content-Location</code> and <code>URI</code> headers in HTTP redirects, to ensure that they continue working properly and do not accidentally redirect out of the reverse proxy setup.</li>
+    </ul>
+    <p>If you don't want to bind this VirtualHost to port 80, you can use a different one if you want, but you'll need to update the <code>HiddenServicePort</code> configuration accordingly. Also make sure that you always use trailing slashes for the arguments in the <code>ProxyPass</code> and <code>ProxyPassReverse</code> directives, otherwise requests will be improperly proxied and could allow for your server to be used as an open proxy (since without a trailing slash, requests to <code>/index.html</code> will be forwarded to <code>https://your-website-here.exampleindex.html</code> [note the missing slash], which can be exploited to reach unauthorized destinations).</p>
+    <p>Before enabling the new VirtualHost, you'll need to enable the <code>proxy</code>, <code>proxy_http</code> and <code>ssl</code> Apache modules.</p>
+    <p>On Debian-based systems, you can do this with <code>sudo a2enmod module_name</code>. Once this is done, you can also enable the new Virtual Host with <code>sudo a2ensite tor-forward.conf</code> (or whatever you named the Virtual Host file).</p>
+    <p>Then, test your Apache config with <code>apachectl configtest</code>, and restart the Apache server with <code>sudo service apache2 restart</code>.</p>
+
     
 </div>
 
