@@ -41,12 +41,12 @@ HiddenServiceVersion 3
 HiddenServicePort 80 127.0.0.1:80</pre>
     <p>Alternatively, if you wanted to host SSH behind a Hidden Service, you could use:</p>
     <pre>HiddenServicePort 22 127.0.0.1:22</pre>
-    <p>The important point to note is that Hidden Services are not protocol aware - they just redirect raw packets. This means that you can freely make Tor redirect the packets wherever you want to, but <b>you</b> are responsible for making sure that it does this securely.</p>
+    <p>The important point to note is that Hidden Services are not protocol-aware - they just redirect raw packets. This means that you can freely make Tor redirect the packets wherever you want to, but <b>you</b> are responsible for making sure that it does this securely.</p>
     <p>The <a href="https://www.torproject.org/docs/onion-services.html.en" target="_blank" rel="noopener">Onion Service Protocol</a> provides confidentiality, anonimity and integrity between Tor clients (users) and Hidden Services, but once the traffic is forwarded by the Hidden Service it is in its raw format.</p>
     <p>For example, if HTTP traffic on port 80 is forwarded, then it gets forwarded as-is (plaintext HTTP). As drastic as this may sound, it's not normally a problem as most Hidden Services forward traffic to localhost (127.0.0.1), so the unencrypted traffic isn't traversing any insecure networks. As long as the server machine is configured correctly and isn't directly accessible by adversaries, there generally isn't a security problem.</p>
     <p>However, if you want to forward your Hidden Service traffic to another server across the internet, you will need to provide a layer of security yourself.</p>
 
-    <h2 id="#why-can-t-you-natively-forward-hidden-service-across-over-the-internet">Why can't you natively forward Hidden Service traffic over the internet?</h2>
+    <h2 id="why-can-t-you-natively-forward-hidden-service-across-over-the-internet">Why can't you natively forward Hidden Service traffic over the internet?</h2>
     <p>You can if you want... but unless you have added your own extra layer of security (e.g. TLS), it will be completely unencrypted.</p>
     <p>I looked into this further by setting up a Hidden Service on a test machine, configuring it to forward traffic to one of the public JamieWeb servers (157.230.83.95, which is nyc01.jamieweb.net), and monitoring the network interface with Wireshark.</p>
     <p>I used the following Hidden Service configuration in <code>/etc/tor/torrc</code>:</p>
@@ -58,6 +58,17 @@ HiddenServicePort 80 157.230.83.95:80</pre>
     <p>My server blocked the request as the test Hidden Service I had created is not an authorised hostname, however you can see that the request did successfully reach my server (which to clarify, is a completely different machine to where the Hidden Service is running).</p>
     <p>In the Wireshark packet capture, you can see that this request was sent completely unencrypted between the Hidden Service and the remote server:</p>
     <img class="radius-8" src="wireshark-80-80.png" width="1000px" alt="A screenshot of a packet capture in Wireshark, showing an unencrypted HTTP GET request being forwarded to the remote JamieWeb server.">
+    <p>Tracing the TCP stream shows that the request and response was unencrypted, which is the expected and intended behaviour:</p>
+    <img class="radius-8" src="wireshark-80-80-tcpstream.png" width="1000px" alt="A screenshot of a TCP trace in Wireshark, showing the complete HTTP request and response.">
+    <p>Modifying <code>HiddenServicePort</code> to forward the traffic to port 443 does not resolve this problem though. As I discussed earlier, Hidden Services are not protocol-aware, so the packets will just be forwarded in their raw format to port 443. This is no good, as web servers listening on port 443 are generally expecting a TLS connection first, before HTTP traffic is sent:</p>
+    <img class="radius-8" src="wireshark-80-443-http-to-https-port.png" width="1000px" alt="A screenshot of a packet capture in Wireshark, showing raw HTTP being sent to port 443 without the required TLS connection in place.">
+    <p>As you can see in the screenshot above, Wireshark actually notices that plain HTTP traffic was sent to the usual HTTPS port.</p>
+    <p>Tor does not intelligently create the TLS connection it needs, as ultimately it's not supposed to - this is way beyond the scope of what Hidden Services are designed to do.</p>
+
+    <h2 id="forwarding-hidden-service-traffic-with-an-apache-reverse-proxy">Forwarding Hidden Service Traffic with an Apache Reverse Proxy</h2>
+    <p>In order to securely forward my Tor Hidden Service traffic to a remote server across the public internet, I set up an Apache reverse proxy to forward requests over HTTPS.</p>
+    <p>This works by having the Hidden Service forward packets to a local web server running on 127.0.0.1, which will then proxy the requests to the remote server natively using the <code>https</code> scheme.</p>
+    <p>In order to set this up for your own Hidden Service, 
     
 </div>
 
