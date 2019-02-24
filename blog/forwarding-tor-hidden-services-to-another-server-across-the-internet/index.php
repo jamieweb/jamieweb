@@ -33,6 +33,32 @@
 &#x2523&#x2501&#x2501 <a href="#forwarding-hidden-service-traffic-with-an-apache-reverse-proxy">Forwarding Hidden Service Traffic with an Apache Reverse Proxy</a>
 &#x2523&#x2501&#x2501 <a href="#alternative-methods">Alternative Methods (Just For Fun)</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
+
+    <h2 id="hidden-service-traffic">Hidden Service Traffic</h2>
+    <p>When configuring a Tor Hidden Service, the <code>HiddenServicePort</code> configuration is used to redirect requests to your Hidden Service on one port to another service running on a different port. The most common configuration is to redirect requests to port 80 to a local web server also running on port 80:</p>
+    <pre>HiddenServiceDir /var/lib/tor/onion_v3/
+HiddenServiceVersion 3
+HiddenServicePort 80 127.0.0.1:80</pre>
+    <p>Alternatively, if you wanted to host SSH behind a Hidden Service, you could use:</p>
+    <pre>HiddenServicePort 22 127.0.0.1:22</pre>
+    <p>The important point to note is that Hidden Services are not protocol aware - they just redirect raw packets. This means that you can freely make Tor redirect the packets wherever you want to, but <b>you</b> are responsible for making sure that it does this securely.</p>
+    <p>The <a href="https://www.torproject.org/docs/onion-services.html.en" target="_blank" rel="noopener">Onion Service Protocol</a> provides confidentiality, anonimity and integrity between Tor clients (users) and Hidden Services, but once the traffic is forwarded by the Hidden Service it is in its raw format.</p>
+    <p>For example, if HTTP traffic on port 80 is forwarded, then it gets forwarded as-is (plaintext HTTP). As drastic as this may sound, it's not normally a problem as most Hidden Services forward traffic to localhost (127.0.0.1), so the unencrypted traffic isn't traversing any insecure networks. As long as the server machine is configured correctly and isn't directly accessible by adversaries, there generally isn't a security problem.</p>
+    <p>However, if you want to forward your Hidden Service traffic to another server across the internet, you will need to provide a layer of security yourself.</p>
+
+    <h2 id="#why-can-t-you-natively-forward-hidden-service-across-over-the-internet">Why can't you natively forward Hidden Service traffic over the internet?</h2>
+    <p>You can if you want... but unless you have added your own extra layer of security (e.g. TLS), it will be completely unencrypted.</p>
+    <p>I looked into this further by setting up a Hidden Service on a test machine, configuring it to forward traffic to one of the public JamieWeb servers (157.230.83.95, which is nyc01.jamieweb.net), and monitoring the network interface with Wireshark.</p>
+    <p>I used the following Hidden Service configuration in <code>/etc/tor/torrc</code>:</p>
+    <pre>HiddenServiceDir /var/lib/tor/onion_v3_test/
+HiddenServiceVersion 3
+HiddenServicePort 80 157.230.83.95:80</pre>
+    <p>I restarted the Tor service with <code>sudo service tor restart</code>, and a new Hidden Service had been successfully created. I started a Wireshark capture, and put the Onion hostname into Tor Browser:</p>
+    <img class="radius-8" src="tor-browser-80-80.png" width="1000px" alt="A screenshot of the Tor Browser showing the response from my JamieWeb server - '403 Forbidden - Direct access to IPv4 address (157.230.83.95) blocked...'">
+    <p>My server blocked the request as the test Hidden Service I had created is not an authorised hostname, however you can see that the request did successfully reach my server (which to clarify, is a completely different machine to where the Hidden Service is running).</p>
+    <p>In the Wireshark packet capture, you can see that this request was sent completely unencrypted between the Hidden Service and the remote server:</p>
+    <img class="radius-8" src="wireshark-80-80.png" width="1000px" alt="A screenshot of a packet capture in Wireshark, showing an unencrypted HTTP GET request being forwarded to the remote JamieWeb server.">
+    
 </div>
 
 <?php include "footer.php" ?>
@@ -40,3 +66,12 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
