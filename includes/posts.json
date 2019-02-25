@@ -1,6 +1,15 @@
 {
     "blog": {
         "2019": {
+            "forwarding-tor-hidden-services-to-another-server-across-the-internet": {
+                "uri": "forwarding-tor-hidden-services-to-another-server-across-the-internet",
+                "navtitle": "Forwarding Tor Hidden Services Across the Internet",
+                "title": "Forwarding Tor Hidden Services to Another Server Across the Internet",
+                "longdesc": "Using a reverse HTTP proxy to forward Tor Hidden Services across the internet to another server.",
+                "date": "Tuesday 26th February 2019",
+                "tags": "Security,Tor,Apache",
+                "snippet": "I recently re-deployed my entire infrastructure onto two new servers using Ansible, and as part of this I wanted to remove all stored secrets from my public-facing web servers.</p><p>Let's Encrypt certificates were no problem as they are generated on the server and can be easily replaced if needed, and I removed the need for an SSH private key for Git by just using the public repo over HTTPS.</p><p>The only secrets that posed a challenge were my Tor Hidden Service private keys, both for <a href=\"/blog/onionv3-vanity-address/\" target=\"_blank\">Onion v3</a> and the historic <a href=\"/blog/tor-hidden-service/\" target=\"_blank\">Onion v2</a>. The impact of one of these keys breaching would be very high, since the associated hostnames are already widely known and indexed. Because of this, it would absolutely not be appropriate to store them in my Ansible playbooks Git repository, nor would it be ideal to store them locally on my Ansible control machine.</p><p>One option would be to manually upload them whenever I deployed a new server, however this goes against the complete automation that I am achieving with Ansible. Instead, I decided to not run Tor on my public web server fleet at all, and instead host the Hidden Services elsewhere, with traffic forwarded to the web server fleet securely over the internet with an Apache reverse HTTP proxy."
+            },
             "taking-content-security-policy-to-the-extreme-policies-on-a-per-page-basis": {
                 "uri": "taking-content-security-policy-to-the-extreme-policies-on-a-per-page-basis",
                 "navtitle": "Extreme Content Security Policies",
