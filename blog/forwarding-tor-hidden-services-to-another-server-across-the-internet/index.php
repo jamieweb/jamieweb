@@ -20,6 +20,14 @@
     <h1>Forwarding Tor Hidden Services to Another Server Across the Internet</h1>
     <hr>
     <p><b>Tuesday 26th February 2019</b></p>
+    <div class="message-box message-box-positive">
+        <div class="message-box-heading">
+            <h3 id="disclaimer"><u>Skip to Solution...</u></h3>
+        </div>
+        <div class="message-box-body">
+            <p>If you just want to skip to the solution, please <a href="#forwarding-hidden-service-traffic-with-an-apache-reverse-proxy">click here</a>. If you'd like to hear about some of the story and investigation behind this, please read on...</p>
+        </div>
+    </div>
     <p>I recently re-deployed my entire infrastructure onto two new servers using Ansible, and as part of this I wanted to remove all stored secrets from my public-facing web servers.</p>
     <p>Let's Encrypt certificates were no problem as they are generated on the server and can be easily replaced if needed, and I removed the need for an SSH private key for Git by just using the public repo over HTTPS.</p>
     <p>The only secrets that posed a challenge were my Tor Hidden Service private keys, both for <a href="/blog/onionv3-vanity-address/" target="_blank">Onion v3</a> and the historic <a href="/blog/tor-hidden-service/" target="_blank">Onion v2</a>. The impact of one of these keys breaching would be very high, since the associated hostnames are already widely known and indexed. Because of this, it would absolutely not be appropriate to store them in my Ansible playbooks Git repository, nor would it be ideal to store them locally on my Ansible control machine.</p>
@@ -40,7 +48,7 @@ HiddenServicePort 80 127.0.0.1:80</pre>
     <p>Alternatively, if you wanted to host SSH behind a Hidden Service, you could use:</p>
     <pre>HiddenServicePort 22 127.0.0.1:22</pre>
     <p>The important point to note is that Hidden Services are not protocol-aware - they just redirect raw packets. This means that you can freely make Tor redirect the packets wherever you want to, but <b>you</b> are responsible for making sure that it does this securely.</p>
-    <p>The <a href="https://www.torproject.org/docs/onion-services.html.en" target="_blank" rel="noopener">Onion Service Protocol</a> provides confidentiality, anonimity and integrity between Tor clients (users) and Hidden Services, but once the traffic is forwarded by the Hidden Service it is in its raw format.</p>
+    <p>The <a href="https://www.torproject.org/docs/onion-services.html.en" target="_blank" rel="noopener">Onion Service Protocol</a> provides confidentiality, anonymity and integrity between Tor clients (users) and Hidden Services, but once the traffic is forwarded by the Hidden Service it is in its raw format.</p>
     <p>For example, if HTTP traffic on port 80 is forwarded, then it gets forwarded as-is (plaintext HTTP). As drastic as this may sound, it's not normally a problem as most Hidden Services forward traffic to localhost (127.0.0.1), so the unencrypted traffic isn't traversing any insecure networks. As long as the server machine is configured correctly and isn't directly accessible by adversaries, there generally isn't a security problem.</p>
     <p>However, if you want to forward your Hidden Service traffic to another server across the internet, you will need to provide a layer of security yourself.</p>
 
@@ -66,8 +74,14 @@ HiddenServicePort 80 157.230.83.95:80</pre>
     <h2 id="forwarding-hidden-service-traffic-with-an-apache-reverse-proxy">Forwarding Hidden Service Traffic with an Apache Reverse Proxy</h2>
     <p>In order to securely forward my Tor Hidden Service traffic to a remote server across the public internet, I set up an Apache reverse proxy to forward requests over HTTPS.</p>
     <p>This works by having the Hidden Service forward packets to a local web server running on 127.0.0.1, which will then proxy the requests to the remote server natively using HTTPS.</p>
-    <h3 id="disclaimer">Warning:</h3>
-    <p><b>If your anonymity as a Tor Hidden Server operator is important, do not use this method! It has a high chance of deanonymizing your Hidden Service traffic since it is forwarded over the public internet to a separate server.</b></p>
+    <div class="message-box message-box-warning">
+        <div class="message-box-heading">
+            <h3 id="disclaimer"><u>Warning!</u></h3>
+        </div>
+        <div class="message-box-body">
+            <p>If your anonymity as a Tor Hidden Service operator is important, do not use this method! It has a high chance of deanonymizing your Hidden Service, as the traffic from it will be forwarded over the public internet to a separate server.</p>
+        </div>
+    </div>
     <p>In order to set this up for your own Hidden Service, you will need to create a new Virtual Host. On Debian-based systems, you can create a new file in the <code>/etc/apache2/sites-available</code> directory named something applicable like <code>tor-forward.conf</code>, and add the following configuration to the file:</p>
     <pre>&lt;VirtualHost 127.0.0.1:80&gt;
     SSLProxyEngine On
@@ -78,7 +92,7 @@ HiddenServicePort 80 157.230.83.95:80</pre>
     <p>This configuration will forward requests to <code>127.0.0.1:80</code> on to the remote server specified over HTTPS.</p>
     <ul class="spaced-list">
         <li><code>SSLProxyEngine On</code> allows <code>mod_proxy</code> to use HTTPS, and requires <code>mod_ssl</code> to be enabled.</li>
-        <li><code>ProxyRequests Off</code> prevents your Apache server being used as a forward proxy server, which prevents unauthorised people connecting and using your machine as a front for their nerfarious activity.</li>
+        <li><code>ProxyRequests Off</code> prevents your Apache server being used as a forward proxy server, which prevents unauthorised people connecting and using your machine as a front for their nefarious activity.</li>
         <li><code>ProxyPass</code> passes requests to the first argument (<code>"/"</code> in this case, which is essentially every request) through to the the second argument (which in this case, will the public-facing address of your remote web server).</li>
         <li><code>ProxyPassReverse</code> allows Apache to rewrite the <code>Location</code>, <code>Content-Location</code> and <code>URI</code> headers in HTTP redirects, to ensure that they continue working properly and do not accidentally redirect out of the reverse proxy setup.</li>
     </ul>
@@ -88,7 +102,7 @@ HiddenServicePort 80 157.230.83.95:80</pre>
     <p>On Debian-based systems, you can do this with <code>sudo a2enmod module_name</code>. Once this is done, you can also enable the new Virtual Host with <code>sudo a2ensite tor-forward.conf</code> (or whatever you named the Virtual Host file).</p>
     <p>Then, test your Apache config with <code>apachectl configtest</code>, and restart the Apache server with <code>sudo service apache2 restart</code>.</p>
     <p>Now when you make a request to the web server and hit the Virtual Host that you created, the response should be from the remote server specified in your configuration.</p>
-    <p>If everything works as expected, you can update your Tor Hidden Serivce configuration in <code>/etc/tor/torrc</code> to set <code>HiddenServicePort</code> to <code>80 127.0.0.1:80</code> (or whichever IP/port you used), and then restart Tor with <code>sudo service tor restart</code>.</p>
+    <p>If everything works as expected, you can update your Tor Hidden Service configuration in <code>/etc/tor/torrc</code> to set <code>HiddenServicePort</code> to <code>80 127.0.0.1:80</code> (or whichever IP/port you used), and then restart Tor with <code>sudo service tor restart</code>.</p>
     <p>Connecting to the Hidden Service will now result in Apache establishing a TLS connection with the remote server and proxying the request through:</p>
     <img class="radius-8" src="wireshark-80-reverse-proxy-tls-1-2.png" width="1000px" alt="A screenshot of a packet capture in Wireshark, showing a TLS 1.2 connection being established between the Apache reverse proxy and remote server.">
     <p>Tracing the TCP stream shows the TLS handshake taking place:</p>
@@ -108,7 +122,7 @@ HiddenServicePort 80 157.230.83.95:80</pre>
     <h4><code>AH00961: HTTPS: failed to enable ssl support</code>:</h4>
     <p>Ensure that the <code>SSLProxyEngine</code> configuration is enabled for the relevant Virtual Host.</p>
     <h4><code>AH00898: DNS lookup failure</code>:</h4>
-    <p>Ensure that you used trailing slashes in the <code>ProxyPass</code> and <code>proxyPassReverse</code> directives.</p>
+    <p>Ensure that you used trailing slashes in the <code>ProxyPass</code> and <code>ProxyPassReverse</code> directives.</p>
 
     <h2 id="conclusion">Conclusion</h2>
     <p>This setup isn't ideal for some use cases, but for me it has allowed me to vastly improve the resilience and disaster recovery time of my infrastructure, without posing an undue risk to my Hidden Service private keys.</p>

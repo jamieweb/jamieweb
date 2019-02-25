@@ -22,7 +22,7 @@
     <p>My website <a href="/" target="_blank">jamieweb.net</a> has a highly targeted audience of cyber security professionals, software developers, privacy enthusiasts and reverse engineers. A sponsorship provides the opportunity for you to promote your brand or product directly to between 4,000 and 5,000 unique human visitors per month.</p>
 
     <h2 id="pricing">Pricing</h2>
-    <p>One month of sponsorship currently costs <b>$50 US</b>, however this is up for negotiation.</p>
+    <p>One month of sponsorship currently costs <b>$25 US</b>, however this is up for negotiation.</p>
     <p>If you wish to sponsor me for multiple months, there will be a discount. I can accept the following payment methods:</p>
     <ul>
         <li>UK bank transfer</li>
