@@ -226,7 +226,7 @@ $ sudo cp doc/ncdns.conf.example /etc/ncdns/ncdns.conf</pre>
     <pre>namecoinrpccookiepath="/path/to/authentication/cookie"</pre>
     <p>You may need to adjust the permissions of the .cookie file in order to allow ncdns to read it.</p>
     <p>You can then run ncdns. I recommend using screen or another terminal session in order to run ncdns, as it does not run in the background by default. The command below will start a detached screen session with ncdns running inside it. To resume the screen session, use "screen -r":</p>
-    <p>$ screen -dmS ncdns ./ncdns
+    <pre>$ screen -dmS ncdns ./ncdns</pre>
     <p>Then check that ncdns is working using dig. Keep in mind that if your new .bit domain has not yet been properly configured, ncdns will not return anything for it:</p>
     <pre>$ dig @127.0.0.1 -p 1025 jamieweb.bit
 
