@@ -5,6 +5,14 @@ function filter_stat($stat) {
     return(substr(filter_var($stat, FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH), 0, 21));
 }
 
+function checkLow($stat, $threshold, $name) {
+    if($stat > $threshold) {
+        return($stat);
+    } else {
+        return($stat . "<!--" . $name . " seems low. An alert has been sent to Jamie.-->");
+    }
+}
+
 foreach(array("master", "node1", "node2", "node3", "node4") as $stats) {
     $$stats = array_map("filter_stat", file("computing-stats/stats/" . $stats . ".txt", FILE_USE_INCLUDE_PATH | FILE_IGNORE_NEW_LINES));
     if($$stats[0] > 99.9) {
@@ -97,13 +105,13 @@ if(!($statusMsg)) {
         <div class="computing-stats-half-width">
             <h1 class="info">Rosetta@Home Stats</h1>
             <p class="info">Total Earned Credits: <b><?php echo $master[4]; ?></b></p>
-            <p class="info">Recent Average Credit: <b><?php echo $master[5]; ?></b></p>
+            <p class="info">Recent Average Credit: <b><?php echo checkLow($master[5], 100, "Rosetta@Home RAC"); ?></b></p>
             <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2016-11-07'))->format("%a"); ?> days</b></p>
         </div>
         <div>
             <h1 class="info">Einstein@Home Stats</h1>
             <p class="info">Total Earned Credits: <b><?php echo $master[6]; ?></b></p>
-            <p class="info">Recent Average Credit: <b><?php echo $master[7]; ?></b></p>
+            <p class="info">Recent Average Credit: <b><?php echo checkLow($master[7], 400, "Einstein@Home RAC"); ?></b></p>
             <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2015-10-04'))->format("%a"); ?> days</b></p>
         </div>
         <div>
