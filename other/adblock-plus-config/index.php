@@ -1,2 +1,2 @@
-<?php header("HTTP/1.1 301 Moved Permanently");
+<?php http_response_code(301);
 header("Location: /info/adblock-plus-config/"); ?>

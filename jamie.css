@@ -732,7 +732,7 @@ ul.footer-list h4 {
     margin: 0 0 7px 0;
 }
 
-ul.spaced-list li {
+ul.spaced-list li,ol.spaced-list li {
     margin-bottom: 7px;
 }
 

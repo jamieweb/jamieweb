@@ -72,11 +72,11 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/info/chromium-team-updated-packages-for-ubuntu/"><img src="/images/fontawesome/box-open.svg"></a>
+            <a href="/info/up-to-date-chromium-browser-on-ubuntu/"><img src="/images/fontawesome/box-open.svg"></a>
         </div>
         <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/info/chromium-team-updated-packages-for-ubuntu/">Updated Chromium Browser Packages for Ubuntu</a></h3>
-            <p class="two-mar-top"><b>How to get more up-to-date chromium-browser packages on Ubuntu.</b></p>
+            <h3 class="no-mar-bottom"><a href="/info/up-to-date-chromium-browser-on-ubuntu/">Up-to-date Chromium Browser on Ubuntu</a></h3>
+            <p class="two-mar-top"><b>How to run an up-to-date Chromium browser on Ubuntu using the Chromium Snap.</b></p>
         </div>
     </div>
     <div class="iconparent">
