@@ -53,4 +53,3 @@
         </ul>
     </div>
 </nav>
-<?php include "message-bar.php" ?>
