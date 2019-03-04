@@ -9,7 +9,7 @@
     <title>Up-to-date Chromium Browser on Ubuntu</title>
     <meta name="description" content="How to run an up-to-date Chromium browser on Ubuntu using the Chromium Snap.">
     <?php include "head.php" ?>
-    <link href="https://www.jamieweb.net/info/up-to-date-chromium-browser-for-ubuntu/" rel="canonical">
+    <link href="https://www.jamieweb.net/info/up-to-date-chromium-browser-on-ubuntu/" rel="canonical">
 </head>
 
 <body>
