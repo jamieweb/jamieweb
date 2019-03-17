@@ -63,14 +63,6 @@
     <p>All content found here that has no attribution is believed to be in the public domain.</p>
     <p>If you are the rightful owner of any of the content on this site, and you do not want it to be displayed or you require suitable credit, then please contact me and I will do whatever is needed either for the content to be removed or to provide credit where it is due.</p>
     <p>Although I do my best to verify its legitimacy, I am not responsible for any of the content/downloads on external sites that are linked here.</p>
-
-    <hr>
-    <h1 id="donate">Donations</h1>
-    <pre>Bitcoin:  <b>1Jamie</b>PmmYMSHnmtnPvF2eyD1hmdGA1NqF - <a href="https://blockchain.info/address/1JamiePmmYMSHnmtnPvF2eyD1hmdGA1NqF" target="_blank" rel="noopener">blockchain.info</a>
-Litecoin: <b>LXDE</b>bJAzqeUPy2piNq3YtZfNeTrvSo76Mp - <a href="https://live.blockcypher.com/ltc/address/LXDEbJAzqeUPy2piNq3YtZfNeTrvSo76Mp/" target="_blank" rel="noopener">blockcypher.com</a>
-Dogecoin: <b>DDoS</b>rqbJR33uEJkQQJAh8KWf7pSC22RWNh - <a href="https://dogechain.info/address/DDoSrqbJR33uEJkQQJAh8KWf7pSC22RWNh" target="_blank" rel="noopener">dogechain.info</a>
-Ethereum: <b>0xf055</b>ff96316de48769ffe664d04f66dad534a581 - <a href="https://etherchain.org/account/0xf055ff96316de48769ffe664d04f66dad534a581" target="_blank" rel="noopener">etherchain.org</a></pre>
-    <p>Thank you!</p>
 </div>
 
 <?php include "footer.php" ?>
