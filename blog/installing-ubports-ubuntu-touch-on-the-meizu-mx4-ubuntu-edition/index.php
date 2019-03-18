@@ -54,6 +54,8 @@
     <p>After you've done this, the installation should begin properly. However, on some Meizu devices you will run into the <code>FAILED (remote: unknown command)</code> error. If this is the case, then this is a known bug. The temporary fix involves making a minor code change and recompiling ubports-installer - I have documented the entire process <a href="#fixing-the-failed-remote-unknown-command-error">below</a>.</p>
     <p>If your installation is working successfully, you'll see the following screen:</p>
     <img class="radius-8" src="ubports-installer-5-pushing-files-to-device.png" width="1000px" alt="A screenshot of the UBports installer application, showing the installation running successfully with a 'Pushing files to device...' notice.">
+    <p>Installation takes around 5 minutes, and then there is another stage of installation that takes place on the phone itself. This also takes around 5 minutes.</p>
+    <p>Your phone will reboot, and you can begin using Ubuntu Touch!</p>
 
     <h2 id="fixing-the-failed-remote-unknown-command-error">Fixing the <code>FAILED (remote: unknown command)</code> Error</h2>
     <h2 id="using-ubuntu-touch-on-the-meizu-mx4-in-2019">Using Ubuntu Touch on the Meizu MX4 in 2019</h2>
