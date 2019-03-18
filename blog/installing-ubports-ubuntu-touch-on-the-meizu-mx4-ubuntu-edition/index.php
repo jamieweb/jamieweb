@@ -42,6 +42,18 @@
     </div>
     <p>The official method for installing Ubuntu Touch is using the ubports-installer application, which can be installed from the <a href="https://snapcraft.io/ubports-installer" target="_blank" rel="noopener">Snap Store</a>:</p>
     <pre>$ snap install ubports-installer</pre>
+    <p>I recommend running ubports-installer using the <code>ubports-installer</code> command, rather than using the desktop/menu shortcut, as seeing the verbose log output can be very useful for debugging errors and ensuring that everything is working properly.</p>
+    <img class="radius-8" src="ubports-installer-1-welcome-screen.png" width="1000px" alt="A screenshot of the UBports installer application, showing the main welcome screen.">
+    <p>The welcome screen will try to auto-detect your phone if it is plugged in. For me, this unfortunately didn't work, so I selected it manually.</p>
+    <p>Then, you can select your desired installation options:</p>
+    <img class="radius-8" src="ubports-installer-2-select-install-options.png" width="1000px" alt="A screenshot of the UBports installer application, showing my phone selected and the 'Install Options' menu.">
+    <p>The latest version at the time of writing is Ubuntu Touch 16.04.</p>
+    <img class="radius-8" src="ubports-installer-3-ready-to-install.png" width="1000px" alt="A screenshot of the UBports installer application, showing the installation confirmation screen.">
+    <p>Then, you'll need to put your phone in Fastboot mode, by holding down the power and volume down buttons while your device is in a powered-off state. You may have to hold them for a while, as in some cases it can take up to 30 seconds. This also doesn't seem to work reliably while your device is plugged in via USB, so I suggest temporarily disconnecting it while you do this.</p>
+    <img class="radius-8" src="ubports-installer-4-please-reboot-to-bootloader.png" width="1000px" alt="A screenshot of the UBports installer application, asking the user to reboot their phone into the bootloader, with a static graphic demonstrating how to do this.">
+    <p>After you've done this, the installation should begin properly. However, on some Meizu devices you will run into the <code>FAILED (remote: unknown command)</code> error. If this is the case, then this is a known bug. The temporary fix involves making a minor code change and recompiling ubports-installer - I have documented the entire process <a href="#fixing-the-failed-remote-unknown-command-error">below</a>.</p>
+    <p>If your installation is working successfully, you'll see the following screen:</p>
+    <img class="radius-8" src="ubports-installer-5-pushing-files-to-device.png" width="1000px" alt="A screenshot of the UBports installer application, showing the installation running successfully with a 'Pushing files to device...' notice.">
 
     <h2 id="fixing-the-failed-remote-unknown-command-error">Fixing the <code>FAILED (remote: unknown command)</code> Error</h2>
     <h2 id="using-ubuntu-touch-on-the-meizu-mx4-in-2019">Using Ubuntu Touch on the Meizu MX4 in 2019</h2>
