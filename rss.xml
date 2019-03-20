@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Installing UBports Ubuntu Touch on the Meizu MX4 Ubuntu Edition</title>
+        <link>https://www.jamieweb.net/blog/installing-ubports-ubuntu-touch-on-the-meizu-mx4-ubuntu-edition/</link>
+        <description>Installing UBports Ubuntu Touch on the original Meizu MX4 Ubuntu Edition using ubports-installer.</description>
+        <category>Blog</category>
+        <pubDate>Thu, 21 Mar 2019</pubDate>
+    </item>
+    <item>
         <title>Forwarding Tor Hidden Services to Another Server Across the Internet</title>
         <link>https://www.jamieweb.net/blog/forwarding-tor-hidden-services-to-another-server-across-the-internet/</link>
         <description>Using a reverse HTTP proxy to forward Tor Hidden Services across the internet to another server.</description>

@@ -19,17 +19,20 @@
 <div class="body">
     <h1>Installing UBports Ubuntu Touch on the Meizu MX4 Ubuntu Edition</h1>
     <hr>
-    <p><b>Monday 18th March 2019</b></p>
+    <p><b>Thursday 21st March 2019</b></p>
     <p>I recently decided to switch back to using my Meizu MX4 Ubuntu Edition that I originally purchased in 2015 (<a href="/blog/ubuntu-phone-review" target="_blank" rel="noopener">which is what the first article on this blog was about</a>).</p>
     <p>Unfortunately, Canonical decided to end development of Ubuntu Touch due to a lack of market interest, but luckily the <a href="https://ubports.com/" target="_blank" rel="noopener">UBports</a> community took over development, and are running the project successfully to this day as the <a href="https://ubports.com/foundation/ubports-foundation" target="_blank" rel="noopener">UBports Foundation</a>.</p>
+    <div class="centertext">
+        <img class="max-width-100-percent-on-small padding-bottom-30-on-small" width="495px" src="ut-lock-screen.png">
+        <img class="max-width-100-percent-on-small" width="495px" src="ut-home-screen.png">
+    </div>
     <p>In this article, I have documented the installation process using the ubports-installer application, and included a manual bug fix that is currently required for installation on some MX4 phones. This fix was kindly put together by <a href="https://forums.ubports.com/user/alainw94" target="_blank" rel="noopener">AlainW94</a> on the UBports forum, and documented here with their permission.</p>
     <p><b>Skip to Section:</b></p>
     <pre><b>Installing UBports Ubuntu Touch on the Meizu MX4 Ubuntu Edition</b>
 &#x2523&#x2501&#x2501 <a href="#standard-installation-procedure">Standard Installation Procedure</a>
 &#x2523&#x2501&#x2501 <a href="#fixing-the-failed-remote-unknown-command-error">Fixing the <code>FAILED (remote: unknown command)</code> Error</a>
 &#x2523&#x2501&#x2501 <a href="#using-ubuntu-touch-on-the-meizu-mx4-in-2019">Using Ubuntu Touch on the Meizu MX4 in 2019</a>
-&#x2523&#x2501&#x2501 <a href="#things-i-d-like-to-see">Things I'd Like to See</a>
-&#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
+&#x2517&#x2501&#x2501 <a href="#things-i-d-like-to-see">Things I'd Like to See</a></pre>
 
     <h2 id="standard-installation-procedure">Standard Installation Procedure</h2>
     <div class="message-box message-box-notice">
@@ -71,7 +74,7 @@ OKAY [  0.702s]
 booting...
 FAILED (remote: unknown command)
 finished. total time: 0.716s</pre>
-    <p>Unfortunately the error handling in ubports-installer doesn't allow you to bypass this error by manually rebooting into recovery mode. The solution is to manually remove the error handling code and recompile the application.</p>
+    <p>Unfortunately the error handling in ubports-installer doesn't allow you to bypass this error by manually rebooting into recovery mode. As a temporary fix, you can manually remove the offending error handling code and recompile the application.</p>
     <div class="message-box message-box-positive">
         <div class="message-box-heading">
             <h3><u>Thank You to AlainW94 on the UBports Forum</u></h3>
@@ -82,7 +85,7 @@ finished. total time: 0.716s</pre>
     </div>
     <p>In order to implement the workaround, you'll need to download a copy of the ubports-installer source code:</p>
     <pre>$ git clone https://github.com/ubports/ubports-installer.git</pre>
-    <p><code>cd</code> into the downloaded directory, and open the <code>src/devices.js</code> in your text editor.</p>
+    <p><code>cd</code> into the downloaded repository, and open the <code>src/devices.js</code> in your text editor.</p>
     <p>Next, scroll down to the following section:</p>
     <pre>                 // If we can't find it, report error!
                   if (!recoveryImg){
@@ -118,10 +121,22 @@ finished. total time: 0.716s</pre>
     <p>This is of course not a perfect solution, as anything that involves bypassing error handling code is generally a bad idea, but as a temporary solution is does the job.</p>
 
     <h2 id="using-ubuntu-touch-on-the-meizu-mx4-in-2019">Using Ubuntu Touch on the Meizu MX4 in 2019</h2>
-    <p></p>
+    <p>On my Meizu MX4, Ubuntu Touch performs well, and the battery lasts a long time. The OS has all of the features required for general smartphone usage, especially the way that many technical/security-oriented people use their phone. However, if you are a big social media/app user, then you may have issues due to the lack of official apps for most platforms.</p>
+    <p>Ubuntu Touch is ideal for privacy and security conscious users, as well as those who like the convenience of having a fully capable native Linux device in their pocket. The fact that there is a native and unrestricted Linux terminal is also brilliant!</p>
+    <div class="centertext">
+        <img class="max-width-100-percent-on-small padding-bottom-30-on-small" width="495px" src="ut-file-explorer.png">
+        <img class="max-width-100-percent-on-small" width="495px" src="ut-terminal.png">
+    </div>
 
     <h2 id="things-i-d-like-to-see">Things I'd Like to See</h2>
-    <h2 id="conclusion">Conclusion</h2>
+    <p>There are a few things that I'd really like to see in Ubuntu Touch, so I thought I'd document them here:</p>
+    <ul class="spaced-list">
+        <li>Ability to use the phone without physical buttons (e.g. tap/swipe to wake, lock with on-screen button) - this is to preserve the physical buttons, which tend to be the first things to break on phones after a lot of use</li>
+        <li>Auto power-on and auto power-off</li>
+        <li>Quick access to the camera from the lock screen</li>
+        <li>Support for a 6 digit unlock code, rather than 4</li>
+        <li>More accessibility features</li>
+    </ul>
 </div>
 
 <?php include "footer.php" ?>

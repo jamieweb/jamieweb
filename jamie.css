@@ -30,7 +30,7 @@
     div.flex-direction-column-reverse-on-small {
         flex-direction: column-reverse;
     }
-    div.padding-bottom-30-on-small {
+    .padding-bottom-30-on-small {
         padding-bottom: 30px;
     }
     .max-width-100-percent-on-small {
@@ -522,6 +522,10 @@ div.message-box-positive {
 
 div.message-box-warning {
     background-color: #c25454;
+}
+
+div.message-box-notice {
+    background-color: grey;
 }
 
 pre {
