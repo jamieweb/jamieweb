@@ -40,7 +40,7 @@
             <h3><u>Notice:</u></h3>
         </div>
         <div class="message-box-body">
-            <p>There is currently a bug in ubports-installer affecting some Meizu devices, preventing the installation from suceeding. It may be worth <a href="#fixing-the-failed-remote-unknown-command-error">reading ahead</a> so you know what to look out for. The fix involves making a manual code change and recompiling the application.</p>
+            <p>There is currently a bug in ubports-installer affecting some Meizu devices, preventing the installation from succeeding. It may be worth <a href="#fixing-the-failed-remote-unknown-command-error">reading ahead</a> so you know what to look out for. The fix involves making a manual code change and recompiling the application.</p>
         </div>
     </div>
     <p>The official method for installing Ubuntu Touch is using the ubports-installer application, which can be installed from the <a href="https://snapcraft.io/ubports-installer" target="_blank" rel="noopener">Snap Store</a>:</p>
@@ -89,7 +89,7 @@ finished. total time: 0.716s</pre>
     <p>Next, scroll down to the following section:</p>
     <pre>                 // If we can't find it, report error!
                   if (!recoveryImg){
-                    bootstrapEvent.emit("error", "Cant find recoveryImg to boot: "+images);
+                    bootstrapEvent.emit("error", "Cannot find recoveryImg to boot: "+images);
                   }else {
                     fastboot.boot(recoveryImg, p, (err, errM) => {
                       if (err) {
@@ -103,7 +103,7 @@ finished. total time: 0.716s</pre>
     <p>Then, comment out the error handling code, and replace it with the contents of the corresponding <code>else</code> condition. I've marked the modified lines below with <code>**</code>:</p>
     <pre>                 // If we can't find it, report error!
                   if (!recoveryImg){
-                    bootstrapEvent.emit("error", "Cant find recoveryImg to boot: "+images);
+                    bootstrapEvent.emit("error", "Cannot find recoveryImg to boot: "+images);
                   }else {
                     fastboot.boot(recoveryImg, p, (err, errM) => {
                       if (err) {
@@ -115,7 +115,7 @@ finished. total time: 0.716s</pre>
                         bootstrapEvent.emit("bootstrap:done", fastbootboot);
                     })
                   }</pre>
-    <p>Once you've saved this change, you need to compile the application. To do this on Ubuntu 18.04, you'll need the <code>npm</code> and <code>libgconf2-4</code> packages. You can also just run <code>setup-dev.sh</code> which should setup your build environment for you.</p>
+    <p>Once you've saved this change, you need to compile the application. To do this on Ubuntu 18.04, you'll need the <code>npm</code> and <code>libgconf2-4</code> packages. You can also just run <code>setup-dev.sh</code> which should set up your build environment for you.</p>
     <p>Next, run <code>npm run-script dist:linux</code> (or <code>dist:mac</code>/<code>dist:win</code>, for whichever your platform is).</p>
     <p>Finally, you can run the application with <code>npm start</code>. Now, ubports-installer will bypass errors at the point where the phone is required to be booted into recovery mode. This should allow you to proceed with the installation by manually putting your phone into recovery (hold power + volume up) when it prompts you to.</p>
     <p>This is of course not a perfect solution, as anything that involves bypassing error handling code is generally a bad idea, but as a temporary solution is does the job.</p>
