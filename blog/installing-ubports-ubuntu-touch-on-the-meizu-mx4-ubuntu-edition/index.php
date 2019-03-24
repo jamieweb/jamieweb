@@ -21,7 +21,7 @@
     <hr>
     <p><b>Thursday 21st March 2019</b></p>
     <p>I recently decided to switch back to using my Meizu MX4 Ubuntu Edition that I originally purchased in 2015 (<a href="/blog/ubuntu-phone-review/" target="_blank" rel="noopener">which is what the first article on this blog was about</a>).</p>
-    <p>Unfortunately, Canonical decided to end development of Ubuntu Touch due to a lack of market interest, but luckily the <a href="https://ubports.com/" target="_blank" rel="noopener">UBports</a> community took over development, and are running the project successfully to this day as the <a href="https://ubports.com/foundation/ubports-foundation" target="_blank" rel="noopener">UBports Foundation</a>.</p>
+    <p>Unfortunately, Canonical decided to end development of Ubuntu Touch due to a lack of market interest, but luckily the <a href="https://ubports.com/" target="_blank" rel="noopener">UBports</a> community took over development, and are running the project successfully to this day as the (soon to be at the time of writing) <a href="https://ubports.com/foundation/ubports-foundation" target="_blank" rel="noopener">UBports Foundation</a>.</p>
     <div class="centertext">
         <img class="max-width-100-percent-on-small padding-bottom-30-on-small" width="495px" src="ut-lock-screen.png">
         <img class="max-width-100-percent-on-small" width="495px" src="ut-home-screen.png">
@@ -45,6 +45,7 @@
     </div>
     <p>The official method for installing Ubuntu Touch is using the ubports-installer application, which can be installed from the <a href="https://snapcraft.io/ubports-installer" target="_blank" rel="noopener">Snap Store</a>:</p>
     <pre>$ snap install ubports-installer</pre>
+    <p>Other installation methods are also available, if you'd prefer. Please see the repository on GitHub: <a href="https://github.com/ubports/ubports-installer" target="_blank" rel="noopener">https://github.com/ubports/ubports-installer</a></p>
     <p>I recommend running ubports-installer using the <code>ubports-installer</code> command, rather than using the desktop/menu shortcut, as seeing the verbose log output can be very useful for debugging errors and ensuring that everything is working properly.</p>
     <img class="radius-8" src="ubports-installer-1-welcome-screen.png" width="1000px" alt="A screenshot of the UBports installer application, showing the main welcome screen.">
     <p>The welcome screen will try to auto-detect your phone if it is plugged in. For me, this unfortunately didn't work, so I selected it manually.</p>
