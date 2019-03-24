@@ -54,7 +54,7 @@ Access Denied
 Enter Password (or q to quit): Pa$$w0rd
 Access Denied
 Enter Password (or q to quit): q</pre>
-    <p>In this third and final part of the series, we will solve the crackme using Cutter and some other tools. <b>If you'd like to have a go yourself first,</b> it is available on GitLab <a href="https://gitlab.com/jamieweb/crackme-challenge" target="_blank" rel="noopener">here</a>.</p>
+    <p>In this third and final part of the series, we will solve the crackme using Cutter and some other tools. <b>If you'd like to have a go yourself first,</b> it is available on GitLab <a href="https://github.com/jamieweb/crackme-challenge" target="_blank" rel="noopener">here</a>.</p>
     <p>It is a beginner difficulty crackme, and most of the knowledge needed to solve it is present in the first two parts of the series (<a href="/blog/radare2-cutter-part-1-key-terminology-and-overview/" target="_blank">1</a>, <a href="/blog/radare2-cutter-part-2-analysing-a-basic-program/" target="_blank">2</a>).</p>
     <p><b>Please note that the <code>source.cpp</code> file is not obfuscated, so looking at it will potentially reveal the solution.</b> For the best experience, compile the code without looking at the source file. Obviously running untrusted code from the internet goes against every security best-practice out there, so either use a dedicated and segregated malware analysis machine, or ask a trusted friend to check the code first.</p>
 
