@@ -20,7 +20,7 @@
     <h1>Installing UBports Ubuntu Touch on the Meizu MX4 Ubuntu Edition</h1>
     <hr>
     <p><b>Thursday 21st March 2019</b></p>
-    <p>I recently decided to switch back to using my Meizu MX4 Ubuntu Edition that I originally purchased in 2015 (<a href="/blog/ubuntu-phone-review" target="_blank" rel="noopener">which is what the first article on this blog was about</a>).</p>
+    <p>I recently decided to switch back to using my Meizu MX4 Ubuntu Edition that I originally purchased in 2015 (<a href="/blog/ubuntu-phone-review/" target="_blank" rel="noopener">which is what the first article on this blog was about</a>).</p>
     <p>Unfortunately, Canonical decided to end development of Ubuntu Touch due to a lack of market interest, but luckily the <a href="https://ubports.com/" target="_blank" rel="noopener">UBports</a> community took over development, and are running the project successfully to this day as the <a href="https://ubports.com/foundation/ubports-foundation" target="_blank" rel="noopener">UBports Foundation</a>.</p>
     <div class="centertext">
         <img class="max-width-100-percent-on-small padding-bottom-30-on-small" width="495px" src="ut-lock-screen.png">

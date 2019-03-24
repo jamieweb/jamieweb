@@ -52,7 +52,7 @@
     <h2>Why are there so many steps to draw one pixel?</h2>
     <p>I decided to have separate commands for selecting the coordinates and colour in order to allow people to either collaborate or conflict with eachother. This is similar to how it worked on r/place, however in my implementation, people can fight over where to place the pixel as well.</p>
     <h2>How does it work?</h2>
-    <p>For technical details, please see the <a href="/blog/irc-drawing-bot/" target="_blank">associated blog post</a>, and view the <a href="https://github.com/JamieOnUbuntu/irc-drawing-bot/" target="_blank" rel="noopener">project on GitHub</a>. Thank you!</p>
+    <p>For technical details, please see the <a href="/blog/irc-drawing-bot/" target="_blank">associated blog post</a>, and view the <a href="https://github.com/jamieweb/irc-drawing-bot/" target="_blank" rel="noopener">project on GitHub</a>. Thank you!</p>
 </div>
 
 <?php include "footer.php" ?>
