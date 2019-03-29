@@ -1,4 +1,5 @@
-<?php include "response-headers.php"; content_security_policy(); ?>
+<?php include "response-headers.php"; content_security_policy();
+include_once "bloglist.php"; bloglist("postInfo", null, null, 2019); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +7,10 @@
 <!--Legal Information at https://www.jamieweb.net/contact-->
 
 <head>
-    <title>Installing UBports Ubuntu Touch on the Meizu MX4 Ubuntu Edition</title>
-    <meta name="description" content="Installing UBports Ubuntu Touch on the original Meizu MX4 Ubuntu Edition using ubports-installer.">
+    <title><?php echo $postInfo->title; ?></title>
+    <meta name="description" content="<?php echo $postInfo->longdesc; ?>">
     <?php include "head.php" ?>
-    <link href="https://www.jamieweb.net/blog/installing-ubports-ubuntu-touch-on-the-meizu-mx4-ubuntu-edition/" rel="canonical">
+    <link href="https://www.jamieweb.net/blog/<?php echo $postInfo->uri; ?>" rel="canonical">
 </head>
 
 <body>
@@ -17,11 +18,10 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>Installing UBports Ubuntu Touch on the Meizu MX4 Ubuntu Edition</h1>
+    <h1><?php echo $postInfo->title; ?></h1>
     <hr>
-    <p><b>Thursday 21st March 2019</b></p>
-    <p>I recently decided to switch back to using my Meizu MX4 Ubuntu Edition that I originally purchased in 2015 (<a href="/blog/ubuntu-phone-review/" target="_blank" rel="noopener">which is what the first article on this blog was about</a>).</p>
-    <p>Unfortunately, Canonical decided to end development of Ubuntu Touch due to a lack of market interest, but luckily the <a href="https://ubports.com/" target="_blank" rel="noopener">UBports</a> community took over development, and are running the project successfully to this day as the (soon to be at the time of writing) <a href="https://ubports.com/foundation/ubports-foundation" target="_blank" rel="noopener">UBports Foundation</a>.</p>
+    <p><b><?php echo $postInfo->date; ?></b></p>
+    <p><?php echo $postInfo->snippet; ?></p>
     <div class="centertext">
         <img class="max-width-100-percent-on-small padding-bottom-30-on-small" width="495px" src="ut-lock-screen.png">
         <img class="max-width-100-percent-on-small" width="495px" src="ut-home-screen.png">

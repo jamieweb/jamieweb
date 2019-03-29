@@ -1,11 +1,16 @@
-<?php function bloglist($location, $category = null, $post = null) {
-    $bloglist = json_decode(file_get_contents('posts.json', true));
+<?php $bloglist = json_decode(file_get_contents('posts.json', true));
+function bloglist($location, $category = null, $post = null, $annum = null) {
+    global $bloglist;
     if($location === "navbar") {
         foreach($bloglist->blog as $year) {
             foreach($year as $post) {
                 echo "                        <a href=\"/blog/" . $post->uri . "/\">" . $post->navtitle . "</a>\n";
             }
         }
+    }
+    elseif($location === "postInfo") {
+        global $postInfo;
+        $postInfo = $bloglist->blog->{$annum}->{basename(getcwd())};
     }
     elseif($location === "home") {
         $homeCount = 0;
