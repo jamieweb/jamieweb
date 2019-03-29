@@ -8,9 +8,26 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
             }
         }
     }
-    elseif($location === "postInfo") {
+    elseif($location === "postTop") {
         global $postInfo;
         $postInfo = $bloglist->blog->{$annum}->{basename(getcwd())};
+        echo "<!DOCTYPE html>
+<html lang=\"en\">
+
+<!--Copyright Jamie Scaife-->
+<!--Legal Information at https://www.jamieweb.net/contact-->
+
+<head>
+    <title>" . $postInfo->title . "</title>
+    <meta name=\"description\" content=\"" . $postInfo->longdesc . "\">";
+        include "head.php";
+        echo "<link href=\"https://www.jamieweb.net/blog/" . $postInfo->uri . "\" rel=\"canonical\">
+</head>
+
+<body>
+
+";
+        include "navbar.php";
     }
     elseif($location === "home") {
         $homeCount = 0;
