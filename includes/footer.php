@@ -1,5 +1,10 @@
 <?php if(basename(dirname(getcwd())) === "blog") {
-        echo "    <div class=\"centertext\">
+    if(!(isset($postInfo))) {
+        $postInfo = new stdClass();
+        $postInfo->license = "CC BY-SA 4.0";
+        $postInfo->format_version = 1;
+    }
+    echo "    <div class=\"centertext\">
         <h5 class=\"license\">This article is licensed under a <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"noopener\">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</h5>
     </div>";
 } ?>
