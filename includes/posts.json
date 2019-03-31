@@ -8,7 +8,9 @@
                 "longdesc": "Installing UBports Ubuntu Touch on the original Meizu MX4 Ubuntu Edition using ubports-installer.",
                 "date": "Thursday 21st March 2019",
                 "tags": "Ubuntu",
-                "snippet": "I recently decided to switch back to using my Meizu MX4 Ubuntu Edition that I originally purchased in 2015 (<b><a href=\"/blog/ubuntu-phone-review/\" target=\"_blank\" rel=\"noopener\">which is what the first article on this blog was about</a></b>).</p><p>Unfortunately, Canonical decided to end development of Ubuntu Touch due to a lack of market interest, but luckily the <b><a href=\"https://ubports.com/\" target=\"_blank\" rel=\"noopener\">UBports</a></b> community took over development, and are running the project successfully to this day as the (soon to be at the time of writing) <b><a href=\"https://ubports.com/foundation/ubports-foundation\" target=\"_blank\" rel=\"noopener\">UBports Foundation</a></b>."
+                "snippet": "I recently decided to switch back to using my Meizu MX4 Ubuntu Edition that I originally purchased in 2015 (<b><a href=\"/blog/ubuntu-phone-review/\" target=\"_blank\" rel=\"noopener\">which is what the first article on this blog was about</a></b>).</p><p>Unfortunately, Canonical decided to end development of Ubuntu Touch due to a lack of market interest, but luckily the <b><a href=\"https://ubports.com/\" target=\"_blank\" rel=\"noopener\">UBports</a></b> community took over development, and are running the project successfully to this day as the (soon to be at the time of writing) <b><a href=\"https://ubports.com/foundation/ubports-foundation\" target=\"_blank\" rel=\"noopener\">UBports Foundation</a></b>.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 2
             },
             "forwarding-tor-hidden-services-to-another-server-across-the-internet": {
                 "uri": "forwarding-tor-hidden-services-to-another-server-across-the-internet",
@@ -17,7 +19,9 @@
                 "longdesc": "Using a reverse HTTP proxy to forward Tor Hidden Services across the internet to another server.",
                 "date": "Tuesday 26th February 2019",
                 "tags": "Security,Tor,Apache",
-                "snippet": "I recently re-deployed my entire infrastructure onto two new servers using Ansible, and as part of this I wanted to remove all stored secrets from my public-facing web servers.</p><p>Let's Encrypt certificates were no problem as they are generated on the server and can be easily replaced if needed, and I removed the need for an SSH private key for Git by just using the public repo over HTTPS.</p><p>The only secrets that posed a challenge were my Tor Hidden Service private keys, both for <b><a href=\"/blog/onionv3-vanity-address/\" target=\"_blank\">Onion v3</a></b> and the historic <b><a href=\"/blog/tor-hidden-service/\" target=\"_blank\">Onion v2</a></b>. The impact of one of these keys breaching would be very high, since the associated hostnames are already widely known and indexed. Because of this, it would absolutely not be appropriate to store them in my Ansible playbooks Git repository, nor would it be ideal to store them locally on my Ansible control machine.</p><p>One option would be to manually upload them whenever I deployed a new server, however this goes against the complete automation that I am achieving with Ansible. Instead, I decided to not run Tor on my public web server fleet at all, and instead host the Hidden Services elsewhere, with traffic forwarded to the web server fleet securely over the internet with an Apache reverse HTTP proxy."
+                "snippet": "I recently re-deployed my entire infrastructure onto two new servers using Ansible, and as part of this I wanted to remove all stored secrets from my public-facing web servers.</p><p>Let's Encrypt certificates were no problem as they are generated on the server and can be easily replaced if needed, and I removed the need for an SSH private key for Git by just using the public repo over HTTPS.</p><p>The only secrets that posed a challenge were my Tor Hidden Service private keys, both for <b><a href=\"/blog/onionv3-vanity-address/\" target=\"_blank\">Onion v3</a></b> and the historic <b><a href=\"/blog/tor-hidden-service/\" target=\"_blank\">Onion v2</a></b>. The impact of one of these keys breaching would be very high, since the associated hostnames are already widely known and indexed. Because of this, it would absolutely not be appropriate to store them in my Ansible playbooks Git repository, nor would it be ideal to store them locally on my Ansible control machine.</p><p>One option would be to manually upload them whenever I deployed a new server, however this goes against the complete automation that I am achieving with Ansible. Instead, I decided to not run Tor on my public web server fleet at all, and instead host the Hidden Services elsewhere, with traffic forwarded to the web server fleet securely over the internet with an Apache reverse HTTP proxy.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "taking-content-security-policy-to-the-extreme-policies-on-a-per-page-basis": {
                 "uri": "taking-content-security-policy-to-the-extreme-policies-on-a-per-page-basis",
@@ -26,7 +30,9 @@
                 "longdesc": "Implementing a Content Security Policy on your PHP website with fine-grain control over the policy on a per-page basis.",
                 "date": "Saturday 19th January 2019",
                 "tags": "Security,Apache",
-                "snippet": "For about two years at the time of writing, my website has had a <b><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP\" target=\"_blank\" rel=\"noopener\">Content Security Policy</a></b> in order to lock-down and restrict the locations that content such as images and stylesheets can be loaded from. I had used Apache configurations in order to set a more relaxed policy for specific pages that require it, however this solution is not ideal as it becomes challenging to manage when used with larger websites with many different pages, each requiring a different policy.</p><p>I have now developed some useful PHP code that allows me to easily set a default policy for the entire website, and then override individual parts of the policy on specific pages where it is required. I've released the code to the public domain under the <b><a href=\"http://unlicense.org/\" target=\"_blank\" rel=\"noopener\">Unlicense</a></b>, so you are welcome to use it for your own projects!"
+                "snippet": "For about two years at the time of writing, my website has had a <b><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP\" target=\"_blank\" rel=\"noopener\">Content Security Policy</a></b> in order to lock-down and restrict the locations that content such as images and stylesheets can be loaded from. I had used Apache configurations in order to set a more relaxed policy for specific pages that require it, however this solution is not ideal as it becomes challenging to manage when used with larger websites with many different pages, each requiring a different policy.</p><p>I have now developed some useful PHP code that allows me to easily set a default policy for the entire website, and then override individual parts of the policy on specific pages where it is required. I've released the code to the public domain under the <b><a href=\"http://unlicense.org/\" target=\"_blank\" rel=\"noopener\">Unlicense</a></b>, so you are welcome to use it for your own projects!",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "radare2-cutter-part-3-solving-a-crackme-challenge": {
                 "uri": "radare2-cutter-part-3-solving-a-crackme-challenge",
@@ -35,7 +41,9 @@
                 "longdesc": "Solving a beginner crackme challenge using radare2 Cutter.",
                 "date": "Saturday 5th January 2019",
                 "tags": "Reverse Engineering,Guide",
-                "snippet": "Last year, I asked my friend <b><a href=\"https://github.com/York20\" target=\"_blank\" rel=\"noopener\">Sam</a></b> to write a basic crackme challenge for me to solve and then demonstrate in this series. He kindly agreed, and put together a simple password-based crackme. It looks like the following when run:</p>\n<pre>malw@re:~$ ./crackme\nEnter Password (or q to quit): helloworld\nAccess Denied\nEnter Password (or q to quit): Pa$$w0rd\nAccess Denied\nEnter Password (or q to quit): q</pre>\n<p>In this third and final part of the series, we will solve the crackme using Cutter and some other tools. If you'd like to have a go yourself first, it is available on GitLab <b><a href=\"https://gitlab.com/jamieweb/crackme-challenge\" target=\"_blank\" rel=\"noopener\">here</a></b>."
+                "snippet": "Last year, I asked my friend <b><a href=\"https://github.com/York20\" target=\"_blank\" rel=\"noopener\">Sam</a></b> to write a basic crackme challenge for me to solve and then demonstrate in this series. He kindly agreed, and put together a simple password-based crackme. It looks like the following when run:</p>\n<pre>malw@re:~$ ./crackme\nEnter Password (or q to quit): helloworld\nAccess Denied\nEnter Password (or q to quit): Pa$$w0rd\nAccess Denied\nEnter Password (or q to quit): q</pre>\n<p>In this third and final part of the series, we will solve the crackme using Cutter and some other tools. If you'd like to have a go yourself first, it is available on GitLab <b><a href=\"https://gitlab.com/jamieweb/crackme-challenge\" target=\"_blank\" rel=\"noopener\">here</a></b>.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             }
         },
         "2018": {
@@ -46,7 +54,9 @@
                 "longdesc": "Screenshots and information on the transfer-in process for Cloudflare Registrar.",
                 "date": "Sunday 23rd December 2018",
                 "tags": "Domain Names",
-                "snippet": "This week I transferred all of my domain names to the brand new <b><a href=\"https://www.cloudflare.com/products/registrar/\" target=\"_blank\" rel=\"noopener\">Cloudflare Registrar</a></b>. I took screenshots throughout the process and have documented them here for anybody else who has not yet done the transfer, and wants to know what to expect before diving in."
+                "snippet": "This week I transferred all of my domain names to the brand new <b><a href=\"https://www.cloudflare.com/products/registrar/\" target=\"_blank\" rel=\"noopener\">Cloudflare Registrar</a></b>. I took screenshots throughout the process and have documented them here for anybody else who has not yet done the transfer, and wants to know what to expect before diving in.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "using-a-bloom-filter-to-anonymize-web-server-logs": {
                 "uri": "using-a-bloom-filter-to-anonymize-web-server-logs",
@@ -56,7 +66,9 @@
                 "shortdesc": "Anonymizing web server access logs to improve data security and comply with the GDPR.",
                 "date": "Monday 17th December 2018",
                 "tags": "Security,Apache",
-                "snippet": "Since May 2018 when the GDPR came into full effect, I have had web server access logging completely disabled for my site. This is great from a security, privacy and GDPR compliance point of view, however it meant that I had very limited insight into the amount of traffic my site was getting.</p>\n<p>In order to solve this problem, I have built an open-source log anonymization tool which will remove personal data from web server access logs, and output a clean version that can be used for statistical purposes. A bloom filter is used to identify unique IP addresses, meaning that the anonymized log files can still be used for counting unique visitor IPs.</p>\n<p>I've released the tool under the MIT license, and it's available on my GitLab profile: <b><a href=\"https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter\" target=\"_blank\" rel=\"noopener\">https://gitlab.com/<wbr>jamieweb/web-server-log-anonymizer-bloom-filter</a></b>"
+                "snippet": "Since May 2018 when the GDPR came into full effect, I have had web server access logging completely disabled for my site. This is great from a security, privacy and GDPR compliance point of view, however it meant that I had very limited insight into the amount of traffic my site was getting.</p>\n<p>In order to solve this problem, I have built an open-source log anonymization tool which will remove personal data from web server access logs, and output a clean version that can be used for statistical purposes. A bloom filter is used to identify unique IP addresses, meaning that the anonymized log files can still be used for counting unique visitor IPs.</p>\n<p>I've released the tool under the MIT license, and it's available on my GitLab profile: <b><a href=\"https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter\" target=\"_blank\" rel=\"noopener\">https://gitlab.com/<wbr>jamieweb/web-server-log-anonymizer-bloom-filter</a></b>",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "radare2-cutter-part-2-analysing-a-basic-program": {
                 "uri": "radare2-cutter-part-2-analysing-a-basic-program",
@@ -66,7 +78,9 @@
                 "shortdesc": "Analysing a basic program using radare2 Cutter.",
                 "date": "Saturday 17th November 2018",
                 "tags": "Reverse Engineering,Guide",
-                "snippet": "I've put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>\n<pre>Enter a Number (or q to quit): 2\n2 is even.\nEnter a Number (or q to quit): 1\n1 is odd.\nEnter a Number (or q to quit): 25\n25 is odd.\nEnter a Number (or q to quit): hello\nInvalid Input\nEnter a Number (or q to quit): q</pre><p>If you wish to compile this yourself so that you can follow along with the analysis, I have included the C++ code..."
+                "snippet": "I've put together a basic program that takes a number as an input, and outputs whether the number is odd or even.</p>\n<pre>Enter a Number (or q to quit): 2\n2 is even.\nEnter a Number (or q to quit): 1\n1 is odd.\nEnter a Number (or q to quit): 25\n25 is odd.\nEnter a Number (or q to quit): hello\nInvalid Input\nEnter a Number (or q to quit): q</pre><p>If you wish to compile this yourself so that you can follow along with the analysis, I have included the C++ code...",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "booting-a-physical-windows-10-disk-using-virtualbox-on-linux": {
                 "uri": "booting-a-physical-windows-10-disk-using-virtualbox-on-linux",
@@ -76,7 +90,9 @@
                 "shortdesc": "Configuring VirtualBox on Linux to boot a physical Windows 10 disk.",
                 "date": "Friday 9th November 2018",
                 "tags": "Virtualisation,Guide",
-                "snippet": "I recently acquired a computer with an OEM/factory-imaged Windows 10 disk inside. Straight away I took the disk out and replaced it with a Linux SSD, however since I don't own any other Windows systems, this will come in useful for testing my website for browser compatibility in Internet Explorer and Edge. I have put the Windows 10 disk in a USB SATA drive enclosure, and configured VirtualBox to be able to boot the raw disk."
+                "snippet": "I recently acquired a computer with an OEM/factory-imaged Windows 10 disk inside. Straight away I took the disk out and replaced it with a Linux SSD, however since I don't own any other Windows systems, this will come in useful for testing my website for browser compatibility in Internet Explorer and Edge. I have put the Windows 10 disk in a USB SATA drive enclosure, and configured VirtualBox to be able to boot the raw disk.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "radare2-cutter-part-1-key-terminology-and-overview": {
                 "uri": "radare2-cutter-part-1-key-terminology-and-overview",
@@ -86,7 +102,9 @@
                 "shortdesc": "An overview of some key terminology and the interfaces and tools in Cutter.",
                 "date": "Tuesday 23rd October 2018",
                 "tags": "Reverse Engineering,Guide",
-                "snippet": "Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an overview of the Cutter interface and available tools. Cutter can be found on GitHub here: <b><a href=\"https://github.com/radareorg/cutter\" target=\"_blank\" rel=\"noopener\">https://github.com/<wbr>radareorg/cutter</a></b>"
+                "snippet": "Cutter is an open-source graphical user interface for the radare2 reverse engineering framework. This article contains an introduction to reverse engineering with Cutter, including key terminology and an overview of the Cutter interface and available tools. Cutter can be found on GitHub here: <b><a href=\"https://github.com/radareorg/cutter\" target=\"_blank\" rel=\"noopener\">https://github.com/<wbr>radareorg/cutter</a></b>",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "testing-your-csp-using-travis-ci-and-headless-chrome-crawler": {
                 "uri": "testing-your-csp-using-travis-ci-and-headless-chrome-crawler",
@@ -96,7 +114,9 @@
                 "shortdesc": "A Travis-CI build config for automatically testing your CSP.",
                 "date": "Saturday 28th July 2018",
                 "tags": "Security,Apache,Chrome",
-                "snippet": "I have recently put together a Travis-CI build configuration that automatically tests your website for Content Security Policy violations. The configuration sets up a local copy of your site on a Travis-CI virtual machine with a CSP header set to send violation reports to a local reporting endpoint. The site is then crawled using Headless Chrome Crawler, which causes CSP violation reports to be generated where required. These are then displayed at the end of the build log."
+                "snippet": "I have recently put together a Travis-CI build configuration that automatically tests your website for Content Security Policy violations. The configuration sets up a local copy of your site on a Travis-CI virtual machine with a CSP header set to send violation reports to a local reporting endpoint. The site is then crawled using Headless Chrome Crawler, which causes CSP violation reports to be generated where required. These are then displayed at the end of the build log.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "launching-a-public-hackerone-program": {
                 "uri": "launching-a-public-hackerone-program",
@@ -106,7 +126,9 @@
                 "shortdesc": "A write-up of launching my HackerOne program.",
                 "date": "Friday 11th May 2018",
                 "tags": "Security,Bug Bounty",
-                "snippet": "Last month, I launched a public HackerOne security vulnerability disclosure program for my website. I've been working on this for a while, and I'm now very happy to have launched the program publicly! If you're a hacker and you'd like to have a go, the program is accessible on HackerOne here: <b><a href=\"https://hackerone.com/jamieweb\" target=\"_blank\" rel=\"noopener\">https://hackerone.com/jamieweb</a></b>"
+                "snippet": "Last month, I launched a public HackerOne security vulnerability disclosure program for my website. I've been working on this for a while, and I'm now very happy to have launched the program publicly! If you're a hacker and you'd like to have a go, the program is accessible on HackerOne here: <b><a href=\"https://hackerone.com/jamieweb\" target=\"_blank\" rel=\"noopener\">https://hackerone.com/jamieweb</a></b>",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "secure-public-wifi-access": {
                 "uri": "secure-public-wifi-access",
@@ -116,7 +138,9 @@
                 "shortdesc": "Connecting to hotel Wi-Fi through a Raspberry Pi and VPN.",
                 "date": "Tuesday 8th May 2018",
                 "tags": "Security,Guide",
-                "snippet": "<u>The problem:</u> You want to connect to the internet in a hotel or coffee shop, but don't want to expose your laptop to the insecure, unencrypted Wi-Fi network. <u>A solution:</u> Connect to the internet through a Raspberry Pi, and have it forward a secure VPN connection through to your laptop."
+                "snippet": "<u>The problem:</u> You want to connect to the internet in a hotel or coffee shop, but don't want to expose your laptop to the insecure, unencrypted Wi-Fi network. <u>A solution:</u> Connect to the internet through a Raspberry Pi, and have it forward a secure VPN connection through to your laptop.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "letsencrypt-scts-in-certificates": {
                 "uri": "letsencrypt-scts-in-certificates",
@@ -126,7 +150,9 @@
                 "shortdesc": "LE certificates now have embedded SCTs by default.",
                 "date": "Wednesday 4th April 2018",
                 "tags": "Security,TLS,Chrome",
-                "snippet": "As of 29th March 2018, all certificates issued by Let's Encrypt now include a Signed Certificate Timestamp (SCT) embedded in the certificate in the form of an <b><a href=\"https://tools.ietf.org/html/rfc5280#section-4.2\" target=\"_blank\" rel=\"noopener\">X.509 v3 extension</a></b>."
+                "snippet": "As of 29th March 2018, all certificates issued by Let's Encrypt now include a Signed Certificate Timestamp (SCT) embedded in the certificate in the form of an <b><a href=\"https://tools.ietf.org/html/rfc5280#section-4.2\" target=\"_blank\" rel=\"noopener\">X.509 v3 extension</a></b>.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "disabling-tls1.0-tls1.1": {
                 "uri": "disabling-tls1.0-tls1.1",
@@ -136,7 +162,9 @@
                 "shortdesc": "Assessing browser compatibility and disabling older TLS protocol versions.",
                 "date": "Tuesday 13th March 2018",
                 "tags": "Security,TLS,Apache",
-                "snippet": "I recently received a security report to my <b><a href=\"/contact/#hackerone\" target=\"_blank\">HackerOne program</a></b> from <b><a href=\"https://hackerone.com/retr0\" target=\"_blank\" rel=\"noopener\">retr0</a></b>, who suggested that I disable TLS 1.0 on my web server. At first I was reluctant as this breaks compatibility with many older browsers, however after monitoring the TLS protocol versions in use by users, I've now disabled both TLS 1.0 and TLS 1.1, meaning that only TLS 1.2 can be used."
+                "snippet": "I recently received a security report to my <b><a href=\"/contact/#hackerone\" target=\"_blank\">HackerOne program</a></b> from <b><a href=\"https://hackerone.com/retr0\" target=\"_blank\" rel=\"noopener\">retr0</a></b>, who suggested that I disable TLS 1.0 on my web server. At first I was reluctant as this breaks compatibility with many older browsers, however after monitoring the TLS protocol versions in use by users, I've now disabled both TLS 1.0 and TLS 1.1, meaning that only TLS 1.2 can be used.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "namecoin-bit-domain": {
                 "uri": "namecoin-bit-domain",
@@ -145,7 +173,9 @@
                 "longdesc": "Using Namecoin Core to register a .bit domain and setting up ncdns.",
                 "shortdesc": "Using Namecoin Core to register a .bit domain and setting up ncdns.",
                 "date": "Tuesday 16th January 2018",
-                "tags": "Security,Namecoin,Guide"
+                "tags": "Security,Namecoin,Guide",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "onionv3-vanity-address": {
                 "uri": "onionv3-vanity-address",
@@ -154,7 +184,9 @@
                 "longdesc": "Generating a vanity address for Onion v3 Hidden Services.",
                 "shortdesc": "Generating a vanity address for Onion v3 Hidden Services.",
                 "date": "Saturday 6th January 2018",
-                "tags": "Security,Tor"
+                "tags": "Security,Tor",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             }
         },
         "2017": {
@@ -165,7 +197,9 @@
                 "longdesc": "A look at the security.txt draft specification.",
                 "shortdesc": "A look at the security.txt draft specification.",
                 "date": "Tuesday 26th December 2017",
-                "tags": "Security,RFC"
+                "tags": "Security,RFC",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "onionv3-hidden-service": {
                 "uri": "onionv3-hidden-service",
@@ -174,7 +208,9 @@
                 "longdesc": "Testing the new Tor Onion v3 Hidden Services.",
                 "shortdesc": "Testing the new Tor Onion v3 Hidden Services.",
                 "date": "Saturday 21st October 2017",
-                "tags": "Security,Tor"
+                "tags": "Security,Tor",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "ipad-mini-ios6": {
                 "uri": "ipad-mini-ios6",
@@ -183,7 +219,9 @@
                 "longdesc": "Using iOS 6 on the iPad Mini + iOS 6 Security.",
                 "shortdesc": "Using iOS 6 on the iPad Mini + iOS 6 Security.",
                 "date": "Tuesday 19th September 2017",
-                "tags": "Security,Apple"
+                "tags": "Security,Apple",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "pastebin-keyword-alerts": {
                 "uri": "pastebin-keyword-alerts",
@@ -192,7 +230,9 @@
                 "longdesc": "Using the Pastebin Alerts Service.",
                 "shortdesc": "Using the Pastebin Alerts Service.",
                 "date": "Saturday 2nd September 2017",
-                "tags": "Security,Pastebin"
+                "tags": "Security,Pastebin",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "ipv6-site-upgrade": {
                 "uri": "ipv6-site-upgrade",
@@ -201,7 +241,9 @@
                 "longdesc": "Setting up and configuring IPv6 on JamieWeb.",
                 "shortdesc": "Setting up and configuring IPv6 on JamieWeb.",
                 "date": "Saturday 5th August 2017",
-                "tags": "IPv6,Apache"
+                "tags": "IPv6,Apache",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "hosts-file-integrity": {
                 "uri": "hosts-file-integrity",
@@ -210,7 +252,9 @@
                 "longdesc": "Blocking sites using the hosts file and an integrity verification script.",
                 "shortdesc": "Blocking sites using the hosts file and an integrity verification script.",
                 "date": "Saturday 15th July 2017",
-                "tags": "Security"
+                "tags": "Security",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "inspircd-linux-guide": {
                 "uri": "inspircd-linux-guide",
@@ -219,7 +263,9 @@
                 "longdesc": "In-depth guide for installing and configuring InspIRCd on Linux.",
                 "shortdesc": "In-depth guide for installing and configuring InspIRCd on Linux.",
                 "date": "Tuesday 16th May 2017",
-                "tags": "Guide,IRC"
+                "tags": "Guide,IRC",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "irc-drawing-bot": {
                 "uri": "irc-drawing-bot",
@@ -228,7 +274,9 @@
                 "longdesc": "Thought process and development of the IRC Drawing Bot.",
                 "shortdesc": "Thought process and development of the IRC Drawing Bot.",
                 "date": "Sunday 14th May 2017",
-                "tags": "IRC"
+                "tags": "IRC",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "chrome-site-whitelist-extension": {
                 "uri": "chrome-site-whitelist-extension",
@@ -237,7 +285,9 @@
                 "longdesc": "Discussing the Chrome extension that I am developing.",
                 "shortdesc": "Discussing the Chrome extension that I am developing.",
                 "date": "Tuesday 7th March 2017",
-                "tags": "Security,Chrome"
+                "tags": "Security,Chrome",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "subgraph-os-overview": {
                 "uri": "subgraph-os-overview",
@@ -246,7 +296,9 @@
                 "longdesc": "An overview of Subgraph OS: Adversary Resistant Computing.",
                 "shortdesc": "An overview of Subgraph OS: Adversary Resistant Computing.",
                 "date": "Tuesday 21st February 2017",
-                "tags": "Security"
+                "tags": "Security",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "tor-hidden-service": {
                 "uri": "tor-hidden-service",
@@ -255,7 +307,9 @@
                 "longdesc": "Setting up a Tor Hidden Service for my site.",
                 "shortdesc": "Setting up a Tor Hidden Service for my site.",
                 "date": "Sunday 12th February 2017",
-                "tags": "Security,Tor"
+                "tags": "Security,Tor",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "block-exploitable-content": {
                 "uri": "block-exploitable-content",
@@ -264,7 +318,9 @@
                 "longdesc": "Blocking exploitable web content in your browser.",
                 "shortdesc": "Blocking exploitable web content in your browser.",
                 "date": "Tuesday 7th February 2017",
-                "tags": "Security"
+                "tags": "Security",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "proof-of-timestamp": {
                 "uri": "proof-of-timestamp",
@@ -273,7 +329,9 @@
                 "longdesc": "Cryptographically proving a timestamp.",
                 "shortdesc": "Cryptographically proving a timestamp.",
                 "date": "Thursday 19th January 2017",
-                "tags": "Security"
+                "tags": "Security",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "identicon-gravity-animation": {
                 "uri": "identicon-gravity-animation",
@@ -282,7 +340,9 @@
                 "longdesc": "Animated collapsing identicon.",
                 "shortdesc": "Animated collapsing identicon.",
                 "date": "Thursday 5th January 2017",
-                "tags": "Meta"
+                "tags": "Meta",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             }
         },
         "2016": {
@@ -293,7 +353,9 @@
                 "longdesc": "New, more modern looking design, built better.",
                 "shortdesc": "New, more modern looking design, built better.",
                 "date": "Wednesday 14th December 2016",
-                "tags": "Meta"
+                "tags": "Meta",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "plainsight-enciphering-demo": {
                 "uri": "plainsight-enciphering-demo",
@@ -302,7 +364,9 @@
                 "longdesc": "Enciphering text and files using Plainsight.",
                 "shortdesc": "Enciphering text and files using Plainsight.",
                 "date": "Sunday 4th December 2016",
-                "tags": "Security"
+                "tags": "Security",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             },
             "iphone-strange-clock": {
                 "uri": "iphone-strange-clock",
@@ -311,7 +375,9 @@
                 "longdesc": "iPhone 4 behaving strangely because of an incorrect system clock.",
                 "shortdesc": "iPhone 4 behaving strangely because of an incorrect system clock.",
                 "date": "Saturday 3rd December 2016",
-                "tags": "Apple"
+                "tags": "Apple",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             }
         },
         "2015": {
@@ -322,7 +388,9 @@
                 "longdesc": "A month with the Ubuntu Phone.",
                 "shortdesc": "A month with the Ubuntu Phone.",
                 "date": "Wednesday 9th September 2015",
-                "tags": "Ubuntu"
+                "tags": "Ubuntu",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
             }
         }
     }
