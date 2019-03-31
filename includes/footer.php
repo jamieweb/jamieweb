@@ -5,7 +5,7 @@
         $postInfo->format_version = 1;
     }
     echo "    <div class=\"centertext\">
-        <h5 class=\"license\">This article is licensed under a <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"noopener\">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</h5>
+        <h5 class=\"license\">This article is licensed under a " . license_text($postInfo->license) . ".</h5>
     </div>";
 } ?>
 <footer>
@@ -83,3 +83,6 @@
         <p class="margin-top--8 font-size-smaller color-grey">This request was served by <?php include "hostinfo.txt"; ?> - <a class="color-grey" href="https://status.jamieweb.net/" target="_blank" rel="noopener">View Fleet Status</a></p>
     </div>
 </footer>
+<?php if($postInfo->format_version >= 2) {
+    echo "\n</body>\n\n</html>";
+} ?>

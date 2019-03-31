@@ -125,7 +125,3 @@ finished. total time: 0.716s</pre>
 </div>
 
 <?php include "footer.php" ?>
-
-</body>
-
-</html>

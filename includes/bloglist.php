@@ -137,4 +137,13 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
 </html>";
     }
 }
-?>
+function license_text($license) {
+    switch($license) {
+        case "CC BY-SA 4.0":
+            return("<a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"noopener\">Creative Commons Attribution-ShareAlike 4.0 International License</a>");
+            break;
+        case "CC BY-NC-SA 4.0":
+            return("<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"_blank\" rel=\"noopener\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>");
+            break;
+    }
+} ?>
