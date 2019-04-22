@@ -1,6 +1,17 @@
 {
     "blog": {
         "2019": {
+            "managing-your-ssh-known_hosts-using-git": {
+                "uri": "managing-your-ssh-known_hosts-using-git",
+                "navtitle": "Managing Your SSH known_hosts Using Git",
+                "title": "Managing Your SSH known_hosts Using Git",
+                "longdesc": "Using Git to centrally manage, update and distribute your SSH known_hosts.",
+                "date": "Tuesday 22nd April 2019",
+                "tags": "Security",
+                "snippet": "",
+                "license": "CC BY-SA 4.0",
+                "format_version": 2
+            },
             "installing-ubports-ubuntu-touch-on-the-meizu-mx4-ubuntu-edition": {
                 "uri": "installing-ubports-ubuntu-touch-on-the-meizu-mx4-ubuntu-edition",
                 "navtitle": "UBports on the Meizu MX4 Ubuntu Edition",
