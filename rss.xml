@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Managing Your SSH known_hosts Using Git</title>
+        <link>https://www.jamieweb.net/blog/managing-your-ssh-known_hosts-using-git/</link>
+        <description>Using Git to centrally manage, verify, update and distribute your SSH known_hosts.</description>
+        <category>Blog</category>
+        <pubDate>Tue, 23 Apr 2019</pubDate>
+    </item>
+    <item>
         <title>Installing UBports Ubuntu Touch on the Meizu MX4 Ubuntu Edition</title>
         <link>https://www.jamieweb.net/blog/installing-ubports-ubuntu-touch-on-the-meizu-mx4-ubuntu-edition/</link>
         <description>Installing UBports Ubuntu Touch on the original Meizu MX4 Ubuntu Edition using ubports-installer.</description>
