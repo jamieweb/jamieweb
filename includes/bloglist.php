@@ -21,7 +21,7 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
     <title>" . $postInfo->title . "</title>
     <meta name=\"description\" content=\"" . $postInfo->longdesc . "\">";
         include "head.php";
-        echo "<link href=\"https://www.jamieweb.net/blog/" . $postInfo->uri . "\" rel=\"canonical\">
+        echo "    <link href=\"https://www.jamieweb.net/blog/" . $postInfo->uri . "/\" rel=\"canonical\">
 </head>
 
 <body>

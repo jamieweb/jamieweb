@@ -99,6 +99,7 @@ Done. Saved old fingerprint as ldn01/fingerprint.bak.</pre>
             <p><b>Secondly, when updating the fingerprints, you may have to remove the old ones from <code>~/.ssh/known_hosts</code>:</b> Depending on your configuration, SSH will add a copy of the fingerprints from the Git repository to the main fingerprints file (which in my case is <code>~/.ssh/known_hosts</code>. When you update the fingerprints by pulling from the Git repository in the future, you may need to remove (or comment out) the old ones in your main fingerprints file.</p>
             <p>This normally happens if there are already existing fingerprints in <code>~/.ssh/known_hosts</code> for the hostnames or IP addresses that you are managing the fingerprints for in Git.</p>
         </li>
+    </ul>
 
     <h2 id="conclusion">Conclusion</h2>
     <p>This setup has resulted in an enormous improvement in efficiency when it comes to deploying and managing my infrastructure. It's another great example for why all manual processes should be automated in a repeatable and verifiable way, in order to ensure that infrastructure is robust and resilient.</p>
