@@ -64,18 +64,9 @@
             <a href="https://news.ycombinator.com/user?id=jamieweb" target="_blank" rel="noopener"><img class="hn exempt" src="/images/fontawesome/hn.svg"> <span><b>Hacker News</b></span></a>
         </div>
         <hr>
-        <h2 class="centertext two-mar-bottom">Subscribe</h2>
+        <h2 class="centertext two-mar-top two-mar-bottom">Subscribe</h2>
         <div class="centertext">
             <a class="icontext two-mar-top" href="/rss.xml" target="_blank"><img src="/images/fontawesome/rss-orange.svg"> <span><b>RSS Feed</b></span></a>
-            <a class="icontext two-mar-bottom" href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.jamieweb.net%2Frss.xml" target="_blank" rel="noopener"><img src="/images/fy.png"> <span><b>Feedly</b></span></a>
-        </div>
-        <div class="email-form">
-            <p class="two-no-mar">Or subscribe via email:</p>
-            <form class="display-flex" action="https://www.getrevue.co/profile/jamieweb/add_subscriber" method="post" target="_blank">
-                <input class="form-input margin-right-10 flex-grow-1" type="email" name="member[email]" placeholder="Your email address...">
-                <input class="form-submit" type="submit" name="member[subscribe]" value="Go">
-            </form>
-            <p class="font-size-smaller color-grey no-mar-top">Email subscriptions are powered by <a class="color-grey" href="https://www.getrevue.co/" target="_blank" rel="noopener">Revue</a> | <a class="color-grey" href="https://www.getrevue.co/privacy/platform" target="_blank" rel="noopener">Privacy Notice</a></p>
         </div>
         <hr>
         <h2 class="centertext">Popular Pages</h2>

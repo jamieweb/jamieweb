@@ -48,7 +48,7 @@
                 <h5><a href="/contact/"><span class="exempt">&#x1f4e7;&#xfe0e;</span> <span>Contact</span></a></h5>
             </li>
             <li class="float-right">
-                <h5><a href="/subscribe/"><span>&#x1f514;&#xfe0e;</span> <span>Subscribe</span></a></h5>
+                <h5><a href="/rss.xml" target="_blank"><img class="invert exempt" width="18px" src="/images/fontawesome/rss.svg"> <span>RSS Feed</span></a></h5>
             </li>
         </ul>
     </div>
