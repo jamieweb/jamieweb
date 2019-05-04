@@ -3,7 +3,7 @@
         "default-src" => "'none'",
         "base-uri" => "'none'",
         "font-src" => "'self'",
-        "form-action" => "https://www.getrevue.co",
+        "form-action" => "'none'",
         "frame-ancestors" => "'none'",
         "img-src" => "'self'",
         "style-src" => "'self'",
