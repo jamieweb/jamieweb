@@ -4,9 +4,11 @@
         $postInfo->license = "CC BY-SA 4.0";
         $postInfo->format_version = 1;
     }
-    echo "    <div class=\"centertext\">
+    if(!($postInfo->license === "none")) {
+        echo "    <div class=\"centertext\">
         <h5 class=\"license\">This article is licensed under a " . license_text($postInfo->license) . ".</h5>
     </div>";
+    }
 } ?>
 <footer>
     <div class="footer">
