@@ -888,17 +888,17 @@ th.h1-scope-in-scope {
     clear: both;
 }
 
-.redlink a:link {
+.redlink a:link:not(.exempt) {
     color: #000000;
     text-decoration: none;
 }
 
-.redlink a:visited {
+.redlink a:visited:not(.exempt) {
     color: #000000;
     text-decoration: none;
 }
 
-.redlink a:hover {
+.redlink a:hover:not(.exempt) {
     color: #ff0000;
 }
 

@@ -1,6 +1,17 @@
 {
     "blog": {
         "2019": {
+            "my-interview-with-giulio-d-agostino": {
+                "uri": "my-interview-with-giulio-d-agostino",
+                "navtitle": "My Interview With Giulio D'Agostino",
+                "title": "My Interview With Giulio D'Agostino",
+                "longdesc": "I was recently a guest on the 'Conversations in Cyberspace' podcast.",
+                "date": "Saturday 11th May 2019",
+                "tags": "Security,Meta",
+                "snippet": "Earlier this year, I was interviewed by Giulio D'Agostino for his new book and podcast 'Conversations in Cyberspace'. My podcast episode has now been released - if you'd like to listen, it is available on Anchor.fm, and various other platforms:</p><div class=\"message-box message-box-positive\"><div class=\"message-box-heading\"><h3 id=\"disclaimer\"><u>Listen</u> &#x1f50a;&#xfe0e;:</h3></div><div class=\"message-box-body\"><p>Listen to <b><i>Conversations in Cyberspace - S1 E4 - Jamie Scaife</i></b> on Anchor.fm: <a class=\"exempt\" href=\"https://anchor.fm/conversationsincyberspace/episodes/Conversations-in-Cyberspace---S1-E4-e33gsk/a-a9ub8j\" target=\"_blank\" rel=\"noopener\">https://anchor.fm/<wbr>conversationsincyberspace/<wbr>episodes/Conversations-in-<wbr>Cyberspace---S1-E4-<wbr>e33gsk/a-a9ub8j</a></p></div></div><p>During the interview, I was asked about multiple topics including reverse engineering, Tor Onion v3 services, Linux and the browser extension ecosystem. I hope you enjoy, and thank you again to Giulio for having me on the show!</p><p><i>Please note that I have no commercial affiliation with Giulio or any of his projects.</i>",
+                "license": "none",
+                "format_version": 2
+            },
             "managing-your-ssh-known_hosts-using-git": {
                 "uri": "managing-your-ssh-known_hosts-using-git",
                 "navtitle": "Managing Your SSH known_hosts Using Git",
