@@ -127,7 +127,7 @@ HiddenServicePort 80 157.230.83.95:80</pre>
     <h2 id="conclusion">Conclusion</h2>
     <p>This setup isn't ideal for some use cases, but for me it has allowed me to vastly improve the resilience and disaster recovery time of my infrastructure, without posing an undue risk to my Hidden Service private keys.</p>
     <p>In future I may even bring the reverse proxy completely on-site and host it on a Raspberry Pi or something similar, as that would allow for further cost savings and ease of setup.</p>
-    <p>There are also other ways that you could securely forward a Hidden Service across the internet, for example using an SSH tunnel, however a reverse HTTP proxy seems like the most suitable way, as it is the most resilient. Either end can go down and it will start working again automatically when it comes back online, but with an SSH tunnel you'd have to resort to a potentially unreliable monitoring script to reestablish the connection if/when it goes offline.</p>
+    <p>There are also other ways that you could securely forward a Hidden Service across the internet, for example using an SSH tunnel, however a reverse HTTP proxy seems like the most suitable way, as it is the most resilient. Either end can go down and it will start working again automatically when it comes back online, but with an SSH tunnel you'd have to resort to a potentially unreliable monitoring scripts to re-establish the connection if/when it goes offline.</p>
 </div>
 
 <?php include "footer.php" ?>
