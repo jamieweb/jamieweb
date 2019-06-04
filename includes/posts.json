@@ -1,6 +1,17 @@
 {
     "blog": {
         "2019": {
+            "automating-the-integrity-verification-process-for-downloaded-software": {
+                "uri": "automating-the-integrity-verification-process-for-downloaded-software",
+                "navtitle": "Automatic Software Integrity Verification",
+                "title": "Automating the Integrity Verification Process for Downloaded Software",
+                "longdesc": "",
+                "date": "Saturday 8th June 2019",
+                "tags": "Security",
+                "snippet": "",
+                "license": "none",
+                "format_version": 2
+            },
             "my-interview-with-giulio-d-agostino": {
                 "uri": "my-interview-with-giulio-d-agostino",
                 "navtitle": "My Interview With Giulio D'Agostino",
