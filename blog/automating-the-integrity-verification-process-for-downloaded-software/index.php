@@ -6,16 +6,13 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
-    <p>I've developed a Bash script that can automatically download and perform integrity verifications for various pieces of software, including Ubuntu ISOs, Kali Linux and some Windows software.</p>
-    <p>The reason for creating this is to make it significantly easier, more reliable and faster to acquire integrity-checked versions of the software that I regularly use. Previously, downloading and updating this software was a manual process, which is naturally slow and unnecessarily prone to human error.</p>
-    <p>I've released the script under the MIT license, and it's available on my GitLab profile: <b><a href="https://gitlab.com/jamieweb/dl-integrity-verify" target="_blank" rel="noopener">https://gitlab.com/jamieweb/dl-integrity-verify</a></b></p>
+    
     <p><b>Skip to Section:</b></p>
     <pre><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#script-demo">Script Demo</a>
 &#x2523&#x2501&#x2501 <a href="#how-does-it-work">How does it work?</a>
 &#x2523&#x2501&#x2501 <a href="#why-is-there-a-need-to-automate-the-integrity-verification-process">Why is there a need to automate the integrity verification process?</a>
 &#x2523&#x2501&#x2501 <a href="#whiptail">Whiptail</a>
-&#x2523&#x2501&#x2501 <a href="#handling-errors">Handling Errors</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
     <h2 id="script-demo">Script Demo</h2>
@@ -43,10 +40,10 @@ MD5SUMS: Not Found (OK)
 MD5SUMS.gpg: Not Found (OK)
 Downloading files...
 
-Verifying download origin: 'http://releases[.]ubuntu[.]com/'
+Verifying download site: 'http://releases[.]ubuntu[.]com/'
 Expected hash: 256b912563ae525d387be32be68fa3f4be7226e5af99f881cf6ab94cacf51fd0
 Actual hash:   256b912563ae525d387be32be68fa3f4be7226e5af99f881cf6ab94cacf51fd0
-Download origin check: OK
+Download site check: OK
 
 Downloading 'ubuntu-18.04.2-desktop-amd64.iso'...
 --2019-06-04 22:23:04--  http://releases.ubuntu.com/18.04.2/ubuntu-18.04.2-desktop-amd64.iso
@@ -189,24 +186,24 @@ Checking md5: ubuntu-18.04.2-desktop-amd64.iso: OK
 
     <h2 id="how-does-it-work">How does it work?</h2>
     <p>The script has a pre-programmed list of files that it is able to download and verify. This limitation is by design, as the script is not supposed to be a comprehensive integrity verification tool for any file on the internet. Instead, it's just designed to provide automatic verification for specific files that you want to use.</p>
-    <p>Each file that you can choose has a list of configuration variables associated with it, such as which download mirror to use, the name of the file on the download mirror, the signing key to use to verify the file, etc.</p>
+    <p>Each file that you can choose has a list of configuration variables associated with it, such as which download mirror to use, the name of the file on the download mirror, the verification method used, etc.</p>
     <p>For example, the configuration variables for the Ubuntu 18.04.2 LTS ISO are as follows:</p>
     <pre>"Ubuntu 18.04 LTS")
   file_name="ubuntu-18.04.2-desktop-amd64.iso"
-  dl_origin_name="ubuntu-releases"
-  dl_origin_sha256_expected="256b912563ae525d387be32be68fa3f4be7226e5af99f881cf6ab94cacf51fd0"
+  dl_site_name="ubuntu-releases"
+  dl_site_sha256_expected="256b912563ae525d387be32be68fa3f4be7226e5af99f881cf6ab94cacf51fd0"
   dl_path="18.04.2"
   dl_files=("$file_name" "SHA256SUMS" "SHA256SUMS.gpg" "SHA1SUMS" "SHA1SUMS.gpg" "MD5SUMS" "MD5SUMS.gpg")
   verif_method="gpg_signed_hashes_sha256_sha1_md5"
   ;;</pre>
-    <p>Once a file has been selected from the menu, the first step is to check that the download site (scheme, hostname and path) is correct, by comparing the string (e.g. <code>http://releases.ubuntu.com/</code>) against a SHA256 hash of the known-good version. The reason for this check is to protect against accidental modification/misspelling of the string, as not doing so could result in you accidentally downloading the file from a typosquat/phishing mirror, rather than the real one. In reality this is unlikely to happen, but it's a protection that I wanted and is also useful for compliance purposes, to have cryptographic evidence of where you downloaded the file from.</p>
+    <p>Once a file has been selected from the menu, the first step is to check that the download site (scheme, hostname and path) is correct, by comparing the string (e.g. <code>http://releases.ubuntu.com/</code>) against a SHA256 hash of the known-good version. The reason for this check is to protect against accidental modification/misspelling of the string, as not doing so could result in you accidentally downloading the file from a typosquat/phishing mirror, rather than the real one. In reality this is unlikely to happen, but it's a protection that I wanted and is also useful for compliance purposes, to have a level of cryptographic evidence for where you downloaded the file from.</p>
     <p>Next, a check is performed to ensure that the files don't already exist and will be overwritten. If this passes, the files will be downloaded using <code>wget</code>.</p>
     <p>The next step depends on the specific integrity verification method in-use for the download that you selected. Some of the pre-programmed packages use GPG signed hashes (e.g. <code>SHA256SUMS.asc</code> and <code>SHA256SUMS</code>), whereas for others, the GPG signature is for the file directly (e.g. <code>setup-x86_64.exe.asc</code>). There is a function for each verification method, the name of which is specified in the configuration variables for the selected package. This function is executed in order to perform the verifications for the package you selected.</p>
     <p>If any of these steps fail, the script will terminate and display the relevant error. Otherwise, the verifications completed successfully, providing reassurance that the downloaded package is safe to use.</p>
 
     <h2 id="why-is-there-a-need-to-automate-the-integrity-verification-process">Why is there a need to automate the integrity verification process?</h2>
-    <p>Software integrity verification is a very important process, so it doesn't make sense for it to be performed manually, not automatically logged and unecessarily prone to human error.</p>
-    <p>On macOS and Windows systems especially, it is common practise to download software using a web browser and run it. Most software provides a method to verify the download before running it, but in some cases this is not built-in/automatic, so you have to do it manually. Within the IT industry, there is unfortunately a bit of an apathy towards taking the time to perform these manual integrity verifications, as some people believe that it's not necessary or 'over the top'.</p>
+    <p>Software integrity verification is a very important process, so it doesn't make sense for it to be performed manually, not automatically logged and unnecessarily prone to human error.</p>
+    <p>On Linux systems there is rarely a need to manually download and verify software, as package managers like Apt have integrity verification built in as a fundamental feature. However, in some cases, especially on macOS and Windows systems, it is common practise to download software using a web browser and run it. Most software provides a method to verify the download before running it (e.g. signed DMG files, Authenticode), but in some cases this is not built-in/automatic, so you have to do it manually. Within the IT industry, there is unfortunately a bit of apathy towards taking the time to perform these manual integrity verifications, as some people believe that it's not necessary or 'over the top'.</p>
     <p>Package management tools where the integrity verifications are automated and built-in, such as Apt, Brew and Chocolatey are great solutions to this problem (and also solve many others!), as they allow people to acquire and install software, without the hassle and risk of having to download executable installer files using a web browser.</p>
     <p>The script I have developed is definitely not any sort of replacement for Brew, Chocolatey, etc - it's just a useful helper script to download the installer files, which may be useful for internal distribution, packaging, etc.</p>
 
@@ -214,11 +211,9 @@ Checking md5: ubuntu-18.04.2-desktop-amd64.iso: OK
     <p>The command-line menus used in the script are provided by <a href="https://linux.die.net/man/1/whiptail" target="_blank" rel="noopener">Whiptail</a>.</p>
     <p>Whiptail is included in most Linux distributions by default, however in some cases only it's predecessor, <a href="https://linux.die.net/man/1/dialog" target="_blank" rel="noopener">Dialog</a>, is available. In these cases, the script will fail back to using Dialog. For example, the Cygwin repositories don't have the <code>whiptail</code> package by default, so you have to install <code>dialog</code> instead.</p>
 
-    <h2 id="handling-errors">Handling Errors</h2>
-    <p></p>
-
     <h2 id="conclusion">Conclusion</h2>
-    <p>On Linux systems there is rarely a need to manually verify downloaded software, as package managers like Apt have integrity verification built in as a fundamental feature. macOS and Windows systems are in-between, as DMG/EXE files do support signing, but the implementations and real-world usage are not quite as fool-proof. On macOS and Windows, it is also common practise to download programs using a browser and run them, whereas this is rarely the case on Linux.</p>
+    <p>This script will definitely make it much easier for me to securely download Linux ISOs and write them to flash drives to boot from. I also have a Windows 10 machine at work, which is why I have added support for some of the Windows software packages that I use as well.</p>
+    <p>I'm publishing the script primarily for my own usage, but if somebody else does find it useful, I would definitely be interested in your <a href="/contact/" target="_blank">feedback</a>.</p>    
 </div>
 
 <?php include "footer.php" ?>

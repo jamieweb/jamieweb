@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Automating the Integrity Verification Process for Downloaded Software</title>
+        <link>https://www.jamieweb.net/blog/automating-the-integrity-verification-process-for-downloaded-software/</link>
+        <description>A script to automatically download and perform integrity verifications for specific pre-programmed software packages.</description>
+        <category>Blog</category>
+        <pubDate>Wed, 19 Jun 2019</pubDate>
+    </item>
+    <item>
         <title>My Interview With Giulio D'Agostino</title>
         <link>https://www.jamieweb.net/blog/my-interview-with-giulio-d-agostino/</link>
         <description>I was recently a guest on the 'Conversations in Cyberspace' podcast.</description>

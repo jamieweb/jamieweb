@@ -5,11 +5,11 @@
                 "uri": "automating-the-integrity-verification-process-for-downloaded-software",
                 "navtitle": "Automatic Software Integrity Verification",
                 "title": "Automating the Integrity Verification Process for Downloaded Software",
-                "longdesc": "",
-                "date": "Saturday 8th June 2019",
+                "longdesc": "A script to automatically download and perform integrity verifications for specific pre-programmed software packages.",
+                "date": "Wednesday 19th June 2019",
                 "tags": "Security",
-                "snippet": "",
-                "license": "none",
+                "snippet": "I've developed a Bash script that can automatically download and perform integrity verifications for various pieces of software, including Ubuntu ISOs, Kali Linux and some Windows software.</p><p>The reason for creating this is to make it significantly easier, more reliable and faster to acquire integrity-checked versions of the software that I regularly use. Previously, downloading and updating this software was a manual process, which is naturally slow and unnecessarily prone to human error.</p><p>I've released the script under the MIT license, and it's available on my GitLab profile: <b><a href=\"https://gitlab.com/jamieweb/dl-integrity-verify\" target=\"_blank\" rel=\"noopener\">https://gitlab.com/jamieweb/dl-integrity-verify</a></b>",
+                "license": "CC BY-SA 4.0",
                 "format_version": 2
             },
             "my-interview-with-giulio-d-agostino": {
