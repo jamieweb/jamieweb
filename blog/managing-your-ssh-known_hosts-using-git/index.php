@@ -31,7 +31,7 @@ Are you sure you want to continue connecting (yes/no)?</pre>
         </li>
         <li>
            <p><b>Manually:</b> You can also manually add fingerprints to your <code>~/.ssh/known_hosts</code> file. The <a href="https://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT" target="_blank" rel="noopener">manual page</a> explain the format in detail.</p>
-           <p>In order to actually add the fingerprint to add to the file, you can use the <code>ssh-keyscan</code> command. This tool is included as part of OpenSSH on most Linux distributions, and is used to show the fingerprint(s) of a local or remote server. For example:</p>
+           <p>In order to actually acquire the fingerprint to add to the file, you can use the <code>ssh-keyscan</code> command. This tool is included as part of OpenSSH on most Linux distributions, and is used to show the fingerprint(s) of a local or remote server. For example:</p>
             <pre>$ ssh-keyscan ldn01.jamieweb.net
 write (ldn01.jamieweb.net): Connection refused
 # ldn01.jamieweb.net:22 SSH-2.0-OpenSSH_7.6p1
@@ -62,7 +62,7 @@ Warning: Permanently added 'github.com,140.82.118.4' (RSA) to the list of known 
         <li>Check the fingerprint using a public internet connection</li>
     </ul>
     <p>If all of these methods return the same fingerprint, that is good assurance that there is no localised MitM attack ongoing. However, it's important to keep in mind that these methods do not protect against possible MitM attacks that are non-local, e.g. on the remote end or at the ISP or DNS level.</p>
-    <p>The Qubes OS '<a href="https://www.qubes-os.org/security/verifying-signatures/" target="_blank" rel="noopener">Why and How to Verify Signatures</a>' documentation, which not directly about SSH, explains the mindset that you need to approach signature/fingerprint verification with really well. Their approach to '<a href="https://www.qubes-os.org/faq/#what-does-it-mean-to-distrust-the-infrastructure" target="_blank" rel="noopener">Distrusting the Infrastructure</a>' also fits in perfectly with the security model of SSH.</p>
+    <p>The Qubes OS '<a href="https://www.qubes-os.org/security/verifying-signatures/" target="_blank" rel="noopener">Why and How to Verify Signatures</a>' documentation, while not directly about SSH, explains the mindset that you need to approach signature/fingerprint verification with really well. Their approach to '<a href="https://www.qubes-os.org/faq/#what-does-it-mean-to-distrust-the-infrastructure" target="_blank" rel="noopener">Distrusting the Infrastructure</a>' also fits in perfectly with the security model of SSH.</p>
 
     <h2 id="managing-known_hosts-using-git">Managing known_hosts Using Git</h2>
     <p>When I deploy new servers, they have new, unique SSH server key fingerprints, and I need to distribute these fingerprints securely to all of the other devices that will be connecting. For example, my Ansible control machine, log collector, etc.</p>
