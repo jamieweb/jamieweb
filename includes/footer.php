@@ -15,7 +15,7 @@
         <div class="footer-column">
             <h2><a href="/"><img class="footer-logo" src="/images/jamieweb.png">JamieWeb</a></h2>
             <p><b><a href="/blog/">Blog</a> | <a href="/projects/">Projects</a> | <a href="/tools/">Tools</a> | <a href="/info/">Info</a></b></p>
-            <p class="footer-email"><b>Email:</b> <img class="two-mar-left" src="/images/jamie-jamieweb-4d4d4d.png"></p>
+            <p class="footer-email"><b>Email:</b> <img class="two-mar-left" src="/images/blog-jamieweb-ffffff.png"></p>
             <p><b><a href="/contact/">Contact Info</a> | <a href="/security/">Security</a> | <a href="/privacy/">Privacy</a></b></p>
             <p>Copyright &copy; Jamie Scaife <?php echo date("Y"); ?></p>
         </div>

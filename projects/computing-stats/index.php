@@ -114,11 +114,6 @@ if(!($statusMsg)) {
             <p class="info">Recent Average Credit: <b><?php echo checkLow($master[7], 400, "Einstein@Home RAC"); ?></b></p>
             <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2015-10-04'))->format("%a"); ?> days</b></p>
         </div>
-        <div>
-            <h1 class="info">Bitcoin Node Stats</h1>
-            <p class="info clearboth">Bitnodes Link: <b><a href="https://bitnodes.earn.com/nodes/212.71.252.184-8333/" target="_blank" rel="noopener">https://bitnodes.earn.com/<wbr>nodes/<wbr>212.71.252.184-8333/</a></b></p>
-            <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2016-11-04'))->format("%a"); ?> days</b></p>
-        </div>
     </div>
 </div>
 
