@@ -524,6 +524,10 @@ div.message-box-warning {
     background-color: #c25454;
 }
 
+div.message-box-warning-medium {
+    background-color: #e5ac1d;
+}
+
 div.message-box-notice {
     background-color: grey;
 }
@@ -1141,6 +1145,14 @@ th.h1-scope-in-scope {
 
 .color-lightgrey {
     color: lightgrey;
+}
+
+.color-darkslategrey {
+    color: darkslategrey;
+}
+
+.color-black {
+    color: black;
 }
 
 .y-scroll {

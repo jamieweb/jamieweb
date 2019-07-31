@@ -1,6 +1,17 @@
 {
     "blog": {
         "2019": {
+            "serving-security-txt-using-a-cloudflare-worker": {
+                "uri": "serving-security-txt-using-a-cloudflare-worker",
+                "navtitle": "Security.txt Cloudflare Worker",
+                "title": "Serving security.txt Using a Cloudflare Worker",
+                "longdesc": "If your Content Management System or hosting provider doesn't allow you to host a proper security.txt file, you can instead use Cloudflare Serverless Workers to serve the file directly from Cloudflare.",
+                "date": "Wednesday 31st July 2019",
+                "tags": "Security",
+                "snippet": "One of the most common implementation challenges of <b><a href=\"https://securitytxt.org/\" target=\"_blank\" rel=\"noopener\">security.txt</a></b> is Content Management Systems or managed hosting providers that don't allow you to set the file correctly. For example, they may disallow writing to the <code>/.well-known</code> directory, or it may not be possible to serve files as the <code>text/plain</code> MIME type.</p><p>If this is the case, and you also happen to be fronting your website using Cloudflare, you can use <b><a href=\"https://workers.cloudflare.com/\" target=\"_blank\" rel=\"noopener\">Cloudflare Serverless Workers</a></b> to serve the file directly from Cloudflare, instead of passing the request through to your origin server/hosting provider.</p><p>Serverless, also known as functions-as-a-service (FaaS), allow you to run your code in the cloud, without having to rent individual virtual machines or use traditional shared hosting. Instead, your code runs in short lived and isolated sandboxes on a machine with potentially hundreds of other customers' sandboxed code. Deployment, scaling, resilience and system security is all managed by the serverless provider. You are generally billed per execution or for the amount of CPU time used, making serverless much more cost efficient than other cloud computing models in many cases.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 2
+            },
             "automating-the-integrity-verification-process-for-downloaded-software": {
                 "uri": "automating-the-integrity-verification-process-for-downloaded-software",
                 "navtitle": "Automatic Software Integrity Verification",
