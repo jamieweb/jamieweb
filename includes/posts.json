@@ -1,6 +1,17 @@
 {
     "blog": {
         "2019": {
+            "deploying-a-tor-onion-v3-hidden-service-using-ansible": {
+                "uri": "deploying-a-tor-onion-v3-hidden-service-using-ansible",
+                "navtitle": "Deploying a Hidden Service Using Ansible",
+                "title": "Deploying a Tor Onion v3 Hidden Service Using Ansible",
+                "longdesc": "Using the Ansible configuration management tool to automatically deploy a Tor Onion v3 Hidden Service to a Linux machine.",
+                "date": "Saturday 31st August 2019",
+                "tags": "Security",
+                "snippet": "As part of an ongoing project to implement version control and configuration management for all aspects of my infrastructure, I have recently moved the hosting for my <b><a href=\"/blog/onionv3-hidden-service/\" target=\"_blank\">Tor Hidden Services</a></b> onto my main web infrastructure, rather than using a separate dedicated machine. Both of my web servers are set up and managed entirely using Ansible, so I had to put together a new Ansible playbook to install and configure Tor. I've documented it here if anyone else may find it useful.</p><p>The configuration described in this article is intended for use on Debian/Ubuntu-based systems, however with minor modifications it should be usable on other systems as well.",
+                "license": "CC BY-SA 4.0",
+                "format_version": 2
+            },
             "serving-security-txt-using-a-cloudflare-worker": {
                 "uri": "serving-security-txt-using-a-cloudflare-worker",
                 "navtitle": "Security.txt Cloudflare Worker",

@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Deploying a Tor Onion v3 Hidden Service Using Ansible</title>
+        <link>https://www.jamieweb.net/blog/deploying-a-tor-onion-v3-hidden-service-using-ansible/</link>
+        <description>Using the Ansible configuration management tool to automatically deploy a Tor Onion v3 Hidden Service to a Linux machine.</description>
+        <category>Blog</category>
+        <pubDate>Sat, 31 Aug 2019</pubDate>
+    </item>
+    <item>
         <title>Serving security.txt Using a Cloudflare Worker</title>
         <link>https://www.jamieweb.net/blog/serving-security-txt-using-a-cloudflare-worker/</link>
         <description>If your Content Management System or hosting provider doesn't allow you to host a proper security.txt file, you can instead use Cloudflare Serverless Workers to serve the file directly from Cloudflare.</description>
