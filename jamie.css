@@ -658,6 +658,11 @@ img.invert {
     filter: invert(100);
 }
 
+img.gl-logo-svg {
+    vertical-align: middle;
+    margin: 0 -5px 0 -10px;
+}
+
 img.footer-logo {
     filter: brightness(100);
     height: 35px;

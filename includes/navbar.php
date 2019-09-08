@@ -15,9 +15,12 @@
                 <h5><a href="/projects/"><span>&#x1f4bb;&#xfe0e;</span> <span>Projects</span></a></h5>
                 <div class="dropdown-content">
                     <h4>
-                        <a href="/projects/computing-stats/">Computing Stats</a>
-                        <a href="/projects/chrome-site-whitelist-extension/">Chrome Site Whitelist Extension</a>
-                        <a href="/projects/irc-drawing-bot/">IRC Drawing Bot</a>
+                        <a href="/projects/computing-stats/">Raspberry Pi Cluster Stats</a>
+                        <a href="/projects/#digitalocean-tutorials">DigitalOcean Tutorials</a>
+                        <a href="/projects/#web-server-log-file-anonymizer">Web Server Log File Anonymizer</a>
+                        <a href="/projects/#csp-tester-ci-pipeline-job">Content Security Policy Tester CI Pipeline Job</a>
+                        <a href="/projects/#automatic-software-package-integrity-verifier">Automatic Software Package Integrity Verifier</a>
+                        <a href="/projects/#link-whitelist-chrome-extension">Link Whitelist Chrome Extension</a>
                     </h4>
                 </div>
             </li>

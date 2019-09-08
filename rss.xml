@@ -221,13 +221,6 @@
         <pubDate>Sat, 2 Sep 2017</pubDate>
     </item>
     <item>
-        <title>Half-Life Client Security</title>
-        <link>https://www.jamieweb.net/info/hl-client-security/</link>
-        <description>Security configuration/hardening for the Half-Life client.</description>
-        <category>Info</category>
-        <pubDate>Sun, 13 Aug 2017</pubDate>
-    </item>
-    <item>
         <title>Upgrading to IPv6</title>
         <link>https://www.jamieweb.net/blog/ipv6-site-upgrade/</link>
         <description>Setting up and configuring IPv6 on JamieWeb.</description>

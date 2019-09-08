@@ -97,7 +97,7 @@ Signature: https://example.com/.well-known/security.txt.sig
 Acknowledgement: https://example.com/security/hall-of-fame
 Hiring: https://example.com/careers
 Canonical: https://example.com/.well-known/security.txt</pre>
-    <p>If you don't get a response as expected, check the response headers (using <code>curl -i</code> for any possible indicators, and also double check that you have set the Worker route correctly.</p>
+    <p>If you don't get a response as expected, check the response headers (using <code>curl -i</code>) for any possible indicators, and also double check that you have set the Worker route correctly.</p>
 
     <h2 id="conclusion">Conclusion</h2>
     <p>Hopefully this usage of Workers will make it easier for <code>security.txt</code> to be served when using certain Content Management Systems or hosting providers.</p>

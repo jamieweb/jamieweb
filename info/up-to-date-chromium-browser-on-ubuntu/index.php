@@ -37,8 +37,8 @@
     <ol class="spaced-list">
         <li>Moving your Chromium user profile may cause your cookies to be lost, meaning you'll be logged out of any saved sessions. Make sure you have your password manager and 2FA codes available to log back in to any sites needed.</li>
         <li>Ensure that both browsers are fully closed.</li>
-        <li>Take a backup of your old Chromium user profile from <code>~/.config/chromium/</code>, just in case something goes wrong.If you are the only user of Chromium, your user profile will most likely be a directory named <code>Default</code>. If you have multiple Chromium users, it may be called something else, which you can check at <code>chrome://version</code> under the 'Profile Path' variable.</li>
-        <li>Copy (or move) your old Chromium user profile to <code>~/snap/chromium/000/.config/chromium/</code>. The numbers in the Snap path (000) may be different for your system.</li>
+        <li>Take a backup of your old Chromium user profile from <code>~/.config/chromium/</code>, just in case something goes wrong. If you are the only user of Chromium, your user profile will most likely be a directory named <code>Default</code>. If you have multiple Chromium users, it may be called something else, which you can check at <code>chrome://version</code> under the 'Profile Path' variable.</li>
+        <li>Copy (or move) your old Chromium user profile to <code>~/snap/chromium/current/.config/chromium/Default</code>.</li>
         <li>Start the new Chromium Snap using either the <code>chromium</code> command, or by using the application launcher. In order to quickly identify which launcher is the new Chromium Snap, the Snap usually has a more modern, flat-design icon, while the old <code>chromium-browser</code> launcher has an older '3d' icon. This may differ for your own system though.</li>
         <li>If you wish, remove the old <code>chromium-browser</code> package and any associated package repositories.</li>
         <li>Update all of your desktop icons, launchers, keyboard shortcuts, etc to use the new Chromium Snap.</li>
