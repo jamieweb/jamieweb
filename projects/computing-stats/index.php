@@ -6,7 +6,7 @@ function filter_stat($stat) {
 }
 
 function checkLow($stat, $threshold, $name) {
-    if($stat > $threshold) {
+    if(str_replace(",", "", $stat) > $threshold) {
         return($stat);
     } else {
         return($stat . "<!--" . $name . " seems low. An alert has been sent to Jamie.-->");
@@ -43,8 +43,8 @@ if(!($statusMsg)) {
 <!--Legal Information at https://www.jamieweb.net/contact-->
 
 <head>
-    <title>Computing Stats</title>
-    <meta name="description" content="Raspberry Pi Cluster + BOINC Stats">
+    <title>Raspberry Pi Cluster Live Stats</title>
+    <meta name="description" content="Live system statistics from my Raspberry Pi cluster, which has been running 24/7 in my garage since October 2015.">
     <?php include "head.php" ?>
     <link href="https://www.jamieweb.net/projects/computing-stats/" rel="canonical">
 </head>
@@ -54,7 +54,7 @@ if(!($statusMsg)) {
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1 class="two-mar-bottom">Raspberry Pi Cluster Stats</h1>
+    <h1 class="two-mar-bottom">Raspberry Pi Cluster Live Stats</h1>
     <table width="100%">
         <tr>
             <!-- Note to self: Fix the ridiculous number of classes here. -->
@@ -102,16 +102,16 @@ if(!($statusMsg)) {
     <p>The cluster is currently running <a href="https://einsteinathome.org/" target="_blank" rel="noopener">Einstein@Home</a>, which is a distributed computing project that searches for gravitational waves using data from the LIGO gravitational wave detector.</p>
 
     <div class="computing-stats">
-        <div class="computing-stats-half-width">
+        <!--<div class="computing-stats-half-width">
             <h1 class="info">Rosetta@Home Stats</h1>
             <p class="info">Total Earned Credits: <b><?php echo $master[4]; ?></b></p>
             <p class="info">Recent Average Credit: <b><?php echo checkLow($master[5], 100, "Rosetta@Home RAC"); ?></b></p>
             <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2016-11-07'))->format("%a"); ?> days</b></p>
-        </div>
+        </div>-->
         <div>
             <h1 class="info">Einstein@Home Stats</h1>
             <p class="info">Total Earned Credits: <b><?php echo $master[6]; ?></b></p>
-            <p class="info">Recent Average Credit: <b><?php echo checkLow($master[7], 400, "Einstein@Home RAC"); ?></b></p>
+            <p class="info">Recent Average Credit: <b><?php echo checkLow($master[7], 1200, "Einstein@Home RAC"); ?></b></p>
             <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2015-10-04'))->format("%a"); ?> days</b></p>
         </div>
     </div>

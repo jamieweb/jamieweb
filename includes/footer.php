@@ -65,6 +65,7 @@
                     <h4>RSS Feed</h4>
                 </div>
             </a>
+            <p class="margin-top-16">My website does not serve any adverts, tracking cookies or other internet annoyances. It's also 100% JavaScript free.</p>
         </div>
     </div>
     <div class="footer flex-justify-center">

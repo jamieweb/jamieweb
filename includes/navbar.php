@@ -15,7 +15,7 @@
                 <h5><a href="/projects/"><span>&#x1f4bb;&#xfe0e;</span> <span>Projects</span></a></h5>
                 <div class="dropdown-content">
                     <h4>
-                        <a href="/projects/computing-stats/">Raspberry Pi Cluster Stats</a>
+                        <a href="/projects/computing-stats/">Raspberry Pi Cluster Live Stats</a>
                         <a href="/projects/#digitalocean-tutorials">DigitalOcean Tutorials</a>
                         <a href="/projects/#web-server-log-file-anonymizer">Web Server Log File Anonymizer</a>
                         <a href="/projects/#csp-tester-ci-pipeline-job">Content Security Policy Tester CI Pipeline Job</a>

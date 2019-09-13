@@ -21,25 +21,6 @@
     <div class="content redlink">
         <h1>Jamie Scaife - United Kingdom &#x1f1ec;&#x1f1e7;&nbsp;<?php include "holiday-emojis.php"; ?></h1>
         <hr>
-        <h3 class="no-mar-bottom intro-mar-top">No Ads, No Tracking, No JavaScript</h3>
-        <p class="two-mar-top">This website does not serve any adverts, tracking cookies or other internet annoyances.<br/>It's also 100% JavaScript free.</p>
-        <h3 class="no-mar-bottom">Tor Hidden Services</h3>
-        <p class="two-no-mar">This site is available through Tor at:</p>
-        <ul class="no-mar-top">
-            <li>
-                <p class="two-mar-bottom display-inline-block">Onion v2: </p>
-                <div class="onionlink two-mar-top">
-                    <p class="no-mar word-break-all"><a class="font-family-monospace" href="http://jamiewebgbelqfno.onion" target="_blank" rel="noopener">jamiewebgbelqfno.onion</a></p>
-                </div>
-            </li>
-            <li>
-                <p class="two-mar-bottom display-inline-block">Onion v3: </p>
-                <div class="onionlink two-mar-top">
-                    <p class="no-mar word-break-all"><a class="font-family-monospace"href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></p>
-                </div>
-            </li>
-        </ul>
-        <hr>
         <div class="recent-posts"><?php bloglist("home"); ?></div>
         <hr>
         <a href="/blog/">
@@ -90,6 +71,19 @@
                 <h5 class="two-no-mar">Guide to registering a Namecoin .bit domain.</h5>
                 <p class="two-mar-top">Tuesday 16th January 2018</p>
             </a>
+        </div>
+        <hr>
+        <h2 class="centertext">Tor Hidden Services</h2>
+        <div class="redlink">
+            <p class="no-mar-top no-mar-bottom">My website is also available as a Tor Hidden Service.</p>
+            <p class="two-mar-bottom display-inline-block">Onion v2: </p>
+            <div class="onionlink two-mar-top">
+                <p class="no-mar word-break-all"><a class="font-family-monospace" href="http://jamiewebgbelqfno.onion" target="_blank" rel="noopener">jamiewebgbelqfno.onion</a></p>
+            </div>
+            <p class="two-mar-bottom display-inline-block">Onion v3: </p>
+            <div class="onionlink two-mar-top">
+                <p class="no-mar word-break-all"><a class="font-family-monospace"href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></p>
+            </div>
         </div>
     </div>
 </div>
