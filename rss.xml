@@ -15,7 +15,7 @@
         <link>https://www.jamieweb.net/blog/deploying-a-tor-onion-v3-hidden-service-using-ansible/</link>
         <description>Using the Ansible configuration management tool to automatically deploy a Tor Onion v3 Hidden Service to a Linux machine.</description>
         <category>Blog</category>
-        <pubDate>Sat, 31 Aug 2019</pubDate>
+        <pubDate>Mon, 16 Sep 2019</pubDate>
     </item>
     <item>
         <title>Serving security.txt Using a Cloudflare Worker</title>

@@ -111,7 +111,7 @@ if(!($statusMsg)) {
         <div>
             <h1 class="info">Einstein@Home Stats</h1>
             <p class="info">Total Earned Credits: <b><?php echo $master[6]; ?></b></p>
-            <p class="info">Recent Average Credit: <b><?php echo checkLow($master[7], 1200, "Einstein@Home RAC"); ?></b></p>
+            <p class="info">Recent Average Credit: <b><?php echo checkLow($master[7], 900, "Einstein@Home RAC"); ?></b></p>
             <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2015-10-04'))->format("%a"); ?> days</b></p>
         </div>
     </div>
