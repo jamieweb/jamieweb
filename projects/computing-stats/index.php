@@ -102,12 +102,6 @@ if(!($statusMsg)) {
     <p>The cluster is currently running <a href="https://einsteinathome.org/" target="_blank" rel="noopener">Einstein@Home</a>, which is a distributed computing project that searches for gravitational waves using data from the LIGO gravitational wave detector.</p>
 
     <div class="computing-stats">
-        <!--<div class="computing-stats-half-width">
-            <h1 class="info">Rosetta@Home Stats</h1>
-            <p class="info">Total Earned Credits: <b><?php echo $master[4]; ?></b></p>
-            <p class="info">Recent Average Credit: <b><?php echo checkLow($master[5], 100, "Rosetta@Home RAC"); ?></b></p>
-            <p class="info">Total Running Time: <b><?php echo $now->diff(new DateTime('2016-11-07'))->format("%a"); ?> days</b></p>
-        </div>-->
         <div>
             <h1 class="info">Einstein@Home Stats</h1>
             <p class="info">Total Earned Credits: <b><?php echo $master[6]; ?></b></p>
