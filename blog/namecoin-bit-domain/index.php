@@ -304,11 +304,11 @@ server:
     <p>In order for your certificates to work properly with ncdns's certificate injection feature and to avoid HTTPS browser warnings, you'll also need to set up tls records in your domain configuration. This follows a standard similar to DANE by specifying allowed certificates in the DNS records for a domain. Please see <a href="https://namecoin.org/docs/name-owners/tls/" target="_blank" rel="noopener">Setting Up TLS (for name owners)</a> on the Namecoin website.</p>
 
     <h2 id="apache-tls">Apache Web Server TLS Configuration</h2>
-    <p>The default location to store TLS certificates for use with Apache is /etc/ssl. Public certificates should go in /etc/ssl/certs and private keys should go in /etc/ssl/private. You can use other locations if you want, but always make sure that your private key is protected and only accessible by users who require access, such as www-data. You are also free to rename your files in order to better identify them or prevent name clashes with others. </p>
+    <p>The default location to store TLS certificates for use with Apache is /etc/ssl. Public certificates should go in /etc/ssl/certs and private keys should go in /etc/ssl/private. You can use other locations if you want, but always make sure that your private key is protected and only accessible by users who require access. You are also free to rename your files in order to better identify them or prevent name clashes with others. </p>
     <p>Ideally, your TLS certificate private key should be owned and grouped by root:</p>
     <pre>$ sudo chown root:root /etc/ssl/private/your-name-here-bit-key.pem
 $ sudo chmod o-r /etc/ssl/private/your-name-here-bit-key.pem</pre>
-    <p>Apache (www-data) will still be able to read it as the process that spawns Apache under www-data is owned by root.</p>
+    <p>Apache will still be able to read it as the process that spawns Apache is owned by root.</p>
     <p>Next, make sure that Apache mod_ssl is enabled:</p>
     <pre>$ sudo a2enmod ssl
 $ sudo service apache2 restart</pre>

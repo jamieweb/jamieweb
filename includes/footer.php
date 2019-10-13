@@ -16,7 +16,7 @@
             <h2><a href="/"><img class="footer-logo" src="/images/jamieweb.png">JamieWeb</a></h2>
             <p><b><a href="/blog/">Blog</a> | <a href="/projects/">Projects</a> | <a href="/tools/">Tools</a> | <a href="/info/">Info</a></b></p>
             <p class="footer-email"><b>Email:</b> <img class="two-mar-left" src="/images/blog-jamieweb-ffffff.png"></p>
-            <p><b><a href="/contact/">Contact Info</a> | <a href="/security/">Security</a> | <a href="/privacy/">Privacy</a></b></p>
+            <p><b><a href="/contact/">Contact Info</a> | <a href="/contact/#hackerone">Security</a> | <a href="/privacy/">Privacy</a> | <a href="/contact/#legal">Legal</a></b></p>
             <p>Copyright &copy; Jamie Scaife <?php echo date("Y"); ?></p>
         </div>
         <div class="footer-column footer-middle">
@@ -65,7 +65,7 @@
                     <h4>RSS Feed</h4>
                 </div>
             </a>
-            <p class="margin-top-16">My website does not serve any adverts, tracking cookies or other internet annoyances. It's also 100% JavaScript free.</p>
+            <p class="margin-top-16">My website does not serve any intrusive adverts, tracking cookies or other internet annoyances. It's also 100% JavaScript free.</p>
         </div>
     </div>
     <div class="footer flex-justify-center">

@@ -89,6 +89,17 @@
                 "license": "CC BY-SA 4.0",
                 "format_version": 1
             },
+            "restricting-and-locking-down-ssh-users": {
+                "uri": "restricting-and-locking-down-ssh-users",
+                "navtitle": "Locking Down SSH Users",
+                "title": "Restricting and Locking Down SSH Users",
+                "longdesc": "Restricting SSH users to specific commands, directories and system access.",
+                "shortdesc": "Restricting SSH users to specific commands, directories and system access.",
+                "date": "Sunday 13th January 2019",
+                "tags": "Security",
+                "license": "CC BY-SA 4.0",
+                "format_version": 1
+            },
             "radare2-cutter-part-3-solving-a-crackme-challenge": {
                 "uri": "radare2-cutter-part-3-solving-a-crackme-challenge",
                 "navtitle": "Cutter Part 3: Solving a Crackme Challenge",
