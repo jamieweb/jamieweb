@@ -62,16 +62,6 @@
 
     <div class="iconparent">
         <div class="iconimg">
-            <a href="/info/restricting-and-locking-down-ssh-users/"><img src="/images/fontawesome/user-lock.svg"></a>
-        </div>
-        <div class="iconlist">
-            <h3 class="no-mar-bottom"><a href="/info/restricting-and-locking-down-ssh-users/">Restricting and Locking Down SSH Users</a></h3>
-            <p class="two-mar-top"><b>Restricting SSH users to specific commands, directories and system access.</b></p>
-        </div>
-    </div>
-
-    <div class="iconparent">
-        <div class="iconimg">
             <a href="/info/up-to-date-chromium-browser-on-ubuntu/"><img src="/images/fontawesome/box-open.svg"></a>
         </div>
         <div class="iconlist">
@@ -79,6 +69,7 @@
             <p class="two-mar-top"><b>How to run an up-to-date Chromium browser on Ubuntu using the Chromium Snap.</b></p>
         </div>
     </div>
+
     <div class="iconparent">
         <div class="iconimg">
             <a href="/info/x86_64-general-purpose-registers-reference/"><img src="/images/fontawesome/microchip.svg"></a>

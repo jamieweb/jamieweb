@@ -9,7 +9,7 @@
     <title>Restricting and Locking Down SSH Users</title>
     <meta name="description" content="Restricting SSH users to specific commands, directories and system access.">
     <?php include "head.php" ?>
-    <link href="https://www.jamieweb.net/info/restricting-and-locking-down-ssh-users/" rel="canonical">
+    <link href="https://www.jamieweb.net/blog/restricting-and-locking-down-ssh-users/" rel="canonical">
 </head>
 
 <body>
@@ -19,6 +19,7 @@
 <div class="body">
     <h1>Restricting and Locking Down SSH Users</h1>
     <hr>
+    <p><b>Sunday 13th January 2019</b></p>
     <p>This article outlines a number of techniques for restricting and locking down SSH users on Linux systems, and how you can use multiple different protections at once to create the most secure setup.</p>
     <p><b>Skip to Section:</b></p>
     <pre><b>Restricting and Locking Down SSH Users</b>
