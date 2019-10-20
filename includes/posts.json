@@ -1,6 +1,17 @@
 {
     "blog": {
         "2019": {
+            "understanding-pgp-gpg-key-server-output": {
+                "uri": "understanding-pgp-gpg-key-server-output",
+                "navtitle": "PGP/GPG Key Server Output",
+                "title": "Understanding PGP/GPG Key Server Output",
+                "longdesc": "A reference guide to PGP/GPG key server search output.",
+                "date": "October 2019",
+                "tags": "Security",
+                "snippet": "I was recently investigating a suspicious GPG key for one of my domains that had shown some activty on the key servers after been dormant for nearly 10 years. The key wasn't mine, and since anybody can create a key with any name and email address, this wasn't indicative of a breach or imposter. However, it was intriguing to see what this automated system, spammer, or whoever they may be, was trying to do with the key.</p><p>PGP/GPG key server output can sometimes be quite confusing, especially if a key has multiple subkeys, user IDs and signatures. This prompted me to create a reference guide for PGP/GPG key server output, to help anyone else who may be in a similar situation.</p><p>Below is the key server entry for <code>Alice &lt;alice@example.com&gt;</code>, which is a sample key that I created. <b>You can click or hover on any part to find out what it means:</b>",
+                "license": "CC BY-SA 4.0",
+                "format_version": 2
+            },
             "deploying-a-tor-onion-v3-hidden-service-using-ansible": {
                 "uri": "deploying-a-tor-onion-v3-hidden-service-using-ansible",
                 "navtitle": "Deploying a Hidden Service Using Ansible",
