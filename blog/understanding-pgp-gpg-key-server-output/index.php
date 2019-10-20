@@ -8,12 +8,12 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p><?php echo $postInfo->snippet; ?></p>
     <pre><i>Type bits/keyID            cr. time   exp time   key expir</i>
 
-<b>pub</b> rsa4096/a40ced0a9eaba810f55bb88ca41a7776121ce43c
-         Hash=f24c4ff33f09e7da1b0cb2cf72cb2be3
+<a href="#entry-type"><b>pub</b></a> <a href="#key-type">rsa</a><a href="#key-size">4096</a>/<a href="#key-id">a40ced0a9eaba810f55bb88ca41a7776121ce43c</a>
+         <a href="#key-hash">Hash=f24c4ff33f09e7da1b0cb2cf72cb2be3</a>
 
-<b>uid</b> <u>Alice &lt;alice@example.com&gt;</u>
-sig  sig  a41a7776121ce43c 2019-10-19T21:43:52Z 2020-10-18T21:43:52Z ____________________ [selfsig]
-sig  sig  24b1fb13f1b3b06c 2019-10-19T21:51:07Z ____________________ ____________________ 24b1fb13f1b3b06c
+<a href="#entry-type"><b>uid</b></a> <a href="#user-id"><u>Alice &lt;alice@example.com&gt;</u></a>
+<a href="#entry-type">sig</a>  <a href="#certification-level">sig</a>  <a href="#key-id">a41a7776121ce43c</a> <a href="#time-stamp">2019-10-19T21:43:52Z</a> <a href="#time-stamp">2020-10-18T21:43:52Z</a> <a href="#time-stamp">____________________</a> <a href="#selfsig">[selfsig]</a>
+<a href="#entry-type">sig</a>  <a href="#certification-level">sig</a>  <a href="#key-id">24b1fb13f1b3b06c</a> <a href="#time-stamp">2019-10-19T21:51:07Z</a> <a href="#time-stamp">____________________</a> <a href="#time-stamp">____________________</a> <a href="#key-id">24b1fb13f1b3b06c</a>
 
 <b>uid</b> <u>Alice (Alt Email) &lt;alice@example.com&gt;</u>
 sig  sig  a41a7776121ce43c 2019-10-19T21:34:23Z 2020-10-18T21:34:23Z ____________________ [selfsig]
@@ -80,6 +80,16 @@ Short ID:                                            121c e43c</pre>
     <p>The user ID of the key or subkey, consisting of a name and email address, and optionally a comment and/or photograph.</p>
     <p>For example:</p>
     <pre>First Last (Comment) &lt;email@example.com&gt;</pre>
+    <p>User IDs can be added, edited and removed using the <code>--edit-keys</code> option, which will bring up an interactive GPG shell. Some of the most common commands are:</p>
+    <ul>
+        <li><code>list</code>: List keys and UIDs</li>
+        <li><code>adduid</code>: Add a UID</li>
+        <li><code>uid <i>N</i></code>: Select a UID number to edit</li>
+        <li><code>deluid</code>: Delete the selected UID</li>
+        <li><code>primary</code>: Make the selected UID the primary UID</li>
+        <li><code>trust</code>: Change the trust level of the selected key</li>
+        <li><code>help</code>: Show a help dialog</li>
+    </ul>
 
     <h2 id="certification-level">Certification level</h2>
     <p>The level of trust asserted by a specific signature. In the OpenPGP specification this is represented by the hex values <code>0x10</code> to <code>0x13</code>, and displayed by GnuPG as <code>sig</code> through <code>sig3</code>:</p>
@@ -90,6 +100,7 @@ Short ID:                                            121c e43c</pre>
         <li><code>0x13</code> / <code>sig3</code>: Extensive verification</li>
     </ul>
     <p>In addition, <code>sbind</code> is used to represent the creation of the key/record, including the creation time.</p>
+    <p>When using GnuPG to create a signature, you can use the <code>--ask-cert-level</code> option to set the certification level.</p>
 
     <h2 id="time-stamp">Time stamp</h2>
     <p>A time stamp, represented in ISO8601 format, with the <code>Z</code> meaning 'Zulu', or UTC.</p>
@@ -101,6 +112,8 @@ Short ID:                                            121c e43c</pre>
     </ul>
     <p>Blank time stamps, represented as 20 underscores (<code>____________________</code>), indicate that a key or signature is set to not expire.</p>
 
+    <h2 id="selfsig"><code>[selfsig]</code></h2>
+    <p>Indicates that this is a self signature, whereby the users' own private key was used to sign their public key. This is done by default in most modern OpenPGP implementations.</p>
 
     <h2 id="conclusion">Conclusion</h2>
     <p></p>
