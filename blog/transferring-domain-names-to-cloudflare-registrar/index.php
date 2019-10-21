@@ -26,7 +26,7 @@
     <p>In my case, I did a bulk transfer of all of my domains except for the most important one at first, then once I could see that everything was going through properly, I transferred jamieweb.net as well.</p> 
     <h2 id="the-transfer-process">The Transfer Process</h2>
     <p>In order to transfer domain names to Cloudflare, they must already be activated in your Cloudflare account and have their name servers pointing to Cloudflare. Once you have transferred your domain names in, you cannot use external name servers - you are locked to using Cloudflare's own.</p>
-    <p>After clicking onto the domain registration area of your Cloudflare dashboard, you will be immediately prompted to verify your email address. You email address is probably already verified for your Cloudflare account, but this extra verification is required in order to be compliant with the ICANN regulations.</p>
+    <p>After clicking onto the domain registration area of your Cloudflare dashboard, you will be immediately prompted to verify your email address. Your email address is probably already verified for your Cloudflare account, but this extra verification is required in order to be compliant with the ICANN regulations.</p>
     <img class="radius-8" src="cloudflare-domain-transfer-verify-email.png" width="1000px" title="Verifying my Email Address" alt="A screenshot of prompt to verify my email address.">
     <p class="two-no-mar centertext"><i>Cloudflare Registrar prompting me to verify my email address.</i></p>
     <p>Even though my Cloudflare account email address is different to the one used on WHOIS, the verification was still required.</p>
