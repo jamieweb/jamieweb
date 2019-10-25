@@ -6,7 +6,8 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
-    <pre><i>Type bits/keyID            cr. time   exp time   key expir</i>
+    <p>Below is the key server entry for <code>Alice &lt;alice@example.com&gt;</code>, signed by <code>Bob &lt;bob@example.com&gt;</code>, which are sample keys that I created. <b>You can click on any part to find out what it means:</b></p>
+    <pre class="a-reference-hover"><i><span title="Entry type, key type, key size, key ID">Type bits/keyID</a>            <span title="Creation Time">cr. time</span>   <span title="Expiry Date">exp time</span>   <span title="Key Expiry Date">key expir</span></i>
 
 <a href="#entry-type"><b>pub</b></a> <a href="#key-type">rsa</a><a href="#key-size">4096</a>/<a href="#key-id">a40ced0a9eaba810f55bb88ca41a7776121ce43c</a>
          <a href="#key-hash">Hash=f24c4ff33f09e7da1b0cb2cf72cb2be3</a>
@@ -15,17 +16,17 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
 <a href="#entry-type">sig</a>  <a href="#certification-level">sig</a>  <a href="#key-id">a41a7776121ce43c</a> <a href="#time-stamp">2019-10-19T21:43:52Z</a> <a href="#time-stamp">2020-10-18T21:43:52Z</a> <a href="#time-stamp">____________________</a> <a href="#selfsig">[selfsig]</a>
 <a href="#entry-type">sig</a>  <a href="#certification-level">sig</a>  <a href="#key-id">24b1fb13f1b3b06c</a> <a href="#time-stamp">2019-10-19T21:51:07Z</a> <a href="#time-stamp">____________________</a> <a href="#time-stamp">____________________</a> <a href="#key-id">24b1fb13f1b3b06c</a>
 
-<b>uid</b> <u>Alice (Alt Email) &lt;alice@example.com&gt;</u>
-sig  sig  a41a7776121ce43c 2019-10-19T21:34:23Z 2020-10-18T21:34:23Z ____________________ [selfsig]
-sig  sig  24b1fb13f1b3b06c 2019-10-19T21:51:08Z ____________________ ____________________ 24b1fb13f1b3b06c
+<a href="#entry-type"><b>uid</b></a> <a href="#user-id"><u>Alice (Alt Email) &lt;alice@example.com&gt;</u></a>
+<a href="#entry-type">sig</a>  <a href="#certification-level">sig</a>  <a href="#key-id">a41a7776121ce43c</a> <a href="#time-stamp">2019-10-19T21:34:23Z</a> <a href="#time-stamp">2020-10-18T21:34:23Z</a> <a href="#time-stamp">____________________</a> <a href="#selfsig">[selfsig]</a>
+<a href="#entry-type">sig</a>  <a href="#certification-level">sig</a>  <a href="#key-id">24b1fb13f1b3b06c</a> <a href="#time-stamp">2019-10-19T21:51:08Z</a> <a href="#time-stamp">____________________</a> <a href="#time-stamp">____________________</a> <a href="#key-id">24b1fb13f1b3b06c</a>
 
 
 
-<b>sub</b> dsa3072/d7cff40b9c95ede5f8d10b62e91a02198a286d8f 2019-10-19T23:05:19Z
-sig sbind a41a7776121ce43c 2019-10-19T23:05:19Z ____________________ 2020-10-18T23:05:19Z []
+<a href="#entry-type"><b>sub</b></a> <a href="#key-type">dsa</a><a href="#key-size">3072</a>/<a href="#key-id">d7cff40b9c95ede5f8d10b62e91a02198a286d8f</a> <a href="#time-stamp">2019-10-19T23:05:19Z</a>
+<a href="#entry-type">sig</a> <a href="#certification-level">sbind</a> <a href="#key-id">a41a7776121ce43c</a> <a href="#time-stamp">2019-10-19T23:05:19Z</a> <a href="#time-stamp">____________________</a> <a href="#time-stamp">2020-10-18T23:05:19Z</a> <a href="#square-brackets">[]</a>
 
-<b>sub</b> rsa4096/b8d4d1ab55a0f662596c52ab47652ce725cb3e8f 2019-10-19T21:16:21Z
-sig sbind a41a7776121ce43c 2019-10-19T21:16:21Z ____________________ 2020-10-18T21:16:21Z []</pre>
+<a href="#entry-type"><b>sub</b></a> <a href="#key-type">rsa</a><a href="#key-size">4096</a>/<a href="#key-id">b8d4d1ab55a0f662596c52ab47652ce725cb3e8f</a> <a href="#time-stamp">2019-10-19T21:16:21Z</a>
+<a href="#entry-type">sig</a> <a href="#certification-level">sbind</a> <a href="#key-id">a41a7776121ce43c</a> <a href="#time-stamp">2019-10-19T21:16:21Z</a> <a href="#time-stamp">____________________</a> <a href="#time-stamp">2020-10-18T21:16:21Z</a> <a href="#square-brackets">[]</a></pre>
 
     <h2 id="entry-type">Entry type</h2>
     <p>The type of the following entry. Common values are:</p>
@@ -115,8 +116,9 @@ Short ID:                                            121c e43c</pre>
     <h2 id="selfsig"><code>[selfsig]</code></h2>
     <p>Indicates that this is a self signature, whereby the users' own private key was used to sign their public key. This is done by default in most modern OpenPGP implementations.</p>
 
-    <h2 id="conclusion">Conclusion</h2>
-    <p></p>
+    <h2 id="square-brackets"><code>[]</code></h2>
+    <p>There is very little documentation as to the actual purpose of the square brackets at the end of <code>sig&nbsp;&nbsp;sbind</code> lines. They seem to just be a placeholder for notes such as <code>selfsig</code>.</p>
+    <p>However, the <a href="https://github.com/hockeypuck/hockeypuck/search?q=%22selfsig%22&type=Code" target="_blank" rel="noopener">source code for the Hockeypuck GPG key server software</a> seems to indicate that <code>selfsig</code> is the only possible value. If anybody has any further insight into this, please <a href="/contact/">get in touch</a>.</p>
 </div>
 
 <?php include "footer.php" ?>

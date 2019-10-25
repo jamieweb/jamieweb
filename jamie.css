@@ -570,6 +570,15 @@ pre.pre-vanity span {
     font-weight: bold;
 }
 
+pre.a-reference-hover a {
+    text-decoration: none;
+    color: black;
+}
+
+pre.a-reference-hover a:hover {
+    background-color: limegreen;
+}
+
 code {
     background-color: #e0e0e0;
     padding: 2px 4px 2px 4px;

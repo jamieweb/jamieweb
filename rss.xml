@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Understanding PGP/GPG Key Server Output</title>
+        <link>https://www.jamieweb.net/blog/understanding-pgp-gpg-key-server-output/</link>
+        <description>A reference guide to PGP/GPG key server search output.</description>
+        <category>Blog</category>
+        <pubDate>Sat, 26 Oct 2019</pubDate>
+    </item>
+    <item>
         <title>Deploying a Tor Onion v3 Hidden Service Using Ansible</title>
         <link>https://www.jamieweb.net/blog/deploying-a-tor-onion-v3-hidden-service-using-ansible/</link>
         <description>Using the Ansible configuration management tool to automatically deploy a Tor Onion v3 Hidden Service to a Linux machine.</description>
