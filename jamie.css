@@ -758,6 +758,10 @@ ul.spaced-list li,ol.spaced-list li {
     margin-bottom: 7px;
 }
 
+ul.large-spaced-list li,ol.large-spaced-list li {
+    margin-bottom: 24px;
+}
+
 span.tag-apache {
     background-color: #d70017;
     color: white;
