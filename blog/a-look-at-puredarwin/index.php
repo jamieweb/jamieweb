@@ -25,6 +25,8 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <h2 id="a-brief-history-of-darwin-os">A Brief History of Darwin OS</h2>
     <p>Darwin itself was originally released by Apple in November 2000. It is a fork of <a href="https://en.wikipedia.org/wiki/Rhapsody_(operating_system)" target="_blank" rel="noopener">Rhapsody</a>, which was the codename used for Apple's next-generation operating system after the purchase of <a href="https://en.wikipedia.org/wiki/NeXT" target="_blank" rel="noopener">NeXT</a> in 1998. Darwin utilises the <a href="https://en.wikipedia.org/wiki/XNU" target="_blank" rel="noopener">XNU</a> kernel, and currently runs on modern x86-64 processors, as well as 32-bit ARM processors in the case of older iOS devices (e.g. the iPhone 5C).</p>
     <p>Many well-known elements of macOS such as the <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaFundamentals/WhatIsCocoa/WhatIsCocoa.html" target="_blank" rel="noopener">Cocoa</a> framework and the famous <a href="https://en.wikipedia.org/wiki/Aqua_(user_interface)" target="_blank" rel="noopener">Aqua</a> graphical user interface are not included in Darwin, and unfortunately remain closed-source.</p>
+    <img class="radius-8" width="1000px" src="unix-timeline.png">
+    <p class="two-no-mar centertext"><i>A timeline of Unix-based operating systems, showing the common ancestors between different systems. <a href="https://en.wikipedia.org/wiki/File:Unix_timeline.en.svg" target="_blank" rel="noopener">Source</a> (Public Domain)</i></p>
     <p>The PureDarwin project was founded not to create a drop-in replacement for macOS. Instead it strives to be a usable implementation of Darwin which remains faithful to Apple's open source core, but without closed-source components ('Pure'). Some example use cases of PureDarwin include an Apple-compatible build environment without using official Apple hardware, or to facilitate low-level testing of the Darwin kernel, without the limitations of macOS.</p>
 
     <h2 id="puredarwin-xmas">PureDarwin Xmas</h2>
@@ -33,8 +35,8 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <img class="radius-8" width="1000px" src="puredarwin-xmas-vmware-window-maker-desktop-with-applications.png">
     <p class="two-no-mar centertext"><i>PureDarwin Xmas, showing the applications xcalc, xclock, xterm and xfontsel running in the Window Maker desktop window manager.</i></p>
     <p>The menu controls in the top left control which workspace is currently on show. The menu on the right hand side is the application launcher, and the buttons at the bottom show the currently running applications. You can minimise, restore and resize windows using the available controls.</p>
-    <p>PureDarwin Xmas runs Bash 3.2 and uses Window Maker as the desktop window manager. <code>uname -a</code> yields the following:</p>
-    <pre>Darwin PureDarwin.local 9.5.0 Darwin Kernel Version 9.5.0: Thu Sep 18 14:14:00 PDT 2008; root:xnu-1228.7.58.obj/RELEASE_I386 i386</pre>
+    <p>PureDarwin Xmas runs Bash 3.2.17, utilises the XFree86 4.7.0 display server and uses Window Maker 0.92.0 as the desktop window manager. <code>uname -a</code> yields the following:</p>
+    <pre class="pre-wrap-text">Darwin PureDarwin.local 9.5.0 Darwin Kernel Version 9.5.0: Thu Sep 18 14:14:00 PDT 2008; root:xnu-1228.7.58.obj/RELEASE_I386 i386</pre>
     <p>Many command-line and GUI applications come pre-installed in PureDarwin Xmas, including xedit, nano and vim. However, some applications such as Firefox and OpenOffice don't work out-of-the-box due to lack of driver support or missing files.</p>
     <img class="radius-8" width="1000px" src="puredarwin-xmas-vmware-window-maker-desktop-with-application-menus.png">
     <p class="two-no-mar centertext"><i>Each of the primary application menus, showing the various programs and tools that are available in PureDarwin Xmas.</i></p>
@@ -52,7 +54,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p>In my case, I used VMWare Workstation Player, as the PureDarwin Xmas image is distributed primarily in the VMWare virtual machine format.</p>
     <p><b>In order to boot PureDarwin Xmas in VMWare Workstation Player, the following steps can be used:</b></p>
     <ol class="large-spaced-list">
-        <li>Download <code>puredarwinxmas.tar.xz</code> from the <a href="https://code.google.com/archive/p/puredarwin/downloads" target="_blank" rel="noopener">Google Code repository</a>. Check the download against the SHA-1 checksum <code>80f88f44cc540ea05aa847bb18b94bdd133b6c07</code>. Extract the file to yield the <code>puredarwinxmas.vmwarevm</code> directory.</li>
+        <li>Download <code>puredarwinxmas.tar.xz</code> from the <a href="https://code.google.com/archive/p/puredarwin/downloads" target="_blank" rel="noopener">Google Code repository</a>. Check the download against the SHA-256 checksum <code>5dad4c534ec475a87e204361cd510fec511acb655484c00ff7ce8ca41cb55f86</code>. Extract the file to yield the <code>puredarwinxmas.vmwarevm</code> directory.</li>
         <li>Download and install the appropriate version of VMWare Workstation Player for your system from the <a href="https://my.vmware.com/en/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/15_0" target="_blank" rel="noopener">downloads page</a>. Verify your download against the checksums provided.</li>
         <li>Open VMWare and import the <code>.vmx</code> file from the <code>puredarwinxmas.vmwarevm</code> directory. Keep the directory structure entact, as the configuration files in the directory are required in order to load the now-unsupported 'Mac OS Server' VM profile into VMWare.</li>
         <li>Boot the VM. PureDarwin Xmas will boot directly to the desktop. On modern hardware, the total boot time is around 10 seconds.</li>
@@ -64,6 +66,39 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
 
     <h2 id="puredarwin-beta-17-4">PureDarwin Beta 17.4</h2>
     <p>The PureDarwin developers have been able to successfully install MacPorts in PureDarwin, allowing many software packages such as Apache HTTPd, Git and even XFCE to be installed. Unfortunately this is non-trivial to achieve without strong networking support, but it shows the potential use cases of PureDarwin.</p>
+
+    <h2 id="booting-puredarwin-beta-17-4-in-virtualbox">Booting PureDarwin Beta 17.4 in VirtualBox</h2>
+    <p>Unlike PureDarwin Xmas, the Beta 17.4 release of PureDarwin can be successfully booted in modern versions of VirtualBox and QEMU if the correct settings are used. VMware cannot be used, as it doesn't support modern macOS-esque guests unless you are running on official Apple hardware.</p>
+    <p>In my case, I used VirtualBox to allow for easy configuration of the relevant settings. <b>The following steps can be used to boot PureDarwin Beta 17.4 in VirtualBox:</b></p>
+    <ol class="large-spaced-list">
+        <li>Download <code>pd_17_4.vmdk.xz</code> from the <a href="https://www.pd-devs.org/Beta/pd_17_4.vmdk.xz" target="_blank" rel="noopener">PureDarwin Devs site</a>. Check the download against the SHA-256 checksum <code>f2bb10f2fdb309a9a4fc77083c17b5a145db132551449a01b115f470d86c317c</code>. Extract the file to yield <code>pd_17_4.vmdk</code>.</li>
+        <li>Download and install the appropriate version of VirtualBox for your system, either from your system package manager or from the <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">downloads page</a>. Verify your download against the checksums provided.</li>
+        <li>Create a new virtual machine using type '<b>Other/Unknown (32-bit)</b>', without an attached disk. Set the chipset mode to <b>ICH9</b> and enable <b>I/O APIC</b>, then add an IDE controller in <b>ICH6</b> mode. Attach the <code>.vmdk</code> virtual disk file to the IDE controller.</li>
+        <li>Boot the VM. PureDarwin Beta 17.4 will boot to a Bash 3.2 shell prompt. On modern hardware, the boot time is around 20 seconds.</li>
+    </ol>
+    <p>There are some common errors that you may encounter if the virtual machine settings are not configured correctly. I have documented a couple of these below.</p>
+    <h3 id="still-waiting-for-root-device"><code>Still waiting for root device</code>:</h3>
+    <p>This error occurs when the root file system cannot be recognised during the boot process. This seems to be related to the fact that the root file system is a virtual file system within the VMDK image, rather than one that was created using physical hardware.</p>
+    <pre class="pre-wrap-text">Waiting on &lt;dict ID="0"&gt;&lt;key&gt;IOProviderClass&lt;/key&gt;&lt;string ID="1"&gt;IOResources&lt;/string&gt;&lt;key&gt;IOResourcesMatch&lt;/key&gt;&lt;string ID="2"&gt;boot-uuid-media&lt;/string&gt;&lt;/dict&gt;
+Still waiting for root device
+Still waiting for root device
+Still waiting for root device</pre>
+    <p>This will occur around half way through the boot process, and the error will be printed repeatedly:</p>
+    <img class="radius-8" width="1000px" src="puredarwin-17_4-beta-virtualbox-still-waiting-for-root-device.png">
+    <p class="two-no-mar centertext"><i>PureDarwin Beta 17.4 running in VirtualBox, showing the '<code class="margin-left-7">Still waiting for root device</code>' error.</i></p>
+    <p>In order to resolve this error, ensure that your virtual disk is using an IDE controller in ICH6 mode, and that the chipset mode is set to ICH9, as shown below:</p>
+    <img class="radius-8" width="1000px" src="puredarwin-17_4-beta-virtualbox-ide-disk-controller-setup.png">
+    <p class="two-no-mar centertext"><i>The VirtualBox IDE disk controller settings.</i></p>
+    <br>
+    <img class="radius-8" width="1000px" src="puredarwin-17_4-beta-virtualbox-motherboard-setup.png">
+    <p class="two-no-mar centertext"><i>The VirtualBox motherboard settings.</i></p>
+    <p>Once you have configured these options, PureDarwin should boot successfully.</p>
+    <h3 id="bad-magic-number"><code>Bad magic number</code>:</h3>
+    <p>This error occurs if you try to boot PureDarwin in 64-bit mode, as currently only 32-bit is supported:</p>
+    <pre class="pre-wrap-text"></pre>
+    <img class="radius-8" width="1000px" src="puredarwin-17_4-beta-virtualbox-bad-magic-number.png">
+    <p class="two-no-mar centertext"><i>PureDarwin Beta 17.4 running in VirtualBox, showing the '<code class="margin-left-7">Bad magic number</code>' error.</i></p>
+    <p>Ensure that the virtual machine type in VirtualBox is set to either 'Other/Unknown (32-bit)' or ''. This should allow PureDarwin to boot properly.</p>
 </div>
 
 <?php include "footer.php" ?>
