@@ -6,7 +6,7 @@
                 "navtitle": "A Look at PureDarwin",
                 "title": "A Look at PureDarwin - an OS based on the open source core of macOS",
                 "longdesc": "An overview of the PureDarwin project, which is a community effort to produce a more usable version of Darwin OS, the open source base behind modern Mac OS.",
-                "date": "Tuesday 26th November 2019",
+                "date": "Wednesday 27th November 2019",
                 "tags": "Apple,Virtualisation",
                 "snippet": "PureDarwin is a community project to make <a class=\"exempt\" href=\"https://en.wikipedia.org/wiki/Darwin_(operating_system)\" target=\"_blank\" rel=\"noopener\">Darwin</a>, the open source operating system developed by <i>Apple Inc.</i> that macOS is built upon, more usable by providing bootable ISOs and documentation.</p><img class=\"radius-8 max-width-100-percent\" src=\"/blog/a-look-at-puredarwin/puredarwin-org.png\"><p class=\"two-no-mar centertext\"><i>The <a class=\"exempt\" href=\"https://www.puredarwin.org/\" target=\"_blank\" rel=\"noopener\">puredarwin.org</a> homepage, showing the Hexley the Platypus mascot.</i></p><p>The project was founded in 2007, and is seen as the informal successor to the OpenDarwin project (which closed down in 2006). PureDarwin is a downstream project of <a class=\"exempt\" href=\"https://github.com/macosforge/darwinbuild\" target=\"_blank\" rel=\"noopener\">Darwinbuild</a>, combining the open source Darwin base with other FOSS tools (such as X.org) to produce a usable system.",
                 "license": "CC BY-SA 4.0",

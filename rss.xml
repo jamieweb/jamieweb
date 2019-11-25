@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>A Look at PureDarwin - an OS based on the open source core of macOS</title>
+        <link>https://www.jamieweb.net/blog/a-look-at-puredarwin/</link>
+        <description>An overview of the PureDarwin project, which is a community effort to produce a more usable version of Darwin OS, the open source base behind modern Mac OS.</description>
+        <category>Blog</category>
+        <pubDate>Wed, 27 Nov 2019</pubDate>
+    </item>
+    <item>
         <title>Understanding PGP/GPG Key Server Output</title>
         <link>https://www.jamieweb.net/blog/understanding-pgp-gpg-key-server-output/</link>
         <description>A reference guide to PGP/GPG key server search output.</description>
