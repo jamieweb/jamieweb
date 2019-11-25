@@ -6,8 +6,9 @@
                 "navtitle": "A Look at PureDarwin",
                 "title": "A Look at PureDarwin - an OS based on the open source core of macOS",
                 "longdesc": "An overview of the PureDarwin project, which is a community effort to produce a more usable version of Darwin OS, the open source base behind modern Mac OS.",
-                "tags": "Apple",
-                "snippet": "",
+                "date": "Tuesday 26th November 2019",
+                "tags": "Apple,Virtualisation",
+                "snippet": "PureDarwin is a community project to make <a class=\"exempt\" href=\"https://en.wikipedia.org/wiki/Darwin_(operating_system)\" target=\"_blank\" rel=\"noopener\">Darwin</a>, the open source operating system developed by <i>Apple Inc.</i> that macOS is built upon, more usable by providing bootable ISOs and documentation.</p><img class=\"radius-8 max-width-100-percent\" src=\"/blog/a-look-at-puredarwin/puredarwin-org.png\"><p class=\"two-no-mar centertext\"><i>The <a class=\"exempt\" href=\"https://www.puredarwin.org/\" target=\"_blank\" rel=\"noopener\">puredarwin.org</a> homepage, showing the Hexley the Platypus mascot.</i></p><p>The project was founded in 2007, and is seen as the informal successor to the OpenDarwin project (which closed down in 2006). PureDarwin is a downstream project of <a class=\"exempt\" href=\"https://github.com/macosforge/darwinbuild\" target=\"_blank\" rel=\"noopener\">Darwinbuild</a>, combining the open source Darwin base with other FOSS tools (such as X.org) to produce a usable system.",
                 "license": "CC BY-SA 4.0",
                 "format_version": 2
             },
@@ -17,7 +18,7 @@
                 "title": "Understanding PGP/GPG Key Server Output",
                 "longdesc": "A reference guide to PGP/GPG key server search output.",
                 "date": "Saturday 26th October 2019",
-                "tags": "Security",
+                "tags": "Security,Guide",
                 "snippet": "I was recently investigating a suspicious GPG key for one of my domains that had shown some activity on the key servers after been dormant for nearly 10 years. The key wasn't mine, and since anybody can create a key with any name and email address, this wasn't indicative of a breach or imposter. However, it was intriguing to see what this automated system, spammer, or whoever they may be, was trying to do with the key.</p><p>PGP/GPG key server output can sometimes be quite confusing, especially if a key has multiple subkeys, user IDs and signatures. This prompted me to create a reference guide for PGP/GPG key server output, to help anyone else who may be in a similar situation.",
                 "license": "CC BY-SA 4.0",
                 "format_version": 2
@@ -28,8 +29,8 @@
                 "title": "Deploying a Tor Onion v3 Hidden Service Using Ansible",
                 "longdesc": "Using the Ansible configuration management tool to automatically deploy a Tor Onion v3 Hidden Service to a Linux machine.",
                 "date": "Monday 16th September 2019",
-                "tags": "Security",
-                "snippet": "As part of an ongoing project to implement version control and configuration management for all aspects of my infrastructure, I have recently moved the hosting for my <b><a href=\"/blog/onionv3-hidden-service/\" target=\"_blank\">Tor Hidden Services</a></b> onto my main web infrastructure, rather than using a separate dedicated machine. Both of my web servers are set up and managed entirely using Ansible, so I had to put together a new Ansible playbook to install and configure Tor. I've documented it here if anyone else may find it useful.</p><p>The configuration described in this article is intended for use on Debian/Ubuntu-based systems, however with minor modifications it should be usable on other systems as well.",
+                "tags": "Security,Tor,Guide",
+                "snippet": "As part of an ongoing project to implement version control and configuration management for all aspects of my infrastructure, I have recently moved the hosting for my <b><a class=\"exempt\" href=\"/blog/onionv3-hidden-service/\" target=\"_blank\">Tor Hidden Services</a></b> onto my main web infrastructure, rather than using a separate dedicated machine. Both of my web servers are set up and managed entirely using Ansible, so I had to put together a new Ansible playbook to install and configure Tor. I've documented it here if anyone else may find it useful.</p><p>The configuration described in this article is intended for use on Debian/Ubuntu-based systems, however with minor modifications it should be usable on other systems as well.",
                 "license": "CC BY-SA 4.0",
                 "format_version": 2
             },
@@ -39,8 +40,8 @@
                 "title": "Serving security.txt Using a Cloudflare Worker",
                 "longdesc": "If your Content Management System or hosting provider doesn't allow you to host a proper security.txt file, you can instead use Cloudflare Serverless Workers to serve the file directly from Cloudflare.",
                 "date": "Wednesday 31st July 2019",
-                "tags": "Security",
-                "snippet": "One of the most common implementation challenges of <b><a href=\"https://securitytxt.org/\" target=\"_blank\" rel=\"noopener\">security.txt</a></b> is Content Management Systems or managed hosting providers that don't allow you to set the file correctly. For example, they may disallow writing to the <code>/.well-known</code> directory, or it may not be possible to serve files as the <code>text/plain</code> MIME type.</p><p>If this is the case, and you also happen to be fronting your website using Cloudflare, you can use <b><a href=\"https://workers.cloudflare.com/\" target=\"_blank\" rel=\"noopener\">Cloudflare Serverless Workers</a></b> to serve the file directly from Cloudflare, instead of passing the request through to your origin server/hosting provider.</p><p>Serverless, also known as functions-as-a-service (FaaS), allow you to run your code in the cloud, without having to rent individual virtual machines or use traditional shared hosting. Instead, your code runs in short lived and isolated sandboxes on a machine with potentially hundreds of other customers' sandboxed code. Deployment, scaling, resilience and system security is all managed by the serverless provider. You are generally billed per execution or for the amount of CPU time used, making serverless much more cost efficient than other cloud computing models in many cases.",
+                "tags": "Security,Guide",
+                "snippet": "One of the most common implementation challenges of <b><a class=\"exempt\" href=\"https://securitytxt.org/\" target=\"_blank\" rel=\"noopener\">security.txt</a></b> is Content Management Systems or managed hosting providers that don't allow you to set the file correctly. For example, they may disallow writing to the <code>/.well-known</code> directory, or it may not be possible to serve files as the <code>text/plain</code> MIME type.</p><p>If this is the case, and you also happen to be fronting your website using Cloudflare, you can use <b><a class=\"exempt\" href=\"https://workers.cloudflare.com/\" target=\"_blank\" rel=\"noopener\">Cloudflare Serverless Workers</a></b> to serve the file directly from Cloudflare, instead of passing the request through to your origin server/hosting provider.</p><p>Serverless, also known as functions-as-a-service (FaaS), allow you to run your code in the cloud, without having to rent individual virtual machines or use traditional shared hosting. Instead, your code runs in short lived and isolated sandboxes on a machine with potentially hundreds of other customers' sandboxed code. Deployment, scaling, resilience and system security is all managed by the serverless provider. You are generally billed per execution or for the amount of CPU time used, making serverless much more cost efficient than other cloud computing models in many cases.",
                 "license": "CC BY-SA 4.0",
                 "format_version": 2
             },
@@ -117,7 +118,7 @@
                 "longdesc": "Restricting SSH users to specific commands, directories and system access.",
                 "shortdesc": "Restricting SSH users to specific commands, directories and system access.",
                 "date": "Sunday 13th January 2019",
-                "tags": "Security",
+                "tags": "Security,Guide",
                 "license": "CC BY-SA 4.0",
                 "format_version": 1
             },

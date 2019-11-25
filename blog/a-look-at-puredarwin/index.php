@@ -6,10 +6,6 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
-    <p>PureDarwin is a community project to make <a href="https://en.wikipedia.org/wiki/Darwin_(operating_system)" target="_blank" rel="noopener">Darwin</a>, the open source operating system developed by <i>Apple Inc.</i> that macOS is built upon, more usable by providing bootable ISOs and documentation.</p>
-    <img class="radius-8" width="1000px" src="/blog/a-look-at-puredarwin/puredarwin-org.png">
-    <p class="two-no-mar centertext"><i>The <a href="https://www.puredarwin.org/" target="_blank" rel="noopener">puredarwin.org</a> homepage, showing the Hexley the Platypus mascot.</i></p>
-    <p>The project was founded in 2007, and is seen as the informal successor to the OpenDarwin project (which closed down in 2006). PureDarwin is a downstream project of <a href="https://github.com/macosforge/darwinbuild" target="_blank" rel="noopener">Darwinbuild</a>, combining the open source Darwin base with other FOSS tools (such as X.org) to produce a usable system.</p>
     <img class="radius-8" width="1000px" src="puredarwin-xmas-vmware-window-maker-desktop.png">
     <p class="two-no-mar centertext"><i>The Window Maker desktop environment running in the 'PureDarwin Xmas' release from December 2008.</i></p>
 
@@ -54,7 +50,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p>In my case, I used VMware Workstation Player, as the PureDarwin Xmas image is distributed primarily in the VMware virtual machine format.</p>
     <p><b>In order to boot PureDarwin Xmas in VMware Workstation Player, the following steps can be used:</b></p>
     <ol class="large-spaced-list">
-        <li>Download <code>puredarwinxmas.tar.xz</code> from the <a href="https://code.google.com/archive/p/puredarwin/downloads" target="_blank" rel="noopener">Google Code repository</a>. Check the download against the SHA-256 checksum <code>5dad4c534ec475a87e204361cd510fec511acb655484c00ff7ce8ca41cb55f86</code>. Extract the file to yield the <code>puredarwinxmas.vmwarevm</code> directory.</li>
+        <li>Download <code>puredarwinxmas.tar.xz</code> from the <a href="https://code.google.com/archive/p/puredarwin/downloads" target="_blank" rel="noopener">Google Code repository</a>. Check the download against the SHA-256 checksum <code>5dad4c534ec475a87e20<wbr>4361cd510fec511acb65<wbr>5484c00ff7ce8ca41cb55f86</code>. Extract the file to yield the <code>puredarwinxmas.vmwarevm</code> directory.</li>
         <li>Download and install the appropriate version of VMware Workstation Player for your system from the <a href="https://my.vmware.com/en/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/15_0" target="_blank" rel="noopener">downloads page</a>. Verify your download against the checksums provided.</li>
         <li>Open VMware and import the <code>.vmx</code> file from the <code>puredarwinxmas.vmwarevm</code> directory. Keep the directory structure entact, as the configuration files in the directory are required in order to load the now-unsupported 'Mac OS Server' VM profile into VMware.</li>
         <li>Boot the VM. PureDarwin Xmas will boot directly to the desktop. On modern hardware, the total boot time is around 10 seconds.</li>
@@ -76,7 +72,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p>Unlike PureDarwin Xmas, the 17.4 Beta release of PureDarwin can be successfully booted in modern versions of VirtualBox and QEMU if the correct settings are used. VMware cannot be used, as it doesn't support modern macOS-esque guests unless you are running on official Apple hardware.</p>
     <p>In my case, I used VirtualBox to allow for easy configuration of the relevant settings. <b>The following steps can be used to boot PureDarwin 17.4 Beta in VirtualBox:</b></p>
     <ol class="large-spaced-list">
-        <li>Download <code>pd_17_4.vmdk.xz</code> from the <a href="https://www.pd-devs.org/Beta/pd_17_4.vmdk.xz" target="_blank" rel="noopener">PureDarwin Devs site</a>. Check the download against the SHA-256 checksum <code>f2bb10f2fdb309a9a4fc77083c17b5a145db132551449a01b115f470d86c317c</code>. Extract the file to yield <code>pd_17_4.vmdk</code>.</li>
+        <li>Download <code>pd_17_4.vmdk.xz</code> from the <a href="https://www.pd-devs.org/Beta/pd_17_4.vmdk.xz" target="_blank" rel="noopener">PureDarwin Devs site</a>. Check the download against the SHA-256 checksum <code>f2bb10f2fdb309a9a4fc<wbr>77083c17b5a145db1325<wbr>51449a01b115f470d86c317c</code>. Extract the file to yield <code>pd_17_4.vmdk</code>.</li>
         <li>Download and install the appropriate version of VirtualBox for your system, either from your system package manager or from the <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">downloads page</a>. Verify your download against the checksums provided.</li>
         <li>Create a new virtual machine using type '<b>Mac OS X -> macOS 10.13 High Sierra (64-bit)</b>', without an attached disk. Set the chipset mode to <b>ICH9</b> and enable <b>I/O APIC</b>, then add an IDE controller in <b>ICH6</b> mode. Attach the <code>.vmdk</code> virtual disk file to the IDE controller.</li>
         <li>Boot the VM. PureDarwin 17.4 Beta will boot to a Bash 3.2 shell prompt. On modern hardware, the boot time is around 20 seconds.</li>
