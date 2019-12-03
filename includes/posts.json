@@ -1,6 +1,17 @@
 {
     "blog": {
         "2019": {
+            "securing-inbound-email-transport-with-mta-sts-and-starttls-everywhere": {
+                "uri": "securing-inbound-email-transport-with-mta-sts-and-starttls-everywhere",
+                "navtitle": "MTA-STS and STARTTLS-Everywhere",
+                "title": "Securing Inbound Email Transport with MTA-STS and STARTTLS-Everywhere",
+                "longdesc": "Implementing the new MTA-STS specification and adding your domain to the STARTTLS-Everywhere list to help secure inbound email transport.",
+                "date": "December 2019",
+                "tags": "Security,TLS,RFC",
+                "snippet": "",
+                "license": "CC BY-SA 4.0",
+                "format_version": 2
+            },
             "a-look-at-puredarwin": {
                 "uri": "a-look-at-puredarwin",
                 "navtitle": "A Look at PureDarwin",
