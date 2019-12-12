@@ -21,7 +21,8 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <h2 id="mta-sts">MTA-STS</h2>
     <p>MTA-STS (Mail Transfer Agent Strict Transport Security) is a new internet standard (<a href="https://tools.ietf.org/html/rfc8461" target="_blank" rel="noopener">RFC8461</a>) which allows you to advertise a force-TLS policy for your domain by hosting a plaintext policy file at a specific location. Supported MTAs (Mail Transfer Agents) will then automatically read this policy when they send email to you, and force the connection to use TLS with a valid certificate. It is very similar to HTTP Strict Transport Security, which is a web security header used by websites to instruct browsers that future connections should be conducted over HTTPS only.</p>
     <p>MTA-STS works on a TOFU (Trust On First Use) basis, meaning that once a policy is read at least once, it will be cached by the MTA for a specified length of time. This does technically mean that an attacker could defeat MTA-STS by preventing a victim MTA from ever making a request to the MTA-STS policy file hosted on the recipient's domain, however in most cases this isn't a significant concern. However, a mitigation for this is <a href="#starttls-everywhere">STARTTLS-Everywhere</a>, which is discussed later in this blog post.</p>
-    <p>MTA-STS policy files are plaintext files that must be accessible via HTTPS at the <code>/.well-known/mta-sts.txt</code> file path on the <code>mta-sts</code> subdomain. For example, a valid MTA-STS policy file path would be <code>https://mta-sts.example.com/.well-known/mta-sts.txt</code>. An example of a policy file is shown below:</p>
+    <p>MTA-STS policy files are plaintext files that must be accessible via HTTPS at the <code>/.well-known/mta-sts.txt</code> file path on the <code>mta-sts</code> subdomain. For example, a valid MTA-STS policy file path would be <code>https://mta-sts.example.com/.well-known/mta-sts.txt</code>.</p>
+    <p>An example of a policy file is shown below:</p>
     <pre>version: STSv1
 mode: enforce
 max_age: 86401
@@ -29,9 +30,9 @@ mx: mail1.example.com
 mx: mail2.example.com</pre>
     <p>The file contains a selection of 4 standard directives:</p>
     <ul class="spaced-list">
-        <li><b><code>version</code></b>: The version of the MTA-STS standard in-use. Currently only <code>STSv1</code> is supported.</li>
+        <li><b><code>version</code></b>: The version of the MTA-STS standard in use. Currently only <code>STSv1</code> is supported.</li>
         <li><b><code>mode</code></b>: The enforcement mode, which can be either of:
-        <ul>
+        <ul class="spaced-list">
             <li><code>enforce</code>: Bounce emails that cannot be securely delivered and report on failures.</li>
             <li><code>testing</code>: Allow non-secure emails to be delivered, but still report on failures.</li>
         </ul>
@@ -39,9 +40,50 @@ mx: mail2.example.com</pre>
         <li><b><code>mx</code></b>: A mail server that is permitted to process email for your domain, and serves a valid certificate for the hostname. All of your mail servers should be specified (usually all hosts present in your <code>MX</code> DNS records).</li>
     </ul>
     <p>Your policy file must be served over a valid HTTPS connection using the <code>text/plain</code> MIME type at exactly the <code>/.well-known/mta-sts.txt</code> on the <code>mta-sts</code> subdomain.</p>
+    <p>In addition to hosting a policy file, you also need to add a DNS TXT record under the <code>_mta-sts</code> label. This is used to indicate to supported MTAs that they should check for a policy file and enable MTA-STS using the specified mode if one is found.</p>
+    <p>An example of a valid DNS record for MTA-STS is below:</p>
+    <pre>_mta-sts.example.com IN TXT "v=STSv1; id=20191211235602"</pre>
+    <p>The DNS record contains just 2 standard directives, both of which are mandatory:</p>
+    <ul class="spaced-list">
+        <li><b><code>v</code></b>: The version of the MTA-STS standard in use. Currently only <code>STSv1</code> is supported.</li>
+        <li><b><code>id</code></b>: A unique value to identify the current version of the policy file in place. If you update your policy file, you should also update the ID value in the DNS record. Any unique value can be used, but generally the current date and time is easiest to manage (e.g. <code>20191211235602</code> is 23:56:02 on 2019-12-11.</li>
+    </ul>
+    <p>You don't need to specify the URL or path to your <code>mta-sts.txt</code> policy file anywhere in the DNS record, as the path is standardised within the specification.</p>
 
     <h2 id="tlsrpt">TLSRPT</h2>
-    <p>MTA-STS is directly complemented by TLSRPT (TLS Reporting), which is a reporting mechanism for </p>
+    <p>MTA-STS is directly complemented by TLSRPT (TLS Reporting), which is a reporting mechanism that allows you to see whether emails are successfully being delivered over TLS, as well as any errors that may have occured (e.g. an expired certificate).</p>
+    <p>TLSRPT works in a very similar way to DMARC reporting. You specify a reporting endpoint (a URI or an email address) via a DNS record, which then causes email service providers to send you daily reports in JSON format.</p>
+    <p>Reports delivered via email are compressed using Gzip. You can decompress these using <code>gzip -d report.json.gz</code>. You can then prettify the resulting JSON using <code>jq . report.json</code> or <code>python -m json.tool report.json</code>.</p>
+    <p>An example of a TLSRPT report is shown below (prettified JSON):</p>
+    <pre>{
+    "organization-name": "Google Inc.",
+    "date-range": {
+        "start-datetime": "2019-12-11T00:00:00Z",
+        "end-datetime": "2019-12-11T23:59:59Z"
+    },
+    "contact-info": "smtp-tls-reporting@google.com",
+    "report-id": "2019-12-11T00:00:00Z_example.com",
+    "policies": [
+        {
+            "policy": {
+                "policy-type": "sts",
+                "policy-string": [
+                    "version: STSv1",
+                    "mode: enforce",
+                    "mx: mail1.example.com",
+                    "mx: mail2.example.com",
+                    "max_age: 86401"
+                ],
+                "policy-domain": "example.com"
+            },
+            "summary": {
+                "total-successful-session-count": 773,
+                "total-failure-session-count": 0
+            }
+        }
+    ]
+}</pre>
+    <p>This report shows that Google's MTA (for Gmail and G Suite) successfully detected an MTA-STS policy for the domain <code>example.com</code>, and that there were 773 successful TLS sessions (emails delivered from Google's MTA to your domain) during the report timeframe.</p>
 
     <h2 id="mta-sts">Enabling MTA-STS and TLSRPT For Your Domain</h2>
     <p></p>
