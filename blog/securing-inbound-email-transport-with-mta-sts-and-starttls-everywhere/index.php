@@ -17,7 +17,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
 &#x2523&#x2501&#x2501 <a href="#enabling-tlsrpt-for-your-domain">Enabling TLSRPT For Your Domain</a>
 &#x2523&#x2501&#x2501 <a href="#interpreting-tlsrpt-reports">Interpreting TLSRPT Reports</a>
 &#x2523&#x2501&#x2501 <a href="#starttls-everywhere">STARTTLS-Everywhere</a>
-&#x2523&#x2501&#x2501 <a href="#adding-your-domain-to-the-starttls-everywhere-list">Adding Your Domain to the STARTTLS-Everywhere List</a>
+&#x2523&#x2501&#x2501 <a href="#adding-your-domain-to-the-starttls-everywhere-policy-list">Adding Your Domain to the STARTTLS-Everywhere Policy List</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
     <h2 id="mta-sts">MTA-STS</h2>
@@ -133,13 +133,37 @@ mx: mail2.example.com</pre>
     <p>I personally use the <a href="https://uriports.com/" target="_blank" rel="noopener">URIports</a> service as my reporting endpoint, which will automatically process reports, produce a graph showing deliverability, and can be configured to send alerts if a failure is reported.</p>
 
     <h2 id="starttls-everywhere">STARTTLS-Everywhere</h2>
-    <p></p>
+    <p><a href="https://starttls-everywhere.org/" target="_blank" rel="noopener">STARTTLS-Everywhere</a> is a project founded by the <a href="https://eff.org/" target="_blank" rel="noopener">EFF</a> with the goal of creating a globally shared list of mail servers that are known to support STARTTLS.</p>
+    <p>The purpose of this list is to act as a point of reference for mail servers to know whether other mail servers support STARTTLS, prior to actually connecting to them and trying. This means that emails can be delivered between secured domains over TLS by default, rather than having to negotiate a secure/insecure connection.</p>
+    <p>Implementing STARTTLS-Everywhere means that man-in-the-middle and/or downgrade attacks against the email transport would be significant more complex to carry out, as the bar is raised from having network-level access to now also requiring a valid certificate for the victim mail server.</p>
+    <p>STARTTLS-Everywhere is essentially <a href="https://hstspreload.org/" target="_blank" rel="noopener">HSTS Preload</a>, but for email.</p>
 
-    <h2 id="adding-your-domain-to-the-starttls-everywhere-list">Adding Your Domain to the STARTTLS-Everywhere List</h2>
-    <p></p>
+    <h2 id="adding-your-domain-to-the-starttls-everywhere-policy-list">Adding Your Domain to the STARTTLS-Everywhere Policy List</h2>
+    <p>Adding your domain to the list will result in incoming email from supported providers being delivered over forced TLS by default, even if your MTA-STS policy hasn't yet been cached by the sending mail server. In other words, STARTTLS-Everywhere eliminates the TOFU (Trust On First Use) aspect of MTA-STS.</p>
+    <p>If you also wish to utilise the STARTTLS-Everywhere list for outgoing email, you'll need to install the list on your mail server and configure it to force TLS connections to domains present on the list. I won't be covering this in the current article, however the EFF have <a href="https://github.com/EFForg/starttls-policy-cli" target="_blank" rel="noopener">published a Python utility</a> to automatically update the list and generate config files for using the list with Postfix.</p>
+    <p>Before submitting your domain to the list, you can perform a prelimiary security check on your domain using the form on the <a href="https://starttls-everywhere.org/" target="_blank" rel="noopener">STARTTLS-Everywhere homepage</a>. This will check whether your domain has implemented MTA-STS, and whether your mail servers support STARTTLS with a valid certificate and strong TLS configuration. It also checks whether your domain is already on the STARTTLS-Everywhere list.</p>
+    <img class="radius-8 border-2px-solid" width="1000px" src="starttls-everywhere-domain-check-results.png">
+    <p class="two-no-mar centertext"><i>A screenshot of the STARTTLS-Everywhere domain check results for jamieweb.net, showing that my mail servers support STARTTLS, but that I am not yet on the policy list.</i></p>
+    <p>If your domain check results are all OK, you can proceed to the <a href="https://starttls-everywhere.org/add-domain" target="_blank" rel="noopener">STARTTLS-Everywhere submission form</a> in order to add your domain.</p>
+    <img class="radius-8 border-2px-solid" width="1000px" src="starttls-everywhere-adding-domain-to-list.png">
+    <p class="two-no-mar centertext"><i>A screenshot of the STARTTLS-Everywhere submission form, with the details filled in for jamieweb.net.</i></p>
+    <p>It helps massively if you have already implemented MTA-STS, as the form can just pull a list of mail servers from your hosted <code>mta-sts.txt</code> policy file. Otherwise, you'll have to manually enter each of the mail servers which are authorised to process mail for your domain.</p>
+    <p>Once you have completed the form, a verification email will be sent to the <code>postmaster</code> mailbox on your domain.</p>
+    <img class="radius-8 border-2px-solid" width="1000px" src="starttls-everywhere-adding-domain-to-list-confirmation.png">
+    <p class="two-no-mar centertext"><i>A screenshot of the confirmation prompt after filling in the form, asking me to check my email to view the verification message that has been sent.</i></p>
+    <p>Once you have received the verification email and visited the verification link, your domain will be queued for addition to the list.</p>
+    <img class="radius-8 border-2px-solid" width="1000px" src="starttls-everywhere-adding-domain-to-list-success.png">
+    <p class="two-no-mar centertext"><i>A screenshot of the completed verification, confirming that my domain has been successfully queued for addition to the list.</i></p>
+    <p>Your domain will continue to be assessed for security and compliance for a period of time before being added to the list. If for any reason your domain ceases to be compliant (e.g. if you stop supporting STARTTLS, your certificate expires, etc), you will be removed from the queue and will have to re-submit.</p>
+    <p>You'll receive a confirmation email once you've been fully added to the list (which may take several weeks), however in the mean time you can run the domain security check again to view your status in the queue.</p>
+    <img class="radius-8 border-2px-solid" width="1000px" src="starttls-everywhere-domain-check-queued.png">
+    <p class="two-no-mar centertext"><i>A screenshot of the STARTTLS-Everywhere domain security check, showing that my jamieweb.net domain is currently queued for addition to the list.</i></p>
+    <p>Once you receive your confirmation email, you can <a href="https://dl.eff.org/starttls-everywhere/policy.json" target="_blank" rel="noopener">view the full, raw policy list</a> and have a look for your domain!</p>
+    <p>Email providers which implement the STARTTLS-Everywhere policy list will now connect to your mail servers securely by default, no matter whether an MTA-STS policy has been cached or not.</p>
 
     <h2 id="conclusion">Conclusion</h2>
-    <p></p>
+    <p>I am hoping that adoption of MTA-STS and utilisation of the STARTTLS-Everywhere policy list will continue to increase, however support for both of these is currently quite limited, especially in proprietary email systems/services used by many large enterprises and governments.</p>
+    <p>I have also recently written a full end-to-end step-by-step guide on implementing MTA-STS and TLSRPT, including setting up a web server to host your policy file. This was done as part of my freelance writing work for DigitalOcean, so feel tree to <a href="https://www.digitalocean.com/community/tutorials/how-to-configure-mta-sts-and-tls-reporting-for-your-domain-using-apache-on-ubuntu-18-04" target="_blank" rel="noopener">take a look</a> if you'd prefer more of a tutorial-style article.</p>
 </div>
 
 <?php include "footer.php" ?>
