@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Securing Inbound Email Transport with MTA-STS and STARTTLS-Everywhere</title>
+        <link>https://www.jamieweb.net/blog/securing-inbound-email-transport-with-mta-sts-and-starttls-everywhere/</link>
+        <description>Implementing the new MTA-STS specification and adding your domain to the STARTTLS-Everywhere list to help secure inbound email transport.</description>
+        <category>Blog</category>
+        <pubDate>Fri, 27 Dec 2019</pubDate>
+    </item>
+    <item>
         <title>A Look at PureDarwin - an OS based on the open source core of macOS</title>
         <link>https://www.jamieweb.net/blog/a-look-at-puredarwin/</link>
         <description>An overview of the PureDarwin project, which is a community effort to produce a more usable version of Darwin OS, the open source base behind modern Mac OS.</description>

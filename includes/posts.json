@@ -6,9 +6,9 @@
                 "navtitle": "MTA-STS and STARTTLS-Everywhere",
                 "title": "Securing Inbound Email Transport with MTA-STS and STARTTLS-Everywhere",
                 "longdesc": "Implementing the new MTA-STS specification and adding your domain to the STARTTLS-Everywhere list to help secure inbound email transport.",
-                "date": "December 2019",
+                "date": "Friday 27th December 2019",
                 "tags": "Security,TLS,RFC",
-                "snippet": "",
+                "snippet": "The web security ecosystem has matured significantly over the past few years, partly thanks to organisations like Let's Encrypt and the ACME protocol, as well as because of encouragement from browser vendors for websites to implement HTTPS and other security controls such as Content Security Policy.</p><p>However, the email ecosystem unfortunately hasn't seen such levels of development. Existing technologies for securely transporting emails, such as STARTTLS, are not as resistant to attacks as their web-based counterparts, and the implementation methods available to sysadmins are far more limited.</p><p>In this blog post I'm going to talk about three new email security technologies: <b>MTA-STS</b>, <b>TLSRPT</b> and <b>STARTTLS-Everywhere</b>. These allow you to have greater control and insight into how your emails are securely transported. In this post I will focus on security and reporting for inbound/incoming emails, however in the future I may also cover outbound/outgoing emails.",
                 "license": "CC BY-SA 4.0",
                 "format_version": 2
             },

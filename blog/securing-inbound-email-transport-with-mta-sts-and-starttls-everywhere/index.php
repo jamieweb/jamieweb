@@ -6,9 +6,6 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
-    <p>The web security ecosystem has matured significantly over the past few years, partly thanks to organisations like Let's Encrypt and the ACME protocol, as well as because of encouragement from browser vendors for websites to implement HTTPS and other security controls such as Content Security Policy.</p>
-    <p>However, the email ecosystem unfortunately hasn't seen such levels of development. Existing technologies for securely transporting emails, such as STARTTLS, are not as resistant to attacks as their web-based counterparts, and the implementation methods available to sysadmins are far more limited.</p>
-    <p>In this blog post I'm going to talk about three new email security technologies: <b>MTA-STS</b>, <b>TLSRPT</b> and <b>STARTTLS-Everywhere</b>. These allow you to have greater control and insight into how your emails are securely transported. In this post I will focus on security and reporting for inbound/incoming emails, however in the future I may also cover outbound/outgoing emails.</p>
     <p><b>Skip to Section:</b></p>
     <pre><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#mta-sts">MTA-STS</a>
@@ -67,7 +64,7 @@ mx: mail2.example.com</pre>
     <p>Once you have hosted your policy file and set the required DNS record, MTA-STS will be enabled for your domain. You can use an <a href="https://aykevl.nl/apps/mta-sts/" target="_blank" rel="noopener">MTA-STS validator</a> in order to verify your configuration.</p>
 
     <h2 id="tlsrpt">TLSRPT</h2>
-    <p>MTA-STS is directly complemented by TLSRPT (SMTP TLS Reporting, <a href="https://tools.ietf.org/html/rfc8460" target="_blank" rel="noopener">RFC8460</a>), which is a reporting mechanism that allows you to collect information on whether emails are successfully being delivered over TLS, as well as any errors that may have occured (e.g. an expired certificate).</p>
+    <p>MTA-STS is directly complemented by TLSRPT (SMTP TLS Reporting, <a href="https://tools.ietf.org/html/rfc8460" target="_blank" rel="noopener">RFC8460</a>), which is a reporting mechanism that allows you to collect information on whether emails are successfully being delivered over TLS, as well as any errors that may have occurred (e.g. an expired certificate).</p>
     <p>TLSRPT works in a very similar way to DMARC reporting. You specify a reporting endpoint (a URL or an email address) via a DNS record, which then causes email service providers to send you daily reports in JSON format.</p>
 
     <h2 id="enabling-tlsrpt-for-your-domain">Enabling TLSRPT For Your Domain</h2>
@@ -141,7 +138,7 @@ mx: mail2.example.com</pre>
     <h2 id="adding-your-domain-to-the-starttls-everywhere-policy-list">Adding Your Domain to the STARTTLS-Everywhere Policy List</h2>
     <p>Adding your domain to the list will result in incoming email from supported providers being delivered over forced TLS by default, even if your MTA-STS policy hasn't yet been cached by the sending mail server. In other words, STARTTLS-Everywhere eliminates the TOFU (Trust On First Use) aspect of MTA-STS.</p>
     <p>If you also wish to utilise the STARTTLS-Everywhere list for outgoing email, you'll need to install the list on your mail server and configure it to force TLS connections to domains present on the list. I won't be covering this in the current article, however the EFF have <a href="https://github.com/EFForg/starttls-policy-cli" target="_blank" rel="noopener">published a Python utility</a> to automatically update the list and generate config files for using the list with Postfix.</p>
-    <p>Before submitting your domain to the list, you can perform a prelimiary security check on your domain using the form on the <a href="https://starttls-everywhere.org/" target="_blank" rel="noopener">STARTTLS-Everywhere homepage</a>. This will check whether your domain has implemented MTA-STS, and whether your mail servers support STARTTLS with a valid certificate and strong TLS configuration. It also checks whether your domain is already on the STARTTLS-Everywhere list.</p>
+    <p>Before submitting your domain to the list, you can perform a preliminary security check on your domain using the form on the <a href="https://starttls-everywhere.org/" target="_blank" rel="noopener">STARTTLS-Everywhere homepage</a>. This will check whether your domain has implemented MTA-STS, and whether your mail servers support STARTTLS with a valid certificate and strong TLS configuration. It also checks whether your domain is already on the STARTTLS-Everywhere list.</p>
     <img class="radius-8 border-2px-solid" width="1000px" src="starttls-everywhere-domain-check-results.png">
     <p class="two-no-mar centertext"><i>A screenshot of the STARTTLS-Everywhere domain check results for jamieweb.net, showing that my mail servers support STARTTLS, but that I am not yet on the policy list.</i></p>
     <p>If your domain check results are all OK, you can proceed to the <a href="https://starttls-everywhere.org/add-domain" target="_blank" rel="noopener">STARTTLS-Everywhere submission form</a> in order to add your domain.</p>
@@ -155,7 +152,7 @@ mx: mail2.example.com</pre>
     <img class="radius-8 border-2px-solid" width="1000px" src="starttls-everywhere-adding-domain-to-list-success.png">
     <p class="two-no-mar centertext"><i>A screenshot of the completed verification, confirming that my domain has been successfully queued for addition to the list.</i></p>
     <p>Your domain will continue to be assessed for security and compliance for a period of time before being added to the list. If for any reason your domain ceases to be compliant (e.g. if you stop supporting STARTTLS, your certificate expires, etc), you will be removed from the queue and will have to re-submit.</p>
-    <p>You'll receive a confirmation email once you've been fully added to the list (which may take several weeks), however in the mean time you can run the domain security check again to view your status in the queue.</p>
+    <p>You'll receive a confirmation email once you've been fully added to the list (which may take several weeks), however in the meantime you can run the domain security check again to view your status in the queue.</p>
     <img class="radius-8 border-2px-solid" width="1000px" src="starttls-everywhere-domain-check-queued.png">
     <p class="two-no-mar centertext"><i>A screenshot of the STARTTLS-Everywhere domain security check, showing that my jamieweb.net domain is currently queued for addition to the list.</i></p>
     <p>Once you receive your confirmation email, you can <a href="https://dl.eff.org/starttls-everywhere/policy.json" target="_blank" rel="noopener">view the full, raw policy list</a> and have a look for your domain!</p>
@@ -163,7 +160,7 @@ mx: mail2.example.com</pre>
 
     <h2 id="conclusion">Conclusion</h2>
     <p>I am hoping that adoption of MTA-STS and utilisation of the STARTTLS-Everywhere policy list will continue to increase, however support for both of these is currently quite limited, especially in proprietary email systems/services used by many large enterprises and governments.</p>
-    <p>I have also recently written a full end-to-end step-by-step guide on implementing MTA-STS and TLSRPT, including setting up a web server to host your policy file. This was done as part of my freelance writing work for DigitalOcean, so feel tree to <a href="https://www.digitalocean.com/community/tutorials/how-to-configure-mta-sts-and-tls-reporting-for-your-domain-using-apache-on-ubuntu-18-04" target="_blank" rel="noopener">take a look</a> if you'd prefer more of a tutorial-style article.</p>
+    <p>I have also recently written a full end-to-end step-by-step guide on implementing MTA-STS and TLSRPT, including setting up a web server to host your policy file. This was done as part of my freelance writing work for DigitalOcean, so feel free to <a href="https://www.digitalocean.com/community/tutorials/how-to-configure-mta-sts-and-tls-reporting-for-your-domain-using-apache-on-ubuntu-18-04" target="_blank" rel="noopener">take a look</a> if you'd prefer more of a tutorial-style article.</p>
 </div>
 
 <?php include "footer.php" ?>
