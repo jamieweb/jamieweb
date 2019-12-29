@@ -36,6 +36,7 @@ Dr Web Link Checker - <a href="https://chrome.google.com/webstore/detail/drweb-a
     <pre>Google Mail - <a href="https://chrome.google.com/webstore/detail/gmail/pjkljhegncpnkpknbcohdijeoejaedia" target="_blank" rel="noopener" rel="noopener">pjkljhegncpnkpknbcohdijeoejaedia</a>
 Google Drive - <a href="https://chrome.google.com/webstore/detail/google-drive/apdfllckaahabafndbhieahigkjlhalf" target="_blank" rel="noopener" rel="noopener">apdfllckaahabafndbhieahigkjlhalf</a>
 Google Docs - <a href="https://chrome.google.com/webstore/detail/google-docs/aohghmighlieiainnegkcijnfilokake" target="_blank" rel="noopener" rel="noopener">aohghmighlieiainnegkcijnfilokake</a>
+Google Docs Offline - <a href="https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi" target="_blank" rel="noopener" rel="noopener">ghbmnnjooekpmoecnnnilnnbdlolhkhi</a>
 Google Sheets - <a href="https://chrome.google.com/webstore/detail/google-sheets/felcaaldnbdncclmgdcncolpebgiejap" target="_blank" rel="noopener" rel="noopener">felcaaldnbdncclmgdcncolpebgiejap</a>
 Google Slides - <a href="https://chrome.google.com/webstore/detail/google-slides/aapocclcgogkmnckokdopfmhonfmgoek" target="_blank" rel="noopener" rel="noopener">aapocclcgogkmnckokdopfmhonfmgoek</a>
 YouTube - <a href="https://chrome.google.com/webstore/detail/youtube/blpcfgokakmgnkcojhhkbfbldkacnbeo" target="_blank" rel="noopener" rel="noopener">blpcfgokakmgnkcojhhkbfbldkacnbeo</a></pre>
