@@ -1021,6 +1021,10 @@ th.h1-scope-in-scope {
     display: block;
 }
 
+.display-none {
+    display: none;
+}
+
 .vertical-align-middle {
     vertical-align: middle;
 }

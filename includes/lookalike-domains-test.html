@@ -1,0 +1,61 @@
+<div class="app display-flex flex-align-center flex-justify-center">
+    <div id="startscreen" class="overlay display-block">
+        <h2 id="starttext" class="centertext"><noscript>Please enable JavaScript to use this app.</noscript></h2>
+        <div class="centertext">
+            <input id="start-button" class="button button-grey display-none" type="button" value="Start">
+        </div>
+    </div>
+
+    <div id="disclaimer" class="overlay disclaimer display-none">
+        <h2 class="centertext margin-top-16 no-mar-bottom">Disclaimer</h2>
+        <div class="description">
+            <p class="mar-bottom-13">Please note that all website/brand names are used purely for educational and training purposes.</p>
+            <p class="no-mar">All permuted website names are fictional, and any similarity to other legitimate businesses is purely coincidental.</p>
+            <p class="mar-top-13">Website names used are based on the top websites worldwide, in the United Kingdom and in the United States.</p>
+        </div>
+        <div class="centertext">
+            <input id="disclaimer-accept-button" class="button button-red" type="button" value="I Understand">
+        </div>
+    </div>
+
+    <div id="endscreen" class="overlay endscreen display-none">
+        <div class="centertext">
+            <h1>Congratulations! &#x1f389;</h1>
+            <h2>You scored <span id="endscreen-score"></span> out of 10!</h2>
+        </div>
+        <div class="description">
+            <p>Thank you for playing! Please feel free to share this app, or read more about how it works in my <a href="https://www.jamieweb.net/blog/..." target="_blank" rel="noopener">blog post</a>.</p>
+        </div>
+        <div class="centertext">
+            <input id="restart-button" class="button button-grey" type="button" value="Restart">
+        </div>
+    </div>
+
+    <div id="main" class="main display-none">
+        <div class="topbar">
+            <div class="score">
+                <p>Correct: <b><span id="score-correct">0</span></b></p>
+            </div>
+            <div class="score">
+                <p>Incorrect: <b><span id="score-incorrect">0</span></b></p>
+            </div>
+            <div class="round">
+                <p>Round: <b><span id="score-round">1</span> / 10</b></p>
+            </div>
+        </div>
+        <div class="answer clearboth">
+            <p id="answer">&nbsp;</p>
+        </div>
+        <div class="domain radius-8">
+            <p class="domain-subtext"><b>Training Example:</b></p>
+            <p id="domain" class="domain-text"></p>
+        </div>
+        <div id="answer-buttons" class="centertext">
+            <input id="answer-button-real" class="button button-green" type="button" value="Real">
+            <input id="answer-button-lookalike" class="button button-blue" type="button" value="Lookalike">
+        </div>
+        <div id="next-button" class="centertext display-none">
+            <input id="next-button-input" class="button button-grey" type="button" value="Next">
+        </div>
+    </div>
+</div>
