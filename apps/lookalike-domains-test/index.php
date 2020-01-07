@@ -6,8 +6,8 @@
 <!--Legal Information at https://www.jamieweb.net/contact-->
 
 <head>
-    <title>Lookalike Domains</title>
-    <meta name="description" content="Contact Information">
+    <title>Lookalike Domain Names Test</title>
+    <meta name="description" content="Test your ability at spotting potential lookalike domains in real-time.">
     <?php include "head.php" ?>
     <link href="lookalike-domains-test.css" rel="stylesheet">
     <link href="https://www.jamieweb.net/apps/lookalike-domains-test/" rel="canonical">
@@ -18,12 +18,12 @@
 <?php include "navbar.php" ?>
 
 <div class="body">
-    <h1>Lookalike Domain Name Test</h1>
+    <h1>Lookalike Domain Names Test</h1>
     <hr>
     <p>This app is designed to test your ability to quickly spot potential lookalike domains, which may be used in typosquatting or phishing attacks.</p>
     <p>A selection of well-known websites will be shown, with a random permutation applied to each one. Glance at the domain, then click either 'Real' or 'Lookalike'. <a href="#what-are-lookalike-domain-names">Read more...</a></p>
     <hr>
-    <?php include "lookalike.html" ?>
+    <?php include "lookalike-domains-test.html" ?>
     <script src="lookalike-domains-test.js" integrity="sha384-PCCWbBnQRkcTkpyxLGiE/cHP59k0eimC5MLmUDujpwdCr3rKjcmnET5QstKOFgA4"></script>
     <hr>
 

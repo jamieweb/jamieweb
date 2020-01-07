@@ -22,6 +22,16 @@
 
     <div class="iconparent">
         <div class="iconimg">
+            <a href="/apps/lookalike-domains-test/"><img src="/images/fontawesome/paste.svg"></a>
+        </div>
+        <div class="iconlist">
+            <h3 class="no-mar-bottom"><a href="/apps/lookalike-domains-test/">Lookalike Domain Names Test</a></h3>
+            <p class="two-mar-top"><b>Test your ability at spotting potential lookalike domains in real-time.</b></p>
+        </div>
+    </div>
+
+    <div class="iconparent">
+        <div class="iconimg">
             <a href="/tools/exploitable-web-content-blocking-test/"><img src="/images/fontawesome/bug.svg"></a>
         </div>
         <div class="iconlist">
