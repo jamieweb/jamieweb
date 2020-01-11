@@ -1,5 +1,18 @@
 {
     "blog": {
+        "2020": {
+            "testing-your-ability-at-spotting-lookalike-domain-names": {
+                "uri": "testing-your-ability-at-spotting-lookalike-domain-names",
+                "navtitle": "Spotting Lookalike Domain Names",
+                "title": "Testing Your Ability at Spotting Lookalike Domain Names",
+                "longdesc": "Creating a JavaScript app to see how good you are at identifying potential lookalike domain names.",
+                "date": "Sunday 12th January 2020",
+                "tags": "Security,Domain Names",
+                "snippet": "",
+                "license": "CC BY-SA 4.0",
+                "format_version": 2
+            }
+        },
         "2019": {
             "securing-inbound-email-transport-with-mta-sts-and-starttls-everywhere": {
                 "uri": "securing-inbound-email-transport-with-mta-sts-and-starttls-everywhere",

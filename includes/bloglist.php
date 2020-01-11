@@ -71,7 +71,7 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
         }
     }
     elseif($location === "blog") {
-        $latestYear = 2019; //Temporary year code
+        $latestYear = 2020; //Temporary year code
         foreach($bloglist->blog as $year) {
             echo "\n    <br><div class=\"blog-group\">
         <div class=\"blog-year\"><h1>" . $latestYear-- . "</h1></div>
