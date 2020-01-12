@@ -11,6 +11,13 @@
         <link>https://www.jamieweb.net</link>
     </image>
     <item>
+        <title>Testing Your Ability at Spotting Lookalike Domain Names</title>
+        <link>https://www.jamieweb.net/blog/testing-your-ability-at-spotting-lookalike-domain-names/</link>
+        <description>Creating a JavaScript app to test how good you are at identifying potential lookalike domain names.</description>
+        <category>Blog</category>
+        <pubDate>Sun, 12 Jan 2020</pubDate>
+    </item>
+    <item>
         <title>Securing Inbound Email Transport with MTA-STS and STARTTLS-Everywhere</title>
         <link>https://www.jamieweb.net/blog/securing-inbound-email-transport-with-mta-sts-and-starttls-everywhere/</link>
         <description>Implementing the new MTA-STS specification and adding your domain to the STARTTLS-Everywhere list to help secure inbound email transport.</description>

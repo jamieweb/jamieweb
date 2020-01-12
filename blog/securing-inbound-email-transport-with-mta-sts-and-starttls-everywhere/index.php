@@ -41,7 +41,7 @@ mx: mail2.example.com</pre>
         <li><b><code>max_age</code></b>: The length of time (in seconds) that a policy should be cached for. Longer times are advantageous for security.</li>
         <li><b><code>mx</code></b>: A mail server that is permitted to process email for your domain, and serves a valid certificate for the hostname. All of your mail servers should be specified (usually all hosts present in your <code>MX</code> DNS records).</li>
     </ul>
-    <p>Your policy file must be served over a valid HTTPS connection using the <code>text/plain</code> MIME type at exactly the <code>/.well-known/mta-sts.txt</code> on the <code>mta-sts</code> subdomain.</p>
+    <p>Your policy file must be served over a valid HTTPS connection using the <code>text/plain</code> MIME type at exactly the <code>/.well-known/mta-sts.txt</code> path on the <code>mta-sts</code> subdomain.</p>
     <div class="message-box message-box-warning-medium">
         <div class="message-box-heading">
             <h3><u>Warning!</u></h3>
@@ -132,7 +132,7 @@ mx: mail2.example.com</pre>
     <h2 id="starttls-everywhere">STARTTLS-Everywhere</h2>
     <p><a href="https://starttls-everywhere.org/" target="_blank" rel="noopener">STARTTLS-Everywhere</a> is a project founded by the <a href="https://eff.org/" target="_blank" rel="noopener">EFF</a> with the goal of creating a globally shared list of mail servers that are known to support STARTTLS.</p>
     <p>The purpose of this list is to act as a point of reference for mail servers to know whether other mail servers support STARTTLS, prior to actually connecting to them and trying. This means that emails can be delivered between secured domains over TLS by default, rather than having to negotiate a secure/insecure connection.</p>
-    <p>Implementing STARTTLS-Everywhere means that man-in-the-middle and/or downgrade attacks against the email transport would be significant more complex to carry out, as the bar is raised from having network-level access to now also requiring a valid certificate for the victim mail server.</p>
+    <p>Implementing STARTTLS-Everywhere means that man-in-the-middle and/or downgrade attacks against the email transport would be significantly more complex to carry out, as the bar is raised from having network-level access to now also requiring a valid certificate for the victim mail server.</p>
     <p>STARTTLS-Everywhere is essentially <a href="https://hstspreload.org/" target="_blank" rel="noopener">HSTS Preload</a>, but for email.</p>
 
     <h2 id="adding-your-domain-to-the-starttls-everywhere-policy-list">Adding Your Domain to the STARTTLS-Everywhere Policy List</h2>

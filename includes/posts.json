@@ -5,10 +5,10 @@
                 "uri": "testing-your-ability-at-spotting-lookalike-domain-names",
                 "navtitle": "Spotting Lookalike Domain Names",
                 "title": "Testing Your Ability at Spotting Lookalike Domain Names",
-                "longdesc": "Creating a JavaScript app to see how good you are at identifying potential lookalike domain names.",
+                "longdesc": "Creating a JavaScript app to test how good you are at identifying potential lookalike domain names.",
                 "date": "Sunday 12th January 2020",
                 "tags": "Security,Domain Names",
-                "snippet": "",
+                "snippet": "I have created a web-based JavaScript app/game which allows you test your ability at spotting potential lookalike or phishing domains in real-time.</p><img class=\"radius-8 border-2px-solid max-width-100-percent\" src=\"/blog/testing-your-ability-at-spotting-lookalike-domain-names/lookalike-domains-test-example.png\"><p class=\"two-no-mar centertext\"><i>A screenshot of the Lookalike Domain Names Test app.</i></p><p>The app displays the domain name of a well-known website, with a random set of permutations applied to it. You must then select whether the domain is 'Real' or a potential 'Lookalike'.</p><div class=\"message-box message-box-positive\"><div class=\"message-box-heading\"><h3><u>Lookalike Domain Names Test</u></h3></div><div class=\"message-box-body\"><p>This is a technical blog post about the Lookalike Domain Names Test and how it works. If you're looking for the app itself, please <b><a class=\"exempt\" href=\"/apps/lookalike-domains-test/\">click here</a></b>!</p></div></div><p>Lookalike domain names are a very effective phishing technique, as they exploit the natural way that the human brain interprets writing. The brain will automatically make assumptions and fill in gaps when reading, allowing users to be easily fooled if a phishing domain looks almost identical to the legitimate domain.",
                 "license": "CC BY-SA 4.0",
                 "format_version": 2
             }
