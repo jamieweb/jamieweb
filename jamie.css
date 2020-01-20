@@ -534,9 +534,22 @@ div.message-box-notice {
 
 pre {
     overflow-x: auto;
-    background-color: #e0e0e0;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 8px;
+}
+
+pre:not(contents):not(grey) {
+    background-color: #2f4f4f;
+    color: white;
+}
+
+pre:not(contents):not(grey) a {
+    color: white;
+}
+
+pre.contents,pre.grey {
+    background-color: #e0e0e0;
+    color: black;
 }
 
 pre a {
@@ -583,6 +596,24 @@ code {
     background-color: #e0e0e0;
     padding: 2px 4px 2px 4px;
     border-radius: 2px;
+}
+
+blockquote {
+    background-color: navajowhite;
+    margin: 22px 0 0 22px;
+    padding: 14px 16px 16px;
+    border-left: 10px solid #4d4d4d;
+    border-radius: 3px;
+    font-size: larger;
+    font-style: italic;
+}
+
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
 }
 
 table.padding-6 th,table.padding-6 td {
@@ -1003,6 +1034,11 @@ th.h1-scope-in-scope {
 
 .border-2px-solid {
     border: 2px solid;
+}
+
+.border-5px-solid {
+    border: 5px solid;
+    max-width: calc(100% - 10px);
 }
 
 .indent {

@@ -11,11 +11,17 @@ div.navbar div.dropdown-content {
     div.topbar div.score p {
         margin-right: 10px;
     }
+    p.domain-text {
+        font-size: 2.5em;
+    }
     p.domain-subtext {
         font-size: 1.5vw;
     }
 }
 @media (max-width: 549.99px) {
+    p.domain-text {
+        font-size: 1.5em;
+    }
     p.domain-subtext {
         font-size: 2vw;
     }
@@ -56,7 +62,6 @@ div.domain {
     border: 2px solid black;
 }
 p.domain-text {
-    font-size: 6vw;
     text-align: center;
     margin: 0 1.5%;
 }
@@ -66,12 +71,12 @@ p.domain-subtext {
     color: red;
 }
 span.fullstop {
-    height: 0.8vw;
-    width: 0.8vw;
+    height: 0.14em;
+    width: 0.14em;
     border-radius: 50%;
     display: inline-block;
     background-color: black;
-    margin: 0 0.5vw;
+    margin: 0 0.1em;
 }
 input.button {
     font-size: large;

@@ -19,11 +19,11 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p>Ever since I became interested in IT security, one of my primary concerns and interests has been lookalike domains and how they can be used to conduct convincing phishing attacks.</p>
     <p>My first piece of work in this space was my <a href="/projects/#chrome-site-whitelist-extension" target="_blank">Chrome Site Whitelist Extension</a> from March 2017, which is a simple browser extension to help users avoid phishing sites in Google search results by highlighting a user-controlled whitelist of sites in green.</p>
     <div class="centertext">
-        <img class="radius-8 max-width-100-percent border-2px-solid" src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png">
+        <img class="radius-8 border-5px-solid" src="/projects/chrome-site-whitelist-extension/example-result-highlighting.png">
     </div>
     <p class="two-no-mar centertext"><i>A screenshot of my Chrome Site Whitelist Extension in action, showing two whitelisted sites highlighted in green.</i></p>
     <p>I've always wondered about my own ability to quickly identify these lookalike domain names, which is what prompted me to create the Lookalike Domain Names Test. I wanted it to be somewhat fun and interactive, so I opted to gamify it a bit by recording the users' score over 10 rounds and displaying it to them at the end.</p>
-    <img class="radius-8 border-2px-solid" width="1000px" src="lookalike-domains-test-congratulations.png">
+    <img class="radius-8 border-5px-solid" width="1000px" src="lookalike-domains-test-congratulations.png">
     <p class="two-no-mar centertext"><i>A screenshot of the end-screen in the Lookalike Domain Names Test app.</i></p>
     <p>This project is also the first time that I have allowed myself to utilise JavaScript on my website. Back in 2016 when I started this version of my site, one of the core design decisions was that the site would be completely JavaScript-free, in order to improve performance, security, accessibility and readability. As part of this project, I have now decided to relax this decision ever so slightly in order to allow for the creation of JavaScript 'apps' in select areas of the site. Friendliness to non-JavaScript users is still a core value of my site, and JavaScript will only be used for specific 'apps' that cannot otherwise be created using raw HTML5/CSS3.</p>
 
