@@ -40,7 +40,7 @@
     <img class="radius-8" src="/blog/radare2-cutter-part-1-key-terminology-and-overview/cutter-interface-overview.png" width="1000px" title="The Cutter Interface" alt="Screenshot of the Cutter Interface">
     <p class="two-no-mar centertext"><i>The main Cutter interface.</i></p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Introduction to Reverse Engineering with radare2 Cutter
+    <pre class="contents"><b>Introduction to Reverse Engineering with radare2 Cutter
 Part 1: Key Terminology and Overview</b>
 &#x2523&#x2501&#x2501 <a href="#what-are-radare2-and-cutter">What are radare2 and Cutter?</a>
 &#x2523&#x2501&#x2501 <a href="#installing-cutter">Installing Cutter</a>

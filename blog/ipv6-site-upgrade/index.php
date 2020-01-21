@@ -22,7 +22,7 @@
     <p><b>Saturday 5th August 2017</b></p>
     <p>As of this week, JamieWeb is fully accessible over IPv6! The new IPv6 address for JamieWeb is <b>2a01:7e00:e001:c500::1</b>.</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Upgrading JamieWeb to IPv6</b>
+    <pre class="contents"><b>Upgrading JamieWeb to IPv6</b>
 &#x2523&#x2501&#x2501 <a href="#info">IPv6 Information</a>
 &#x2523&#x2501&#x2501 <a href="#dns">DNS Configuration</a>
 &#x2523&#x2501&#x2501 <a href="#apache">Apache Configuration</a>

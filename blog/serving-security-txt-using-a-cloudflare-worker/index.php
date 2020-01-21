@@ -11,7 +11,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p>If you'd like to learn more about the technical details of Cloudflare's serverless platform specifically, including how the sandboxing works, <a href="https://blog.cloudflare.com/cloud-computing-without-containers/" target="_blank" rel="noopener">Cloud Computing without Containers</a> is a good read.</p>
 
     <p><b>Skip to Section:</b></p>
-    <pre><b><?php echo $postInfo->title ?></b>
+    <pre class="contents"><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#prerequisites">Prerequisites</a>
 &#x2523&#x2501&#x2501 <a href="#creating-the-worker">Creating the Worker</a>
 &#x2523&#x2501&#x2501 <a href="#deploying-the-worker-to-a-route">Deploying the Worker to a Route</a>

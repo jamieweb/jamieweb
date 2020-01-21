@@ -22,7 +22,7 @@
     <p><b>Tuesday 16th January 2018</b></p>
     <p>This blog post will cover everything you need to know in order to register a Namecoin .bit domain name on a Debian-based Linux system using the command line.</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Registering a Namecoin .bit Domain</b>
+    <pre class="contents"><b>Registering a Namecoin .bit Domain</b>
 &#x2523&#x2501&#x2501 <a href="#introduction">Introduction</a>
 &#x2523&#x2501&#x2501 <a href="#installing-namecoin-core">Installing Namecoin Core</a>
 &#x2523&#x2501&#x2501 <a href="#configuring-namecoin-core">Configuring Namecoin Core</a>

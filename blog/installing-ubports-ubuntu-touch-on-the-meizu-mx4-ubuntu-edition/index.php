@@ -12,7 +12,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     </div>
     <p>In this article, I have documented the installation process using the ubports-installer application, and included a manual bug fix that is currently required for installation on some MX4 phones. This fix was kindly put together by <a href="https://forums.ubports.com/user/alainw94" target="_blank" rel="noopener">AlainW94</a> on the UBports forum, and documented here with their permission.</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b><?php echo $postInfo->title ?></b>
+    <pre class="contents"><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#standard-installation-procedure">Standard Installation Procedure</a>
 &#x2523&#x2501&#x2501 <a href="#fixing-the-failed-remote-unknown-command-error">Fixing the <code>FAILED (remote: unknown command)</code> Error</a>
 &#x2523&#x2501&#x2501 <a href="#using-ubuntu-touch-on-the-meizu-mx4-in-2019">Using Ubuntu Touch on the Meizu MX4 in 2019</a>

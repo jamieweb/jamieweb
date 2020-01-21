@@ -26,7 +26,7 @@
     <p><s><b>Please note that this Onion v3 Hidden Service will not be available until Onion v3 reaches the stable Tor branch. For now, you can use my test Onion v3 service at <a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion/" target="_blank" rel="noopener"><span class="word-break-all">32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion</span></a>, which requires tor-0.3.2.1-alpha (eg: Tor Browser 7.5a5) or newer to access.</b></s></p>
     <p><b>Edit 17th Jan 2018 @ 11:00pm:</b> <i>Onion v3 functionaility is now in the stable release of Tor, so my new hidden service is live! The Onion v3 hidden service used for testing is now offline.</i></p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Tor Onion v3 Vanity Address</b>
+    <pre class="contents"><b>Tor Onion v3 Vanity Address</b>
 &#x2523&#x2501&#x2501 <a href="#mkp224o">mkp224o</a>
 &#x2523&#x2501&#x2501 <a href="#performance">Performance</a>
 &#x2523&#x2501&#x2501 <a href="#generation-times">Address Generation Times</a>

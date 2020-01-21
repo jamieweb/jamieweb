@@ -22,7 +22,7 @@
     <p><b>Wednesday 4th April 2018</b></p>
     <p>As of 29th March 2018, all certificates issued by Let's Encrypt now include a Signed Certificate Timestamp (SCT) embedded in the certificate in the form of an <a href="https://tools.ietf.org/html/rfc5280#section-4.2" target="_blank" rel="noopener">X.509 v3 extension</a>.</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Let's Encrypt SCTs in Certificates</b>
+    <pre class="contents"><b>Let's Encrypt SCTs in Certificates</b>
 &#x2523&#x2501&#x2501 <a href="#chrome-requirements">Upcoming Chrome Certificate Transparency Requirements</a>
 &#x2523&#x2501&#x2501 <a href="#expect-ct">Expect-CT HTTP Response Header</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>

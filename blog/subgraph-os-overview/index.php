@@ -22,7 +22,7 @@
     <p><b>Tuesday 21st February 2017</b></p>
     <p>Subgraph OS is a security, privacy and anonymity oriented Linux distribution that aims to provide a maximum security computing environment while maintaining ease of use for the end user. The ultimate protection against a sophisticated adversary. Subgraph is currently an alpha product, so some features are not yet working or implemented.</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Subgraph OS Overview</b>
+    <pre class="contents"><b>Subgraph OS Overview</b>
 &#x2523&#x2501&#x2501 <a href="#introduction">Introduction</a>
 &#x2523&#x2501&#x2501 <a href="#downloadverify">Downloading and Verifying</a>
 &#x2523&#x2501&#x2501 <a href="#installation">Installation</a>

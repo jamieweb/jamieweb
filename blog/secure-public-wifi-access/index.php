@@ -22,7 +22,7 @@
     <p><b>Tuesday 8th May 2018</b></p>
     <p><u>The problem:</u> You want to connect to the internet in a hotel or coffee shop, but don't want to expose your laptop to the insecure, unencrypted Wi-Fi network.</p>
     <p><u>A solution:</u> Connect to the internet through a Raspberry Pi, and have it forward a secure VPN connection through to your laptop.</p>
-    <pre><b>Using a Public Wi-Fi Hotspot Securely</b>
+    <pre class="contents"><b>Using a Public Wi-Fi Hotspot Securely</b>
 &#x2523&#x2501&#x2501 <a href="#what-is-wrong-with-using-a-vpn">What is wrong with just using a VPN?</a>
 &#x2523&#x2501&#x2501 <a href="#raspberry-pi-secure-connection">Using a Raspberry Pi to Connect Securely</a>
 &#x2523&#x2501&#x2501 <a href="#raspberry-pi-setup">Initial Raspberry Pi Setup</a>

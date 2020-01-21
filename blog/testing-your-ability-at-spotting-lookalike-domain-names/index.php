@@ -7,7 +7,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
     <p><b>Skip to Section:</b></p>
-    <pre><b><?php echo $postInfo->title ?></b>
+    <pre class="contents"><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#why-did-i-create-the-app">Why did I create the app?</a>
 &#x2523&#x2501&#x2501 <a href="#predictions-and-findings">Predictions and Findings</a>
 &#x2523&#x2501&#x2501 <a href="#how-does-the-app-work">How does the app work?</a>

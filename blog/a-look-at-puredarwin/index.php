@@ -10,7 +10,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p class="two-no-mar centertext"><i>The Window Maker desktop environment running in the 'PureDarwin Xmas' release from December 2008.</i></p>
 
     <p><b>Skip to Section:</b></p>
-    <pre><b><?php echo $postInfo->title ?></b>
+    <pre class="contents"><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#a-brief-history-of-darwin-os">A Brief History of Darwin OS</a>
 &#x2523&#x2501&#x2501 <a href="#puredarwin-xmas">PureDarwin Xmas</a>
 &#x2523&#x2501&#x2501 <a href="#booting-puredarwin-xmas-in-vmware">Booting PureDarwin Xmas in VMware</a>

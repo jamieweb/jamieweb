@@ -9,7 +9,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p>The guide assumes that you already have an Ansible playbook set up, including a hosts file, and are able to connect via SSH to the intended server.</p>
 
     <p><b>Skip to Section:</b></p>
-    <pre><b><?php echo $postInfo->title ?></b>
+    <pre class="contents"><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#installing-tor">Installing Tor</a>
 &#x2523&#x2501&#x2501 <a href="#configuring-tor">Configuring Tor</a>
 &#x2523&#x2501&#x2501 <a href="#testing-the-hidden-service">Testing the Hidden Service</a>

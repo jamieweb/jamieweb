@@ -7,7 +7,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
     <p><b>Skip to Section:</b></p>
-    <pre><b><?php echo $postInfo->title ?></b>
+    <pre class="contents"><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#what-is-the-ssh-known_hosts-file-for">What is the SSH known_hosts file for?</a>
 &#x2523&#x2501&#x2501 <a href="#verifying-the-fingerprints">Verifying the Fingerprints</a>
 &#x2523&#x2501&#x2501 <a href="#managing-known_hosts-using-git">Managing known_hosts Using Git</a>

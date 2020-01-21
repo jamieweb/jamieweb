@@ -25,7 +25,7 @@
     <p class="two-no-mar centertext"><i>An example output showing a report for an image that was blocked by the Content Security Policy.</i></p>
     <p>If you want to give this a go, all of the required files and instructions are available in the GitHub repository: <a href="https://github.com/jamieweb/travis-ci_csp-tester" target="_blank" rel="noopener">https://github.com/jamieweb/<wbr>travis-ci_csp-tester</a>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Automatically Testing Your CSP Using Travis-CI and Headless Chrome Crawler</b>
+    <pre class="contents"><b>Automatically Testing Your CSP Using Travis-CI and Headless Chrome Crawler</b>
 &#x2523&#x2501&#x2501 <a href="#travis-ci">What is Travis-CI?</a>
 &#x2523&#x2501&#x2501 <a href="#headless-chrome-crawler">Headless Chrome Crawler</a>
 &#x2523&#x2501&#x2501 <a href="#apache-reverse-proxy">Apache Reverse Proxy</a>

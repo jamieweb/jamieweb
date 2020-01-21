@@ -6,9 +6,9 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
-    
+
     <p><b>Skip to Section:</b></p>
-    <pre><b><?php echo $postInfo->title ?></b>
+    <pre class="contents"><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#script-demo">Script Demo</a>
 &#x2523&#x2501&#x2501 <a href="#how-does-it-work">How does it work?</a>
 &#x2523&#x2501&#x2501 <a href="#why-is-there-a-need-to-automate-the-integrity-verification-process">Why is there a need to automate the integrity verification process?</a>

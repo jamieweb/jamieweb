@@ -23,7 +23,7 @@
     <p>Please see the <a href="https://github.com/jamieweb/hosts-file-integrity/" target="_blank" rel="noopener">associated GitHub repository</a> for details on the hosts-file-integrity scripts.</p>
     <p>I recently became interested in using the hosts file in order to block access to malicious and/or undesirable domains. This is similar to using an adblocker however it is applied system-wide, rather than just in your web browser. When using the hosts file, the request is blocked at a much lower level than when using an adblocking browser extension.</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Hosts File Site Blocking + Hosts File Integrity Script</b>
+    <pre class="contents"><b>Hosts File Site Blocking + Hosts File Integrity Script</b>
 &#x2523&#x2501&#x2501 <a href="#whatis">What is the hosts file?</a>
 &#x2523&#x2501&#x2501 <a href="#steven">Steven Black's Hosts File</a>
 &#x2523&#x2501&#x2501 <a href="#script">Hosts File Integrity Script</a>

@@ -25,7 +25,7 @@
     <p><b>Edit 17th Jan 2018 @ 10:48pm:</b> <i>Now that Onion v3 functionality is in the stable release version of Tor, I have moved over to a new Onion v3 hidden service with a vanity address, as seen above. The hidden service that I originally hosted for testing Onion v3 in the alpha builds is: <a href="http://32zzibxmqi2ybxpqyggwwuwz7a3lbvtzoloti7cxoevyvijexvgsfeid.onion" target="_blank" rel="noopener">32zzibxmqi2ybxpqyggwwuwz7a3lbvt<wbr>zoloti7cxoevyvijexvgsfeid.onion</a>, however this is now offline. You can read my blog post about generating an Onion v3 vanity address using mkp224o <a href="/blog/onionv3-vanity-address/" target="_blank">here</a>.</i></p>
     <p>As of writing this post, you need at least tor-0.3.2.1-alpha (eg: Tor Browser 7.5a5) in order to access the new Onion v3 hidden services.</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Tor Onion v3 Hidden Service</b>
+    <pre class="contents"><b>Tor Onion v3 Hidden Service</b>
 &#x2523&#x2501&#x2501 <a href="#onionconfig">Hidden Service Configuration</a>
 &#x2523&#x2501&#x2501 <a href="#apacheconfig">Apache Configuration</a>
 &#x2523&#x2501&#x2501 <a href="#vanityaddresses">Vanity Addresses</a>

@@ -37,7 +37,7 @@
     </div>
     <p class="no-mar-top">Cutter can be found on GitHub here: <b><a href="https://github.com/radareorg/cutter" target="_blank" rel="noopener">https://github.com/<wbr>radareorg/cutter</a></b></p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Introduction to Reverse Engineering with radare2 Cutter
+    <pre class="contents"><b>Introduction to Reverse Engineering with radare2 Cutter
 Part 2: Analysing a Basic Program</b>
 &#x2523&#x2501&#x2501 <a href="#cpp-odd-even">Creating a Program to Analyse</a>
 &#x2523&#x2501&#x2501 <a href="#static-analysis">Static Analysis</a>

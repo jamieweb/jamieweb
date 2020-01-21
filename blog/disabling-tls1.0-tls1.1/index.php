@@ -24,7 +24,7 @@
     <p>At first I was reluctant as this breaks compatibility with many older browsers, however after monitoring the TLS protocol versions in use by users, I've now disabled both TLS 1.0 and TLS 1.1, meaning that only TLS 1.2 can be used.</p>
     <p>Thanks again to <a href="https://hackerone.com/retr0" target="_blank" rel="noopener">retr0</a> for raising this!</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Disabling TLS 1.0 and TLS 1.1</b>
+    <pre class="contents"><b>Disabling TLS 1.0 and TLS 1.1</b>
 &#x2523&#x2501&#x2501 <a href="#why">What is wrong with TLS 1.0 and TLS 1.1?</a>
 &#x2523&#x2501&#x2501 <a href="#checking-support">Checking for TLS 1.0 and TLS 1.1 Support</a>
 &#x2523&#x2501&#x2501 <a href="#browser-compatibility">Browser Compatibility</a>

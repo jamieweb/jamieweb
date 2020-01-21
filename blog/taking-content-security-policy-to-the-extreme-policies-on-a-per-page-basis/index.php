@@ -23,7 +23,7 @@
     <p>For about two years at the time of writing, my website has had a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" target="_blank" rel="noopener">Content Security Policy</a> in order to lock-down and restrict the locations that content such as images and stylesheets can be loaded from. I had used Apache configurations in order to set a more relaxed policy for specific pages that require it, however this solution is not ideal as it becomes challenging to manage when used with larger websites with many different pages, each requiring a different policy.</p>
     <p>I have now developed some useful PHP code that allows me to easily set a default policy for the entire website, and then override individual parts of the policy on specific pages where it is required. I've released the code to the public domain under the <a href="http://unlicense.org/" target="_blank" rel="noopener">Unlicense</a>, so you are welcome to use it for your own projects!</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Taking Content Security Policy to the Extreme! - Policies on a Per-page Basis</b>
+    <pre class="contents"><b>Taking Content Security Policy to the Extreme! - Policies on a Per-page Basis</b>
 &#x2523&#x2501&#x2501 <a href="#the-code">The Code</a>
 &#x2523&#x2501&#x2501 <a href="#other-uses-for-the-code">Other Uses for the Code</a>
 &#x2523&#x2501&#x2501 <a href="#implementing-the-code-with-apache-and-php">Implementing the Code with Apache and PHP</a>

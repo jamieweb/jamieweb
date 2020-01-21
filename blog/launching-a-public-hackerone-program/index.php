@@ -22,7 +22,7 @@
     <p><b>Friday 11th May 2018</b></p>
     <p>Last month, I launched a public HackerOne security vulnerability disclosure program for my website. I've been working on this for a while, and I'm now very happy to have launched the program publicly!</p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>Launching a Public HackerOne Security Vulnerability Disclosure Program</b>
+    <pre class="contents"><b>Launching a Public HackerOne Security Vulnerability Disclosure Program</b>
 &#x2523&#x2501&#x2501 <a href="#what-is-hackerone">What is HackerOne?</a>
 &#x2523&#x2501&#x2501 <a href="#setting-up-the-program">Setting up the Program</a>
 &#x2523&#x2501&#x2501 <a href="#controlled-launch-private-invite-only">Controlled Launch (Private/Invite-only Mode)</a>

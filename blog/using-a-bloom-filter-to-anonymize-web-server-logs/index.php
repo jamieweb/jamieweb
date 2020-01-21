@@ -25,7 +25,7 @@
     <p>I've released the tool under the MIT license, and it's available on my GitLab profile: <a href="https://gitlab.com/jamieweb/web-server-log-anonymizer-bloom-filter" target="_blank" rel="noopener">https://gitlab.com/<wbr>jamieweb/web-server-log-anonymizer-bloom-filter</a></p>
 
     <p><b>Skip to Section:</b></p>
-    <pre><b>Using a Bloom Filter to Anonymize Web Server Logs</b>
+    <pre class="contents"><b>Using a Bloom Filter to Anonymize Web Server Logs</b>
 &#x2523&#x2501&#x2501 <a href="#overview-of-the-tool">Overview of the Tool</a>
 &#x2523&#x2501&#x2501 <a href="#what-is-a-bloom-filter">What is a Bloom filter?</a>
 &#x2523&#x2501&#x2501 <a href="#finding-the-optimal-bloom-filter-configuration">Finding the Optimal Bloom Filter Configuration</a>

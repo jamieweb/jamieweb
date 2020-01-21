@@ -24,7 +24,7 @@
     <p>It is currently an <a href="https://en.wikipedia.org/wiki/Internet_Draft" target="_blank" rel="noopener">Internet Draft</a> that has been submitted to the <a href="https://www.ietf.org/" target="_blank" rel="noopener">IETF</a> (Internet Engineering Task Force) for <a href="https://en.wikipedia.org/wiki/Request_for_Comments" target="_blank" rel="noopener">RFC</a> (Request for Comments) review.</p>
     <p><b><u>Please note that this article is about version 01 of the security.txt internet draft, as that was the latest version at the time of writing. Newer versions have now been released with changes, so please see <a href="https://securitytxt.io/" target="_blank" rel="noopener">securitytxt.io</a> for the latest version.</u></b></p>
     <p><b>Skip to Section:</b></p>
-    <pre><b>security.txt Internet Draft</b>
+    <pre class="contents"><b>security.txt Internet Draft</b>
 &#x2523&#x2501&#x2501 <a href="#introduction">Introduction</a>
 &#x2523&#x2501&#x2501 <a href="#headers">Header Fields</a>
 &#x2523&#x2501&#x2501 <a href="#chrome-extension">Chrome Extension</a>
