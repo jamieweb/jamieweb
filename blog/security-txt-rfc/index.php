@@ -36,7 +36,7 @@
     <img width="1000px" src="/blog/security-txt-rfc/security-txt-website-header.png">
     <p class="two-no-mar centertext"><i>The header of the official website for security.txt: <a href="https://securitytxt.org/" target="_blank" rel="noopener">https://securitytxt.org/</a></i></p>
     <p class="no-mar-bottom">Abstract:</p>
-    <p class="two-no-mar font-twenty-three"><i>&ldquo;When security risks in web services are discovered by independent security researchers who understand the severity of the risk, they often lack the channels to properly disclose them. As a result, security issues may be left unreported. Security.txt defines a standard to help organizations define the process for security researchers to securely disclose security vulnerabilities.&rdquo;</i></p>
+    <blockquote>When security risks in web services are discovered by independent security researchers who understand the severity of the risk, they often lack the channels to properly disclose them. As a result, security issues may be left unreported. Security.txt defines a standard to help organizations define the process for security researchers to securely disclose security vulnerabilities.</blockquote>
     <p class="two-mar-top centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01</a></i></p>
     <p>According to the <a href="https://tools.ietf.org/id/draft-foudil-securitytxt-01.txt" target="_blank" rel="noopener">latest draft</a> (as of writing this post), security.txt is a standard UTF-8 encoded .txt file that consists of various fields that contain information for security researchers who may wish to disclose a security vulnerability.</p>
     <p>The file is comparable to <sub><sup><sup>[HTTP]</sup></sup></sub><a href="http://www.robotstxt.org/" target="_blank" rel="noopener">robots.txt</a>, however it is primarily designed for human rather than robot consumption, although it's simplicity means that it is also very machine-friendly.</p>
@@ -75,7 +75,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
 
     <p><b>Contact:</b></p>
     <p>The "Contact" header field is used to specify contact details for security researchers to use to disclose security vulnerabilities. The "Contact" header is the only mandatory field in security.txt:</p>
-    <pre class="scroll-small">2.3.  Contact:
+    <blockquote class="pre-crlf font-size-default">2.3.  Contact:
 
    Add an address that researchers MAY use for reporting security
    issues.  The value can be an email address, a phone number and/or a
@@ -93,14 +93,14 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
    Contact: security@example.com
    Contact: +1-201-555-0123
    Contact: https://example.com/security
-   &lt;CODE ENDS&gt;</pre>
+   &lt;CODE ENDS&gt;</blockquote>
     <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-3" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-3</a></i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
     <p>The "Contact" field can be either an email address, phone number or link to a page with further information. For email addresses, an <a href="https://tools.ietf.org/html/rfc2142#section-4" target="_blank" rel="noopener">RFC2142</a> security contact email address should be used, which would generally be "security@domain.tld".</p>
 
     <p><b>Encryption:</b></p>
     <p>The "Encryption" field allows you to add a link to an encryption key that researchers can use for communication. This is highly recommended since vulnerability disclosures may contain highly confidential information.</p>
-    <pre class="scroll-small">2.4.  Encryption:
+    <blockquote class="pre-crlf font-size-default">2.4.  Encryption:
 
    This directive allows you to add your key for encrypted
    communication.  You MUST NOT directly add your key.  The value MUST
@@ -109,14 +109,14 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
 
    &lt;CODE BEGINS&gt;
    Encryption: https://example.com/pgp-key.txt
-   &lt;CODE ENDS&gt;</pre>
+   &lt;CODE ENDS&gt;</blockquote>
     <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-4" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-4</a></i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
     <p>I am personally linking directly to my <a href="/jamie-scaife.asc" target="_blank">PGP key</a>, however I have also seen other people linking to their <a href="https://keybase.io/" target="_blank" rel="noopener">Keybase</a> profiles as well as directly to their keys on Keybase. I imagine you could also provide a link to your key on a public keyserver.</p>
 
     <p><b>Signature:</b></p>
     <p>The "Signature" field allows you to add the signature of your security.txt file, either linked or in-line.</p>
-    <pre class="scroll-small">2.5.  Signature:
+    <blockquote class="pre-crlf font-size-default">2.5.  Signature:
 
    In order to ensure the authentic[i]ty of the security.txt file one
    SHOULD use the "Signature:" directive, which allows you to link to an
@@ -138,14 +138,14 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
 
    ...
    -----END PGP SIGNATURE-----
-   &lt;CODE ENDS&gt;</pre>
+   &lt;CODE ENDS&gt;</blockquote>
     <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-5</a> (Square Brackets Mine)</i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
     <p>There is nothing in the draft that specifies which key should be used to sign the file, however it would perhaps make sense to use the same key as specified in your "Encryption" field if applicable.</p>
 
     <p><b>Acknowledgement:</b></p>
     <p>The "Acknowledgement" field allows you to a vulnerability disclosure "hall-of-fame", where researchers are thanked for their work.</p>
-    <pre class="scroll-small">2.6.  Acknowledgement:
+    <blockquote class="pre-crlf font-size-default">2.6.  Acknowledgement:
 
    This directive allows you to link to a page where security
    researchers are recognized for their reports.  The page should list
@@ -163,7 +163,7 @@ Signature: https://example.com/.well-known/security.txt.sig</pre>
    (2017-04-15) Frank Denis - Reflected cross-site scripting
    (2017-01-02) Alice Quinn  - SQL injection
    (2016-12-24) John Buchner - Stored cross-site scripting
-   (2016-06-10) Anna Richmond - A server configuration issue</pre>
+   (2016-06-10) Anna Richmond - A server configuration issue</blockquote>
 <p class="two-no-mar centertext"><i>Source: <a href="https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-6" target="_blank" rel="noopener">https://tools.ietf.org/html/draft-foudil-securitytxt-01#section-2-6</a></i></p>
     <div class="centertext"><sup><p class="no-mar-top"><i>Code Component: Copyright &copy; IETF Trust and the persons identified as authors of the code. All rights reserved.</i></p></sup></div>
     <p>I have seen people linking directly to their HackerOne program's thank-you page, however any format is acceptable.</p>

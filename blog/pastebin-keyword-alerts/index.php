@@ -38,7 +38,7 @@ Kind regards,
 
 The Pastebin Team</pre>
     <p>I personally use the alerts feature to monitor various public information associated with my website, such as the IP addresses, domain name, etc. I have received a few notifications so far, none of which were particularly noteworthy however it is incredibly interesting to see where your information is been posted online:</p>
-    <pre><a href="https://pastebin.com/njwxPKrt" target="_blank" rel="noopener">https://pastebin.com/njwxPKrt</a> - "jamieweb" - 1st September 2017 @ 2:20pm - <b>Tor Hidden Service Address List</b>
+    <pre class="grey"><a href="https://pastebin.com/njwxPKrt" target="_blank" rel="noopener">https://pastebin.com/njwxPKrt</a> - "jamieweb" - 1st September 2017 @ 2:20pm - <b>Tor Hidden Service Address List</b>
 <a href="https://pastebin.com/QERfB0jv" target="_blank" rel="noopener">https://pastebin.com/QERfB0jv</a> - "jamieweb" - 1st September 2017 @ 8:08am - <b>Unknown (Paste Removed)</b>
 <a href="https://pastebin.com/QbwBqQQr" target="_blank" rel="noopener">https://pastebin.com/QbwBqQQr</a> - "139.162.222.67" - 10th August 2017 @ 6:03pm - <b>IP Address List</b></pre>
     <p>It may not be necessary to add your email address as a keyword since there is already kind of a service for this. <a href="https://twitter.com/dumpmon" target="_blank" rel="noopener">@dumpmon</a> on Twitter is a bot that monitors multiple different paste websites and automatically tweets when it finds a suspected information dump. Dump Monitor is also responsible for bringing paste data to <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener">Have I been pwned?</a>, where you can easily search pastes for your email address.</p>

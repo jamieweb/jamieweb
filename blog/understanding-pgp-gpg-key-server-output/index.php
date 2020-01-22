@@ -7,7 +7,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2019); ?>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
     <p>Below is the key server entry for <code>Alice &lt;alice@example.com&gt;</code>, signed by <code>Bob &lt;bob@example.com&gt;</code>, which are sample keys that I created. <b>You can click on any part to find out what it means:</b></p>
-    <pre class="a-reference-hover"><i><span title="Entry type, key type, key size, key ID">Type bits/keyID</a>            <span title="Creation Time">cr. time</span>   <span title="Expiry Date">exp time</span>   <span title="Key Expiry Date">key expir</span></i>
+    <pre class="grey a-reference-hover"><i><span title="Entry type, key type, key size, key ID">Type bits/keyID</a>            <span title="Creation Time">cr. time</span>   <span title="Expiry Date">exp time</span>   <span title="Key Expiry Date">key expir</span></i>
 
 <a href="#entry-type"><b>pub</b></a> <a href="#key-type">rsa</a><a href="#key-size">4096</a>/<a href="#key-id">a40ced0a9eaba810f55bb88ca41a7776121ce43c</a>
          <a href="#key-hash">Hash=f24c4ff33f09e7da1b0cb2cf72cb2be3</a>

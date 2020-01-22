@@ -22,7 +22,7 @@
     <p><b>Why have I posted these here?</b></p>
     <p>The Google Chrome Web Store is known for having malicious apps and extensions listed among the legitimate ones, so I have listed the proper links to a few of the popular ones. The idea behind this is that this page may appear in the Google search results when somebody is searching an extension ID, and may help to verify whether it is legitimate or not.</p>
     <p><b>Popular Security + Privacy Extensions:</b></p>
-    <pre>AdBlock - <a href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom" target="_blank" rel="noopener" rel="noopener">gighmmpiobklfepjocnamgkkbiglidom</a>
+    <pre class="grey">AdBlock - <a href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom" target="_blank" rel="noopener" rel="noopener">gighmmpiobklfepjocnamgkkbiglidom</a>
 AdBlock Plus - <a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb" target="_blank" rel="noopener" rel="noopener">cfhdojbkjhnklbpkdaibdccddilifddb</a>
 uBlock - <a href="https://chrome.google.com/webstore/detail/ublock/epcnnfbjfcgphgdmggkamkmgojdagdnn" target="_blank" rel="noopener" rel="noopener">epcnnfbjfcgphgdmggkamkmgojdagdnn</a>
 uBlock Origin - <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm" target="_blank" rel="noopener" rel="noopener">cjpalhdlnbpafiamejdnhcphjbkeiagm</a>
@@ -33,7 +33,7 @@ HTTPS Everywhere - <a href="https://chrome.google.com/webstore/detail/https-ever
 VTchromizer - <a href="https://chrome.google.com/webstore/detail/vtchromizer/efbjojhplkelaegfbieplglfidafgoka" target="_blank" rel="noopener" rel="noopener">efbjojhplkelaegfbieplglfidafgoka</a>
 Dr Web Link Checker - <a href="https://chrome.google.com/webstore/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb" target="_blank" rel="noopener" rel="noopener">aleggpabliehgbeagmfhnodcijcmbonb</a></pre>
     <p><b>Official Google Extensions/Apps that are installed by default:</b></p>
-    <pre>Google Mail - <a href="https://chrome.google.com/webstore/detail/gmail/pjkljhegncpnkpknbcohdijeoejaedia" target="_blank" rel="noopener" rel="noopener">pjkljhegncpnkpknbcohdijeoejaedia</a>
+    <pre class="grey">Google Mail - <a href="https://chrome.google.com/webstore/detail/gmail/pjkljhegncpnkpknbcohdijeoejaedia" target="_blank" rel="noopener" rel="noopener">pjkljhegncpnkpknbcohdijeoejaedia</a>
 Google Drive - <a href="https://chrome.google.com/webstore/detail/google-drive/apdfllckaahabafndbhieahigkjlhalf" target="_blank" rel="noopener" rel="noopener">apdfllckaahabafndbhieahigkjlhalf</a>
 Google Docs - <a href="https://chrome.google.com/webstore/detail/google-docs/aohghmighlieiainnegkcijnfilokake" target="_blank" rel="noopener" rel="noopener">aohghmighlieiainnegkcijnfilokake</a>
 Google Docs Offline - <a href="https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi" target="_blank" rel="noopener" rel="noopener">ghbmnnjooekpmoecnnnilnnbdlolhkhi</a>
@@ -41,7 +41,7 @@ Google Sheets - <a href="https://chrome.google.com/webstore/detail/google-sheets
 Google Slides - <a href="https://chrome.google.com/webstore/detail/google-slides/aapocclcgogkmnckokdopfmhonfmgoek" target="_blank" rel="noopener" rel="noopener">aapocclcgogkmnckokdopfmhonfmgoek</a>
 YouTube - <a href="https://chrome.google.com/webstore/detail/youtube/blpcfgokakmgnkcojhhkbfbldkacnbeo" target="_blank" rel="noopener" rel="noopener">blpcfgokakmgnkcojhhkbfbldkacnbeo</a></pre>
     <p><b>Official Google Extensions/Apps that are now built into Chrome and no longer available on the store:</b></p>
-    <pre>Google Wallet - nmmhkkegccagdldgiimedpiccmgmieda
+    <pre class="grey">Google Wallet - nmmhkkegccagdldgiimedpiccmgmieda
 Chrome PDF Viewer - mhjfbmdgcfjbbpaeojofohoefgiehjai
 Chrome Cast - pkedcjkdefgpdelpbcmbmeomcjbeemfm</pre>
 </div>

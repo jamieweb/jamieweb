@@ -395,7 +395,7 @@ $ sudo service apache2 reload</pre>
         <div class="display-flex flex-direction-column">
             <p class="no-mar-top no-mar-bottom">Namecoin provides a good solution to a lot of problems with the current domain name system, and is a method of solving <a href="https://en.wikipedia.org/wiki/Zooko%27s_triangle" target="_blank" rel="noopener">Zooko's Triangle</a>.</p>
             <p class="no-mar-bottom">From Wikipedia/Zooko's Triangle:</p>
-            <pre class="pre-wrap-text no-mar-bottom"><i>Zooko's triangle defines the three desirable traits of a network protocol identifier as Human-meaningful, Decentralized and Secure.</i></pre>
+            <blockquote>Zooko's triangle defines the three desirable traits of a network protocol identifier as Human-meaningful, Decentralized and Secure.</blockquote>
             <p class="no-mar-bottom">Namecoin does come with some issues though, especially related to usability and abuse.</p>
         </div>
         <div class="display-flex flex-align-center flex-justify-center padding-20-rl padding-bottom-30-on-small">

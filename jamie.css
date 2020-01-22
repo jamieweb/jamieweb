@@ -538,12 +538,12 @@ pre {
     border-radius: 8px;
 }
 
-pre:not(contents):not(grey) {
+pre:not(.contents):not(.grey) {
     background-color: #2f4f4f;
     color: white;
 }
 
-pre:not(contents):not(grey) a {
+pre:not(.contents):not(.grey) a {
     color: white;
 }
 
@@ -566,7 +566,7 @@ pre.scroll-small {
     overflow-y: scroll;
 }
 
-pre.pre-wrap-text {
+pre.pre-wrap-text,blockquote.pre-crlf {
     white-space: pre-wrap;
 }
 
@@ -614,6 +614,10 @@ blockquote:before {
 
 blockquote:after {
     content: close-quote;
+}
+
+blockquote.font-size-default {
+    font-size: 1em;
 }
 
 table.padding-6 th,table.padding-6 td {

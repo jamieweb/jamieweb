@@ -41,7 +41,7 @@
     <p>This list does not include vulnerabilities that require user interaction or for the attacker to be present on your Wi-Fi network.</p>
     <p>The iOS version that they are listed under indicates the version at which they were patched, not the version(s) that they affect.</p>
     <p>Many of these vulnerabilities may have been introduced in versions after iOS 6.1.3, however it should still give you a general idea of the state of iOS 6 security.</p>
-    <pre><b>iOS 7</b> ------ <a href="https://support.apple.com/kb/HT5934" target="_blank" rel="noopener">https://support.apple.com/kb/HT5934</a>
+    <pre class="grey"><b>iOS 7</b> ------ <a href="https://support.apple.com/kb/HT5934" target="_blank" rel="noopener">https://support.apple.com/kb/HT5934</a>
 <b>iOS 7.0.2</b> -- <a href="https://support.apple.com/kb/HT5957" target="_blank" rel="noopener">https://support.apple.com/kb/HT5957</a>
 <b>iOS 7.0.3</b> -- <a href="https://support.apple.com/kb/HT6010" target="_blank" rel="noopener">https://support.apple.com/kb/HT6010</a>
 <b>iOS 7.0.4</b> -- <a href="https://support.apple.com/kb/HT6058" target="_blank" rel="noopener">https://support.apple.com/kb/HT6058</a>
