@@ -1,14 +1,16 @@
 <?php $bloglist = json_decode(file_get_contents('posts.json', true));
 function bloglist($location, $category = null, $post = null, $annum = null) {
     global $bloglist;
-    if($location === "navbar") {
+    switch($location) {
+    case "navbar":
         foreach($bloglist->blog as $year) {
             foreach($year as $post) {
                 echo "                        <a href=\"/blog/" . $post->uri . "/\">" . $post->navtitle . "</a>\n";
             }
         }
-    }
-    elseif($location === "postTop") {
+    break;
+
+    case "postTop":
         global $postInfo;
         $postInfo = $bloglist->blog->{$annum}->{basename(getcwd())};
         echo "<!DOCTYPE html>
@@ -28,8 +30,9 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
 
 ";
         include "navbar.php";
-    }
-    elseif($location === "home") {
+    break;
+
+    case "home":
         $homeCount = 0;
         foreach($bloglist->blog as $year) {
             foreach($year as $post) {
@@ -46,31 +49,17 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
                 echo "<hr>\n        ";
             }
         }
-    }
-    elseif($location === "tags") {
+    break;
+
+    case "tags":
         echo "\n            <p class=\"tags\">\n";
         foreach(explode(",", $post->tags) as $tag) {
             echo "                <b><a href=\"/blog/category/" . str_replace(' ', '-', strtolower($tag)) . "/\"><span class=\"tag-" . str_replace(' ', '-', strtolower($tag)) . "\">" . $tag . "</span></a></b>\n";
         }
         echo "            </p>\n";
-    }
-    elseif($location === "recents") {
-        $recentsCount = 0;
-        foreach($bloglist->blog as $year) {
-            foreach($year as $post) {
-                $recentsCount++;
-                echo "            <a href=\"/blog/" . $post->uri . "/\">
-                <h4 class=\"no-mar-bottom\">" . $post->title . "</h4>
-                <h5 class=\"two-no-mar\">" . $post->shortdesc . "</h5>
-                <h5 class=\"two-mar-top\">" . $post->date . "</h5>
-            </a>\n";
-                if($recentsCount >= 4) {
-                    break 2;
-                }
-            }
-        }
-    }
-    elseif($location === "blog") {
+    break;
+
+    case "blog":
         $latestYear = 2020; //Temporary year code
         foreach($bloglist->blog as $year) {
             echo "\n    <br><div class=\"blog-group\">
@@ -92,8 +81,9 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
             echo "        </div>
     </div>\n";
         }
-    }
-    elseif($location === "tag") {
+    break;
+
+    case "tag":
         echo "<!DOCTYPE html>
 <html lang=\"en\">
 
@@ -135,8 +125,8 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
         echo "\n\n</body>
 
 </html>";
-    }
-}
+    break;
+}}
 function license_text($license) {
     switch($license) {
         case "CC BY-SA 4.0":
