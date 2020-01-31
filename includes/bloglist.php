@@ -59,6 +59,20 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
         echo "            </p>\n";
     break;
 
+    case "rss":
+        foreach($bloglist->blog as $year) {
+            foreach($year as $post) {
+                echo "    <item>
+        <title>" . $post->title . "</title>
+        <link>https://www.jamieweb.net/blog/" . $post->uri . "/</link>
+        <description>" . $post->longdesc . "</description>
+        <category>Blog</category>
+        <pubDate>" . date_create_from_format("l jS F Y", $post->date)->format("D, j M Y") . "</pubDate>
+    </item>\n";
+            }
+        }
+    break;
+
     case "blog":
         $latestYear = 2020; //Temporary year code
         foreach($bloglist->blog as $year) {

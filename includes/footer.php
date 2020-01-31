@@ -59,7 +59,7 @@
         </div>
         <div class="footer-column">
             <h2>&#x1f514; Subscribe</h2>
-            <a href="/rss.xml" target="_blank">
+            <a href="/rss/" target="_blank">
                 <div class="footer-item">
                     <img src="/images/fontawesome/rss-orange.svg">
                     <h4>RSS Feed</h4>
