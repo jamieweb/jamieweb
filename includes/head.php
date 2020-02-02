@@ -3,3 +3,4 @@
     <meta name="author" content="Jamie Scaife">
     <meta name="generator" content="gitlab.com/jamieweb/jamieweb">
     <link href="/jamie.css" rel="stylesheet">
+    <link href="/rss/" rel="alternate" type="application/rss+xml" title="Jamie Scaife's Security Blog">
