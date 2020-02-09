@@ -1,6 +1,17 @@
 {
     "blog": {
         "2020": {
+            "restricting-who-can-issue-certificates-for-your-domain-with-caa": {
+                "uri": "restricting-who-can-issue-certificates-for-your-domain-with-caa",
+                "navtitle": "Certificate Authority Authorisation",
+                "title": "Restricting Who Can Issue Certificates for Your Domain with CAA",
+                "longdesc": "Using Certificate Authority Authorisation (CAA) to restrict the Certificate Authorities that are permitted to issue certificates for your domain.",
+                "date": "Monday 10th February 2020",
+                "tags": "Security,TLS,RFC",
+                "snippet": "",
+                "license": "CC BY-SA 4.0",
+                "format_version": 2
+            },
             "testing-your-ability-at-spotting-lookalike-domain-names": {
                 "uri": "testing-your-ability-at-spotting-lookalike-domain-names",
                 "navtitle": "Spotting Lookalike Domain Names",
