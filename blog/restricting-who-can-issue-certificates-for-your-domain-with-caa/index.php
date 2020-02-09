@@ -6,17 +6,12 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
-    <p>Certificate Authority Authorisation (CAA) is a security control that can be used to restrict the Certificate Authorities (CAs) that are permitted to issue certificates for your domain. The purpose of this is to help ensure that only explicitly whitelisted CAs are able to issue certificates, and also to report on any attempted violations of this policy.</p>
-    <p>CAA policies are set using the <code>CAA</code> DNS resource record type, and it has been mandatory for issuing CAs to check for and comply with CAA policies since 8th September 2017. The CAA specification is defined in <a href="https://tools.ietf.org/html/rfc8659" target="_blank" rel="noopener">RFC8659</a>.</p>
-    <p>The following sample CAA policy marks Let's Encrypt as the only CA authorised to issue certificates for <code>example.com</code>, while reporting violations to the <code>caa@example.com</code> mailbox:</p>
-    <pre>example.com IN CAA 0 issue "letsencrypt.org"
-example.com IN CAA 0 iodef "mailto:caa@example.com"</pre>
     <p><b>Skip to Section:</b></p>
     <pre class="contents"><b><?php echo $postInfo->title ?></b>
 &#x2523&#x2501&#x2501 <a href="#example-caa-policies">Example CAA Policies</a>
 &#x2523&#x2501&#x2501 <a href="#dns-record-format">DNS Record Format</a>
+&#x2523&#x2501&#x2501 <a href="#querying-caa-records">Querying CAA Records</a>
 &#x2523&#x2501&#x2501 <a href="#example-caa-policy-violation-report">Example CAA Policy Violation Report</a>
-&#x2523&#x2501&#x2501 <a href="#"></a>
 &#x2523&#x2501&#x2501 <a href="#other-considerations">Other Considerations</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
@@ -79,6 +74,13 @@ example.com IN CAA 1 dayofweek "Monday"</pre>
     <p>...all certificate requests would now be denied until Let's Encrypt upgrade their CAA parser. This is compliant with the CAA policy.</p>
     <p>Once Let's Encrypt update their CAA parser, certificate requests would then be permitted on Mondays.</p>
 
+    <h2 id="querying-caa-records">Querying CAA Records</h2>
+    <p>CAA records can be easily checked using <code>dig</code>:</p>
+    <pre>$ dig +short example.com CAA
+0 issue "letsencrypt.org"
+0 issuewild ";"
+0 iodef "mailto:caa-violations@example.com"</pre>
+
     <h2 id="example-caa-policy-violation-report">Example CAA Policy Violation Report</h2>
     <p>When using Let's Encrypt with Certbot, attempting to issue a certificate that is in violation of the CAA policy for a domain will result in an error similar to the following:</p>
     <pre>Failed authorization procedure. www.jamiescaife.uk (http-01): urn:ietf:params:acme:error:caa :: CAA record for www.jamiescaife.uk prevents issuance
@@ -89,12 +91,12 @@ example.com IN CAA 1 dayofweek "Monday"</pre>
    Domain: www.jamiescaife.uk
    Type:   None
    Detail: CAA record for www.jamiescaife.uk prevents issuance</pre>
-    <p>Each distinct certificate authority has their own CAA error format, however the general details will usually be the same.</p>
+    <p>Each distinct certificate authority has their own CAA error format, however the general message is always the same.</p>
     <p>If the targeted domain has a CAA violation reporting endpoint specified via an <code>iodef</code> property, a violation report will also be sent (to be received by the owner of the affected domain).</p>
     <p>Below is an example of a CAA violation report:</p>
     <pre></pre>
     <p>CAA violation reports use the Incident Object Description Exchange Format (IODEF / <a href="https://tools.ietf.org/html/rfc7970" target="_blank" rel="noopener">RFC7970</a>), which is a standardised mechanism for exchanging security report information.</p>
-    <p>It's also worth noting that the CAA checking and violation reporting usually only takes place after the standard validation requirements for a certificate request have been satisfied. This means that someone cannot overload you with CAA violation reports just by endlessly requesting certificates for your domain - they must actually be able to prove ownership of the domain/site first.</p>
+    <p>Unfortunately, support for CAA violation reporting is currently very uncommon. Let's Encrypt don't support it at the time of writing, nor do most of the other large CAs. Buypass, which is a Norwegian CA well-known for providing <a href="https://community.buypass.com/t/k9r5cx/get-started" target="_blank" rel="noopener">free certificates using the ACME protocol</a> in a similar way to Let's Encrypt, does support CAA violation reporting, but only via email (<code>mailto:</code>).</p>
 
     <h2 id="other-considerations">Other Considerations</h2>
     <p>Keep in mind that CAA does not give blanket permission to whitelisted CAs to issue certificates. It just means that they are <i>allowed</i> to, as long as all other required validation methods are satisfied as well. For example, proving ownership of the domain name/website.</p>
