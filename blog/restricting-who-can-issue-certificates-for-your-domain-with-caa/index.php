@@ -11,7 +11,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
 &#x2523&#x2501&#x2501 <a href="#example-caa-policies">Example CAA Policies</a>
 &#x2523&#x2501&#x2501 <a href="#dns-record-format">DNS Record Format</a>
 &#x2523&#x2501&#x2501 <a href="#querying-caa-records">Querying CAA Records</a>
-&#x2523&#x2501&#x2501 <a href="#example-caa-policy-violation-report">Example CAA Policy Violation Report</a>
+&#x2523&#x2501&#x2501 <a href="#caa-policy-violation-reports">CAA Policy Violation Reports</a>
 &#x2523&#x2501&#x2501 <a href="#other-considerations">Other Considerations</a>
 &#x2517&#x2501&#x2501 <a href="#conclusion">Conclusion</a></pre>
 
@@ -44,7 +44,7 @@ example.com IN CAA 0 issuewild "ca1.example.net"</pre>
     <pre class="two-mar-top">example.com IN CAA 0 issuewild ";"</pre>
     <h4 class="two-mar-bottom">Deny all certificate requests:</h4>
     <pre class="two-mar-top">example.com IN CAA 0 issue ";"</pre>
-    <h4 class="two-mar-bottom">Report policy violations via email and via HTTP <code>POST</code> to an API:</h4>
+    <h4 class="two-mar-bottom">Request that policy violations are reported via email and via HTTP <code>POST</code> to an API:</h4>
     <pre class="two-mar-top">example.com IN CAA 0 iodef "mailto:caa-violations@example.com"
 example.com IN CAA 0 iodef "https://api.example.com/report/caa/"</pre>
 
@@ -81,7 +81,7 @@ example.com IN CAA 1 dayofweek "Monday"</pre>
 0 issuewild ";"
 0 iodef "mailto:caa-violations@example.com"</pre>
 
-    <h2 id="example-caa-policy-violation-report">Example CAA Policy Violation Report</h2>
+    <h2 id="caa-policy-violation-reports">CAA Policy Violation Reports</h2>
     <p>When using Let's Encrypt with Certbot, attempting to issue a certificate that is in violation of the CAA policy for a domain will result in an error similar to the following:</p>
     <pre>Failed authorization procedure. www.jamiescaife.uk (http-01): urn:ietf:params:acme:error:caa :: CAA record for www.jamiescaife.uk prevents issuance
 
@@ -92,11 +92,9 @@ example.com IN CAA 1 dayofweek "Monday"</pre>
    Type:   None
    Detail: CAA record for www.jamiescaife.uk prevents issuance</pre>
     <p>Each distinct certificate authority has their own CAA error format, however the general message is always the same.</p>
-    <p>If the targeted domain has a CAA violation reporting endpoint specified via an <code>iodef</code> property, a violation report will also be sent (to be received by the owner of the affected domain).</p>
-    <p>Below is an example of a CAA violation report:</p>
-    <pre></pre>
+    <p>If the targeted domain has a CAA violation reporting endpoint specified via an <code>iodef</code> property, a violation report should also be sent (to be received by the owner of the affected domain).</p>
     <p>CAA violation reports use the Incident Object Description Exchange Format (IODEF / <a href="https://tools.ietf.org/html/rfc7970" target="_blank" rel="noopener">RFC7970</a>), which is a standardised mechanism for exchanging security report information.</p>
-    <p>Unfortunately, support for CAA violation reporting is currently very uncommon. Let's Encrypt don't support it at the time of writing, nor do most of the other large CAs. Buypass, which is a Norwegian CA well-known for providing <a href="https://community.buypass.com/t/k9r5cx/get-started" target="_blank" rel="noopener">free certificates using the ACME protocol</a> in a similar way to Let's Encrypt, does support CAA violation reporting, but only via email (<code>mailto:</code>).</p>
+    <p>Unfortunately, support for CAA violation reporting is currently very uncommon. Let's Encrypt don't support it at the time of writing, nor do most of the other large CAs. I was able to identify a smaller CA who claimed in their customer documentation that they send CAA violation reports, however despite deliberately triggering several CAA violations and waiting over 48 hours, I am yet to receive a report from them.</p>
 
     <h2 id="other-considerations">Other Considerations</h2>
     <p>Keep in mind that CAA does not give blanket permission to whitelisted CAs to issue certificates. It just means that they are <i>allowed</i> to, as long as all other required validation methods are satisfied as well. For example, proving ownership of the domain name/website.</p>
