@@ -48,32 +48,16 @@ Historic:
 * nyc01 IPv4 Direct (403 Forbidden): http://157.230.83.95
 * nyc01 IPv6 Direct (403 Forbidden): <a href="http://[2604:a880:400:d1::aad:8001]">http://[2604:a880:400:d1::aad:8001]</a>
 
-## Site Ideas/To-do List:
-    Grid/list layout for /projects (same as /info and /other?)
-    Raspberry Pi Cluster blog post
-    Python & C++ - cycles per second - "tickrate"
-    Casio watch mod (N-O-D-E style) - in progress but I am having issues with masking for spray painting!
-    Air-gapped RPi PGP decryption device using binary-over-audio
-    iptables configuration
-    pf configuration
-    Chrome sign-in/sync risk
-    Homepage quick links
-    Search box?
-    Link integrity
-    KeyChest
-    Tor IPv6
-    Next/previous blog post links when on /blog/*? - Tried but looks too 'spammy'
-    <noscript> tag neglect
-    Link to IPv[46] test pages & direct IP links in /other or somewhere easy to access
-    OpenPGP keyserver? keyserver.jamieweb.net
-    Snippets (auto gen list with PHP, store in JSON?)
-    Tor HS forwarding methods
-
-    TLS 1.3 - Waiting for native support in Ubuntu repo Apache package
+## Old Site Ideas/To-do List (Now Moved to Private Notes):
+    TLS 1.3 - Waiting for native support in Ubuntu LTS repo Apache package (eta 20.04 LTS)
     tls1.3.jamieweb.net (TLS 1.3 Test Page)
     http2.jamieweb.net (HTTP/2 Test Page)
     brotli.jamieweb.net (Brotli Test Page[?])
 
+    ✓ Grid/list layout for /projects (same as /info and /other?)
+    ✓ Link integrity
+    ✓ KeyChest
+    ✓ Tor HS forwarding methods
     ✓ Geodiverse hosting - now DNS failover load-balanced between ldn01 and nyc01
     ✓ HTTP/2
     ✓ JamieWeb status page - status.jamieweb.net

@@ -20,7 +20,7 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
 <!--Legal Information at https://www.jamieweb.net/contact-->
 
 <head>
-    <title>" . $postInfo->title . "</title>
+    <title>" . (isset($postInfo->subtitle) ? $postInfo->subtitle : $postInfo->title) . "</title>
     <meta name=\"description\" content=\"" . $postInfo->longdesc . "\">";
         include "head.php";
         echo "    <link href=\"https://www.jamieweb.net/blog/" . $postInfo->uri . "/\" rel=\"canonical\">
@@ -38,7 +38,7 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
             foreach($year as $post) {
                 $homeCount++;
                 echo "<div class=\"recent-post clearboth\">
-            <h2 class=\"no-mar-bottom\"><a href=\"/blog/" . $post->uri . "/\">" . $post->title . "</a></h2>
+            <h2 class=\"no-mar-bottom\"><a href=\"/blog/" . $post->uri . "/\">" . $post->title . (isset($post->subtitle) ? " - " . $post->subtitle : "") . "</a></h2>
             <p class=\"two-mar-top recents-date\">" . $post->date . "</p>
             <p class=\"snippet\">" . $post->snippet . " <b><u><i><a href=\"/blog/" . $post->uri . "/\"><span class=\"continue-reading\">Continue reading...</span></a></i></u></b></p>";
                 bloglist("tags", null, $post);
@@ -63,7 +63,7 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
         foreach($bloglist->blog as $year) {
             foreach($year as $post) {
                 echo "    <item>
-        <title>" . $post->title . "</title>
+        <title>" . $post->title . (isset($post->subtitle) ? " - " . $post->subtitle : "") . "</title>
         <link>https://www.jamieweb.net/blog/" . $post->uri . "/</link>
         <description>" . $post->longdesc . "</description>
         <category>Blog</category>
@@ -87,7 +87,7 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
         </div>
         <div class=\"blog-list\">\n";
             foreach($year as $post) {
-                echo "            <h3><a href=\"/blog/" . $post->uri . "/\">" . $post->title . "</a></h3>
+                echo "            <h3><a href=\"/blog/" . $post->uri . "/\">" . $post->title . (isset($post->subtitle) ? " - " . $post->subtitle : "") . "</a></h3>
             <p class=\"two-no-mar\"><b>" . $post->longdesc . "</b></p>
             <p class=\"two-no-mar\">" . $post->date . "</p>";
                 bloglist("tags", null, $post);
@@ -122,7 +122,7 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
             foreach($year as $post) {
                 $tags = explode(",", $post->tags);
                 if(in_array($category, $tags)) {
-                    echo "        <h3><a href=\"/blog/" . $post->uri . "/\">" . $post->title . "</a></h3>
+                    echo "        <h3><a href=\"/blog/" . $post->uri . "/\">" . $post->title . (isset($post->subtitle) ? " - " . $post->subtitle : "") . "</a></h3>
         <p class=\"two-no-mar\"><b>" . $post->longdesc . "</b></p>
         <p class=\"two-no-mar\">" . $post->date . "</p>
         <p class=\"tags\">\n";

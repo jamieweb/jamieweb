@@ -2,13 +2,13 @@
 include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
 
 <div class="body">
-    <h1><?php echo $postInfo->title; ?></h1>
+    <h1><?php echo $postInfo->title . "</h1>\n" . (isset($postInfo->title) ? "    <h2 class=\"subtitle-mar-top\">" . $postInfo->subtitle . "</h2>\n" : ""); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <p><?php echo $postInfo->snippet; ?></p>
     <p></p>
     <p><b>Skip to Section:</b></p>
-    <pre class="contents"><b><?php echo $postInfo->title ?></b>
+    <pre class="contents"><b><?php echo $postInfo->title . (isset($postInfo->subtitle) ? "\n" . $postInfo->subtitle : ""); ?></b>
 &#x2523&#x2501&#x2501 <a href="#"></a>
 &#x2523&#x2501&#x2501 <a href="#"></a>
 &#x2523&#x2501&#x2501 <a href="#"></a>
