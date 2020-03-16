@@ -807,6 +807,11 @@ span.tag-apple {
     color: white;
 }
 
+span.tag-bgp {
+    background-color: #c0006a;
+    color: white;
+}
+
 span.tag-bug-bounty {
     background-color: #db0f6f;
     color: white;
@@ -814,6 +819,11 @@ span.tag-bug-bounty {
 
 span.tag-chrome {
     background-color: #eec11b;
+    color: white;
+}
+
+span.tag-dn42 {
+    background-color: #404040;
     color: white;
 }
 
