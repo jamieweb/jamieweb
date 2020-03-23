@@ -1215,6 +1215,10 @@ th.h1-scope-in-scope {
     color: crimson;
 }
 
+.color-red {
+    color: red;
+}
+
 .color-orange {
     color: orange;
 }

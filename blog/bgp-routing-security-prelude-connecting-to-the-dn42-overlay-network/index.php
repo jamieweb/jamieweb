@@ -24,10 +24,92 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
 &#x2523&#x2501&#x2501 <a href="#dnsmasq-dns-setup-for-dn42-domains">Dnsmasq DNS Setup for '.dn42' Domains</a>
 &#x2517&#x2501&#x2501 <a href="#part-1-conclusion">Part 1 / Conclusion</a></pre>
 
-    <h2 id=""></h2>
+    <h2 id="what-is-dn42">What is DN42?</h2>
+    <p>Distributed Network 42, known as DN42, is a private overlay network built using thousands of distict nodes interconnected with eachother via VPN tunnels. DN42 employs routing protocols such as BGP and OSPF in order to route packets, allowing users to deploy services such as websites, IRC servers and DNS servers in a way very similar to the real internet.</p>
+    <img class="radius-8" width="1000px" src="dn42-landing-page.png">
+    <p class="two-no-mar centertext"><i>The landing page for DN42, available at <a href="https://dn42.us/" target="_blank" rel="noopener">dn42.us</a>.</i></p>
+    <p>The DN42 network is primarily used by network and security engineers in order to provide a safe and accessible environment to practise using network technologies, as well as allowing isolated networks, such as those behind strict firewalls or NAT, to communicate with eachother directly.</p>
+    <p>However, the primary selling-point for DN42 is that it provides free and realistic access to a production-like BGP environment, which is something usually reserved for network operators responsible for large enterprise networks or ISPs who are also often paying expensive registry fees.</p>
+    <img class="radius-8" width="1000px" src="dn42-wiki.png">
+    <p class="two-no-mar centertext"><i>The DN42 wiki homepage, available at <a href="https://wiki.dn42.us/" target="_blank" rel="noopener">wiki.dn42.us</a>.</i></p>
+    <p>This article will guide you through the process of registering and connecting to DN42, which is the equivalent of physically 'plugging yourself in' to the network. This won't yet let you communicate with the DN42 network fully, but it'll provide the foundation to begin BGP peering and announcing your IP address ranges to other members of the network.</p>
+    <p>While it is possible to connect to DN42 using a physical router, the most common setup is to use a standard Linux server. Any modern Linux distribution should be suitible, however in this article I am focusing on Debian-based systems such as Ubuntu Server. macOS and Windows systems are also supported if you really want them to be, however for optimal compatibility and ease of configuration, I would strongly recommend using a Linux distribution designed for use on servers.</p>
+
+    <h2 id="accessing-the-dn42-registry">Accessing the DN42 Registry</h2>
+    <p>The DN42 registry is a central database containing all of the users of the network, the Autonomous Systems (ASs) that they maintain, the IP address ranges assigned to them and any domain names that they own.</p>
+    <p>This is equivalent to a Regional Internet Registry (RIR), such as RIPE (Europe), ARIN (North America) or APNIC (Asia Pacific).</p>
+    <p>DN42's registry is stored and operated as a Git repository, with a group of moderators responsible for reviewing and approving change requests.</p>
+    <img class="radius-8" width="1000px" src="registry.png">
+    <p class="two-no-mar centertext"><i>The DN42 registry, which can be accessed at <a href="https://git.dn42.us/" target="_blank" rel="noopener">git.dn42.us</a>.</i></p>
+    <p>In order to join DN42, you'll need to download a copy of the registry, add your information and configuration values to it (known as 'registry objects'), and then submit a change request back to the main registry.</p>
+    <p>Begin by <a href="https://git.dn42.us/user/sign_up/" target="_blank" rel="noopener">signing up to the Git frontend for the registry</a>. Please note that <b>the email address that you use will be shared publicly</b>. If you're concerned about this, I recomend creating a new alias on your domain, such as <code>dn42@example.com</code> or <code>bgp@example.com</code>.</p>
+    <p>Once you've signed up, navigate to the <a href="https://git.dn42.us/dn42/registry/" target="_blank" rel="noopener">repository for the main DN42 registry</a> and create a fork of it by clicking the 'Fork' button. This will create a copy of the repository within your own registry account.</p>
+    <img class="radius-8" width="1000px" src="registry-forked.png">
+    <p class="two-no-mar centertext"><i>An example of a forked copy of the DN42 registry.</i></p>
+    <p>Next, you'll need to add an SSH public key to your registry account in order to allow you to authenticte to it using Git over SSH from the command-line. I recommend creating a new SSH key pair for this, which can be done using the following command:</p>
+    <pre>$ ssh-keygen -t rsa -b 4096</pre>
+    <p>Once you've generated the SSH key pair, add the public key to your registry account via your account settings, in the same way that you would add an SSH key to your GitHub/GitLab account.</p>
+    <p>Each user of DN42 should sign each of their change requests using a GPG key or SSH key in order to help prevent other users from submitting malicious change requests to the registry on their behalf. The key that you use when initially creating your registry objects will need to be used to sign all future change requests in order to validate your identity, otherwise they will not be accepted by the DN42 registry moderators.</p>
+    <p>In this article we will focus on the usage of GPG, as it is the most widely used option. If you don't already have a GPG key suitible for use, you can create one using the following command:</p>
+    <pre>$ gpg2 --full-generate-key</pre>
+    <p>Select option #1 (rsa and rsa), and choose a suitible expiration date for the key. It may take quite some time to source enough entropy to properly generate your private key, so continue using your computer normally until it completes.</p>
+    <p>Once your key has been successfully generated, identify its full key ID by listing all of your keys:</p>
+    <pre>$ gpg2 --list-keys</pre>
+    <p>Find your new key in the list and take a note of the full key ID, as shown in red in the example below:</p>
+    <pre>pub   rsa4096 2019-10-19 [SC] [expires: 2020-10-18]
+      <span class="color-red">AB72FE12526F44B611B99F7C24B1FB13F1B3B06C</span>
+uid           [ultimate] Bob &lt;bob@example.com&gt;
+sub   rsa4096 2019-10-19 [E] [expires: 2020-10-18]</pre>
+    <p>Next, you'll need to submit your key to the public key servers, in order to allow the DN42 community to download your full key, just based on the key ID:</p>
+    <pre>$ gpg2 --keyserver hkp://keyserver.ubuntu.com --send-keys <span class="color-red">your-key-fingerprint-here</span></pre>
+    <p>Your key will appear on the <a href="https://keyserver.ubuntu.com/" target="_blank" rel="noopener">Ubuntu Keyserver</a> straight away, but may take a couple of hours to sync to the other key servers.</p>
+    <p>Before proceeding, take a secure backup of your GPG key, as losing access to it could potentially mean losing access to your DN42 resources too.</p>
+    <p>Now that you've got your SSH and GPG keys, you can proceed with connecting to the registry over SSH in order to make sure that everything is working.</p>
+    <p>In order to make sure that SSH uses the correct private key for the connection, you may wish to add the following to the bottom of your <code>~/.ssh/config</code> file:
+    <pre>host git.dn42.us
+  IdentityFile ~/.ssh/<span class="color-red">your-ssh-private-key</span></pre>
+    <p>You can now proceed with connecting to the registry, using the <code>-T</code> option to prevent a terminal session from being created:</p>
+    <pre>$ ssh -T git@git.dn42.us</pre>
+    <p>Since this is your first time connecting, you'll be asked whether you want to accept the server host key fingeprint or not. Modern SSH clients should display the ECDSA SHA256 fingerprint, as shown below in red:</p>
+    <pre>The authenticity of host 'git.dn42.us (2607:5300:60:3d95::1)' can't be established.
+ECDSA key fingerprint is SHA256:<span class="color-red">NxZ5DJlVKTdS8Kv0Dcyew76iAKDAp5K7QmWUM7gLZS8</span>.
+Are you sure you want to continue connecting (yes/no)?</pre>
+    <p>Double check that the fingerprint matches, and then proceed with connecting.</p>
+    <p>Once you have connected successfully, the help page for Gogs should be printed (Gogs is the Git frontend used for the DN42 registry):</p>
+    <pre>NAME:
+  Gogs - A painless self-hosted Git service
+ 
+USAGE:
+  gogs [global options] command [command options] [arguments...]
+ 
+VERSION:
+  0.11.86.0130</pre>
+    <p>The SSH session should terminate straight after printing the above help text, but if not, press Ctrl+C or Ctrl+D to forcefully close it.</p>
+    <p>Now that you've successfully tested your SSH connection to the registry Git frontend, you can proceed with cloning your fork of the registry repository:</p>
+    <pre>$ git clone git@git.dn42.us:<span class="color-red">your-registry-username-here</span>/registry.git</pre>
+    <p>This will create a complete local copy of the DN42 registry. You can freely browse the directory structure and view all of the files, as well as make your own local changes ready to be submitted back to main repository.</p>
+    <p>You should also configure Git to use your GPG key and enable forced commit signing, which can be done by running the following commands from within the <code>registry</code> directory:</p>
+    <pre>$ git config user.signingkey <span class="color-red">your-key-fingerprint-here</span>
+$ git config commit.gpgsign true</pre>
+    <p>Finally, you should update your Git name and email address to match the details used to sign up to the registry. These details will be present on each commit that you make, so ensure that you're happy for them to be shared publicly:</p>
+    <pre>$ git config user.name "<span class="color-red">your-name</span>"
+$ git config user.email "<span class="color-red">your-dn42-email-address</span>"</pre>
+    <p>You have now signed up to the DN42 registry, created the required cryptographic keys, downloaded a forked copy of the registry and configured your local Git environment. Next, you can begin to create registry objects to define the Autonomous Systems, IP address ranges and domain names that you want to register.</p>
+
+    <h2 id="creating-registry-objects">Creating Registry Objects</h2>
+    <p>The structure of the DN42 registry very closely matches registries on the real internet, such as RIPE. Every member of the registry has their own 'maintainer' object (<code>MNT</code>), which is associated with each of the resources that they own, and Autonomous Systems (ASs) are created in order to manage and identify IP address ranges and routes.</p>
+
+    <h2 id="merging-your-registry-objects-into-the-registry">Merging Your Registry Objects into the Registry</h2>
     <p></p>
-    <img class="radius-8" width="1000px" src="">
-    <p class="two-no-mar centertext"><i></i></p>
+
+    <h2 id="finding-a-peer">Finding a Peer</h2>
+    <p></p>
+
+    <h2 id="connecting-to-your-peer-using-openvpn">Connecting to Your Peer Using OpenVPN</h2>
+    <p></p>
+
+    <h2 id="dnsmasq-dns-setup-for-dn42-domains">Dnsmasq DNS Setup for '.dn42' Domains</h2>
+    <p></p>
 
     <div class="message-box message-box-positive/warning/warning-medium/notice">
         <div class="message-box-heading">
