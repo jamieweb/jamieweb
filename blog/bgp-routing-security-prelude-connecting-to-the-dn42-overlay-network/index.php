@@ -99,12 +99,12 @@ $ git config user.email "<span class="color-red">your-dn42-email-address</span>"
     <p>You have now signed up to the DN42 registry, created the required cryptographic keys, downloaded a forked copy of the registry and configured your local Git environment. Next, you can begin to create registry objects to define the Autonomous Systems, IP address ranges and domain names that you want to register.</p>
 
     <h2 id="creating-registry-objects">Creating Registry Objects</h2>
-    <p>The structure of the DN42 registry very closely matches registries on the real internet, such as RIPE. Every member of the registry has their own 'maintainer' object (<code>MNT</code>), which is associated with each of the resources that they own, and Autonomous Systems (ASs) are created in order to manage and identify IP address ranges and routes.</p>
-    <p>You'll need to create a series of plain text files within your downloaded copy of the registry. You can do this using whichever method you find easiest, e.g. using a terminal session with <code>nano</code> or <code>vim</code>, or using a GUI file manager and text editor.</p>
+    <p>The structure of the DN42 registry very closely matches that of an <a href="https://en.wikipedia.org/wiki/Internet_Routing_Registry/" target="_blank" rel="noopener">Internet Routing Registry</a> (IRR) on the real internet, such as RIPE. <a href="https://en.wikipedia.org/wiki/Routing-Policy_Specification_Language/" target="_blank" rel="noopener">Routing Policy Specification Language</a> (RPSL) is used to define objects (data) within a registry, such as IP address assignments, Autonomous System (AS) numbers, maintainership permissions and personal contact details. Data submitted to a registry is shared publicly, which allows networks around the world to correctly route traffic and identify organisations responsible for different parts of the wider internet</p>
+    <p>In order to register your own network on DN42, you'll need to create a series of objects within your downloaded copy of the registry, which are stored as standard plaintext configuration files. You can do this using whichever method you find easiest, e.g. using a terminal session with <code>nano</code> or <code>vim</code>, or using a GUI file manager and text editor.</p>
 
     <h3 id="person-object">Person Object</h3>
     <p>Firstly, you'll need to create a 'person' object, which is essentially a file containing your own personal details. You should specify your name, public contact email address, as well as the PGP fingerprint of the key that you have configured for use with the registry. You can also optionally specify the address of your website.</p>
-    <p>Your <a href="https://en.wikipedia.org/wiki/NIC_handle/" target="_blank" rel="noopener">NIC handle</a> (Network Information Centre handle) is a unique alphanumeric string used to identify you within the registry database, usually suffixed by the name of the network you're a part of, in this case <code>-DN42</code>. You can use anything you like for this, including your real name or an online pseudonym, for example <code>JOEBLOGGS-DN42</code> or <code>NETWORKUSER1234-DN42</code>. Check the contents of the <code>/data/person</code> directory to make sure that the string you want to use hasn't already been taken by someone else.</p>
+    <p>Your <a href="https://en.wikipedia.org/wiki/NIC_handle/" target="_blank" rel="noopener">NIC handle</a> (Network Information Centre handle) is a unique alphanumeric string used to identify you within the registry database, usually suffixed by the name of the registry that you're a part of, in this case <code>-DN42</code>. You can use any name that you want for this, including your real name or an online pseudonym, for example <code>JOEBLOGGS-DN42</code> or <code>NETWORKUSER1234-DN42</code>. Check the contents of the <code>/data/person</code> directory to make sure that the string you want to use hasn't already been taken by someone else.</p>
     <p>Proceed by creating an empty text file within the <code>/data/person</code> directory of the registry. The name of your 'person' object should match your NIC handle. Below is a copy of my own 'person' object, which should help you to understand the required format and layout of registry object files.</p>
     <p class="two-mar-bottom"><b>/data/person/JAMIEWEB-DN42</b>:</p>
     <pre class="two-mar-top">person:             Jamie Scaife
@@ -115,10 +115,13 @@ nic-hdl:            JAMIEWEB-DN42
 mnt-by:             JAMIEWEB-MNT
 source:             DN42</pre>
     <p>Note that the second column always starts at character 21 on each line, i.e. there are 20 characters padded by spaces before it on each line.</p>
-    <p>The <code>source</code> parameter refers to the network that this registry object is intended for (always DN42 in this case). The <code>mnt-by</code> parameter will be covered in the next section.</p>
+    <p>The <code>source</code> parameter refers to the authoritative registry that the route object is registered to (always DN42 in this case). The <code>mnt-by</code> parameter will be covered in the next section.</p>
 
     <h3 id="maintainer-object">Maintainer Object</h3>
-    <p></p>
+    <p>Next, you'll need to create a 'maintainer' object, which is used to specify credentials that are permitted to create, modify or delete registry objects under your maintainership.</p>
+    <p>Each registry object that you create will refer back to your maintainer object, helping to ensure that unauthorised changes cannot be made to your registry objects, as well as to make sure that every registry object has a properly assigned owner.</p>
+    <p>Different methods exist for specifying authentication information, however in most cases within DN42's registry, a PGP key fingerprint is used. Some other registries, such as RIPE, implement their own single sign-on system for authentication and authorisation. Historically, some registries allowed you to specify the MD5 hash of a password within your maintainer object, which is a process that has luckily been mostly phased out by now.</p>
+    <p>Below is a copy of my own maintainer object, which will help you to understand and populate the required fields. Make sure to update the PGP fingerprint to your own.</p>
     <p class="two-mar-bottom"><b>/data/mntner/JAMIEWEB-MNT</b>:</p>
     <pre class="two-mar-top">mntner:             JAMIEWEB-MNT
 admin-c:            JAMIEWEB-DN42
@@ -126,9 +129,16 @@ tech-c:             JAMIEWEB-DN42
 mnt-by:             JAMIEWEB-MNT
 source:             DN42
 auth:               pgp-fingerprint 9F23651633635B68EC10122232920E2ACC4B075D</pre>
+    <p>You may recognise the <code>admin-c</code> and <code>tech-c</code> configuration parameters from domain name WHOIS records. These are used to specify the administrative and technical contacts for your maintainer object, which in the case of DN42, should usually refer back to your own 'person' object.</p>
 
     <h3 id="autonomous-system-number">Autonomous System (AS) Number</h3>
-    <p></p>
+    <p>An Autonomous System refers to a collection of IP address range assignments that belong to a single administrative entity, such as a business or individual. Each AS has an AS number (ASN), which is used to uniquely identify it within internet routing policies.</p>
+    <p>You can find the AS that you're a part of using the <a href="https://bgp.he.net/" target="_blank" rel="noopener">Hurricane Electric BGP toolkit</a>. You'll most likely see the AS of your ISP or upstream network provider, such as BT, Comcast, Telstra, etc.</p>
+    <p>You can register your own ASN at a RIR, however the prerequisites and costs are often prohibitive for individuals or small businesses. For example, you may have to provide evidence of having contracts in place with upstream network providers, or have to be sponsored by an existing member of the RIR.</p>
+    <p>Luckily within DN42, you can freely register an ASN for use within the network. Unfortunately it isn't usable outside of DN42, but the technical concepts for managing it are very similar.</p>
+    <p>DN42 currently allocates ASNs from the range <code>AS4242420000</code> to <code>AS4242423999</code>. My own AS number on DN42 is <code>AS4242420171</code>.</p>
+    <p>Begin by <a href="https://git.dn42.us/dn42/registry/src/master/data/aut-num/" target="_blank" rel="noopener">searching through the DN42 registry</a> to identify an unclaimed ASN. Most of the ASNs towards the start of the allowed range have already been taken, so you may wish to start looking half way down the list.</p>
+    <p>Once you have identified an unclaimed ASN, proceed with creating an object in the registry for it, using my example below for guidance.</p>
     <p class="two-mar-bottom"><b>/data/aut-num/AS4242420171</b>:</p>
     <pre class="two-mar-top">aut-num:            AS4242420171
 as-name:            JAMIEWEB-AS
@@ -137,8 +147,23 @@ admin-c:            JAMIEWEB-DN42
 tech-c:             JAMIEWEB-DN42
 mnt-by:             JAMIEWEB-MNT
 source:             DN42</pre>
+    <p>The <code>as-name</code> and <code>descr</code> parameters can be used to add a human-readable name and description to your AS. Also notice how you are referring back to your person and maintainer objects with the <code>admin-c</code>, <code>tech-c</code> and <code>mnt-by</code> parameters.</p>
 
     <h3 id="ipv4-address-range-assignment">IPv4 Address Range Assignment</h3>
+    <p>Now that you've claimed an ASN, you can proceed to allocate and assign an IPv4 address range for your use on DN42. Like on the real internet, IPv4 addresses on DN42 are in short supply, so you'll only be able to claim a small prefix as an individual. You'll be able to get a large IPv6 address range though, which is covered in the next step.</p>
+    <p>DN42 uses the following private IPv4 address ranges:</p>
+    <ul class="spaced-list">
+        <li><code>172.20.0.0/14</code> - DN42 Main Network</li>
+        <li><code>172.20.0.0/24</code> - Anycast Network</li>
+        <li><code>172.21.0.0/24</code> - Anycast Network</li>
+        <li><code>172.22.0.0/24</code> - Anycast Network</li>
+        <li><code>172.23.0.0/24</code> - Anycast Network</li>
+    </ul>
+    <p>The anycast network is used to operate core DN42 network services such as the root DNS servers, where any DN42 member is able to anycast announce the relevant IP addresses and host their own root DNS server for use by the community.</p>
+    <p>Like when assigning an ASN, you'll need to search through the registry in order to identify an unclaimed IPv4 address range. To make things a bit easier, you can use the <a href="https://dn42.us/peers/free/" target="_blank" rel="noopener">IPv4 open netblocks</a> page to see a list of unclaimed prefixes.</p>
+    <img class="radius-8" width="1000px" src="ipv4-open-netblocks.png">
+    <p class="two-no-mar centertext"><i>A list of open IPv4 netblocks on DN42, accessible at <a href="https://dn42.us/peers/free/" target="_blank" rel="noopener">dn42.us/peers/free</a>.</i></p>
+    <p>Once you have found a suitable IPv4 address range, you can create the registry object for it, using the example of my own IPv4 range for reference:</p>
     <p class="two-mar-bottom"><b>/data/inetnum/172.20.32.96_28</b>:</p>
     <pre class="two-mar-top">inetnum:            172.20.32.96 - 172.20.32.111
 cidr:               172.20.32.96/28
@@ -149,7 +174,10 @@ tech-c:             JAMIEWEB-DN42
 mnt-by:             JAMIEWEB-MNT
 status:             ASSIGNED
 source:             DN42</pre>
-
+    <p>You'll need to specify the exact IP address range within the <code>inetnum</code> configuration value, so make sure to double-check your subnet calculation where necessary.</p>
+    <p>In order to actually announce your IPv4 address range, you must create a 'route' object, which is used to specify which AS is permitted to announce the prefix.</p>
+    <p>In many cases this will be your own AS, however if you want someone else, such as a network operator, to announce the prefix on your behalf, you'll need to specify their ASN here. Delegating the permission to announce a particular prefix like this allows you to more safely utilise the services of third-party network operators, whilst still retaining full legal ownership of your prefixes.</p>
+    <p>Proceed with creating the route object as required, using my own as an example:</p>
     <p class="two-mar-bottom"><b>/data/route/172.20.32.96_28</b>:</p>
     <pre class="two-mar-top">route:              172.20.32.96/28
 origin:             AS4242420171
