@@ -25,7 +25,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
 &#x2517&#x2501&#x2501 <a href="#part-1-conclusion">Part 1 / Conclusion</a></pre>
 
     <h2 id="what-is-dn42">What is DN42?</h2>
-    <p>Distributed Network 42, known as DN42, is a private overlay network built using thousands of distict nodes interconnected with eachother via VPN tunnels. DN42 employs routing protocols such as BGP and OSPF in order to route packets, allowing users to deploy services such as websites, IRC servers and DNS servers in a way very similar to the real internet.</p>
+    <p><a href="https://en.wikipedia.org/wiki/Decentralized_network_42/" target="_blank" rel="noopener">Decentralized Network 42</a>, known as DN42, is a private overlay network built using thousands of distict nodes interconnected with eachother via VPN tunnels. DN42 employs routing protocols such as <a href="https://en.wikipedia.org/wiki/Border_Gateway_Protocol/" target="_blank" rel="noopener">BGP</a> and <a href="https://en.wikipedia.org/wiki/Open_Shortest_Path_First/">OSPF</a> in order to route packets, allowing users to deploy services such as websites, IRC servers and DNS servers in a way very similar to the real internet.</p>
     <img class="radius-8" width="1000px" src="dn42-landing-page.png">
     <p class="two-no-mar centertext"><i>The landing page for DN42, available at <a href="https://dn42.us/" target="_blank" rel="noopener">dn42.us</a>.</i></p>
     <p>The DN42 network is primarily used by network and security engineers in order to provide a safe and accessible environment to practise using network technologies, as well as allowing isolated networks, such as those behind strict firewalls or NAT, to communicate with eachother directly.</p>
@@ -36,11 +36,11 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p>While it is possible to connect to DN42 using a physical router, the most common setup is to use a standard Linux server. Any modern Linux distribution should be suitible, however in this article I am focusing on Debian-based systems such as Ubuntu Server. macOS and Windows systems are also supported if you really want them to be, however for optimal compatibility and ease of configuration, I would strongly recommend using a Linux distribution designed for use on servers.</p>
 
     <h2 id="accessing-the-dn42-registry">Accessing the DN42 Registry</h2>
-    <p>The DN42 registry is a central database containing all of the users of the network, the Autonomous Systems (ASs) that they maintain, the IP address ranges assigned to them and any domain names that they own.</p>
-    <p>This is equivalent to a Regional Internet Registry (RIR), such as RIPE (Europe), ARIN (North America) or APNIC (Asia Pacific).</p>
+    <p>The DN42 registry is a central database containing all of the users of the network, the <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)/" target="_blank" rel="noopener">Autonomous Systems</a> (ASs) that they maintain and the IP address ranges assigned to them.</p>
+    <p>This is equivalent to a <a href="https://en.wikipedia.org/wiki/Regional_internet_registry/" target="_blank" rel="noopener">Regional Internet Registry</a> (RIR), such as <a href="https://www.ripe.net/" target="_blank" rel="noopener">RIPE</a> (Europe), <a href="https://www.arin.net/" target="_blank" rel="noopener">ARIN</a> (North America) or <a href="https://www.apnic.net/" target="_blank" rel="noopener">APNIC</a> (Asia Pacific).</p>
     <p>DN42's registry is stored and operated as a Git repository, with a group of moderators responsible for reviewing and approving change requests.</p>
     <img class="radius-8" width="1000px" src="registry.png">
-    <p class="two-no-mar centertext"><i>The DN42 registry, which can be accessed at <a href="https://git.dn42.us/" target="_blank" rel="noopener">git.dn42.us</a>.</i></p>
+    <p class="two-no-mar centertext"><i>The DN42 registry, which can be accessed at <a href="https://git.dn42.us/dn42/registry" target="_blank" rel="noopener">git.dn42.us/dn42/registry</a>.</i></p>
     <p>In order to join DN42, you'll need to download a copy of the registry, add your information and configuration values to it (known as 'registry objects'), and then submit a change request back to the main registry.</p>
     <p>Begin by <a href="https://git.dn42.us/user/sign_up/" target="_blank" rel="noopener">signing up to the Git frontend for the registry</a>. Please note that <b>the email address that you use will be shared publicly</b>. If you're concerned about this, I recomend creating a new alias on your domain, such as <code>dn42@example.com</code> or <code>bgp@example.com</code>.</p>
     <p>Once you've signed up, navigate to the <a href="https://git.dn42.us/dn42/registry/" target="_blank" rel="noopener">repository for the main DN42 registry</a> and create a fork of it by clicking the 'Fork' button. This will create a copy of the repository within your own registry account.</p>
@@ -49,6 +49,8 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p>Next, you'll need to add an SSH public key to your registry account in order to allow you to authenticte to it using Git over SSH from the command-line. I recommend creating a new SSH key pair for this, which can be done using the following command:</p>
     <pre>$ ssh-keygen -t rsa -b 4096</pre>
     <p>Once you've generated the SSH key pair, add the public key to your registry account via your account settings, in the same way that you would add an SSH key to your GitHub/GitLab account.</p>
+    <img class="radius-8" width="1000px" src="registry-add-ssh-key.png">
+    <p class="two-no-mar centertext"><i>Successfully adding an SSH key to my DN42 registry account.</i></p>
     <p>Each user of DN42 should sign each of their change requests using a GPG key or SSH key in order to help prevent other users from submitting malicious change requests to the registry on their behalf. The key that you use when initially creating your registry objects will need to be used to sign all future change requests in order to validate your identity, otherwise they will not be accepted by the DN42 registry moderators.</p>
     <p>In this article we will focus on the usage of GPG, as it is the most widely used option. If you don't already have a GPG key suitible for use, you can create one using the following command:</p>
     <pre>$ gpg2 --full-generate-key</pre>
@@ -98,6 +100,92 @@ $ git config user.email "<span class="color-red">your-dn42-email-address</span>"
 
     <h2 id="creating-registry-objects">Creating Registry Objects</h2>
     <p>The structure of the DN42 registry very closely matches registries on the real internet, such as RIPE. Every member of the registry has their own 'maintainer' object (<code>MNT</code>), which is associated with each of the resources that they own, and Autonomous Systems (ASs) are created in order to manage and identify IP address ranges and routes.</p>
+    <p>You'll need to create a series of plain text files within your downloaded copy of the registry. You can do this using whichever method you find easiest, e.g. using a terminal session with <code>nano</code> or <code>vim</code>, or using a GUI file manager and text editor.</p>
+
+    <h3 id="person-object">Person Object</h3>
+    <p>Firstly, you'll need to create a 'person' object, which is essentially a file containing your own personal details. You should specify your name, public contact email address, as well as the PGP fingerprint of the key that you have configured for use with the registry. You can also optionally specify the address of your website.</p>
+    <p>Your <a href="https://en.wikipedia.org/wiki/NIC_handle/" target="_blank" rel="noopener">NIC handle</a> (Network Information Centre handle) is a unique alphanumeric string used to identify you within the registry database, usually suffixed by the name of the network you're a part of, in this case <code>-DN42</code>. You can use anything you like for this, including your real name or an online pseudonym, for example <code>JOEBLOGGS-DN42</code> or <code>NETWORKUSER1234-DN42</code>. Check the contents of the <code>/data/person</code> directory to make sure that the string you want to use hasn't already been taken by someone else.</p>
+    <p>Proceed by creating an empty text file within the <code>/data/person</code> directory of the registry. The name of your 'person' object should match your NIC handle. Below is a copy of my own 'person' object, which should help you to understand the required format and layout of registry object files.</p>
+    <p class="two-mar-bottom"><b>/data/person/JAMIEWEB-DN42</b>:</p>
+    <pre class="two-mar-top">person:             Jamie Scaife
+contact:            bgp@jamieweb.net
+www:                https://www.jamieweb.net/
+pgp-fingerprint:    9F23651633635B68EC10122232920E2ACC4B075D
+nic-hdl:            JAMIEWEB-DN42
+mnt-by:             JAMIEWEB-MNT
+source:             DN42</pre>
+    <p>Note that the second column always starts at character 21 on each line, i.e. there are 20 characters padded by spaces before it on each line.</p>
+    <p>The <code>source</code> parameter refers to the network that this registry object is intended for (always DN42 in this case). The <code>mnt-by</code> parameter will be covered in the next section.</p>
+
+    <h3 id="maintainer-object">Maintainer Object</h3>
+    <p></p>
+    <p class="two-mar-bottom"><b>/data/mntner/JAMIEWEB-MNT</b>:</p>
+    <pre class="two-mar-top">mntner:             JAMIEWEB-MNT
+admin-c:            JAMIEWEB-DN42
+tech-c:             JAMIEWEB-DN42
+mnt-by:             JAMIEWEB-MNT
+source:             DN42
+auth:               pgp-fingerprint 9F23651633635B68EC10122232920E2ACC4B075D</pre>
+
+    <h3 id="autonomous-system-number">Autonomous System (AS) Number</h3>
+    <p></p>
+    <p class="two-mar-bottom"><b>/data/aut-num/AS4242420171</b>:</p>
+    <pre class="two-mar-top">aut-num:            AS4242420171
+as-name:            JAMIEWEB-AS
+descr:              JamieWeb AS
+admin-c:            JAMIEWEB-DN42
+tech-c:             JAMIEWEB-DN42
+mnt-by:             JAMIEWEB-MNT
+source:             DN42</pre>
+
+    <h3 id="ipv4-address-range-assignment">IPv4 Address Range Assignment</h3>
+    <p class="two-mar-bottom"><b>/data/inetnum/172.20.32.96_28</b>:</p>
+    <pre class="two-mar-top">inetnum:            172.20.32.96 - 172.20.32.111
+cidr:               172.20.32.96/28
+netname:            JAMIEWEB-V4-NET-1
+country:            GB
+admin-c:            JAMIEWEB-DN42
+tech-c:             JAMIEWEB-DN42
+mnt-by:             JAMIEWEB-MNT
+status:             ASSIGNED
+source:             DN42</pre>
+
+    <p class="two-mar-bottom"><b>/data/route/172.20.32.96_28</b>:</p>
+    <pre class="two-mar-top">route:              172.20.32.96/28
+origin:             AS4242420171
+mnt-by:             JAMIEWEB-MNT
+source:             DN42</pre>
+
+    <h3 id="ipv6-address-range-assignment">IPv6 Address Range Assignment</h3>
+    <p></p>
+    <p class="two-mar-bottom"><b>/data/inet6num/fd5c:d982:d80d:9243::_64</b>:</p>
+    <pre class="two-mar-top">inet6num:           fd5c:d982:d80d:9243:0000:0000:0000:0000 - fd5c:d982:d80d:9243:ffff:ffff:ffff:ffff
+cidr:               fd5c:d982:d80d:9243::/64
+netname:            JAMIEWEB-V6-NET-1
+country:            GB
+admin-c:            JAMIEWEB-DN42
+tech-c:             JAMIEWEB-DN42
+mnt-by:             JAMIEWEB-MNT
+status:             ASSIGNED
+source:             DN42</pre>
+
+    <p class="two-mar-bottom"><b>/data/route6/fd5c:d982:d80d:9243::_64</b>:</p>
+    <pre class="two-mar-top">route6:             fd5c:d982:d80d:9243::/64
+origin:             AS4242420171
+mnt-by:             JAMIEWEB-MNT
+source:             DN42</pre>
+
+    <h3 id="dn42-domain-name-registration"><code>.dn42</code> Domain Name Registration</h3>
+    <p></p>
+    <p class="two-mar-bottom"><b>/data/dns/jamieweb.dn42</b>:</p>
+    <pre class="two-mar-top">domain:             jamieweb.dn42
+descr:              JamieWeb
+admin-c:            JAMIEWEB-DN42
+tech-c:             JAMIEWEB-DN42
+mnt-by:             JAMIEWEB-MNT
+nserver:            ns1.jamieweb.dn42 172.20.32.97
+nserver:            ns1.jamieweb.dn42 fd5c:d982:d80d:9243::2
+source:             DN42</pre>
 
     <h2 id="merging-your-registry-objects-into-the-registry">Merging Your Registry Objects into the Registry</h2>
     <p></p>
