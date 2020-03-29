@@ -185,7 +185,11 @@ mnt-by:             JAMIEWEB-MNT
 source:             DN42</pre>
 
     <h3 id="ipv6-address-range-assignment">IPv6 Address Range Assignment</h3>
-    <p></p>
+    <p>You should also assign yourself and IPv6 address range. Within DN42, IPv6 uses the <a href="https://tools.ietf.org/html/rfc4193/" target="_blank" rel="noopener">Unique Local Address</a> (ULA) range, which is <code>fd00::/8</code>.</p>
+    <p>You should generate a random prefix rather than trying to directly choose one, which can be done using an <a href="https://simpledns.com/private-ipv6/" target="_blank" rel="noopener">IPv6 ULA generator</a>.</p>
+    <img class="radius-8" width="1000px" src="ipv6-ula-generator.png">
+    <p class="two-no-mar centertext"><i>The IPv6 ULA generator provided by Simple DNS, available at <a href="https://simpledns.com/private-ipv6/" target="_blank" rel="noopener">simpledns.com/private-ipv6</a>.</i></p>
+    <p>Once you've generated your own ULA range, create the registry object for it using my own below for guidance.</p>
     <p class="two-mar-bottom"><b>/data/inet6num/fd5c:d982:d80d:9243::_64</b>:</p>
     <pre class="two-mar-top">inet6num:           fd5c:d982:d80d:9243:0000:0000:0000:0000 - fd5c:d982:d80d:9243:ffff:ffff:ffff:ffff
 cidr:               fd5c:d982:d80d:9243::/64
@@ -196,15 +200,16 @@ tech-c:             JAMIEWEB-DN42
 mnt-by:             JAMIEWEB-MNT
 status:             ASSIGNED
 source:             DN42</pre>
-
+    <p>Like with your IPv4 range, you'll also need to create a route object in order to authorise the prefix to be announced by the relevant AS.</p>
     <p class="two-mar-bottom"><b>/data/route6/fd5c:d982:d80d:9243::_64</b>:</p>
     <pre class="two-mar-top">route6:             fd5c:d982:d80d:9243::/64
 origin:             AS4242420171
 mnt-by:             JAMIEWEB-MNT
 source:             DN42</pre>
 
-    <h3 id="dn42-domain-name-registration"><code>.dn42</code> Domain Name Registration</h3>
-    <p></p>
+    <h3 id="dn42-domain-name-registration"><code>.dn42</code> Domain Name Registration (Optional)</h3>
+    <p>Within DN42, you can also optionally register your own domain name under the <code>.dn42</code> top-level domain (TLD). You can then use this to operate named services within DN42, such as websites or IRC servers.</p>
+    <p>Registering a domain name isn't required in order to enjoy the low-level networking aspects of DN42, however if you would like one, you can use the example below in order to create a registry object for it.</p>
     <p class="two-mar-bottom"><b>/data/dns/jamieweb.dn42</b>:</p>
     <pre class="two-mar-top">domain:             jamieweb.dn42
 descr:              JamieWeb
@@ -214,9 +219,46 @@ mnt-by:             JAMIEWEB-MNT
 nserver:            ns1.jamieweb.dn42 172.20.32.97
 nserver:            ns1.jamieweb.dn42 fd5c:d982:d80d:9243::2
 source:             DN42</pre>
+    <p>The <code>nserver</code> parameters are used to specify the glue records for your domain, which include the DNS name of each nameserver and its associated IP address. In my case, I have specified a primary nameserver with both an IPv4 and IPv6 address from my assigned ranges.</p>
+    <p>Once you're properly set up and connected to DN42, you can then run an authoritative DNS server for your domain, which will allow other members of DN42 to resolve it and access your named services.</p>
+
+    <h3 id="validating-your-registry-objects">Validating Your Registry Objects</h3>
+    <p>The DN42 registry repository includes three validation scripts that can be run against your registry objects in order to help ensure that they are syntactically correct and accurate prior to being reviewed by the DN42 moderators.</p>
+    <p>The scripts are present in the root of the repository. You should run each of these accordingly and check for any errors or warnings before proceeding:</p>
+    <ul class="spaced-list">
+        <li><code>./fmt-my-stuff <span class="color-red">YOURNAME</span>-MNT</code> - Automatically fix minor formatting errors.</li>
+        <li><code>./check-my-stuff <span class="color-red">YOURNAME</span>-MNT</code> - Validate your objects against the DN42 registry schema.</li>
+        <li><code>./check-pol origin/master <span class="color-red">YOURNAME</span>-MNT</code> - Check for routing policy violations.</li>
+    </ul>
+    <p>These scripts will also be run automatically by the DN42 registry Continuous Integration (CI) system when you submit your changes to the registry, with the output being shared as a pull request comment.</p>
 
     <h2 id="merging-your-registry-objects-into-the-registry">Merging Your Registry Objects into the Registry</h2>
-    <p></p>
+    <p>Now that you've created all of the required registry objects, you need to submit these to the registry for approval.</p>
+    <p>This is done by creating a Git pull request/merge request, which once reviewed by the DN42 registry moderators, will allow your registry objects to be seamlessly merged into the main DN42 registry.</p>
+    <p>Begin by adding your newly created registry objects to your local Git index, ready to be committed. You can use the following command from the root of the registry repository:</p>
+    <pre>$ git add .</pre>
+    <p>Next, commit the changes to the repository:</p>
+    <pre>$ git commit</pre>
+    <p>Enter a suitable commit message, e.g. 'Added AS424242xxxx'. You should then be asked for your GPG passphrase to crytographically sign your commit.</p>
+    <p>Once the changes have been successfully committed, push them up to your fork of the repository on the DN42 registry Git server:</p>
+    <pre>$ git push origin master</pre>
+    <p>If you browse to your fork of the registry in your web browser, you should now see that your registry objects have been uploaded successfully.</p>
+    <img class="radius-8" width="1000px" src="registry-commit.png">
+    <p class="two-no-mar centertext"><i>My forked copy of the DN42 registry, showing the commit for my initial submission.</i></p>
+    <p>You now need to create a pull request at the main DN42 registry, in order to request for your changes to be merged in. This can be done by clicking the 'New Pull Request' button from the main DN42 registry repository.</p>
+    <p>You can add a name and description to your pull request, and you should also be able to see a summary of the changes that you made locally.</p>
+    <p>All of the pull requests submitted by other members of DN42 are also publicly visible, so you may wish to <a href="https://git.dn42.us/dn42/registry/pulls/" target="_blank" rel="noopener">review some of these</a> to double-check that your submission is in-line with the others.</p>
+    <p>Once you've submitted your pull request, it will be visible in the DN42 main registry waiting for moderator review.</p>
+    <img class="radius-8" width="1000px" src="registry-pull-request">
+    <p class="two-no-mar centertext">The pull request that I originally submitted to join DN42 as AS4242420171.</i></p>
+    <p>It may take a few hours or days for your submission to be reviewed by the DN42 moderators. Keep checking your pull request as they may add comments to ask further clarifying questions or to ask you to fix any mistakes.</p>
+    <p>In the event that there is a mistake in your submission and you need to resubmit, the easiest way to do this is to softly roll-back the commit that you made (this will not overwrite or delete any of your changes):</p>
+    <pre>$ git reset HEAD~1</pre>
+    <p>Then make the required fixes or adjustments, and commit and push them back to your forked repository:</p>
+    <pre>$ git add .
+$ git commit
+$ git push origin master</pre>
+    <p>Once this is complete, your pull request will have been automatically updated with the new changes. You don't need to manually submit another one unless you committed further changes to your repository between making your initial submission and implementing the fixes or adjustments.</p>
 
     <h2 id="finding-a-peer">Finding a Peer</h2>
     <p></p>
