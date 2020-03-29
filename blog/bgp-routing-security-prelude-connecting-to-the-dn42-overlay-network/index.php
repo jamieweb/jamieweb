@@ -261,13 +261,74 @@ $ git push origin master</pre>
     <p>Once this is complete, your pull request will have been automatically updated with the new changes. You don't need to manually submit another one unless you committed further changes to your repository between making your initial submission and implementing the fixes or adjustments.</p>
 
     <h2 id="finding-a-peer">Finding a Peer</h2>
-    <p></p>
+    <p>In order to actually get connected to DN42, you'll need to find at least one peer. This is an individual or organisation who is willing to provide you with a VPN tunnel into the DN42 network, which you can then BGP peer through to announce your IP address ranges. This is equivalent to an upstream network provider.</p>
+    <p>Peering usually takes place over a Wireguard or OpenVPN tunnel, with GRE, IPsec and PPTP being used in some cases too. You could also peer with someone via a physical link if you really wanted to, though in reality that is quite impractical unless you are physically proximate.</p>
+    <p>Many prominent members of DN42 will happily peer with you if you ask nicely via email or IRC. Others offer 'open peering' or 'automatic peering', which is where you're able to peer with them either semi-automatically by filling out a sign-up form, or in some cases fully automatically using a command-line wizard interface.</p>
+    <p>In order to identify a suitable peer, which is ideally one located within the same continent as you and accessible over a low-latency connection, you can use the <a href="https://dn42.us/peers/" target="_blank" rel="noopener">DN42 PeerFinder</a>.</p>
+    <img class="radius-8" width="1000px" src="peerfinder.png">
+    <p class="two-no-mar centertext"><i>The DN42 PeerFinder, accessible at <a href="https://dn42.us/peers/" target="_blank" rel="noopener">dn42.us/peers</a>.</i></p>
+    <p>OpenVPN is easier to configure as a client (but not as a server), and also has greater monitoring and debugging capabilities. However, Wireguard is much more lightweight and is now included in the latest versions of the Linux Kernel. In this article we will use OpenVPN, however you can safely use Wireguard as an alternative if you'd prefer.</p>
+    <p>Below I've linked a few of the reputable peers that I found when I first joined DN42:</p>
+    <ul class="spaced-list">
+        <li><a href="https://dn42-svc.weiti.org/" target="_blank" rel="noopener">dn42-svc.weiti.org</a> - Wireguard</li>
+        <li><a href="https://graffen.dk/dn42.html" target="_blank" rel="noopener">graffen.dk/dn42.html</a> - Wireguard</li>
+        <li><a href="https://dn42.g-load.eu/peering/" target="_blank" rel="noopener">dn42.g-load.eu/peering</a> - OpenVPN, Wireguard</li>
+    </ul>
+    <p>My personal favourite is the <a href="https://dn42.g-load.eu/" target="_blank" rel="noopener">Kioubit Network</a>. I'm currently peering with their Lithuania node, and overall I've found the service to be very stable and reliable.</p>
+    <img class="radius-8" width="1000px" src="peering-locations.png">
+    <p class="two-no-mar centertext"><i>The wide range of peering locations available on the Kioubit Network peering page, accessible at <a href="https://dn42.g-load.eu/peering/" target="_blank" rel="noopener">dn42.g-load.eu/peering</a>.</i></p>
+    <p>If you want to use Kioubit's automatic peering, you can <a href="https://dn42.g-load.eu/peering/auto/" target="_blank" rel="noopener">sign up online</a> to receive your OpenVPN client configuration and private key. <b>Note that inactive peerings with Kioubit are removed after one week, so make sure to keep your session active 24/7 if possible.</b></p>
+    <p>Alternatively, if you'd like to peer with someone else, fill out the relevant sign-up forms or contact them to get set up.</p>
 
     <h2 id="connecting-to-your-peer-using-openvpn">Connecting to Your Peer Using OpenVPN</h2>
-    <p></p>
+    <p>If you opt to connect to your peering partner using OpenVPN, you'll most likely be provided with an OpenVPN client configuration file with the <code>.ovpn</code> file extension, as well as a private key for the connection.</p>
+    <p>The setup varies depending on your peer, however the following rough steps should provide enough guidance to get the VPN tunnel connected.</p>
+    <p>Begin by installing OpenVPN:</p>
+    <pre>$ sudo apt install openvpn</pre>
+    <p>Next, put your OpenVPN client configuration file somewhere safe, such as in your home directory. Make sure not to accidentally put it in your local copy of the DN42, as this file shouldn't be shared publicly.</p>
+    <p>If your OpenVPN key was provided as a separate file, put this somewhere private. Often this should go in the <code>/etc/openvpn</code> directory, however check your client configuration first, as sometimes a different directory is used.</p>
+    <p>Ensure that the permissions on the file containing your key are appropriately locked down, i.e. by removing all access for all but your own user:</p>
+    <pre>$ chmod go-rwx <span class="color-red">yourkey</span>.key</pre>
+    <p>You can then bring the tunnel online:</p>
+    <pre>$ sudo openvpn --config <span class="color-red">yourconfig</span>.ovpn</pre>
+    <p>If you don't see any output, then this generally means that the connection was made successfully.</p>
+    <p>You can double-check this by viewing the network interface information with the <code>ifconfig</code> command, and then pinging remote tunnel endpoint address of your peering partner, which will usually be a private IPv4 address in the <code>10.0.0.0/8</code>, <code>172.16.0.0/12</code> or <code>192.168.0.0/16</code> range.</p>
+    <p>If you don't seem to have a connection, keep pinging it for a while, as it can often take quite a few packets for the connection to become active. Alternatively, try restarting or stopping and starting the OpenVPN service:</p>
+    <pre>$ sudo service openvpn <span class="color-red">restart/stop/start</span></pre>
 
     <h2 id="dnsmasq-dns-setup-for-dn42-domains">Dnsmasq DNS Setup for '.dn42' Domains</h2>
-    <p></p>
+    <p>DN42 has its own root DNS servers that are responsible for resolving <code>.dn42</code> domain names, as well as providing reverse DNS for the DN42 IP address ranges.</p>
+    <p>The main DN42 DNS resolver can be accessed via <code>172.20.0.53</code> or <code>fd42:d42:d42:54::1</code>. Both of these addresses are anycasted, meaning that the same IP address routes to multiple distinct geographical locations. This is very similar to how public resolvers on the internet work, such as <code>1.1.1.1</code> or <code>8.8.8.8</code>.</p>
+    <p>On DN42, any member can run their own authoritative DNS server and apply to become a part of the root DNS infrastructure. This does bring with it the risk of malicious DNS resolvers, however in most lab environments, this isn't usually a concern. If this is a concern for you, then you should look into using a known trusted resolver, such as one provided by your peering partner or another reputable member of DN42.</p>
+    <p>You can configure your local system to direct lookups for DN42 resources to the DN42 authoritative DNS servers using a custom Dnsmasq recursive resolver configuration. The configuration described below will work on most Debian or Ubuntu-based systems, however should also be applicable to other Linux distributions with some minor modifications.</p>
+    <p>Begin by installing Dnsmasq:</p>
+    <pre>$ sudo apt install dnsmasq</pre>
+    <p>Next, create a new config file at <code>/etc/dnsmasq.d/dn42.conf</code> and add the following to it:</p>
+    <pre>no-resolv
+server=<span class="color-red">1.1.1.1</span>
+server=/dn42/172.20.0.53
+server=/20.172.in-addr.arpa/172.20.0.53
+server=/21.172.in-addr.arpa/172.20.0.53
+server=/22.172.in-addr.arpa/172.20.0.53
+server=/23.172.in-addr.arpa/172.20.0.53
+server=/d.f.ip6.arpa/fd42:d42:d42:54::1</pre>
+    <p>The <code>no-resolv</code> configuration is used to prevent Dnsmasq from using the <code>/etc/resolv.conf</code> file to identify the upstream resolver to use, as this is instead specified directly in the Dnsmasq configuration. I've used <code>1.1.1.1</code> in the example above, however you can change this to something else if you wish.</p>
+    <p>The rest of the configuration is used to specify the resolver to use for <code>.dn42</code> domains, as well as reverse DNS (<code>*.in-addr.arpa</code> and <code>*.ip6.arpa</code>).</p>
+    <p>In order to begin using Dnsmasq, you'll first need to disable your existing local recursive resolver, which in the case of most Debian-based systems, can be done using the following (<b>note that this will temporarily kill local DNS resolution</b>:</p>
+    <pre>$ sudo service systemd-resolved stop</pre>
+    <p>Next, edit your <code>/etc/resolv.conf</code> file and ensure that the following configuration is set:</p>
+    <pre>nameserver 127.0.0.53</pre>
+    <p>This will ensure that all local DNS lookups use Dnsmasq.</p>
+    <p>Usually it isn't recommended to edit the <code>/etc/resolv.conf</code> file, as it is managed automatically by <code>systemd-resolved</code>. However, now that this service has been disabled, you can safely edit the file.</p>
+    <p>You can then start Dnsmasq:</p>
+    <pre>$ sudo service dnsmasq start</pre>
+    <p>Your new local resolver should now be working. You won't be able to resolve DN42 names yet, but normal internet names should be working:</p>
+    <pre>$ dig +short ldn01.jamieweb.net
+139.162.222.67</pre>
+    <p>Once you've confirmed that Dnsmasq is working, you can set it to be your default resolver at boot using the following two commands:</p>
+    <pre>$ sudo systemctl disable systemd-resolved
+$ sudo systemctl enable dnsmasq</pre>
+    <p>Once you're announcing your IP address ranges and are able to communicate with DN42 fully, you'll be able to properly look up names such as <code>wiki.dn42</code> and <code>ca.dn42</code>.</p>
 
     <div class="message-box message-box-positive/warning/warning-medium/notice">
         <div class="message-box-heading">
