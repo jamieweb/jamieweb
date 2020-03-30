@@ -5,13 +5,12 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <h1><?php echo $postInfo->title . "</h1>\n" . (isset($postInfo->title) ? "    <h2 class=\"subtitle-mar-top\">" . $postInfo->subtitle . "</h2>\n" : ""); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
-    <p><?php echo $postInfo->snippet; ?></p>
     <p>This is a prelude to a multi-part series on BGP routing security:</p>
     <ul class="spaced-list">
         <li><b>Prelude:</b> Connecting to the DN42 Overlay Network (You Are Here)</li>
         <li><b>Part 1:</b> Coming Soon</li>
     </ul>
-    <p>The purpose of this first article is to allow you to set up a suitible lab environment for practising BGP and the various routing security elements that are present in this guide.</p>
+    <p>The purpose of this first article is to allow you to set up a suitable lab environment for practising BGP and the various routing security elements that are present in this guide.</p>
     <p>If you already have a lab environment set up, or are working on an existing BGP deployment, you can safely skip this prelude and go straight to Part 1.</p>
     <p><b>Skip to Section:</b></p>
     <pre class="contents"><b><?php echo $postInfo->title . (isset($postInfo->subtitle) ? "\n" . $postInfo->subtitle : ""); ?></b>
@@ -25,36 +24,32 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
 &#x2517&#x2501&#x2501 <a href="#part-1-conclusion">Part 1 / Conclusion</a></pre>
 
     <h2 id="what-is-dn42">What is DN42?</h2>
-    <p><a href="https://en.wikipedia.org/wiki/Decentralized_network_42/" target="_blank" rel="noopener">Decentralized Network 42</a>, known as DN42, is a private overlay network built using thousands of distict nodes interconnected with eachother via VPN tunnels. DN42 employs routing protocols such as <a href="https://en.wikipedia.org/wiki/Border_Gateway_Protocol/" target="_blank" rel="noopener">BGP</a> and <a href="https://en.wikipedia.org/wiki/Open_Shortest_Path_First/">OSPF</a> in order to route packets, allowing users to deploy services such as websites, IRC servers and DNS servers in a way very similar to the real internet.</p>
-    <img class="radius-8" width="1000px" src="dn42-landing-page.png">
-    <p class="two-no-mar centertext"><i>The landing page for DN42, available at <a href="https://dn42.us/" target="_blank" rel="noopener">dn42.us</a>.</i></p>
-    <p>The DN42 network is primarily used by network and security engineers in order to provide a safe and accessible environment to practise using network technologies, as well as allowing isolated networks, such as those behind strict firewalls or NAT, to communicate with eachother directly.</p>
-    <p>However, the primary selling-point for DN42 is that it provides free and realistic access to a production-like BGP environment, which is something usually reserved for network operators responsible for large enterprise networks or ISPs who are also often paying expensive registry fees.</p>
+    <p><?php echo $postInfo->snippet; ?></p>
     <img class="radius-8" width="1000px" src="dn42-wiki.png">
     <p class="two-no-mar centertext"><i>The DN42 wiki homepage, available at <a href="https://wiki.dn42.us/" target="_blank" rel="noopener">wiki.dn42.us</a>.</i></p>
     <p>This article will guide you through the process of registering and connecting to DN42, which is the equivalent of physically 'plugging yourself in' to the network. This won't yet let you communicate with the DN42 network fully, but it'll provide the foundation to begin BGP peering and announcing your IP address ranges to other members of the network.</p>
-    <p>While it is possible to connect to DN42 using a physical router, the most common setup is to use a standard Linux server. Any modern Linux distribution should be suitible, however in this article I am focusing on Debian-based systems such as Ubuntu Server. macOS and Windows systems are also supported if you really want them to be, however for optimal compatibility and ease of configuration, I would strongly recommend using a Linux distribution designed for use on servers.</p>
+    <p>While it is possible to connect to DN42 using a physical router, the most common setup is to use a standard Linux server. Any modern Linux distribution should be suitable, however in this article I am focusing on Debian-based systems such as Ubuntu Server. macOS and Windows systems are also supported if you really want them to be, however for optimal compatibility and ease of configuration, I would strongly recommend using a Linux distribution designed for use on servers.</p>
 
     <h2 id="accessing-the-dn42-registry">Accessing the DN42 Registry</h2>
-    <p>The DN42 registry is a central database containing all of the users of the network, the <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)/" target="_blank" rel="noopener">Autonomous Systems</a> (ASs) that they maintain and the IP address ranges assigned to them.</p>
-    <p>This is equivalent to a <a href="https://en.wikipedia.org/wiki/Regional_internet_registry/" target="_blank" rel="noopener">Regional Internet Registry</a> (RIR), such as <a href="https://www.ripe.net/" target="_blank" rel="noopener">RIPE</a> (Europe), <a href="https://www.arin.net/" target="_blank" rel="noopener">ARIN</a> (North America) or <a href="https://www.apnic.net/" target="_blank" rel="noopener">APNIC</a> (Asia Pacific).</p>
+    <p>The DN42 registry is a central database containing all of the users of the network, the <a href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" target="_blank" rel="noopener">Autonomous Systems</a> (ASs) that they maintain and the IP address ranges assigned to them.</p>
+    <p>This is equivalent to a <a href="https://en.wikipedia.org/wiki/Regional_Internet_registry" target="_blank" rel="noopener">Regional Internet Registry</a> (RIR), such as <a href="https://www.ripe.net/" target="_blank" rel="noopener">RIPE</a> (Europe), <a href="https://www.arin.net/" target="_blank" rel="noopener">ARIN</a> (North America) or <a href="https://www.apnic.net/" target="_blank" rel="noopener">APNIC</a> (Asia Pacific).</p>
     <p>DN42's registry is stored and operated as a Git repository, with a group of moderators responsible for reviewing and approving change requests.</p>
     <img class="radius-8" width="1000px" src="registry.png">
     <p class="two-no-mar centertext"><i>The DN42 registry, which can be accessed at <a href="https://git.dn42.us/dn42/registry" target="_blank" rel="noopener">git.dn42.us/dn42/registry</a>.</i></p>
     <p>In order to join DN42, you'll need to download a copy of the registry, add your information and configuration values to it (known as 'registry objects'), and then submit a change request back to the main registry.</p>
-    <p>Begin by <a href="https://git.dn42.us/user/sign_up/" target="_blank" rel="noopener">signing up to the Git frontend for the registry</a>. Please note that <b>the email address that you use will be shared publicly</b>. If you're concerned about this, I recomend creating a new alias on your domain, such as <code>dn42@example.com</code> or <code>bgp@example.com</code>.</p>
-    <p>Once you've signed up, navigate to the <a href="https://git.dn42.us/dn42/registry/" target="_blank" rel="noopener">repository for the main DN42 registry</a> and create a fork of it by clicking the 'Fork' button. This will create a copy of the repository within your own registry account.</p>
+    <p>Begin by <a href="https://git.dn42.us/user/sign_up/" target="_blank" rel="noopener">signing up to the Git frontend for the registry</a>. Please note that <b>the email address that you use will be shared publicly</b>. If you're concerned about this, I recommend creating a new alias on your domain, such as <code>dn42@example.com</code> or <code>bgp@example.com</code>.</p>
+    <p>Once you've signed up, navigate to the <a href="https://git.dn42.us/dn42/registry" target="_blank" rel="noopener">repository for the main DN42 registry</a> and create a fork of it by clicking the 'Fork' button. This will create a copy of the repository within your own registry account.</p>
     <img class="radius-8" width="1000px" src="registry-forked.png">
     <p class="two-no-mar centertext"><i>An example of a forked copy of the DN42 registry.</i></p>
-    <p>Next, you'll need to add an SSH public key to your registry account in order to allow you to authenticte to it using Git over SSH from the command-line. I recommend creating a new SSH key pair for this, which can be done using the following command:</p>
+    <p>Next, you'll need to add an SSH public key to your registry account in order to allow you to authenticate to it using Git over SSH from the command-line. I recommend creating a new SSH key pair for this, which can be done using the following command:</p>
     <pre>$ ssh-keygen -t rsa -b 4096</pre>
     <p>Once you've generated the SSH key pair, add the public key to your registry account via your account settings, in the same way that you would add an SSH key to your GitHub/GitLab account.</p>
     <img class="radius-8" width="1000px" src="registry-add-ssh-key.png">
     <p class="two-no-mar centertext"><i>Successfully adding an SSH key to my DN42 registry account.</i></p>
     <p>Each user of DN42 should sign each of their change requests using a GPG key or SSH key in order to help prevent other users from submitting malicious change requests to the registry on their behalf. The key that you use when initially creating your registry objects will need to be used to sign all future change requests in order to validate your identity, otherwise they will not be accepted by the DN42 registry moderators.</p>
-    <p>In this article we will focus on the usage of GPG, as it is the most widely used option. If you don't already have a GPG key suitible for use, you can create one using the following command:</p>
+    <p>In this article we will focus on the usage of GPG, as it is the most widely used option. If you don't already have a GPG key suitable for use, you can create one using the following command:</p>
     <pre>$ gpg2 --full-generate-key</pre>
-    <p>Select option #1 (rsa and rsa), and choose a suitible expiration date for the key. It may take quite some time to source enough entropy to properly generate your private key, so continue using your computer normally until it completes.</p>
+    <p>Select option #1 (rsa and rsa), and choose a suitable expiration date for the key. It may take quite some time to source enough entropy to properly generate your private key, so continue using your computer normally until it completes.</p>
     <p>Once your key has been successfully generated, identify its full key ID by listing all of your keys:</p>
     <pre>$ gpg2 --list-keys</pre>
     <p>Find your new key in the list and take a note of the full key ID, as shown in red in the example below:</p>
@@ -72,7 +67,7 @@ sub   rsa4096 2019-10-19 [E] [expires: 2020-10-18]</pre>
   IdentityFile ~/.ssh/<span class="color-red">your-ssh-private-key</span></pre>
     <p>You can now proceed with connecting to the registry, using the <code>-T</code> option to prevent a terminal session from being created:</p>
     <pre>$ ssh -T git@git.dn42.us</pre>
-    <p>Since this is your first time connecting, you'll be asked whether you want to accept the server host key fingeprint or not. Modern SSH clients should display the ECDSA SHA256 fingerprint, as shown below in red:</p>
+    <p>Since this is your first time connecting, you'll be asked whether you want to accept the server host key fingerprint or not. Modern SSH clients should display the ECDSA SHA256 fingerprint, as shown below in red:</p>
     <pre>The authenticity of host 'git.dn42.us (2607:5300:60:3d95::1)' can't be established.
 ECDSA key fingerprint is SHA256:<span class="color-red">NxZ5DJlVKTdS8Kv0Dcyew76iAKDAp5K7QmWUM7gLZS8</span>.
 Are you sure you want to continue connecting (yes/no)?</pre>
@@ -99,12 +94,12 @@ $ git config user.email "<span class="color-red">your-dn42-email-address</span>"
     <p>You have now signed up to the DN42 registry, created the required cryptographic keys, downloaded a forked copy of the registry and configured your local Git environment. Next, you can begin to create registry objects to define the Autonomous Systems, IP address ranges and domain names that you want to register.</p>
 
     <h2 id="creating-registry-objects">Creating Registry Objects</h2>
-    <p>The structure of the DN42 registry very closely matches that of an <a href="https://en.wikipedia.org/wiki/Internet_Routing_Registry/" target="_blank" rel="noopener">Internet Routing Registry</a> (IRR) on the real internet, such as RIPE. <a href="https://en.wikipedia.org/wiki/Routing-Policy_Specification_Language/" target="_blank" rel="noopener">Routing Policy Specification Language</a> (RPSL) is used to define objects (data) within a registry, such as IP address assignments, Autonomous System (AS) numbers, maintainership permissions and personal contact details. Data submitted to a registry is shared publicly, which allows networks around the world to correctly route traffic and identify organisations responsible for different parts of the wider internet</p>
-    <p>In order to register your own network on DN42, you'll need to create a series of objects within your downloaded copy of the registry, which are stored as standard plaintext configuration files. You can do this using whichever method you find easiest, e.g. using a terminal session with <code>nano</code> or <code>vim</code>, or using a GUI file manager and text editor.</p>
+    <p>The structure of the DN42 registry very closely matches that of an <a href="https://en.wikipedia.org/wiki/Internet_Routing_Registry" target="_blank" rel="noopener">Internet Routing Registry</a> (IRR) on the real internet, such as RIPE. <a href="https://en.wikipedia.org/wiki/Routing_Policy_Specification_Language" target="_blank" rel="noopener">Routing Policy Specification Language</a> (RPSL) is used to define objects (data) within a registry, such as IP address assignments, Autonomous System (AS) numbers, maintainership permissions and personal contact details. Data submitted to a registry is shared publicly, which allows networks around the world to correctly route traffic and identify organisations responsible for different parts of the wider internet</p>
+    <p>In order to register your own network on DN42, you'll need to create a series of objects within your downloaded copy of the registry, which are stored as standard plain text configuration files. You can do this using whichever method you find easiest, e.g. using a terminal session with <code>nano</code> or <code>vim</code>, or using a GUI file manager and text editor.</p>
 
     <h3 id="person-object">Person Object</h3>
     <p>Firstly, you'll need to create a 'person' object, which is essentially a file containing your own personal details. You should specify your name, public contact email address, as well as the PGP fingerprint of the key that you have configured for use with the registry. You can also optionally specify the address of your website.</p>
-    <p>Your <a href="https://en.wikipedia.org/wiki/NIC_handle/" target="_blank" rel="noopener">NIC handle</a> (Network Information Centre handle) is a unique alphanumeric string used to identify you within the registry database, usually suffixed by the name of the registry that you're a part of, in this case <code>-DN42</code>. You can use any name that you want for this, including your real name or an online pseudonym, for example <code>JOEBLOGGS-DN42</code> or <code>NETWORKUSER1234-DN42</code>. Check the contents of the <code>/data/person</code> directory to make sure that the string you want to use hasn't already been taken by someone else.</p>
+    <p>Your <a href="https://en.wikipedia.org/wiki/NIC_handle" target="_blank" rel="noopener">NIC handle</a> (Network Information Centre handle) is a unique alphanumeric string used to identify you within the registry database, usually suffixed by the name of the registry that you're a part of, in this case <code>-DN42</code>. You can use any name that you want for this, including your real name or an online pseudonym, for example <code>JOEBLOGGS-DN42</code> or <code>NETWORKUSER1234-DN42</code>. Check the contents of the <code>/data/person</code> directory to make sure that the string you want to use hasn't already been taken by someone else.</p>
     <p>Proceed by creating an empty text file within the <code>/data/person</code> directory of the registry. The name of your 'person' object should match your NIC handle. Below is a copy of my own 'person' object, which should help you to understand the required format and layout of registry object files.</p>
     <p class="two-mar-bottom"><b>/data/person/JAMIEWEB-DN42</b>:</p>
     <pre class="two-mar-top">person:             Jamie Scaife
@@ -115,7 +110,7 @@ nic-hdl:            JAMIEWEB-DN42
 mnt-by:             JAMIEWEB-MNT
 source:             DN42</pre>
     <p>Note that the second column always starts at character 21 on each line, i.e. there are 20 characters padded by spaces before it on each line.</p>
-    <p>The <code>source</code> parameter refers to the authoritative registry that the route object is registered to (always DN42 in this case). The <code>mnt-by</code> parameter will be covered in the next section.</p>
+    <p>The <code>source</code> parameter refers to the authoritative registry that the object is registered to (always DN42 in this case). The <code>mnt-by</code> parameter will be covered in the next section.</p>
 
     <h3 id="maintainer-object">Maintainer Object</h3>
     <p>Next, you'll need to create a 'maintainer' object, which is used to specify credentials that are permitted to create, modify or delete registry objects under your maintainership.</p>
@@ -163,7 +158,7 @@ source:             DN42</pre>
     <p>Like when assigning an ASN, you'll need to search through the registry in order to identify an unclaimed IPv4 address range. To make things a bit easier, you can use the <a href="https://dn42.us/peers/free/" target="_blank" rel="noopener">IPv4 open netblocks</a> page to see a list of unclaimed prefixes.</p>
     <img class="radius-8" width="1000px" src="ipv4-open-netblocks.png">
     <p class="two-no-mar centertext"><i>A list of open IPv4 netblocks on DN42, accessible at <a href="https://dn42.us/peers/free/" target="_blank" rel="noopener">dn42.us/peers/free</a>.</i></p>
-    <p>Once you have found a suitable IPv4 address range, you can create the registry object for it, using the example of my own IPv4 range for reference:</p>
+    <p>Once you have found a suitable IPv4 address range, you can create the registry object for it, using the example of my own IPv4 range for reference.</p>
     <p class="two-mar-bottom"><b>/data/inetnum/172.20.32.96_28</b>:</p>
     <pre class="two-mar-top">inetnum:            172.20.32.96 - 172.20.32.111
 cidr:               172.20.32.96/28
@@ -177,7 +172,7 @@ source:             DN42</pre>
     <p>You'll need to specify the exact IP address range within the <code>inetnum</code> configuration value, so make sure to double-check your subnet calculation where necessary.</p>
     <p>In order to actually announce your IPv4 address range, you must create a 'route' object, which is used to specify which AS is permitted to announce the prefix.</p>
     <p>In many cases this will be your own AS, however if you want someone else, such as a network operator, to announce the prefix on your behalf, you'll need to specify their ASN here. Delegating the permission to announce a particular prefix like this allows you to more safely utilise the services of third-party network operators, whilst still retaining full legal ownership of your prefixes.</p>
-    <p>Proceed with creating the route object as required, using my own as an example:</p>
+    <p>Proceed with creating the route object as required, using my own as an example.</p>
     <p class="two-mar-bottom"><b>/data/route/172.20.32.96_28</b>:</p>
     <pre class="two-mar-top">route:              172.20.32.96/28
 origin:             AS4242420171
@@ -185,7 +180,7 @@ mnt-by:             JAMIEWEB-MNT
 source:             DN42</pre>
 
     <h3 id="ipv6-address-range-assignment">IPv6 Address Range Assignment</h3>
-    <p>You should also assign yourself and IPv6 address range. Within DN42, IPv6 uses the <a href="https://tools.ietf.org/html/rfc4193/" target="_blank" rel="noopener">Unique Local Address</a> (ULA) range, which is <code>fd00::/8</code>.</p>
+    <p>You should also assign yourself an IPv6 address range. Within DN42, IPv6 uses the <a href="https://tools.ietf.org/html/rfc4193/" target="_blank" rel="noopener">Unique Local Address</a> (ULA) range, which is <code>fd00::/8</code>.</p>
     <p>You should generate a random prefix rather than trying to directly choose one, which can be done using an <a href="https://simpledns.com/private-ipv6/" target="_blank" rel="noopener">IPv6 ULA generator</a>.</p>
     <img class="radius-8" width="1000px" src="ipv6-ula-generator.png">
     <p class="two-no-mar centertext"><i>The IPv6 ULA generator provided by Simple DNS, available at <a href="https://simpledns.com/private-ipv6/" target="_blank" rel="noopener">simpledns.com/private-ipv6</a>.</i></p>
@@ -219,7 +214,7 @@ mnt-by:             JAMIEWEB-MNT
 nserver:            ns1.jamieweb.dn42 172.20.32.97
 nserver:            ns1.jamieweb.dn42 fd5c:d982:d80d:9243::2
 source:             DN42</pre>
-    <p>The <code>nserver</code> parameters are used to specify the glue records for your domain, which include the DNS name of each nameserver and its associated IP address. In my case, I have specified a primary nameserver with both an IPv4 and IPv6 address from my assigned ranges.</p>
+    <p>The <code>nserver</code> parameters are used to specify the glue records for your domain, which include the DNS name of each name server and its associated IP address. In my case, I have specified a primary name server with both an IPv4 and IPv6 address from my assigned ranges.</p>
     <p>Once you're properly set up and connected to DN42, you can then run an authoritative DNS server for your domain, which will allow other members of DN42 to resolve it and access your named services.</p>
 
     <h3 id="validating-your-registry-objects">Validating Your Registry Objects</h3>
@@ -239,7 +234,7 @@ source:             DN42</pre>
     <pre>$ git add .</pre>
     <p>Next, commit the changes to the repository:</p>
     <pre>$ git commit</pre>
-    <p>Enter a suitable commit message, e.g. 'Added AS424242xxxx'. You should then be asked for your GPG passphrase to crytographically sign your commit.</p>
+    <p>Enter a suitable commit message, e.g. 'Added AS424242xxxx'. You should then be asked for your GPG passphrase to cryptographically sign your commit.</p>
     <p>Once the changes have been successfully committed, push them up to your fork of the repository on the DN42 registry Git server:</p>
     <pre>$ git push origin master</pre>
     <p>If you browse to your fork of the registry in your web browser, you should now see that your registry objects have been uploaded successfully.</p>
@@ -285,7 +280,7 @@ $ git push origin master</pre>
     <p>The setup varies depending on your peer, however the following rough steps should provide enough guidance to get the VPN tunnel connected.</p>
     <p>Begin by installing OpenVPN:</p>
     <pre>$ sudo apt install openvpn</pre>
-    <p>Next, put your OpenVPN client configuration file somewhere safe, such as in your home directory. Make sure not to accidentally put it in your local copy of the DN42, as this file shouldn't be shared publicly.</p>
+    <p>Next, put your OpenVPN client configuration file somewhere safe, such as in your home directory. Make sure not to accidentally put it in your local copy of the DN42 registry, as this file shouldn't be shared publicly.</p>
     <p>If your OpenVPN key was provided as a separate file, put this somewhere private. Often this should go in the <code>/etc/openvpn</code> directory, however check your client configuration first, as sometimes a different directory is used.</p>
     <p>Ensure that the permissions on the file containing your key are appropriately locked down, i.e. by removing all access for all but your own user:</p>
     <pre>$ chmod go-rwx <span class="color-red">yourkey</span>.key</pre>
@@ -300,7 +295,7 @@ $ git push origin master</pre>
     <p>DN42 has its own root DNS servers that are responsible for resolving <code>.dn42</code> domain names, as well as providing reverse DNS for the DN42 IP address ranges.</p>
     <p>The main DN42 DNS resolver can be accessed via <code>172.20.0.53</code> or <code>fd42:d42:d42:54::1</code>. Both of these addresses are anycasted, meaning that the same IP address routes to multiple distinct geographical locations. This is very similar to how public resolvers on the internet work, such as <code>1.1.1.1</code> or <code>8.8.8.8</code>.</p>
     <p>On DN42, any member can run their own authoritative DNS server and apply to become a part of the root DNS infrastructure. This does bring with it the risk of malicious DNS resolvers, however in most lab environments, this isn't usually a concern. If this is a concern for you, then you should look into using a known trusted resolver, such as one provided by your peering partner or another reputable member of DN42.</p>
-    <p>You can configure your local system to direct lookups for DN42 resources to the DN42 authoritative DNS servers using a custom Dnsmasq recursive resolver configuration. The configuration described below will work on most Debian or Ubuntu-based systems, however should also be applicable to other Linux distributions with some minor modifications.</p>
+    <p>You can configure your local system to direct lookups for DN42 resources to the DN42 authoritative DNS servers using a custom Dnsmasq resolver configuration. The configuration described below will work on most Debian or Ubuntu-based systems, however should also be applicable to other Linux distributions with some minor modifications.</p>
     <p>Begin by installing Dnsmasq:</p>
     <pre>$ sudo apt install dnsmasq</pre>
     <p>Next, create a new config file at <code>/etc/dnsmasq.d/dn42.conf</code> and add the following to it:</p>
@@ -312,9 +307,9 @@ server=/21.172.in-addr.arpa/172.20.0.53
 server=/22.172.in-addr.arpa/172.20.0.53
 server=/23.172.in-addr.arpa/172.20.0.53
 server=/d.f.ip6.arpa/fd42:d42:d42:54::1</pre>
-    <p>The <code>no-resolv</code> configuration is used to prevent Dnsmasq from using the <code>/etc/resolv.conf</code> file to identify the upstream resolver to use, as this is instead specified directly in the Dnsmasq configuration. I've used <code>1.1.1.1</code> in the example above, however you can change this to something else if you wish.</p>
+    <p>The <code>no-resolv</code> configuration is used to prevent Dnsmasq from using the <code>/etc/resolv.conf</code> file to identify the recursive/upstream resolver to use, as this is instead specified directly in the Dnsmasq configuration. I've used <code>1.1.1.1</code> in the example above, however you can change this to something else if you wish.</p>
     <p>The rest of the configuration is used to specify the resolver to use for <code>.dn42</code> domains, as well as reverse DNS (<code>*.in-addr.arpa</code> and <code>*.ip6.arpa</code>).</p>
-    <p>In order to begin using Dnsmasq, you'll first need to disable your existing local recursive resolver, which in the case of most Debian-based systems, can be done using the following (<b>note that this will temporarily kill local DNS resolution</b>:</p>
+    <p>In order to begin using Dnsmasq, you'll first need to disable your existing local resolver, which in the case of most Debian-based systems, can be done using the following (<b>note that this will temporarily kill local DNS resolution</b>):</p>
     <pre>$ sudo service systemd-resolved stop</pre>
     <p>Next, edit your <code>/etc/resolv.conf</code> file and ensure that the following configuration is set:</p>
     <pre>nameserver 127.0.0.53</pre>
@@ -330,17 +325,9 @@ server=/d.f.ip6.arpa/fd42:d42:d42:54::1</pre>
 $ sudo systemctl enable dnsmasq</pre>
     <p>Once you're announcing your IP address ranges and are able to communicate with DN42 fully, you'll be able to properly look up names such as <code>wiki.dn42</code> and <code>ca.dn42</code>.</p>
 
-    <div class="message-box message-box-positive/warning/warning-medium/notice">
-        <div class="message-box-heading">
-            <h3><u></u></h3>
-        </div>
-        <div class="message-box-body">
-            <p></p>
-        </div>
-    </div>
-
-    <h2 id="conclusion">Conclusion</h2>
-    <p></p>
+    <h2 id="part-1-conclusion">Part 1 / Conclusion</h2>
+    <p>You've now successfully connected to DN42, meaning that you have a suitable lab environment to begin BGP peering with.</p>
+    <p>In the next article, we'll look at Quagga BGPd, and set up a basic IPv4 and IPv6 BGP configuration.</p>
 </div>
 
 <?php include "footer.php" ?>
