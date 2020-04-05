@@ -244,7 +244,7 @@ source:             DN42</pre>
     <p>You can add a name and description to your pull request, and you should also be able to see a summary of the changes that you made locally.</p>
     <p>All of the pull requests submitted by other members of DN42 are also publicly visible, so you may wish to <a href="https://git.dn42.us/dn42/registry/pulls/" target="_blank" rel="noopener">review some of these</a> to double-check that your submission is in-line with the others.</p>
     <p>Once you've submitted your pull request, it will be visible in the DN42 main registry waiting for moderator review.</p>
-    <img class="radius-8" width="1000px" src="registry-pull-request">
+    <img class="radius-8" width="1000px" src="registry-pull-request.png">
     <p class="two-no-mar centertext">The pull request that I originally submitted to join DN42 as AS4242420171.</i></p>
     <p>It may take a few hours or days for your submission to be reviewed by the DN42 moderators. Keep checking your pull request as they may add comments to ask further clarifying questions or to ask you to fix any mistakes.</p>
     <p>In the event that there is a mistake in your submission and you need to resubmit, the easiest way to do this is to softly roll-back the commit that you made (this will not overwrite or delete any of your changes):</p>
