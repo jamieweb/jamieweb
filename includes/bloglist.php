@@ -39,8 +39,13 @@ function bloglist($location, $category = null, $post = null, $annum = null) {
                 $homeCount++;
                 echo "<div class=\"recent-post clearboth\">
             <h2 class=\"no-mar-bottom\"><a href=\"/blog/" . $post->uri . "/\">" . $post->title . (isset($post->subtitle) ? " - " . $post->subtitle : "") . "</a></h2>
-            <p class=\"two-mar-top recents-date\">" . $post->date . "</p>
-            <p class=\"snippet\">" . $post->snippet . " <b><u><i><a href=\"/blog/" . $post->uri . "/\"><span class=\"continue-reading\">Continue reading...</span></a></i></u></b></p>";
+            <p class=\"two-mar-top recents-date\">" . $post->date . "</p>\n";
+                if($post->format_version === 2) {
+                    echo "            <p>" . $post->snippet;
+                } else {
+                    echo rtrim(strstr(strstr(file_get_contents("blog/" . $post->uri . "/index.php", false, null, 0, 6144), "<!--INTRO START-->"), "<!--INTRO END-->", true),"p<>/\n ") . "<!--INTRO END-->";
+                }
+                echo " <b><u><i><a href=\"/blog/" . $post->uri . "/\"><span class=\"continue-reading\">Continue reading...</span></a></i></u></b></p>";
                 bloglist("tags", null, $post);
                 echo "        </div>";
                 if($homeCount >= 4) {

@@ -159,7 +159,7 @@ source:             DN42</pre>
     <img class="radius-8" width="1000px" src="ipv4-open-netblocks.png">
     <p class="two-no-mar centertext"><i>A list of open IPv4 netblocks on DN42, accessible at <a href="https://dn42.us/peers/free/" target="_blank" rel="noopener">dn42.us/peers/free</a>.</i></p>
     <p>Once you have found a suitable IPv4 address range, you can create the registry object for it, using the example of my own IPv4 range for reference.</p>
-    <p class="two-mar-bottom"><b>/data/inetnum/172.20.32.96_28</b>:</p>
+    <p class="two-mar-bottom"><b>/data/inetnum/<wbr>172.20.32.96_28</b>:</p>
     <pre class="two-mar-top">inetnum:            172.20.32.96 - 172.20.32.111
 cidr:               172.20.32.96/28
 netname:            JAMIEWEB-V4-NET-1
@@ -173,7 +173,7 @@ source:             DN42</pre>
     <p>In order to actually announce your IPv4 address range, you must create a 'route' object, which is used to specify which AS is permitted to announce the prefix.</p>
     <p>In many cases this will be your own AS, however if you want someone else, such as a network operator, to announce the prefix on your behalf, you'll need to specify their ASN here. Delegating the permission to announce a particular prefix like this allows you to more safely utilise the services of third-party network operators, whilst still retaining full legal ownership of your prefixes.</p>
     <p>Proceed with creating the route object as required, using my own as an example.</p>
-    <p class="two-mar-bottom"><b>/data/route/172.20.32.96_28</b>:</p>
+    <p class="two-mar-bottom"><b>/data/route/<wbr>172.20.32.96_28</b>:</p>
     <pre class="two-mar-top">route:              172.20.32.96/28
 origin:             AS4242420171
 mnt-by:             JAMIEWEB-MNT
@@ -185,7 +185,7 @@ source:             DN42</pre>
     <img class="radius-8" width="1000px" src="ipv6-ula-generator.png">
     <p class="two-no-mar centertext"><i>The IPv6 ULA generator provided by Simple DNS, available at <a href="https://simpledns.com/private-ipv6/" target="_blank" rel="noopener">simpledns.com/private-ipv6</a>.</i></p>
     <p>Once you've generated your own ULA range, create the registry object for it using my own below for guidance.</p>
-    <p class="two-mar-bottom"><b>/data/inet6num/fd5c:d982:d80d:9243::_64</b>:</p>
+    <p class="two-mar-bottom"><b>/data/inet6num/<wbr>fd5c:d982:d80d:<wbr>9243::_64</b>:</p>
     <pre class="two-mar-top">inet6num:           fd5c:d982:d80d:9243:0000:0000:0000:0000 - fd5c:d982:d80d:9243:ffff:ffff:ffff:ffff
 cidr:               fd5c:d982:d80d:9243::/64
 netname:            JAMIEWEB-V6-NET-1
@@ -196,7 +196,7 @@ mnt-by:             JAMIEWEB-MNT
 status:             ASSIGNED
 source:             DN42</pre>
     <p>Like with your IPv4 range, you'll also need to create a route object in order to authorise the prefix to be announced by the relevant AS.</p>
-    <p class="two-mar-bottom"><b>/data/route6/fd5c:d982:d80d:9243::_64</b>:</p>
+    <p class="two-mar-bottom"><b>/data/route6/<wbr>fd5c:d982:d80d:<wbr>9243::_64</b>:</p>
     <pre class="two-mar-top">route6:             fd5c:d982:d80d:9243::/64
 origin:             AS4242420171
 mnt-by:             JAMIEWEB-MNT

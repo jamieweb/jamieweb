@@ -82,7 +82,7 @@
             </div>
             <p class="two-mar-bottom display-inline-block">Onion v3: </p>
             <div class="onionlink two-mar-top">
-                <p class="no-mar word-break-all"><a class="font-family-monospace"href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></p>
+                <p class="no-mar word-break-all"><a class="font-family-monospace" href="http://jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion" target="_blank" rel="noopener">jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion</a></p>
             </div>
         </div>
     </div>

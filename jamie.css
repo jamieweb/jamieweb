@@ -287,7 +287,8 @@ div.view-all-button {
     width: 200px;
     margin: 20px auto;
     padding: 3px;
-    border-radius: 3px;
+    border: 2px solid black;
+    border-radius: 4px;
     color: white;
     background-color: #59a2c7;
 }
