@@ -8,7 +8,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <!--INTRO START-->
     <p>Intro/snippet - automatically included on homepage.</p>
     <p>Sample sentence with <a class="exempt" href="#" target="_blank" rel="noopener">a link</a>.</p>
-    <img class="radius-8 max-width-100-percent" src="">
+    <img class="radius-8 max-width-100-percent" src="/blog/full-path-to-image/">
     <p class="two-no-mar centertext"><i></i></p>
     <p>End of intro.</p>
     <!--INTRO END-->
