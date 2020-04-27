@@ -1,6 +1,16 @@
 {
     "blog": {
         "2020": {
+            "using-spf-macros-to-solve-the-operational-challenges-of-spf": {
+                "uri": "using-spf-macros-to-solve-the-operational-challenges-of-spf",
+                "navtitle": "SPF Macros",
+                "title": "Using SPF Macros to Solve the Operational Challenges of SPF",
+                "longdesc": "Improving the maintainability, auditability and effectiveness of your SPF policy using SPF macros.",
+                "date": "Thursday 30th April 2020",
+                "tags": "Security,RFC,Guide",
+                "license": "CC BY-SA 4.0",
+                "format_version": 3
+            },
             "bgp-routing-security-prelude-connecting-to-the-dn42-overlay-network": {
                 "uri": "bgp-routing-security-prelude-connecting-to-the-dn42-overlay-network",
                 "navtitle": "Connecting to DN42",
