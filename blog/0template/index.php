@@ -2,7 +2,7 @@
 include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
 
 <div class="body">
-    <h1><?php echo $postInfo->title . "</h1>\n" . (isset($postInfo->title) ? "    <h2 class=\"subtitle-mar-top\">" . $postInfo->subtitle . "</h2>\n" : ""); ?>
+    <h1><?php echo $postInfo->title . "</h1>\n" . (isset($postInfo->subtitle) ? "    <h2 class=\"subtitle-mar-top\">" . $postInfo->subtitle . "</h2>\n" : ""); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <!--INTRO START-->

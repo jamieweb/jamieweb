@@ -2,7 +2,7 @@
 include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
 
 <div class="body">
-    <h1><?php echo $postInfo->title . "</h1>\n" . (isset($postInfo->title) ? "    <h2 class=\"subtitle-mar-top\">" . $postInfo->subtitle . "</h2>\n" : ""); ?>
+    <h1><?php echo $postInfo->title . "</h1>\n" . (isset($postInfo->subtitle) ? "    <h2 class=\"subtitle-mar-top\">" . $postInfo->subtitle . "</h2>\n" : ""); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
     <!--INTRO START-->
@@ -22,7 +22,7 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p><b>Skip to Section:</b></p>
     <pre class="contents"><b><?php echo $postInfo->title . (isset($postInfo->subtitle) ? "\n" . $postInfo->subtitle : ""); ?></b>
 &#x2523&#x2501&#x2501 <a href="#what-are-spf-macros">What are SPF macros?</a>
-&#x2523&#x2501&#x2501 <a href="#"></a>
+&#x2523&#x2501&#x2501 <a href="#supported-macros">Supported Macros</a>
 &#x2523&#x2501&#x2501 <a href="#"></a>
 &#x2523&#x2501&#x2501 <a href="#"></a>
 &#x2523&#x2501&#x2501 <a href="#"></a>
@@ -33,8 +33,8 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p>This enables various advanced SPF processing routines such as conditional lookups, and allows for additional email metadata to influence the decision.</p>
     <p>SPF macros are present in the original SPF specification (<a href="https://tools.ietf.org/html/rfc4408#section-8" target="_blank" rel="noopener">RFC4408</a>), as well as the revised specificaion (<a href="https://tools.ietf.org/html/rfc7208#section-7" target="_blank" rel="noopener">RFC7208</a>), and are widely supported by MTAs.</p>
 
-all supported macros:
-(Macro Definitions - https://tools.ietf.org/html/rfc7208#section-7.2):
+    <h2 id="supported-macros">Supported Macros</h2>
+    <p>SPF macros are represented by different single characters, usually surrounded by curly braces (<code>{ }</code>). There are currently 8 'core' macros that are supported, as defined in <a href="https://tools.ietf.org/html/rfc7208#section-7.2" target="_blank" rel="noopener">section 7.2 of the RFC.</a>. These will be evaluated and expanded by receiving MTAs in a way very similar to templating engines such as <a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)" target="_blank" rel="noopener">Jinja</a>.</p>
 
 s = <sender>
       l = local-part of <sender>
