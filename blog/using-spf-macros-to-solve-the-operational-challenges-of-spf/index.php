@@ -34,16 +34,18 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p>SPF macros are present in the original SPF specification (<a href="https://tools.ietf.org/html/rfc4408#section-8" target="_blank" rel="noopener">RFC4408</a>), as well as the revised specificaion (<a href="https://tools.ietf.org/html/rfc7208#section-7" target="_blank" rel="noopener">RFC7208</a>), and are widely supported by MTAs.</p>
 
     <h2 id="supported-macros">Supported Macros</h2>
-    <p>SPF macros are represented by different single characters, usually surrounded by curly braces (<code>{ }</code>). There are currently 8 'core' macros that are supported, as defined in <a href="https://tools.ietf.org/html/rfc7208#section-7.2" target="_blank" rel="noopener">section 7.2 of the RFC.</a>. These will be evaluated and expanded by receiving MTAs in a way very similar to templating engines such as <a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)" target="_blank" rel="noopener">Jinja</a>.</p>
+    <p>SPF macros are represented by different single characters, surrounded by curly braces (<code>{ }</code>) and prepended by a percent (<code>%</code>) sign, e.g. <code>%{i}</code>. There are currently 8 'core' macros that are supported, as defined in <a href="https://tools.ietf.org/html/rfc7208#section-7.2" target="_blank" rel="noopener">section 7.2 of the RFC.</a>. These will be evaluated and expanded by receiving MTAs in a way very similar to templating engines such as <a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)" target="_blank" rel="noopener">Jinja</a>.</p>
 
-s = <sender>
-      l = local-part of <sender>
-      o = domain of <sender>
-      d = <domain>
-      i = <ip>
-      p = the validated domain name of <ip> (do not use)
-      v = the string "in-addr" if <ip> is ipv4, or "ip6" if <ip> is ipv6
-      h = HELO/EHLO domain
+    <ul class="large-spaced-list">
+        <li><code>s</code>: The sender of the received email, e.g. <code>joe@example.com</code></li>
+        <li><code>l</code>: The local part of the sender, e.g. <code>joe</code></li>
+        <li><code>o</code>: The domain of the sender, e.g. <code>example.com</code></li>
+        <li><code>d</code>: WIP</li>
+        <li><code>i</code>: The source IP address of the message, e.g. <code>203.0.113.1</code></li>
+        <li><code>p</code>: The validated reverse-DNS domain of the source IP, e.g. if <code>example.com IN A</code> is <code>203.0.113.1</code> and <code>1.113.0.203.in-addr.arpa IN PTR</code> is <code>example.com</code>, the validated domain will be <code>example.com</code>
+        <li><code>v</code>: The static string <code>in-addr</code> or <code>ip6</code> depending on the protocol version of the source IP --- used to construct macros utilising reverse DNS/PTR record syntax as seen in the <code>.arpa</code> zone</li>
+        <li><code>h</code>: The domain used in the most recent SMTP <code>HELO</code> or <code>EHLO</code> command, e.g. <code>mail.example.com</code>
+    </ul>
 
 EXAMPLES:
 
