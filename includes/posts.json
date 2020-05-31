@@ -1,6 +1,17 @@
 {
     "blog": {
         "2020": {
+            "bgp-routing-security-part-1-bgp-peering-with-quagga": {
+                "uri": "bgp-routing-security-part-1-bgp-peering-with-quagga",
+                "navtitle": "BGP Peering with Quagga",
+                "title": "Introduction to BGP Routing Security",
+                "subtitle": "Part 1: BGP Peering with Quagga",
+                "longdesc": "Installing and configuring the Quagga network routing software suite and establishing a BGP peering session to exchange routing information.",
+                "date": "Monday 1st June 2020",
+                "tags": "BGP,DN42,Guide",
+                "license": "CC BY-SA 4.0",
+                "format_version": 3
+            },
             "using-spf-macros-to-solve-the-operational-challenges-of-spf": {
                 "uri": "using-spf-macros-to-solve-the-operational-challenges-of-spf",
                 "navtitle": "SPF Macros",

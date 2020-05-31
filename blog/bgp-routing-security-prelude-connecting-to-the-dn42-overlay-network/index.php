@@ -8,7 +8,8 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p>This is a prelude to a multi-part series on BGP routing security:</p>
     <ul class="spaced-list">
         <li><b>Prelude:</b> Connecting to the DN42 Overlay Network (You Are Here)</li>
-        <li><b>Part 1:</b> Coming Soon</li>
+        <li><b>Part 1:</b> <a href="/blog/bgp-routing-security-part-1-bgp-peering-with-quagga/">BGP Peering with Quagga</a></li>
+        <li><b>Part 2:</b> Coming Soon</li>
     </ul>
     <p>The purpose of this first article is to allow you to set up a suitable lab environment for practising BGP and the various routing security elements that are present in this guide.</p>
     <p>If you already have a lab environment set up, or are working on an existing BGP deployment, you can safely skip this prelude and go straight to Part 1.</p>
@@ -327,7 +328,7 @@ $ sudo systemctl enable dnsmasq</pre>
 
     <h2 id="part-1-conclusion">Part 1 / Conclusion</h2>
     <p>You've now successfully connected to DN42, meaning that you have a suitable lab environment to begin BGP peering with.</p>
-    <p>In the next article, we'll look at Quagga BGPd, and set up a basic IPv4 and IPv6 BGP configuration.</p>
+    <p>In the <a href="/blog/bgp-routing-security-part-1-bgp-peering-with-quagga/">next article</a>, we'll look at Quagga BGPd, and set up a basic IPv4 and IPv6 BGP configuration.</p>
 </div>
 
 <?php include "footer.php" ?>
