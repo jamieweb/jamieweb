@@ -116,7 +116,7 @@ $ cp /lib /lib64 .</pre>
 
     <h2 id="authorized_keys-file-options"><code>authorized_keys</code> File Options</h2>
     <p>It's possible to impose restrictions on users on a per-key basis using options in the <code>authorized_keys</code> file.</p>
-    <p>There are two main options that are particularly useful for security: <code>restrict</code> and <code>command</code>. You can view a full list of options on the manual page here: <a href="https://linux.die.net/man/5/sshd_config" target="_blank" rel="noopener">https://linux.die.net/man/5/sshd_config</a></p>
+    <p>There are two main options that are particularly useful for security: <code>restrict</code> and <code>command</code>. You can view a full list of options on the manual page here: <a href="https://linux.die.net/man/8/sshd" target="_blank" rel="noopener">https://linux.die.net/man/8/sshd</a></p>
 
     <h3 id="restrict">'<code>restrict</code>'</h3>
     <p>The <code>restrict</code> option will enable <b>all</b> of the following restrictions for users authenticating against the key:</p>
