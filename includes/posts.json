@@ -1,6 +1,16 @@
 {
     "blog": {
         "2020": {
+            "tor-is-a-great-sysadmin-tool": {
+                "uri": "tor-is-a-great-sysadmin-tool",
+                "navtitle": "Tor is a Great SysAdmin Tool",
+                "title": "Tor is a Great SysAdmin Tool",
+                "longdesc": "Using Tor to aid various system administration tasks, including checking firewall rules, bypassing internal network restrictions and connecting to remote systems that are behind NAT/CGNAT.",
+                "date": "Sunday 9th August 2020",
+                "tags": "Security,Tor",
+                "license": "CC BY-SA 4.0",
+                "format_version": 3
+            },
             "bgp-routing-security-part-1-bgp-peering-with-quagga": {
                 "uri": "bgp-routing-security-part-1-bgp-peering-with-quagga",
                 "navtitle": "BGP Peering with Quagga",
