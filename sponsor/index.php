@@ -20,7 +20,7 @@
     <h1>Sponsoring jamieweb.net</h1>
     <hr>
     <p>My website <a href="/" target="_blank">jamieweb.net</a> has a highly targeted audience of people interested in cyber security, software development, internet privacy, open-source and Linux.</p>
-    <p>A sponsorship provides the opportunity for you to promote your brand or product directly to between 4,000 and 5,000 unique human visitors per month.</p>
+    <p>A sponsorship provides the opportunity for you to promote your brand or product directly to between 7,000 and 8,000 unique human visitors per month.</p>
 
     <h2 id="pricing">Pricing</h2>
     <p>One month of sponsorship currently costs <b>$20 US</b>, however this is up for negotiation.</p>

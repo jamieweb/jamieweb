@@ -9,11 +9,11 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <p>Tor is a fantastic networking and privacy technology that makes private and anonymous browsing available to millions. Despite this, it is unfortunately seen by some people as a system that solely exists to facilitate an illegal criminal underground, </p>
     <p>However, to take a literal view, <i>Tor is just a networking tool</i>, and it can be used in any way that you want. The features that enable privacy and anonymity are also extremely useful for many of the tasks carried out by Network Engineers and Systems Administrators on a daily basis. For example:</p>
     <ul class="spaced-list">
-        <li><a href="#testing-ip-address-based-access-rules">Testing IP address based access rules</a></li>
-        <li><a href="#testing-internally-hosted-services-from-an-external-perspective">Testing internally-hosted services from an external perspective</a></li>
-        <li><a href="#making-reliable-external-dns-lookups-when-operating-in-a-split-horizon-dns-environment">Making reliable external DNS lookups when operating in a split-horizon DNS environment</a></li>
-        <li><a href="#bypassing-blocked-outbound-ports">Bypassing blocked outbound ports</a></li>
-        <li><a href="#exposing-services-when-behind-nat-or-cgnat">Exposing services when behind NAT or CGNAT</a></li>
+        <li><a href="/blog/tor-is-a-great-sysadmin-tool/#testing-ip-address-based-access-rules">Testing IP address based access rules</a></li>
+        <li><a href="/blog/tor-is-a-great-sysadmin-tool/#testing-internally-hosted-services-from-an-external-perspective">Testing internally-hosted services from an external perspective</a></li>
+        <li><a href="/blog/tor-is-a-great-sysadmin-tool/#making-reliable-external-dns-lookups-when-operating-in-a-split-horizon-dns-environment">Making reliable external DNS lookups when operating in a split-horizon DNS environment</a></li>
+        <li><a href="/blog/tor-is-a-great-sysadmin-tool/#bypassing-blocked-outbound-ports">Bypassing blocked outbound ports</a></li>
+        <li><a href="/blog/tor-is-a-great-sysadmin-tool/#exposing-services-when-behind-nat-or-cgnat">Exposing services when behind NAT or CGNAT</a></li>
     </ul>
     <p>In this article, I will demonstrate how Tor can be used to carry out some of these tasks, and why using Tor may be advantageous to other methods.</p>
     <!--INTRO END-->
