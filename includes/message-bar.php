@@ -13,6 +13,13 @@
         "message" => "<u>KEYCHEST</u> - Expiry Management for web and intranet HTTPS/TLS - cert purchase with zero-margin - Let's Encrypt proxy & rate-limit monitoring",
         "href" => "https://keychest.net/"
     ),
+    array (
+        "from" => "6 Oct 2020",
+        "to" => "10 Jan 2021",
+        "prefix" => "Currently sponsored by:",
+        "message" => "<u>Smallstep</u> - Tired of managing SSH keys? Try SSH single sign-on with Smallstep and experience SSH certificates for yourself in <5min&#x26a1;&#xfe0f;!",
+        "href" => "https://smallstep.com/sso-ssh/how-it-works/?utm_campaign=jamieweb&utm_source=blog-sponsor&utm_medium=blog-sponsor#howitworks"
+    ),
 ];
 $time = time();
 foreach($schedule as $message) {
