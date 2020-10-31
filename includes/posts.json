@@ -6,7 +6,7 @@
                 "navtitle": "Preventing BGP Transit",
                 "title": "Introduction to BGP Routing and Security",
                 "subtitle": "Part 2: Preventing Transit",
-                "longdesc": "Preventing your autononomous system from becoming a transit AS.",
+                "longdesc": "Preventing your autonomous system from becoming a transit AS.",
                 "date": "Saturday 31st October 2020",
                 "tags": "BGP,DN42,Guide",
                 "license": "CC BY-SA 4.0",
