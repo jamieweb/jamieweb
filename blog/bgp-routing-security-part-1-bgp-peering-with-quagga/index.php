@@ -5,11 +5,12 @@ include_once "bloglist.php"; bloglist("postTop", null, null, 2020); ?>
     <h1><?php echo $postInfo->title . "</h1>\n" . (isset($postInfo->subtitle) ? "    <h2 class=\"subtitle-mar-top\">" . $postInfo->subtitle . "</h2>\n" : ""); ?>
     <hr>
     <p><b><?php echo $postInfo->date; ?></b></p>
-    <p>This is part 1 of a multi-part series on BGP routing security:</p>
+    <p>This is part 1 of a multi-part series on BGP routing and security:</p>
     <ul class="spaced-list">
         <li><b>Prelude:</b> <a href="/blog/bgp-routing-security-prelude-connecting-to-the-dn42-overlay-network/">Connecting to the DN42 Overlay Network</a></li>
         <li><b>Part 1:</b> BGP Peering with Quagga (You Are Here)</li>
-        <li><b>Part 2:</b> Coming Soon</li>
+        <li><b>Part 2:</b> <a href="/blog/bgp-routing-and-security-part-2-preventing-transit/">Preventing Transit</a></li>
+        <li><b>Part 3:</b> Coming Soon</li>
     </ul>
     <p>This article serves as a practical introduction to BGP peering using the Quagga network routing software suite. This will set the groundwork for the security-related elements that will be covered later in the series.</p>
     <p><b>Skip to Section:</b></p>
@@ -287,7 +288,7 @@ Origin codes: i - IGP, e - EGP, ? - incomplete
 
     <h2 id="part-2-conclusion">Part 2 / Conclusion</h2>
     <p>You've now completed your initial Quagga BGPd configuration, and are successfully exchanging routing information with your peers.</p>
-    <p>In the next part, we'll look at various ways of disabling transit, which is a preferable configuration if you're not an ISP and don't want your router to share arbitrary routes with peers.</p>
+    <p>In the <a href="/blog/bgp-routing-and-security-part-2-preventing-transit/">next part</a>, we'll look at various ways of preventing transit, which is a preferable configuration if you're not an ISP and don't want your router to share arbitrary routes with peers.</p>
 </div>
 
 <?php include "footer.php" ?>

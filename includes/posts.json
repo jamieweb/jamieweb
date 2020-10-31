@@ -1,6 +1,17 @@
 {
     "blog": {
         "2020": {
+            "bgp-routing-and-security-part-2-preventing-transit": {
+                "uri": "bgp-routing-and-security-part-2-preventing-transit",
+                "navtitle": "Preventing BGP Transit",
+                "title": "Introduction to BGP Routing and Security",
+                "subtitle": "Part 2: Preventing Transit",
+                "longdesc": "Preventing your autononomous system from becoming a transit AS.",
+                "date": "Saturday 31st October 2020",
+                "tags": "BGP,DN42,Guide",
+                "license": "CC BY-SA 4.0",
+                "format_version": 3
+            },
             "tor-is-a-great-sysadmin-tool": {
                 "uri": "tor-is-a-great-sysadmin-tool",
                 "navtitle": "Tor is a Great SysAdmin Tool",
@@ -14,7 +25,7 @@
             "bgp-routing-security-part-1-bgp-peering-with-quagga": {
                 "uri": "bgp-routing-security-part-1-bgp-peering-with-quagga",
                 "navtitle": "BGP Peering with Quagga",
-                "title": "Introduction to BGP Routing Security",
+                "title": "Introduction to BGP Routing and Security",
                 "subtitle": "Part 1: BGP Peering with Quagga",
                 "longdesc": "Installing and configuring the Quagga network routing software suite and establishing a BGP peering session to exchange routing information.",
                 "date": "Monday 1st June 2020",
@@ -35,7 +46,7 @@
             "bgp-routing-security-prelude-connecting-to-the-dn42-overlay-network": {
                 "uri": "bgp-routing-security-prelude-connecting-to-the-dn42-overlay-network",
                 "navtitle": "Connecting to DN42",
-                "title": "Introduction to BGP Routing Security",
+                "title": "Introduction to BGP Routing and Security",
                 "subtitle": "Prelude: Connecting to the DN42 Overlay Network",
                 "longdesc": "Registering your own AS (Autonomous System) and IP address ranges in the DN42 registry, and then connecting to a peer with a VPN tunnel.",
                 "date": "Tuesday 31st March 2020",
